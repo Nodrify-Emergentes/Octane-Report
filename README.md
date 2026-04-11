@@ -107,6 +107,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
       <th>Conclusiones</th>
     </tr>
   </thead>
+  <tbody>
     <tr>
       <td>
         Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería.
@@ -142,6 +143,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
       <td>
         Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería.
       </td>
+      <td>
         <!--Acciones Realizadas-->
         Sebastián Omar Real Calderón
         <br>
@@ -163,12 +165,12 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         TB1<br>
         <!--Añadir Info-->
         <br>
-      <td>
       </td>
       <td>
         <!--Conclusiones grupales-->
       </td>
     </tr>
+  </tbody>
 </table>
 
 ## Capítulo I: Introducción
