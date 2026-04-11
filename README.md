@@ -28,9 +28,9 @@
 
 | **Nombre**                                | **Código** |
 |-------------------------------------------|------------|
+| **Real Calderon Sebatian Omar**           | U20221D964 |
 | **Alejo Cardenas Jose Antonio**           | U202122484 |
 | **Pacheco Astiguetta Sebastian**          | U202110291 |
-| **Real Calderon Sebatian Omar**           | U20221D964 |
 | **Russell Stephen Romero Qwistgaard**     |            |
 
 **Abril 2026**
@@ -92,6 +92,84 @@
 
 
 # Student Outcome
+
+El curso contribuye al cumplimiento del Student Outcome ABET:
+**ABET – EAC - Student Outcome 3**
+
+Criterio: *Capacidad de comunicarse efectivamente con un rango de audiencias.*
+En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 3.
+
+<table>
+  <thead>
+    <tr>
+      <th>Criterio específico</th>
+      <th>Acciones realizadas</th>
+      <th>Conclusiones</th>
+    </tr>
+  </thead>
+    <tr>
+      <td>
+        Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería.
+      </td>
+      <td>
+        <!--Acciones Realizadas-->
+        Sebastián Omar Real Calderón
+        <br>
+        TB1<br>
+        <!--Añadir Info-->
+        <br>
+        Alejo Cardenas Jose Antonio
+        <br>
+        TB1<br>
+        <!--Añadir Info-->
+        <br>
+        Pacheco Astiguetta Sebastian
+        <br>
+        TB1<br>
+        <!--Añadir Info-->
+        <br>
+        Russell Stephen Romero Qwistgaard
+        <br>
+        TB1<br>
+        <!--Añadir Info-->
+        <br>
+      </td>
+      <td>
+        <!--Conclusiones grupales-->
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería.
+      </td>
+        <!--Acciones Realizadas-->
+        Sebastián Omar Real Calderón
+        <br>
+        TB1<br>
+        <!--Añadir Info-->
+        <br>
+        Alejo Cardenas Jose Antonio
+        <br>
+        TB1<br>
+        <!--Añadir Info-->
+        <br>
+        Pacheco Astiguetta Sebastian
+        <br>
+        TB1<br>
+        <!--Añadir Info-->
+        <br>
+        Russell Stephen Romero Qwistgaard
+        <br>
+        TB1<br>
+        <!--Añadir Info-->
+        <br>
+      <td>
+      </td>
+      <td>
+        <!--Conclusiones grupales-->
+      </td>
+    </tr>
+</table>
 
 ## Capítulo I: Introducción
 
