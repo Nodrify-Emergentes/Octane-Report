@@ -324,6 +324,39 @@ En esta sección se presentan los Empathy Mapping por cada segmento objetivo def
 
 #### 2.3.4. As-is Scenario Mapping
 
+En esta sección se presentan los As-Is Scenario Mapping por cada segmento objetivo definido.
+
+**1. Segmento 1: Mecánico de Motocicletas**
+
+**Escenario actual (As-Is): Diagnóstico reactivo en taller**
+
+| Etapa                       | Acción del usuario (Mecánico)                           | Pensamientos                            | Puntos de dolor                                 |
+| --------------------------- | ------------------------------------------------------- | --------------------------------------- | ----------------------------------------------- |
+| Recepción del cliente       | Recibe al cliente con la motocicleta averiada           | “Necesito entender qué le pasó”         | Información incompleta o poco clara del cliente |
+| Recopilación de información | Pregunta al cliente sobre síntomas y antecedentes       | “Dependo de lo que recuerde el cliente” | Falta de historial técnico confiable            |
+| Inspección manual           | Revisa visual y físicamente distintas partes de la moto | “Podría ser varias cosas”               | Diagnóstico lento y poco preciso                |
+| Pruebas y descarte          | Realiza pruebas para identificar la falla               | “Espero no equivocarme”                 | Tiempo elevado y posibilidad de error           |
+| Identificación del problema | Determina la posible causa de la falla                  | “Finalmente encontré el problema”       | Proceso ineficiente y no escalable              |
+| Reparación                  | Procede con la reparación                               | “Esto pudo evitarse antes”              | Trabajo reactivo en lugar de preventivo         |
+| Entrega del vehículo        | Explica al cliente lo ocurrido                          | “Ojalá regrese para mantenimiento”      | Baja fidelización del cliente                   |
+
+
+**2. Segmento 2: Propietarios de Motocicletas**
+
+Escenario actual (As-Is): Uso cotidiano sin monitoreo del vehículo
+
+| Etapa                 | Acción del usuario (Propietario)        | Pensamientos                 | Puntos de dolor                                   |
+| --------------------- | --------------------------------------- | ---------------------------- | ------------------------------------------------- |
+| Uso diario            | Utiliza la motocicleta para movilizarse | “Todo parece estar bien”     | Falta de visibilidad del estado real del vehículo |
+| Aparición de señales  | Nota ruidos o comportamientos extraños  | “¿Será grave?”               | Incertidumbre y falta de conocimiento técnico     |
+| Ignorar o postergar   | Decide seguir usando la moto            | “Lo revisaré después”        | Riesgo de empeorar la falla                       |
+| Falla inesperada      | La moto presenta una avería             | “Esto no lo esperaba”        | Interrupción de actividades                       |
+| Búsqueda de solución  | Busca un mecánico o taller              | “Espero no me cobren de más” | Estrés y desconfianza                             |
+| Diagnóstico en taller | Explica el problema al mecánico         | “No sé bien qué pasó”        | Comunicación imprecisa                            |
+| Pago y reparación     | Paga por la reparación                  | “Fue caro”                   | Costos imprevistos                                |
+| Retoma uso            | Vuelve a usar la moto                   | “Espero no vuelva a pasar”   | No hay prevención futura                          |
+
+
 ### 2.4. Ubiquitous Language
 
 
