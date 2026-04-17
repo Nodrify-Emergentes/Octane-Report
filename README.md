@@ -278,11 +278,37 @@ Estos datos reflejan la magnitud del problema y justifican la necesidad de soluc
 
 ![User Persona Mecánico](assets/images/needfinding/user-persona-1.png)
 
-**Segmento Objetivo 2: Propietarios de motocicletas**
+**Segmento Objetivo 2: Propietarios de Motocicletas**
 
 ![User Persona Propietario](assets/images/needfinding/user-persona-2.png)
 
 #### 2.3.2. User Task Matrix
+
+En esta sección se presenta la User Task Matrix, herramienta que permite identificar y analizar las tareas que cada User Persona, representando a los distintos segmentos de usuarios, realiza para alcanzar sus objetivos. Se detallan las tareas en función de su frecuencia e importancia, proporcionando una visión clara de las actividades más relevantes para cada segmento.
+
+**1. Segmento 1: Mecánico de Motocicletas**
+
+| Tarea                                           | Frecuencia | Severidad |
+|-------------------------------------------------|------------|-----------|
+| Realizar diagnósticos precisos de fallas        | Alta       | Alta      |
+| Optimizar tiempos de servicio                   | Alta       | Alta      |
+| Visualizar mantenimientos de clientes           | Media      | Alta      |
+| Programar citas con clientes                    | Media      | Media     |
+| Usar herramientas de diagnóstico manual         | Alta       | Media     |
+| Implementar nuevas herramientas tecnológicas    | Baja       | Alta      |
+| Anticipar fallas comunes de motos               | Media      | Alta      |
+| Verificar estado básico de la moto al recibirla | Media      | Media     |
+
+
+**2. Segmento 2: Propietarios de Motocicletas**
+
+| Tarea                                                 | Frecuencia | Severidad |
+|-------------------------------------------------------|------------|-----------|
+| Realizar mantenimientos preventivos                   | Baja       | Alta      |
+| Recordar fechas de último mantenimiento               | Media      | Alta      |
+| Detectar fallas solo cuando se presentan              | Alta       | Alta      |
+| Buscar información en internet sobre problemas        | Media      | Media     |
+| Verificar el estado básico de la moto antes de usarla | Alta       | Media     |
 
 #### 2.3.3. Empathy Mapping
 
