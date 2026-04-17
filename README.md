@@ -274,6 +274,14 @@ Estos datos reflejan la magnitud del problema y justifican la necesidad de soluc
 
 #### 2.3.1. User Personas
 
+**Segmento Objetivo 1: Mecánicos**
+
+![User Persona Mecánico](assets/images/needfinding/user-persona-1.png)
+
+**Segmento Objetivo 2: Propietarios de motocicletas**
+
+![User Persona Propietario](assets/images/needfinding/user-persona-2.png)
+
 #### 2.3.2. User Task Matrix
 
 #### 2.3.3. Empathy Mapping
