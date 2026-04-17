@@ -282,11 +282,88 @@ Estos datos reflejan la magnitud del problema y justifican la necesidad de soluc
 
 #### 2.3.1. User Personas
 
+**Segmento Objetivo 1: Mecánicos**
+
+![User Persona Mecánico](assets/images/needfinding/user-persona-1.png)
+
+**Segmento Objetivo 2: Propietarios de Motocicletas**
+
+![User Persona Propietario](assets/images/needfinding/user-persona-2.png)
+
 #### 2.3.2. User Task Matrix
+
+En esta sección se presenta la User Task Matrix, herramienta que permite identificar y analizar las tareas que cada User Persona, representando a los distintos segmentos de usuarios, realiza para alcanzar sus objetivos. Se detallan las tareas en función de su frecuencia e importancia, proporcionando una visión clara de las actividades más relevantes para cada segmento.
+
+**1. Segmento 1: Mecánico de Motocicletas**
+
+| Tarea                                           | Frecuencia | Severidad |
+|-------------------------------------------------|------------|-----------|
+| Realizar diagnósticos precisos de fallas        | Alta       | Alta      |
+| Optimizar tiempos de servicio                   | Alta       | Alta      |
+| Visualizar mantenimientos de clientes           | Media      | Alta      |
+| Programar citas con clientes                    | Media      | Media     |
+| Usar herramientas de diagnóstico manual         | Alta       | Media     |
+| Implementar nuevas herramientas tecnológicas    | Baja       | Alta      |
+| Anticipar fallas comunes de motos               | Media      | Alta      |
+| Verificar estado básico de la moto al recibirla | Media      | Media     |
+
+
+**2. Segmento 2: Propietarios de Motocicletas**
+
+| Tarea                                                 | Frecuencia | Severidad |
+|-------------------------------------------------------|------------|-----------|
+| Realizar mantenimientos preventivos                   | Baja       | Alta      |
+| Recordar fechas de último mantenimiento               | Media      | Alta      |
+| Detectar fallas solo cuando se presentan              | Alta       | Alta      |
+| Buscar información en internet sobre problemas        | Media      | Media     |
+| Verificar el estado básico de la moto antes de usarla | Alta       | Media     |
 
 #### 2.3.3. Empathy Mapping
 
+En esta sección se presentan los Empathy Mapping por cada segmento objetivo definido.
+
+**1. Segmento 1: Mecánico de Motocicletas**
+
+![Empathy Map Mecánico](assets/images/needfinding/empathy-1.png)
+
+**2. Segmento 2: Propietarios de Motocicletas**
+
+![Empathy Map Propietario](assets/images/needfinding/empathy-2.png)
+
 #### 2.3.4. As-is Scenario Mapping
+
+En esta sección se presentan los As-Is Scenario Mapping por cada segmento objetivo definido.
+
+**1. Segmento 1: Mecánico de Motocicletas**
+
+**Escenario actual (As-Is): Diagnóstico reactivo en taller**
+
+| Etapa                       | Acción del usuario (Mecánico)                           | Pensamientos                            | Puntos de dolor                                 |
+| --------------------------- | ------------------------------------------------------- | --------------------------------------- | ----------------------------------------------- |
+| Recepción del cliente       | Recibe al cliente con la motocicleta averiada           | “Necesito entender qué le pasó”         | Información incompleta o poco clara del cliente |
+| Recopilación de información | Pregunta al cliente sobre síntomas y antecedentes       | “Dependo de lo que recuerde el cliente” | Falta de historial técnico confiable            |
+| Inspección manual           | Revisa visual y físicamente distintas partes de la moto | “Podría ser varias cosas”               | Diagnóstico lento y poco preciso                |
+| Pruebas y descarte          | Realiza pruebas para identificar la falla               | “Espero no equivocarme”                 | Tiempo elevado y posibilidad de error           |
+| Identificación del problema | Determina la posible causa de la falla                  | “Finalmente encontré el problema”       | Proceso ineficiente y no escalable              |
+| Reparación                  | Procede con la reparación                               | “Esto pudo evitarse antes”              | Trabajo reactivo en lugar de preventivo         |
+| Entrega del vehículo        | Explica al cliente lo ocurrido                          | “Ojalá regrese para mantenimiento”      | Baja fidelización del cliente                   |
+
+
+**2. Segmento 2: Propietarios de Motocicletas**
+
+Escenario actual (As-Is): Uso cotidiano sin monitoreo del vehículo
+
+| Etapa                 | Acción del usuario (Propietario)        | Pensamientos                 | Puntos de dolor                                   |
+| --------------------- | --------------------------------------- | ---------------------------- | ------------------------------------------------- |
+| Uso diario            | Utiliza la motocicleta para movilizarse | “Todo parece estar bien”     | Falta de visibilidad del estado real del vehículo |
+| Aparición de señales  | Nota ruidos o comportamientos extraños  | “¿Será grave?”               | Incertidumbre y falta de conocimiento técnico     |
+| Ignorar o postergar   | Decide seguir usando la moto            | “Lo revisaré después”        | Riesgo de empeorar la falla                       |
+| Falla inesperada      | La moto presenta una avería             | “Esto no lo esperaba”        | Interrupción de actividades                       |
+| Búsqueda de solución  | Busca un mecánico o taller              | “Espero no me cobren de más” | Estrés y desconfianza                             |
+| Diagnóstico en taller | Explica el problema al mecánico         | “No sé bien qué pasó”        | Comunicación imprecisa                            |
+| Pago y reparación     | Paga por la reparación                  | “Fue caro”                   | Costos imprevistos                                |
+| Retoma uso            | Vuelve a usar la moto                   | “Espero no vuelva a pasar”   | No hay prevención futura                          |
+
 
 ### 2.4. Ubiquitous Language
 
@@ -294,6 +371,42 @@ Estos datos reflejan la magnitud del problema y justifican la necesidad de soluc
 ## Capítulo III: Requirements Specification
 
 ### 3.1. To-Be Scenario Mapping
+
+En esta sección se presentan los To-Be Scenario Mapping por cada segmento objetivo definido, mostrando cómo se transforman los escenarios actuales (As-Is) en escenarios futuros (To-Be) gracias a la implementación de la plataforma Octane.
+
+**1. Segmento 1: Mecánico de Motocicletas**
+
+**Escenario futuro (To-Be): Diagnóstico proactivo basado en datos con Octane**
+
+| Etapa                    | Acción del usuario (Mecánico)                         | Pensamientos                                    | Beneficios                                     |
+| ------------------------ | ----------------------------------------------------- | ----------------------------------------------- | ---------------------------------------------- |
+| Acceso a plataforma      | Ingresa al sistema Octane desde web o móvil           | “Tengo toda la información centralizada”        | Acceso inmediato a datos de múltiples clientes |
+| Monitoreo continuo       | Visualiza métricas en tiempo real de las motocicletas | “Puedo detectar problemas antes de que ocurran” | Mantenimiento predictivo                       |
+| Recepción de alertas     | Recibe notificaciones automáticas de posibles fallas  | “Debo contactar al cliente”                     | Reducción de diagnósticos reactivos            |
+| Análisis de datos        | Revisa historial técnico y patrones del vehículo      | “Esto ya ha pasado antes”                       | Diagnóstico más preciso y rápido               |
+| Comunicación con cliente | Notifica al cliente sobre mantenimiento preventivo    | “Le ofrezco un mejor servicio”                  | Mejora en la relación y confianza              |
+| Programación de servicio | Agenda mantenimiento antes de la falla                | “Optimizo mi tiempo y recursos”                 | Mayor eficiencia operativa                     |
+| Intervención técnica     | Realiza mantenimiento basado en datos concretos       | “Trabajo con certeza”                           | Reducción de errores                           |
+| Seguimiento              | Registra intervención en el historial digital         | “Todo queda documentado”                        | Trazabilidad completa                          |
+| Fidelización             | Mantiene contacto continuo con el cliente             | “Tengo clientes recurrentes”                    | Incremento en retención                        |
+
+
+**2. Segmento 2: Propietarios de Motocicletas**
+
+**Escenario futuro (To-Be): Uso inteligente y monitoreo continuo con Octane**
+
+| Etapa                    | Acción del usuario (Propietario)                     | Pensamientos                             | Beneficios                            |
+| ------------------------ | ---------------------------------------------------- | ---------------------------------------- | ------------------------------------- |
+| Uso diario               | Conduce su motocicleta con el dispositivo IoT activo | “Sé que mi moto está siendo monitoreada” | Tranquilidad y control                |
+| Visualización en app     | Consulta métricas en tiempo real desde su smartphone | “Todo está en orden”                     | Transparencia del estado del vehículo |
+| Recepción de alertas     | Recibe notificaciones ante anomalías                 | “Debo revisarlo antes que empeore”       | Prevención de fallas                  |
+| Consulta de historial    | Accede al historial técnico digital                  | “Entiendo mejor mi moto”                 | Mayor conocimiento del vehículo       |
+| Contacto con mecánico    | Recibe recomendaciones del taller                    | “Confío en este servicio”                | Comunicación directa y efectiva       |
+| Agendamiento             | Programa mantenimiento desde la app                  | “Es rápido y sencillo”                   | Comodidad                             |
+| Mantenimiento preventivo | Lleva la moto antes de que falle                     | “Evité un problema mayor”                | Reducción de costos                   |
+| Seguimiento              | Recibe reportes post-servicio                        | “Sé exactamente qué se hizo”             | Transparencia total                   |
+| Uso continuo             | Continúa utilizando la moto con monitoreo activo     | “Tengo control constante”                | Seguridad y confianza                 |
+
 
 ### 3.2. User Stories
 
