@@ -312,6 +312,16 @@ En esta sección se presenta la User Task Matrix, herramienta que permite identi
 
 #### 2.3.3. Empathy Mapping
 
+En esta sección se presentan los Empathy Mapping por cada segmento objetivo definido.
+
+**1. Segmento 1: Mecánico de Motocicletas**
+
+![Empathy Map Mecánico](assets/images/needfinding/empathy-1.png)
+
+**2. Segmento 2: Propietarios de Motocicletas**
+
+![Empathy Map Propietario](assets/images/needfinding/empathy-2.png)
+
 #### 2.3.4. As-is Scenario Mapping
 
 ### 2.4. Ubiquitous Language
