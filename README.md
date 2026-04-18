@@ -282,6 +282,35 @@ Estos datos reflejan la magnitud del problema y justifican la necesidad de soluc
 
 ### 1.3. Segmentos objetivo
 
+**Segmento Objetivo #1:**
+Grupo conformado por personas que usan motos con su principal medio de transporte. Ellos necesitan del vehículo para movilizarse hacia sus trabajos, estudios, actividades sociales, delivery, entre otros.  Son usuarios interesados en mantener la eficiencia presente en su moto, reducir la recepción de costos imprevistos, y monitorear el estado del vehículo con la idea de mantener seguro al conductor.
+
+- Características clave:
+  - Edad: 18 a 45 años
+  - Género: Ambos
+  - Contexto: Movilización frecuente a diversos lugares (trabajo, estudio, servicios de entrega, actividades sociales).
+  - Ocupación: Estudiantes universitarios, trabajadores formales/informales, repartidores, jóvenes profesionales.
+  - Uso de tecnología: Usuarios activos de smartphones que utilizan aplicaciones móviles a diario.
+- Necesidades:
+  - Monitorear el consumo de gasolina.
+  - Mantener la eficiencia del vehículo.
+  - Prevenir fallas con alertas de mantenimiento.
+  - Tener a mano un historial de mantenimiento
+
+**Segmento Objetivo #2:**
+Grupo conformado por profesionales independientes con pequeños talleres. Ellos ofrecen servicios de reparación y mantenimiento de motocicletas. Son usuarios que requieren de herramientas que les permitan ofrecer diagnósticos más precisos y gestionar mejor la relación con sus clientes, a fin de mejorar la confianza y fidelización.
+
+- Características clave:
+  - Edad: 25 a 60 años
+  - Género: Ambos
+  - Contexto: Laburo en talleres de servicio mecánico, tanto formales como independientes.
+  - Ocupación: Mecánicos, técnicos de motos, dueños de talleres pequeños o medianos.
+  - Uso de tecnología: Software de gestión básica, con apoyo en WhatsApp y/o afines para coordinar con clientes.
+- Necesidades:
+  - Acceder a métricas objetivas del estado de la moto.
+  - Emitir reportes de salud y diagnósticos comparativos según la moto.
+  - Consultar el historial de reparaciones previas de la moto.
+  - Recordar y planificar mantenimientos preventivos.
 
 ## Capítulo II: Requirements Elicitation & Analysis
 
