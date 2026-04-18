@@ -89,6 +89,27 @@
     - [3.2. User Stories](#32-user-stories)
     - [3.3. Impact Mapping](#33-impact-mapping)
     - [3.4. Product Backlog](#34-product-backlog)
+  - [Capítulo IV: Strategic-Level Software Design](#capítulo-iv-strategic-level-software-design)
+    - [4.1. Strategic-Level Attribute-Driven Design](#41-strategic-level-attribute-driven-design)
+      - [4.1.1. Design Purpose](#411-design-purpose)
+      - [4.1.2. Attribute-Driven Design Inputs](#412-attribute-driven-design-inputs)
+        - [4.1.2.1. Primary Functionality (Primary User Stories)](#4121-primary-functionality-primary-user-stories)
+        - [4.1.2.2. Quality Attribute Scenarios](#4122-quality-attribute-scenarios)
+        - [4.1.2.3. Constraints](#4123-constraints)
+      - [4.1.3. Architectural Drivers Backlog](#413-architectural-drivers-backlog)
+      - [4.1.4. Architectural Design Decisions](#414-architectural-design-decisions)
+      - [4.1.5. Quality Attribute Scenario Refinements](#415-quality-attribute-scenario-refinements)
+    - [4.2. Strategic-Level Domain-Driven Design](#42-strategic-level-domain-driven-design)
+      - [4.2.1. EventStorming](#421-eventstorming)
+      - [4.2.2. Candidate Context Discovery](#422-candidate-context-discovery)
+      - [4.2.3. Domain Message Flows Modeling](#423-domain-message-flows-modeling)
+      - [4.2.4. Bounded Context Canvases](#424-bounded-context-canvases)
+      - [4.2.5. Context Mapping](#425-context-mapping)
+    - [4.3. Software Architecture](#43-software-architecture)
+      - [4.3.1. Software Architecture System Landscape Diagram](#431-software-architecture-system-landscape-diagram)
+      - [4.3.2. Software Architecture Context Level Diagrams](#432-software-architecture-context-level-diagrams)
+      - [4.3.3. Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)
+      - [4.3.4. Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)
 
 
 # Student Outcome
@@ -486,57 +507,101 @@ User Stories:
 ### 3.4. Product Backlog
 
 
-Prioridad | Story ID | Título | Descripción | Story Points
-----------|----------|--------|-------------|-------------
-1 | US-005 | Autenticación en la aplicación web | Autenticarse para interactuar con datos de usuario. | 3
-2 | US-004 | Creación de perfil para mecánicos | Registro de mecánicos con selección de suscripción. | 5
-3 | US-003 | Creación de perfil para motociclistas | Registro de motociclistas vinculado a un mecánico. | 5
-4 | US-034 | Integrar sensores con ModestIoT | Integración de hardware usando la librería OctaneDevice. | 8
-5 | US-035 | Arquitectura basada en eventos | Lógica de hardware desacoplada mediante eventos. | 5
-6 | TS-001 | Uso de polling para detección | Mecanismo de lectura periódica de sensores. | 5
-7 | US-028 | Monitorear la temperatura de la moto | Medición y detección de sobrecalentamiento. | 3
-8 | US-031 | Monitorear la presión de las llantas | Medición de presión en hPa y alertas de niveles. | 3
-9 | US-015 | Alerta de Impacto Detectado | Notificación de colisión o golpe en la moto. | 3
-10 | US-032 | Visualizar el estado general de la moto | Dashboard en tiempo real con todos los sensores. | 5
-11 | US-001 | Manejo de asignaciones | Mecánico genera y gestiona códigos de vinculación. | 5
-12 | US-002 | Vinculación de asignación | Dueño se vincula al mecánico mediante código. | 3
-13 | US-018 | Gestión del progreso del mantenimiento | Mecánico actualiza estados y asocia gastos. | 5
-14 | US-017 | Gestión de mantenimientos del dueño | Visualización detallada de servicios por vehículo. | 5
-15 | TS-005 | Registro de métricas en memoria local | Persistencia de datos en el dispositivo sin conexión. | 5
-16 | TS-006 | Sincronización de datos | Transferencia de datos local-app al conectar. | 8
-17 | TS-007 | Integración con framework IoT | Envío de datos a la nube para reportes remotos. | 8
-18 | US-006 | Sistema de notificaciones interno | Consulta de estado y alertas de vehículos. | 3
-19 | US-026 | Registro de Vehículo | Formulario de registro de motos por el dueño. | 3
-20 | US-029 | Monitorear contaminación (CO2, etc) | Medición de gases en tubo de escape y alertas. | 3
-21 | US-030 | Detectar impactos estacionado | Monitoreo de seguridad con moto apagada. | 3
-22 | US-033 | Sección de métricas por vehículo | Historial de telemetría individual para el mecánico. | 5
-23 | US-016 | Gestión de Gastos | Registro, vista y eliminación de costos operativos. | 5
-24 | US-007 | Alerta de Temperatura Alta | Notificación por superar umbral máximo. | 1
-25 | US-008 | Alerta de Temperatura Baja | Notificación por estar bajo el umbral mínimo. | 1
-26 | US-009 | Alerta de Humedad Alta | Notificación por humedad excesiva. | 1
-27 | US-010 | Alerta de CO2 Alto | Notificación por niveles peligrosos de CO2. | 1
-28 | US-011 | Alerta de NH3 Alto | Notificación por niveles peligrosos de NH3. | 1
-29 | US-012 | Alerta de Benceno Alto | Notificación por niveles peligrosos de Benceno. | 1
-30 | US-013 | Alerta de Presión Baja | Notificación preventiva de presión de aire. | 1
-31 | US-014 | Alerta de Presión Alta | Notificación preventiva de presión de aire. | 1
-32 | US-019 | Comparación de vehículos (Motociclista) | Comparar moto propia vs modelos de BD. | 8
-33 | US-020 | Comparación de modelos (Mecánico) | Herramienta de análisis para recomendar clientes. | 5
-34 | US-021 | Evaluación por escenarios de uso | Puntuaciones por estrellas (tráfico, viajes, etc). | 3
-35 | US-022 | Visualización de especificaciones | Tabla técnica comparativa detallada. | 3
-36 | US-023 | Resumen comparativo con IA | Generación de narrativa mediante LLM. | 8
-37 | US-027 | Exportación de reporte técnico | Descarga de especificaciones en formato CSV. | 3
-38 | US-024 | Visualización de vehículos | Lista de motos registradas del dueño. | 2
-39 | US-025 | Visualización de detalles de vehículo | Ficha técnica completa de la moto. | 2
-40 | US-036 | Escalabilidad del sistema | Capacidad de añadir sensores sin cambiar base. | 5
-41 | TS-002 | Lectura sensor presión (Técnica) | Refinamiento de precisión PSI y timestamps. | 2
-42 | TS-003 | Lectura sensor temperatura (Técnica) | Refinamiento de precisión grados Celsius. | 2
-43 | TS-004 | Lectura sensor combustible (Técnica) | Cálculo de L/100km y promedios. | 5
-44 | US-037 | Sección Hero y Call to Action | Landing Page: Introducción y botones de acceso. | 2
-45 | US-038 | Sección de Características | Landing Page: Tarjetas de beneficios del servicio. | 2
-46 | US-039 | Visualización de Planes | Landing Page: Tabla de precios y límites. | 3
-47 | US-040 | Información de Misión y Visión | Landing Page: Propósito y videos de YouTube. | 2
-48 | US-041 | Presentación del Equipo | Landing Page: Perfiles de los desarrolladores. | 2
-49 | US-042 | Navegación Global y Footer | Landing Page: Menú funcional y términos legales. | 2
+| Prioridad | Story ID | Título                                  | Descripción                                              | Story Points |
+|-----------|----------|-----------------------------------------|----------------------------------------------------------|--------------|
+| 1         | US-005   | Autenticación en la aplicación web      | Autenticarse para interactuar con datos de usuario.      | 3            |
+| 2         | US-004   | Creación de perfil para mecánicos       | Registro de mecánicos con selección de suscripción.      | 5            |
+| 3         | US-003   | Creación de perfil para motociclistas   | Registro de motociclistas vinculado a un mecánico.       | 5            |
+| 4         | US-034   | Integrar sensores con ModestIoT         | Integración de hardware usando la librería OctaneDevice. | 8            |
+| 5         | US-035   | Arquitectura basada en eventos          | Lógica de hardware desacoplada mediante eventos.         | 5            |
+| 6         | TS-001   | Uso de polling para detección           | Mecanismo de lectura periódica de sensores.              | 5            |
+| 7         | US-028   | Monitorear la temperatura de la moto    | Medición y detección de sobrecalentamiento.              | 3            |
+| 8         | US-031   | Monitorear la presión de las llantas    | Medición de presión en hPa y alertas de niveles.         | 3            |
+| 9         | US-015   | Alerta de Impacto Detectado             | Notificación de colisión o golpe en la moto.             | 3            |
+| 10        | US-032   | Visualizar el estado general de la moto | Dashboard en tiempo real con todos los sensores.         | 5            |
+| 11        | US-001   | Manejo de asignaciones                  | Mecánico genera y gestiona códigos de vinculación.       | 5            |
+| 12        | US-002   | Vinculación de asignación               | Dueño se vincula al mecánico mediante código.            | 3            |
+| 13        | US-018   | Gestión del progreso del mantenimiento  | Mecánico actualiza estados y asocia gastos.              | 5            |
+| 14        | US-017   | Gestión de mantenimientos del dueño     | Visualización detallada de servicios por vehículo.       | 5            |
+| 15        | TS-005   | Registro de métricas en memoria local   | Persistencia de datos en el dispositivo sin conexión.    | 5            |
+| 16        | TS-006   | Sincronización de datos                 | Transferencia de datos local-app al conectar.            | 8            |
+| 17        | TS-007   | Integración con framework IoT           | Envío de datos a la nube para reportes remotos.          | 8            |
+| 18        | US-006   | Sistema de notificaciones interno       | Consulta de estado y alertas de vehículos.               | 3            |
+| 19        | US-026   | Registro de Vehículo                    | Formulario de registro de motos por el dueño.            | 3            |
+| 20        | US-029   | Monitorear contaminación (CO2, etc)     | Medición de gases en tubo de escape y alertas.           | 3            |
+| 21        | US-030   | Detectar impactos estacionado           | Monitoreo de seguridad con moto apagada.                 | 3            |
+| 22        | US-033   | Sección de métricas por vehículo        | Historial de telemetría individual para el mecánico.     | 5            |
+| 23        | US-016   | Gestión de Gastos                       | Registro, vista y eliminación de costos operativos.      | 5            |
+| 24        | US-007   | Alerta de Temperatura Alta              | Notificación por superar umbral máximo.                  | 1            |
+| 25        | US-008   | Alerta de Temperatura Baja              | Notificación por estar bajo el umbral mínimo.            | 1            |
+| 26        | US-009   | Alerta de Humedad Alta                  | Notificación por humedad excesiva.                       | 1            |
+| 27        | US-010   | Alerta de CO2 Alto                      | Notificación por niveles peligrosos de CO2.              | 1            |
+| 28        | US-011   | Alerta de NH3 Alto                      | Notificación por niveles peligrosos de NH3.              | 1            |
+| 29        | US-012   | Alerta de Benceno Alto                  | Notificación por niveles peligrosos de Benceno.          | 1            |
+| 30        | US-013   | Alerta de Presión Baja                  | Notificación preventiva de presión de aire.              | 1            |
+| 31        | US-014   | Alerta de Presión Alta                  | Notificación preventiva de presión de aire.              | 1            |
+| 32        | US-019   | Comparación de vehículos (Motociclista) | Comparar moto propia vs modelos de BD.                   | 8            |
+| 33        | US-020   | Comparación de modelos (Mecánico)       | Herramienta de análisis para recomendar clientes.        | 5            |
+| 34        | US-021   | Evaluación por escenarios de uso        | Puntuaciones por estrellas (tráfico, viajes, etc).       | 3            |
+| 35        | US-022   | Visualización de especificaciones       | Tabla técnica comparativa detallada.                     | 3            |
+| 36        | US-023   | Resumen comparativo con IA              | Generación de narrativa mediante LLM.                    | 8            |
+| 37        | US-027   | Exportación de reporte técnico          | Descarga de especificaciones en formato CSV.             | 3            |
+| 38        | US-024   | Visualización de vehículos              | Lista de motos registradas del dueño.                    | 2            |
+| 39        | US-025   | Visualización de detalles de vehículo   | Ficha técnica completa de la moto.                       | 2            |
+| 40        | US-036   | Escalabilidad del sistema               | Capacidad de añadir sensores sin cambiar base.           | 5            |
+| 41        | TS-002   | Lectura sensor presión (Técnica)        | Refinamiento de precisión PSI y timestamps.              | 2            |
+| 42        | TS-003   | Lectura sensor temperatura (Técnica)    | Refinamiento de precisión grados Celsius.                | 2            |
+| 43        | TS-004   | Lectura sensor combustible (Técnica)    | Cálculo de L/100km y promedios.                          | 5            |
+| 44        | US-037   | Sección Hero y Call to Action           | Landing Page: Introducción y botones de acceso.          | 2            |
+| 45        | US-038   | Sección de Características              | Landing Page: Tarjetas de beneficios del servicio.       | 2            |
+| 46        | US-039   | Visualización de Planes                 | Landing Page: Tabla de precios y límites.                | 3            |
+| 47        | US-040   | Información de Misión y Visión          | Landing Page: Propósito y videos de YouTube.             | 2            |
+| 48        | US-041   | Presentación del Equipo                 | Landing Page: Perfiles de los desarrolladores.           | 2            |
+| 49        | US-042   | Navegación Global y Footer              | Landing Page: Menú funcional y términos legales.         | 2            |
+
+## Capítulo IV: Strategic-Level Software Design
+
+### 4.1. Strategic-Level Attribute-Driven Design
+
+#### 4.1.1. Design Purpose
+
+#### 4.1.2. Attribute-Driven Design Inputs
+
+##### 4.1.2.1. Primary Functionality (Primary User Stories)
+
+##### 4.1.2.2. Quality Attribute Scenarios
+
+##### 4.1.2.3. Constraints
+
+#### 4.1.3. Architectural Drivers Backlog
+
+#### 4.1.4. Architectural Design Decisions
+
+#### 4.1.5. Quality Attribute Scenario Refinements
+
+
+### 4.2. Strategic-Level Domain-Driven Design
+
+#### 4.2.1. EventStorming
+
+#### 4.2.2. Candidate Context Discovery
+
+#### 4.2.3. Domain Message Flows Modeling
+
+#### 4.2.4. Bounded Context Canvases
+
+#### 4.2.5. Context Mapping
+
+
+### 4.3. Software Architecture
+
+#### 4.3.1. Software Architecture System Landscape Diagram
+
+#### 4.3.2. Software Architecture Context Level Diagrams
+
+#### 4.3.3. Software Architecture Container Level Diagrams
+
+#### 4.3.4. Software Architecture Deployment Diagrams
 
 
 ## Bibliografía
