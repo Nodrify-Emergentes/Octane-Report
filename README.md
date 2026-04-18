@@ -316,9 +316,203 @@ Grupo conformado por profesionales independientes con pequeños talleres. Ellos 
 
 ### 2.1. Competidores
 
+Relacionado a nuestro start-up, hemos identificado a otros competidores en el mercado que ofrecen soluciones similares, aunque con enfoques y características distintas. A continuación, se presenta un análisis competitivo de los principales competidores en el ámbito de la movilidad inteligente y el mantenimiento preventivo de motocicletas:
+
+- Wialon (Gurtam)
+
+![wialon_logo](assets/images/competitors/wialon_logo.png)
+
+Wialon es la plataforma de software insignia de Gurtam, una empresa bielorrusa con más de 20 años en el mercado de telemática e IoT. Está considerada una de las soluciones más versátiles para la gestión de flotas y activos móviles, con más de 4 millones de unidades conectadas en más de 160 países. Wialon funciona bajo un modelo SaaS altamente escalable y soporta más de 3.000 modelos de dispositivos GPS e IoT, lo que permite adaptarse a diferentes necesidades: desde camiones y buses hasta maquinaria pesada o transporte ligero. Entre sus funcionalidades principales destacan el rastreo en tiempo real, generación de informes personalizados, alertas de eventos, gestión de combustible, mantenimiento predictivo y herramientas de integración por API. Su principal fortaleza radica en la gran flexibilidad y ecosistema de partners, lo que lo convierte en una solución preferida para empresas de logística, transporte y operadores de flotas internacionales.
+
+- Fuelio
+
+![fuelio_logo](assets/images/competitors/fuelio_logo.png)
+
+Fuelio es una aplicación móvil enfocada en la gestión del consumo de combustible y el mantenimiento vehicular. Permite a los usuarios registrar de manera sencilla el kilometraje, repostajes, costos asociados y servicios realizados al vehículo, generando estadísticas detalladas sobre rendimiento y gastos. La app ofrece funcionalidades adicionales como localización de estaciones de servicio cercanas, cálculo de consumo por trayecto, y respaldo automático en la nube para mantener los datos seguros y accesibles en múltiples dispositivos. Su propuesta de valor radica en brindar control y transparencia sobre los gastos de movilidad, ayudando tanto a conductores individuales como a pequeños administradores de vehículos a optimizar su presupuesto y hábitos de conducción.
+
+- GeoTab
+
+![geotab_logo](assets/images/competitors/geotab_logo.png)
+
+Geotab, fundada en 2000 en Canadá, es uno de los líderes globales en telemática comercial y gestión de flotas, con más de 3,7 millones de vehículos conectados en más de 150 países. Su propuesta combina el dispositivo IoT Geotab GO9 con la plataforma en la nube MyGeotab, lo que permite a empresas de cualquier tamaño acceder a datos avanzados de sus vehículos. Entre sus principales funcionalidades se incluyen análisis de comportamiento de conducción, diagnóstico de motor, consumo de combustible, planificación de rutas, alertas de mantenimiento, cumplimiento normativo (como ELD en EE.UU.) y reportes personalizados. Además, Geotab cuenta con el Geotab Marketplace, un ecosistema de más de 200 aplicaciones complementarias que amplían las capacidades de la plataforma. Su diferenciador está en la precisión de sus análisis, confiabilidad y enfoque en big data e inteligencia artificial, que permiten a empresas grandes y gobiernos tomar decisiones estratégicas basadas en datos de movilidad.
+
 #### 2.1.1. Análisis competitivo
 
+El análisis competitivo es una herramienta fundamental para comprender el entorno en el que se desarrollará nuestro producto, identificar las fortalezas y debilidades de los competidores, y definir estrategias que nos permitan posicionarnos de manera efectiva en el mercado. A continuación, se presenta un análisis competitivo detallado de Octane frente a sus principales competidores descritos previamente.
+
+<table> 
+  <tr>
+    <th colspan="6"> Competitive Analysis Landscape </th>
+  </tr>
+  <tr>
+    <td colspan="2" rowspan="2">¿Por qué llevar acabo este análisis? </td>
+    <td colspan="4"> Deberíamos llevar a cabo este análisis para conocer el entorno, la competencia, tomar decisiones de desarrollo y construir nuestra propuesta de valor. </td>
+  </tr>
+  <tr>
+    </tr>
+  <tr>
+    <td colspan="2"> Productos </td>
+    <td style="text-align: center;"> <div>Octane</div> </td>
+    <td style="text-align: center;"> <div>Wialon (Gurtam)</div> </td>
+    <td style="text-align: center;"> <div>Fuelio</div> </td>
+    <td style="text-align: center;"> <div>Geotab</div> </td>
+  </tr>
+  <tr>
+    <td rowspan="2">Perfil</td>
+    <td>Overview</td>
+    <td>Octane es una plataforma IoT para motocicletas que conecta mecánicos con clientes, con métricas en tiempo real y alertas preventivas.</td>
+    <td>Wialon es un sistema SaaS de telemática IoT para gestión de vehículos y activos móviles, con GPS y reportes avanzados.</td>
+    <td>Fuelio es una app para rastrear consumo de combustible, costos, kilometraje y servicios, con búsqueda de estaciones y respaldo en la nube.</td>
+    <td>Geotab es un sistema considerado líder global en telemática, con dispositivos IoT y software para análisis de datos vehiculares.</td>
+  </tr>
+  <tr>
+    <td>Ventaja competitiva ¿Qué valor ofrece a los clientes? </td>
+    <td>Tiene un enfoque de nicho: motos + talleres mecánicos. Conexión directa cliente-mecánico mediante suscripción.</td>
+    <td>Amplia cobertura global y flexibilidad de personalización para distintos tipos de flotas.</td>
+    <td>Interfaz sencilla, soporte crowdsourced de precios, recordatorios, sincronización y reportes visuales potentes.</td>
+    <td>Precisión en datos y analítica avanzada, gran reputación en confiabilidad.</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Perfil de Marketing</td>
+    <td>Mercado Objetivo</td>
+    <td>Motociclistas individuales y talleres mecánicos pequeños/medianos.</td>
+    <td>Empresas de logística, transporte y flotas heterogéneas.</td>
+    <td>Conductores particulares y usuarios multi-vehículo que buscan ahorrar en combustible y mantenimiento.</td>
+    <td>Flotas comerciales, gobiernos, corporativos globales.</td>
+  </tr>
+  <tr>
+    <td>Estrategias de Marketing</td>
+    <td>Enfoque B2B2C: atraer talleres como socios y motociclistas vía suscripción.</td>
+    <td>Estrategia B2B, alianzas con distribuidores y partners locales.</td>
+    <td>Se promociona como simple y potente; cuenta con integración de precios crowdsourced, historias de usuarios satisfechos y respaldo de Sygic.</td>
+    <td>Estrategia B2B global, certificaciones y partnerships institucionales.</td>
+  </tr>
+  <tr>
+    <td rowspan="3">Perfil de Producto</td>
+    <td>Productos & Servicios</td>
+    <td>Sensores IoT para motos, app móvil/web para clientes, dashboard para mecánicos, alertas proactivas.</td>
+    <td>Plataforma SaaS con GPS, sensores IoT, informes personalizados.</td>
+    <td>Fill-ups, gastos, recordatorios, estación de gasolina cercana, gráficos, estadísticas, sincronización. Con membresía Pro: planificación de ruta, estimación de costo, filtro estaciones, reporte de ruta.</td>
+    <td>Dispositivos IoT + plataforma de análisis con diagnósticos y mantenimiento predictivo.</td>
+  </tr>
+  <tr>
+    <td>Precios & Costos</td>
+    <td>Modelo de suscripción mensual accesible (B2C) + paquetes premium para talleres.</td>
+    <td>Licencias SaaS escalables, costos variables por flota.</td>
+    <td>Gratuito, Fuelio Pro en Android es suscripción (€7 - €9) sin afectar funciones gratuitas.</td>
+    <td>Suscripción SaaS + costo de dispositivos IoT (moderado/alto).</td>
+  </tr>
+  <tr>
+    <td>Canales de distribución</td>
+    <td>App móvil (Android), web, talleres como canales de adquisición.</td>
+    <td>Red de partners y distribuidores en más de 150 países.</td>
+    <td>Android & iOS.</td>
+    <td>Red global de resellers y partners certificados.</td>
+  </tr>
+  <tr>
+    <td rowspan="5">Análisis SWOT</td>
+  </tr>
+  <tr>
+    <td>Fortalezas</td>
+    <td>Nicho diferenciado, cercanía con usuarios finales, foco en motos.</td>
+    <td>Escalabilidad, robustez y experiencia global.</td>
+    <td>Interfaz amigable, precios crowdsourced, reportes detallados, muchos features gratuitos.</td>
+    <td>Precisión en analítica, confiabilidad, amplia red global.</td>
+  </tr>
+  <tr>
+    <td>Debilidades</td>
+    <td>Proyecto no conocido, sin marca consolidada, recursos limitados.</td>
+    <td>No especializado en motos, alto costo para pequeños talleres.</td>
+    <td>Entrada manual laboriosa, problemas ocasionales de sincronización.</td>
+    <td>Altos costos, pensado para grandes flotas, no para usuarios individuales.</td>
+  </tr>
+  <tr>
+    <td>Oportunidades</td>
+    <td>Mercado creciente de motocicletas en LATAM/Asia, tendencia a IoT y mantenimiento predictivo.</td>
+    <td>Expansión en verticales nuevos como motos y microflotas.</td>
+    <td>Expandir trip logging, entradas automáticas, soporte ampliado en iOS.</td>
+    <td>Penetración en mercados emergentes y nuevas integraciones IoT.</td>
+  </tr>
+  <tr>
+    <td>Amenazas</td>
+    <td>Ingreso de grandes players al nicho, barreras de hardware.</td>
+    <td>Competencia creciente y commoditización de la telemática.</td>
+    <td>Cambios en licenciamiento por Sygic; apps emergentes con mejor UX o IA predictiva.</td>
+    <td>Alta competencia y presión por diferenciación.</td>
+  </tr>
+</table>
+
 #### 2.1.2. Estrategias y tácticas frente a competidores
+
+Para poder destacar un producto en un mercado competitivo, es fundamental implementar estrategias que resalten las fortalezas y aborden las debilidades de los competidores. De esta manera, proponemos estrategias y tácticas específicas para posicionar a Octane como la solución preferida para motociclistas y talleres mecánicos.
+
+**Estrategia #1: Diferenciación Tecnológica (IoT + Diagnósticos Predictivos)**
+
+*Objetivo:* Posicionar a Octane como la primera solución que integra hardware IoT y software para ofrecer métricas automáticas en tiempo real y diagnósticos predictivos, superando la limitación de registros manuales en Drivvo, aCar y Fuelio.
+
+*Tácticas:*
+- Desarrollar un dispositivo IoT plug & play que se instale fácilmente en motos urbanas.
+- Integrar algoritmos de mantenimiento predictivo basados en telemetría.
+- Generar reportes personalizados descargables para usuarios y mecánicos.
+- Comunicar en marketing el diferencial clave: “No registres datos, deja que tu moto hable por ti”.
+
+**Estrategia #2: Enfoque en Nichos Desatendidos (Motos Urbanas + Mecánicos)**
+
+*Objetivo:* Atacar un mercado poco atendido: motociclistas urbanos y talleres mecánicos, en contraste con las apps competidoras que se enfocan en autos y flotas.
+
+*Tácticas:*
+- Ofrecer funcionalidades específicas para motos (ej. control de gasolina por cilindrada, alertas de aceite, historial de mantenimientos por kilometraje).
+- Crear una app web exclusiva para mecánicos, con comparativos por modelo y gestión de clientes.
+- Establecer alianzas con talleres locales y concesionarios de motos para distribución del IoT.
+- Campañas de marketing dirigidas a delivery riders, mototaxistas y jóvenes motociclistas urbanos.
+
+**Estrategia #3: Marca Cercana y Comunitaria**
+
+*Objetivo:* Construir confianza mostrando a Octane como una solución hecha por y para motociclistas y mecánicos, en lugar de una app genérica de gastos.
+
+*Tácticas:*
+- Crear una comunidad digital de motociclistas, con foros y tips de mecánica preventiva.
+- Usar un lenguaje simple y cercano, evitando tecnicismos innecesarios.
+- Brindar soporte personalizado (ej. chat directo, FAQs en video, tutoriales cortos en redes).
+- Generar contenido educativo sobre seguridad, ahorro de combustible y mantenimiento inteligente.
+
+**Estrategia #4: Precio Accesible y Transparente**
+
+*Objetivo:* Superar la percepción negativa de Drivvo (suscripción costosa) y Fuelio Pro (costo adicional), ofreciendo planes claros y económicos.
+
+*Tácticas:*
+- Modelo freemium real: funcionalidades básicas siempre gratuitas (seguimiento de consumo y alertas).
+- Plan Premium accesible (<$2/mes) con reportes predictivos, diagnósticos avanzados y sincronización completa.
+- Precio del dispositivo IoT asequible (ej. $30–40) con facilidades de pago en talleres.
+- Descuentos especiales para mecánicos que adquieran múltiples dispositivos para sus clientes.
+
+**Estrategia #5: Diferenciación por Especialización en Motocicletas**
+
+*Objetivo:* Posicionar la solución como un producto diseñado específicamente para motocicletas y talleres mecánicos, en contraste con los competidores que se orientan a flotas grandes y heterogéneas (Wialon, Geotab).
+
+*Tácticas:*
+- Desarrollar una interfaz amigable y personalizada para mecánicos y motociclistas.
+- Ofrecer funcionalidades exclusivas para motos (ej. alertas de mantenimiento de cadena, aceite, frenos).
+- Construir una narrativa de marca clara: “la telemática de las motos”.
+- Enfocar el marketing en la relación directa entre mecánico y cliente.
+
+**Estrategia #6: Accesibilidad y Flexibilidad en el Modelo de Negocio**
+
+*Objetivo:* Competir contra grandes competidores (Wialon, Samsara, Geotab) ofreciendo un producto más accesible, económico y fácil de implementar, enfocado en usuarios individuales y talleres pequeños.
+
+*Tácticas:*
+- Diseñar planes de suscripción escalonados (desde básicos hasta avanzados) que permitan crecer al ritmo del usuario.
+- Incluir un modelo freemium o demo para captar usuarios rápidamente sin barreras de entrada.
+- Resaltar la facilidad de instalación de sensores IoT en motos, evitando hardware costoso o complejo.
+
+**Estrategia #7: Cercanía y Comunidad con el Usuario Final**
+
+*Objetivo:* Diferenciarse por la relación directa y de confianza entre motociclistas y mecánicos, creando una comunidad alrededor del producto que los competidores globales no priorizan.
+
+*Tácticas:*
+- Lanzar campañas de marketing en comunidades locales (Facebook, Instagram, clubes de motociclistas, foros especializados).
+- Promover talleres mecánicos como socios estratégicos para captar clientes y distribuir el IoT.
+- Desarrollar integraciones futuras con aseguradoras o talleres certificados, ofreciendo beneficios adicionales (ej. descuentos en seguros, paquetes de mantenimiento).
 
 ### 2.2. Entrevistas
 
