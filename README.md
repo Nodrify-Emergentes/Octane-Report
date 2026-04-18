@@ -840,16 +840,43 @@ User Stories:
 
 ### 4.3. Software Architecture
 
+Se define la arquitectura del sistema Octane bajo un enfoque de Monolito Modular, el cual permite una gestión centralizada del despliegue sin sacrificar la organización interna. La estructura lógica se rige por una Layered Architecture (Arquitectura de Capas) que separa las responsabilidades en Interfaces, Aplicación, Dominio e Infraestructura.
+
+Para gestionar la complejidad del negocio de telemetría y mantenimiento, se aplica la metodología DDD (Domain-Driven Design) mediante la identificación de Bounded Contexts. Asimismo, se implementa el patrón CQRS para segregar las operaciones de lectura y escritura, optimizando el rendimiento de los datos de sensores, y una ACL (Anti-Corruption Layer) que protege el núcleo del sistema de las variaciones técnicas del hardware IoT y servicios externos. Todo esto se documenta visualmente mediante el Modelo C4, garantizando una trazabilidad técnica desde el contexto global hasta el despliegue físico.
+
 #### 4.3.1. Software Architecture System Landscape Diagram
+
+En este nivel se describe la visión global de la organización Nodrify. El diagrama representa cómo el sistema Octane coexiste con otros sistemas internos y externos, definiendo el ecosistema completo y las interacciones de alto nivel entre los actores principales y los límites de la empresa.
+
+
+![system-landscape](assets\images\chapter-4\software-architecture\system-landscape-keys.png)
+![system-landscape-keys](assets\images\chapter-4\software-architecture\system-landscape.png)
 
 #### 4.3.2. Software Architecture Context Level Diagrams
 
+Este punto detalla el Sistema Octane como una caja negra, centrándose exclusivamente en sus fronteras inmediatas. Describe las relaciones directas de datos y comunicación entre el sistema, los usuarios (Motociclistas y Mecánicos) y las dependencias externas críticas como el hardware IoT y el motor de IA.
+
+![context-diagram](assets\images\chapter-4\software-architecture\context-diagram.png)
+![context-diagram-keys](assets\images\chapter-4\software-architecture\context-diagram-keys.png)
+
 #### 4.3.3. Software Architecture Container Level Diagrams
 
+Aquí se desglosa la aplicación en sus unidades de ejecución o contenedores. Se identifican las aplicaciones móviles, la plataforma web, el API Monolítica Modular y la base de datos, especificando las tecnologías utilizadas (Spring Boot, React, Flutter, PostgreSQL) y los protocolos de comunicación entre ellos.
+
+![container-diagram](assets\images\chapter-4\software-architecture\container-diagram.png)
+![container-diagram-keys](assets\images\chapter-4\software-architecture\container-diagram-keys.png)
+
 #### 4.3.4. Software Architecture Deployment Diagrams
+
+Este diagrama describe la distribución física y la infraestructura de nube de la solución. Detalla dónde se alojan los contenedores en entornos reales de producción, incluyendo el despliegue del frontend en Vercel, el backend y base de datos en Render, la distribución móvil en Firebase y el hardware embebido en el microcontrolador de la motocicleta.
+
+![deployment-diagram](assets\images\chapter-4\software-architecture\deployment-diagram.png)
+![deployment-diagram-keys](assets\images\chapter-4\software-architecture\deployment-diagram-keys.png)
 
 
 ## Bibliografía
 
 Freitas, M. C. (2025, 19 de julio). Lima registra 1.668 muertes por accidentes de tránsito en lo que va del 2025: motociclistas lideran víctimas, según el MTC. Infobae. https://www.infobae.com/peru/2025/07/19/lima-registra-1668-muertes-por-accidentes-de-transito-en-lo-que-va-del-2025-motociclistas-lideran-victimas-segun-el-mtc/
+
+Bool.dev. (2023, 10 de octubre). Top 10 software architecture styles. Bool.dev. https://bool.dev/blog/detail/top10-software-architecture-styles
 
