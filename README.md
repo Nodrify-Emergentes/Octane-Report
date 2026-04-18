@@ -332,6 +332,108 @@ Geotab, fundada en 2000 en Canadá, es uno de los líderes globales en telemáti
 
 #### 2.1.1. Análisis competitivo
 
+<table> 
+  <tr>
+    <th colspan="6"> Competitive Analysis Landscape </th>
+  </tr>
+  <tr>
+    <td colspan="2" rowspan="2">¿Por qué llevar acabo este análisis? </td>
+    <td colspan="4"> Deberíamos llevar a cabo este análisis para conocer el entorno, la competencia, tomar decisiones de desarrollo y construir nuestra propuesta de valor. </td>
+  </tr>
+  <tr>
+    </tr>
+  <tr>
+    <td colspan="2"> Productos </td>
+    <td style="text-align: center;"> <div>Octane</div> <img src="./images/chapter-2/synhub.png" alt="octane-logo" width="200"/> </td>
+    <td style="text-align: center;"> <div>Wialon (Gurtam)</div> <img src="./images/chapter-2/asana.jpg" alt="wialon-logo" width="200"/> </td>
+    <td style="text-align: center;"> <div>Fuelio</div> <img src="./images/chapter-2/FamilyWall.png" alt="fuelio-logo" width="200"/> </td>
+    <td style="text-align: center;"> <div>Geotab</div> <img src="./images/chapter-2/clickup.jpg" alt="geotab-logo" width="200"/> </td>
+  </tr>
+  <tr>
+    <td rowspan="2">Perfil</td>
+    <td>Overview</td>
+    <td>Octane es una plataforma IoT para motocicletas que conecta mecánicos con clientes, con métricas en tiempo real y alertas preventivas.</td>
+    <td>Wialon es un sistema SaaS de telemática IoT para gestión de vehículos y activos móviles, con GPS y reportes avanzados.</td>
+    <td>Fuelio es una app para rastrear consumo de combustible, costos, kilometraje y servicios, con búsqueda de estaciones y respaldo en la nube.</td>
+    <td>Geotab es un sistema considerado líder global en telemática, con dispositivos IoT y software para análisis de datos vehiculares.</td>
+  </tr>
+  <tr>
+    <td>Ventaja competitiva ¿Qué valor ofrece a los clientes? </td>
+    <td>Tiene un enfoque de nicho: motos + talleres mecánicos. Conexión directa cliente-mecánico mediante suscripción.</td>
+    <td>Amplia cobertura global y flexibilidad de personalización para distintos tipos de flotas.</td>
+    <td>Interfaz sencilla, soporte crowdsourced de precios, recordatorios, sincronización y reportes visuales potentes.</td>
+    <td>Precisión en datos y analítica avanzada, gran reputación en confiabilidad.</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Perfil de Marketing</td>
+    <td>Mercado Objetivo</td>
+    <td>Motociclistas individuales y talleres mecánicos pequeños/medianos.</td>
+    <td>Empresas de logística, transporte y flotas heterogéneas.</td>
+    <td>Conductores particulares y usuarios multi-vehículo que buscan ahorrar en combustible y mantenimiento.</td>
+    <td>Flotas comerciales, gobiernos, corporativos globales.</td>
+  </tr>
+  <tr>
+    <td>Estrategias de Marketing</td>
+    <td>Enfoque B2B2C: atraer talleres como socios y motociclistas vía suscripción.</td>
+    <td>Estrategia B2B, alianzas con distribuidores y partners locales.</td>
+    <td>Se promociona como simple y potente; cuenta con integración de precios crowdsourced, historias de usuarios satisfechos y respaldo de Sygic.</td>
+    <td>Estrategia B2B global, certificaciones y partnerships institucionales.</td>
+  </tr>
+  <tr>
+    <td rowspan="3">Perfil de Producto</td>
+    <td>Productos & Servicios</td>
+    <td>Sensores IoT para motos, app móvil/web para clientes, dashboard para mecánicos, alertas proactivas.</td>
+    <td>Plataforma SaaS con GPS, sensores IoT, informes personalizados.</td>
+    <td>Fill-ups, gastos, recordatorios, estación de gasolina cercana, gráficos, estadísticas, sincronización. Con membresía Pro: planificación de ruta, estimación de costo, filtro estaciones, reporte de ruta.</td>
+    <td>Dispositivos IoT + plataforma de análisis con diagnósticos y mantenimiento predictivo.</td>
+  </tr>
+  <tr>
+    <td>Precios & Costos</td>
+    <td>Modelo de suscripción mensual accesible (B2C) + paquetes premium para talleres.</td>
+    <td>Licencias SaaS escalables, costos variables por flota.</td>
+    <td>Gratuito, Fuelio Pro en Android es suscripción (€7 - €9) sin afectar funciones gratuitas.</td>
+    <td>Suscripción SaaS + costo de dispositivos IoT (moderado/alto).</td>
+  </tr>
+  <tr>
+    <td>Canales de distribución</td>
+    <td>App móvil (Android), web, talleres como canales de adquisición.</td>
+    <td>Red de partners y distribuidores en más de 150 países.</td>
+    <td>Android & iOS.</td>
+    <td>Red global de resellers y partners certificados.</td>
+  </tr>
+  <tr>
+    <td rowspan="5">Análisis SWOT</td>
+  </tr>
+  <tr>
+    <td>Fortalezas</td>
+    <td>Nicho diferenciado, cercanía con usuarios finales, foco en motos.</td>
+    <td>Escalabilidad, robustez y experiencia global.</td>
+    <td>Interfaz amigable, precios crowdsourced, reportes detallados, muchos features gratuitos.</td>
+    <td>Precisión en analítica, confiabilidad, amplia red global.</td>
+  </tr>
+  <tr>
+    <td>Debilidades</td>
+    <td>Proyecto no conocido, sin marca consolidada, recursos limitados.</td>
+    <td>No especializado en motos, alto costo para pequeños talleres.</td>
+    <td>Entrada manual laboriosa, problemas ocasionales de sincronización.</td>
+    <td>Altos costos, pensado para grandes flotas, no para usuarios individuales.</td>
+  </tr>
+  <tr>
+    <td>Oportunidades</td>
+    <td>Mercado creciente de motocicletas en LATAM/Asia, tendencia a IoT y mantenimiento predictivo.</td>
+    <td>Expansión en verticales nuevos como motos y microflotas.</td>
+    <td>Expandir trip logging, entradas automáticas, soporte ampliado en iOS.</td>
+    <td>Penetración en mercados emergentes y nuevas integraciones IoT.</td>
+  </tr>
+  <tr>
+    <td>Amenazas</td>
+    <td>Ingreso de grandes players al nicho, barreras de hardware.</td>
+    <td>Competencia creciente y commoditización de la telemática.</td>
+    <td>Cambios en licenciamiento por Sygic; apps emergentes con mejor UX o IA predictiva.</td>
+    <td>Alta competencia y presión por diferenciación.</td>
+  </tr>
+</table>
+
 #### 2.1.2. Estrategias y tácticas frente a competidores
 
 ### 2.2. Entrevistas
