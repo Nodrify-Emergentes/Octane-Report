@@ -332,6 +332,8 @@ Geotab, fundada en 2000 en Canadá, es uno de los líderes globales en telemáti
 
 #### 2.1.1. Análisis competitivo
 
+El análisis competitivo es una herramienta fundamental para comprender el entorno en el que se desarrollará nuestro producto, identificar las fortalezas y debilidades de los competidores, y definir estrategias que nos permitan posicionarnos de manera efectiva en el mercado. A continuación, se presenta un análisis competitivo detallado de Octane frente a sus principales competidores descritos previamente.
+
 <table> 
   <tr>
     <th colspan="6"> Competitive Analysis Landscape </th>
@@ -435,6 +437,8 @@ Geotab, fundada en 2000 en Canadá, es uno de los líderes globales en telemáti
 </table>
 
 #### 2.1.2. Estrategias y tácticas frente a competidores
+
+Para poder destacar un producto en un mercado competitivo, es fundamental implementar estrategias que resalten las fortalezas y aborden las debilidades de los competidores. De esta manera, proponemos estrategias y tácticas específicas para posicionar a Octane como la solución preferida para motociclistas y talleres mecánicos.
 
 **Estrategia #1: Diferenciación Tecnológica (IoT + Diagnósticos Predictivos)**
 
