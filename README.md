@@ -809,14 +809,59 @@ User Stories:
 ### 4.1. Strategic-Level Attribute-Driven Design
 
 #### 4.1.1. Design Purpose
+En esta sección se redacta la explicación del propósito del proceso de diseño de la solución, evidenciando la relación con la problemática identificada y su orientación a satisfacer las necesidades de los segmentos objetivo y el negocio.
+
+El propósito del diseño de Octane es el de abordar la problemática de la falta de visibilidad y enfoque reactivo en el diagnóstico mecánico de las motocicletas. Tenemos un enfoque centrado en el usuario y orientado al negocio que busca generar valor tanto para los dueños de motocicletas como para los mecánicos. Bajo ese contexto, el diseño se enfoca en los siguientes puntos:
+
+- **Facilitar una Experiencia de Monitoreo Intuitiva y en Tiempo Real**
+
+Se busca ofrecer una experiencia de usuario clara e intuitiva, que permita tanto a los dueños de motocicletas como a los mecánicos acceder a información en tiempo real sobre el estado de los vehículos, con alertas proactivas y un historial detallado de métricas. La interfaz está pensada para mostrar datos de forma simplificada y amigable mediante dashboards, alertas visuales y notificaciones.
+
+- **Habilitar un Mantenimiento Predictivo y Proactivo**
+
+Se busca cambiar el paradigma de mantenimiento de las motocicletas, pasando de un enfoque reactivo a uno predictivo. El diseño se orienta a proporcionar herramientas que permitan anticipar fallas y programar mantenimientos preventivos, basados en datos históricos y análisis de tendencias, para reducir costos y evitar averías inesperadas.
+
+- **Contribuir a la Seguridad y Reducción de Riesgos en la Conducción**
+
+El diseño de la solución también tiene un impacto relevante en la seguridad vial, al proporcionar alertas tempranas sobre condiciones críticas del vehículo (como sobrecalentamiento o presión de llantas) y detectar impactos, lo que puede ayudar a prevenir accidentes y mejorar la seguridad de los motociclistas. Así mismo, el monitoreo continuo del estado del vehículo contribuye a mantenerlo en condiciones óptimas, reduciendo el riesgo de fallas mecánicas durante la conducción.
 
 #### 4.1.2. Attribute-Driven Design Inputs
 
 ##### 4.1.2.1. Primary Functionality (Primary User Stories)
+En esta sección se especifica las User stories que tienen mayor relevancia en términos de
+requisitos funcionales y que tienen impacto sobre la arquitectura de la solución.
+
+| Epic / User Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+|----------------------|--------|-------------|-------------------------|---------------------------|
+|                      |        |             |                         |                           |
+|                      |        |             |                         |                           |
+|                      |        |             |                         |                           |
 
 ##### 4.1.2.2. Quality Attribute Scenarios
+En esta sección se incluye la especificación de la primera versión de los escenarios de atributos de calidad que tienen mayor impacto en la arquitectura de la solución, los cuales sirven de input para el proceso de diseño.
+
+| Atributo | Fuente | Estímulo | Artefacto | Entorno | Respuesta | Medida |
+|----------|--------|----------|-----------|---------|-----------|--------|
+|          |        |          |           |         |           |        |
+
+Scenario:
+
+| Atributo | Fuente | Estímulo | Artefacto | Entorno | Respuesta | Medida |
+|----------|--------|----------|-----------|---------|-----------|--------|
+|          |        |          |           |         |           |        |
+
+Scenario:
+
+| Atributo | Fuente | Estímulo | Artefacto | Entorno | Respuesta | Medida |
+|----------|--------|----------|-----------|---------|-----------|--------|
+|          |        |          |           |         |           |        |
+
+Scenario:
 
 ##### 4.1.2.3. Constraints
+En esta sección se incluye la especificación de restricciones, es decir características que no pueden ser negociadas y son impuestas por el cliente o el propio negocio como guía para la elaboración de la solución.
+
+
 
 #### 4.1.3. Architectural Drivers Backlog
 
