@@ -271,15 +271,24 @@ El impacto de la problemática es considerable y puede observarse en las estadí
 Estos datos reflejan la magnitud del problema y justifican la necesidad de soluciones tecnológicas que promuevan un mantenimiento preventivo y un monitoreo constante del estado del vehículo, permitiendo anticipar fallos críticos que podrían desencadenar accidentes. De este modo, la propuesta de la plataforma Octane contribuye directamente a reducir la incidencia de accidentes asociados a fallas mecánicas y a fortalecer la cultura de prevención entre los motociclistas urbanos.
 
 #### 1.2.2. Lean UX Process
-
 ##### 1.2.2.1. Lean UX Problem Statements
+
+El mantenimiento de motocicletas suele gestionarse bajo un enfoque reactivo, en el que los propietarios no cuentan con información suficiente sobre el estado de su vehículo y los talleres dependen de diagnósticos manuales basados en datos incompletos.
+
+Esta limitación dificulta la detección temprana de fallas, incrementa el riesgo de reparaciones imprevistas y reduce la capacidad de los talleres para ofrecer un servicio preventivo y personalizado.
+
+Octane aborda esta oportunidad mediante una plataforma IoT que permite monitorear el estado de la motocicleta, centralizar el historial de mantenimiento y facilitar la comunicación entre motociclistas y mecánicos.
+
+Nuestro público inicial está conformado por motociclistas urbanos y talleres mecánicos independientes.
+
+Sabremos que la propuesta funciona si se incrementa la programación de mantenimientos preventivos, mejora la retención de usuarios y disminuyen las reparaciones de emergencia durante los primeros meses de uso.
 
 ##### 1.2.2.2. Lean UX Assumptions
 
 ##### 1.2.2.3. Lean UX Hypothesis Statements
 
 ##### 1.2.2.4. Lean UX Canvas
-
+![Lean UX Canvas](assets/images/lean_ux_canvas.jpg)
 ### 1.3. Segmentos objetivo
 
 **Segmento Objetivo #1:**
