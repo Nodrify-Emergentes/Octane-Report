@@ -841,6 +841,8 @@ requisitos funcionales y que tienen impacto sobre la arquitectura de la solució
 ##### 4.1.2.2. Quality Attribute Scenarios
 En esta sección se incluye la especificación de la primera versión de los escenarios de atributos de calidad que tienen mayor impacto en la arquitectura de la solución, los cuales sirven de input para el proceso de diseño.
 
+Los atributos de calidad seleccionados para el diseño de Octane son Performance (Rendimiento), Availability (Disponibilidad), Scalability (Escalabilidad), Security (Seguridad) y Usability (Usabilidad). A continuación se detallan los escenarios para cada uno de estos atributos:
+
 | Atributo                      | Fuente                    | Estímulo                                     | Artefacto                 | Entorno                                                  | Respuesta                                                                       | Medida                                                         |
 |-------------------------------|---------------------------|----------------------------------------------|---------------------------|----------------------------------------------------------|---------------------------------------------------------------------------------|----------------------------------------------------------------|
 | **Performance (Rendimiento)** | Dispositivo IoT / Usuario | Envío continuo de métricas de la motocicleta | Backend + API + App móvil | Operación normal (uso en tiempo real durante conducción) | El sistema procesa, almacena y muestra las métricas en el dashboard del usuario | Latencia ≤ 2 segundos en visualización de datos en tiempo real |
