@@ -829,6 +829,62 @@ User Stories:
 
 #### 4.2.1. EventStorming
 
+En esta sección se expone y fundamenta el proceso de EventStorming llevado a cabo por el equipo, con el propósito de construir una primera aproximación al modelado general del dominio del problema. Esta técnica, centrada en la identificación de eventos relevantes dentro del sistema, permite capturar el conocimiento colectivo de los participantes y detonar conversaciones clave sobre el comportamiento esperado del sistema en distintos escenarios.
+
+La sesión fue organizada estratégicamente con una duración de entre una a dos horas. Durante esta actividad, se emplearon post-its digitales para representar eventos y comandos lo que facilitó una exploración visual e iterativa del flujo de trabajo.
+
+Enlace al Miro: https://miro.com/app/board/uXjVHfnGurU=/?share_link_id=913265196477
+
+**Step 1: Unstructured Exploration**
+
+Se inicia con una lluvia de ideas sin restricciones, donde los participantes colocan post-its con eventos, comandos y cualquier elemento relevante que consideren parte del dominio. En esta fase se busca fomentar la creatividad y la libre expresión de conceptos sin preocuparse por la organización o la precisión.
+![Step-1](assets/images/chapter-4/eventstorming/step-1.jpg)
+
+**Step 2: Timelines**
+
+Una vez que se han identificado varios eventos, se procede a organizarlos en una línea de tiempo. Esto ayuda a visualizar la secuencia de eventos y cómo interactúan entre sí a lo largo del tiempo, permitiendo detectar dependencias y relaciones causales.
+![Step-2](assets/images/chapter-4/eventstorming/step-2.jpg)
+
+**Step 3: Pain Points**
+
+En esta etapa, se identifican los puntos de dolor o áreas problemáticas dentro del flujo de eventos. Esto puede incluir eventos que generan confusión, áreas donde se anticipan dificultades técnicas o procesos que podrían beneficiarse de una mayor claridad o simplificación.
+![Step-3](assets/images/chapter-4/eventstorming/step-3.jpg)
+
+**Step 4: Pivotal Points**
+
+Aquí se destacan los eventos clave o puntos de inflexión dentro del sistema. Estos son eventos que tienen un impacto significativo en el flujo general y pueden ser críticos para el éxito del sistema.
+![Step-4](assets/images/chapter-4/eventstorming/step-4.jpg)
+
+**Step 5: Commands**
+
+Se identifican los comandos que desencadenan eventos específicos. Esto ayuda a entender qué acciones o decisiones por parte de los usuarios o del sistema provocan ciertos eventos, lo que es crucial para el diseño de la lógica de negocio.
+![Step-5](assets/images/chapter-4/eventstorming/step-5.jpg)
+
+**Step 6: Policies**
+
+Se definen políticas o reglas de negocio que permiten una automatización de ciertos procesos. Estas políticas pueden ser condiciones que deben cumplirse para que ciertos eventos ocurran o reglas que guían el comportamiento del sistema en respuesta a eventos específicos.
+![Step-6](assets/images/chapter-4/eventstorming/step-6.jpg)
+
+**Step 7: Read Models**
+
+Para reconocer qué información se necesita en cada etapa del proceso, se identifican los read models o modelos de lectura. Estos modelos representan las vistas o representaciones de datos que el sistema necesita, proporcionando la información necesaria a un comando.
+![Step-7](assets/images/chapter-4/eventstorming/step-7.jpg)
+
+**Step 8: External Systems**
+
+Se identifican los sistemas externos que interactúan con el sistema en cuestión. Esto es crucial para entender las dependencias externas y cómo el sistema se integra con otros sistemas o servicios.
+![Step-8](assets/images/chapter-4/eventstorming/step-8.jpg)
+
+**Step 9: Aggregates**
+
+Teniendo todos los eventos y comandos representados, se identifican los aggregates o agregados. Estos son grupos de eventos y comandos que están relacionados y pueden ser tratados como una unidad coherente dentro del dominio.
+![Step-9](assets/images/chapter-4/eventstorming/step-9.jpg)
+
+**Step 10: Bounded Contexts**
+
+Finalmente, se identifican los bounded contexts o contextos delimitados. Estos son conjuntos de agregados que representan una funcionalidad estrechamente relacionada, lo que ayuda a definir los límites del sistema y a organizar la lógica de negocio de manera coherente.
+![Step-10](assets/images/chapter-4/eventstorming/step-10.jpg)
+
 #### 4.2.2. Candidate Context Discovery
 
 #### 4.2.3. Domain Message Flows Modeling
