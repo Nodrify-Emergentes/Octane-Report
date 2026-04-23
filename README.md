@@ -31,7 +31,7 @@
 | **Real Calderon Sebatian Omar**           | U20221D964 |
 | **Alejo Cardenas Jose Antonio**           | U202122484 |
 | **Pacheco Astiguetta Sebastian**          | U202110291 |
-| **Russell Stephen Romero Qwistgaard**     |            |
+| **Russell Stephen Romero Qwistgaard**     | U202211043 |
 
 **Abril 2026**
 
@@ -329,7 +329,7 @@ Creemos que la comunicación entre motociclista y taller será más fluida si la
 Creemos que la adopción crecerá si la interfaz reduce fricción y presenta la información de forma clara.
 
 ##### 1.2.2.4. Lean UX Canvas
-![Lean UX Canvas](assets/images/lean_ux_canvas.jpg)
+![Lean UX Canvas](assets/images/chapter-1/lean-ux-process/lean_ux_canvas.jpg)
 ### 1.3. Segmentos objetivo
 
 **Segmento Objetivo #1:**
