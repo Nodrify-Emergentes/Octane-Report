@@ -903,8 +903,24 @@ Para el diseño de Octane, se han identificado las siguientes restricciones que 
 | CON-08        | Persistencia de historial        | El sistema debe almacenar el historial completo de métricas y mantenimientos de cada vehículo.                                      | **Escenario 1:** Dado que se generan nuevas métricas o registros, cuando son procesados, entonces deben almacenarse correctamente en el historial del vehículo.<br><br>**Escenario 2:** Dado que el usuario consulta el historial, cuando accede a la información, entonces debe visualizar datos completos, consistentes y ordenados.                                      | EP-003                    |
 
 #### 4.1.3. Architectural Drivers Backlog
+En esta sección se establece el conjunto de Architectural Drivers que acordados por el equipo, resultado del proceso iterativo en su proceso de Quality Attribute Workshop. El Architectural Drivers Backlog incluye los Functional Drivers seleccionados, los Quality Attribute Drivers seleccionados y todos los Constraints. A continuación se presenta el Architecture Drivers Backlog.
 
-
+| Driver ID | Título del Driver          | Descripción                                                                                  | Importancia para Stakeholders | Impacto en Architecture Technical Complexity |
+|-----------|----------------------------|----------------------------------------------------------------------------------------------|-------------------------------|----------------------------------------------|
+| AD-01     | Rendimiento                | Capacidad del sistema para procesar y mostrar métricas en tiempo real con baja latencia.     | Alta                          | Alta                                         |
+| AD-02     | Integración IoT            | Capacidad de comunicarse eficientemente con dispositivos IoT para la captura de datos.       | Alta                          | Alta                                         |
+| AD-03     | Escalabilidad              | Capacidad de soportar el crecimiento de usuarios y dispositivos sin degradación del sistema. | Alta                          | Alta                                         |
+| AD-04     | Disponibilidad             | Garantizar acceso continuo al sistema en todo momento.                                       | Alta                          | Alta                                         |
+| AD-05     | Seguridad                  | Protección de datos mediante autenticación, autorización y control de acceso.                | Alta                          | Alta                                         |
+| AD-06     | Tolerancia a fallos de red | Capacidad de operar bajo condiciones de conectividad intermitente.                           | Alta                          | Alta                                         |
+| AD-07     | Persistencia de datos      | Almacenamiento confiable y consistente del historial de métricas y mantenimientos.           | Alta                          | Media                                        |
+| AD-08     | Multiplataforma            | Acceso desde dispositivos móviles y web con experiencia consistente.                         | Alta                          | Media                                        |
+| AD-09     | Usabilidad                 | Facilidad de uso e ինտuición para usuarios no técnicos.                                      | Alta                          | Media                                        |
+| AD-10     | Infraestructura en la nube | Uso de servicios cloud para despliegue, escalabilidad y disponibilidad.                      | Media                         | Alta                                         |
+| AD-11     | Optimización de costos     | Minimizar costos de desarrollo, infraestructura y operación.                                 | Alta                          | Media                                        |
+| AD-12     | Alertas proactivas         | Capacidad de generar notificaciones basadas en análisis de datos.                            | Alta                          | Media                                        |
+| AD-13     | Gestión de acceso          | Control de usuarios y roles dentro del sistema.                                              | Media                         | Media                                        |
+| AD-14     | Visualización de datos     | Presentación clara y comprensible de métricas en dashboards.                                 | Alta                          | Baja                                         |
 
 #### 4.1.4. Architectural Design Decisions
 
