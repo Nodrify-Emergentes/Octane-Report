@@ -923,8 +923,137 @@ En esta sección se establece el conjunto de Architectural Drivers que acordados
 | AD-14     | Visualización de datos     | Presentación clara y comprensible de métricas en dashboards.                                 | Alta                          | Baja                                         |
 
 #### 4.1.4. Architectural Design Decisions
+En esta sección el equipo redacta la explicación del proceso siguiendo los Stages del Quality Attribute Workshop, resumiendo para cada iteración, cuáles fueron los Drivers considerados, las tácticas y patrones que se evaluaron y los criterios para llegar sus decisiones de diseño.
 
+El equipo llevó a cabo un proceso iterativo basado en los stages del Quality Attribute Workshop (QAW), con el objetivo de identificar y evaluar decisiones arquitectónicas alineadas a los drivers priorizados.
 
+En una primera iteración, se seleccionaron los drivers de mayor impacto técnico y relevancia para stakeholders, tales como Rendimiento, Integración IoT, Escalabilidad y Disponibilidad. Para estos, se evaluaron patrones orientados a procesamiento en tiempo real, comunicación eficiente y escalabilidad del sistema.
+
+En la segunda iteración, se abordaron drivers relacionados con la resiliencia del sistema, como Tolerancia a fallos de red y Persistencia de datos, analizando patrones que permitan operación offline y sincronización confiable.
+
+Finalmente, en una tercera iteración, se consideraron drivers asociados a la experiencia de usuario y el negocio, como Usabilidad, Multiplataforma y Optimización de costos, evaluando patrones que permitan accesibilidad, mantenibilidad y eficiencia en el desarrollo.
+
+<table>
+  <thead>
+    <tr>
+      <th>Driver ID</th>
+      <th>Título de Driver</th>
+      <th>Pattern</th>
+      <th>Pro</th>
+      <th>Con</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- AD-01 -->
+    <tr>
+      <td rowspan="3">AD-01</td>
+      <td rowspan="3">Rendimiento</td>
+      <td>Event-Driven Architecture</td>
+      <td>Baja latencia y procesamiento asíncrono</td>
+      <td>Mayor complejidad de implementación</td>
+    </tr>
+    <tr>
+      <td>Request-Response (REST)</td>
+      <td>Simple y ampliamente soportado</td>
+      <td>No óptimo para tiempo real</td>
+    </tr>
+    <tr>
+      <td>WebSockets (Streaming)</td>
+      <td>Comunicación en tiempo real</td>
+      <td>Gestión compleja de conexiones</td>
+    </tr>
+    <!-- AD-02 -->
+    <tr>
+      <td rowspan="3">AD-02</td>
+      <td rowspan="3">Integración IoT</td>
+      <td>MQTT</td>
+      <td>Ligero, ideal para dispositivos IoT</td>
+      <td>Requiere broker adicional</td>
+    </tr>
+    <tr>
+      <td>HTTP Polling</td>
+      <td>Fácil de implementar</td>
+      <td>Ineficiente y mayor consumo de red</td>
+    </tr>
+    <tr>
+      <td>AMQP</td>
+      <td>Alta confiabilidad y mensajería robusta</td>
+      <td>Mayor complejidad operativa</td>
+    </tr>
+    <!-- AD-03 -->
+    <tr>
+      <td rowspan="3">AD-03</td>
+      <td rowspan="3">Escalabilidad</td>
+      <td>Microservices</td>
+      <td>Escalabilidad independiente por servicio</td>
+      <td>Complejidad en despliegue y monitoreo</td>
+    </tr>
+    <tr>
+      <td>Monolito</td>
+      <td>Simplicidad inicial</td>
+      <td>Difícil escalar a largo plazo</td>
+    </tr>
+    <tr>
+      <td>Serverless</td>
+      <td>Escalado automático</td>
+      <td>Dependencia del proveedor (vendor lock-in)</td>
+    </tr>
+    <!-- AD-06 -->
+    <tr>
+      <td rowspan="3">AD-06</td>
+      <td rowspan="3">Tolerancia a fallos de red</td>
+      <td>Offline-First + Sync</td>
+      <td>Funciona sin conexión</td>
+      <td>Complejidad en sincronización</td>
+    </tr>
+    <tr>
+      <td>Cache Local</td>
+      <td>Mejora disponibilidad</td>
+      <td>Riesgo de inconsistencias</td>
+    </tr>
+    <tr>
+      <td>Retry Pattern</td>
+      <td>Manejo automático de fallos</td>
+      <td>No cubre escenarios offline completos</td>
+    </tr>
+    <!-- AD-05 -->
+    <tr>
+      <td rowspan="3">AD-05</td>
+      <td rowspan="3">Seguridad</td>
+      <td>JWT</td>
+      <td>Escalable y stateless</td>
+      <td>Gestión de expiración y revocación</td>
+    </tr>
+    <tr>
+      <td>Session-Based</td>
+      <td>Control centralizado</td>
+      <td>Menor escalabilidad</td>
+    </tr>
+    <tr>
+      <td>OAuth 2.0</td>
+      <td>Estándar robusto</td>
+      <td>Mayor complejidad de implementación</td>
+    </tr>
+    <!-- AD-07 -->
+    <tr>
+      <td rowspan="3">AD-07</td>
+      <td rowspan="3">Persistencia de datos</td>
+      <td>Database per Service</td>
+      <td>Desacoplamiento y escalabilidad</td>
+      <td>Consultas complejas entre servicios</td>
+    </tr>
+    <tr>
+      <td>Base de datos monolítica</td>
+      <td>Simplicidad</td>
+      <td>Alto acoplamiento</td>
+    </tr>
+    <tr>
+      <td>CQRS</td>
+      <td>Optimiza lectura y escritura</td>
+      <td>Mayor complejidad arquitectónica</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 4.1.5. Quality Attribute Scenario Refinements
 
