@@ -1056,8 +1056,194 @@ Finalmente, en una tercera iteración, se consideraron drivers asociados a la ex
 </table>
 
 #### 4.1.5. Quality Attribute Scenario Refinements
+En esta sección, el equipo especifica la relación de escenarios priorizados para atributos de calidad.
 
+Al finalizar el proceso de Quality Attribute Workshop, el equipo refinó los escenarios de calidad priorizados, detallando sus componentes clave (estímulo, fuente del estímulo, entorno, artefacto, respuesta y medida), así como las preguntas e issues identificados durante el análisis. A continuación se presentan los escenarios refinados para cada uno de los atributos de calidad seleccionados:
 
+<table>
+  <tr>
+    <th colspan="2">Scenario Refinement for Scenario 1</th>
+  </tr>
+  <tr>
+    <td><strong>Scenario(s)</strong></td>
+    <td>Procesamiento y visualización de métricas en tiempo real desde dispositivos IoT</td>
+  </tr>
+  <tr>
+    <td><strong>Business Goal</strong></td>
+    <td>Brindar monitoreo en tiempo real para mejorar la toma de decisiones y prevenir fallas</td>
+  </tr>
+  <tr>
+    <td><strong>Relevant Quality Attributes</strong></td>
+    <td>Rendimiento</td>
+  </tr>
+  <tr>
+    <td><strong>Scenario Components</strong></td>
+    <td>
+      <strong>Stimulus:</strong> Envío continuo de métricas<br>
+      <strong>Stimulus Source:</strong> Dispositivo IoT<br>
+      <strong>Environment:</strong> Uso en tiempo real durante conducción<br>
+      <strong>Artifact:</strong> Backend + API + App móvil<br>
+      <strong>Response:</strong> Procesamiento y visualización en dashboard<br>
+      <strong>Response Measure:</strong> Latencia ≤ 2 segundos
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Questions</strong></td>
+    <td>¿Qué tecnología garantiza menor latencia? ¿Cómo manejar picos de datos?</td>
+  </tr>
+  <tr>
+    <td><strong>Issues</strong></td>
+    <td>Complejidad en procesamiento en tiempo real y sincronización de datos</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2">Scenario Refinement for Scenario 2</th>
+  </tr>
+  <tr>
+    <td><strong>Scenario(s)</strong></td>
+    <td>Acceso continuo a métricas e historial del vehículo</td>
+  </tr>
+  <tr>
+    <td><strong>Business Goal</strong></td>
+    <td>Garantizar acceso confiable a información crítica en todo momento</td>
+  </tr>
+  <tr>
+    <td><strong>Relevant Quality Attributes</strong></td>
+    <td>Disponibilidad</td>
+  </tr>
+  <tr>
+    <td><strong>Scenario Components</strong></td>
+    <td>
+      <strong>Stimulus:</strong> Solicitud de acceso a datos<br>
+      <strong>Stimulus Source:</strong> Usuario / Mecánico<br>
+      <strong>Environment:</strong> Operación 24/7<br>
+      <strong>Artifact:</strong> Plataforma completa<br>
+      <strong>Response:</strong> Respuesta sin interrupciones<br>
+      <strong>Response Measure:</strong> Disponibilidad ≥ 99%
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Questions</strong></td>
+    <td>¿Cómo asegurar alta disponibilidad? ¿Se requieren réplicas o balanceadores?</td>
+  </tr>
+  <tr>
+    <td><strong>Issues</strong></td>
+    <td>Dependencia de infraestructura cloud y manejo de fallos</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2">Scenario Refinement for Scenario 3</th>
+  </tr>
+  <tr>
+    <td><strong>Scenario(s)</strong></td>
+    <td>Crecimiento de dispositivos IoT y usuarios concurrentes</td>
+  </tr>
+  <tr>
+    <td><strong>Business Goal</strong></td>
+    <td>Permitir crecimiento del negocio sin degradación del servicio</td>
+  </tr>
+  <tr>
+    <td><strong>Relevant Quality Attributes</strong></td>
+    <td>Escalabilidad</td>
+  </tr>
+  <tr>
+    <td><strong>Scenario Components</strong></td>
+    <td>
+      <strong>Stimulus:</strong> Incremento de carga<br>
+      <strong>Stimulus Source:</strong> Sistema<br>
+      <strong>Environment:</strong> Alta demanda<br>
+      <strong>Artifact:</strong> Backend + DB<br>
+      <strong>Response:</strong> Escalado horizontal<br>
+      <strong>Response Measure:</strong> ≥ 10,000 dispositivos concurrentes
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Questions</strong></td>
+    <td>¿Microservicios o serverless? ¿Cómo distribuir la carga?</td>
+  </tr>
+  <tr>
+    <td><strong>Issues</strong></td>
+    <td>Complejidad en escalado y costos asociados</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2">Scenario Refinement for Scenario 4</th>
+  </tr>
+  <tr>
+    <td><strong>Scenario(s)</strong></td>
+    <td>Protección ante accesos no autorizados</td>
+  </tr>
+  <tr>
+    <td><strong>Business Goal</strong></td>
+    <td>Proteger datos sensibles y generar confianza en el usuario</td>
+  </tr>
+  <tr>
+    <td><strong>Relevant Quality Attributes</strong></td>
+    <td>Seguridad</td>
+  </tr>
+  <tr>
+    <td><strong>Scenario Components</strong></td>
+    <td>
+      <strong>Stimulus:</strong> Intento de acceso no autorizado<br>
+      <strong>Stimulus Source:</strong> Usuario / atacante<br>
+      <strong>Environment:</strong> Uso normal o malicioso<br>
+      <strong>Artifact:</strong> Backend + API<br>
+      <strong>Response:</strong> Bloqueo y validación<br>
+      <strong>Response Measure:</strong> ≤ 1 segundo
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Questions</strong></td>
+    <td>¿Qué mecanismo de autenticación usar? ¿Cómo gestionar tokens?</td>
+  </tr>
+  <tr>
+    <td><strong>Issues</strong></td>
+    <td>Balance entre seguridad y usabilidad</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2">Scenario Refinement for Scenario 5</th>
+  </tr>
+  <tr>
+    <td><strong>Scenario(s)</strong></td>
+    <td>Interacción del usuario con métricas y alertas</td>
+  </tr>
+  <tr>
+    <td><strong>Business Goal</strong></td>
+    <td>Facilitar adopción y uso eficiente de la plataforma</td>
+  </tr>
+  <tr>
+    <td><strong>Relevant Quality Attributes</strong></td>
+    <td>Usabilidad</td>
+  </tr>
+  <tr>
+    <td><strong>Scenario Components</strong></td>
+    <td>
+      <strong>Stimulus:</strong> Interacción con la app<br>
+      <strong>Stimulus Source:</strong> Usuario<br>
+      <strong>Environment:</strong> Uso cotidiano<br>
+      <strong>Artifact:</strong> App móvil / web<br>
+      <strong>Response:</strong> Navegación intuitiva<br>
+      <strong>Response Measure:</strong> ≥ 90% tareas en ≤ 3 pasos
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Questions</strong></td>
+    <td>¿Cómo simplificar dashboards? ¿Qué tan técnica debe ser la info?</td>
+  </tr>
+  <tr>
+    <td><strong>Issues</strong></td>
+    <td>Equilibrio entre simplicidad y detalle técnico</td>
+  </tr>
+</table>
 
 ### 4.2. Strategic-Level Domain-Driven Design
 
