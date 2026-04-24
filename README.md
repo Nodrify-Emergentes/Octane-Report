@@ -921,11 +921,32 @@ Según nuestro análisis, los contextos fueron clasificados de la siguiente mane
 - Supporting Domain: Reports, Vehicle Management, Assignments
 - Generic Domain: Identity Access Management
 
-**Start-with-simple**
+**Técnica 2: Start-with-simple**
 
+Esta técnica propone descomponer el Event Storming en pasos secuenciales con propósito claro, creando una línea de tiempo que permita identificar agrupaciones naturales de comportamiento. En lugar de buscar límites desde el inicio, se simplifica el flujo principal del negocio y se observan las transiciones entre etapas.
 
+Como equipo, nosotros trazamos el flujo principal de la siguiente manera:
 
-**Look-for-pivotal-events**
+| Paso | Bounded Context | Descripción del step |
+| - | - | - |
+| 1 | Identity Access Management | El usuario se registra en el sistema, crea su perfil y se asigna un rol dependiendo del proceso, y accede con sus credenciales. |
+| 2 | Vehicle Management | El conductor registra su vehículo, consulta su historial y puede compararlo con motocicletas similares usando una API externa. |
+| 3 | Assignments | El conductor vincula su motocicleta a un mecánico específico, quien quedará a cargo del seguimiento de ese vehículo. |
+| 4 | Vehicle Wellness | El dispositivo IoT instalado en la motocicleta lee los sensores continuamente, detecta anomalías y emite eventos. |
+| 5 | Reports | Cuando el dispositivo desde Vehicle Wellness detecta una anomalía, el contexto presente genera un reporte, notifica al conductor con la información procesada y actualiza el modelo de análisis de métricas. |
+| 6 | Maintenance and Operations | El sistema recomienda llevar el vehículo al mecánico. El mecánico realiza el mantenimiento y genera un reporte de reparación que retroalimenta el modelo de análisis de métricas. |
+
+A la vez, consideramos que Maintenance and Operations no forma parte del flujo lineal principal; sin embargo representa un ciclo de retroalimentación para Vehicle Wellness: su output (reporte de reparación) es consumido por el modelo de análisis de métricas para mejorar continuamente la precisión de ésta.
+
+**Técnica 3: Look-for-pivotal-events**
+
+Esta técnica busca identificar los eventos del Event Storming que marcan transiciones de estado significativas en el flujo del negocio. Estos eventos pivote suelen indicar el límite natural entre dos Bounded Contexts, ya que representan momentos donde la responsabilidad del proceso cambia de una parte del dominio a otra.
+
+Como equipo, nosotros identificamos los eventos pivote y sus contextos desde origen hasta destino de la siguiente manera:
+
+- Registro de motocicleta: Desde Vehicle Management, pasa a Vehicle Wellness.
+- Vinculación de motocicleta con un mecánico: Desde Assignments, pasa a Maintenance and Operations.
+- Completado del mantenimiento: Desde Maintenance and Operations, pasa a Vehicle Wellness.
 
 #### 4.2.3. Domain Message Flows Modeling
 
