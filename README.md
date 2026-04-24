@@ -31,7 +31,7 @@
 | **Real Calderon Sebatian Omar**           | U20221D964 |
 | **Alejo Cardenas Jose Antonio**           | U202122484 |
 | **Pacheco Astiguetta Sebastian**          | U202110291 |
-| **Russell Stephen Romero Qwistgaard**     |            |
+| **Russell Stephen Romero Qwistgaard**     | U202211043 |
 
 **Abril 2026**
 
@@ -271,15 +271,65 @@ El impacto de la problemática es considerable y puede observarse en las estadí
 Estos datos reflejan la magnitud del problema y justifican la necesidad de soluciones tecnológicas que promuevan un mantenimiento preventivo y un monitoreo constante del estado del vehículo, permitiendo anticipar fallos críticos que podrían desencadenar accidentes. De este modo, la propuesta de la plataforma Octane contribuye directamente a reducir la incidencia de accidentes asociados a fallas mecánicas y a fortalecer la cultura de prevención entre los motociclistas urbanos.
 
 #### 1.2.2. Lean UX Process
-
 ##### 1.2.2.1. Lean UX Problem Statements
+
+El mantenimiento de motocicletas suele gestionarse bajo un enfoque reactivo, en el que los propietarios no cuentan con información suficiente sobre el estado de su vehículo y los talleres dependen de diagnósticos manuales basados en datos incompletos.
+
+Esta limitación dificulta la detección temprana de fallas, incrementa el riesgo de reparaciones imprevistas y reduce la capacidad de los talleres para ofrecer un servicio preventivo y personalizado.
+
+Octane aborda esta oportunidad mediante una plataforma IoT que permite monitorear el estado de la motocicleta, centralizar el historial de mantenimiento y facilitar la comunicación entre motociclistas y mecánicos.
+
+Nuestro público inicial está conformado por motociclistas urbanos y talleres mecánicos independientes.
+
+Sabremos que la propuesta funciona si se incrementa la programación de mantenimientos preventivos, mejora la retención de usuarios y disminuyen las reparaciones de emergencia durante los primeros meses de uso.
 
 ##### 1.2.2.2. Lean UX Assumptions
 
+En esta etapa se identificaron las principales suposiciones de Octane respecto al negocio, los usuarios, los resultados esperados y las características del producto.
+
+Business Assumptions
+
+1. Suponemos que los motociclistas necesitan una forma más confiable de prevenir fallas mecánicas y reducir gastos inesperados.
+2. Suponemos que esta necesidad puede resolverse mediante una plataforma digital conectada a dispositivos IoT que recolecten datos del vehículo.
+3. Suponemos que los primeros usuarios serán motociclistas urbanos y mecánicos que buscan digitalizar su servicio.
+4. Suponemos que el valor principal para el usuario será la seguridad, la trazabilidad y el ahorro en mantenimiento.
+5. Suponemos que el modelo de negocio puede sostenerse mediante suscripciones de talleres y servicios complementarios de monitoreo.
+
+User Assumptions
+
+1. Suponemos que el motociclista utilizará Octane para revisar alertas, consultar historial y anticipar mantenimientos.
+2. Suponemos que el mecánico empleará la plataforma para revisar métricas, mejorar diagnósticos y mantener contacto con sus clientes.
+3. Suponemos que ambos perfiles valorarán una experiencia simple, clara y confiable.
+4. Suponemos que la app móvil será el canal principal del motociclista y el panel web será el canal principal del taller.
+
+User Outcomes Assumptions
+
+1. Suponemos que los usuarios se sentirán más seguros al recibir alertas tempranas.
+2. Suponemos que disminuirán los gastos por reparaciones no planificadas.
+3. Suponemos que los talleres mejorarán la precisión de sus diagnósticos.
+4. Suponemos que aumentará la fidelización entre motociclistas y mecánicos.
+
+Features Assumptions
+
+1. Suponemos que las alertas preventivas serán una de las funciones más usadas.
+2. Suponemos que el historial de mantenimiento será clave para la toma de decisiones.
+3. Suponemos que el monitoreo IoT en tiempo real será el principal diferenciador.
+4. Suponemos que la integración entre app móvil, panel web y servicios de notificación será esencial para el éxito del producto.
+
 ##### 1.2.2.3. Lean UX Hypothesis Statements
+1. Alertas preventivas y monitoreo en tiempo real <br>
+Creemos que reduciremos fallas inesperadas si Octane permite detectar anomalías y notificar al usuario antes de que ocurran problemas críticos.
+2. Historial de mantenimiento centralizado <br>
+Creemos que los usuarios planificarán mejor sus servicios si cuentan con un historial claro y accesible desde la plataforma.
+3. Panel para mecánicos <br>
+Creemos que los talleres mejorarán sus diagnósticos si pueden visualizar datos de telemetría y compararlos por vehículo.
+4. Integración móvil-web-IoT <br>
+Creemos que la comunicación entre motociclista y taller será más fluida si la plataforma sincroniza información entre la app móvil, el panel web y los dispositivos IoT.
+5. Experiencia simple y confiable <br>
+Creemos que la adopción crecerá si la interfaz reduce fricción y presenta la información de forma clara.
 
 ##### 1.2.2.4. Lean UX Canvas
-
+![Lean UX Canvas](assets/images/chapter-1/lean-ux-process/lean-ux-canvas.jpg)
 ### 1.3. Segmentos objetivo
 
 **Segmento Objetivo #1:**
