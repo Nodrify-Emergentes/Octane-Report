@@ -927,14 +927,14 @@ Esta técnica propone descomponer el Event Storming en pasos secuenciales con pr
 
 Como equipo, nosotros trazamos el flujo principal de la siguiente manera:
 
-| Paso | Bounded Context | Descripción del step |
-| - | - | - |
-| 1 | Identity Access Management | El usuario se registra en el sistema, crea su perfil y se asigna un rol dependiendo del proceso, y accede con sus credenciales. |
-| 2 | Vehicle Management | El conductor registra su vehículo, consulta su historial y puede compararlo con motocicletas similares usando una API externa. |
-| 3 | Assignments | El conductor vincula su motocicleta a un mecánico específico, quien quedará a cargo del seguimiento de ese vehículo. |
-| 4 | Vehicle Wellness | El dispositivo IoT instalado en la motocicleta lee los sensores continuamente, detecta anomalías y emite eventos. |
-| 5 | Reports | Cuando el dispositivo desde Vehicle Wellness detecta una anomalía, el contexto presente genera un reporte, notifica al conductor con la información procesada y actualiza el modelo de análisis de métricas. |
-| 6 | Maintenance and Operations | El sistema recomienda llevar el vehículo al mecánico. El mecánico realiza el mantenimiento y genera un reporte de reparación que retroalimenta el modelo de análisis de métricas. |
+| Paso | Bounded Context            | Descripción del step                                                                                                                                                                                         |
+|------|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1    | Identity Access Management | El usuario se registra en el sistema, crea su perfil y se asigna un rol dependiendo del proceso, y accede con sus credenciales.                                                                              |
+| 2    | Vehicle Management         | El conductor registra su vehículo, consulta su historial y puede compararlo con motocicletas similares usando una API externa.                                                                               |
+| 3    | Assignments                | El conductor vincula su motocicleta a un mecánico específico, quien quedará a cargo del seguimiento de ese vehículo.                                                                                         |
+| 4    | Vehicle Wellness           | El dispositivo IoT instalado en la motocicleta lee los sensores continuamente, detecta anomalías y emite eventos.                                                                                            |
+| 5    | Reports                    | Cuando el dispositivo desde Vehicle Wellness detecta una anomalía, el contexto presente genera un reporte, notifica al conductor con la información procesada y actualiza el modelo de análisis de métricas. |
+| 6    | Maintenance and Operations | El sistema recomienda llevar el vehículo al mecánico. El mecánico realiza el mantenimiento y genera un reporte de reparación que retroalimenta el modelo de análisis de métricas.                            |
 
 A la vez, consideramos que Maintenance and Operations no forma parte del flujo lineal principal; sin embargo representa un ciclo de retroalimentación para Vehicle Wellness: su output (reporte de reparación) es consumido por el modelo de análisis de métricas para mejorar continuamente la precisión de ésta.
 
