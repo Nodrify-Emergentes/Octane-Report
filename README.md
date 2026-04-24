@@ -976,3 +976,4 @@ Freitas, M. C. (2025, 19 de julio). Lima registra 1.668 muertes por accidentes d
 
 Bool.dev. (2023, 10 de octubre). Top 10 software architecture styles. Bool.dev. https://bool.dev/blog/detail/top10-software-architecture-styles
 
+Ddd-Crew. (s. f.). Domain-Driven Design Starter Modelling Process. GitHub. https://github.com/ddd-crew/ddd-starter-modelling-process
