@@ -330,6 +330,7 @@ Creemos que la adopción crecerá si la interfaz reduce fricción y presenta la 
 
 ##### 1.2.2.4. Lean UX Canvas
 ![Lean UX Canvas](assets/images/chapter-1/lean-ux-process/lean-ux-canvas.jpg)
+Link: https://miro.com/app/board/uXjVHdKIr_Q=/?share_link_id=592709495812
 ### 1.3. Segmentos objetivo
 
 **Segmento Objetivo #1:**
