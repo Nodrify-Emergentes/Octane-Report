@@ -1350,3 +1350,4 @@ Freitas, M. C. (2025, 19 de julio). Lima registra 1.668 muertes por accidentes d
 
 Bool.dev. (2023, 10 de octubre). Top 10 software architecture styles. Bool.dev. https://bool.dev/blog/detail/top10-software-architecture-styles
 
+More...
