@@ -1300,9 +1300,148 @@ Al finalizar el proceso de Quality Attribute Workshop, el equipo refinó los esc
 
 #### 4.2.1. EventStorming
 
+En esta sección se expone y fundamenta el proceso de EventStorming llevado a cabo por el equipo, con el propósito de construir una primera aproximación al modelado general del dominio del problema. Esta técnica, centrada en la identificación de eventos relevantes dentro del sistema, permite capturar el conocimiento colectivo de los participantes y detonar conversaciones clave sobre el comportamiento esperado del sistema en distintos escenarios.
+
+La sesión fue organizada estratégicamente con una duración de dos horas. Durante esta actividad, se emplearon post-its digitales para representar eventos y comandos lo que facilitó una exploración visual e iterativa del flujo de trabajo.
+
+Enlace al Miro: https://miro.com/app/board/uXjVHfnGurU=/?share_link_id=913265196477
+
+**Step 1: Unstructured Exploration**
+
+Se inicia con una lluvia de ideas sin restricciones, donde los participantes colocan post-its con eventos, comandos y cualquier elemento relevante que consideren parte del dominio. En esta fase se busca fomentar la creatividad y la libre expresión de conceptos sin preocuparse por la organización o la precisión.
+
+![Step-1](assets/images/chapter-4/eventstorming/step-1.jpg)
+
+**Step 2: Timelines**
+
+Una vez que se han identificado varios eventos, se procede a organizarlos en una línea de tiempo. Esto ayuda a visualizar la secuencia de eventos y cómo interactúan entre sí a lo largo del tiempo, permitiendo detectar dependencias y relaciones causales.
+
+![Step-2](assets/images/chapter-4/eventstorming/step-2.jpg)
+
+**Step 3: Pain Points**
+
+En esta etapa, se identifican los puntos de dolor o áreas problemáticas dentro del flujo de eventos. Esto puede incluir eventos que generan confusión, áreas donde se anticipan dificultades técnicas o procesos que podrían beneficiarse de una mayor claridad o simplificación.
+
+![Step-3](assets/images/chapter-4/eventstorming/step-3.jpg)
+
+**Step 4: Pivotal Points**
+
+Aquí se destacan los eventos clave o puntos de inflexión dentro del sistema. Estos son eventos que tienen un impacto significativo en el flujo general y pueden ser críticos para el éxito del sistema.
+
+![Step-4](assets/images/chapter-4/eventstorming/step-4.jpg)
+
+**Step 5: Commands**
+
+Se identifican los comandos que desencadenan eventos específicos. Esto ayuda a entender qué acciones o decisiones por parte de los usuarios o del sistema provocan ciertos eventos, lo que es crucial para el diseño de la lógica de negocio.
+
+![Step-5](assets/images/chapter-4/eventstorming/step-5.jpg)
+
+**Step 6: Policies**
+
+Se definen políticas o reglas de negocio que permiten una automatización de ciertos procesos. Estas políticas pueden ser condiciones que deben cumplirse para que ciertos eventos ocurran o reglas que guían el comportamiento del sistema en respuesta a eventos específicos.
+
+![Step-6](assets/images/chapter-4/eventstorming/step-6.jpg)
+
+**Step 7: Read Models**
+
+Para reconocer qué información se necesita en cada etapa del proceso, se identifican los read models o modelos de lectura. Estos modelos representan las vistas o representaciones de datos que el sistema necesita, proporcionando la información necesaria a un comando.
+
+![Step-7](assets/images/chapter-4/eventstorming/step-7.jpg)
+
+**Step 8: External Systems**
+
+Se identifican los sistemas externos que interactúan con el sistema en cuestión. Esto es crucial para entender las dependencias externas y cómo el sistema se integra con otros sistemas o servicios.
+
+![Step-8](assets/images/chapter-4/eventstorming/step-8.jpg)
+
+**Step 9: Aggregates**
+
+Teniendo todos los eventos y comandos representados, se identifican los aggregates o agregados. Estos son grupos de eventos y comandos que están relacionados y pueden ser tratados como una unidad coherente dentro del dominio.
+
+![Step-9](assets/images/chapter-4/eventstorming/step-9.jpg)
+
+**Step 10: Bounded Contexts**
+
+Finalmente, se identifican los bounded contexts o contextos delimitados. Estos son conjuntos de agregados que representan una funcionalidad estrechamente relacionada, lo que ayuda a definir los límites del sistema y a organizar la lógica de negocio de manera coherente.
+
+![Step-10](assets/images/chapter-4/eventstorming/step-10.jpg)
+
 #### 4.2.2. Candidate Context Discovery
 
+En base al resultado del Event Storming, se identifican los contextos delimitados (Bounded Contexts) que representan áreas funcionales específicas dentro del dominio. Estos contextos ayudan a organizar la lógica de negocio y a definir los límites del sistema, facilitando la gestión de la complejidad.
+
+La sesión fue organizada estratégicamente con una duración de una hora. Durante esta actividad, se listaron los posibles contextos delimitados basados en los eventos y comandos identificados en el Event Storming, y se discutieron las responsabilidades y límites de cada contexto.
+
+Como resultado, se han aplicado las siguientes técnicas:
+
+**Técnica 1: Start-with-value**
+
+Esta técnica permite identificar las partes del dominio que representan el mayor valor para el negocio, diferenciando el core domain de los dominios de soporte y genéricos. Realizar una categorización requiere de diferenciar qué tan complejo es su modelo y qué tanto se diferencia del core business, siguiendo un espectro como el siguiente:
+
+![Spectrum](assets/images/chapter-4/candidate-context/spectrum.png)
+
+Como equipo, nosotros definimos que las áreas con mayor valor para el negocio son aquellas relacionadas con:
+
+- Procesamiento de métricas de una motocicleta.
+- Detección de anomalías en el comportamiento de la motocicleta.
+- Actualización continua del modelo de análisis de vehículos.
+
+Según nuestro análisis, los contextos fueron clasificados de la siguiente manera:
+
+- Core Domain: Vehicle Wellness, Maintenance and Operations
+- Supporting Domain: Reports, Vehicle Management, Assignments
+- Generic Domain: Identity Access Management
+
+**Técnica 2: Start-with-simple**
+
+Esta técnica propone descomponer el Event Storming en pasos secuenciales con propósito claro, creando una línea de tiempo que permita identificar agrupaciones naturales de comportamiento. En lugar de buscar límites desde el inicio, se simplifica el flujo principal del negocio y se observan las transiciones entre etapas.
+
+Como equipo, nosotros trazamos el flujo principal de la siguiente manera:
+
+| Paso | Bounded Context            | Descripción del step                                                                                                                                                                                         |
+|------|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1    | Identity Access Management | El usuario se registra en el sistema, crea su perfil y se asigna un rol dependiendo del proceso, y accede con sus credenciales.                                                                              |
+| 2    | Vehicle Management         | El conductor registra su vehículo, consulta su historial y puede compararlo con motocicletas similares usando una API externa.                                                                               |
+| 3    | Assignments                | El conductor vincula su motocicleta a un mecánico específico, quien quedará a cargo del seguimiento de ese vehículo.                                                                                         |
+| 4    | Vehicle Wellness           | El dispositivo IoT instalado en la motocicleta lee los sensores continuamente, detecta anomalías y emite eventos.                                                                                            |
+| 5    | Reports                    | Cuando el dispositivo desde Vehicle Wellness detecta una anomalía, el contexto presente genera un reporte, notifica al conductor con la información procesada y actualiza el modelo de análisis de métricas. |
+| 6    | Maintenance and Operations | El sistema recomienda llevar el vehículo al mecánico. El mecánico realiza el mantenimiento y genera un reporte de reparación que retroalimenta el modelo de análisis de métricas.                            |
+
+A la vez, consideramos que Maintenance and Operations no forma parte del flujo lineal principal; sin embargo representa un ciclo de retroalimentación para Vehicle Wellness: su output (reporte de reparación) es consumido por el modelo de análisis de métricas para mejorar continuamente la precisión de ésta.
+
+**Técnica 3: Look-for-pivotal-events**
+
+Esta técnica busca identificar los eventos del Event Storming que marcan transiciones de estado significativas en el flujo del negocio. Estos eventos pivote suelen indicar el límite natural entre dos Bounded Contexts, ya que representan momentos donde la responsabilidad del proceso cambia de una parte del dominio a otra.
+
+Como equipo, nosotros identificamos los eventos pivote y sus contextos desde origen hasta destino de la siguiente manera:
+
+- Registro de motocicleta: Desde Vehicle Management, pasa a Vehicle Wellness.
+- Vinculación de motocicleta con un mecánico: Desde Assignments, pasa a Maintenance and Operations.
+- Completado del mantenimiento: Desde Maintenance and Operations, pasa a Vehicle Wellness.
+
 #### 4.2.3. Domain Message Flows Modeling
+
+En esta sección se modelan los flujos de mensajes entre los diferentes contextos delimitados identificados en la sección anterior. Esto permite visualizar cómo se comunican los distintos componentes del sistema, siendo los bounded contexts y los sistemas, y cómo se intercambian datos e información entre ellos.
+
+**Enfoque de Modelado:**
+
+Se utiliza un enfoque basado en diagramas de secuencia para representar los flujos de mensajes entre los contextos. Cada diagrama muestra las interacciones entre los contextos a través de eventos, comandos y consultas, destacando las dependencias y la dirección del flujo de información:
+
+- Partimos del Event Storming para identificar los eventos clave que desencadenan la comunicación entre contextos.
+- Seleccionamos escenarios que representan casos relevantes de interacción entre contextos
+- Describimos pasos detallados de cada escenario, incluyendo los mensajes intercambiados, los actores involucrados y los comandos/eventos/peticiones que desencadenan cada mensaje.
+
+**Primer escenario: Registro y vinculación de la motocicleta**
+
+![Flow 1: Registro y vinculación](assets/images/chapter-4/dmfm/flow-1.jpg)
+
+**Segundo escenario: Generación de Reporte de Mantenimiento y Retroalimentación**
+
+![Flow 2: Entrenamiento de IA en base al Mantenimiento](assets/images/chapter-4/dmfm/flow-2.jpg)
+
+**Tercer escenario: Detección de Anomalía y Procedimiento**
+
+![Flow 3: Detección de Anomalía](assets/images/chapter-4/dmfm/flow-3.jpg)
 
 #### 4.2.4. Bounded Context Canvases
 
@@ -1351,3 +1490,4 @@ Freitas, M. C. (2025, 19 de julio). Lima registra 1.668 muertes por accidentes d
 
 Bool.dev. (2023, 10 de octubre). Top 10 software architecture styles. Bool.dev. https://bool.dev/blog/detail/top10-software-architecture-styles
 
+Ddd-Crew. (s. f.). Domain-Driven Design Starter Modelling Process. GitHub. https://github.com/ddd-crew/ddd-starter-modelling-process
