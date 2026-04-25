@@ -950,6 +950,28 @@ Como equipo, nosotros identificamos los eventos pivote y sus contextos desde ori
 
 #### 4.2.3. Domain Message Flows Modeling
 
+En esta sección se modelan los flujos de mensajes entre los diferentes contextos delimitados identificados en la sección anterior. Esto permite visualizar cómo se comunican los distintos componentes del sistema, siendo los bounded contexts y los sistemas, y cómo se intercambian datos e información entre ellos.
+
+**Enfoque de Modelado:**
+
+Se utiliza un enfoque basado en diagramas de secuencia para representar los flujos de mensajes entre los contextos. Cada diagrama muestra las interacciones entre los contextos a través de eventos, comandos y consultas, destacando las dependencias y la dirección del flujo de información:
+
+- Partimos del Event Storming para identificar los eventos clave que desencadenan la comunicación entre contextos.
+- Seleccionamos escenarios que representan casos relevantes de interacción entre contextos
+- Describimos pasos detallados de cada escenario, incluyendo los mensajes intercambiados, los actores involucrados y los comandos/eventos/peticiones que desencadenan cada mensaje.
+
+**Primer escenario: Registro y vinculación de la motocicleta**
+
+![Flow 1: Registro y vinculación](assets/images/chapter-4/dmfm/flow-1.jpg)
+
+**Segundo escenario: Generación de Reporte de Mantenimiento y Retroalimentación**
+
+![Flow 2: Entrenamiento de IA en base al Mantenimiento](assets/images/chapter-4/dmfm/flow-2.jpg)
+
+**Tercer escenario: Detección de Anomalía y Procedimiento**
+
+![Flow 3: Detección de Anomalía](assets/images/chapter-4/dmfm/flow-3.jpg)
+
 #### 4.2.4. Bounded Context Canvases
 
 #### 4.2.5. Context Mapping
