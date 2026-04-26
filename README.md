@@ -142,13 +142,13 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         <br>
         Alejo Cardenas Jose Antonio
         <br>
-        TB1<br>
-        <!--Añadir Info-->
+        TB1:<br>
+        Durante el desarrollo del proyecto, expliqué a mi equipo la visión de nuestra Startup y las User Stories para asegurar que todos entendiéramos qué debíamos construir. En nuestras reuniones, presenté de forma objetiva los diagramas de Arquitectura (Contenedores y Despliegue), traduciendo los conceptos complejos a términos que mis compañeros, independientemente de su rol en el grupo, pudieran validar. Esto permitió que tomáramos decisiones técnicas consensuadas y que cada integrante comprendiera cómo su parte del código encajaba en el sistema general.<br>
         <br>
         Pacheco Astiguetta Sebastian
         <br>
         TB1<br>
-        <!--Añadir Info-->
+        Realicé un análisis significativo de los nuevos features que se pueden considerar en el proyecto, aplicando nuevas tecnologías emergentes como idea principal para la mejora del producto. Considerando esta nueva funcionalidad nos permite formular mejor los requositos necesarios para actualizar el producto.
         <br>
         Russell Stephen Romero Qwistgaard
         <br>
@@ -173,13 +173,13 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         <br>
         Alejo Cardenas Jose Antonio
         <br>
-        TB1<br>
-        <!--Añadir Info-->
+        TB1:<br>
+        Redacté la documentación en nuestro repositorio compartido, detallando el Product Backlog y la Arquitectura de Software de manera clara y sin ambigüedades. Utilicé los diagramas de Contexto y Landscape para que cualquier compañero que se uniera al desarrollo entendiera el flujo rápidamente, y complementé los Diagramas de Despliegue con notas técnicas precisas. Esta redacción objetiva sirvió como guía de referencia para el equipo, evitando errores de interpretación y asegurando que los resultados del diseño fueran consistentes durante toda la implementación.<br>
         <br>
         Pacheco Astiguetta Sebastian
         <br>
         TB1<br>
-        <!--Añadir Info-->
+        Coordiné y lideré las reuniones para desarrollar el Event Storming, considerando eventos para las nuevas tecnologías y modificando posibles cambios necesarios para que esté estructurado correctamente. Sabiendo que el Event Storming y otros modelados que necesitan de ésta son esenciales para sel desarrollo de la solución, este procedimiento ayuda a que el equipo comprenda a qué dirección va el producto y qué funcionalidades debemos tener en cuenta durante la codificación.
         <br>
         Russell Stephen Romero Qwistgaard
         <br>
@@ -209,6 +209,51 @@ Misión: Transformar la gestión de motocicletas combinando tecnología IoT y an
 Visión: Ser la plataforma líder en movilidad inteligente en el mercado peruano que revolucione el mantenimiento preventivo y la conexión en el ecosistema de vehículos de dos ruedas.
 
 #### 1.1.2. Perfiles de integrantes del equipo
+
+<table>
+  <tr>
+    <th colspan="2"> Juan Diego Astonitas </th>
+  </tr>
+  <tr>
+    <td> <img src="images/chapter-1/JuanAstonitas-pfp.png" alt="Juan Astonitas" style="width: 500px; height: auto;" > </td>
+    <td> Mi nombre es Juan Diego Astonitas Diaz, mi código de estudiante es u202110237 ,tengo 21 años, actualmente curso el 6to ciclo de la carrera de Ingeniería de Software, en la UPC en la sede San Miguel. Mis principales cualidades son el liderazgo y el dominio de NextJS. Haré todo lo que esté a mi alcance para respaldar al equipo en la finalización oportuna y efectiva de las tareas asignadas. </td>
+  </tr>
+  <tr>
+    <th colspan="2"> Casas Sanchez Gabriel Alexander </th>
+  </tr>
+  <tr>
+    <td> <img src="images/chapter-1/alex-pfp.jpg" alt="Gabriel Casas" style="width: 500px; height: auto;"> </td>
+    <td> Soy estudiante de Ingeniería de Software en séptimo ciclo, con habilidades para dirigir y trabajar bien bajo presión, código u202220033. Aunque no disfruto mucho de los trabajos grupales, siempre asumo un rol destacado y sobresaliente en ellos, aprovechando mi capacidad académica y versatilidad. </td>
+  </tr>
+  <tr>
+    <th colspan="2"> Gianluca Santino Pasquale Barrenechea </th>
+  </tr>
+  <tr>
+    <td> <img src="images/chapter-1/gianluca-pfp.jpg" alt="Gianluca Pasquale" style="width: 500px; height: auto;"> </td>
+    <td> Me llamo Gianluca Santino Pasquale Barrenechea, estudiante de Ingeniería de Software (código u202112078). En nuestra Startup, me enfoco en el desarrollo frontend y backend, utilizando C++, C#, Python, Java, HTML y JavaScript. Mi objetivo es crear soluciones escalables y eficientes, mejorando la experiencia del usuario y optimizando la operación de la plataforma, siempre aplicando metodologías ágiles como Scrum. </td>
+  </tr>
+  <tr>
+    <th colspan="2">Jose Antonio Alejo Cardenas</th>
+  </tr>
+  <tr>
+    <td> <img src="assets/images/chapter-1/perfiles/jose-pfp.jpg" alt="Jose Alejo" style="width: 500px; height: auto;"> </td>
+    <td> Soy José Alejo Cárdenas, estudiante de la carrera de Ingeniería de Software del octavo ciclo, código u202122484. Desde pequeño he sentido fascinación por la tecnología en general sobretodo por el funcionamiento, desarrollo y proteccion del software en el ambito de ciberseguridad. He estudiado lenguajes de programacion (javascript, typescript, python, java y C#), bases de datos (Microsoft SQL Server y Mongo DB) y Sistemas Operativos (Linux y Windows). Asi mismo, tengo experiencia con hardware a nivel de esamblamiento de equipos y funcionamiento del mismo con sus especificaciones tecnicas. Además, mi constante comunicacion y organizacion durante cualquier trabajo grupal aportara mucho dinamismo al proyecto. Mis principales hobbies son entrenar en el gimnasio, jugar videojuegos con mis amigos y salir a conversar con estos ultimos durante algun almuerzo o cena. Para el proyecto aportare organizacion, comunicacion e inspiracion durante todo el transcurso del mismo. </td>
+  </tr>
+  <tr>
+    <th colspan="2">Sebastian Pacheco Astiguetta</th>
+  </tr>
+  <tr>
+    <td> <img src="images/chapter-1/Sebastian-pfp.png" alt="Sebastian Pacheco" style="width: 500px; height: auto;"> </td>
+    <td> Soy Sebastian Pacheco, tengo 22 años y soy alumno de Ingeniería de Software en la UPC, código u202110291. Me considero una persona trabajadora y activa, priorizando las responsabilidades ante todo, pero también destaco en trabajo en equipo, permitiendo a todos que participen. Tengo conocimiento de C++ y Python, los cuales pongo en práctica mediante proyectos personales. </td>
+  </tr>
+  <tr>
+    <th colspan="2">Sebatian Omar Real Calderon</th>
+  </tr>
+  <tr>
+    <td> <img src="images/chapter-1/sebastian_real_pfp.jpeg" alt="Sebastian Real" style="width: 500px; height: auto;"> </td>
+    <td> Soy Sebastián Real Calderón, estudiante de Ingeniería de Software, código u20221D964. Tengo conocimiento de diferentes lenguajes de programación, como C#, C++ y Java. Mi mayor objetivo al desarrollar software es crear una experiencia de usuario con la que los consumidores puedan sentirse satisfechos al trabajar con nuestras aplicaciones. Asimismo, aspiro a ser un buen participante al mantener una comunicación constante con mis compañeros, resolviendo problemas y apoyando a quién lo necesite para crear un ambiente cómodo para todos.  </td>
+  </tr>
+</table>
 
 ### 1.2. Solution Profile
 
