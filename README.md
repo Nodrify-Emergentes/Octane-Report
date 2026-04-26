@@ -148,7 +148,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Pacheco Astiguetta Sebastian
         <br>
         TB1<br>
-        <!--Añadir Info-->
+        Realicé un análisis significativo de los nuevos features que se pueden considerar en el proyecto, aplicando nuevas tecnologías emergentes como idea principal para la mejora del producto. Considerando esta nueva funcionalidad nos permite formular mejor los requositos necesarios para actualizar el producto.
         <br>
         Russell Stephen Romero Qwistgaard
         <br>
@@ -179,7 +179,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Pacheco Astiguetta Sebastian
         <br>
         TB1<br>
-        <!--Añadir Info-->
+        Coordiné y lideré las reuniones para desarrollar el Event Storming, considerando eventos para las nuevas tecnologías y modificando posibles cambios necesarios para que esté estructurado correctamente. Sabiendo que el Event Storming y otros modelados que necesitan de ésta son esenciales para sel desarrollo de la solución, este procedimiento ayuda a que el equipo comprenda a qué dirección va el producto y qué funcionalidades debemos tener en cuenta durante la codificación.
         <br>
         Russell Stephen Romero Qwistgaard
         <br>
