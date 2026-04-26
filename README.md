@@ -31,7 +31,7 @@
 | **Real Calderon Sebatian Omar**           | U20221D964 |
 | **Alejo Cardenas Jose Antonio**           | U202122484 |
 | **Pacheco Astiguetta Sebastian**          | U202110291 |
-| **Russell Stephen Romero Qwistgaard**     |            |
+| **Russell Stephen Romero Qwistgaard**     | U202211043 |
 
 **Abril 2026**
 
