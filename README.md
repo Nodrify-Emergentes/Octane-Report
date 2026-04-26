@@ -1670,15 +1670,15 @@ El objetivo del context mapping es establecer dependencias claras entre contexto
 
 ![Context Mapping](assets/images/chapter-4/context-mapping/Context-Mapping.png)
 
-| Contexto upstream | Contexto downstream | Patrón de relación | Justificación |
-|---|---|---|---|
-| Vehicle Management | Vehicle Wellness | Conformist | Vehicle Wellness consume los datos maestros del vehículo para interpretar correctamente la telemetría y debe adaptarse al modelo publicado por Vehicle Management. |
-| Vehicle Management | Assignments | Customer/Supplier | Assignments depende del registro de vehículos para establecer y mantener la relación operativa entre motocicleta y mecánico. |
-| Vehicle Management | Maintenance and Operations | Customer/Supplier | Maintenance and Operations requiere los datos del vehículo para programar, registrar y dar trazabilidad a los servicios de mantenimiento. |
-| Vehicle Management | Reports | Customer/Supplier | Reports consume la información maestra del vehículo para generar comparaciones, historiales y vistas consolidadas. |
-| Assignments | Vehicle Wellness | Conformist | Vehicle Wellness depende del estado de la asignación activa para validar el acceso a la telemetría y mantener la coherencia con la relación vehículo-mecánico. |
-| Assignments | Maintenance and Operations | Conformist | Maintenance and Operations usa la asignación activa como condición previa para ejecutar y validar el trabajo de mantenimiento. |
-| Vehicle Wellness | Reports | Customer/Supplier | Reports consume la telemetría analizada y los diagnósticos generados por Vehicle Wellness para construir paneles e indicadores. |
+| Contexto upstream  | Contexto downstream        | Patrón de relación | Justificación                                                                                                                                                      |
+|--------------------|----------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Vehicle Management | Vehicle Wellness           | Conformist         | Vehicle Wellness consume los datos maestros del vehículo para interpretar correctamente la telemetría y debe adaptarse al modelo publicado por Vehicle Management. |
+| Vehicle Management | Assignments                | Customer/Supplier  | Assignments depende del registro de vehículos para establecer y mantener la relación operativa entre motocicleta y mecánico.                                       |
+| Vehicle Management | Maintenance and Operations | Customer/Supplier  | Maintenance and Operations requiere los datos del vehículo para programar, registrar y dar trazabilidad a los servicios de mantenimiento.                          |
+| Vehicle Management | Reports                    | Customer/Supplier  | Reports consume la información maestra del vehículo para generar comparaciones, historiales y vistas consolidadas.                                                 |
+| Assignments        | Vehicle Wellness           | Conformist         | Vehicle Wellness depende del estado de la asignación activa para validar el acceso a la telemetría y mantener la coherencia con la relación vehículo-mecánico.     |
+| Assignments        | Maintenance and Operations | Conformist         | Maintenance and Operations usa la asignación activa como condición previa para ejecutar y validar el trabajo de mantenimiento.                                     |
+| Vehicle Wellness   | Reports                    | Customer/Supplier  | Reports consume la telemetría analizada y los diagnósticos generados por Vehicle Wellness para construir paneles e indicadores.                                    |
 
 **Context Mapping Notes**
 
@@ -1697,7 +1697,6 @@ Para gestionar la complejidad del negocio de telemetría y mantenimiento, se apl
 #### 4.3.1. Software Architecture System Landscape Diagram
 
 En este nivel se describe la visión global de la organización Nodrify. El diagrama representa cómo el sistema Octane coexiste con otros sistemas internos y externos, definiendo el ecosistema completo y las interacciones de alto nivel entre los actores principales y los límites de la empresa.
-
 
 ![system-landscape](assets\images\chapter-4\software-architecture\system-landscape-keys.png)
 ![system-landscape-keys](assets\images\chapter-4\software-architecture\system-landscape.png)
