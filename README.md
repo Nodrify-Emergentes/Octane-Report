@@ -994,6 +994,7 @@ El bounded context **IAM (Identity & Access Management)** no ha sido incluido en
 El objetivo del context mapping es establecer dependencias claras entre contextos, reducir el acoplamiento innecesario y definir mecanismos de colaboración coherentes con los principios de **Domain-Driven Design (DDD)**.
 
 ![Context Mapping)](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/context-mapping/Context-Mapping.png)
+
 | Contexto upstream | Contexto downstream | Patrón de relación | Justificación |
 |---|---|---|---|
 | Vehicle Management | Vehicle Wellness | Conformist | Vehicle Wellness consume los datos maestros del vehículo para interpretar correctamente la telemetría y debe adaptarse al modelo publicado por Vehicle Management. |
@@ -1006,11 +1007,11 @@ El objetivo del context mapping es establecer dependencias claras entre contexto
 
 ### Context Mapping Notes
 
-- Vehicle Management acts as the main source of truth for vehicle identity and master data.
-- Vehicle Wellness is the core context that consumes vehicle and assignment data, then produces telemetry-based diagnostics.
-- Assignments acts as the operational bridge between the vehicle and the mechanic.
-- Maintenance and Operations depends on vehicle and assignment information to manage the service lifecycle.
-- Reports remains a downstream analytical context that consolidates information from the other business contexts.
+- **Vehicle Management** actúa como fuente de verdad para la identidad y los datos maestros del vehículo.
+- **Vehicle Wellness** es el contexto central de análisis de telemetría y generación de alertas.
+- **Assignments** funciona como puente operativo entre la motocicleta y el mecánico.
+- **Maintenance and Operations** depende de Vehicle Management y Assignments para gestionar el ciclo de mantenimiento.
+- **Reports** permanece como un contexto analítico aguas abajo que consolida información de los demás contextos de negocio.
 
 ### 4.3. Software Architecture
 
