@@ -212,25 +212,11 @@ Visión: Ser la plataforma líder en movilidad inteligente en el mercado peruano
 
 <table>
   <tr>
-    <th colspan="2"> Juan Diego Astonitas </th>
+    <th colspan="2">Russell Stephen Romero Qwistgaard</th>
   </tr>
   <tr>
-    <td> <img src="images/chapter-1/JuanAstonitas-pfp.png" alt="Juan Astonitas" style="width: 500px; height: auto;" > </td>
-    <td> Mi nombre es Juan Diego Astonitas Diaz, mi código de estudiante es u202110237 ,tengo 21 años, actualmente curso el 6to ciclo de la carrera de Ingeniería de Software, en la UPC en la sede San Miguel. Mis principales cualidades son el liderazgo y el dominio de NextJS. Haré todo lo que esté a mi alcance para respaldar al equipo en la finalización oportuna y efectiva de las tareas asignadas. </td>
-  </tr>
-  <tr>
-    <th colspan="2"> Casas Sanchez Gabriel Alexander </th>
-  </tr>
-  <tr>
-    <td> <img src="images/chapter-1/alex-pfp.jpg" alt="Gabriel Casas" style="width: 500px; height: auto;"> </td>
-    <td> Soy estudiante de Ingeniería de Software en séptimo ciclo, con habilidades para dirigir y trabajar bien bajo presión, código u202220033. Aunque no disfruto mucho de los trabajos grupales, siempre asumo un rol destacado y sobresaliente en ellos, aprovechando mi capacidad académica y versatilidad. </td>
-  </tr>
-  <tr>
-    <th colspan="2"> Gianluca Santino Pasquale Barrenechea </th>
-  </tr>
-  <tr>
-    <td> <img src="images/chapter-1/gianluca-pfp.jpg" alt="Gianluca Pasquale" style="width: 500px; height: auto;"> </td>
-    <td> Me llamo Gianluca Santino Pasquale Barrenechea, estudiante de Ingeniería de Software (código u202112078). En nuestra Startup, me enfoco en el desarrollo frontend y backend, utilizando C++, C#, Python, Java, HTML y JavaScript. Mi objetivo es crear soluciones escalables y eficientes, mejorando la experiencia del usuario y optimizando la operación de la plataforma, siempre aplicando metodologías ágiles como Scrum. </td>
+    <td> <img src="assets/images/chapter-1/perfiles/russel-pfp.png" alt="Russel Romero" style="width: 500px; height: auto;" > </td>
+    <td></td>
   </tr>
   <tr>
     <th colspan="2">Jose Antonio Alejo Cardenas</th>
@@ -243,14 +229,14 @@ Visión: Ser la plataforma líder en movilidad inteligente en el mercado peruano
     <th colspan="2">Sebastian Pacheco Astiguetta</th>
   </tr>
   <tr>
-    <td> <img src="images/chapter-1/Sebastian-pfp.png" alt="Sebastian Pacheco" style="width: 500px; height: auto;"> </td>
+    <td> <img src="assets/images/chapter-1/perfiles/pacheco-pfp.jpg" alt="Sebastián Pacheco" style="width: 500px; height: auto;"> </td>
     <td> Soy Sebastian Pacheco, tengo 22 años y soy alumno de Ingeniería de Software en la UPC, código u202110291. Me considero una persona trabajadora y activa, priorizando las responsabilidades ante todo, pero también destaco en trabajo en equipo, permitiendo a todos que participen. Tengo conocimiento de C++ y Python, los cuales pongo en práctica mediante proyectos personales. </td>
   </tr>
   <tr>
     <th colspan="2">Sebatian Omar Real Calderon</th>
   </tr>
   <tr>
-    <td> <img src="images/chapter-1/sebastian_real_pfp.jpeg" alt="Sebastian Real" style="width: 500px; height: auto;"> </td>
+    <td> <img src="assets/images/chapter-1/perfiles/sebas-pfp.jpeg" alt="Sebastián Real" style="width: 500px; height: auto;"> </td>
     <td> Soy Sebastián Real Calderón, estudiante de Ingeniería de Software, código u20221D964. Tengo conocimiento de diferentes lenguajes de programación, como C#, C++ y Java. Mi mayor objetivo al desarrollar software es crear una experiencia de usuario con la que los consumidores puedan sentirse satisfechos al trabajar con nuestras aplicaciones. Asimismo, aspiro a ser un buen participante al mantener una comunicación constante con mis compañeros, resolviendo problemas y apoyando a quién lo necesite para crear un ambiente cómodo para todos.  </td>
   </tr>
 </table>
