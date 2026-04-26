@@ -987,7 +987,25 @@ Se utiliza un enfoque basado en diagramas de secuencia para representar los fluj
 **Bounded Context Canvas — IAM**
 ![IAM (Identity & Access Management)](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/bounded-context-canvases/IAM%20(Identity%20%26%20Access%20Management).png)
 #### 4.2.5. Context Mapping
+En esta sección se presenta el proceso de Context Mapping, cuyo propósito es identificar, analizar y documentar las relaciones estructurales entre los bounded contexts previamente definidos. El objetivo es comprender cómo interactúan, cuáles son sus dependencias y qué patrones de integración de Domain-Driven Design son más adecuados.
+![Context Mapping)](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/context-mapping/Context-Mapping.png)
+| Contexto upstream | Contexto downstream | Patrón de relación | Justificación |
+|---|---|---|---|
+| Vehicle Management | Vehicle Wellness | Conformist | Vehicle Wellness consume los datos maestros del vehículo para interpretar correctamente la telemetría y debe adaptarse al modelo publicado por Vehicle Management. |
+| Vehicle Management | Assignments | Customer/Supplier | Assignments depende del registro de vehículos para establecer y mantener la relación operativa entre motocicleta y mecánico. |
+| Vehicle Management | Maintenance and Operations | Customer/Supplier | Maintenance and Operations requiere los datos del vehículo para programar, registrar y dar trazabilidad a los servicios de mantenimiento. |
+| Vehicle Management | Reports | Customer/Supplier | Reports consume la información maestra del vehículo para generar comparaciones, historiales y vistas consolidadas. |
+| Assignments | Vehicle Wellness | Conformist | Vehicle Wellness depende del estado de la asignación activa para validar el acceso a la telemetría y mantener la coherencia con la relación vehículo-mecánico. |
+| Assignments | Maintenance and Operations | Conformist | Maintenance and Operations usa la asignación activa como condición previa para ejecutar y validar el trabajo de mantenimiento. |
+| Vehicle Wellness | Reports | Customer/Supplier | Reports consume la telemetría analizada y los diagnósticos generados por Vehicle Wellness para construir paneles e indicadores. |
 
+### Context Mapping Notes
+
+- Vehicle Management acts as the main source of truth for vehicle identity and master data.
+- Vehicle Wellness is the core context that consumes vehicle and assignment data, then produces telemetry-based diagnostics.
+- Assignments acts as the operational bridge between the vehicle and the mechanic.
+- Maintenance and Operations depends on vehicle and assignment information to manage the service lifecycle.
+- Reports remains a downstream analytical context that consolidates information from the other business contexts.
 
 ### 4.3. Software Architecture
 
