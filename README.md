@@ -974,6 +974,18 @@ Se utiliza un enfoque basado en diagramas de secuencia para representar los fluj
 
 #### 4.2.4. Bounded Context Canvases
 
+**Bounded Context Canvas — Vehicle Wellness**
+![Vehicle Wellness](assets/images/chapter-4/bounded-context-canvases/Vehicle Wellness.svg)
+**Bounded Context Canvas — Vehicle Managment**
+![Vehicle Maintenance](assets/images/chapter-4/bounded-context-canvases/Vehicle Maintenance.svg)
+**Bounded Context Canvas — Maintenance and Operations**
+![Maintenance and Operations](assets/images/chapter-4/bounded-context-canvases/Maintenance and Operations.svg)
+**Bounded Context Canvas — Reports**
+![Reports](assets/images/chapter-4/bounded-context-canvases/Reports.svg)
+**Bounded Context Canvas — Assignments**
+![Assignments](assets/images/chapter-4/bounded-context-canvases/Assignments.svg)
+**Bounded Context Canvas — IAM**
+![IAM (Identity & Access Management)](assets/images/chapter-4/bounded-context-canvases/IAM (Identity & Access Management).svg)
 #### 4.2.5. Context Mapping
 
 
