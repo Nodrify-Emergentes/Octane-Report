@@ -1445,8 +1445,44 @@ Se utiliza un enfoque basado en diagramas de secuencia para representar los fluj
 
 #### 4.2.4. Bounded Context Canvases
 
+**Bounded Context Canvas — Vehicle Wellness**
+![Vehicle Wellness](https://github.com/Nodrify-Emergentes/Octane-Report/raw/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/bounded-context-canvases/Vehicle%20Wellness.png)
+**Bounded Context Canvas — Vehicle Managment**
+![Vehicle Maintenance](https://github.com/Nodrify-Emergentes/Octane-Report/raw/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/bounded-context-canvases/Vehicle%20Management.png)
+**Bounded Context Canvas — Maintenance and Operations**
+![Maintenance and Operations](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/bounded-context-canvases/Maintenance%20and%20Operations.png)
+**Bounded Context Canvas — Reports**
+![Reports](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/bounded-context-canvases/Reports.png)
+**Bounded Context Canvas — Assignments**
+![Assignments](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/bounded-context-canvases/Assignments.png)
+**Bounded Context Canvas — IAM**
+![IAM (Identity & Access Management)](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/bounded-context-canvases/IAM%20(Identity%20%26%20Access%20Management).png)
 #### 4.2.5. Context Mapping
+En la presente sección se describen las relaciones estructurales identificadas entre los bounded contexts que conforman la solución **Octane**. Para la elaboración del context mapping se han considerado únicamente los contextos vinculados al dominio principal del negocio: **Vehicle Management**, **Assignments**, **Vehicle Wellness**, **Maintenance and Operations** y **Reports**.  
 
+El bounded context **IAM (Identity & Access Management)** no ha sido incluido en este análisis debido a que corresponde a un **generic context**, cuya finalidad es proveer capacidades transversales de autenticación y autorización, sin intervenir directamente en la lógica central del dominio.
+
+El objetivo del context mapping es establecer dependencias claras entre contextos, reducir el acoplamiento innecesario y definir mecanismos de colaboración coherentes con los principios de **Domain-Driven Design (DDD)**.
+
+![Context Mapping)](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/context-mapping/Context-Mapping.png)
+
+| Contexto upstream | Contexto downstream | Patrón de relación | Justificación |
+|---|---|---|---|
+| Vehicle Management | Vehicle Wellness | Conformist | Vehicle Wellness consume los datos maestros del vehículo para interpretar correctamente la telemetría y debe adaptarse al modelo publicado por Vehicle Management. |
+| Vehicle Management | Assignments | Customer/Supplier | Assignments depende del registro de vehículos para establecer y mantener la relación operativa entre motocicleta y mecánico. |
+| Vehicle Management | Maintenance and Operations | Customer/Supplier | Maintenance and Operations requiere los datos del vehículo para programar, registrar y dar trazabilidad a los servicios de mantenimiento. |
+| Vehicle Management | Reports | Customer/Supplier | Reports consume la información maestra del vehículo para generar comparaciones, historiales y vistas consolidadas. |
+| Assignments | Vehicle Wellness | Conformist | Vehicle Wellness depende del estado de la asignación activa para validar el acceso a la telemetría y mantener la coherencia con la relación vehículo-mecánico. |
+| Assignments | Maintenance and Operations | Conformist | Maintenance and Operations usa la asignación activa como condición previa para ejecutar y validar el trabajo de mantenimiento. |
+| Vehicle Wellness | Reports | Customer/Supplier | Reports consume la telemetría analizada y los diagnósticos generados por Vehicle Wellness para construir paneles e indicadores. |
+
+**Context Mapping Notes**
+
+- **Vehicle Management** actúa como fuente de verdad para la identidad y los datos maestros del vehículo.
+- **Vehicle Wellness** es el contexto central de análisis de telemetría y generación de alertas.
+- **Assignments** funciona como puente operativo entre la motocicleta y el mecánico.
+- **Maintenance and Operations** depende de Vehicle Management y Assignments para gestionar el ciclo de mantenimiento.
+- **Reports** permanece como un contexto analítico aguas abajo que consolida información de los demás contextos de negocio.
 
 ### 4.3. Software Architecture
 
