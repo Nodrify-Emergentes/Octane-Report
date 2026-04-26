@@ -1698,30 +1698,29 @@ Para gestionar la complejidad del negocio de telemetría y mantenimiento, se apl
 
 En este nivel se describe la visión global de la organización Nodrify. El diagrama representa cómo el sistema Octane coexiste con otros sistemas internos y externos, definiendo el ecosistema completo y las interacciones de alto nivel entre los actores principales y los límites de la empresa.
 
-![system-landscape](assets\images\chapter-4\software-architecture\system-landscape-keys.png)
-![system-landscape-keys](assets\images\chapter-4\software-architecture\system-landscape.png)
+![system-landscape](assets/images/chapter-4/software-architecture/system-landscape-keys.png)
+![system-landscape-keys](assets/images/chapter-4/software-architecture/system-landscape.png)
 
 #### 4.3.2. Software Architecture Context Level Diagrams
 
 Este punto detalla el Sistema Octane como una caja negra, centrándose exclusivamente en sus fronteras inmediatas. Describe las relaciones directas de datos y comunicación entre el sistema, los usuarios (Motociclistas y Mecánicos) y las dependencias externas críticas como el hardware IoT y el motor de IA.
 
-![context-diagram](assets\images\chapter-4\software-architecture\context-diagram.png)
-![context-diagram-keys](assets\images\chapter-4\software-architecture\context-diagram-keys.png)
+![context-diagram](assets/images/chapter-4/software-architecture/context-diagram.png)
+![context-diagram-keys](assets/images/chapter-4/software-architecture/context-diagram-keys.png)
 
 #### 4.3.3. Software Architecture Container Level Diagrams
 
 Aquí se desglosa la aplicación en sus unidades de ejecución o contenedores. Se identifican las aplicaciones móviles, la plataforma web, el API Monolítica Modular y la base de datos, especificando las tecnologías utilizadas (Spring Boot, React, Flutter, PostgreSQL) y los protocolos de comunicación entre ellos.
 
-![container-diagram](assets\images\chapter-4\software-architecture\container-diagram.png)
-![container-diagram-keys](assets\images\chapter-4\software-architecture\container-diagram-keys.png)
+![container-diagram](assets/images/chapter-4/software-architecture/container-diagram.png)
+![container-diagram-keys](assets/images/chapter-4/software-architecture/container-diagram-keys.png)
 
 #### 4.3.4. Software Architecture Deployment Diagrams
 
 Este diagrama describe la distribución física y la infraestructura de nube de la solución. Detalla dónde se alojan los contenedores en entornos reales de producción, incluyendo el despliegue del frontend en Vercel, el backend y base de datos en Render, la distribución móvil en Firebase y el hardware embebido en el microcontrolador de la motocicleta.
 
-![deployment-diagram](assets\images\chapter-4\software-architecture\deployment-diagram.png)
-![deployment-diagram-keys](assets\images\chapter-4\software-architecture\deployment-diagram-keys.png)
-
+![deployment-diagram](assets/images/chapter-4/software-architecture/deployment-diagram.png)
+![deployment-diagram-keys](assets/images/chapter-4/software-architecture/deployment-diagram-keys.png)
 
 ## Bibliografía
 
