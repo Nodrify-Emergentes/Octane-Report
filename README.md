@@ -229,7 +229,7 @@ Visión: Ser la plataforma líder en movilidad inteligente en el mercado peruano
     <th colspan="2">Sebastian Pacheco Astiguetta</th>
   </tr>
   <tr>
-    <td> <img src="assets/images/chapter-1/perfiles/pacheco-pfp.jpg" alt="Sebastián Pacheco" style="width: 500px; height: auto;"> </td>
+    <td> <img src="assets/images/chapter-1/perfiles/pache-pfp.png" alt="Sebastián Pacheco" style="width: 500px; height: auto;"> </td>
     <td> Soy Sebastian Pacheco, tengo 22 años y soy alumno de Ingeniería de Software en la UPC, código u202110291. Me considero una persona trabajadora y activa, priorizando las responsabilidades ante todo, pero también destaco en trabajo en equipo, permitiendo a todos que participen. Tengo conocimiento de C++ y Python, los cuales pongo en práctica mediante proyectos personales. </td>
   </tr>
   <tr>
