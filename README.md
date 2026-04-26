@@ -1005,7 +1005,7 @@ El objetivo del context mapping es establecer dependencias claras entre contexto
 | Assignments | Maintenance and Operations | Conformist | Maintenance and Operations usa la asignación activa como condición previa para ejecutar y validar el trabajo de mantenimiento. |
 | Vehicle Wellness | Reports | Customer/Supplier | Reports consume la telemetría analizada y los diagnósticos generados por Vehicle Wellness para construir paneles e indicadores. |
 
-### Context Mapping Notes
+**Context Mapping Notes**
 
 - **Vehicle Management** actúa como fuente de verdad para la identidad y los datos maestros del vehículo.
 - **Vehicle Wellness** es el contexto central de análisis de telemetría y generación de alertas.
