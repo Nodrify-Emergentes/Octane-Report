@@ -1638,17 +1638,29 @@ Se utiliza un enfoque basado en diagramas de secuencia para representar los fluj
 #### 4.2.4. Bounded Context Canvases
 
 **Bounded Context Canvas — Vehicle Wellness**
-![Vehicle Wellness](https://github.com/Nodrify-Emergentes/Octane-Report/raw/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/bounded-context-canvases/Vehicle%20Wellness.png)
+
+![Vehicle Wellness](assets/images/chapter-4/bounded-context-canvases/VehicleWellness.png)
+
 **Bounded Context Canvas — Vehicle Managment**
-![Vehicle Maintenance](https://github.com/Nodrify-Emergentes/Octane-Report/raw/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/bounded-context-canvases/Vehicle%20Management.png)
+
+![Vehicle Maintenance](assets/images/chapter-4/bounded-context-canvases/VehicleManagement.png)
+
 **Bounded Context Canvas — Maintenance and Operations**
-![Maintenance and Operations](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/bounded-context-canvases/Maintenance%20and%20Operations.png)
+
+![Maintenance and Operations](assets/images/chapter-4/bounded-context-canvases/MaintenanceandOperations.png)
+
 **Bounded Context Canvas — Reports**
-![Reports](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/bounded-context-canvases/Reports.png)
+
+![Reports](assets/images/chapter-4/bounded-context-canvases/Reports.png)
+
 **Bounded Context Canvas — Assignments**
-![Assignments](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/bounded-context-canvases/Assignments.png)
+
+![Assignments](assets/images/chapter-4/bounded-context-canvases/Assignments.png)
+
 **Bounded Context Canvas — IAM**
-![IAM (Identity & Access Management)](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/bounded-context-canvases/IAM%20(Identity%20%26%20Access%20Management).png)
+
+![IAM (Identity & Access Management)](assets/images/chapter-4/bounded-context-canvases/IAM.png)
+
 #### 4.2.5. Context Mapping
 En la presente sección se describen las relaciones estructurales identificadas entre los bounded contexts que conforman la solución **Octane**. Para la elaboración del context mapping se han considerado únicamente los contextos vinculados al dominio principal del negocio: **Vehicle Management**, **Assignments**, **Vehicle Wellness**, **Maintenance and Operations** y **Reports**.  
 
@@ -1656,7 +1668,7 @@ El bounded context **IAM (Identity & Access Management)** no ha sido incluido en
 
 El objetivo del context mapping es establecer dependencias claras entre contextos, reducir el acoplamiento innecesario y definir mecanismos de colaboración coherentes con los principios de **Domain-Driven Design (DDD)**.
 
-![Context Mapping)](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/context-mapping/Context-Mapping.png)
+![Context Mapping](assets/images/chapter-4/context-mapping/Context-Mapping.png)
 
 | Contexto upstream | Contexto downstream | Patrón de relación | Justificación |
 |---|---|---|---|
