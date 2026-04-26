@@ -987,7 +987,12 @@ Se utiliza un enfoque basado en diagramas de secuencia para representar los fluj
 **Bounded Context Canvas — IAM**
 ![IAM (Identity & Access Management)](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/bounded-context-canvases/IAM%20(Identity%20%26%20Access%20Management).png)
 #### 4.2.5. Context Mapping
-En esta sección se presenta el proceso de Context Mapping, cuyo propósito es identificar, analizar y documentar las relaciones estructurales entre los bounded contexts previamente definidos. El objetivo es comprender cómo interactúan, cuáles son sus dependencias y qué patrones de integración de Domain-Driven Design son más adecuados.
+En la presente sección se describen las relaciones estructurales identificadas entre los bounded contexts que conforman la solución **Octane**. Para la elaboración del context mapping se han considerado únicamente los contextos vinculados al dominio principal del negocio: **Vehicle Management**, **Assignments**, **Vehicle Wellness**, **Maintenance and Operations** y **Reports**.  
+
+El bounded context **IAM (Identity & Access Management)** no ha sido incluido en este análisis debido a que corresponde a un **generic context**, cuya finalidad es proveer capacidades transversales de autenticación y autorización, sin intervenir directamente en la lógica central del dominio.
+
+El objetivo del context mapping es establecer dependencias claras entre contextos, reducir el acoplamiento innecesario y definir mecanismos de colaboración coherentes con los principios de **Domain-Driven Design (DDD)**.
+
 ![Context Mapping)](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/context-mapping/Context-Mapping.png)
 | Contexto upstream | Contexto downstream | Patrón de relación | Justificación |
 |---|---|---|---|
