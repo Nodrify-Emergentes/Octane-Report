@@ -975,17 +975,17 @@ Se utiliza un enfoque basado en diagramas de secuencia para representar los fluj
 #### 4.2.4. Bounded Context Canvases
 
 **Bounded Context Canvas — Vehicle Wellness**
-![Vehicle Wellness](https://github.com/Nodrify-Emergentes/Octane-Report/raw/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/bounded-context-canvases/Vehicle%20Wellness.svg)
+![Vehicle Wellness](https://github.com/Nodrify-Emergentes/Octane-Report/raw/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/bounded-context-canvases/Vehicle%20Wellness.png)
 **Bounded Context Canvas — Vehicle Managment**
-![Vehicle Maintenance](https://github.com/Nodrify-Emergentes/Octane-Report/raw/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/bounded-context-canvases/Vehicle%20Management.svg)
+![Vehicle Maintenance](https://github.com/Nodrify-Emergentes/Octane-Report/raw/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/bounded-context-canvases/Vehicle%20Management.png)
 **Bounded Context Canvas — Maintenance and Operations**
-![Maintenance and Operations](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/bounded-context-canvases/Maintenance%20and%20Operations.svg)
+![Maintenance and Operations](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/bounded-context-canvases/Maintenance%20and%20Operations.png)
 **Bounded Context Canvas — Reports**
-![Reports](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/bounded-context-canvases/Reports.svg)
+![Reports](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/bounded-context-canvases/Reports.png)
 **Bounded Context Canvas — Assignments**
-![Assignments](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/bounded-context-canvases/Assignments.svg)
+![Assignments](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/bounded-context-canvases/Assignments.png)
 **Bounded Context Canvas — IAM**
-![IAM (Identity & Access Management)](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/bounded-context-canvases/IAM%20(Identity%20%26%20Access%20Management).svg)
+![IAM (Identity & Access Management)](https://raw.githubusercontent.com/Nodrify-Emergentes/Octane-Report/refs/heads/feature/chapter-4-strategic-level-ddd/assets/images/chapter-4/bounded-context-canvases/IAM%20(Identity%20%26%20Access%20Management).png)
 #### 4.2.5. Context Mapping
 
 
