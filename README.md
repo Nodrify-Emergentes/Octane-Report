@@ -738,6 +738,33 @@ Jair, un abogado de 32 años que utiliza su motocicleta como principal medio de 
 
 #### 2.2.3. Análisis de entrevistas
 
+Al tener todas las entrevistas necesitadas de ambos segmentos objetivo, se procedió a realizar un análisis cualitativo para identificar patrones, necesidades comunes y oportunidades de mejora en el proceso de mantenimiento de motocicletas tanto para mecánicos como para propietarios. A continuación, se presenta un resumen categórico del análisis realizado:
+
+**Segmento Objetivo: Mecánicos y talleres de servicio**
+
+*Demografía:*  
+La edad de los mecánicos entrevistados varía entre 21 y 25 años, con una experiencia laboral de 1 a 3 años. Todos trabajan en talleres urbanos de Lima y atienden principalmente motos de uso diario y delivery, lo que refleja un perfil joven, técnico y cercano a un público que depende de sus vehículos para generar ingresos. El 100 % tiene menos de 3 años de experiencia y el 67 % atiende mayoritariamente a repartidores y transporte urbano.
+
+*Servicios frecuentes:*  
+Los servicios más comunes son cambios de aceite, ajustes de frenos, mantenimiento eléctrico básico, reparación de cadenas y revisión de neumáticos. Esto evidencia un enfoque en mantenimientos preventivos y correctivos rápidos, adaptados a clientes que necesitan volver a la pista en poco tiempo. El 100 % realiza cambios de aceite y revisión de frenos; el 67 % ofrece trabajos eléctricos y de neumáticos.
+
+*Gestión y diagnóstico:*  
+El historial de clientes se maneja con libretas, memoria personal o Excel poco usado. El diagnóstico es manual y basado en experiencia, usando herramientas básicas como multímetro y revisión visual. Esto revela una falta de digitalización en procesos clave del taller. El 67 % gestiona historial en cuadernos/memoria y solo el 33 % usa Excel de manera básica.
+
+*Necesidades y oportunidades:*  
+Los mecánicos ven valor en contar con telemetría remota (kilometraje, batería, combustible, temperatura, neumáticos) y reportes simples como historial, alertas de servicio y resúmenes mensuales. Prefieren un plan fijo para el taller en lugar de comisiones individuales, y valoran herramientas precisas, fáciles de usar y compatibles con WhatsApp, lo que abre una oportunidad para soluciones digitales simples, accesibles y prácticas. El 100% considera útil la telemetría, el 100% prefiere un plan fijo y el 100% valora la facilidad de uso por encima de funciones complejas.
+
+**Segmento Objetivo: Propietarios de motocicletas**
+
+*Demografía:*
+Los propietarios entrevistados tienen entre 22 y 32 años, con ocupaciones variadas (estudiante, profesor, abogado) y residen en distritos urbanos de Lima. Todos utilizan su moto para desplazamientos diarios, lo que indica un perfil diverso pero con una necesidad común de movilidad confiable. El 100% tiene entre 22 y 32 años, con ocupaciones variadas.
+
+*Gestión y comunicación:*
+El control de gastos y mantenimiento es manual, con métodos como notas, libretas o memoria, lo que genera dificultades para recordar fechas y detalles importantes. La comunicación con mecánicos se realiza principalmente a través de WhatsApp o llamadas, sin herramientas digitales específicas, lo que refleja una falta de organización y seguimiento efectivo. El 100% gestiona gastos de forma manual y el 100% se comunica con mecánicos por WhatsApp o llamadas.
+
+*Necesidades y oportunidades:*
+Los propietarios valoran la confiabilidad de su moto y buscan evitar fallas inesperadas. Están interesados en aplicaciones que ofrezcan recordatorios de mantenimiento, historial digital de gastos y servicios, y alertas proactivas basadas en métricas como kilometraje, presión de neumáticos, nivel de combustible y temperatura del motor. Están dispuestos a pagar por una suscripción si la aplicación demuestra ser confiable y les ayuda a mantener su moto en óptimas condiciones. El 100% valora la confiabilidad, el 100% busca recordatorios y alertas, y el 100% estaría dispuesto a pagar por una suscripción si el servicio es confiable y útil.
+
 ### 2.3. Needfinding
 
 #### 2.3.1. User Personas
