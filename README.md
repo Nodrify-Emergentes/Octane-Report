@@ -668,71 +668,71 @@ En esta sección se registran los puntos más relevantes de las entrevistas real
 
 A continuación, se presentan detalles de las entrevistas realizadas a los mecánicos:
 
-| Entrevista 1              | ![Flavio](images/chapter-2/thumbnail-mecanico1-flavio.png) |
-|---------------------------|------------------------------------------------------------|
-| Nombre del entrevistado   | Flavio Gallardo                                            |
-| Edad                      | 21                                                         |
-| Distrito                  | San Miguel                                                 |
-| Ocupación                 | Ayudante de mecánico                                       |
-| Duración de la Entrevista | 4:20                                                       |
-| Minuto de Inicio          | 0:00                                                       |
+| Entrevista 1              | ![Flavio](assets/images/chapter-2/interviews/mechanic-1-flavio.png) |
+|---------------------------|---------------------------------------------------------------------|
+| Nombre del entrevistado   | Flavio Gallardo                                                     |
+| Edad                      | 21                                                                  |
+| Distrito                  | San Miguel                                                          |
+| Ocupación                 | Ayudante de mecánico                                                |
+| Duración de la Entrevista | 4:20                                                                |
+| Minuto de Inicio          | 0:00                                                                |
 
 Flavio, un joven mecánico de 21 años que trabaja en un taller de motos en San Miguel, destaca por su enfoque práctico y empírico en el mantenimiento y diagnóstico vehicular. El entrevistado tiene preferencia por el sistema Android en móvil y laptop para web. Realiza principalmente servicios preventivos y correctivos de motos de delivery, registrando la información de sus clientes de forma manual, lo que genera dificultades en el seguimiento de mantenimientos. Su personalidad es proactiva y orientada a la mejora del servicio, mostrando interés en herramientas tecnológicas que optimicen su trabajo. Usa canales digitales básicos como WhatsApp para comunicarse, pero carece de sistemas especializados. Considera que el acceso a datos de telemetría como kilometraje, consumo o estado de batería le permitiría anticiparse a fallas y mejorar su precisión en los diagnósticos. Además, se muestra dispuesto a implementar soluciones digitales, incluso bajo un modelo de suscripción fija, siempre que sean fáciles de usar, precisas y se integren con plataformas cotidianas.
 
-| Entrevista 2              | ![Juan](images/chapter-2/thumbnail-mecanico2-juan.png) |
-|---------------------------|--------------------------------------------------------|
-| Nombre del entrevistado   | Juan Cuellar                                           |
-| Edad                      | 25                                                     |
-| Distrito                  | Pueblo Libre                                           |
-| Ocupación                 | Mecánico                                               |
-| Duración de la Entrevista | 4:15                                                   |
-| Minuto de Inicio          | 4:20                                                   |
+| Entrevista 2              | ![Juan](assets/images/chapter-2/interviews/mechanic-2-juan.png) |
+|---------------------------|-----------------------------------------------------------------|
+| Nombre del entrevistado   | Juan Cuellar                                                    |
+| Edad                      | 25                                                              |
+| Distrito                  | Pueblo Libre                                                    |
+| Ocupación                 | Mecánico                                                        |
+| Duración de la Entrevista | 4:15                                                            |
+| Minuto de Inicio          | 4:20                                                            |
 
 Juan, un mecánico de 25 años con tres años de experiencia en el mantenimiento de motos de uso diario, delivery y mototaxis, trabaja en un entorno práctico y orientado a la rapidez del servicio. El entrevistado tiene preferencia por el sistema Android en móvil y laptop para web. Ofrece mantenimientos básicos y reparaciones eléctricas sencillas, priorizando la atención ágil a repartidores que dependen de sus vehículos para trabajar. Lleva el registro de mantenimientos en una hoja de Excel y se comunica con sus clientes principalmente mediante WhatsApp, aunque admite que no actualiza sus registros con frecuencia por falta de tiempo. Su diagnóstico se basa en observación, experiencia y prueba directa, sin herramientas avanzadas. Considera que la posibilidad de monitorear remotamente las motos mediante telemetría sería muy beneficiosa, ya que le permitiría anticipar problemas y brindar un servicio más eficiente. Valora métricas como kilometraje, batería, consumo y presión de llantas, y reconoce la utilidad de reportes simples y periódicos para mejorar la confianza del cliente. Con una actitud abierta hacia la tecnología, estaría dispuesto a recomendar y ofrecer una app de monitoreo como servicio agregado bajo un modelo de costo fijo, siempre que sea fácil de usar y práctica, alineada con su ritmo de trabajo y el de sus clientes repartidores.
 
-| Entrevista 3              | ![Aldo](images/chapter-2/thumbnail-mecanico3-aldo.png) |
-|---------------------------|--------------------------------------------------------|
-| Nombre del entrevistado   | Aldo Vasquez                                           |
-| Edad                      | 23                                                     |
-| Distrito                  | Breña                                                  |
-| Ocupación                 | Ayudante de mecánico                                   |
-| Duración de la Entrevista | 3:58                                                   |
-| Minuto de Inicio          | 8:18                                                   |
+| Entrevista 3              | ![Aldo](assets/images/chapter-2/interviews/mechanic-3-aldo.png) |
+|---------------------------|-----------------------------------------------------------------|
+| Nombre del entrevistado   | Aldo Vasquez                                                    |
+| Edad                      | 23                                                              |
+| Distrito                  | Breña                                                           |
+| Ocupación                 | Ayudante de mecánico                                            |
+| Duración de la Entrevista | 3:58                                                            |
+| Minuto de Inicio          | 8:18                                                            |
 
 Aldo, un joven mecánico de 23 años con un año de experiencia en un taller de Breña, se caracteriza por su enfoque empírico y su interés en mejorar la eficiencia de su trabajo. El entrevistado tiene preferencia por el sistema Android en móvil y laptop para web. Brinda principalmente servicios de mantenimiento preventivo y correctivo, incluyendo cambios de aceite, frenos, cadenas y reparaciones eléctricas, adaptándose al aumento de motos modernas. Registra los mantenimientos de forma manual y memorística, utilizando cuadernos o recordatorios verbales, y se comunica con sus clientes principalmente por WhatsApp. Carece de herramientas digitales para diagnósticos, confiando en su experiencia e intuición, aunque reconoce el valor de la tecnología: considera que la telemetría en tiempo real (presión, temperatura, voltaje) le permitiría anticipar fallas y optimizar el servicio. Valora la precisión y simplicidad en las herramientas digitales, estaría dispuesto a recomendar y ofrecer una app de monitoreo como servicio adicional bajo un modelo de costo fijo, y demuestra una actitud abierta hacia la innovación tecnológica aplicada a su labor diaria.
 
 A continuación, se presentan detalles de las entrevistas realizadas a los dueños de motos:
 
-| Entrevista 4              | ![Josue](images/chapter-2/thumbnail-motociclista1-josue.png) |
-|---------------------------|--------------------------------------------------------------|
-| Nombre del entrevistado   | Josue Paiva                                                  |
-| Edad                      | 22                                                           |
-| Distrito                  | San Miguel                                                   |
-| Ocupación                 | Estudiante                                                   |
-| Duración de la Entrevista | 5:40                                                         |
-| Minuto de Inicio          | 12:10                                                        |
+| Entrevista 4              | ![Josue](assets/images/chapter-2/interviews/cyclist-1-josue.png) |
+|---------------------------|------------------------------------------------------------------|
+| Nombre del entrevistado   | Josue Paiva                                                      |
+| Edad                      | 22                                                               |
+| Distrito                  | San Miguel                                                       |
+| Ocupación                 | Estudiante                                                       |
+| Duración de la Entrevista | 5:40                                                             |
+| Minuto de Inicio          | 12:10                                                            |
 
 Josue, un estudiante de 22 años de San Miguel, utiliza su motocicleta principalmente para trasladarse a la universidad y realizar encargos ocasionales. Muestra una actitud práctica y orientada a la optimización de recursos, ya que debe gestionar un presupuesto ajustado. Actualmente, realiza un seguimiento básico de sus gastos de combustible y mantenimiento de forma mental o en notas simples, lo que a veces le hace perder el control de sus fechas de servicio. Valora mucho la confiabilidad de su moto, ya que una falla repentina afectaría directamente sus estudios y movilidad. Se comunica con su mecánico por WhatsApp y llamadas, pero encuentra este proceso desorganizado. El entrevistado tiene preferencia por el sistema Android en móvil y laptop para web. Le interesaría una aplicación que le ayude a recordar fechas de mantenimiento, le permita visualizar un historial claro de gastos y, sobre todo, que sea muy sencilla y rápida de usar. Estaría dispuesto a usar una versión gratuita con funciones básicas, mostrando mayor interés en funciones de alerta y recordatorio que en métricas en tiempo muy avanzadas.
 
-| Entrevista 5              | ![Mathias](images/chapter-2/thumbnail-motociclista2-mathias.png) |
-|---------------------------|------------------------------------------------------------------|
-| Nombre del entrevistado   | Mathias Diaz                                                     |
-| Edad                      | 23                                                               |
-| Distrito                  | Pueblo Libre                                                     |
-| Ocupación                 | Profesor                                                         |
-| Duración de la Entrevista | 7:34                                                             |
-| Minuto de Inicio          | 17:49                                                            |
+| Entrevista 5              | ![Mathias](assets/images/chapter-2/interviews/cyclist-2-mathias.png) |
+|---------------------------|----------------------------------------------------------------------|
+| Nombre del entrevistado   | Mathias Diaz                                                         |
+| Edad                      | 23                                                                   |
+| Distrito                  | Pueblo Libre                                                         |
+| Ocupación                 | Profesor                                                             |
+| Duración de la Entrevista | 7:34                                                                 |
+| Minuto de Inicio          | 17:49                                                                |
 
 Mathias, un profesor de 23 años de Pueblo Libre, usa su motocicleta para desplazarse diariamente a su trabajo en un colegio y para sus actividades personales. Tiene un perfil organizado y metódico, valorando la planificación y la prevención. Lleva un registro manual (en una libreta) del kilometraje y los servicios realizados a su moto, pero reconoce que este método es susceptible a olvidos y no le proporciona alertas proactivas. Su principal motivación es la seguridad y la economía a largo plazo, buscando evitar reparaciones costosas. El entrevistado tiene preferencia por el sistema iOS en móvil y laptop para web. Considera que una aplicación podría ser una herramienta ideal para centralizar la información de su vehículo. Le atraen especialmente las funcionalidades que le permitirían recibir notificaciones basadas en el kilometraje para los próximos servicios, acceder a un historial digital ordenado y poder compartir fácilmente este historial con un mecánico de confianza. Está abierto a considerar una suscripción de bajo costo si la aplicación demuestra ser confiable y le ayuda a mantener su moto en óptimas condiciones de manera consistente.
 
-| Entrevista 6              | ![Jair Huamani](images/chapter-2/thumbnail-motociclista3-jair.png) |
-|---------------------------|--------------------------------------------------------------------|
-| Nombre del entrevistado   | Jair Huamani                                                       |
-| Edad                      | 32                                                                 |
-| Distrito                  | Huancavelica                                                       |
-| Ocupación                 | Abogado                                                            |
-| Duración de la Entrevista | 8:28                                                               |
-| Minuto de Inicio          | 25:18                                                              |
+| Entrevista 6              | ![Jair Huamani](assets/images/chapter-2/interviews/cyclist-3-jair.png) |
+|---------------------------|------------------------------------------------------------------------|
+| Nombre del entrevistado   | Jair Huamani                                                           |
+| Edad                      | 32                                                                     |
+| Distrito                  | Huancavelica                                                           |
+| Ocupación                 | Abogado                                                                |
+| Duración de la Entrevista | 8:28                                                                   |
+| Minuto de Inicio          | 25:18                                                                  |
 
 Jair, un abogado de 32 años que utiliza su motocicleta como principal medio de transporte en Lima, se caracteriza por su enfoque organizado y su interés en mantener la eficiencia y seguridad de su vehículo. El entrevistado tiene preferencia por el sistema iOS en móvil y laptop para web. Actualmente, lleva el control del gasto de combustible y mantenimiento de su moto de manera manual, lo que a veces le genera dificultades para recordar fechas importantes. Ha experimentado fallas inesperadas que le han ocasionado gastos imprevistos, lo que le ha llevado a valorar la importancia del mantenimiento preventivo. Se comunica con su mecánico principalmente a través de llamadas y mensajes de texto, pero no utiliza herramientas digitales específicas para gestionar el estado de su moto. Jair se muestra abierto a la idea de una aplicación que le permita monitorear automáticamente el estado de su moto, recibir alertas sobre posibles fallas y conocer métricas en tiempo real como presión de neumáticos, nivel de combustible y temperatura del motor. Valora la simplicidad y claridad en las aplicaciones móviles, y estaría dispuesto a pagar una suscripción mensual si el servicio le ofrece beneficios tangibles en términos de seguridad y ahorro en mantenimiento.
 
