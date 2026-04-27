@@ -1747,6 +1747,18 @@ Este diagrama describe la distribución física y la infraestructura de nube de 
 ![deployment-diagram](assets/images/chapter-4/software-architecture/deployment-diagram.png)
 ![deployment-diagram-keys](assets/images/chapter-4/software-architecture/deployment-diagram-keys.png)
 
+## Conclusiones
+
+El desarrollo del proyecto permitió integrar de manera efectiva enfoques de análisis de negocio, diseño centrado en el usuario, modelado de dominio y arquitectura de software, logrando una visión integral de la solución propuesta. A través del uso de herramientas como Lean UX, Impact Mapping y técnicas de modelado como Event Storming y Context Mapping, el equipo logró comprender de manera estructurada la problemática y definir una solución alineada con las necesidades de los usuarios y los objetivos del negocio.
+
+Asimismo, la definición de artefactos como User Personas, escenarios As-Is y To-Be, junto con los atributos de calidad y drivers arquitectónicos, permitió establecer una base sólida para la toma de decisiones de diseño. Esto contribuyó a que la arquitectura del sistema sea coherente, escalable y alineada con los requerimientos funcionales y no funcionales del proyecto.
+
+El uso de prácticas colaborativas mediante GitHub facilitó la organización del trabajo, el control de versiones y la participación activa de todos los integrantes del equipo. La división de responsabilidades y el uso de pull requests permitieron mantener la calidad del contenido y asegurar la integración progresiva de los aportes individuales en un informe consistente.
+
+Por otro lado, el proyecto evidenció la importancia de la comunicación efectiva, tanto oral como escrita, para alinear a los miembros del equipo y garantizar la comprensión de los diferentes componentes del sistema, especialmente considerando la diversidad de enfoques (negocio, UX y arquitectura) involucrados.
+
+Finalmente, se concluye que la aplicación de metodologías estructuradas y el trabajo colaborativo fueron factores clave para el desarrollo exitoso del proyecto en esta etapa inicial. Las bases establecidas en esta entrega permiten continuar con las siguientes fases del proyecto con una mayor claridad, reduciendo riesgos y asegurando una evolución coherente de la solución.
+
 ## Bibliografía
 
 Freitas, M. C. (2025, 19 de julio). Lima registra 1.668 muertes por accidentes de tránsito en lo que va del 2025: motociclistas lideran víctimas, según el MTC. Infobae. https://www.infobae.com/peru/2025/07/19/lima-registra-1668-muertes-por-accidentes-de-transito-en-lo-que-va-del-2025-motociclistas-lideran-victimas-segun-el-mtc/
