@@ -138,7 +138,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Sebastián Omar Real Calderón
         <br>
         TB1<br>
-        <!--Añadir Info-->
+        Durante el desarrollo del proyecto, expuse al equipo los antecedentes y la problemática identificada, así como los resultados obtenidos en herramientas de análisis como User Personas, Empathy Mapping y los escenarios As-Is y To-Be. Presenté estos elementos de forma clara y estructurada, permitiendo que integrantes con distintos niveles técnicos comprendieran el contexto del problema y las decisiones de diseño. Asimismo, comuniqué los drivers arquitectónicos, decisiones de diseño y escenarios de atributos de calidad, facilitando la alineación del equipo en torno a la solución propuesta.
         <br>
         Alejo Cardenas Jose Antonio
         <br>
@@ -153,11 +153,12 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Russell Stephen Romero Qwistgaard
         <br>
         TB1<br>
-        <!--Añadir Info-->
+        Durante las sesiones de trabajo, comuniqué al equipo los resultados del enfoque Lean UX, incluyendo los Problem Statements, Assumptions e Hypothesis Statements. Expliqué de manera clara el Lean UX Canvas y el Impact Mapping, permitiendo que todos los miembros comprendieran cómo estas herramientas guiaban la definición del producto. Además, presenté los Bounded Context y el Context Mapping, asegurando que el equipo entendiera la organización del sistema y la relación entre sus componentes desde una perspectiva de dominio.
         <br>
       </td>
       <td>
-        <!--Conclusiones grupales-->
+        TB1:<br>
+        Como equipo, logramos comunicar nuestras ideas y resultados de manera clara y objetiva durante las reuniones de trabajo, adaptando el nivel de detalle según el público y el rol de cada integrante. Esto permitió que todos comprendieran tanto el enfoque de negocio como las decisiones técnicas, facilitando la colaboración, la validación conjunta y la toma de decisiones informadas a lo largo del desarrollo del proyecto.
       </td>
     </tr>
     <tr>
@@ -169,7 +170,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Sebastián Omar Real Calderón
         <br>
         TB1<br>
-        <!--Añadir Info-->
+        Elaboré la documentación relacionada con el análisis del problema y el diseño de la solución, incluyendo secciones como antecedentes, problemática, User Personas, User Task Matrix y escenarios As-Is y To-Be. Redacté de manera clara los drivers arquitectónicos, decisiones de diseño y escenarios de atributos de calidad, asegurando que la información fuera comprensible tanto para perfiles técnicos como no técnicos. Esta documentación permitió mantener coherencia en el desarrollo del proyecto y sirvió como base para la toma de decisiones del equipo.
         <br>
         Alejo Cardenas Jose Antonio
         <br>
@@ -184,11 +185,12 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Russell Stephen Romero Qwistgaard
         <br>
         TB1<br>
-        <!--Añadir Info-->
+        Desarrollé la documentación correspondiente al enfoque Lean UX, redactando los Problem Statements, Assumptions e Hypothesis Statements de forma estructurada y objetiva. Asimismo, documenté el Lean UX Canvas, Impact Mapping y los modelos de dominio como Bounded Context y Context Mapping, asegurando claridad en la definición del alcance del sistema. Esta documentación facilitó la comprensión del producto y ayudó a mantener alineados los objetivos del equipo durante el desarrollo.
         <br>
       </td>
       <td>
-        <!--Conclusiones grupales-->
+        TB1:<br>
+        A nivel grupal, se logró una documentación clara, estructurada y accesible, que permitió transmitir los resultados del análisis y diseño del proyecto de manera efectiva. La redacción objetiva y el uso de herramientas visuales y conceptuales facilitaron la comprensión del sistema por parte de todos los integrantes, asegurando consistencia en la implementación y sirviendo como referencia sólida durante todo el desarrollo.
       </td>
     </tr>
   </tbody>
