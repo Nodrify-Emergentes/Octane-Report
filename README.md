@@ -215,8 +215,8 @@ Visión: Ser la plataforma líder en movilidad inteligente en el mercado peruano
     <th colspan="2">Russell Stephen Romero Qwistgaard</th>
   </tr>
   <tr>
-    <td> <img src="assets/images/chapter-1/perfiles/russel-pfp.png" alt="Russel Romero" style="width: 500px; height: auto;" > </td>
-    <td></td>
+    <td><img src="assets/images/chapter-1/perfiles/russel-pfp.jpeg" alt="Russel Romero" style="width: 500px; height: auto;" > </td>
+    <td>Estudio la carrera de ingeniería de software, actualmente en el 9 ciclo de esta. Me apasiona crear programas en entornos distintos para poder ampliar mi conocimiento en las muchas áreas que dependen de mi formación. He aprendido a programar en lenguajes como HTML, C++, Java, SQL y en frameworks como React, .Net, Angular CLI, Vue.js y Node.js</td>
   </tr>
   <tr>
     <th colspan="2">Jose Antonio Alejo Cardenas</th>
