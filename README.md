@@ -41,17 +41,56 @@
 
 **Registro de Versiones del Informe**
 
-| Versión | Fecha | Autor | Descripción de modificación |
-|--------|-------|--------|-----------------------------|
-|        |       |        |                             |
-|        |       |        |                             |
-|        |       |        |                             |
-|        |       |        |                             |
-|        |       |        |                             |
-
+| Versión | Fecha      | Autor                         | Descripción de modificación |
+|---------|------------|-------------------------------|-----------------------------|
+| 1.0     | 04/26/2026 | Real Calderón, Sebastián Omar | Primera Versión del Informe |
 <div style="page-break-after: always;"></div>
 
 **Project Report Collaboration Insights**
+
+URL del Repositorio de Github del Informe: https://github.com/Nodrify-Emergentes/Octane-Report
+
+**TB1:**
+
+Para la elaboración del informe del proyecto, el equipo adoptó un enfoque colaborativo utilizando un repositorio compartido en GitHub dentro de la organización del equipo. Durante esta primera entrega (TB1), se definió una estructura inicial del repositorio alineada con los capítulos del informe, permitiendo organizar el contenido de manera clara, modular y escalable.
+
+Las actividades de desarrollo del informe se organizaron mediante la asignación de responsabilidades específicas a cada integrante, en función de sus áreas de trabajo dentro del proyecto. Esta distribución permitió asegurar una cobertura completa de los distintos aspectos del análisis, diseño y definición del sistema. Las responsabilidades fueron las siguientes:
+
+- Sebastián Omar Real Calderón: encargado del desarrollo de las secciones relacionadas con el análisis del problema y los drivers arquitectónicos, incluyendo antecedentes y problemática, User Personas, User Task Matrix, Empathy Mapping, escenarios As-Is y To-Be, Design Purpose, Primary Functionality, Quality Attribute Scenarios, Constraints, Architectural Drivers Backlog, Architectural Design Decisions y Quality Attribute Scenario Refinements.
+
+
+- José Antonio Alejo Cárdenas: responsable de la definición del producto y la arquitectura de software, desarrollando la descripción de la Startup, User Stories, Product Backlog y los distintos diagramas arquitectónicos, incluyendo System Landscape, Context Level, Container Level y Deployment Diagrams.
+
+
+- Sebastián Pacheco Astiguetta: encargado del análisis de negocio y modelado de dominio, desarrollando los segmentos objetivo, análisis competitivo, estrategias frente a competidores, así como el Ubiquitous Language, Event Storming, Candidate Context Discovery y Domain Message Flows Modeling.
+
+
+- Russell Stephen Romero Qwistgaard: responsable del enfoque Lean UX y la definición estratégica del producto, desarrollando los Lean UX Problem Statements, Assumptions, Hypothesis Statements, Lean UX Canvas, Impact Mapping, así como los modelos de dominio como Bounded Context Canvases y Context Mapping.
+
+
+Para la gestión del trabajo colaborativo, se estableció el uso de ramas por cada sección o capítulo del informe, permitiendo que cada integrante trabajara de manera independiente sobre su contenido asignado. Posteriormente, los avances fueron integrados a la rama principal mediante pull requests, los cuales fueron revisados para garantizar la calidad, coherencia y consistencia del informe.
+
+Este flujo de trabajo permitió mantener un historial detallado de cambios a través de commits, evidenciando la participación activa de todos los integrantes del equipo. Asimismo, promovió la colaboración continua, el intercambio de ideas y la validación conjunta del contenido desarrollado.
+
+Como evidencia del proceso, se incluirán capturas de los analíticos de colaboración del repositorio, donde se visualiza la cantidad de commits realizados por cada miembro, así como el historial de pull requests gestionados durante esta entrega. Estas evidencias son coherentes con el Registro de Versiones del Informe, en el cual se documentan los avances y actualizaciones realizadas en cada sección.
+
+![Pulse TB1](assets/images/misc/insights/tb1/tb1_pulse.png)
+
+![Collaborators TB1](assets/images/misc/insights/tb1/tb1_collaborators.png)
+
+![Network 1 TB1](assets/images/misc/insights/tb1/tb1_network_1.png)
+![Network 1 TB1](assets/images/misc/insights/tb1/tb1_network_2.png)
+![Network 1 TB1](assets/images/misc/insights/tb1/tb1_network_3.png)
+![Network 1 TB1](assets/images/misc/insights/tb1/tb1_network_4.png)
+
+Distribución de Commits por Integrante:
+
+| Integrante                        | Cantidad de Commits |
+|-----------------------------------|---------------------|
+| Sebastián Omar Real Calderón      | 24                  |
+| José Antonio Alejo Cárdenas       | 6                   |
+| Sebastián Pacheco Astiguetta      | 27                  |
+| Russell Stephen Romero Qwistgaard | 28                  |
 
 <div style="page-break-after: always;"></div>
 
