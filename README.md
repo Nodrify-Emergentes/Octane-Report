@@ -149,7 +149,79 @@ Distribución de Commits por Integrante:
       - [4.3.2. Software Architecture Context Level Diagrams](#432-software-architecture-context-level-diagrams)
       - [4.3.3. Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)
       - [4.3.4. Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)
-
+  - [Capítulo V: Tactical-Level Software Design](#capítulo-v-tactical-level-software-design)
+    - [5.1. Bounded Context: Identity Access Management](#51-bounded-context-identity-access-management)
+      - [5.1.1. Domain Layer](#511-domain-layer)
+      - [5.1.2. Interface Layer](#512-interface-layer)
+      - [5.1.3. Application Layer](#513-application-layer)
+      - [5.1.4. Infrastructure Layer](#514-infrastructure-layer)
+      - [5.1.5. Bounded Context Software Architecture Component Level Diagrams](#515-bounded-context-software-architecture-component-level-diagrams)
+      - [5.1.6. Bounded Context Software Architecture Code Level Diagrams](#516-bounded-context-software-architecture-code-level-diagrams)
+        - [5.1.6.1. Bounded Context Domain Layer Class Diagrams](#5161-bounded-context-domain-layer-class-diagrams)
+        - [5.1.6.2. Bounded Context Database Design Diagram](#5162-bounded-context-database-design-diagram)
+    - [5.2. Bounded Context: Reports](#52-bounded-context-reports)
+      - [5.2.1. Domain Layer](#521-domain-layer)
+      - [5.2.2. Interface Layer](#522-interface-layer)
+      - [5.2.3. Application Layer](#523-application-layer)
+      - [5.2.4. Infrastructure Layer](#524-infrastructure-layer)
+      - [5.2.5. Bounded Context Software Architecture Component Level Diagrams](#525-bounded-context-software-architecture-component-level-diagrams)
+      - [5.2.6. Bounded Context Software Architecture Code Level Diagrams](#526-bounded-context-software-architecture-code-level-diagrams)
+        - [5.2.6.1. Bounded Context Domain Layer Class Diagrams](#5261-bounded-context-domain-layer-class-diagrams)
+        - [5.2.6.2. Bounded Context Database Design Diagram](#5262-bounded-context-database-design-diagram)
+    - [5.3. Bounded Context: Assignments](#53-bounded-context-assignments)
+      - [5.3.1. Domain Layer](#531-domain-layer)
+      - [5.3.2. Interface Layer](#532-interface-layer)
+      - [5.3.3. Application Layer](#533-application-layer)
+      - [5.3.4. Infrastructure Layer](#534-infrastructure-layer)
+      - [5.3.5. Bounded Context Software Architecture Component Level Diagrams](#535-bounded-context-software-architecture-component-level-diagrams)
+      - [5.3.6. Bounded Context Software Architecture Code Level Diagrams](#536-bounded-context-software-architecture-code-level-diagrams)
+        - [5.3.6.1. Bounded Context Domain Layer Class Diagrams](#5361-bounded-context-domain-layer-class-diagrams)
+        - [5.3.6.2. Bounded Context Database Design Diagram](#5362-bounded-context-database-design-diagram)
+    - [5.4. Bounded Context: Maintenance and Operations](#54-bounded-context-maintenance-and-operations)
+      - [5.4.1. Domain Layer](#541-domain-layer)
+      - [5.4.2. Interface Layer](#542-interface-layer)
+      - [5.4.3. Application Layer](#543-application-layer)
+      - [5.4.4. Infrastructure Layer](#544-infrastructure-layer)
+      - [5.4.5. Bounded Context Software Architecture Component Level Diagrams](#545-bounded-context-software-architecture-component-level-diagrams)
+      - [5.4.6. Bounded Context Software Architecture Code Level Diagrams](#546-bounded-context-software-architecture-code-level-diagrams)
+        - [5.4.6.1. Bounded Context Domain Layer Class Diagrams](#5461-bounded-context-domain-layer-class-diagrams)
+        - [5.4.6.2. Bounded Context Database Design Diagram](#5462-bounded-context-database-design-diagram)
+    - [5.5. Bounded Context: Vehicle Wellness](#55-bounded-context-vehicle-wellness)
+      - [5.5.1. Domain Layer](#551-domain-layer)
+      - [5.5.2. Interface Layer](#552-interface-layer)
+      - [5.5.3. Application Layer](#553-application-layer)
+      - [5.5.4. Infrastructure Layer](#554-infrastructure-layer)
+      - [5.5.5. Bounded Context Software Architecture Component Level Diagrams](#555-bounded-context-software-architecture-component-level-diagrams)
+      - [5.5.6. Bounded Context Software Architecture Code Level Diagrams](#556-bounded-context-software-architecture-code-level-diagrams)
+        - [5.5.6.1. Bounded Context Domain Layer Class Diagrams](#5561-bounded-context-domain-layer-class-diagrams)
+        - [5.5.6.2. Bounded Context Database Design Diagram](#5562-bounded-context-database-design-diagram)
+    - [5.6. Bounded Context: Vehicle Management](#56-bounded-context-vehicle-management)
+      - [5.6.1. Domain Layer](#561-domain-layer)
+      - [5.6.2. Interface Layer](#562-interface-layer)
+      - [5.6.3. Application Layer](#563-application-layer)
+      - [5.6.4. Infrastructure Layer](#564-infrastructure-layer)
+      - [5.6.5. Bounded Context Software Architecture Component Level Diagrams](#565-bounded-context-software-architecture-component-level-diagrams)
+      - [5.6.6. Bounded Context Software Architecture Code Level Diagrams](#566-bounded-context-software-architecture-code-level-diagrams)
+        - [5.6.6.1. Bounded Context Domain Layer Class Diagrams](#5661-bounded-context-domain-layer-class-diagrams)
+        - [5.6.6.2. Bounded Context Database Design Diagram](#5662-bounded-context-database-design-diagram)
+  - [Capítulo VI: Solution UX Design](#capítulo-vi-solution-ux-design)
+    - [6.1. Style Guidelines](#61-style-guidelines)
+      - [6.1.1. General Style Guidelines](#611-general-style-guidelines)
+      - [6.1.2. Web, Mobile & Devices Style Guidelines](#612-web-mobile--devices-style-guidelines)
+    - [6.2. Information Architecture](#62-information-architecture)
+      - [6.2.1. Labeling Systems](#621-labeling-systems)
+      - [6.2.2. Searching Systems](#622-searching-systems)
+      - [6.2.3. SEO Tags and Meta Tags](#623-seo-tags-and-meta-tags)
+      - [6.2.4. Navigation Systems](#624-navigation-systems)
+    - [6.3. Landing Page UI Design](#63-landing-page-ui-design)
+      - [6.3.1. Landing Page Wireframe](#631-landing-page-wireframe)
+      - [6.3.2. Landing Page Mock-up](#632-landing-page-mock-up)
+    - [6.4. Applications UX/UI Design](#64-applications-uxui-design)
+      - [6.4.1. Applications Wireframes](#641-applications-wireframes)
+      - [6.4.2. Applications Wireflow Diagrams](#642-applications-wireflow-diagrams)
+      - [6.4.3. Applications Mock-ups](#643-applications-mock-ups)
+      - [6.4.4. Applications User Flow Diagrams](#644-applications-user-flow-diagrams)
+    - [6.5. Applications Prototyping](#65-applications-prototyping)
 
 # Student Outcome
 
@@ -1746,6 +1818,104 @@ Este diagrama describe la distribución física y la infraestructura de nube de 
 
 ![deployment-diagram](assets/images/chapter-4/software-architecture/deployment-diagram.png)
 ![deployment-diagram-keys](assets/images/chapter-4/software-architecture/deployment-diagram-keys.png)
+
+# Chapter V: Tactical-Level Software Design
+
+## 5.1. Bounded Context: Identity Access Management
+### 5.1.1. Domain Layer
+### 5.1.2. Interface Layer
+### 5.1.3. Application Layer
+### 5.1.4. Infrastructure Layer
+### 5.1.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.1.6. Bounded Context Software Architecture Code Level Diagrams
+#### 5.1.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.1.6.2. Bounded Context Database Design Diagram
+
+---
+
+## 5.2. Bounded Context: Reports
+### 5.2.1. Domain Layer
+### 5.2.2. Interface Layer
+### 5.2.3. Application Layer
+### 5.2.4. Infrastructure Layer
+### 5.2.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.2.6. Bounded Context Software Architecture Code Level Diagrams
+#### 5.2.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.2.6.2. Bounded Context Database Design Diagram
+
+---
+
+## 5.3. Bounded Context: Assignments
+### 5.3.1. Domain Layer
+### 5.3.2. Interface Layer
+### 5.3.3. Application Layer
+### 5.3.4. Infrastructure Layer
+### 5.3.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.3.6. Bounded Context Software Architecture Code Level Diagrams
+#### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.3.6.2. Bounded Context Database Design Diagram
+
+---
+
+## 5.4. Bounded Context: Maintenance and Operations
+### 5.4.1. Domain Layer
+### 5.4.2. Interface Layer
+### 5.4.3. Application Layer
+### 5.4.4. Infrastructure Layer
+### 5.4.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.4.6. Bounded Context Software Architecture Code Level Diagrams
+#### 5.4.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.4.6.2. Bounded Context Database Design Diagram
+
+---
+
+## 5.5. Bounded Context: Vehicle Wellness
+### 5.5.1. Domain Layer
+### 5.5.2. Interface Layer
+### 5.5.3. Application Layer
+### 5.5.4. Infrastructure Layer
+### 5.5.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.5.6. Bounded Context Software Architecture Code Level Diagrams
+#### 5.5.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.5.6.2. Bounded Context Database Design Diagram
+
+---
+
+## 5.6. Bounded Context: Vehicle Management
+### 5.6.1. Domain Layer
+### 5.6.2. Interface Layer
+### 5.6.3. Application Layer
+### 5.6.4. Infrastructure Layer
+### 5.6.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.6.6. Bounded Context Software Architecture Code Level Diagrams
+#### 5.6.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.6.6.2. Bounded Context Database Design Diagram
+
+---
+
+# Chapter VI: Solution UX Design
+
+## 6.1. Style Guidelines
+### 6.1.1. General Style Guidelines
+### 6.1.2. Web, Mobile & Devices Style Guidelines
+
+## 6.2. Information Architecture
+### 6.2.1. Labeling Systems
+### 6.2.2. Searching Systems
+### 6.2.3. SEO Tags and Meta Tags
+### 6.2.4. Navigation Systems
+
+## 6.3. Landing Page UI Design
+### 6.3.1. Landing Page Wireframe
+### 6.3.2. Landing Page Mock-up
+
+## 6.4. Applications UX/UI Design
+### 6.4.1. Applications Wireframes
+### 6.4.2. Applications Wireflow Diagrams
+### 6.4.3. Applications Mock-ups
+### 6.4.4. Applications User Flow Diagrams
+
+## 6.5. Applications Prototyping
 
 ## Conclusiones
 
