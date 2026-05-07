@@ -1819,6 +1819,7 @@ Este diagrama describe la distribución física y la infraestructura de nube de 
 ![deployment-diagram](assets/images/chapter-4/software-architecture/deployment-diagram.png)
 ![deployment-diagram-keys](assets/images/chapter-4/software-architecture/deployment-diagram-keys.png)
 
+
 # Chapter V: Tactical-Level Software Design
 
 ## 5.1. Bounded Context: Identity Access Management
@@ -1869,15 +1870,322 @@ Este diagrama describe la distribución física y la infraestructura de nube de 
 
 ---
 
-## 5.5. Bounded Context: Vehicle Wellness
-### 5.5.1. Domain Layer
-### 5.5.2. Interface Layer
-### 5.5.3. Application Layer
-### 5.5.4. Infrastructure Layer
-### 5.5.5. Bounded Context Software Architecture Component Level Diagrams
-### 5.5.6. Bounded Context Software Architecture Code Level Diagrams
-#### 5.5.6.1. Bounded Context Domain Layer Class Diagrams
-#### 5.5.6.2. Bounded Context Database Design Diagram
+### 5.5. Bounded Context: Vehicle Wellness
+
+### 5.5.1 Domain Layer
+
+#### Aggregates
+
+*WellnessMetric*
+
+Descripción: Representa una métrica completa de bienestar registrada por un vehículo.
+
+|Atributo|Tipo|Descripción|
+|-|-|-|
+|vehicleId|Long|Identificador único del vehículo que registra la métrica|
+|coordinates|Coordinates (Enum)|Ubicación geográfica donde se tomó la medición|
+|airQuality|AirQuality (Enum)|Medición de la calidad del aire en el entorno|
+|environmentalConditions|	EnvironmentalConditions (Enum)|Condiciones |ambientales generales registradas
+|atmosphericPressure|	AtmosphericPressure (Enum)|	Nivel de presión atmosférica medido
+|statusImpact|	StatusImpact (Enum)|	Indicador del impacto en el estado del sistema
+|registeredAt|	LocalDateTime|	Fecha y hora en que se registró la métrica
+
+#### Value Objects
+
+*AirQuality*
+|Atributo|	Tipo|	Descripción|
+|-|-|-|
+|CO2Ppm|	Double|	Concentración de dióxido de carbono en partes por millón|
+|NH3Ppm|	Double|	Concentración de amoníaco en partes por millón|
+|BenzenePpm|	Double|	Concentración de benceno en partes por millón|
+
+*AtmosphericPressure*
+|Atributo|	Tipo|	Descripción|
+|-|-|-|
+|pressureHpa|	Float|	Valor de presión atmosférica en hectopascales|
+
+*Coordinates*
+|Atributo|	Tipo|	Descripción|
+|-|-|-|
+|latitude|	Float|	Coordenada de latitud de la ubicación
+|longitude|	Float|	Coordenada de longitud de la ubicación
+
+*EnvironmentalConditions*
+|Atributo|	Tipo|	Descripción|
+|-|-|-|
+|temperatureCelsius|	Float|	Temperatura ambiental en grados Celsius
+|humidityPercentage|	Float|	Porcentaje de humedad relativa en el ambiente
+
+*StatusImpact*
+|Atributo|	Tipo|	Descripción|
+|-|-|-|
+|impactDetected|	Boolean|	Indicador de si se detectó algún impacto en el sistema|
+
+#### Entities
+
+*Notification*
+|Atributo|	Tipo|	Descripción|
+|-|-|-|
+|vehicleId|	Long|	Identificador del vehículo relacionado con la notificación|
+|title|	String|	Título descriptivo de la notificación|
+|message|	String|	Contenido detallado del mensaje de notificación|
+|type|	String|	Categoría o clasificación de la notificación|
+|severity|	String|	Nivel de gravedad o importancia de la notificación|
+|read|	boolean|	Estado que indica si la notificación ha sido leída
+|occurredAt|	LocalDateTime|	Fecha y hora en que ocurrió el evento notificado|
+
+#### Commands
+
+- `CreateNotificationCommand(Long vehicleId,String title,String message,String type,String severity,LocalDateTime occurredAt)` (Record)
+- `CreateWellnessMetricCommand(Long vehicleId,Float latitude,Float longitude,Double CO2Ppm,Double NH3Ppm,Double BenzenePpm,Float temperatureCelsius,Float humidityPercentage,Float pressureHpa,Boolean impactDetected)` (Record)
+- `DeleteWellnessMetricCommand(Long wellnessMetricId)` (Record)
+- `MarkNotificationAsReadCommand(Long notificationId)` (Record)
+- `UpdateWellnessMetricCommand(Long wellnessMetricId,Float latitude,Float longitude,Double CO2Ppm,Double NH3Ppm,Double BenzenePpm,Float temperatureCelsius,Float humidityPercentage,Float pressureHpa,Boolean impactDetected)` (Record)
+
+#### Queries
+
+- `GetAllNotificationsQuery()` (Record)
+- `GetAllWellnessMetricsQuery()` (Record)
+- `GetNotificationByIdQuery(Long notificationId)` (Record)
+- `GetNotificationsByVehicleIdQuery(Long vehicleId)` (Record)
+- `GetWellnessMetricByIdQuery(Long wellnessMetricId)` (Record)
+- `GetWellnessMetricsByVehicleIdQuery(Long vehicleId)` (Record)
+
+#### Events
+
+- `AirQualityAlertEvent`
+- `AtmosphericPressureAlertEvent`
+- `EnvironmentalConditionAlertEvent`
+- `StatusImpactAlertEvent`
+
+#### Services
+
+`NotificationCommandService` (Interface)
+- handle(CreateNotificationCommand)
+- handle(MarkNotificationAsReadCommand)
+- NotificationQueryService (Interface)
+- handle(GetNotificationByIdQuery)
+- handle(GetAllNotificationsQuery)
+- handle(GetNotificationsByVehicleIdQuery)
+
+`WellnessMetricCommandService` (Interface)
+- handle(CreateWellnessMetricCommand)
+- handle(UpdateWellnessMetricCommand)
+- handle(DeleteWellnessMetricCommand)
+
+`WellnessMetricQueryService` (Interface)
+- handle(GetWellnessMetricByIdQuery)
+- handle(GetAllWellnessMetricsQuery)
+- handle(GetWellnessMetricsByVehicleIdQuery)
+
+### 5.5.2 Interface Layer
+
+#### Controllers:
+*Controlador: WellnessMetricsController*
+
+|Título|	Wellness Metrics Controller|
+|-|-|
+|Descripción|	Controlador REST que gestiona las operaciones de creación, consulta y recuperación de métricas de bienestar de los vehículos.|
+
+|Método|	Ruta|	Descripción|
+|-|-|-|
+|createWellnessMetric|	POST /api/v1/metrics|	Crea una nueva métrica de bienestar para un vehículo|
+|updateWellnessMetric|	PUT /api/v1/metrics/{id}|	Actualiza una métrica de bienestar existente|
+|deleteWellnessMetric|	DELETE /api/v1/metrics/{id}|	Elimina una métrica de bienestar por su ID|
+|getWellnessMetricById|	GET /api/v1/metrics/{id}|	Recupera una métrica de bienestar específica por su ID|
+|getAllWellnessMetrics|	GET /api/v1/metrics|	Recupera todas las métricas de bienestar disponibles|
+|getWellnessMetricsByVehicleId|	GET /api/v1/metrics/vehicle/{vehicleId}|	Recupera todas las métricas de bienestar para un vehículo específico|
+
+*Controlador: Notifications Controller*
+
+|Título|	Notifications Controller|
+|-|-|
+|Descripción|	Controlador REST que gestiona las operaciones de creación, consulta y recuperación de las notificaciones de los vehículos.|
+
+|Método|	Ruta|	Descripción|
+|-|-|-|
+|createNotification|	POST /api/v1/notifications|	Crea una nueva notificación en el sistema|
+|getNotificationById|	GET /api/v1/notifications/{id}|	Recupera una notificación específica por su ID|
+|getAllNotifications|	GET /api/v1/notifications|	Recupera todas las notificaciones del sistema|
+|getNotificationsByVehicleId|	GET /api/v1/notifications/vehicle/{vehicleId}|	Recupera todas las notificaciones para un vehículo específico|
+|markNotificationAsRead|	GET /api/v1/notifications/{id}/read|	Marca una notificación como leída|
+
+#### Transforms:
+|Transform|	Descripción|
+|-|-|
+|CreateNotificationCommandFromResourceAssembler|	Convierte los recursos de entrada en comandos para crear notificaciones|
+|CreateWellnessMetricCommandFromResourceAssembler|	Transforma los recursos de entrada en comandos para crear métricas de bienestar|
+|NotificationResourceFromEntityAssembler|	Convierte entidades de notificación en recursos de respuesta para la API|
+|UpdateWellnessMetricCommandFromResourceAssembler|	Transforma los recursos de actualización en comandos para modificar métricas|
+|WellnessMetricResourceFromEntityAssembler|	Convierte entidades de métricas de bienestar en recursos de respuesta para la API|
+
+#### Resources:
+|Resource|	Descripción|
+|-|-|
+|CreateMetricResource|	Estructura de datos para la creación de nuevas métricas en el sistema|
+|CreateWellnessMetricResource|	Modelo de datos para solicitudes de creación de métricas de bienestar|
+|NotificationResource|	Representación de notificaciones en las respuestas de la API|
+|UpdateWellnessMetricResource|	Estructura de datos para actualizar métricas de bienestar existentes|
+|WellnessMetricResource|	Representación de métricas de bienestar en las respuestas de la API|
+
+#### ACL:
+
+`WellnessMetricContextFacade` (Interface)
+- fetchWellnessMetricById(Long wellnessMetricId)
+
+### 5.5.3 Application Layer
+
+#### Command Services
+
+*Clase: NotificationCommandServiceImpl*
+
+|Título|	NotificationCommandServiceImpl|
+|-|-|
+|Descripción|	Servicio que gestiona las operaciones de escritura y modificación de notificaciones en el sistema|
+
+|Método|	Descripción|
+|-|-|
+|handle(CreateNotificationCommand createNotificationCommand)|	Procesa la creación de una nueva notificación en el sistema|
+|handle(MarkNotificationAsReadCommand command)|	Maneja la marcación de una notificación como leída|
+
+**Dependencias:**
+
+|Dependencia|	Descripción|
+|-|-|
+|NotificationRepository|	Repositorio para acceder y gestionar los datos de notificaciones|
+|ExternalVehiclesService|	Servicio externo para obtener información de vehículos|
+
+*Clase: WellnessMetricCommandServiceImpl*
+|Título	|WellnessMetricCommandServiceImpl|
+|-|-|
+|Descripción|	Servicio que maneja las operaciones de modificación de métricas de bienestar|
+
+|Método|	Descripción|
+|-|-|
+|handle(CreateWellnessMetricCommand createWellnessMetricCommand)|	Procesa la creación de nuevas métricas de bienestar|
+|handle(UpdateWellnessMetricCommand updateWellnessMetricCommand)|	Maneja la actualización de métricas de bienestar existentes|
+|handle(DeleteWellnessMetricCommand deleteWellnessMetricCommand)	|Gestiona la eliminación de métricas de bienestar|
+
+**Dependencias:**
+|Dependencia|	Descripción|
+|-|-|
+|WellnessMetricRepository|	Repositorio para almacenar y recuperar métricas de bienestar|
+|WellnessMonitoringService|	Servicio para monitorear y analizar las métricas de bienestar|
+|ExternalVehiclesService|	Servicio externo para validar y obtener datos de vehículos|
+
+#### Query Services
+
+*Clase: NotificationQueryServiceImpl*
+
+|Título|	NotificationQueryServiceImpl|
+|-|-|
+|Descripción|	Servicio especializado en consultas y recuperación de notificaciones|
+
+|Método|	Descripción|
+|-|-|
+|handle(GetNotificationByIdQuery getNotificationByIdQuery)|	Recupera una notificación específica por su identificador|
+|handle(GetAllNotificationsQuery getAllNotificationsQuery)|	Obtiene todas las notificaciones del sistema|
+|handle(GetNotificationsByVehicleIdQuery getNotificationsByVehicleIdQuery)|	Consulta las notificaciones asociadas a un vehículo específico|
+
+**Dependencias:**
+
+|Dependencia|	Descripción|
+|-|-|
+NotificationRepository|	Repositorio para acceder a los datos de notificaciones|
+
+*Clase: WellnessMetricQueryServiceImpl*
+
+|Título|	WellnessMetricQueryServiceImpl|
+|-|-|
+|Descripción|	Servicio que maneja las consultas de métricas de bienestar|
+
+|Método|	Descripción|
+|-|-|
+|handle(GetWellnessMetricByIdQuery getWellnessMetricByIdQuery)|	Obtiene una métrica de bienestar específica por su ID|
+|handle(GetAllWellnessMetricsQuery getAllWellnessMetricsQuery)|	Recupera todas las métricas de bienestar disponibles
+|handle(GetWellnessMetricsByVehicleIdQuery| getWellnessMetricsByVehicleIdQuery)	Consulta las métricas de bienestar de un vehículo específico|
+
+**Dependencias:**
+|Dependencia|	Descripción|
+|-|-|
+|WellnessMetricRepository|	Repositorio para acceder a los datos de métricas de bienestar|
+
+#### Event Handlers
+
+*Clase: WellnessAlertEventHandler*
+
+|Título|	WellnessAlertEventHandler|
+|-|-|
+|Descripción|	Manejador de eventos relacionados con alertas del sistema de bienestar|
+
+|Método|	Descripción|
+|-|-|
+|on(AirQualityAlertEvent event)|	Procesa eventos de alerta relacionados con la calidad del aire|
+|on(AtmosphericPressureAlertEvent event)|	Maneja eventos de alerta por presión atmosférica|
+|on(EnvironmentalConditionAlertEvent event)|	Gestiona eventos de alerta por condiciones ambientales|
+|on(StatusImpactAlertEvent event)|	Procesa eventos de alerta por impacto en el estado del sistema|
+
+**Dependencias:**
+
+|Dependencia|	Descripción|
+|-|-|
+|NotificationCommandService|	Servicio para crear notificaciones de alerta|
+|NotificationQueryService|	Servicio para consultar notificaciones existentes|
+|WellnessWebSocketController|	Controlador para enviar alertas en tiempo real|
+
+#### ACL
+
+*Clase: WellnessMetricContextFacadeImpl*
+
+|Título|	WellnessMetricContextFacadeImpl|
+|-|-|
+|Descripción|	Fachada que actúa como puente entre el contexto de bienestar y otros sistemas|
+
+|Método|	Descripción|
+|-|-|
+|fetchWellnessMetricById(Long wellnessMetricId)|	Recupera métricas de bienestar para su uso en otros contextos del sistema|
+
+**Dependencias:**
+|Dependencia|	Descripción|
+|-|-|
+|WellnessMetricQueryService|	Servicio para consultar métricas de bienestar|
+
+### 5.5.4 Infrastructure Layer
+
+#### Repositories
+*Clase: NotificationRepository <<Interface>>*
+
+|Título|	NotificationRepository|
+|-|-|
+|Descripción|	Interfaz que define las operaciones de acceso a datos para las notificaciones|
+
+|Método|	Descripción|
+|-|-|
+|findByVehicleId(Long vehicleId)|	Busca y recupera las notificaciones asociadas a un vehículo específico|
+
+*Clase: WellnessMetricRepository <<Interface>>*
+
+|Título|	NotificationRepository|
+|-|-|
+|Descripción|	Interfaz que define las operaciones de acceso a datos para las métricas de bienestar|
+
+|Método|	Descripción|
+|-|-|
+|findByVehicleId(Long vehicleId)|	Busca y recupera las métricas de bienestar asociadas a un vehículo específico|
+
+### 5.5.5 Bounded Context Software Architecture Component level Diagrams
+
+![system-component-diagram](./assets/images/chapter-5/bc-vehicle-wellness/system-component-diagram.png)
+
+### 5.5.6 Bounded Context Software Architecture Code level Diagrams
+
+### 5.5.6.1 Bounded Context Domain Layer Class Diagrams
+
+![vehicle_wellness_code_level](./assets/images/chapter-5/bc-vehicle-wellness/vehicle_wellness_code_level.drawio.png)
+
+### 5.5.6.2 Bounded Context Database Design Diagram
+
+![vehicle_wellness_db](./assets/images/chapter-5/bc-vehicle-wellness/vehicle_wellness_db.png)
 
 ---
 
@@ -1895,9 +2203,120 @@ Este diagrama describe la distribución física y la infraestructura de nube de 
 
 # Chapter VI: Solution UX Design
 
-## 6.1. Style Guidelines
-### 6.1.1. General Style Guidelines
-### 6.1.2. Web, Mobile & Devices Style Guidelines
+## Capitulo VI: Solution UX Design 
+### 6.1. Style Guidelines
+
+La sección de Style Guidelines establece los lineamientos visuales y de diseño que garantizan una experiencia de usuario coherente, clara y alineada con la identidad de marca de Octane. Este repositorio central reúne todos los elementos gráficos y normativos necesarios para que el equipo de diseño y desarrollo trabaje de manera consistente en los distintos canales digitales (web y móvil).
+
+Su objetivo principal es mantener una presentación uniforme y profesional, fortaleciendo la identidad visual de la startup y asegurando que cada interacción con el usuario transmita confianza, innovación y accesibilidad.
+
+Para lograr este objetivo esta sección se dividirá en dos sub-secciones:
+
+General Style Guidelines: Se definiran los principios básicos de diseño incluyendo branding, tipografía, paleta de colores, espaciado y tono comunicacional.
+Web Mobile and IoT Style Guidelines: Aquí se definen los estándares visuales especificos para cada plataforna.
+Estos lineamientos permiten mantener organizados y accesibles todos los artefactos de diseño, reduciendo inconsistencias y mejorando la eficiencia del equipo.
+
+#### 6.1.1 General Style Guidelines
+
+Los lineamientos generales de estilo definen los principios transversales de diseño que guiarán la identidad visual de Octane en todas sus plataformas digitales. Incluyen decisiones clave en torno al branding, paleta de colores, tipografía, tono comunicacional y principios de diseño.
+
+**Branding:**
+
+El logotipo se empleará principalmente en su versión negra sobre fondos claros y en su versión blanca sobre fondos oscuros. Se debe mantener un área de seguridad alrededor del logotipo equivalente a la altura de la letra “O” de Octane para garantizar su visibilidad.
+
+- El logo completo se utilizará en la barra de navegación superior y en aplicaciones móviles.
+- El isotipo se aplicará únicamente en espacios reducidos, como íconos de aplicaciones móviles o pestañas del navegador.
+*Logos:*
+
+![Logo 1](./assets/images/chapter-6/style-guidelines/logo-1.png)
+![Logo 2](./assets/images/chapter-6/style-guidelines/logo-2.png)
+
+*Isotipo:*
+
+![Isotipo](./assets/images/chapter-6/style-guidelines/octane-isotipo.png)
+
+**Paleta de colores:**
+
+La identidad visual se basa en tonos naranjas y marrones, diseñados para transmitir energía, confianza y dinamismo.
+
+- Colores principales: tonos cálidos que refuerzan la personalidad de la marca.
+- Fondos y textos: blanco (#FFFFFF) para fondos y #130100 para tipografía principal, asegurando alta legibilidad.
+- Colores secundarios: tonos como #C84E00 y #380800 se reservan para acentos, componentes interactivos y llamadas a la acción.
+
+![Paleta de Colores](./assets/images/chapter-6/style-guidelines/color-palette.png)
+
+**Tipografía:**
+
+La tipografía principal será Roboto, elegida por su legibilidad, modernidad y versatilidad.
+
+- Se aplicarán jerarquías tipográficas claras, diferenciando títulos, subtítulos y cuerpo de texto.
+- Se hará uso de negritas para destacar información clave.
+
+![Tipografía](./assets/images/chapter-6/style-guidelines/typography.png)
+
+**Tono y lenguaje:**
+
+La comunicación seguirá un tono profesional pero accesible, evitando tecnicismos innecesarios.
+
+- Se priorizará la claridad y la brevedad en los textos.
+- El estilo de comunicación debe transmitir confianza, innovación y cercanía.
+
+**Principios de diseño:**
+
+El diseño se regirá por los siguientes principios:
+
+- Consistencia: mantener coherencia visual en todos los elementos.
+- Simplicidad: evitar la saturación visual y priorizar lo esencial.
+- Accesibilidad: garantizar la legibilidad y usabilidad para todos los usuarios.
+- Espaciado adecuado: entre elementos para mejorar la experiencia visual.
+- Iconografía clara: símbolos simples y reconocibles que complementen el texto.
+- Uso de contrastes: para resaltar información y facilitar la navegación.
+
+#### 6.1.2 Web, Mobile & Devices Style Guidelines
+
+Esta sección establece los estándares visuales e interactivos para los distintos canales digitales de Octane: interfaces web, aplicaciones móviles y aplicaciones de IoT. Cada uno presenta particularidades de interacción y diseño, pero todos comparten la misma identidad visual definida en los lineamientos generales.
+
+**Web style Guide:**
+
+*Componentes:*
+
+- Botones: se definen estilos primario, secundario y deshabilitado, con diferencias claras en color y contraste.
+- Formularios: incluyen campos de texto, validaciones visuales y selectores uniformes.
+- Cards: tarjetas utilizadas para mostrar información resumida, con variantes internas para resaltar datos clave.
+- Tablas: estilo simple con uso de bordes internos y jerarquía tipográfica para cabeceras.
+
+*Comportamiento de componentes:*
+
+- Estados de interacción (hover, active, focus) se encuentran deshabilitados, priorizando la simplicidad y evitando distracciones visuales.
+
+*Responsive design:*
+
+- Interfaces diseñadas principalmente para desktop, con adaptación proporcional según el tamaño de la ventana.
+- Se prioriza la legibilidad y la correcta distribución del contenido en resoluciones variables.
+
+*Íconos e ilustraciones:*
+
+- No se utilizarán ilustraciones a color.
+- Los íconos serán siluetas simples y su presencia se limitará a indicadores funcionales.
+
+**Mobile Style guide:**
+
+*Componentes:*
+
+- Botones: variantes primary y secondary deshabilitadas, con áreas táctiles amplias.
+- Formularios: campos de texto optimizados para teclado móvil, validaciones claras y selectores de fácil interacción.
+- Cards: diseño compacto para mostrar información de manera jerárquica y accesible.
+
+*Gestos:*
+
+- Tap: gesto principal para interacción con botones y elementos táctiles.
+- Swipe vertical: navegación entre pantallas o listas.
+- Swipe horizontal: apertura del menú lateral (sidebar) o carruseles de contenido.
+
+*Responsive Design:*
+
+- Adaptación automática a resoluciones de smartphones y tablets.
+- Se prioriza la usabilidad en pantallas pequeñas, con tipografía legible y espacios amplios para interacción táctil.
 
 ## 6.2. Information Architecture
 ### 6.2.1. Labeling Systems
@@ -1916,6 +2335,7 @@ Este diagrama describe la distribución física y la infraestructura de nube de 
 ### 6.4.4. Applications User Flow Diagrams
 
 ## 6.5. Applications Prototyping
+
 
 ## Conclusiones
 
