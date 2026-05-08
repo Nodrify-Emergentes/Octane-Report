@@ -2431,13 +2431,248 @@ NotificationRepository|	Repositorio para acceder a los datos de notificaciones|
 
 ## 5.6. Bounded Context: Vehicle Management
 ### 5.6.1. Domain Layer
+
+**Aggregates**
+
+`Owner`
+**Descripción:** Representa a un dueño de moto registrado en el sistema. Contiene tanto una referencia a un profile como a los vehículos registrados a su nombre.
+
+| Atributos           | Tipo de dato   | Visibilidad | Descripción                                |
+|---------------------|----------------|-------------|--------------------------------------------|
+| id                  | Long           | Private     | Identificador único del dueño de vehículo. |
+| profile             | Profile        | Private     | Perfil de usuario asociado al dueño.       |
+| vehicles            | List<Vehicles> | Private     | Lista de Vehículos asociados al dueño.     |
+
+`Model`
+**Descripción:** Representa un modelo de moto registrado
+
+| Atributos     | Tipo de dato | Visibilidad | Descripción                                                   |
+|---------------|--------------|-------------|---------------------------------------------------------------|
+| id            | Long         | Private     | Identificador único del modelo.                               |
+| name          | String       | Private     | Nombre del modelo.                                            |
+| brand         | String       | Private     | Nombre de la marca a la que le pertenece el modelo.           |
+| modelYear     | String       | Private     | Año en el que salió el modelo.                                |
+| originCountry | String       | Private     | Nombre del país de origen del modelo.                         |
+| producedAt    | Date         | Private     | Fecha de producción del modelo.                               |
+| type          | String       | Private     | Tipo del modelo.                                              |
+| displacement  | String       | Private     | Cilindrada del motor del modelo.                              |
+| potency       | String       | Private     | Potencia máxima que puede generar el motor.                   |
+| engineType    | String       | Private     | Tipo o configuración del motor del modelo.                    |
+| engineTorque  | String       | Private     | Torque o fuerza de giro producida por el motor.               |
+| weight        | String       | Private     | Peso total del modelo.                                        |
+| transmission  | String       | Private     | Tipo de transmisión incorporada en el modelo.                 |
+| brakes        | String       | Private     | Sistema de frenos con el que está equipado el modelo.         |
+| tank          | String       | Private     | Capacidad del tanque de combustible del modelo.               |
+| seatHeight    | String       | Private     | Altura del asiento medida desde el suelo.                     |
+| consumption   | String       | Private     | Consumo promedio de combustible del modelo.                   |
+| price         | Float        | Private     | Precio estimado del modelo en el mercado.                     |
+| oilCapacity   | String       | Private     | Capacidad de aceite requerida por el motor del modelo.        |
+| connectivity  | String       | Private     | Tecnologías o sistemas de conectividad integrados.            |
+| durability    | String       | Private     | Nivel de durabilidad o resistencia del modelo.                |
+| octane        | String       | Private     | Nivel de octanaje recomendado para el combustible del modelo. |
+
+
+**Entities**
+
+`Vehicle`
+**Descripción:** Representa la moto registrada por el dueño en el sistema. Contiene los detalles para identificar el vehículo así como su estado actual.
+
+| Atributos           | Tipo de dato | Visibilidad | Descripción                       |
+|---------------------|--------------|-------------|-----------------------------------|
+| id                  | Long         | Private     | Identificador único del vehículo. |
+| owner               | Owner        | Private     | Dueño de la moto.                 |
+| model               | Model        | Private     | Modelo de la moto.                |
+| year                | Year         | Private     | Año de fabricación de la moto.    |
+| plate               | Plate        | Private     | Placa de la moto.                 |
+
+
+**Value Objects**
+
+`Plate` (Record)
+
+`Year` (Record)
+
+**Commands**
+* AddVehicleToOwnerCommand <<record>>
+* CreateModelCommand <<record>>
+* CreateOwnerCommand <<record>>
+* DeleteVehicleFromOwnerCommand <<record>>
+* SeedModelsCommand <<record>>
+* UpdateVehicleFromOwnerCommand <<record>>
+
+**Queries**
+* GetAllBrandsQuery <<record>>
+* GetAllModelsQuery <<record>>
+* GetAllOwnersQuery <<record>>
+* GetAllVehiclesQuery <<record>>
+* GetModelByIdQuery <<record>>
+* GetModelsByBrandQuery <<record>>
+* GetOwnerByIdQuery <<record>>
+* GetOwnerByVehicleIdQuery <<record>>
+* GetVehicleByIdQuery <<record>>
+* GetVehicleByPlateQuery <<record>>
+
+**Services**
+`ModelCommandService`
+* handle(CreateModelCommand)
+* handle(SeedModelsCommand)
+
+`ModelQueryService`
+* handle(GetAllModelsQuery)
+* handle(GetModelByIdQuery)
+* handle(GetModelsByBrandQuery)
+* handle(GetAllBrandsQuery)
+
+`OwnerCommandService`
+* handle(CreateOwnerCommand)
+* handle(AddVehicleToOwnerCommand)
+* handle(UpdateVehicleFromOwnerCommand)
+* handle(DeleteVehicleFromOwnerCommand)
+
+`OwnerQueryService`
+* handle(GetOwnerByIdQuery)
+* handle(GetOwnerByVehicleIdQuery)
+* handle(GetAllOwnersQuery)
+
+`VehicleQueryService`
+* handle(GetVehicleByIdQuery)
+* handle(GetVehicleByPlateQuery)
+
 ### 5.6.2. Interface Layer
+
+**Rest Controllers**
+
+`ModelsController`
+**Descripción:** Controlador REST que maneja las operaciones relacionadas con los modelos.
+
+| Método             | Ruta                             | Descripción                                                    |
+|--------------------|----------------------------------|----------------------------------------------------------------|
+| getAllModels()     | GET /api/v1/models/              | Obtiene todos los modelos registrados.                         |
+| getModelById()     | GET /api/v1/models/{modelId}     | Obtiene un modelo por su identificador.                        |
+| getModelsByBrand() | GET /api/v1/models/brand/{brand} | Obtiene todos los modelos de una marca específica.             |
+| getAllBrands()     | GET /api/v1/models/brands        | Obtiene todas las marcas presentes en los modelos registrados. |
+
+`OwnersController`
+**Descripción:** Controlador REST que maneja las operaciones relacionadas con los dueños.
+
+| Método                | Ruta                                   | Descripción                                          |
+|-----------------------|----------------------------------------|------------------------------------------------------|
+| getAllOwners()        | GET /api/v1/owners/                    | Obtiene todos los dueños de vehículos registrados.   |
+| getOwnerByVehicleId() | GET /api/v1/owners/vehicle/{vehicleId} | Obtiene el dueño de un vehículo por su identificador |
+| createOwner()         | POST /api/v1/owners                    | Crea un dueño de vehículo.                           |
+
+`VehiclesController`
+**Descripción:** Controlador REST que maneja las operaciones relacionadas con los vehículos.
+
+| Método                 | Ruta                                | Descripción                                            |
+|------------------------|-------------------------------------|--------------------------------------------------------|
+| getVehiclesByOwnerId() | GET /api/v1/vehicles/               | Obtiene todos los vehículos registrados bajo un dueño. |
+| getVehicleById()       | GET /api/v1/vehicles/{vehicleId}    | Obtiene un vehículo por su identificador.              |
+| addVehicleToOwner()    | POST /api/v1/vehicles/{ownerId}     | Añade un vehículo a un dueño.                          |
+| deleteVehicleById()    | DELETE /api/v1/vehicles/{vehicleId} | Elimina un vehículo de un dueño.                       |
+
+**Resources**
+* AddVehicleResource <<record>>
+* CreateModelResource <<record>>
+* CreateOwnerResource <<record>>
+* ModelResource <<record>>
+* OwnerResource <<record>>
+* VehicleResource <<record>>
+
+**Assemblers**
+* AddVehicleCommandFromResourceAssembler
+* CreateModelCommandFromResourceAssembler
+* CreateOwnerCommandFromResourceAssembler
+* ModelResourceFromEntityAssembler
+* OwnerResourceFromEntityAssembler
+* VehicleResourceFromEntityAssembler
+
 ### 5.6.3. Application Layer
+
+`ModelCommandService`
+**Descripción:** Implementación del servicio de comandos para la gestión de modelos.
+
+| Método                     | Descripción                                |
+|----------------------------|--------------------------------------------|
+| handle(CreateModelCommand) | Crea un nuevo modelo.                      |
+| handle(SeedModelsCommand)  | Crea los modelos al iniciar la aplicación. |
+
+`ModelQueryService`
+**Descripción:** Implementación del servicio de consultas para la gestión de modelos.
+
+| Método                        | Descripción                                                        |
+|-------------------------------|--------------------------------------------------------------------|
+| handle(GetAllModelsQuery)     | Obtiene todos los modelos registrados.                             |
+| handle(GetModelByIdQuery)     | Obtiene un modelo por su identificador.                            |
+| handle(GetModelsByBrandQuery) | Obtiene todos los modelos de una marca específica.                 |
+| handle(GetAllBrandsQuery)     | Obtiene todas las marcas existentes entre los modelos del sistema. |
+
+`OwnerCommandService`
+**Descripción:** Implementación del servicio de comandos para la gestión de dueños.
+
+| Método                                | Descripción                          |
+|---------------------------------------|--------------------------------------|
+| handle(CreateOwnerCommand)            | Crea un nuevo dueño de moto.         |
+| handle(AddVehicleToOwnerCommand)      | Añade un vehículo nuevo al dueño.    |
+| handle(UpdateVehicleFromOwnerCommand) | Actualiza un vehículo para su dueño. |
+| handle(DeleteVehicleFromOwnerCommand) | Elimina un vehículo de un dueño.     |
+
+`OwnerQueryService`
+**Descripción:** Implementación del servicio de consultas para la gestión de dueños.
+
+| Método                           | Descripción                                                         |
+|----------------------------------|---------------------------------------------------------------------|
+| handle(GetOwnerByIdQuery)        | Obtiene un dueño por su identificador.                              |
+| handle(GetOwnerByVehicleIdQuery) | Obtiene un dueño a través del identificador de uno de sus vehículos |
+| handle(GetAllOwnersQuery)        | Obtiene todos los dueños registrados.                               |
+
+`VehicleQueryServiceImpl`
+**Descripción:** Implementación del servicio de consultas para la gestión de vehículos.
+
+| Método                         | Descripción                       |
+|--------------------------------|-----------------------------------|
+| handle(GetVehicleByIdQuery)    | Obtiene un vehículo por su ID.    |
+| handle(GetVehicleByPlateQuery) | Obtiene un vehículo por su placa. |
+
 ### 5.6.4. Infrastructure Layer
+
+`OwnerRepository`
+**Descripción:** Interfaz de persistencia para operaciones CRUD y consultas de datos de dueños.
+
+| Método                 | Tipo de Retorno | Descripción                                  |
+|------------------------|-----------------|----------------------------------------------|
+| findOwnerByProfile_Id  | Optional<Owner> | Encuentra un dueño por su id de perfil.      |
+| findOwnerByVehicles_Id | Optional<Owner> | Encuentra un Owner por uno de sus vehículos. |
+
+`ModelRepository`
+**Descripción:** Interfaz de persistencia para operaciones CRUD y consultas de datos de modelos.
+
+| Método        | Tipo de Retorno | Descripción                                          |
+|---------------|-----------------|------------------------------------------------------|
+| existsByName  | boolean         | Valida la existencia de un modelo por su nombre.     |
+| findByBrand   | List<Model>     | Encuentra los modelos bajo una marca específica.     |
+| findAllBrands | List<String>    | Encuentra todas las marcas presentes en los modelos. |
+
+`VehicleReadRepositories`
+**Descripción:** Interfaz de persistencia para operaciones de lectura de vehículos.
+
+| Método                 | Tipo de Retorno | Descripción                                  |
+|------------------------|-----------------|----------------------------------------------|
+| findOwnerByProfile_Id  | Optional<Owner> | Encuentra un dueño por su id de perfil.      |
+| findOwnerByVehicles_Id | Optional<Owner> | Encuentra un Owner por uno de sus vehículos. |
+
 ### 5.6.5. Bounded Context Software Architecture Component Level Diagrams
+
+![system-component-diagram](/assets/images/chapter-5/bc-vehicle-management/system-component-diagram.png)
+
 ### 5.6.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.6.6.1. Bounded Context Domain Layer Class Diagrams
+
+![vehicle_management_code_level](/assets/images/chapter-5/bc-vehicle-management/class-diagram.jpg)
+
 #### 5.6.6.2. Bounded Context Database Design Diagram
+
+![vehicle_management_db](/assets/images/chapter-5/bc-vehicle-management/db-diagram.png)
 
 ---
 
