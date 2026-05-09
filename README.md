@@ -2559,10 +2559,74 @@ Esta sección establece los estándares visuales e interactivos para los distint
 - Se prioriza la usabilidad en pantallas pequeñas, con tipografía legible y espacios amplios para interacción táctil.
 
 ## 6.2. Information Architecture
+
+La arquitectura de la información establece la estructura, organización y jerarquía de los contenidos y funcionalidades dentro de la plataforma. Es fundamental para garantizar una experiencia de usuario intuitiva, permitiendo a los usuarios encontrar fácilmente lo que buscan y navegar de manera fluida.
+
+En esta sección, se definirán los sistemas de etiquetado, búsqueda, SEO y navegación que conformarán la base de la arquitectura de la información. Estos sistemas se diseñarán para ser coherentes con los lineamientos de estilo establecidos previamente, asegurando una experiencia de usuario consistente y alineada con la identidad visual de Octane.
+
 ### 6.2.1. Labeling Systems
+
+El sistema de etiquetado se diseñará con un enfoque en simplicidad y consistencia, términos claros y simplificados para la comprensión rápida. Se priorizará la claridad en la asociación entre etiqueta y contenido, evitando ambigüedades técnicas.
+
+- **Menú principal (navbar superior – Dueños de moto)**: Vehículos, Comparativas, Gastos, Mantenimientos, Dashboard.
+- **Menú principal (navbar superior – Mecánicos)**: Suscripciones, Membresía, Comparativas, Mantenimientos, Dashboard.
+- **Menú principal (sidebar lateral – Dueños de moto)**: Vehículos, Comparativas, Gastos, Mantenimientos, Dashboard, Monitoreo.
+
+Las etiquetas funcionan como puntos de entrada semánticos permitiendo que la funcionalidad se logre identificar rápidamente.
+
+- Dashboard: Vista general con métricas clave.
+- Vehículos: Gestión de motos registradas.
+- Comparativas: Análisis y comparación de modelos.
+- Mantenimientos: Historial y programación de servicios.
+- Suscripciones: Gestión vinculos entre mecánico y dueño.
+- Membresía: Información sobre planes y beneficios.
+
 ### 6.2.2. Searching Systems
+
+El sistema de búsqueda se diseñará para ser eficiente y fácil de usar, permitiendo a los usuarios encontrar rápidamente la información o funcionalidad que necesitan. Se implementarán filtros y opciones de búsqueda avanzada para mejorar la precisión de los resultados.
+
+- **Búsqueda local**: En cada sección (e.g. Vehículos, Mantenimientos) se incluirá una barra de búsqueda que permita filtrar por términos relevantes (e.g. marca, modelo, fecha).
+
 ### 6.2.3. SEO Tags and Meta Tags
+
+Para optimizar la visibilidad en motores de búsqueda con relación a Octane, se implementarán estrategias de SEO que incluyen la definición de meta tags relevantes para cada página y sección del sitio web. Estas etiquetas ayudarán a mejorar el posicionamiento en los resultados de búsqueda y a atraer tráfico orgánico de usuarios interesados en servicios relacionados con el mantenimiento de motocicletas.
+
+**Landing Page**
+
+- Meta Title: Octane - Tu aliado para el monitoreo y mantenimiento de tu moto
+- Meta Description: Octane es la plataforma que conecta a dueños de motos con mecánicos de confianza en un ecosistema digital que promueve el mantenimiento preventivo y el bienestar vehicular. Optimiza el cuidado de tu moto y disfruta del servicio desde nuestra plataforma.
+- Meta Keywords: mantenimiento de motos, monitoreo de vehículos, mecánicos de confianza, plataforma digital para motos, cuidado preventivo de motocicletas, aplicación móvil para motos, servicios de mantenimiento de motos, comunidad de motociclistas, bienestar vehicular
+- Author: Nodrify Team
+
+**Web Application**
+
+- Meta Title: Octane - Control Inteligente de Vehículos
+- Meta Description: Accede al panel de control para gestionar vehículos, registrar mantenimientos, visualizar métricas y recibir alertas en tiempo real.
+- Meta Keywords: dashboard de mantenimiento, métricas de vehículos, alertas de mantenimiento, gestión de motos, control vehicular
+- Author: Nodrify Team
+
+**Mobile Application**
+
+- Application Title: Octane – Control y Mantenimiento de Motos
+- Application Subtitle: Tu moto, siempre bajo control
+- Application Description: Octane te permite registrar tus vehículos, controlar mantenimientos, recibir alertas y conectar con mecánicos verificados. Diseñada para simplificar la gestión y aumentar la seguridad en el mantenimiento de motocicletas. 
+- Application Keywords: mantenimiento moto, mecánicos, control vehículo, alertas moto, app motociclistas, comunidad motociclistas, bienestar vehicular
+
 ### 6.2.4. Navigation Systems
+
+El sistema de navegación de Octane se diseñó con el propósito de garantizar una experiencia fluida, predecible y centrada en las necesidades del usuario en común. Su estructura combina navegación jerárquica y contextual, adaptándose tanto al rol del usuario (Dueño o Mecánico) como al dispositivo (web o móvil).
+
+**Estructura general de navegación:**
+
+- **Navbar superior**: Contiene las secciones principales del sitio, adaptándose al rol del usuario.
+  - Dueños: Vehículos, Comparativas, Gastos, Mantenimientos, Dashboard. 
+  - Mecánicos: Suscripciones, Membresía, Comparativas, Mantenimientos, Dashboard.
+- **Sidebar lateral**: Presente para la vista de los motociclistas, proporciona un acceso complementario a los módulos adicionales como el Monitoreo.
+  - Su función es profundizar la navegación sin abandonar la vista principal.
+  - La jerarquía visual está marcada por íconos simples, etiquetas cortas y un sistema de resaltado para la sección activa.
+- **Navegación contextual**: Dentro de cada sección, se implementan cards y botones que permiten a los usuarios profundizar en funcionalidades específicas.
+  - Ejemplo: desde “Vehículos” se puede acceder a “Detalles del vehículo” → “Historial de mantenimientos” → “Comparativas”.
+  - Esto permite mantener un flujo jerárquico descendente, donde cada nivel muestra más información específica.
 
 ## 6.3. Landing Page UI Design
 ### 6.3.1. Landing Page Wireframe
