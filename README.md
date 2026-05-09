@@ -2069,8 +2069,6 @@ El bounded context de Identity Access Management (IAM) se encarga de gestionar l
 #### 5.1.6.1. Bounded Context Domain Layer Class Diagrams
 #### 5.1.6.2. Bounded Context Database Design Diagram
 
----
-
 ## 5.2. Bounded Context: Reports
 ### 5.2.1. Domain Layer
 ### 5.2.2. Interface Layer
@@ -2666,17 +2664,80 @@ NotificationRepository|	Repositorio para acceder a los datos de notificaciones|
 
 ---
 
-## 5.6. Bounded Context: Vehicle Management
-### 5.6.1. Domain Layer
-### 5.6.2. Interface Layer
-### 5.6.3. Application Layer
-### 5.6.4. Infrastructure Layer
-### 5.6.5. Bounded Context Software Architecture Component Level Diagrams
-### 5.6.6. Bounded Context Software Architecture Code Level Diagrams
-#### 5.6.6.1. Bounded Context Domain Layer Class Diagrams
-#### 5.6.6.2. Bounded Context Database Design Diagram
+## 5.5. Bounded Context: Vehicle Management
+### 5.5.1. Domain Layer
+### 5.5.2. Interface Layer
+### 5.5.3. Application Layer
+### 5.5.4. Infrastructure Layer
+### 5.5.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.5.6. Bounded Context Software Architecture Code Level Diagrams
+#### 5.5.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.5.6.2. Bounded Context Database Design Diagram
 
----
+## 5.6. Bounded COntext: Device Intelligence
+
+Este bounded context se encarga de gestionar la autenticación, recepción y análisis de datos provenientes de los dispositivos IoT instalados en los vehículos. Su objetivo es procesar la información en tiempo real para generar insights sobre el estado del vehículo, detectar anomalías y proporcionar recomendaciones de mantenimiento predictivo.
+
+### 5.1.1. Domain Layer
+
+**Aggregates**
+
+`Device`: Representa un dispositivo IoT registrado en el sistema, asociado a un vehículo y responsable de enviar datos de telemetría.
+
+| Atributos | Tipo de dato | Visibilidad | Descripción                              |
+|-----------|--------------|-------------|------------------------------------------|
+| id        | Long         | Private     | Identificador único del dispositivo.     |
+| deviceId  | String       | Private     | Identificador único del dispositivo IoT. |
+| vehicleId | Long         | Private     | Identificador del vehículo asociado.     |
+
+**Commands**
+
+- `RegisterDeviceCommand`: Comando para registrar un nuevo dispositivo IoT en el sistema, asociándolo a un vehículo específico.
+- `ValidateDeviceCommand`: Comando para validar la autenticidad de un dispositivo IoT mediante su deviceId.
+
+**Services**
+
+- `DeviceCommandService`
+  - handle(RegisterDeviceCommand)
+  - handle(ValidateDeviceCommand)
+
+### 5.1.2. Interface Layer
+
+**Controladores**
+
+`DeviceAuthenticationController`: Controlador REST encargado de exponer los endpoints para autenticación y registro de dispositivos IoT.
+
+| Método                                 | Ruta                                         | Descripción                                                                 |
+|----------------------------------------|----------------------------------------------|-----------------------------------------------------------------------------|
+| registerDevice(RegisterDeviceResource) | POST /api/v1/devices/authentication/register | Registra un nuevo dispositivo IoT en el sistema, asociándolo a un vehículo. |
+| validateDevice(ValidateDeviceResource) | POST /api/v1/devices/authentication/validate | Valida la autenticidad de un dispositivo IoT utilizando su deviceId.        |
+
+### 5.1.3. Application Layer
+
+**Servicios de Comando**
+
+`DeviceCommandServiceImpl`
+
+| Método                        | Descripción                                      |
+|-------------------------------|--------------------------------------------------|
+| handle(RegisterDeviceCommand) | Registra un nuevo dispositivo IoT en el sistema. |
+| handle(ValidateDeviceCommand) | Valida la autenticidad de un dispositivo IoT.    |
+
+### 5.1.4. Infrastructure Layer
+
+**Repositorios**
+
+`DeviceRepository`: Interfaz que define las operaciones de persistencia para la entidad Device.
+
+| Método                   | Descripción                                                        |
+|--------------------------|--------------------------------------------------------------------|
+| findByDeviceId(String)   | Busca un dispositivo por su ID único.                              |
+| existsByDeviceId(String) | Verifica si un dispositivo con el ID dado ya existe en el sistema. |
+
+### 5.1.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.1.6. Bounded Context Software Architecture Code Level Diagrams
+#### 5.1.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.1.6.2. Bounded Context Database Design Diagram
 
 # Chapter VI: Solution UX Design
 
