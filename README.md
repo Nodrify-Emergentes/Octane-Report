@@ -2125,10 +2125,10 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 |vehicleId|Long|Identificador único del vehículo que registra la métrica|
 |coordinates|Coordinates (Enum)|Ubicación geográfica donde se tomó la medición|
 |airQuality|AirQuality (Enum)|Medición de la calidad del aire en el entorno|
-|environmentalConditions|	EnvironmentalConditions (Enum)|Condiciones |ambientales generales registradas
-|atmosphericPressure|	AtmosphericPressure (Enum)|	Nivel de presión atmosférica medido
-|statusImpact|	StatusImpact (Enum)|	Indicador del impacto en el estado del sistema
-|registeredAt|	LocalDateTime|	Fecha y hora en que se registró la métrica
+|environmentalConditions|	EnvironmentalConditions (Enum)|Condiciones |ambientales generales registradas|
+|atmosphericPressure|	AtmosphericPressure (Enum)|	Nivel de presión atmosférica medido|
+|statusImpact|	StatusImpact (Enum)|	Indicador del impacto en el estado del sistema|
+|registeredAt|	LocalDateTime|	Fecha y hora en que se registró la métrica|
 
 #### Value Objects
 
