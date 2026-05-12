@@ -2066,7 +2066,19 @@ El bounded context de Identity Access Management (IAM) se encarga de gestionar l
 
 ### 5.1.5. Bounded Context Software Architecture Component Level Diagrams
 ### 5.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+Se describen los diagramas que representan la estructura interna del contexto de IAM, incluyendo las clases, interfaces, servicios y repositorios que lo componen. Este bounded context incluye ambos IAM para la autenticación de usuarios y profiles para los perfiles de cada usuario.
+
 #### 5.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+El siguiente diagrama muestra las clases principales del dominio de IAM, incluyendo User y Role, así como sus relaciones y atributos clave.
+
+![IAM Class Diagram](assets/images/chapter-5/bc-iam/iam-class-diagram.png)
+
+Además, el siguiente diagrama muestra las clases principales del dominio de Profiles, incluyendo Profile y su relación con User.
+
+![Profile Class Diagram](assets/images/chapter-5/bc-iam/iam-class-diagram.png)
+
 #### 5.1.6.2. Bounded Context Database Design Diagram
 
 ## 5.2. Bounded Context: Reports
@@ -2736,7 +2748,15 @@ Este bounded context se encarga de gestionar la autenticación, recepción y an�
 
 ### 5.1.5. Bounded Context Software Architecture Component Level Diagrams
 ### 5.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección se presentan los diagramas de clase detallados del dominio y el diseño de la base de datos para el bounded context de Device Intelligence, mostrando las entidades, sus relaciones y la estructura de almacenamiento de datos.
+
 #### 5.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases del dominio para el contexto de Device Intelligence muestra la entidad principal con sus atributos y métodos relacionados a la autenticación y registro de dispositivos IoT.
+
+![Device Class Diagram](assets/images/chapter-5/bc-device-intelligence/device-class-diagram.png)
+
 #### 5.1.6.2. Bounded Context Database Design Diagram
 
 # Chapter VI: Solution UX Design
