@@ -2243,7 +2243,7 @@ Reports funciona como un bounded context de consulta con persistencia propia. No
 
 ### 5.2.5. Bounded Context Software Architecture Component Level Diagrams
 
-(imagen)
+![system-component-diagram](./assets/images/chapter-5/bc-maintenance/bounded-context-software-architecture-component-level-diagram.png)
 
 ### 5.2.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -2253,7 +2253,7 @@ Reports funciona como un bounded context de consulta con persistencia propia. No
 
 #### 5.2.6.2. Bounded Context Database Design Diagram
 
-(imagen)
+![system-component-diagram](./assets/images/chapter-5/bc-report/report-db-diagram.png)
 
 ## 5.3. Bounded Context: Assignments
 
@@ -2510,8 +2510,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 
 ### 5.3.5. Bounded Context Software Architecture Component Level Diagrams
 
-(imagen)
-
+![system-component-diagram](./assets/images/chapter-5/bc-maintenance/bounded-context-software-architecture-component-level-diagram.png)
 
 ### 5.3.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -2521,7 +2520,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 
 #### 5.3.6.2. Bounded Context Database Design Diagram
 
-(imagen)
+![system-component-diagram](./assets/images/chapter-5/bc-assignment/assignments-db-diagram.png)
 
 ## 5.4. Bounded Context: Maintenance
 ### 5.4.1. Domain Layer
