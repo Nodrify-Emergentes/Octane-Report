@@ -2676,6 +2676,83 @@ NotificationRepository|	Repositorio para acceder a los datos de notificaciones|
 
 ---
 
+## 5.7. Bounded Context: Device Intelligence
+
+Este bounded context se encarga de gestionar la autenticación, recepción y análisis de datos provenientes de los dispositivos IoT instalados en los vehículos. Su objetivo es procesar la información en tiempo real para generar insights sobre el estado del vehículo, detectar anomalías y proporcionar recomendaciones de mantenimiento predictivo.
+
+### 5.7.1. Domain Layer
+
+**Aggregates**
+
+`Device`: Representa un dispositivo IoT registrado en el sistema, asociado a un vehículo y responsable de enviar datos de telemetría.
+
+| Atributos | Tipo de dato | Visibilidad | Descripción                              |
+|-----------|--------------|-------------|------------------------------------------|
+| id        | Long         | Private     | Identificador único del dispositivo.     |
+| deviceId  | String       | Private     | Identificador único del dispositivo IoT. |
+| vehicleId | Long         | Private     | Identificador del vehículo asociado.     |
+
+**Commands**
+
+- `RegisterDeviceCommand`: Comando para registrar un nuevo dispositivo IoT en el sistema, asociándolo a un vehículo específico.
+- `ValidateDeviceCommand`: Comando para validar la autenticidad de un dispositivo IoT mediante su deviceId.
+
+**Services**
+
+- `DeviceCommandService`
+  - handle(RegisterDeviceCommand)
+  - handle(ValidateDeviceCommand)
+
+### 5.7.2. Interface Layer
+
+**Controladores**
+
+`DeviceAuthenticationController`: Controlador REST encargado de exponer los endpoints para autenticación y registro de dispositivos IoT.
+
+| Método                                 | Ruta                                         | Descripción                                                                 |
+|----------------------------------------|----------------------------------------------|-----------------------------------------------------------------------------|
+| registerDevice(RegisterDeviceResource) | POST /api/v1/devices/authentication/register | Registra un nuevo dispositivo IoT en el sistema, asociándolo a un vehículo. |
+| validateDevice(ValidateDeviceResource) | POST /api/v1/devices/authentication/validate | Valida la autenticidad de un dispositivo IoT utilizando su deviceId.        |
+
+### 5.7.3. Application Layer
+
+**Servicios de Comando**
+
+`DeviceCommandServiceImpl`
+
+| Método                        | Descripción                                      |
+|-------------------------------|--------------------------------------------------|
+| handle(RegisterDeviceCommand) | Registra un nuevo dispositivo IoT en el sistema. |
+| handle(ValidateDeviceCommand) | Valida la autenticidad de un dispositivo IoT.    |
+
+### 5.7.4. Infrastructure Layer
+
+**Repositorios**
+
+`DeviceRepository`: Interfaz que define las operaciones de persistencia para la entidad Device.
+
+| Método                   | Descripción                                                        |
+|--------------------------|--------------------------------------------------------------------|
+| findByDeviceId(String)   | Busca un dispositivo por su ID único.                              |
+| existsByDeviceId(String) | Verifica si un dispositivo con el ID dado ya existe en el sistema. |
+
+### 5.7.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.7.6. Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección se presentan los diagramas de clase detallados del dominio y el diseño de la base de datos para el bounded context de Device Intelligence, mostrando las entidades, sus relaciones y la estructura de almacenamiento de datos.
+
+#### 5.7.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases del dominio para el contexto de Device Intelligence muestra la entidad principal con sus atributos y métodos relacionados a la autenticación y registro de dispositivos IoT.
+
+![Device Class Diagram](assets/images/chapter-5/bc-device-intelligence/device-class-diagram.png)
+
+#### 5.7.6.2. Bounded Context Database Design Diagram
+
+Para el diseño de la base de datos, se presenta un diagrama que ilustra la tabla principal con sus campos correspondientes.
+
+![Device Database Diagram](assets/images/chapter-5/bc-device-intelligence/device-database-diagram.png)
+
 # Chapter VI: Solution UX Design
 
 ## Capitulo VI: Solution UX Design 
