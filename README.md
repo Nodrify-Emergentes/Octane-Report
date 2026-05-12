@@ -3205,13 +3205,13 @@ En esta sección se presenta la propuesta visual de la Landing Page, donde se tr
 
 Esta sección muestra la estructura base de la Landing Page mediante wireframes para desktop y mobile, destacando la jerarquía visual, la usabilidad y la coherencia con los principios de diseño inclusivo y la arquitectura de información.
 
-<img src="./assets/images/chapter-6/landing-page-ui-design/landing-page-wireframe.png" alt="landing page wireframe desktop"/>
+![landing page wireframe](assets/images/chapter-6/landing-page-ui-design/landing-page-wireframe.png)
 
 ### 6.3.2. Landing Page Mock-up
 
 Aquí se presentan los mock-ups finales de la Landing Page en versiones desktop y mobile, evidenciando la aplicación del Design System, los principios de diseño visual y la alineación con la experiencia de usuario definida en etapas previas.
 
-<img src="./assets/images/chapter-6/landing-page-ui-design/landing-page-mockup.png" alt="landing page mockup desktop"/>
+![landing page mockup](assets/images/chapter-6/landing-page-ui-design/landing-page-mockup.png)
 
 ## 6.4. Applications UX/UI Design
 
@@ -3345,184 +3345,6 @@ El wireflow inicia cuando el usuario presiona el botón de la barra lateral desd
 **User Goal: Como Motociclista, quiero ver mis gastos registrados**
 ![wireflow-ver-gastos.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-gastos.png)
 El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Gastos. Al acceder a la página, el sistema muestra en pantalla los gastos registrados del usuario, permitiéndole observar y revisar la información correspondiente de manera clara y ordenada.
-
-### 6.4.3. Applications Mock-ups
-
-**Web Application**
-
-En esta sección se presentan los mock-ups finales de la aplicacion web, donde se refleja la apariencia visual definitiva y la interacción esperada por el usuario. La propuesta integra los principios de diseño, accesibilidad y coherencia visual, aplicando el Design System establecido para garantizar una experiencia uniforme, atractiva y funcional en todos los entornos digitales.
-
-![mockup1.png](assets/images/chapter-6/applications-ux-ui-design/mockup1.png)
-![mockup2.png](assets/images/chapter-6/applications-ux-ui-design/mockup2.png)
-![mockup3.png](assets/images/chapter-6/applications-ux-ui-design/mockup3.png)
-![mockup4.png](assets/images/chapter-6/applications-ux-ui-design/mockup4.png)
-![mockup5.png](assets/images/chapter-6/applications-ux-ui-design/mockup5.png)
-![mockup6.png](assets/images/chapter-6/applications-ux-ui-design/mockup6.png)
-![mockup7.png](assets/images/chapter-6/applications-ux-ui-design/mockup7.png)
-![mockup8.png](assets/images/chapter-6/applications-ux-ui-design/mockup8.png)
-![mockup9.png](assets/images/chapter-6/applications-ux-ui-design/mockup9.png)
-![mockup10.png](assets/images/chapter-6/applications-ux-ui-design/mockup10.png)
-![mockup11.png](assets/images/chapter-6/applications-ux-ui-design/mockup11.png)
-![mockup12.png](assets/images/chapter-6/applications-ux-ui-design/mockup12.png)
-![mockup13.png](assets/images/chapter-6/applications-ux-ui-design/mockup13.png)
-![mockup14.png](assets/images/chapter-6/applications-ux-ui-design/mockup14.png)
-![mockup15.png](assets/images/chapter-6/applications-ux-ui-design/mockup15.png)
-![mockup16.png](assets/images/chapter-6/applications-ux-ui-design/mockup16.png)
-![mockup17.png](assets/images/chapter-6/applications-ux-ui-design/mockup17.png)
-![mockup18.png](assets/images/chapter-6/applications-ux-ui-design/mockup18.png)
-
-**Mobile Application**
-
-En esta sección se presentan los mock-ups finales de la aplicacion movil, donde se refleja la apariencia visual definitiva y la interacción esperada por el usuario. La propuesta integra los principios de diseño, accesibilidad y coherencia visual, aplicando el Design System establecido para garantizar una experiencia uniforme, atractiva y funcional en todos los entornos digitales.
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup1.jpg" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup2.jpg" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup3.jpg" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup4.jpg" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup5.jpg" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup6.jpg" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup7.jpg" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup8.jpg" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup9.png" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup10.jpg" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup11.jpg" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup12.png" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup13.jpg" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup14.jpg" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup15.png" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup16.jpg" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup17.jpg" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup18.jpg" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup19.jpg" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup20.jpg" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup21.jpg" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup22.jpg" alt="app mockup"/>
-
-<img src="assets/images/chapter-6/applications-ux-ui-design/mockup23.jpg" alt="app mockup"/>
-
-
-### 6.4.4. Applications User Flow Diagrams
-
-En esta sección se presentan los user flows que ilustran los flujos de interacción y navegación dentro de las aplicaciones web y móvil de BykerZ, considerando los User goals propuestos.
-
-**Web Application**
-
-**User Goal: Como dueño de moto, quiero visualizar los gastos que tengo registrados.**
-![usergoal1.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal1.drawio.png)
-![userflow1.drawio.png](assets/images/chapter-6/applications-ux-ui-design/userflow1.drawio.png)
-El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Gastos. Al acceder, la interfaz muestra la lista de registros existentes, permitiendo al usuario visualizar la información general de cada gasto de manera clara y organizada.
-
-**User Goal: Como dueño de moto, quiero visualizar la comparativa que hay entre mis vehículos.**
-![usergoal2.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal2.drawio.png)
-![userflow2.drawio.png](assets/images/chapter-6/applications-ux-ui-design/userflow2.drawio.png)
-El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Comparativas. Al acceder, la interfaz muestra las cards de los vehículos registrados, donde el usuario presiona en la card de su preferencia para ver los detalles. Finalmente, el sistema despliega una vista con la comparativa entre los vehículos seleccionados, permitiendo al usuario observar de forma clara las diferencias y similitudes en aspectos clave como rendimiento, costos y mantenimientos.
-
-**User Goal: Como dueño de moto, quiero revisar los matenimientos de mis vehículos.**
-![usergoal3.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal3.drawio.png)
-![userflow3.drawio.png](assets/images/chapter-6/applications-ux-ui-design/userflow3.drawio.png)
-El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Finalmente, el sistema despliega una vista con los mantenimientos programados, permitiendo al usuario observar de forma clara las fechas, tipos de servicio y estado de cada mantenimiento.
-
-**User Goal: Como dueño de moto, quiero visualizar mis motocicletas registradas.**
-![usergoal4.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal4.drawio.png)
-![userflow4.drawio.png](assets/images/chapter-6/applications-ux-ui-design/userflow4.drawio.png)
-El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. Al acceder a la página, el sistema muestra la lista de vehículos registrados del usuario, permitiéndole visualizar la información general de cada uno de manera clara y organizada.
-
-**User Goal: Como dueño de moto, quiero vincular un nuevo mecánico a mi motocicleta.**
-![usergoal5.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal5.drawio.png)
-![userflow5.drawio.png](assets/images/chapter-6/applications-ux-ui-design/userflow5.drawio.png)
-El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Vehículos. Luego, el usuario presiona en la moto de su preferencia para acceder a los detalles del vehículo. Dentro de esta vista, el usuario presiona el botón Vincular, ingresa el código del mecánico y confirma la acción al presionar Solicitar. Finalmente, el sistema actualiza la interfaz y el usuario observa su moto vinculada correctamente al mecánico correspondiente.
-
-**User Goal: Como dueño de moto, quiero editar los detalles de una motocicleta que me pertenece.**
-![usergoal6.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal6.drawio.png)
-![userflow6.drawio.png](assets/images/chapter-6/applications-ux-ui-design/userflow6.drawio.png)
-El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Editar, realiza los cambios necesarios en el formulario y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa los detalles modificados reflejados en la pantalla.
-
-**User Goal: Como mecánico de motos, quiero visualizar las suscripciones activas.**
-![usergoal7.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal7.drawio.png)
-![userflow7.drawio.png](assets/images/chapter-6/applications-ux-ui-design/userflow7.drawio.png)
-El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Suscripciones. Al acceder, la interfaz muestra la lista de suscripciones activas, permitiendo al mecánico visualizar la información general de cada una de manera clara y organizada.
-
-**User Goal: Como mecánico de motos, quiero visualizar la comparativa que hay entre mis vehículos.**
-![usergoal8.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal8.drawio.png)
-![userflow8.drawio.png](assets/images/chapter-6/applications-ux-ui-design/userflow8.drawio.png)
-El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Comparativas. Al acceder, la interfaz muestra las cards de los vehículos registrados, donde el usuario presiona en la card de su preferencia para ver los detalles. Finalmente, el sistema despliega una vista con la comparativa entre los vehículos seleccionados, permitiendo al usuario observar de forma clara las diferencias y similitudes en aspectos clave como rendimiento, costos y mantenimientos.
-
-**User Goal: Como mecánico de motos, quiero progamar un mantenimiento.**
-![usergoal9.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal9.drawio.png)
-![userflow9.drawio.png](assets/images/chapter-6/applications-ux-ui-design/userflow9.drawio.png)
-El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Dentro de esta vista, el usuario presiona el botón Programar, completa el formulario con los detalles del mantenimiento y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa el nuevo mantenimiento programado reflejado en la pantalla.
-
-**User Goal: Como mecanico de motos, quiero adquirir las membresias.**
-![usergoal10.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal10.drawio.png)
-![userflow10.drawio.png](assets/images/chapter-6/applications-ux-ui-design/userflow10.drawio.png)
-El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Membresía. Al acceder, la interfaz muestra las opciones de planes disponibles, donde el usuario presiona en el plan de su preferencia para ver los detalles. Dentro de esta vista, el usuario presiona el botón Adquirir, completa el formulario con los datos de pago y confirma la acción al presionar Confirmar. Finalmente, el sistema actualiza la interfaz y el usuario observa la confirmación de su membresía reflejada en la pantalla.
-
-
-**Mobile Application**
-
-**User Goal: Como Motociclista, quiero ver  un resumen de mis vehiculos, gastos y mantenimientos.**
-![userflow-ver-dashboard.png](assets/images/chapter-6/applications-ux-ui-design/userflow-ver-dashboard.png)
-El flujo inicia cuando el usuario se encuentra en el panel, luego presiona la sección Dashboard, accediendo así a dicha vista. Una vez dentro, el usuario puede observar un resumen que muestra sus vehículos, los gastos recientes y los próximos mantenimientos, cumpliendo con el objetivo de visualizar de forma general la información más relevante relacionada con su actividad como motociclista.
-
-![userflow-ver-mantenimiento.png](assets/images/chapter-6/applications-ux-ui-design/userflow-ver-mantenimiento.png)
-**User Goal: Como Motociclista, quiero ver todos los mantenimientos programados de mi moto.**
-El flujo inicia cuando el usuario se encuentra en el panel, luego presiona la sección Mantenimientos, accediendo a dicha vista. Una vez dentro, el usuario selecciona el recuadro de su moto, tras lo cual el sistema muestra una lista con los mantenimientos programados, permitiéndole visualizar de manera clara las próximas tareas de servicio correspondientes a su vehículo.
-
-**User Goal: Como Motociclista, quiero eliminar un gasto pasado de mi registro de gastos.**
-![userflow-eliminar-gasto.png](assets/images/chapter-6/applications-ux-ui-design/userflow-eliminar-gasto.png)
-El flujo inicia cuando el usuario se encuentra en el panel, luego presiona la sección Gastos, accediendo a dicha vista. Una vez dentro, el usuario selecciona el icono para borrar el gasto deseado y, tras la acción, el sistema elimina el registro correspondiente, mostrando que el gasto fue eliminado correctamente de su historial.
-
-**User Goal: Como Motociclista, quiero monitorear las metricas de mi moto.**
-![userflow-monitorear-moto.png](assets/images/chapter-6/applications-ux-ui-design/userflow-monitorear-moto.png)
-El flujo inicia cuando el usuario se encuentra en el panel, luego presiona la sección Vehículos y selecciona su moto. Una vez en los detalles del vehículo, el usuario presiona el botón Monitorear, tras lo cual el sistema muestra las métricas de la moto, permitiéndole visualizar información relevante sobre su rendimiento y estado actual.
-
-**User Goal: Como Motociclista, quiero desvincular mi moto de un mecanico.**
-![userflow-desvincular-moto.png](assets/images/chapter-6/applications-ux-ui-design/userflow-desvincular-moto.png)
-El flujo inicia cuando el usuario se encuentra en el panel, luego presiona la sección Vehículos y selecciona su moto. Una vez en los detalles del vehículo, el usuario presiona el botón Desvincular, tras lo cual el sistema ejecuta la acción y muestra que la moto ha sido desvinculada correctamente del mecánico asociado.
-
-**User Goal: Como Motociclista, quiero vincular mi moto a un mecanico por su codigo.**
-![userflow-vincular-moto.png](assets/images/chapter-6/applications-ux-ui-design/userflow-vincular-moto.png)
-El flujo inicia cuando el usuario accede a la página de Vehículos, luego selecciona su vehículo y entra en los detalles del mismo. Una vez allí, el usuario presiona el botón Vincular, ingresa el código del mecánico y presiona el botón Solicitar. Finalmente, el sistema confirma la acción mostrando que la moto ha sido vinculada correctamente al mecánico correspondiente.
-
-**User Goal: Como Motociclista, quiero registrar un vehículo en mi cuenta.**
-![userflow-registro-vehiculo.png](assets/images/chapter-6/applications-ux-ui-design/userflow-registro-vehiculo.png)
-El flujo inicia cuando el usuario accede a la página de Vehículos, luego presiona el botón “Añadir Vehículo”. A continuación, el usuario ingresa los datos de su moto y presiona el botón “Registrar”. Finalmente, el sistema confirma la acción mostrando que la moto ha sido registrada correctamente y aparece visible en la pantalla.
-
-**User Goal: Como Motociclista, quiero ver mis vehículos registrados.**
-![userflow-ver-vehiculos.png](assets/images/chapter-6/applications-ux-ui-design/userflow-ver-vehiculos.png)
-El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la página de Vehículos, donde el sistema muestra los vehículos registrados en su cuenta, permitiéndole visualizar la información general de cada uno.
-
-**User Goal: Como Motociclista, registrar mis gastos.**
-![userflow-registrar-gasto.png](assets/images/chapter-6/applications-ux-ui-design/userflow-registrar-gasto.png)
-El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la página de Gastos y presiona el botón “Añadir Gasto”. A continuación, el usuario ingresa los datos del gasto en el formulario y presiona el botón “Registrar”. Finalmente, el sistema muestra el nuevo gasto añadido en la pantalla de gastos, confirmando que el registro se realizó correctamente.
-
-**User Goal: Como Motociclista, quiero ver mis gastos registrados**
-![userflow-ver-gastos.png](assets/images/chapter-6/applications-ux-ui-design/userflow-ver-gastos.png)
-El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la página de Gastos, donde el sistema muestra en pantalla los gastos registrados, permitiéndole visualizar la información correspondiente de forma clara y organizada.
-
-## 6.5. Applications Prototyping
-
 
 ## Conclusiones
 
