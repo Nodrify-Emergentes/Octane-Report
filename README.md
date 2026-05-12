@@ -3198,16 +3198,22 @@ El sistema de navegación de Octane se diseñó con el propósito de garantizar 
   - Esto permite mantener un flujo jerárquico descendente, donde cada nivel muestra más información específica.
 
 ## 6.3. Landing Page UI Design
-
 En esta sección se presenta la propuesta visual de la Landing Page, donde se traduce la arquitectura de información y las decisiones de diseño en una interfaz clara, atractiva y funcional que refleje la identidad visual y los objetivos de la startup.
-
 ### 6.3.1. Landing Page Wireframe
-
 Esta sección muestra la estructura base de la Landing Page mediante wireframes para desktop y mobile, destacando la jerarquía visual, la usabilidad y la coherencia con los principios de diseño inclusivo y la arquitectura de información.
 
-![landing page wireframe](assets/images/chapter-6/landing-page-ui-design/landing-page-wireframe.png)
+- Desktop
+![Landing Page Wireframe Desktop](./assets/images/chapter-6/landing-ui/desktop-wireframe.png)
+- Mobile
+![Landing Page Wireframe Mobile](./assets/images/chapter-6/landing-ui/mobile-wireframe.png)
 
 ### 6.3.2. Landing Page Mock-up
+Aquí se presentan los mock-ups finales de la Landing Page en versiones desktop y mobile, evidenciando la aplicación del Design System, los principios de diseño visual y la alineación con la experiencia de usuario definida en etapas previas.
+
+- Desktop
+![Landing Page Mock-up Desktop](./assets/images/chapter-6/landing-ui/desktop-mockup.png)
+- Mobile
+![Landing Page Mock-up Mobile](./assets/images/chapter-6/landing-ui/mobile-mockup.png)
 
 Aquí se presentan los mock-ups finales de la Landing Page en versiones desktop y mobile, evidenciando la aplicación del Design System, los principios de diseño visual y la alineación con la experiencia de usuario definida en etapas previas.
 
