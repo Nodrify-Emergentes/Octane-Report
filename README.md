@@ -1823,16 +1823,267 @@ Este diagrama describe la distribución física y la infraestructura de nube de 
 # Chapter V: Tactical-Level Software Design
 
 ## 5.1. Bounded Context: Identity Access Management
+
+El bounded context de Identity Access Management (IAM) se encarga de gestionar la autenticación, autorización y administración de usuarios dentro del sistema Octane. Este contexto es fundamental para garantizar la seguridad y el control de acceso a los recursos y funcionalidades de la plataforma.
+
 ### 5.1.1. Domain Layer
+
+**Aggregates**
+
+`User`: Agregado raíz que representa a un usuario en la plataforma. Centraliza los credenciales y el rol.
+
+| Atributos | Tipo de dato | Visibilidad | Descripción                           |
+|-----------|--------------|-------------|---------------------------------------|
+| id        | Long         | Private     | Identificador único del usuario.      |
+| username  | String       | Private     | Nombre de usuario para autenticación. |
+| password  | String       | Private     | Contraseña cifrada del usuario.       |
+| userRoles | List<Role>   | Private     | Lista de roles asignados al usuario.  |
+
+`Profile`: Agregado que representa el perfil de un usuario, con información personal.
+
+| Atributos    | Tipo de dato | Visibilidad | Descripción                           |
+|--------------|--------------|-------------|---------------------------------------|
+| id           | Long         | Private     | Identificador único del perfil.       |
+| firstName    | String       | Private     | Nombre del usuario.                   |
+| lastName     | String       | Private     | Apellido del usuario.                 |
+| emailAddress | EmailAddress | Private     | Correo electrónico del usuario.       |
+| photoUrl     | String       | Private     | URL de la foto de perfil del usuario. |
+| userId       | UserId       | Private     | Identificador del usuario asociado.   |
+
+**Entities**
+
+`Role`: Entidad que representa un rol dentro del sistema, definiendo permisos y niveles de acceso.
+
+| Atributos | Tipo de dato | Visibilidad | Descripción                         |
+|-----------|--------------|-------------|-------------------------------------|
+| id        | Long         | Private     | Identificador único del rol.        |
+| name      | String       | Private     | Nombre del rol (e.g., ADMIN, USER). |
+
+**Value Objects**
+
+`Roles` (Enum): Define los roles dentro del sistema que se pueden asignar a los usuarios.
+
+- ROLE_ADMIN
+- ROLE_MECHANIC
+- ROLE_OWNER
+
+`EmailAddress` (Record): Representa una dirección de correo electrónico siguiendo el formato correcto.
+
+`UserId` (Record): Representa un identificador de usuario.
+
+**Commands**
+
+- `CreateUserCommand`: Comando para crear un nuevo usuario en el sistema, incluyendo su perfil y rol.
+- `DeleteUserCommand`: Comando para eliminar un usuario existente del sistema.
+- `SeedRolesCommand`: Comando para inicializar los roles predefinidos en el sistema.
+- `SignInCommand`: Comando para autenticar a un usuario y generar un token de acceso.
+- `SignUpCommand`: Comando para registrar a un nuevo usuario con sus credenciales y perfil.
+- `UpdateUserCommand`: Comando para actualizar la información de un usuario existente.
+- `CreateProfileCommand`: Comando para crear el perfil de un usuario.
+
+**Queries**
+
+- `GetAllRolesQuery`: Consulta para obtener la lista de todos los roles disponibles en el sistema.
+- `GetAllUsersQuery`: Consulta para obtener la lista de todos los usuarios registrados en el sistema.
+- `GetUserByIdQuery`: Consulta para obtener la información de un usuario específico por su identificador.
+- `GetUserByUsernameQuery`: Consulta para obtener la información de un usuario específico por su nombre de usuario.
+- `GetProfileByEmailQuery`: Consulta para obtener el perfil de un usuario específico por su correo electrónico.
+- `GetProfileByIdQuery`: Consulta para obtener el perfil de un usuario específico por su identificador.
+- `GetProfileByUserId`: Consulta para obtener el perfil de un usuario específico por su identificador de usuario.
+- `GetProfileByUsernameQuery`: Consulta para obtener el perfil de un usuario específico por su nombre de usuario.
+
+**Services**
+
+- `RoleCommandService`
+  - handle(SeedRolesCommand)
+- `RoleQueryService`
+  - handle(GetAllRolesQuery)
+- `UserCommandService`
+  - handle(DeleteUserCommand)
+  - handle(SignInCommand)
+  - handle(SignUpCommand)
+  - handle(UpdateUserCommand)
+- `UserQueryService`
+  - handle(GetAllUsersQuery)
+  - handle(GetUserByIdQuery)
+  - handle(GetUserByUsernameQuery)
+- `ProfileCommandService`
+  - handle(CreateProfileCommand)
+- `ProfileQueryService`
+  - handle(GetProfileByEmailQuery)
+  - handle(GetProfileByIdQuery)
+  - handle(GetProfileByUserId)
+  - handle(GetProfileByUsernameQuery)
+
 ### 5.1.2. Interface Layer
+
+**Controladores**
+
+`AuthenticationController`: Controlador REST encargado de exponer los endpoints para autenticación y registro de usuarios en la plataforma.
+
+| Método                 | Ruta                                | Descripción                                                                                   |
+|------------------------|-------------------------------------|-----------------------------------------------------------------------------------------------|
+| signIn(SignInResource) | POST /api/v1/authentication/sign-in | Autentica a un usuario en el sistema y devuelve un token JWT junto con su información básica. |
+| signUp(SignUpResource) | POST /api/v1/authentication/sign-up | Registra un nuevo usuario en la plataforma con credenciales y rol inicial.                    |
+
+`RolesController`: Controlador REST encargado de exponer los endpoints para la gestión de roles dentro del sistema.
+
+| Método        | Ruta              | Descripción                                      |
+|---------------|-------------------|--------------------------------------------------|
+| getAllRoles() | GET /api/v1/roles | Lista todos los roles disponibles en el sistema. |
+
+`UsersController`: Controlador REST encargado de exponer los endpoints para la gestión de usuarios dentro del sistema.
+
+| Método                         | Ruta                                  | Descripción                                                  |
+|--------------------------------|---------------------------------------|--------------------------------------------------------------|
+| updateUser(UpdateUserResource) | PUT /api/v1/users/{userId}            | Actualiza la información de un usuario existente.            |
+| deleteUser(Long)               | DELETE /api/v1/users/{userId}         | Elimina un usuario del sistema.                              |
+| getUserById(Long)              | GET /api/v1/users/{userId}            | Obtiene los detalles de un usuario por su ID.                |
+| getAllUsers()                  | GET /api/v1/users                     | Lista todos los usuarios registrados en el sistema.          |
+| getUserByUsername(String)      | GET /api/v1/users/username/{username} | Obtiene los detalles de un usuario por su nombre de usuario. |
+
+`ProfilesController`: Controlador REST encargado de exponer los endpoints para la gestión de perfiles de usuario dentro del sistema.
+
+| Método                                | Ruta                               | Descripción                                                       |
+|---------------------------------------|------------------------------------|-------------------------------------------------------------------|
+| getProfileById(Long)                  | GET /api/v1/profiles/{profileId}   | Obtiene los detalles de un perfil por su ID.                      |
+| getProfileByEmail(String)             | GET /api/v1/profiles/email/{email} | Obtiene los detalles de un perfil por su correo electrónico.      |
+| getProfileByUserId(Long)              | GET /api/v1/profiles/user/{userId} | Obtiene los detalles de un perfil por el ID del usuario asociado. |
+| getProfileByAuthenticatedUser(String) | GET /api/v1/profiles/user          | Obtiene los detalles del perfil del usuario autenticado.          |
+
+**ACL**
+
+`IamContextFacade`: Proporciona una interfaz para que otros contextos interactúen con la gestión de identidades.
+
+- fetchUserById(Long)
+- fetchUserByUsername(String)
+
+`ProfileContextFacade`: Proporciona una interfaz para que otros contextos interactúen con el perfil de usuario.
+
+- createProfile(String, String, String, String, Long)
+- getProfileIdByUserId(Long)
+
 ### 5.1.3. Application Layer
+
+**Servicios de Comando**
+
+`UserCommandServiceImpl`
+
+| Método                    | Descripción                                                         |
+|---------------------------|---------------------------------------------------------------------|
+| handle(UpdateUserCommand) | Actualiza la información de un usuario existente en el sistema.     |
+| handle(DeleteUserCommand) | Elimina un usuario del sistema.                                     |
+| handle(SignInCommand)     | Autentica a un usuario y genera un token de acceso.                 |
+| handle(SignUpCommand)     | Registra un nuevo usuario en el sistema con sus credenciales y rol. |
+
+`RoleCommandServiceImpl`
+
+| Método                   | Descripción                                      |
+|--------------------------|--------------------------------------------------|
+| handle(SeedRolesCommand) | Inicializa los roles predefinidos en el sistema. |
+
+`ProfileCommandServiceImpl`
+
+| Método                       | Descripción                                                    |
+|------------------------------|----------------------------------------------------------------|
+| handle(CreateProfileCommand) | Crea el perfil de un usuario con la información proporcionada. |
+
+**Servicios de Consulta**
+
+`UserQueryServiceImpl`
+
+| Método                         | Descripción                                                             |
+|--------------------------------|-------------------------------------------------------------------------|
+| handle(GetAllUsersQuery)       | Obtiene la lista de todos los usuarios registrados en el sistema.       |
+| handle(GetUserByIdQuery)       | Obtiene los detalles de un usuario específico por su ID.                |
+| handle(GetUserByUsernameQuery) | Obtiene los detalles de un usuario específico por su nombre de usuario. |
+
+`RoleQueryServiceImpl`
+
+| Método                   | Descripción                                                    |
+|--------------------------|----------------------------------------------------------------|
+| handle(GetAllRolesQuery) | Obtiene la lista de todos los roles disponibles en el sistema. |
+
+`ProfileQueryServiceImpl`
+
+| Método                            | Descripción                                                                  |
+|-----------------------------------|------------------------------------------------------------------------------|
+| handle(GetProfileByIdQuery)       | Obtiene los detalles de un perfil específico por su ID.                      |
+| handle(GetProfileByEmailQuery)    | Obtiene los detalles de un perfil específico por su correo electrónico.      |
+| handle(GetProfileByUserId)        | Obtiene los detalles de un perfil específico por el ID del usuario asociado. |
+| handle(GetProfileByUsernameQuery) | Obtiene los detalles de un perfil específico por su nombre de usuario.       |
+
+**Controladores de Eventos**
+
+`ApplicationReadyEventHandler`: Controlador de eventos que escucha el evento de arranque de la aplicación para ejecutar tareas de inicialización, como la siembra de roles predefinidos.
+
+| Evento                                    | Descripción                                                                            |
+|-------------------------------------------|----------------------------------------------------------------------------------------|
+| onApplicationReady(ApplicationReadyEvent) | Escucha el evento de arranque de la aplicación para ejecutar tareas de inicialización. |
+
+**Servicios Salientes**
+
+`HashingService`: Proporciona funcionalidades de hashing para la gestión segura de contraseñas.
+
+| Método                        | Descripción                                                      |
+|-------------------------------|------------------------------------------------------------------|
+| encode(CharSequence)          | Codifica una cadena de texto utilizando un algoritmo de hashing. |
+| matches(CharSequence, String) | Verifica si una cadena de texto coincide con un hash codificado. |
+
+`TokenService`: Proporciona funcionalidades para la generación y validación de tokens de acceso.
+
+| Método                       | Descripción                                              |
+|------------------------------|----------------------------------------------------------|
+| generateToken(String)        | Genera un token de acceso para un usuario autenticado.   |
+| getUserNameFromToken(String) | Extrae el nombre de usuario de un token de acceso.       |
+| validateToken(String)        | Valida la autenticidad y vigencia de un token de acceso. |
+
 ### 5.1.4. Infrastructure Layer
+
+**Repositorios**
+
+`UserRepository`: Interfaz que define las operaciones de persistencia para la entidad User.
+
+| Método                   | Descripción                                             |
+|--------------------------|---------------------------------------------------------|
+| findByUsername(String)   | Busca un usuario por su nombre de usuario.              |
+| existsByUsername(String) | Verifica si un usuario existe por su nombre de usuario. |
+
+`RoleRepository`: Interfaz que define las operaciones de persistencia para la entidad Role.
+
+| Método                | Descripción                                 |
+|-----------------------|---------------------------------------------|
+| findByName(String)    | Busca un rol por su nombre.                 |
+| existsByName(String)  | Verifica si un rol existe por su nombre.    |
+
+`ProfileRepository`: Interfaz que define las operaciones de persistencia para la entidad Profile.
+
+| Método                       | Descripción                                                          |
+|------------------------------|----------------------------------------------------------------------|
+| findByEmailAddress(String)   | Busca un perfil por su dirección de correo electrónico.              |
+| findByUserId(Long)           | Busca un perfil por el ID del usuario asociado.                      |
+| existsByEmailAddress(String) | Verifica si un perfil existe por su dirección de correo electrónico. |
+
 ### 5.1.5. Bounded Context Software Architecture Component Level Diagrams
 ### 5.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+Se describen los diagramas que representan la estructura interna del contexto de IAM, incluyendo las clases, interfaces, servicios y repositorios que lo componen. Este bounded context incluye ambos IAM para la autenticación de usuarios y profiles para los perfiles de cada usuario.
+
 #### 5.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+El siguiente diagrama muestra las clases principales del dominio de IAM, incluyendo User y Role, así como sus relaciones y atributos clave.Add a comment on  line R2074Add diff commentMarkdown input:  edit mode selected.WritePreviewHeadingBoldItalicQuoteCodeLinkUnordered listNumbered listTask listMentionReferenceSaved repliesAdd FilesPaste, drop, or click to add filesCancelCommentStart a review
+
+![IAM Class Diagram](assets/images/chapter-5/bc-iam/iam-class-diagram.png)
+
+Además, el siguiente diagrama muestra las clases principales del dominio de Profiles, incluyendo Profile y su relación con User.
+
+![Profile Class Diagram](assets/images/chapter-5/bc-iam/profile-class-diagram.png)
+
 #### 5.1.6.2. Bounded Context Database Design Diagram
 
----
+El siguiente diagrama muestra el diseño de la base de datos para el contexto de IAM, incluyendo las tablas User, Role y Profile, así como sus relaciones y claves primarias/foráneas.
+
+![IAM Database Diagram](assets/images/chapter-5/bc-iam/iam-database-diagram.png)
 
 ## 5.2. Bounded Context: Reports
 ### 5.2.1. Domain Layer
@@ -2675,6 +2926,83 @@ NotificationRepository|	Repositorio para acceder a los datos de notificaciones|
 ![vehicle_management_db](/assets/images/chapter-5/bc-vehicle-management/db-diagram.png)
 
 ---
+
+## 5.7. Bounded Context: Device Intelligence
+
+Este bounded context se encarga de gestionar la autenticación, recepción y análisis de datos provenientes de los dispositivos IoT instalados en los vehículos. Su objetivo es procesar la información en tiempo real para generar insights sobre el estado del vehículo, detectar anomalías y proporcionar recomendaciones de mantenimiento predictivo.
+
+### 5.7.1. Domain Layer
+
+**Aggregates**
+
+`Device`: Representa un dispositivo IoT registrado en el sistema, asociado a un vehículo y responsable de enviar datos de telemetría.
+
+| Atributos | Tipo de dato | Visibilidad | Descripción                              |
+|-----------|--------------|-------------|------------------------------------------|
+| id        | Long         | Private     | Identificador único del dispositivo.     |
+| deviceId  | String       | Private     | Identificador único del dispositivo IoT. |
+| vehicleId | Long         | Private     | Identificador del vehículo asociado.     |
+
+**Commands**
+
+- `RegisterDeviceCommand`: Comando para registrar un nuevo dispositivo IoT en el sistema, asociándolo a un vehículo específico.
+- `ValidateDeviceCommand`: Comando para validar la autenticidad de un dispositivo IoT mediante su deviceId.
+
+**Services**
+
+- `DeviceCommandService`
+  - handle(RegisterDeviceCommand)
+  - handle(ValidateDeviceCommand)
+
+### 5.7.2. Interface Layer
+
+**Controladores**
+
+`DeviceAuthenticationController`: Controlador REST encargado de exponer los endpoints para autenticación y registro de dispositivos IoT.
+
+| Método                                 | Ruta                                         | Descripción                                                                 |
+|----------------------------------------|----------------------------------------------|-----------------------------------------------------------------------------|
+| registerDevice(RegisterDeviceResource) | POST /api/v1/devices/authentication/register | Registra un nuevo dispositivo IoT en el sistema, asociándolo a un vehículo. |
+| validateDevice(ValidateDeviceResource) | POST /api/v1/devices/authentication/validate | Valida la autenticidad de un dispositivo IoT utilizando su deviceId.        |
+
+### 5.7.3. Application Layer
+
+**Servicios de Comando**
+
+`DeviceCommandServiceImpl`
+
+| Método                        | Descripción                                      |
+|-------------------------------|--------------------------------------------------|
+| handle(RegisterDeviceCommand) | Registra un nuevo dispositivo IoT en el sistema. |
+| handle(ValidateDeviceCommand) | Valida la autenticidad de un dispositivo IoT.    |
+
+### 5.7.4. Infrastructure Layer
+
+**Repositorios**
+
+`DeviceRepository`: Interfaz que define las operaciones de persistencia para la entidad Device.
+
+| Método                   | Descripción                                                        |
+|--------------------------|--------------------------------------------------------------------|
+| findByDeviceId(String)   | Busca un dispositivo por su ID único.                              |
+| existsByDeviceId(String) | Verifica si un dispositivo con el ID dado ya existe en el sistema. |
+
+### 5.7.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.7.6. Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección se presentan los diagramas de clase detallados del dominio y el diseño de la base de datos para el bounded context de Device Intelligence, mostrando las entidades, sus relaciones y la estructura de almacenamiento de datos.
+
+#### 5.7.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases del dominio para el contexto de Device Intelligence muestra la entidad principal con sus atributos y métodos relacionados a la autenticación y registro de dispositivos IoT.
+
+![Device Class Diagram](assets/images/chapter-5/bc-device-intelligence/device-class-diagram.png)
+
+#### 5.7.6.2. Bounded Context Database Design Diagram
+
+Para el diseño de la base de datos, se presenta un diagrama que ilustra la tabla principal con sus campos correspondientes.
+
+![Device Database Diagram](assets/images/chapter-5/bc-device-intelligence/device-database-diagram.png)
 
 # Chapter VI: Solution UX Design
 
