@@ -2065,6 +2065,9 @@ El bounded context de Identity Access Management (IAM) se encarga de gestionar l
 | existsByEmailAddress(String) | Verifica si un perfil existe por su dirección de correo electrónico. |
 
 ### 5.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+![Component Level Diagram](assets/images/chapter-5/bc-iam/bounded-context-software-architecture-component-level-diagram.png)
+
 ### 5.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 Se describen los diagramas que representan la estructura interna del contexto de IAM, incluyendo las clases, interfaces, servicios y repositorios que lo componen. Este bounded context incluye ambos IAM para la autenticación de usuarios y profiles para los perfiles de cada usuario.
@@ -2348,7 +2351,7 @@ El siguiente diagrama muestra el diseño de la base de datos para el contexto de
 
 ### 5.4.5. Bounded Context Software Architecture Component Level Diagrams
 
-![system-component-diagram](/assets/images/chapter-5/bc-maintenance/system-component-diagram.png)
+![system-component-diagram](./assets/images/chapter-5/bc-maintenance/bounded-context-software-architecture-component-level-diagram.png)
 
 ### 5.4.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.4.6.1. Bounded Context Domain Layer Class Diagrams
@@ -2666,7 +2669,7 @@ NotificationRepository|	Repositorio para acceder a los datos de notificaciones|
 
 ### 5.5.5 Bounded Context Software Architecture Component level Diagrams
 
-![system-component-diagram](./assets/images/chapter-5/bc-vehicle-wellness/system-component-diagram.png)
+![system-component-diagram](./assets/images/chapter-5/bc-vehicle-wellness/bounded-context-software-architecture-component-level-diagram.png)
 
 ### 5.5.6 Bounded Context Software Architecture Code level Diagrams
 
@@ -2914,7 +2917,7 @@ NotificationRepository|	Repositorio para acceder a los datos de notificaciones|
 
 ### 5.6.5. Bounded Context Software Architecture Component Level Diagrams
 
-![system-component-diagram](/assets/images/chapter-5/bc-vehicle-management/system-component-diagram.png)
+![system-component-diagram](./assets/images/chapter-5/bc-vehicle-management/bounded-context-software-architecture-component-level-diagram.png)
 
 ### 5.6.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.6.6.1. Bounded Context Domain Layer Class Diagrams
@@ -2988,6 +2991,9 @@ Este bounded context se encarga de gestionar la autenticación, recepción y an�
 | existsByDeviceId(String) | Verifica si un dispositivo con el ID dado ya existe en el sistema. |
 
 ### 5.7.5. Bounded Context Software Architecture Component Level Diagrams
+
+![Component Layer Diagram](assets/images/chapter-5/bc-device-intelligence/bounded-context-software-architecture-component-level-diagram.png)
+
 ### 5.7.6. Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección se presentan los diagramas de clase detallados del dominio y el diseño de la base de datos para el bounded context de Device Intelligence, mostrando las entidades, sus relaciones y la estructura de almacenamiento de datos.
