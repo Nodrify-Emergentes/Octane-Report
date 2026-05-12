@@ -2089,28 +2089,439 @@ El siguiente diagrama muestra el diseño de la base de datos para el contexto de
 ![IAM Database Diagram](assets/images/chapter-5/bc-iam/iam-database-diagram.png)
 
 ## 5.2. Bounded Context: Reports
+El bounded context Reports en Octane se encarga de consolidar la información dispersa de otros contextos del sistema para ofrecer una vista unificada del vehículo. Su objetivo no es administrar datos propios, sino componer, consultar y exportar información relevante para el análisis operativo de una motocicleta: datos del vehículo, historial de mantenimientos y asignación vigente con su mecánico y propietario.
+
 ### 5.2.1. Domain Layer
+
+El dominio de Reports está centrado en el agregado principal `Report`, que agrupa la información de un reporte específico de un vehículo. Este agregado contiene la lista de métricas que lo conforman y la fecha de generación del reporte. Además, el contexto define entidades especializadas para representar las métricas y sus tipos.
+
+**Aggregates**
+
+`Report`
+**Descripción:** Representa un reporte consolidado asociado a un vehículo. Contiene la información del vehículo, las métricas agrupadas en el reporte y la fecha de generación.
+
+| Atributo | Tipo de dato | Visibilidad | Descripción |
+|----------|--------------|-------------|-------------|
+| reportId | Long | Private | Identificador único del reporte. |
+| vehicleId | Long | Private | Identificador del vehículo asociado al reporte. |
+| metrics | List<Metric> | Private | Lista de métricas asociadas al reporte. |
+| reportDate | Date | Private | Fecha en la que se generó el reporte. |
+
+**Entities**
+
+`Metric`
+**Descripción:** Representa una métrica incluida dentro de un reporte. Puede ser una medición numérica o descriptiva relacionada con el estado del vehículo.
+
+| Atributo | Tipo de dato | Visibilidad | Descripción |
+|----------|--------------|-------------|-------------|
+| metricId | Long | Private | Identificador único de la métrica. |
+| type | MetricType | Private | Tipo de métrica asociada. |
+| metricValue | String | Private | Valor registrado para esta métrica. |
+
+`MetricType`
+**Descripción:** Define el tipo de una métrica, por ejemplo kilometraje, estado del aceite o temperatura.
+
+| Atributo | Tipo de dato | Visibilidad | Descripción |
+|----------|--------------|-------------|-------------|
+| metricTypeId | Long | Private | Identificador único del tipo de métrica. |
+| metricName | String | Private | Nombre del tipo de métrica. |
+| metricDescription | String | Private | Descripción del tipo de métrica. |
+
+**Queries**
+
+`GetReportByIdQuery <<record>>`
+**Descripción:** Obtiene un reporte específico mediante su identificador único.
+
+| Atributo | Tipo de dato | Descripción |
+|----------|--------------|-------------|
+| reportId | Long | Identificador del reporte a consultar. |
+
+`GetReportByVehicleIdQuery <<record>>`
+**Descripción:** Obtiene todos los reportes asociados a un vehículo específico.
+
+| Atributo | Tipo de dato | Descripción |
+|----------|--------------|-------------|
+| vehicleId | Long | Identificador del vehículo cuyos reportes se desean obtener. |
+
+`GetMetricsByReportIdQuery <<record>>`
+**Descripción:** Obtiene todas las métricas pertenecientes a un reporte.
+
+| Atributo | Tipo de dato | Descripción |
+|----------|--------------|-------------|
+| reportId | Long | Identificador del reporte cuyas métricas serán recuperadas. |
+
+**Services**
+
+`ReportQueryService` (Interface)
+* `handle(GetReportByIdQuery)`
+* `handle(GetReportByVehicleIdQuery)`
+* `handle(GetMetricsByReportIdQuery)`
+
+Este servicio define la puerta de entrada de consultas del bounded context y permite recuperar reportes y métricas desde la capa de persistencia.
+
 ### 5.2.2. Interface Layer
+
+**Rest Controllers**
+
+`ReportController`
+**Descripción:** Controlador REST encargado de manejar las peticiones asociadas a la obtención de reportes y sus métricas.
+
+| Método | Ruta | Descripción |
+|--------|------|-------------|
+| getReportById | GET /api/v1/reports/{reportId} | Obtiene un reporte por su identificador único. |
+| getAllReportsForVehicle | GET /api/v1/reports/vehicle/{vehicleId} | Obtiene todos los reportes asociados a un vehículo. |
+| getAllMetricsFromReport | GET /api/v1/reports/{reportId}/metrics | Obtiene todas las métricas asociadas a un reporte. |
+
+**Resources**
+
+`ReportResource <<class>>`
+**Descripción:** Representa la estructura de datos expuesta por la API para describir un reporte consolidado.
+
+| Atributo | Tipo de dato | Descripción |
+|----------|--------------|-------------|
+| reportId | Long | Identificador único del reporte. |
+| vehicleId | Long | Identificador del vehículo asociado al reporte. |
+| reportDate | Date | Fecha de generación del reporte. |
+| metrics | List<Metric> | Lista de métricas asociadas al reporte. |
+
+**Assemblers**
+
+`ReportResourceFromEntityAssembler`
+**Descripción:** Ensamblador encargado de transformar una entidad `Report` del dominio en un recurso REST `ReportResource`.
+
+| Método | Descripción |
+|--------|-------------|
+| fromEntity(Report report) | Transforma una entidad del agregado `Report` en un recurso REST. |
+
 ### 5.2.3. Application Layer
+
+`ReportQueryServiceImpl`
+**Descripción:** Implementación del servicio de consultas `ReportQueryService`, responsable de recuperar reportes y métricas desde la capa de persistencia mediante consultas especializadas.
+
+| Método | Descripción |
+|--------|-------------|
+| handle(GetReportByIdQuery) | Obtiene un reporte por su identificador único. |
+| handle(GetReportByVehicleIdQuery) | Obtiene todos los reportes asociados a un vehículo por su id. |
+| handle(GetMetricsByReportIdQuery) | Obtiene todas las métricas relacionadas con un reporte específico. |
+
+**Comportamiento observado en la implementación heredada**
+
+- El servicio consulta el repositorio de reportes para recuperar entidades persistidas.
+- La recuperación por vehículo retorna una colección de reportes asociados a ese vehículo.
+- La consulta de métricas se resuelve a partir del reporte recuperado.
+- Al iniciar la aplicación, se ejecuta un `ApplicationReadyEventHandler` para sembrar los tipos de métricas si la base de datos está vacía.
+
+`ApplicationReadyEventHandler`
+**Descripción:** Componente ejecutado automáticamente al iniciar la aplicación. Se encarga de inicializar el sistema con valores por defecto para los tipos de métricas.
+
+| Método | Descripción |
+|--------|-------------|
+| onApplicationEvent(ApplicationReadyEvent) | Registra valores iniciales para los tipos de métricas si la base de datos está vacía. |
+| currentTimestamp() | Devuelve el timestamp actual para propósitos de registro en logs. |
+
 ### 5.2.4. Infrastructure Layer
+
+**Repositories**
+
+`ReportRepository`
+**Descripción:** Repositorio JPA encargado de las operaciones de persistencia del agregado `Report`.
+
+| Método | Tipo de retorno | Descripción |
+|--------|-----------------|-------------|
+| findByVehicleId(Long vehicleId) | List<Report> | Recupera todos los reportes asociados a un vehículo por su id. |
+
+`MetricTypeRepository`
+**Descripción:** Repositorio JPA utilizado para gestionar la persistencia de los tipos de métricas (`MetricType`).
+
+| Método | Tipo de retorno | Descripción |
+|--------|-----------------|-------------|
+| Hereda métodos de JpaRepository | Varía | Permite realizar operaciones CRUD sobre los tipos de métricas. |
+
+**Rol arquitectónico**
+
+Reports funciona como un bounded context de consulta con persistencia propia. No depende de otros contextos para construir su dominio central; más bien, centraliza la persistencia y exposición de reportes ya calculados y sus métricas asociadas.
+
 ### 5.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+(imagen)
+
 ### 5.2.6. Bounded Context Software Architecture Code Level Diagrams
+
 #### 5.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+(imagen)
+
 #### 5.2.6.2. Bounded Context Database Design Diagram
 
----
+(imagen)
 
 ## 5.3. Bounded Context: Assignments
+
+El bounded context **Assignments** administra la relación entre un propietario, un mecánico y una asignación. En Octane, este contexto es clave para formalizar quién atiende una motocicleta, bajo qué estado se encuentra la relación y qué tipo de vinculación existe entre ambas partes.
+
 ### 5.3.1. Domain Layer
+
+**Aggregates**
+
+`Assignment`
+**Descripción:** Agregado raíz que representa la asignación de un propietario a un mecánico. Centraliza el estado, el tipo y el código único de la asignación.
+
+| Atributos | Tipo de dato | Visibilidad | Descripción |
+|----------|--------------|-------------|-------------|
+| id | Long | Private | Identificador único de la asignación. |
+| ownerId | Long | Private | Identificador del propietario vinculado. Puede ser nulo mientras la asignación está pendiente. |
+| mechanic | Mechanic | Private | Mecánico responsable de la asignación. |
+| status | AssignmentStatus | Private | Estado de la asignación. |
+| type | AssignmentType | Private | Tipo funcional de la asignación. |
+| assignmentCode | AssignmentCode | Private | Código único usado para identificar y reclamar la asignación. |
+
+`Mechanic`
+**Descripción:** Agregado raíz que representa al mecánico registrado en el sistema. Agrupa su perfil, sus asignaciones y su membresía.
+
+| Atributos | Tipo de dato | Visibilidad | Descripción |
+|----------|--------------|-------------|-------------|
+| id | Long | Private | Identificador único del mecánico. |
+| profile | Profile | Private | Perfil base asociado al mecánico. |
+| assignments | List<Assignment> | Private | Lista de asignaciones relacionadas al mecánico. |
+| membershipType | MembershipType | Private | Nivel de membresía del mecánico. |
+
+**Value Objects**
+
+`AssignmentCode`
+**Descripción:** Valor embebido que garantiza un código alfanumérico único de 9 caracteres para una asignación.
+
+| Atributo | Tipo de dato | Visibilidad | Descripción |
+|----------|--------------|-------------|-------------|
+| code | String | Private | Código de la asignación. |
+
+`AssignmentStatus`
+**Descripción:** Estado de una asignación.
+
+Valores: `ACTIVE`, `PENDING`, `CANCELLED`
+
+`AssignmentType`
+**Descripción:** Tipo de asignación funcional.
+
+Valores: `UNCATEGORIZED`, `REGULAR`, `FREQUENT`, `BUSINESS`
+
+`MembershipType`
+**Descripción:** Nivel de membresía del mecánico.
+
+Valores: `BRONZE`, `SILVER`, `BLACK`
+
+**Commands**
+
+* `CreateAssignmentCommand <<record>>`
+* `UpdateAssignmentStatusCommand <<record>>`
+* `UpdateAssignmentTypeCommand <<record>>`
+* `AssignOwnerToAssignmentCommand <<record>>`
+* `DeleteAssignmentCommand <<record>>`
+* `CreateMechanicCommand <<record>>`
+* `UpdateMechanicMembershipTypeCommand <<record>>`
+
+**Queries**
+
+* `GetAssignmentByOwnerIdQuery <<record>>`
+* `GetAssignmentsByMechanicIdAndStatusQuery <<record>>`
+* `GetAssignmentByIdQuery <<record>>`
+* `GetAssigmentByCodeQuery <<record>>`
+* `GetAssignmentByVehicleIdQuery <<record>>`
+* `GetMechanicByIdQuery <<record>>`
+
+**Services**
+
+`AssignmentCommandService`
+* `handle(CreateAssignmentCommand)`
+* `handle(UpdateAssignmentStatusCommand)`
+* `handle(UpdateAssignmentTypeCommand)`
+* `handle(AssignOwnerToAssignmentCommand)`
+* `handle(DeleteAssignmentCommand)`
+
+`AssignmentQueryService`
+* `handle(GetAssignmentByOwnerIdQuery)`
+* `handle(GetAssignmentsByMechanicIdAndStatusQuery)`
+* `handle(GetAssignmentByIdQuery)`
+* `handle(GetAssigmentByCodeQuery)`
+* `handle(GetAssignmentByVehicleIdQuery)`
+
+`MechanicCommandService`
+* `handle(CreateMechanicCommand)`
+* `handle(UpdateMechanicMembershipTypeCommand)`
+
+`MechanicQueryService`
+* `handle(GetMechanicByIdQuery)`
+
 ### 5.3.2. Interface Layer
+
+La capa de interfaz expone varias rutas REST porque Assignments resuelve distintos flujos de negocio: administración general de asignaciones, consulta por mecánico, consulta por owner y gestión de membresía del mecánico.
+
+**Rest Controllers**
+
+`AssignmentController`
+**Descripción:** Controlador principal para administrar asignaciones.
+
+| Método | Ruta | Descripción |
+|--------|------|-------------|
+| updateAssignmentStatus() | PATCH /api/v1/assignments/{assignmentId}/status | Actualiza el estado de una asignación. |
+| updateAssignmentType() | PATCH /api/v1/assignments/{assignmentId}/type | Actualiza el tipo de una asignación. |
+| getAssignmentById() | GET /api/v1/assignments/{assignmentId} | Recupera una asignación por su ID. |
+| assignOwnerToAssignment() | PATCH /api/v1/assignments/code/{assignmentCode}/assign-owner/{ownerId} | Reclama una asignación y la asocia a un owner. |
+| deleteAssignment() | DELETE /api/v1/assignments/{assignmentId} | Elimina una asignación pendiente. |
+| getAssignmentByCode() | GET /api/v1/assignments/code/{assignmentCode} | Recupera una asignación por su código. |
+
+`MechanicController`
+**Descripción:** Controlador para gestionar información del mecánico.
+
+| Método | Ruta | Descripción |
+|--------|------|-------------|
+| getOwnersForMechanic() | GET /api/v1/mechanic/{mechanicId}/owners | Devuelve los owners activos asociados a las asignaciones del mecánico. |
+| updateMechanicMembershipType() | PUT /api/v1/mechanic/{mechanicId}/membership | Actualiza el nivel de membresía del mecánico. |
+
+`MechanicAssigmentController`
+**Descripción:** Controlador de apoyo para listar y crear asignaciones desde la perspectiva del mecánico.
+
+| Método | Ruta | Descripción |
+|--------|------|-------------|
+| getAssignments() | GET /api/v1/mechanic/{mechanicId}/assignments/{status} | Lista las asignaciones del mecánico filtradas por estado. |
+| createAssignment() | POST /api/v1/mechanic/{mechanicId}/assignments | Crea una nueva asignación asociada al mecánico. |
+
+`OwnerAssigmentController`
+**Descripción:** Controlador de apoyo para consultar la asignación vigente de un owner.
+
+| Método | Ruta | Descripción |
+|--------|------|-------------|
+| getAssignment() | GET /api/v1/owner/{ownerId}/assignment | Obtiene la asignación activa asociada al owner. |
+
+**Resources**
+
+`AssignmentResource <<record>>`
+**Descripción:** Recurso de salida que representa una asignación ya enriquecida con owner y mecánico.
+
+| Campo | Tipo de dato | Descripción |
+|-------|--------------|-------------|
+| id | Long | Identificador de la asignación. |
+| owner | OwnerResource | Información del propietario, cuando está disponible. |
+| mechanic | MechanicResource | Información del mecánico asociado. |
+| type | String | Tipo de asignación. |
+| status | String | Estado de la asignación. |
+| assignmentCode | String | Código único de la asignación. |
+| createdAt | Date | Fecha de creación del registro. |
+
+`MechanicResource <<record>>`
+**Descripción:** Recurso de salida para el mecánico.
+
+| Campo | Tipo de dato | Descripción |
+|-------|--------------|-------------|
+| mechanicId | Long | Identificador del mecánico. |
+| completeName | String | Nombre completo del mecánico. |
+| membershipType | MembershipType | Nivel de membresía. |
+
+`UpdateAssignmentStatusResource <<record>>`
+
+| Campo | Tipo de dato | Descripción |
+|-------|--------------|-------------|
+| status | String | Nuevo estado de la asignación. |
+
+`UpdateAssignmentTypeResource <<record>>`
+
+| Campo | Tipo de dato | Descripción |
+|-------|--------------|-------------|
+| type | String | Nuevo tipo de asignación. |
+
+`UpdateMechanicMembershipTypeResource <<record>>`
+
+| Campo | Tipo de dato | Descripción |
+|-------|--------------|-------------|
+| membershipType | MembershipType | Nuevo nivel de membresía del mecánico. |
+
+**Assemblers**
+
+* `AssignmentResourceFromEntityAssembler`
+* `MechanicResourceFromEntityAssembler`
+* `CreateAssigmentCommandAssembler`
+* `UpdateAssignmentStatusCommandFromResourceAssembler`
+* `UpdateAssignmentTypeCommandFromResourceAssembler`
+* `UpdateMechanicMembershipTypeCommandFromResourceAssembler`
+
 ### 5.3.3. Application Layer
+
+`AssignmentCommandServiceImpl`
+**Descripción:** Implementación del servicio de comandos de asignaciones. Este servicio centraliza las reglas de escritura del contexto.
+
+| Método | Descripción |
+|--------|-------------|
+| handle(CreateAssignmentCommand) | Crea una asignación nueva con código aleatorio único y la asocia a un mecánico existente. |
+| handle(UpdateAssignmentStatusCommand) | Actualiza el estado de una asignación existente. |
+| handle(UpdateAssignmentTypeCommand) | Actualiza el tipo de una asignación existente. |
+| handle(AssignOwnerToAssignmentCommand) | Asocia un owner a una asignación por código y la marca como `ACTIVE`. |
+| handle(DeleteAssignmentCommand) | Elimina una asignación solo si sigue en estado `PENDING`. |
+
+**Comportamiento relevante**
+
+- Verifica la existencia del mecánico antes de crear una asignación.
+- Genera y reintenta códigos únicos hasta obtener uno no utilizado.
+- Valida la existencia del owner antes de asignarlo.
+- Evita que un owner tenga más de una asignación no cancelada.
+- Impide borrar asignaciones que ya no estén en estado `PENDING`.
+
+`MechanicCommandServiceImpl`
+**Descripción:** Implementación del servicio de comandos de mecánicos.
+
+| Método | Descripción |
+|--------|-------------|
+| handle(CreateMechanicCommand) | Crea un mecánico a partir de un perfil existente. |
+| handle(UpdateMechanicMembershipTypeCommand) | Actualiza la membresía del mecánico. |
+
+`AssignmentQueryServiceImpl`
+**Descripción:** Implementación del servicio de consultas para asignaciones.
+
+| Método | Descripción |
+|--------|-------------|
+| handle(GetAssignmentByOwnerIdQuery) | Recupera la asignación activa de un owner. |
+| handle(GetAssignmentsByMechanicIdAndStatusQuery) | Recupera las asignaciones de un mecánico filtradas por estado y ordenadas por fecha descendente. |
+| handle(GetAssignmentByIdQuery) | Recupera una asignación por su identificador. |
+| handle(GetAssigmentByCodeQuery) | Recupera una asignación por su código. |
+| handle(GetAssignmentByVehicleIdQuery) | Recupera la asignación vinculada a un vehículo. |
+
+`MechanicQueryServiceImpl`
+**Descripción:** Implementación del servicio de consultas para mecánicos.
+
+| Método | Descripción |
+|--------|-------------|
+| handle(GetMechanicByIdQuery) | Recupera un mecánico por su identificador. |
+
 ### 5.3.4. Infrastructure Layer
+
+La infraestructura de Assignments sí persiste información propia y además integra datos externos para completar el modelo de respuesta.
+
+**Persistencia local**
+
+- `AssignmentRepository`
+- `MechanicRepository`
+
+**Integraciones externas**
+
+- `ProfileRepository` para resolver el perfil base al crear un mecánico.
+- `ExternalVehiclesService` para validar owners y obtener información externa del sistema de vehículos.
+
+**Rol arquitectónico**
+
+Este bounded context combina persistencia propia con integración transversal. Su infraestructura soporta tanto la administración interna de asignaciones como la consulta enriquecida desde los controladores REST y el reporte agregado de Octane.
+
 ### 5.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+(imagen)
+
+
 ### 5.3.6. Bounded Context Software Architecture Code Level Diagrams
+
 #### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+(imagen)
+
 #### 5.3.6.2. Bounded Context Database Design Diagram
 
----
+(imagen)
 
 ## 5.4. Bounded Context: Maintenance
 ### 5.4.1. Domain Layer
