@@ -2249,7 +2249,7 @@ Reports funciona como un bounded context de consulta con persistencia propia. No
 
 #### 5.2.6.1. Bounded Context Domain Layer Class Diagrams
 
-(imagen)
+![system-component-diagram](./assets/images/chapter-5/bc-report/report-class-diagram.png)
 
 #### 5.2.6.2. Bounded Context Database Design Diagram
 
@@ -2516,7 +2516,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 
 #### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
 
-(imagen)
+![system-component-diagram](./assets/images/chapter-5/bc-assignment/assignments-class-diagram.png)
 
 #### 5.3.6.2. Bounded Context Database Design Diagram
 
