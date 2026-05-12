@@ -2077,9 +2077,13 @@ El siguiente diagrama muestra las clases principales del dominio de IAM, incluye
 
 Además, el siguiente diagrama muestra las clases principales del dominio de Profiles, incluyendo Profile y su relación con User.
 
-![Profile Class Diagram](assets/images/chapter-5/bc-iam/iam-class-diagram.png)
+![Profile Class Diagram](assets/images/chapter-5/bc-iam/profile-class-diagram.png)
 
 #### 5.1.6.2. Bounded Context Database Design Diagram
+
+Para el diseño de la base de datos del contexto de IAM, se han definido las siguientes tablas principales `users` y `profiles` para establecer la relación entre usuarios y sus perfiles correspondientes.
+
+![IAM Database Diagram](assets/images/chapter-5/bc-iam/iam-database-diagram.png)
 
 ## 5.2. Bounded Context: Reports
 ### 5.2.1. Domain Layer
@@ -2758,6 +2762,10 @@ El diagrama de clases del dominio para el contexto de Device Intelligence muestr
 ![Device Class Diagram](assets/images/chapter-5/bc-device-intelligence/device-class-diagram.png)
 
 #### 5.1.6.2. Bounded Context Database Design Diagram
+
+Para el diseño de la base de datos, se presenta un diagrama que ilustra la tabla principal con sus campos correspondientes.
+
+![Device Database Diagram](assets/images/chapter-5/bc-device-intelligence/device-database-diagram.png)
 
 # Chapter VI: Solution UX Design
 
