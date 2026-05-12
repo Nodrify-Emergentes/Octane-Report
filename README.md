@@ -2690,11 +2690,11 @@ NotificationRepository|	Repositorio para acceder a los datos de notificaciones|
 #### 5.5.6.1. Bounded Context Domain Layer Class Diagrams
 #### 5.5.6.2. Bounded Context Database Design Diagram
 
-## 5.6. Bounded COntext: Device Intelligence
+## 5.6. Bounded Context: Device Intelligence
 
 Este bounded context se encarga de gestionar la autenticación, recepción y análisis de datos provenientes de los dispositivos IoT instalados en los vehículos. Su objetivo es procesar la información en tiempo real para generar insights sobre el estado del vehículo, detectar anomalías y proporcionar recomendaciones de mantenimiento predictivo.
 
-### 5.1.1. Domain Layer
+### 5.6.1. Domain Layer
 
 **Aggregates**
 
@@ -2717,7 +2717,7 @@ Este bounded context se encarga de gestionar la autenticación, recepción y an�
   - handle(RegisterDeviceCommand)
   - handle(ValidateDeviceCommand)
 
-### 5.1.2. Interface Layer
+### 5.6.2. Interface Layer
 
 **Controladores**
 
@@ -2728,7 +2728,7 @@ Este bounded context se encarga de gestionar la autenticación, recepción y an�
 | registerDevice(RegisterDeviceResource) | POST /api/v1/devices/authentication/register | Registra un nuevo dispositivo IoT en el sistema, asociándolo a un vehículo. |
 | validateDevice(ValidateDeviceResource) | POST /api/v1/devices/authentication/validate | Valida la autenticidad de un dispositivo IoT utilizando su deviceId.        |
 
-### 5.1.3. Application Layer
+### 5.6.3. Application Layer
 
 **Servicios de Comando**
 
@@ -2739,7 +2739,7 @@ Este bounded context se encarga de gestionar la autenticación, recepción y an�
 | handle(RegisterDeviceCommand) | Registra un nuevo dispositivo IoT en el sistema. |
 | handle(ValidateDeviceCommand) | Valida la autenticidad de un dispositivo IoT.    |
 
-### 5.1.4. Infrastructure Layer
+### 5.6.4. Infrastructure Layer
 
 **Repositorios**
 
@@ -2750,18 +2750,18 @@ Este bounded context se encarga de gestionar la autenticación, recepción y an�
 | findByDeviceId(String)   | Busca un dispositivo por su ID único.                              |
 | existsByDeviceId(String) | Verifica si un dispositivo con el ID dado ya existe en el sistema. |
 
-### 5.1.5. Bounded Context Software Architecture Component Level Diagrams
-### 5.1.6. Bounded Context Software Architecture Code Level Diagrams
+### 5.6.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.6.6. Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección se presentan los diagramas de clase detallados del dominio y el diseño de la base de datos para el bounded context de Device Intelligence, mostrando las entidades, sus relaciones y la estructura de almacenamiento de datos.
 
-#### 5.1.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.6.6.1. Bounded Context Domain Layer Class Diagrams
 
 El diagrama de clases del dominio para el contexto de Device Intelligence muestra la entidad principal con sus atributos y métodos relacionados a la autenticación y registro de dispositivos IoT.
 
 ![Device Class Diagram](assets/images/chapter-5/bc-device-intelligence/device-class-diagram.png)
 
-#### 5.1.6.2. Bounded Context Database Design Diagram
+#### 5.6.6.2. Bounded Context Database Design Diagram
 
 Para el diseño de la base de datos, se presenta un diagrama que ilustra la tabla principal con sus campos correspondientes.
 
