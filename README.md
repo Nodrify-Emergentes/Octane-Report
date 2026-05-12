@@ -2097,7 +2097,7 @@ Este diagrama describe la distribución física y la infraestructura de nube de 
 
 ### 5.4.5. Bounded Context Software Architecture Component Level Diagrams
 
-![system-component-diagram](/assets/images/chapter-5/bc-maintenance/system-component-diagram.png)
+![system-component-diagram](./assets/images/chapter-5/bc-maintenance/bounded-context-software-architecture-component-level-diagram.png)
 
 ### 5.4.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.4.6.1. Bounded Context Domain Layer Class Diagrams
@@ -2415,7 +2415,7 @@ NotificationRepository|	Repositorio para acceder a los datos de notificaciones|
 
 ### 5.5.5 Bounded Context Software Architecture Component level Diagrams
 
-![system-component-diagram](./assets/images/chapter-5/bc-vehicle-wellness/system-component-diagram.png)
+![system-component-diagram](./assets/images/chapter-5/bc-vehicle-wellness/bounded-context-software-architecture-component-level-diagram.png)
 
 ### 5.5.6 Bounded Context Software Architecture Code level Diagrams
 
@@ -2663,7 +2663,7 @@ NotificationRepository|	Repositorio para acceder a los datos de notificaciones|
 
 ### 5.6.5. Bounded Context Software Architecture Component Level Diagrams
 
-![system-component-diagram](/assets/images/chapter-5/bc-vehicle-management/system-component-diagram.png)
+![system-component-diagram](./assets/images/chapter-5/bc-vehicle-management/bounded-context-software-architecture-component-level-diagram.png)
 
 ### 5.6.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.6.6.1. Bounded Context Domain Layer Class Diagrams
