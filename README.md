@@ -324,11 +324,11 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 ### 1.1.1. Descripción de la Startup
 
-Nodrify es una startup tecnológica peruana, surgida en la Facultad de Ingeniería de la Universidad Peruana de Ciencias Aplicadas (UPC), enfocada en la innovación para el sector de movilidad inteligente. Nuestra misión es transformar la manera en que propietarios, mecánicos y empresas gestionan el estado, uso y bienestar de las motocicletas, combinando arquitecturas de software emergentes, IoT y análisis de datos en una sola plataforma integral.
+Nodrify es una startup tecnológica peruana, surgida en la Facultad de Ingeniería de la Universidad Peruana de Ciencias Aplicadas (UPC), enfocada en la innovación para el sector de movilidad inteligente. Nuestra misión es transformar la manera en que dueños de motocicletas, mecánicos y empresas gestionan el estado, uso y bienestar de las motocicletas, combinando arquitecturas de software emergentes, IoT y análisis de datos en una sola plataforma integral.
 
-Nuestro producto estrella, Octane, conecta dispositivos de telemetría avanzada instalados en los vehículos con un ecosistema digital (web y móvil) diseñado para eliminar la ceguera operativa en el mantenimiento. Mediante el uso de sensores en tiempo real y procesamiento de datos, brindamos a los usuarios una visión completa de su vehículo: métricas críticas, historiales de mantenimiento digitales, alertas preventivas y reportes técnicos personalizados, optimizando la relación entre el motociclista y su taller de confianza.
+Nuestro producto estrella, Octane, conecta dispositivos de telemetría avanzada instalados en los vehículos con un ecosistema digital (web y móvil) diseñado para eliminar la ceguera operativa en el mantenimiento. Mediante el uso de sensores en tiempo real y procesamiento de datos, brindamos a los usuarios una visión completa de su vehículo: métricas críticas, historiales de mantenimiento digitales, alertas preventivas y reportes técnicos personalizados, optimizando la relación entre el dueños de motocicleta y su taller de confianza.
 
-Misión: Transformar la gestión de motocicletas combinando tecnología IoT y análisis de datos para ofrecer seguridad, eficiencia y confianza a propietarios y mecánicos, reduciendo la incidencia de accidentes por fallas mecánicas.
+Misión: Transformar la gestión de motocicletas combinando tecnología IoT y análisis de datos para ofrecer seguridad, eficiencia y confianza a dueños de motocicletas y mecánicos, reduciendo la incidencia de accidentes por fallas mecánicas.
 
 Visión: Ser la plataforma líder en movilidad inteligente en el mercado peruano que revolucione el mantenimiento preventivo y la conexión en el ecosistema de vehículos de dos ruedas.
 
@@ -373,7 +373,7 @@ Visión: Ser la plataforma líder en movilidad inteligente en el mercado peruano
 
 - ¿Cuál es el problema?
 
-El problema principal recae en la dificultad de realizar revisiones proactivas, ya que los propietarios carecen por completo de visibilidad en tiempo real sobre la salud de sus vehículos. Esta ceguera operativa conduce inevitablemente a fallas inesperadas y costosas. Por su parte, los talleres mecánicos se ven forzados a operar de manera reactiva; aunque realizan una revisión general al recibir la moto, el proceso de diagnóstico es lento e ineficiente, ya que deben revisar manualmente múltiples partes del vehículo hasta atinar con la fuente del problema, en lugar de poder ofrecer un mantenimiento predictivo y proactivo basado en datos precisos.
+El problema principal recae en la dificultad de realizar revisiones proactivas, ya que los dueños de motocicletas carecen por completo de visibilidad en tiempo real sobre la salud de sus vehículos. Esta ceguera operativa conduce inevitablemente a fallas inesperadas y costosas. Por su parte, los talleres mecánicos se ven forzados a operar de manera reactiva; aunque realizan una revisión general al recibir la moto, el proceso de diagnóstico es lento e ineficiente, ya que deben revisar manualmente múltiples partes del vehículo hasta atinar con la fuente del problema, en lugar de poder ofrecer un mantenimiento predictivo y proactivo basado en datos precisos.
 
 - ¿Cuál es la relación con la persona en cuestión?
 
@@ -405,7 +405,7 @@ El problema surge en la propia motocicleta durante su operación diaria, donde o
 
 - ¿Quienes se ven involucrados en el problema?
 
-El problema involucra directamente a dos actores clave: los propietarios de motocicletas y los mecánicos. Por un lado, los usuarios enfrentan la dificultad constante de no tener conocimiento preciso del estado interno de sus vehículos, lo que los expone a sufrir fallas imprevistas y reparaciones costosas. Por otro lado, los mecánicos se ven igualmente afectados, ya que esta falta de información les impide evolucionar hacia un modelo de servicio preventivo y proactivo, lo que no solo genera ineficiencias en sus procesos de diagnóstico, sino que también representa una pérdida de oportunidades de negocio para fidelizar y agregar valor a su cartera de clientes existente.
+El problema involucra directamente a dos actores clave: los dueños de motocicletas y los mecánicos. Por un lado, los usuarios enfrentan la dificultad constante de no tener conocimiento preciso del estado interno de sus vehículos, lo que los expone a sufrir fallas imprevistas y reparaciones costosas. Por otro lado, los mecánicos se ven igualmente afectados, ya que esta falta de información les impide evolucionar hacia un modelo de servicio preventivo y proactivo, lo que no solo genera ineficiencias en sus procesos de diagnóstico, sino que también representa una pérdida de oportunidades de negocio para fidelizar y agregar valor a su cartera de clientes existente.
 
 **Why**
 
@@ -421,20 +421,20 @@ Los clientes utilizan nuestro producto en condiciones de movilidad, accediendo a
 
 **How Much**
 
-El impacto de la problemática es considerable y puede observarse en las estadísticas de seguridad vial actuales. Según un informe publicado por Freitas (2025) en Infobae, Lima registra 1.668 muertes por accidentes de tránsito en lo que va del año 2025, siendo los motociclistas quienes lideran la lista de víctimas, de acuerdo con datos del Ministerio de Transportes y Comunicaciones (MTC). Esta cifra evidencia la alta vulnerabilidad de los conductores de motocicletas y la falta de mecanismos preventivos eficaces que permitan detectar a tiempo posibles fallas mecánicas o comportamientos de riesgo durante la conducción.
+El impacto de la problemática es considerable y puede observarse en las estadísticas de seguridad vial actuales. Según un informe publicado por Freitas (2025) en Infobae, Lima registra 1.668 muertes por accidentes de tránsito en lo que va del año 2025, siendo los dueños de motocicletas quienes lideran la lista de víctimas, de acuerdo con datos del Ministerio de Transportes y Comunicaciones (MTC). Esta cifra evidencia la alta vulnerabilidad de los conductores de motocicletas y la falta de mecanismos preventivos eficaces que permitan detectar a tiempo posibles fallas mecánicas o comportamientos de riesgo durante la conducción.
 
-Estos datos reflejan la magnitud del problema y justifican la necesidad de soluciones tecnológicas que promuevan un mantenimiento preventivo y un monitoreo constante del estado del vehículo, permitiendo anticipar fallos críticos que podrían desencadenar accidentes. De este modo, la propuesta de la plataforma Octane contribuye directamente a reducir la incidencia de accidentes asociados a fallas mecánicas y a fortalecer la cultura de prevención entre los motociclistas urbanos.
+Estos datos reflejan la magnitud del problema y justifican la necesidad de soluciones tecnológicas que promuevan un mantenimiento preventivo y un monitoreo constante del estado del vehículo, permitiendo anticipar fallos críticos que podrían desencadenar accidentes. De este modo, la propuesta de la plataforma Octane contribuye directamente a reducir la incidencia de accidentes asociados a fallas mecánicas y a fortalecer la cultura de prevención entre los dueños de motocicletas urbanos.
 
 ### 1.2.2. Lean UX Process
 #### 1.2.2.1. Lean UX Problem Statements
 
-El mantenimiento de motocicletas suele gestionarse bajo un enfoque reactivo, en el que los propietarios no cuentan con información suficiente sobre el estado de su vehículo y los talleres dependen de diagnósticos manuales basados en datos incompletos.
+El mantenimiento de motocicletas suele gestionarse bajo un enfoque reactivo, en el que los dueños de motocicletas no cuentan con información suficiente sobre el estado de su vehículo y los talleres dependen de diagnósticos manuales basados en datos incompletos.
 
 Esta limitación dificulta la detección temprana de fallas, incrementa el riesgo de reparaciones imprevistas y reduce la capacidad de los talleres para ofrecer un servicio preventivo y personalizado.
 
-Octane aborda esta oportunidad mediante una plataforma IoT que permite monitorear el estado de la motocicleta, centralizar el historial de mantenimiento y facilitar la comunicación entre motociclistas y mecánicos.
+Octane aborda esta oportunidad mediante una plataforma IoT que permite monitorear el estado de la motocicleta, centralizar el historial de mantenimiento y facilitar la comunicación entre dueños de motocicletas y mecánicos.
 
-Nuestro público inicial está conformado por motociclistas urbanos y talleres mecánicos independientes.
+Nuestro público inicial está conformado por dueños de motocicletas urbanos y talleres mecánicos independientes.
 
 Sabremos que la propuesta funciona si se incrementa la programación de mantenimientos preventivos, mejora la retención de usuarios y disminuyen las reparaciones de emergencia durante los primeros meses de uso.
 
@@ -444,25 +444,25 @@ En esta etapa se identificaron las principales suposiciones de Octane respecto a
 
 Business Assumptions
 
-1. Suponemos que los motociclistas necesitan una forma más confiable de prevenir fallas mecánicas y reducir gastos inesperados.
+1. Suponemos que los dueños de motocicletas necesitan una forma más confiable de prevenir fallas mecánicas y reducir gastos inesperados.
 2. Suponemos que esta necesidad puede resolverse mediante una plataforma digital conectada a dispositivos IoT que recolecten datos del vehículo.
-3. Suponemos que los primeros usuarios serán motociclistas urbanos y mecánicos que buscan digitalizar su servicio.
+3. Suponemos que los primeros usuarios serán dueños de motocicletas urbanos y mecánicos que buscan digitalizar su servicio.
 4. Suponemos que el valor principal para el usuario será la seguridad, la trazabilidad y el ahorro en mantenimiento.
 5. Suponemos que el modelo de negocio puede sostenerse mediante suscripciones de talleres y servicios complementarios de monitoreo.
 
 User Assumptions
 
-1. Suponemos que el motociclista utilizará Octane para revisar alertas, consultar historial y anticipar mantenimientos.
+1. Suponemos que el dueño de motocicletas utilizará Octane para revisar alertas, consultar historial y anticipar mantenimientos.
 2. Suponemos que el mecánico empleará la plataforma para revisar métricas, mejorar diagnósticos y mantener contacto con sus clientes.
 3. Suponemos que ambos perfiles valorarán una experiencia simple, clara y confiable.
-4. Suponemos que la app móvil será el canal principal del motociclista y el panel web será el canal principal del taller.
+4. Suponemos que la app móvil será el canal principal del dueño de motocicletas y el panel web será el canal principal del taller.
 
 User Outcomes Assumptions
 
 1. Suponemos que los usuarios se sentirán más seguros al recibir alertas tempranas.
 2. Suponemos que disminuirán los gastos por reparaciones no planificadas.
 3. Suponemos que los talleres mejorarán la precisión de sus diagnósticos.
-4. Suponemos que aumentará la fidelización entre motociclistas y mecánicos.
+4. Suponemos que aumentará la fidelización entre dueños de motocicletas y mecánicos.
 
 Features Assumptions
 
@@ -479,7 +479,7 @@ Creemos que los usuarios planificarán mejor sus servicios si cuentan con un his
 3. Panel para mecánicos <br>
 Creemos que los talleres mejorarán sus diagnósticos si pueden visualizar datos de telemetría y compararlos por vehículo.
 4. Integración móvil-web-IoT <br>
-Creemos que la comunicación entre motociclista y taller será más fluida si la plataforma sincroniza información entre la app móvil, el panel web y los dispositivos IoT.
+Creemos que la comunicación entre dueños de motocicletas y taller será más fluida si la plataforma sincroniza información entre la app móvil, el panel web y los dispositivos IoT.
 5. Experiencia simple y confiable <br>
 Creemos que la adopción crecerá si la interfaz reduce fricción y presenta la información de forma clara.
 
@@ -491,7 +491,8 @@ Link: https://miro.com/app/board/uXjVHdKIr_Q=/?share_link_id=592709495812
 
 ## 1.3. Segmentos objetivo
 
-**Segmento Objetivo #1:**
+**Segmento Objetivo #1: Dueños de motocicletas**
+
 Grupo conformado por personas que usan motos con su principal medio de transporte. Ellos necesitan del vehículo para movilizarse hacia sus trabajos, estudios, actividades sociales, delivery, entre otros.  Son usuarios interesados en mantener la eficiencia presente en su moto, reducir la recepción de costos imprevistos, y monitorear el estado del vehículo con la idea de mantener seguro al conductor.
 
 - Características clave:
@@ -506,7 +507,8 @@ Grupo conformado por personas que usan motos con su principal medio de transport
   - Prevenir fallas con alertas de mantenimiento.
   - Tener a mano un historial de mantenimiento
 
-**Segmento Objetivo #2:**
+**Segmento Objetivo #2: Mecánicos**
+
 Grupo conformado por profesionales independientes con pequeños talleres. Ellos ofrecen servicios de reparación y mantenimiento de motocicletas. Son usuarios que requieren de herramientas que les permitan ofrecer diagnósticos más precisos y gestionar mejor la relación con sus clientes, a fin de mejorar la confianza y fidelización.
 
 - Características clave:
@@ -653,7 +655,7 @@ El análisis competitivo es una herramienta fundamental para comprender el entor
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-Para poder destacar un producto en un mercado competitivo, es fundamental implementar estrategias que resalten las fortalezas y aborden las debilidades de los competidores. De esta manera, proponemos estrategias y tácticas específicas para posicionar a Octane como la solución preferida para motociclistas y talleres mecánicos.
+Para poder destacar un producto en un mercado competitivo, es fundamental implementar estrategias que resalten las fortalezas y aborden las debilidades de los competidores. De esta manera, proponemos estrategias y tácticas específicas para posicionar a Octane como la solución preferida para dueños de motocicletas y mecánicos.
 
 **Estrategia #1: Diferenciación Tecnológica (IoT + Diagnósticos Predictivos)**
 
@@ -667,20 +669,20 @@ Para poder destacar un producto en un mercado competitivo, es fundamental implem
 
 **Estrategia #2: Enfoque en Nichos Desatendidos (Motos Urbanas + Mecánicos)**
 
-*Objetivo:* Atacar un mercado poco atendido: motociclistas urbanos y talleres mecánicos, en contraste con las apps competidoras que se enfocan en autos y flotas.
+*Objetivo:* Atacar un mercado poco atendido: dueños de motocicletas urbanos y talleres mecánicos, en contraste con las apps competidoras que se enfocan en autos y flotas.
 
 *Tácticas:*
 - Ofrecer funcionalidades específicas para motos (ej. control de gasolina por cilindrada, alertas de aceite, historial de mantenimientos por kilometraje).
 - Crear una app web exclusiva para mecánicos, con comparativos por modelo y gestión de clientes.
 - Establecer alianzas con talleres locales y concesionarios de motos para distribución del IoT.
-- Campañas de marketing dirigidas a delivery riders, mototaxistas y jóvenes motociclistas urbanos.
+- Campañas de marketing dirigidas a delivery riders, mototaxistas y jóvenes dueños de motocicletas urbanos.
 
 **Estrategia #3: Marca Cercana y Comunitaria**
 
-*Objetivo:* Construir confianza mostrando a Octane como una solución hecha por y para motociclistas y mecánicos, en lugar de una app genérica de gastos.
+*Objetivo:* Construir confianza mostrando a Octane como una solución hecha por y para dueños de motocicletas y mecánicos, en lugar de una app genérica de gastos.
 
 *Tácticas:*
-- Crear una comunidad digital de motociclistas, con foros y tips de mecánica preventiva.
+- Crear una comunidad digital de dueños de motocicletas, con foros y tips de mecánica preventiva.
 - Usar un lenguaje simple y cercano, evitando tecnicismos innecesarios.
 - Brindar soporte personalizado (ej. chat directo, FAQs en video, tutoriales cortos en redes).
 - Generar contenido educativo sobre seguridad, ahorro de combustible y mantenimiento inteligente.
@@ -700,7 +702,7 @@ Para poder destacar un producto en un mercado competitivo, es fundamental implem
 *Objetivo:* Posicionar la solución como un producto diseñado específicamente para motocicletas y talleres mecánicos, en contraste con los competidores que se orientan a flotas grandes y heterogéneas (Wialon, Geotab).
 
 *Tácticas:*
-- Desarrollar una interfaz amigable y personalizada para mecánicos y motociclistas.
+- Desarrollar una interfaz amigable y personalizada para mecánicos y dueños de motocicletas.
 - Ofrecer funcionalidades exclusivas para motos (ej. alertas de mantenimiento de cadena, aceite, frenos).
 - Construir una narrativa de marca clara: “la telemática de las motos”.
 - Enfocar el marketing en la relación directa entre mecánico y cliente.
@@ -716,22 +718,22 @@ Para poder destacar un producto en un mercado competitivo, es fundamental implem
 
 **Estrategia #7: Cercanía y Comunidad con el Usuario Final**
 
-*Objetivo:* Diferenciarse por la relación directa y de confianza entre motociclistas y mecánicos, creando una comunidad alrededor del producto que los competidores globales no priorizan.
+*Objetivo:* Diferenciarse por la relación directa y de confianza entre dueños de motocicletas y mecánicos, creando una comunidad alrededor del producto que los competidores globales no priorizan.
 
 *Tácticas:*
-- Lanzar campañas de marketing en comunidades locales (Facebook, Instagram, clubes de motociclistas, foros especializados).
+- Lanzar campañas de marketing en comunidades locales (Facebook, Instagram, clubes de dueños de motocicletas, foros especializados).
 - Promover talleres mecánicos como socios estratégicos para captar clientes y distribuir el IoT.
 - Desarrollar integraciones futuras con aseguradoras o talleres certificados, ofreciendo beneficios adicionales (ej. descuentos en seguros, paquetes de mantenimiento).
 
 ## 2.2. Entrevistas
 
-Para identificar las necesidades, comportamientos y puntos de dolor de nuestros usuarios potenciales, se llevaron a cabo entrevistas con motociclistas urbanos y mecánicos. A continuación, se detalla el proceso seguido para la realización de estas entrevistas.
+Para identificar las necesidades, comportamientos y puntos de dolor de nuestros usuarios potenciales, se llevaron a cabo entrevistas con dueños de motocicletas urbanos y mecánicos. A continuación, se detalla el proceso seguido para la realización de estas entrevistas.
 
 ### 2.2.1. Diseño de entrevistas
 
 Se diseñaron entrevistas semiestructuradas con el objetivo de obtener información cualitativa sobre las experiencias, necesidades y expectativas de los usuarios en relación al mantenimiento de sus motocicletas, y de qué expectativas tienen los mecánicos para ofrecer un mejor servicio a los usuarios.
 
-**Diseño de entrevistas para motociclistas:**
+**Diseño de entrevistas para dueños de motocicletas:**
 
 Preguntas principales:
 
@@ -851,7 +853,7 @@ Jair, un abogado de 32 años que utiliza su motocicleta como principal medio de 
 
 ### 2.2.3. Análisis de entrevistas
 
-Al tener todas las entrevistas necesitadas de ambos segmentos objetivo, se procedió a realizar un análisis cualitativo para identificar patrones, necesidades comunes y oportunidades de mejora en el proceso de mantenimiento de motocicletas tanto para mecánicos como para propietarios. A continuación, se presenta un resumen categórico del análisis realizado:
+Al tener todas las entrevistas necesitadas de ambos segmentos objetivo, se procedió a realizar un análisis cualitativo para identificar patrones, necesidades comunes y oportunidades de mejora en el proceso de mantenimiento de motocicletas tanto para mecánicos como para dueños. A continuación, se presenta un resumen categórico del análisis realizado:
 
 **Segmento Objetivo: Mecánicos y talleres de servicio**
 
@@ -867,16 +869,16 @@ El historial de clientes se maneja con libretas, memoria personal o Excel poco u
 *Necesidades y oportunidades:*  
 Los mecánicos ven valor en contar con telemetría remota (kilometraje, batería, combustible, temperatura, neumáticos) y reportes simples como historial, alertas de servicio y resúmenes mensuales. Prefieren un plan fijo para el taller en lugar de comisiones individuales, y valoran herramientas precisas, fáciles de usar y compatibles con WhatsApp, lo que abre una oportunidad para soluciones digitales simples, accesibles y prácticas. El 100% considera útil la telemetría, el 100% prefiere un plan fijo y el 100% valora la facilidad de uso por encima de funciones complejas.
 
-**Segmento Objetivo: Propietarios de motocicletas**
+**Segmento Objetivo: Dueños de motocicletas**
 
 *Demografía:*
-Los propietarios entrevistados tienen entre 22 y 32 años, con ocupaciones variadas (estudiante, profesor, abogado) y residen en distritos urbanos de Lima. Todos utilizan su moto para desplazamientos diarios, lo que indica un perfil diverso pero con una necesidad común de movilidad confiable. El 100% tiene entre 22 y 32 años, con ocupaciones variadas.
+Los dueños de motocicletas entrevistados tienen entre 22 y 32 años, con ocupaciones variadas (estudiante, profesor, abogado) y residen en distritos urbanos de Lima. Todos utilizan su moto para desplazamientos diarios, lo que indica un perfil diverso pero con una necesidad común de movilidad confiable. El 100% tiene entre 22 y 32 años, con ocupaciones variadas.
 
 *Gestión y comunicación:*
 El control de gastos y mantenimiento es manual, con métodos como notas, libretas o memoria, lo que genera dificultades para recordar fechas y detalles importantes. La comunicación con mecánicos se realiza principalmente a través de WhatsApp o llamadas, sin herramientas digitales específicas, lo que refleja una falta de organización y seguimiento efectivo. El 100% gestiona gastos de forma manual y el 100% se comunica con mecánicos por WhatsApp o llamadas.
 
 *Necesidades y oportunidades:*
-Los propietarios valoran la confiabilidad de su moto y buscan evitar fallas inesperadas. Están interesados en aplicaciones que ofrezcan recordatorios de mantenimiento, historial digital de gastos y servicios, y alertas proactivas basadas en métricas como kilometraje, presión de neumáticos, nivel de combustible y temperatura del motor. Están dispuestos a pagar por una suscripción si la aplicación demuestra ser confiable y les ayuda a mantener su moto en óptimas condiciones. El 100% valora la confiabilidad, el 100% busca recordatorios y alertas, y el 100% estaría dispuesto a pagar por una suscripción si el servicio es confiable y útil.
+Los dueños de motocicletas valoran la confiabilidad de su moto y buscan evitar fallas inesperadas. Están interesados en aplicaciones que ofrezcan recordatorios de mantenimiento, historial digital de gastos y servicios, y alertas proactivas basadas en métricas como kilometraje, presión de neumáticos, nivel de combustible y temperatura del motor. Están dispuestos a pagar por una suscripción si la aplicación demuestra ser confiable y les ayuda a mantener su moto en óptimas condiciones. El 100% valora la confiabilidad, el 100% busca recordatorios y alertas, y el 100% estaría dispuesto a pagar por una suscripción si el servicio es confiable y útil.
 
 ## 2.3. Needfinding
 
@@ -886,7 +888,7 @@ Los propietarios valoran la confiabilidad de su moto y buscan evitar fallas ines
 
 ![User Persona Mecánico](assets/images/chapter-2/needfinding/user-persona-1.png)
 
-**Segmento Objetivo 2: Propietarios de Motocicletas**
+**Segmento Objetivo 2: Dueños de motocicletas**
 
 ![User Persona Propietario](assets/images/chapter-2/needfinding/user-persona-2.png)
 
@@ -908,7 +910,7 @@ En esta sección se presenta la User Task Matrix, herramienta que permite identi
 | Verificar estado básico de la moto al recibirla | Media      | Media     |
 
 
-**2. Segmento 2: Propietarios de Motocicletas**
+**2. Segmento 2: Dueños de motocicletas**
 
 | Tarea                                                 | Frecuencia | Severidad |
 |-------------------------------------------------------|------------|-----------|
@@ -926,7 +928,7 @@ En esta sección se presentan los Empathy Mapping por cada segmento objetivo def
 
 ![Empathy Map Mecánico](assets/images/chapter-2/needfinding/empathy-1.png)
 
-**2. Segmento 2: Propietarios de Motocicletas**
+**2. Segmento 2: Dueño de Motocicletas**
 
 ![Empathy Map Propietario](assets/images/chapter-2/needfinding/empathy-2.png)
 
@@ -948,7 +950,7 @@ En esta sección se presentan los As-Is Scenario Mapping por cada segmento objet
 | Reparación                  | Procede con la reparación                               | “Esto pudo evitarse antes”              | Trabajo reactivo en lugar de preventivo         |
 | Entrega del vehículo        | Explica al cliente lo ocurrido                          | “Ojalá regrese para mantenimiento”      | Baja fidelización del cliente                   |
 
-**2. Segmento 2: Propietarios de Motocicletas**
+**2. Segmento 2: Dueño de Motocicletas**
 
 Escenario actual (As-Is): Uso cotidiano sin monitoreo del vehículo
 
@@ -1011,11 +1013,11 @@ En esta sección se presentan los To-Be Scenario Mapping por cada segmento objet
 | Seguimiento              | Registra intervención en el historial digital         | “Todo queda documentado”                        | Trazabilidad completa                          |
 | Fidelización             | Mantiene contacto continuo con el cliente             | “Tengo clientes recurrentes”                    | Incremento en retención                        |
 
-**2. Segmento 2: Propietarios de Motocicletas**
+**2. Segmento 2: Dueños de motocicletas**
 
 **Escenario futuro (To-Be): Uso inteligente y monitoreo continuo con Octane**
 
-| Etapa                    | Acción del usuario (Propietario)                     | Pensamientos                             | Beneficios                            |
+| Etapa                    | Acción del usuario (Dueño de motocicletas)           | Pensamientos                             | Beneficios                            |
 |--------------------------|------------------------------------------------------|------------------------------------------|---------------------------------------|
 | Uso diario               | Conduce su motocicleta con el dispositivo IoT activo | “Sé que mi moto está siendo monitoreada” | Tranquilidad y control                |
 | Visualización en app     | Consulta métricas en tiempo real desde su smartphone | “Todo está en orden”                     | Transparencia del estado del vehículo |
@@ -1032,54 +1034,54 @@ En esta sección se presentan los To-Be Scenario Mapping por cada segmento objet
 
 **Epicas:**
 
-| Código | Título                                                          | Descripción                                                                                                                                                                                                                                                                                                                                                                                             |
-|--------|-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| EP-001 | Monitoreo inteligente del estado de la moto                     | Desarrollar una aplicación que permita a los motociclistas visualizar en tiempo real métricas clave de su motocicleta (batería, kilometraje, consumo de combustible, temperatura, presión de neumáticos y vibraciones), facilitando decisiones informadas y la prevención de fallas.                                                                                                                    |
-| EP-002 | Sistema de alertas preventivas y recordatorios                  | Implementar un sistema que notifique a motociclistas y talleres sobre mantenimientos, condiciones críticas o fallas recurrentes mediante alertas en la app, para anticipar problemas, reducir riesgos y mantener una agenda organizada.                                                                                                                                                                 |
-| EP-003 | Gestión del historial de mantenimiento y gastos                 | Desarrollar funcionalidades que permitan a motociclistas y talleres registrar el historial de mantenimientos y los costos de reparaciones, repuestos y servicios. La información debe visualizarse en reportes claros (mensuales o por evento) y estar disponible para ambos, fomentando transparencia, planificación y fidelización, reemplazando métodos manuales por una solución digital confiable. |
-| EP-004 | Desarrollo e integración del dispositivo embebido de telemetría | Diseñar e integrar un dispositivo IoT que recolecte en tiempo real datos críticos de la moto y los transmita de forma segura a la plataforma. Incluye desarrollo de firmware, pruebas de sensores, compatibilidad con distintos modelos y validación de la conexión con la app mediante protocolos eficientes.                                                                                          |
-| EP-005 | Gestión de relación entre motociclista y mecánico               | Funcionalidades para crear y administrar la relación entre un motociclista y su mecánico de confianza, permitiendo compartir métricas de la moto en tiempo real y recibir notificaciones. Estas relaciones podrán modificarse o terminarse según las necesidades de ambas partes.                                                                                                                       |
-| EP-006 | Diseño de la landing page                                       | Como equipo de desarrollo, queremos diseñar y construir una landing page atractiva, informativa y fácil de navegar, que comunique claramente el valor de la plataforma tanto para motociclistas como para mecánicos, con el objetivo de captar nuevos usuarios, generar confianza y facilitar el registro en el sistema.                                                                                |
-| EP-007 | Gestión de Motos                                                | Administra toda la información relacionada con el ciclo de vida de las motocicletas dentro del sistema. Define los procesos de registro, consulta, actualización y baja de las motos, garantizando la integridad y consistencia de los datos.                                                                                                                                                           |
-| EP-008 | Arquitectura y Escalabilidad IoT                                | Definir y estructurar la lógica base del firmware utilizando patrones de diseño y frameworks de abstracción (ModestIoT) para garantizar un sistema desacoplado, basado en eventos y fácil de extender con nuevos sensores sin comprometer la estabilidad del núcleo.                                                                                                                                    |
-| EP-009 | Análisis Predictivo y Comparativa con IA                        | Implementar un motor de inteligencia artificial que utilice modelos Open Source para procesar especificaciones técnicas de motocicletas, permitiendo realizar comparaciones avanzadas, evaluaciones por escenarios de uso y recomendaciones personalizadas basadas en el rendimiento histórico y técnico de los vehículos.                                                                              |
+| Código | Título                                                          | Descripción                                                                                                                                                                                                                                                                                                                                                                                                          |
+|--------|-----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| EP-001 | Monitoreo inteligente del estado de la moto                     | Desarrollar una aplicación que permita a los dueños de motocicletas visualizar en tiempo real métricas clave de su motocicleta (batería, kilometraje, consumo de combustible, temperatura, presión de neumáticos y vibraciones), facilitando decisiones informadas y la prevención de fallas.                                                                                                                        |
+| EP-002 | Sistema de alertas preventivas y recordatorios                  | Implementar un sistema que notifique a dueños de motocicletas y talleres sobre mantenimientos, condiciones críticas o fallas recurrentes mediante alertas en la app, para anticipar problemas, reducir riesgos y mantener una agenda organizada.                                                                                                                                                                     |
+| EP-003 | Gestión del historial de mantenimiento y gastos                 | Desarrollar funcionalidades que permitan a los dueños de motocicletas y talleres registrar el historial de mantenimientos y los costos de reparaciones, repuestos y servicios. La información debe visualizarse en reportes claros (mensuales o por evento) y estar disponible para ambos, fomentando transparencia, planificación y fidelización, reemplazando métodos manuales por una solución digital confiable. |
+| EP-004 | Desarrollo e integración del dispositivo embebido de telemetría | Diseñar e integrar un dispositivo IoT que recolecte en tiempo real datos críticos de la moto y los transmita de forma segura a la plataforma. Incluye desarrollo de firmware, pruebas de sensores, compatibilidad con distintos modelos y validación de la conexión con la app mediante protocolos eficientes.                                                                                                       |
+| EP-005 | Gestión de relación entre dueños de motocicletas y mecánicos    | Funcionalidades para crear y administrar la relación entre un dueño de motocicleta y su mecánico de confianza, permitiendo compartir métricas de la moto en tiempo real y recibir notificaciones. Estas relaciones podrán modificarse o terminarse según las necesidades de ambas partes.                                                                                                                            |
+| EP-006 | Diseño de la landing page                                       | Como equipo de desarrollo, queremos diseñar y construir una landing page atractiva, informativa y fácil de navegar, que comunique claramente el valor de la plataforma tanto para dueños de motocicletas como para mecánicos, con el objetivo de captar nuevos usuarios, generar confianza y facilitar el registro en el sistema.                                                                                    |
+| EP-007 | Gestión de Motos                                                | Administra toda la información relacionada con el ciclo de vida de las motocicletas dentro del sistema. Define los procesos de registro, consulta, actualización y baja de las motos, garantizando la integridad y consistencia de los datos.                                                                                                                                                                        |
+| EP-008 | Arquitectura y Escalabilidad IoT                                | Definir y estructurar la lógica base del firmware utilizando patrones de diseño y frameworks de abstracción (ModestIoT) para garantizar un sistema desacoplado, basado en eventos y fácil de extender con nuevos sensores sin comprometer la estabilidad del núcleo.                                                                                                                                                 |
+| EP-009 | Análisis Predictivo y Comparativa con IA                        | Implementar un motor de inteligencia artificial que utilice modelos Open Source para procesar especificaciones técnicas de motocicletas, permitiendo realizar comparaciones avanzadas, evaluaciones por escenarios de uso y recomendaciones personalizadas basadas en el rendimiento histórico y técnico de los vehículos.                                                                                           |
 
 **User Stories:**
 
 | User Story ID | Título                                                    | Descripción                                                                                                                                                                                                                                                                                                                                        | Criterios de Aceptación                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Epic ID |
 |---------------|-----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
 | US-001        | Manejo de asignaciones                                    | Como mecanico quiero manejar mis propias asignaciones para poder contraer un vinculo con los dueños de motocicletas                                                                                                                                                                                                                                | Escenario 1: Creación de asignación<br>Dado que el mecánico se encuentra dentro de la aplicación, cuando genera una asignación, entonces el sistema crea una asignación y brinda el código de esta misma.<br><br>Escenario 2: Eliminación de asignación<br>Dado que el mecánico encuentra dentro de la aplicación, cuando visualiza las asignaciones pendientes, entonces puede eliminar cualquiera de las asignaciones pendientes.<br><br>Escenario 3: Detalles de la asignación<br>Dado que el mecánico encuentra dentro de la aplicación, cuando interactúa con una asignación activa, entonces puede visualizar los detalles del dueño y la asignación hecha.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | EP-005  |
-| US-002        | Vinculación de asignación                                 | Como dueño quiero poder vincularme con un mecánico para así permitirle acceder a los datos de mis vehiculos y tener una experiencia más completa                                                                                                                                                                                                   | Escenario 1: Vinculación<br>Dado que el dueño se encuentra en la aplicación cuando desea registrarse, entonces el sistema le solicita un código de asignación para poder vincularlo con un mecánico.<br><br>Escenario 2: Visualización<br>Dado que el dueño se encuentra dentro de la aplicación cuando se encuentra visualizando los datos generales entonces el sistema le muestra la información correspondiente a su asignación.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | EP-005  |
-| US-003        | Creación de perfil para motociclistas                     | Como visitante, quiero crear una cuenta como motociclista para acceder a los servicios relacionados al rol.                                                                                                                                                                                                                                        | Escenario 1:<br>Dado que el motociclista se encuentre en el registro de cuentas, cuando el motociclista ingrese un código de invitación perteneciente a un mecánico, y el código pertenezca a un mecánico, y registre un perfil con los datos del usuario, entonces el sistema deberá crear la cuenta y vincular el motociclista al mecánico.<br><br>Escenario 2:<br>Dado que el motociclista se encuentre en el registro de cuentas, cuando el motociclista ingrese un código de invitación perteneciente a un mecánico, y el código no es válido o no pertenece a ningún mecánico, entonces el sistema deberá notificar que no se encontró a ningún mecánico relacionado a ese código.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | EP-005  |
+| US-002        | Vinculación de asignación                                 | Como dueño de motocicletas quiero poder vincularme con un mecánico para así permitirle acceder a los datos de mis vehiculos y tener una experiencia más completa                                                                                                                                                                                   | Escenario 1: Vinculación<br>Dado que el dueño se encuentra en la aplicación cuando desea registrarse, entonces el sistema le solicita un código de asignación para poder vincularlo con un mecánico.<br><br>Escenario 2: Visualización<br>Dado que el dueño se encuentra dentro de la aplicación cuando se encuentra visualizando los datos generales entonces el sistema le muestra la información correspondiente a su asignación.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | EP-005  |
+| US-003        | Creación de perfil para dueños de motocicletas            | Como visitante, quiero crear una cuenta como dueño de motocicleta para acceder a los servicios relacionados al rol.                                                                                                                                                                                                                                | Escenario 1:<br>Dado que el dueño de motocicleta se encuentre en el registro de cuentas, cuando el dueño ingrese un código de invitación perteneciente a un mecánico, y el código pertenezca a un mecánico, y registre un perfil con los datos del usuario, entonces el sistema deberá crear la cuenta y vincular el dueño al mecánico.<br><br>Escenario 2:<br>Dado que el dueño de motocicleta se encuentre en el registro de cuentas, cuando el dueño ingrese un código de invitación perteneciente a un mecánico, y el código no es válido o no pertenece a ningún mecánico, entonces el sistema deberá notificar que no se encontró a ningún mecánico relacionado a ese código.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | EP-005  |
 | US-004        | Creación de perfil para mecánicos                         | Como visitante, quiero crear una cuenta como mecánico para utilizar los servicios relacionados a mi rol.                                                                                                                                                                                                                                           | Escenario 1:<br>Dado que el usuario se encuentra en la pantalla de registro, cuando el usuario seleccione el botón de ver suscripciones y seleccione una suscripción de la lista de suscripciones disponibles y registre un perfil con los datos del usuario, entonces el sistema debe registrar la cuenta como mecánico.<br><br>Escenario 2:<br>Dado que el usuario se encuentre en la pantalla de registro, cuando el usuario seleccione el botón de ver suscripciones, y los datos del usuario son ya existentes, entonces el sistema debe notificar al usuario que el perfil ya existe.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | EP-005  |
 | US-005        | Autenticación en la aplicación web                        | Como visitante, quiero poder autenticarme en la aplicación web, para poder interactuar con mis datos de usuario.                                                                                                                                                                                                                                   | Escenario 1:<br>Dado que el usuario se encuentra iniciando sesión, cuando ingresa las credenciales correctas, entonces el sistema carga su perfil en la aplicación<br><br>Escenario 2:<br>Dado que el usuario se encuentra iniciando sesión, cuando ingresa credenciales incorrectas, entonces el sistema no le permite ingresar a la aplicación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-005  |
-| US-006        | Sistema de notificaciones interno                         | Como dueño, quiero recibir notificaciones de mis vehículos para conocer su estado                                                                                                                                                                                                                                                                  | Escenario 1:<br>Dado que veo mis vehículos registrados, cuando consulto el estado de un vehículo, entonces el sistema muestra las notificaciones de estado<br><br>Escenario 2:<br>Dado que veo mis vehículos registrados, cuando consulto el estado de un vehículo sin alertas, entonces el sistema muestra "No hay notificaciones para este vehículo"<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | EP-002  |
-| US-007        | Alerta de Temperatura Alta                                | Como dueño, quiero alertas de temperatura alta para saber si se supera el umbral permitido                                                                                                                                                                                                                                                         | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico temperatura y se supera el umbral, entonces el sistema envía notificación de temperatura alta<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico temperatura y no se supera el umbral, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | EP-002  |
-| US-008        | Alerta de Temperatura Baja                                | Como dueño, quiero alertas de temperatura baja para saber si está bajo el umbral mínimo                                                                                                                                                                                                                                                            | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico temperatura y está bajo el mínimo, entonces el sistema envía notificación de temperatura baja<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico temperatura y no está bajo el mínimo, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | EP-002  |
-| US-009        | Alerta de Humedad Alta                                    | Como dueño, quiero alertas de humedad alta para saber si supera el umbral permitido                                                                                                                                                                                                                                                                | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico humedad y se supera el umbral, entonces el sistema envía notificación de humedad alta<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico humedad y no se supera el umbral, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-002  |
-| US-010        | Alerta de CO2 Alto                                        | Como dueño, quiero alertas de CO2 alto para saber si supera el umbral permitido                                                                                                                                                                                                                                                                    | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico CO2 y se supera el umbral, entonces el sistema envía notificación de CO2 alto<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico CO2 y no se supera el umbral, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | EP-002  |
-| US-011        | Alerta de NH3 Alto                                        | Como dueño, quiero alertas de NH3 alto para saber si supera el umbral permitido                                                                                                                                                                                                                                                                    | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico NH3 y se supera el umbral, entonces el sistema envía notificación de NH3 alto<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico NH3 y no se supera el umbral, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | EP-002  |
-| US-012        | Alerta de Benceno Alto                                    | Como dueño, quiero alertas de benceno alto para saber si supera el umbral permitido                                                                                                                                                                                                                                                                | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico benceno y se supera el umbral, entonces el sistema envía notificación de benceno alto<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico benceno y no se supera el umbral, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-002  |
-| US-013        | Alerta de Presión Baja                                    | Como dueño, quiero alertas de presión baja para saber si está bajo el umbral mínimo                                                                                                                                                                                                                                                                | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico presión y está bajo el mínimo, entonces el sistema envía notificación de presión baja<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico presión y no está bajo el mínimo, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-002  |
-| US-014        | Alerta de Presión Alta                                    | Como dueño, quiero alertas de presión alta para saber si supera el umbral máximo                                                                                                                                                                                                                                                                   | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico presión y se supera el máximo, entonces el sistema envía notificación de presión alta<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico presión y no se supera el máximo, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-002  |
-| US-015        | Alerta de Impacto Detectado                               | Como dueño, quiero alertas de impacto detectado para saber si mi moto sufrió colisión                                                                                                                                                                                                                                                              | Escenario 1:<br>ado que veo mis vehículos, cuando verifico impactos y se detecta uno, entonces el sistema envía notificación de impacto detectado<br><br>Escenario 2:<br>ado que veo mis vehículos, cuando verifico impactos y no se detecta ninguno, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | EP-002  |
-| US-016        | Gestion de Gastos                                         | Como dueño, quiero agregar, ver y eliminar gastos relacionados con mi moto para llevar un control financiero de mis costos operativos                                                                                                                                                                                                              | Escenario 1: Visualización de gastos<br>Dado que el dueño de moto se encuentra en la aplicación, cuando accede a la sección de gastos, entonces el sistema le muestra un listado de todos sus gastos recientes organizados por fecha.<br><br>Escenario 2: Registro de nuevo gasto<br>Dado que el dueño de moto desea agregar un gasto, cuando selecciona la opción "Agregar gasto", entonces el sistema muestra un formulario con campos para tipo de gasto, monto, descripción y fecha.<br><br>Escenario 3: Eliminación de gasto<br>Dado que el dueño de moto visualiza un gasto registrado, cuando selecciona la opción "Eliminar" y confirma la acción, entonces el sistema remueve el gasto de su historial.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-003  |
+| US-006        | Sistema de notificaciones interno                         | Como dueño de motocicletas, quiero recibir notificaciones de mis vehículos para conocer su estado                                                                                                                                                                                                                                                  | Escenario 1:<br>Dado que veo mis vehículos registrados, cuando consulto el estado de un vehículo, entonces el sistema muestra las notificaciones de estado<br><br>Escenario 2:<br>Dado que veo mis vehículos registrados, cuando consulto el estado de un vehículo sin alertas, entonces el sistema muestra "No hay notificaciones para este vehículo"<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | EP-002  |
+| US-007        | Alerta de Temperatura Alta                                | Como dueño de motocicletas, quiero alertas de temperatura alta para saber si se supera el umbral permitido                                                                                                                                                                                                                                         | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico temperatura y se supera el umbral, entonces el sistema envía notificación de temperatura alta<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico temperatura y no se supera el umbral, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | EP-002  |
+| US-008        | Alerta de Temperatura Baja                                | Como dueño de motocicletas, quiero alertas de temperatura baja para saber si está bajo el umbral mínimo                                                                                                                                                                                                                                            | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico temperatura y está bajo el mínimo, entonces el sistema envía notificación de temperatura baja<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico temperatura y no está bajo el mínimo, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | EP-002  |
+| US-009        | Alerta de Humedad Alta                                    | Como dueño de motocicletas, quiero alertas de humedad alta para saber si supera el umbral permitido                                                                                                                                                                                                                                                | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico humedad y se supera el umbral, entonces el sistema envía notificación de humedad alta<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico humedad y no se supera el umbral, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-002  |
+| US-010        | Alerta de CO2 Alto                                        | Como dueño de motocicletas, quiero alertas de CO2 alto para saber si supera el umbral permitido                                                                                                                                                                                                                                                    | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico CO2 y se supera el umbral, entonces el sistema envía notificación de CO2 alto<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico CO2 y no se supera el umbral, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | EP-002  |
+| US-011        | Alerta de NH3 Alto                                        | Como dueño de motocicletas, quiero alertas de NH3 alto para saber si supera el umbral permitido                                                                                                                                                                                                                                                    | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico NH3 y se supera el umbral, entonces el sistema envía notificación de NH3 alto<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico NH3 y no se supera el umbral, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | EP-002  |
+| US-012        | Alerta de Benceno Alto                                    | Como dueño de motocicletas, quiero alertas de benceno alto para saber si supera el umbral permitido                                                                                                                                                                                                                                                | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico benceno y se supera el umbral, entonces el sistema envía notificación de benceno alto<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico benceno y no se supera el umbral, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-002  |
+| US-013        | Alerta de Presión Baja                                    | Como dueño de motocicletas, quiero alertas de presión baja para saber si está bajo el umbral mínimo                                                                                                                                                                                                                                                | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico presión y está bajo el mínimo, entonces el sistema envía notificación de presión baja<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico presión y no está bajo el mínimo, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-002  |
+| US-014        | Alerta de Presión Alta                                    | Como dueño de motocicletas, quiero alertas de presión alta para saber si supera el umbral máximo                                                                                                                                                                                                                                                   | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico presión y se supera el máximo, entonces el sistema envía notificación de presión alta<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico presión y no se supera el máximo, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-002  |
+| US-015        | Alerta de Impacto Detectado                               | Como dueño de motocicletas, quiero alertas de impacto detectado para saber si mi moto sufrió colisión                                                                                                                                                                                                                                              | Escenario 1:<br>ado que veo mis vehículos, cuando verifico impactos y se detecta uno, entonces el sistema envía notificación de impacto detectado<br><br>Escenario 2:<br>ado que veo mis vehículos, cuando verifico impactos y no se detecta ninguno, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | EP-002  |
+| US-016        | Gestion de Gastos                                         | Como dueño de motocicletas, quiero agregar, ver y eliminar gastos relacionados con mi moto para llevar un control financiero de mis costos operativos                                                                                                                                                                                              | Escenario 1: Visualización de gastos<br>Dado que el dueño de moto se encuentra en la aplicación, cuando accede a la sección de gastos, entonces el sistema le muestra un listado de todos sus gastos recientes organizados por fecha.<br><br>Escenario 2: Registro de nuevo gasto<br>Dado que el dueño de moto desea agregar un gasto, cuando selecciona la opción "Agregar gasto", entonces el sistema muestra un formulario con campos para tipo de gasto, monto, descripción y fecha.<br><br>Escenario 3: Eliminación de gasto<br>Dado que el dueño de moto visualiza un gasto registrado, cuando selecciona la opción "Eliminar" y confirma la acción, entonces el sistema remueve el gasto de su historial.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-003  |
 | US-017        | Gestión de mantenimientos del dueño                       | Como mecánico, quiero crear y visualizar mantenimientos para el vehículo de un dueño específico para registrar los servicios requeridos                                                                                                                                                                                                            | Escenario 1: Visualización de mantenimientos por vehículo<br>Dado que el dueño de moto accede a la sección de mantenimientos, cuando selecciona un vehículo específico, entonces el sistema muestra todos los mantenimientos asociados a ese vehículo con detalles, fecha y estado.<br><br>Escenario 2: Detalle de mantenimiento completado<br>Dado que el dueño de moto visualiza un mantenimiento marcado como completado, cuando selecciona ver detalles, entonces el sistema muestra información completa incluyendo el gasto de mantenimiento asociado con todos sus items.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-003  |
 | US-018        | Gestión del progreso del mantenimiento                    | Como mecánico, quiero actualizar el estado del mantenimiento (pendiente, en progreso, cancelado o completado) para gestionar el flujo de trabajo del servicio                                                                                                                                                                                      | Escenario 1: Actualización de estado de mantenimiento<br>Dado que el mecánico ha finalizado un mantenimiento, cuando actualiza el MaintenanceState a "Completado" mediante UpdateStateOfMaintenance, entonces el sistema cambia el estado del mantenimiento.<br><br>Escenario 2: Asociación de gasto a mantenimiento<br>Dado que un mantenimiento ha sido completado, cuando el mecánico utiliza AssignExpenseToMaintenance para asociar un gasto existente, entonces el sistema vincula el Expense al Maintenance mediante maintenanceExpense.<br><br>Escenario 3: Creación y asociación automática<br>Dado que el mecánico completa un mantenimiento, cuando crea un nuevo Expense y lo asocia al mantenimiento, entonces el sistema registra el gasto y lo vincula automáticamente al mantenimiento completado.<br>                                                                                                                                                                                                                                                                                                                                                                                                              | EP-003  |
-| US-019        | Comparación de vehículos por motociclista                 | Como dueño quiero comparar las especificaciones técnicas de mi motocicleta con otros modelos disponibles para evaluar el rendimiento y características de mi vehículo frente a alternativas del mercado                                                                                                                                            | Escenario 1: Selección de vehículos para comparar<br>Dado que el motociclista tiene vehículos registrados en el sistema, cuando accede a la funcionalidad de comparación, entonces el sistema muestra sus vehículos registrados y le permite seleccionar uno como base de comparación junto con un modelo de la base de datos para contrastar.<br><br>Escenario 2: Visualización de comparación técnica<br>Dado que el motociclista ha seleccionado dos vehículos para comparar, cuando el sistema procesa la comparación, entonces muestra lado a lado las especificaciones técnicas (cilindrada, potencia, torque, peso, transmisión, frenos, tanque, altura del asiento, consumo y precio) destacando cuál vehículo tiene mejores valores en cada categoría.<br><br>Escenario 3: Persistencia de comparación<br>Dado que el motociclista ha realizado una comparación de vehículos, cuando sale y vuelve a ingresar a la funcionalidad, entonces el sistema restaura la última comparación realizada desde el almacenamiento local.<br>                                                                                                                                                                                          | EP-009  |
-| US-020        | Comparación de modelos por mecánico                       | Como mecánico quiero comparar especificaciones técnicas entre diferentes modelos de motocicletas para analizar y recomendar las mejores opciones a mis clientes según sus necesidades                                                                                                                                                              | Escenario 1: Acceso a comparación de modelos<br>Dado que el mecánico no tiene vehículos registrados bajo su nombre, cuando intenta acceder a la funcionalidad de comparación desde la vista de motociclista, entonces el sistema lo redirige automáticamente a la vista de comparación de modelos para mecánicos.<br><br>Escenario 2:<br>Dado que el mecánico accede a la comparación de modelos, cuando visualiza la interfaz, entonces puede seleccionar libremente cualquier par de modelos disponibles en la base de datos sin restricciones de propiedad.<br><br>Escenario 3: Análisis de múltiples comparaciones<br>Dado que el mecánico realiza varias comparaciones de modelos, cuando cambia la selección de cualquiera de los dos vehículos, entonces el sistema actualiza inmediatamente la comparación y guarda el estado actual para futuras consultas.<br>                                                                                                                                                                                                                                                                                                                                                            | EP-009  |
-| US-021        | Evaluación por escenarios de uso                          | Como dueño quiero visualizar el rendimiento de los vehículos en diferentes escenarios de uso para determinar cuál opción se adapta mejor a condiciones específicas de conducción                                                                                                                                                                   | Escenario 1: Visualización de escenarios<br>Dado que se está comparando dos vehículos, cuando el motociclista visualiza la sección de escenarios de uso, entonces el sistema muestra las puntuaciones (del 1 al 10 representadas en estrellas) para tráfico urbano, viajes largos, costo de mantenimiento y valor de reventa.<br><br>Escenario 2: Identificación de mejor opción por escenario<br>Dado que dos vehículos tienen diferentes puntuaciones en un escenario específico, cuando el sistema muestra la comparación, entonces destaca visualmente cuál vehículo es mejor para ese escenario particular y muestra el nombre del ganador.<br><br>Escenario 3: Comparación equilibrada<br>Dado que dos vehículos tienen la misma puntuación en un escenario, cuando el sistema muestra la comparación, entonces no destaca ningún vehículo como ganador en ese escenario específico.<br>                                                                                                                                                                                                                                                                                                                                      | EP-009  |
-| US-022        | Visualización de especificaciones detalladas              | Como mecánico quiero ver una comparación detallada de todas las especificaciones técnicas para tomar decisiones informadas basadas en datos técnicos precisos                                                                                                                                                                                      | Escenario 1: Listado completo de especificaciones<br>Dado que se están comparando dos vehículos, cuando el mecánico visualiza la tarjeta de especificaciones, entonces el sistema muestra 10 categorías técnicas principales organizadas en filas con los valores de ambos vehículos lado a lado.<br><br>Escenario 2: Destacado de valores superiores<br>Dado que dos vehículos tienen valores numéricos diferentes en una especificación, cuando el sistema compara los valores, entonces resalta visualmente el valor superior con un indicador de ganador y un fondo distintivo.<br><br>Escenario 3: Manejo de datos faltantes<br>Dado que un vehículo no tiene información para una especificación específica, cuando el sistema muestra la comparación, entonces presenta un guion "-" en lugar de dejar el campo vacío o mostrar valores erróneos.<br>                                                                                                                                                                                                                                                                                                                                                                        | EP-009  |
-| US-023        | Resumen comparativo generado por IA                       | Como dueño, quiero recibir un resumen narrativo de la comparación para entender rápidamente las diferencias clave sin analizar toda la tabla técnica.                                                                                                                                                                                              | Escenario 1: Generación de resumen<br>Dado que se han seleccionado dos vehículos, cuando el sistema procesa la comparación, entonces un modelo de lenguaje (LLM) genera un párrafo explicativo destacando los puntos fuertes de cada uno basándose en la data técnica.<br><br>Escenario 2: Lenguaje natural<br>Dado que el modelo genera el texto, cuando el usuario lo lee, entonces debe ser en un lenguaje sencillo y no puramente numérico.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | EP-009  |
-| US-024        | Visualización de vehículos                                | Como dueño de moto, quiero ver todas mis motos registradas en una lista para tener conocimiento de su registro.                                                                                                                                                                                                                                    | Escenario 1:<br>Dado que el dueño tiene vehículos registrados, cuando se dirija a la pantalla de Vehículos, entonces la aplicación mostrará una lista de sus vehículos registrados con datos básicos.<br><br>Escenario 2:<br>Dado que el dueño no tiene ningún vehículo registrado, cuando se diriga a la pantalla de Vehículos, entonces la aplicación mostrará un mensaje de “No tiene vehículos registrados“<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | EP-007  |
-| US-025        | Visualización de detalles de un vehículo                  | Como dueño, quiero ver los detalles específicos de mi vehículo, para tener conocimiento sobre sus especificaciones a la hora de buscar reparaciones.                                                                                                                                                                                               | Escenario 1:<br>Dado que el dueño se encuentra en la vista de Vehículos, cuando presione el botón de Ver Detalles de uno de los vehículos, se redirigirá a una pantalla con más datos.<br><br>Escenario 2:<br>Dado que el dueño ha ingresado a la vista de Detalles del Vehículo, cuando revise la información presentada, entonces debe poder visualizar todas las especificaciones registradas del modelo dl vehículo, con cualquier dato relevante para futuras reparaciones.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-007  |
-| US-026        | Registro de Vehículo                                      | Como dueño, quiero registrar un vehículo de mi pertenencia en la plataforma, para que mi mecánico asignado pueda monitorearlo.                                                                                                                                                                                                                     | Escenario 1:<br>Dado que el dueño se encuentra en la pantalla de vehículos, puede presionar el botón de Registrar Vehículo, entonces el sistema debe mostrar un formulario para colocar los datos del vehículo.<br><br>Escenario 2:<br>Dado que el dueño se encuentra en el formulario y ha colocado los datos de su vehículo, puede presionar el botón de Registrar, entonces el sistema deberá validar los datos y registrar el vehículo si son correctos.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | EP-007  |
-| US-027        | Exportación de reporte técnico del vehículo               | Como mecánico quiero exportar un reporte técnico completo del vehículo en formato CSV para tener un registro físico de las características y estado del vehículo que pueda compartir o archivar                                                                                                                                                    | Escenario 1: Generación exitosa del reporte<br>Dado que el usuario se encuentra visualizando los detalles de un vehículo específico, cuando el usuario presiona el botón "Exportar", entonces el sistema genera y descarga automáticamente un archivo CSV con todas las especificaciones técnicas del vehículo incluyendo año del modelo, marca, tipo, desplazamiento, tipo de motor, capacidad del tanque, potencia máxima, torque máximo, conectividad, peso, capacidad de aceite y consumo de gasolina.<br><br>Escenario 2: Nomenclatura del archivo exportado<br>Dado que el sistema ha generado exitosamente el archivo CSV, cuando se descarga el archivo, entonces el nombre del archivo sigue el formato vehicle-report-{vehicleId}.csv donde vehicleId es el identificador único del vehículo.<br><br>Escenario 3: Manejo de error en la exportación<br>Dado que el usuario solicita exportar el reporte del vehículo, cuando ocurre un error durante la generación o descarga del archivo, entonces el sistema muestra un mensaje de alerta indicando "Error al exportar el reporte" sin descargar ningún archivo corrupto o incompleto.<br>                                                                              | EP-007  |
-| US-028        | Monitorear la temperatura de la moto                      | Como dueño, quiero que el sistema mida la temperatura de la moto, para detectar sobrecalentamientos y prevenir fallas mecánicas                                                                                                                                                                                                                    | Escenario 1:<br>Dado que la moto se encuentra encendida, cuando el sensor de temperatura realiza una nueva lectura, entonces el valor se muestra en grados Celsius en el sistema.<br><br>Escenario 2:<br>Dado que la temperatura de la moto es monitoreada, cuando se excede los limites de temperatura, entonces el sistema genera un evento de notificación.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | EP-001  |
-| US-029        | Monitorear la contaminación emitida por el tubo de escape | Como dueño, quiero que el sistema mida los gases emitidos por el tubo de escape, para conocer el nivel de contaminación generada por la moto.                                                                                                                                                                                                      | Escenario 1:<br>Dado que la moto está encendida, cuando el sensor detecta concentraciones de CO₂, NH₃ y Benceno, entonces los valores se muestran en ppm.<br><br>Escenario 2:<br>Dado que se estan monitoreando los gases, cuando cualquiera de los gases excede el limite, entonces el sistema emite un evento de notificación.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-001  |
-| US-030        | Detectar impactos cuando la moto está estacionada         | Como dueño, quiero que el sistema detecte impactos cuando la moto esté apagada, para identificar intentos de robo, caídas o golpes.                                                                                                                                                                                                                | Escenario 1:<br>Dado que la moto se encuentra apagada, cuando el sensor de impacto detecta un golpe, entonces el sistema genera un evento de impacto.<br><br>Escenario 2:<br>Dado que ocurre un solo golpe, cuando se supera el umbral de sensibilidad, entonces se emite un único evento.<br><br>Escenario 3:<br>Dado que no existe impacto, cuando el sistema está en monitoreo, entonces no se generan eventos de impacto.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | EP-001  |
-| US-031        | Monitorear la presión de las llantas                      | Como dueño, quiero que el sistema mida la presión de las llantas, para garantizar una conducción segura.                                                                                                                                                                                                                                           | Escenario 1:<br>Dado que el sensor de presión se encuentra activo, cuando detecta la presión de la llanta, entonces el sistema muestra el valor en hPa.<br><br>Escenario 2:<br>Dado que la presión se sale de los limites de nivel seguro, cuando se detecta la variación, entonces el sistema emite un evento de alerta.<br><br>Escenario 3:<br>Dado que la presión se mantiene estable, cuando se realizan múltiples lecturas, entonces no se generan eventos adicionales.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | EP-001  |
-| US-032        | Visualizar el estado general de la moto                   | Como dueño, quiero visualizar todos los datos del sistema en conjunto, para conocer el estado general del vehículo en tiempo real.                                                                                                                                                                                                                 | Escenario 1:<br>Dado que todos los sensores están activos, cuando el sistema actualiza las lecturas, entonces se muestran simultáneamente temperatura, gases, presión e impactos.<br><br>Escenario 2:<br>Dado que uno de los sensores falla, cuando ocurre la lectura, entonces el sistema continúa mostrando los demás valores disponibles.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | EP-001  |
+| US-019        | Comparación de vehículos por dueño de motocicleta         | Como dueño de motocicletas quiero comparar las especificaciones técnicas de mi motocicleta con otros modelos disponibles para evaluar el rendimiento y características de mi vehículo frente a alternativas del mercado                                                                                                                            | Escenario 1: Selección de vehículos para comparar<br>Dado que el dueño de motocicletas tiene vehículos registrados en el sistema, cuando accede a la funcionalidad de comparación, entonces el sistema muestra sus vehículos registrados y le permite seleccionar uno como base de comparación junto con un modelo de la base de datos para contrastar.<br><br>Escenario 2: Visualización de comparación técnica<br>Dado que el dueño de motocicletas ha seleccionado dos vehículos para comparar, cuando el sistema procesa la comparación, entonces muestra lado a lado las especificaciones técnicas (cilindrada, potencia, torque, peso, transmisión, frenos, tanque, altura del asiento, consumo y precio) destacando cuál vehículo tiene mejores valores en cada categoría.<br><br>Escenario 3: Persistencia de comparación<br>Dado que el dueño de motocicletas ha realizado una comparación de vehículos, cuando sale y vuelve a ingresar a la funcionalidad, entonces el sistema restaura la última comparación realizada desde el almacenamiento local.<br>                                                                                                                                                               | EP-009  |
+| US-020        | Comparación de modelos por mecánico                       | Como mecánico quiero comparar especificaciones técnicas entre diferentes modelos de motocicletas para analizar y recomendar las mejores opciones a mis clientes según sus necesidades                                                                                                                                                              | Escenario 1: Acceso a comparación de modelos<br>Dado que el mecánico no tiene vehículos registrados bajo su nombre, cuando intenta acceder a la funcionalidad de comparación desde la vista de dueño de motocicleta, entonces el sistema lo redirige automáticamente a la vista de comparación de modelos para mecánicos.<br><br>Escenario 2:<br>Dado que el mecánico accede a la comparación de modelos, cuando visualiza la interfaz, entonces puede seleccionar libremente cualquier par de modelos disponibles en la base de datos sin restricciones de propiedad.<br><br>Escenario 3: Análisis de múltiples comparaciones<br>Dado que el mecánico realiza varias comparaciones de modelos, cuando cambia la selección de cualquiera de los dos vehículos, entonces el sistema actualiza inmediatamente la comparación y guarda el estado actual para futuras consultas.<br>                                                                                                                                                                                                                                                                                                                                                    | EP-009  |
+| US-021        | Evaluación por escenarios de uso                          | Como dueño de motocicletas quiero visualizar el rendimiento de los vehículos en diferentes escenarios de uso para determinar cuál opción se adapta mejor a condiciones específicas de conducción                                                                                                                                                   | Escenario 1: Visualización de escenarios<br>Dado que se está comparando dos vehículos, cuando el dueño de motocicletas visualiza la sección de escenarios de uso, entonces el sistema muestra las puntuaciones (del 1 al 10 representadas en estrellas) para tráfico urbano, viajes largos, costo de mantenimiento y valor de reventa.<br><br>Escenario 2: Identificación de mejor opción por escenario<br>Dado que dos vehículos tienen diferentes puntuaciones en un escenario específico, cuando el sistema muestra la comparación, entonces destaca visualmente cuál vehículo es mejor para ese escenario particular y muestra el nombre del ganador.<br><br>Escenario 3: Comparación equilibrada<br>Dado que dos vehículos tienen la misma puntuación en un escenario, cuando el sistema muestra la comparación, entonces no destaca ningún vehículo como ganador en ese escenario específico.<br>                                                                                                                                                                                                                                                                                                                             | EP-009  |
+| US-022        | Visualización de especificaciones detalladas              | Como dueño de motocicletas quiero ver una comparación detallada de todas las especificaciones técnicas para tomar decisiones informadas basadas en datos técnicos precisos                                                                                                                                                                         | Escenario 1: Listado completo de especificaciones<br>Dado que se están comparando dos vehículos, cuando el mecánico visualiza la tarjeta de especificaciones, entonces el sistema muestra 10 categorías técnicas principales organizadas en filas con los valores de ambos vehículos lado a lado.<br><br>Escenario 2: Destacado de valores superiores<br>Dado que dos vehículos tienen valores numéricos diferentes en una especificación, cuando el sistema compara los valores, entonces resalta visualmente el valor superior con un indicador de ganador y un fondo distintivo.<br><br>Escenario 3: Manejo de datos faltantes<br>Dado que un vehículo no tiene información para una especificación específica, cuando el sistema muestra la comparación, entonces presenta un guion "-" en lugar de dejar el campo vacío o mostrar valores erróneos.<br>                                                                                                                                                                                                                                                                                                                                                                        | EP-009  |
+| US-023        | Resumen comparativo generado por IA                       | Como dueño de motocicletas, quiero recibir un resumen narrativo de la comparación para entender rápidamente las diferencias clave sin analizar toda la tabla técnica.                                                                                                                                                                              | Escenario 1: Generación de resumen<br>Dado que se han seleccionado dos vehículos, cuando el sistema procesa la comparación, entonces un modelo de lenguaje (LLM) genera un párrafo explicativo destacando los puntos fuertes de cada uno basándose en la data técnica.<br><br>Escenario 2: Lenguaje natural<br>Dado que el modelo genera el texto, cuando el usuario lo lee, entonces debe ser en un lenguaje sencillo y no puramente numérico.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | EP-009  |
+| US-024        | Visualización de vehículos                                | Como dueño de motocicletas, quiero ver todas mis motos registradas en una lista para tener conocimiento de su registro.                                                                                                                                                                                                                            | Escenario 1:<br>Dado que el dueño tiene vehículos registrados, cuando se dirija a la pantalla de Vehículos, entonces la aplicación mostrará una lista de sus vehículos registrados con datos básicos.<br><br>Escenario 2:<br>Dado que el dueño no tiene ningún vehículo registrado, cuando se diriga a la pantalla de Vehículos, entonces la aplicación mostrará un mensaje de “No tiene vehículos registrados“<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | EP-007  |
+| US-025        | Visualización de detalles de un vehículo                  | Como dueño de motocicletas, quiero ver los detalles específicos de mi vehículo, para tener conocimiento sobre sus especificaciones a la hora de buscar reparaciones.                                                                                                                                                                               | Escenario 1:<br>Dado que el dueño se encuentra en la vista de Vehículos, cuando presione el botón de Ver Detalles de uno de los vehículos, se redirigirá a una pantalla con más datos.<br><br>Escenario 2:<br>Dado que el dueño ha ingresado a la vista de Detalles del Vehículo, cuando revise la información presentada, entonces debe poder visualizar todas las especificaciones registradas del modelo dl vehículo, con cualquier dato relevante para futuras reparaciones.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-007  |
+| US-026        | Registro de Vehículo                                      | Como dueño de motocicletas, quiero registrar un vehículo de mi pertenencia en la plataforma, para que mi mecánico asignado pueda monitorearlo.                                                                                                                                                                                                     | Escenario 1:<br>Dado que el dueño se encuentra en la pantalla de vehículos, puede presionar el botón de Registrar Vehículo, entonces el sistema debe mostrar un formulario para colocar los datos del vehículo.<br><br>Escenario 2:<br>Dado que el dueño se encuentra en el formulario y ha colocado los datos de su vehículo, puede presionar el botón de Registrar, entonces el sistema deberá validar los datos y registrar el vehículo si son correctos.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | EP-007  |
+| US-027        | Exportación de reporte técnico del vehículo               | Como mecánico, quiero exportar un reporte técnico completo del vehículo en formato CSV para tener un registro físico de las características y estado del vehículo que pueda compartir o archivar                                                                                                                                                   | Escenario 1: Generación exitosa del reporte<br>Dado que el usuario se encuentra visualizando los detalles de un vehículo específico, cuando el usuario presiona el botón "Exportar", entonces el sistema genera y descarga automáticamente un archivo CSV con todas las especificaciones técnicas del vehículo incluyendo año del modelo, marca, tipo, desplazamiento, tipo de motor, capacidad del tanque, potencia máxima, torque máximo, conectividad, peso, capacidad de aceite y consumo de gasolina.<br><br>Escenario 2: Nomenclatura del archivo exportado<br>Dado que el sistema ha generado exitosamente el archivo CSV, cuando se descarga el archivo, entonces el nombre del archivo sigue el formato vehicle-report-{vehicleId}.csv donde vehicleId es el identificador único del vehículo.<br><br>Escenario 3: Manejo de error en la exportación<br>Dado que el usuario solicita exportar el reporte del vehículo, cuando ocurre un error durante la generación o descarga del archivo, entonces el sistema muestra un mensaje de alerta indicando "Error al exportar el reporte" sin descargar ningún archivo corrupto o incompleto.<br>                                                                              | EP-007  |
+| US-028        | Monitorear la temperatura de la moto                      | Como dueño de motocicletas, quiero que el sistema mida la temperatura de la moto, para detectar sobrecalentamientos y prevenir fallas mecánicas                                                                                                                                                                                                    | Escenario 1:<br>Dado que la moto se encuentra encendida, cuando el sensor de temperatura realiza una nueva lectura, entonces el valor se muestra en grados Celsius en el sistema.<br><br>Escenario 2:<br>Dado que la temperatura de la moto es monitoreada, cuando se excede los limites de temperatura, entonces el sistema genera un evento de notificación.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | EP-001  |
+| US-029        | Monitorear la contaminación emitida por el tubo de escape | Como dueño de motocicletas, quiero que el sistema mida los gases emitidos por el tubo de escape, para conocer el nivel de contaminación generada por la moto.                                                                                                                                                                                      | Escenario 1:<br>Dado que la moto está encendida, cuando el sensor detecta concentraciones de CO₂, NH₃ y Benceno, entonces los valores se muestran en ppm.<br><br>Escenario 2:<br>Dado que se estan monitoreando los gases, cuando cualquiera de los gases excede el limite, entonces el sistema emite un evento de notificación.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-001  |
+| US-030        | Detectar impactos cuando la moto está estacionada         | Como dueño de motocicletas, quiero que el sistema detecte impactos cuando la moto esté apagada, para identificar intentos de robo, caídas o golpes.                                                                                                                                                                                                | Escenario 1:<br>Dado que la moto se encuentra apagada, cuando el sensor de impacto detecta un golpe, entonces el sistema genera un evento de impacto.<br><br>Escenario 2:<br>Dado que ocurre un solo golpe, cuando se supera el umbral de sensibilidad, entonces se emite un único evento.<br><br>Escenario 3:<br>Dado que no existe impacto, cuando el sistema está en monitoreo, entonces no se generan eventos de impacto.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | EP-001  |
+| US-031        | Monitorear la presión de las llantas                      | Como dueño de motocicletas, quiero que el sistema mida la presión de las llantas, para garantizar una conducción segura.                                                                                                                                                                                                                           | Escenario 1:<br>Dado que el sensor de presión se encuentra activo, cuando detecta la presión de la llanta, entonces el sistema muestra el valor en hPa.<br><br>Escenario 2:<br>Dado que la presión se sale de los limites de nivel seguro, cuando se detecta la variación, entonces el sistema emite un evento de alerta.<br><br>Escenario 3:<br>Dado que la presión se mantiene estable, cuando se realizan múltiples lecturas, entonces no se generan eventos adicionales.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | EP-001  |
+| US-032        | Visualizar el estado general de la moto                   | Como dueño de motocicletas, quiero visualizar todos los datos del sistema en conjunto, para conocer el estado general del vehículo en tiempo real.                                                                                                                                                                                                 | Escenario 1:<br>Dado que todos los sensores están activos, cuando el sistema actualiza las lecturas, entonces se muestran simultáneamente temperatura, gases, presión e impactos.<br><br>Escenario 2:<br>Dado que uno de los sensores falla, cuando ocurre la lectura, entonces el sistema continúa mostrando los demás valores disponibles.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | EP-001  |
 | US-033        | Sección de métricas por cada vehículo                     | Como mecánico, quiero poder acceder a la sección de métricas registradas para cada vehículo para poder analizar las métricas de cada moto de manera individual.                                                                                                                                                                                    | Escenario 1:<br>Dado que veo los vehículos de un cliente, cuando solicito métricas de un vehículo específico, entonces el sistema muestra sus métricas de telemetría<br><br>Escenario 2:<br>Dado que veo los vehículos de un cliente, cuando solicito métricas de un vehículo sin registros, entonces el sistema muestra "No se encontró ninguna métrica relacionada a este vehículo"<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | EP-001  |
 | US-034        | Visualización de sección Hero y Call to Action            | Como visitante, quiero visualizar una introducción clara y botones de acción rápida para navegar a las plataformas de la aplicación.                                                                                                                                                                                                               | Escenario 1: Visualización del Hero<br>Dado que el visitante carga la landing page, cuando visualiza la pantalla principal, entonces el sistema muestra el eslogan "Tu motocicleta, más inteligente" y el mensaje de conexión digital.<br><br>Escenario 2: Interacción con botones CTA<br>Dado que el visitante se encuentra en el Hero, cuando hace clic en "Ir a Web" o "Ir a la App Móvil", entonces el sistema lo redirige a la plataforma correspondiente.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | EP-006  |
 | US-035        | Sección de Características del Servicio                   | Como visitante, quiero conocer las funcionalidades principales de Octane para entender los beneficios del producto.                                                                                                                                                                                                                                | Escenario 1: Listado de características<br>Dado que el visitante hace scroll hacia abajo, cuando llega a la sección "Características", entonces el sistema muestra 6 tarjetas informativas: Monitoreo, Alertas, Historial, Conexión con el mecánico, Reportes de salud y Seguridad mejorada.<br><br>Escenario 2: Adaptabilidad visual<br>Dado que el visitante visualiza las características, cuando utiliza diferentes dispositivos, entonces el diseño de las tarjetas se ajusta para mantener la legibilidad.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | EP-006  |
@@ -1090,7 +1092,7 @@ En esta sección se presentan los To-Be Scenario Mapping por cada segmento objet
 | TS-001        | Uso de polling para detección.                            | Como desarrollador, quiero implementar un mecanismo de sondeo periódico (polling) para leer los valores de los sensores de la motocicleta (ej. presión de llantas, temperatura del motor, consumo de combustible), para garantizar que la aplicación obtenga datos actualizados constantemente, y estos se vean registrados a lo largo del tiempo. | Escenario 1: <br>Dado que la aplicación está conectada a los sensores de la motocicleta y el sistema de polling está configurado con un intervalo específico, cuando se ejecuta el ciclo periódico de lectura de sensores, entonces el sistema obtiene los valores actualizados de presión de llantas, temperatura del motor y consumo de combustible, y los almacena con timestamp en la base de datos local para su posterior análisis. <br><br> Escenario 2: <br>Dado que el último ciclo de polling detectó un valor de sensor que supera los umbrales predefinidos de seguridad, cuando el sistema procesa y valida esta lectura anómala, entonces genera inmediatamente un evento de alerta prioritario que activa las notificaciones al usuario y registra el incidente en el historial de anomalías del vehículo. <br><br> Escenario 3: <br>Dado que todos los valores de sensores leídos durante el ciclo de polling se encuentran dentro de los rangos normales establecidos, cuando el sistema completa la lectura y verificación de datos, entonces actualiza los registros históricos con los nuevos valores sin generar alertas ni notificaciones al usuario, manteniendo el funcionamiento silencioso del monitoreo. | EP-004  |
 | TS-002        | Lectura de sensor de presión de llantas                   | Como desarrollador, quiero implementar la lectura periódica de los sensores de presión de llantas, para disponer de datos confiables en el sistema.                                                                                                                                                                                                | Escenario 1: <br>Dado que los sensores de presión de llantas están correctamente conectados y calibrados, cuando el sistema ejecuta la rutina periódica de lectura de sensores, entonces obtiene y registra el valor actual en PSI de cada llanta (delantera y trasera) con una precisión de ±1 PSI and timestamp of the measurement. <br><br> Escenario 2: <br>Dado que se ha realizado una lectura de presión de llantas con valores fuera del rango seguro establecido (menor a 28 PSI o mayor a 40 PSI para motocicletas estándar), cuando el sistema procesa estos datos, entonces marca automáticamente la lectura como anómala en la base de datos y activa el protocolo de notificación de alerta temprana.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | EP-004  |
 | TS-003        | Lectura de sensor de temperatura del motor                | Como desarrollador, quiero integrar la lectura del sensor de temperatura del motor, para detectar condiciones de sobrecalentamiento.                                                                                                                                                                                                               | Escenario 1: <br>Dado que el sensor de temperatura del motor está instalado y funcionando correctamente, cuando el sistema ejecuta la rutina de monitoreo periódico, entonces el valor actual de temperatura en grados Celsius se registra en la memoria del dispositivo con una precisión de más o menos 2°C y se almacena con su timestamp correspondiente. <br><br> Escenario 2: <br>Dado que la lectura de temperatura del motor supera los 95°C (umbral de sobrecalentamiento para la mayoría de motocicletas), cuando el sistema procesa este dato, entonces marca la lectura como alerta crítica interna, activa el flag de sobrecalentamiento en el sistema y prepara el protocolo de notificación de emergencia. <br><br> Escenario 3: <br>Dado que la temperatura del motor se mantiene entre 70°C y 80°C (rango operativo normal), cuando el sistema registra la lectura en el log de datos, entonces almacena el valor sin activar alertas ni banderas de advertencia, manteniendo el estado operativo normal del sistema de monitoreo.                                                                                                                                                                                 | EP-004  |
-| TS-004        | Lectura de sensor de consumo de combustible               | Como desarrollador, quiero implementar la medición de flujo de combustible en tiempo real, para calcular consumo instantáneo y promedio.                                                                                                                                                                                                           | Escenario 1: <br>Dado que el motor de la motocicleta está en marcha y el sensor de flujo de combustible detecta circulación de combustible, cuando el sistema realiza la lectura periódica del sensor, entonces calcula el consumo instantáneo en L/100km basado en el flujo actual y la velocidad de la motocicleta, actualizando el valor cada 5 segundos. <br><br> Escenario 2: <br>Dado que el motociclista ha finalizado un trayecto y el motor se apaga, cuando el sistema procesa todos los datos acumulados del viaje, entonces calcula el consumo promedio de combustible dividiendo el total de combustible consumido entre la distancia recorrida, mostrando el resultado en km/L con dos decimales de precisión. <br><br> Escenario 3: <br>Dado que el motor de la motocicleta está apagado y no hay circulación de combustible, cuando el sistema ejecuta la rutina de lectura del sensor de flujo, entonces reporta un valor de 0.0 L/h para el consumo instantáneo y mantiene inactivo el cálculo de consumo hasta que se detecte nuevo flujo.                                                                                                                                                                       | EP-004  |
+| TS-004        | Lectura de sensor de consumo de combustible               | Como desarrollador, quiero implementar la medición de flujo de combustible en tiempo real, para calcular consumo instantáneo y promedio.                                                                                                                                                                                                           | Escenario 1: <br>Dado que el motor de la motocicleta está en marcha y el sensor de flujo de combustible detecta circulación de combustible, cuando el sistema realiza la lectura periódica del sensor, entonces calcula el consumo instantáneo en L/100km basado en el flujo actual y la velocidad de la motocicleta, actualizando el valor cada 5 segundos. <br><br> Escenario 2: <br>Dado que el dueño de motocicletas ha finalizado un trayecto y el motor se apaga, cuando el sistema procesa todos los datos acumulados del viaje, entonces calcula el consumo promedio de combustible dividiendo el total de combustible consumido entre la distancia recorrida, mostrando el resultado en km/L con dos decimales de precisión. <br><br> Escenario 3: <br>Dado que el motor de la motocicleta está apagado y no hay circulación de combustible, cuando el sistema ejecuta la rutina de lectura del sensor de flujo, entonces reporta un valor de 0.0 L/h para el consumo instantáneo y mantiene inactivo el cálculo de consumo hasta que se detecte nuevo flujo.                                                                                                                                                              | EP-004  |
 | TS-005        | Registro de métricas en memoria local                     | Como desarrollador, quiero que todas las métricas capturadas se almacenen en memoria local del dispositivo, para permitir la persistencia de datos incluso sin conexión a la app.                                                                                                                                                                  | Escenario 1: <br>Dado que se completa exitosamente una lectura de cualquier sensor del sistema (presión, temperatura, combustible), cuando se obtiene el valor medido, entonces los datos se almacenan inmediatamente en la memoria local con un timestamp preciso y se etiquetan con el tipo de sensor correspondiente para su posterior recuperación. <br><br> Escenario 2: <br>Dado que la memoria local alcanza su capacidad máxima de almacenamiento (ej. 10,000 registros), cuando se intenta guardar un nuevo dato y el espacio está lleno, entonces el sistema elimina automáticamente el 10% de los registros más antiguos para liberar espacio y continúa almacenando los nuevos datos sin interrupción. <br><br> Escenario 3: <br>Dado que la aplicación recupera la conexión a internet después de un período sin conexión, cuando se ejecuta el proceso de sincronización con el servidor, entonces la memoria local envía todos los registros almacenados durante el período offline y los marca como sincronizados una vez confirmada su recepción exitosa.                                                                                                                                                          | EP-004  |
 | TS-006        | Sincronización de datos con la aplicación móvil           | Como desarrollador, quiero sincronizar los datos de métricas almacenados en el dispositivo con la aplicacion, para asegurar que el usuario siempre tenga la información más reciente.                                                                                                                                                              | Escenario 1: <br>Dado que el dispositivo tiene registros locales de métricas sin sincronizar almacenados en su memoria, cuando la aplicación móvil establece conexión estable con el dispositivo, entonces se inicia la transferencia de todos los datos pendientes en lotes organizados por timestamp y tipo de métrica. <br><br> Escenario 2: <br>Dado que la transmisión de datos desde el dispositivo hacia la aplicación móvil se ha completado exitosamente, cuando la aplicación confirma la recepción íntegra de todos los registros, entonces el dispositivo marca los datos como sincronizados en su base de datos local y los mantiene como respaldo histórico por un período determinado. <br><br> Escenario 3: <br>Dado que ocurre una falla durante el proceso de sincronización de datos, cuando el sistema reintenta la conexión y transferencia, entonces identifica los registros pendientes de sincronización mediante timestamps y envía solamente el diferencial de datos que no había sido transferido previamente.                                                                                                                                                                                           | EP-004  |
 | TS-007        | Integración con framework de comunicación IoT             | Como desarrollador, quiero integrar el framework IoT del proyecto para enviar los datos recopilados a la nube, para habilitar reportes remotos y análisis avanzados.                                                                                                                                                                               | Escenario 1: <br>Dado que el dispositivo tiene conexión a internet activa y estable, cuando se completa un ciclo de lectura de sensores y procesamiento de datos, entonces el sistema envía automáticamente el paquete de métricas a la nube utilizando el framework IoT configurado, aplicando el protocolo de seguridad correspondiente. <br><br> Escenario 2: <br>Dado que la conexión a internet no está disponible o la transmisión a la nube falla, cuando el sistema intenta enviar los datos, entonces almacena la información en una cola local persistente con timestamp y reintenta el envío cada 5 minutos hasta que se restablezca la conectividad. <br><br> Escenario 3: <br>Dado que el envío de datos a la nube se completa exitosamente, cuando el servidor cloud confirma la recepción mediante acknowledge, entonces el sistema registra la confirmación en el log serial con el mensaje "[OK] Datos sincronizados - [TIMESTAMP]" y elimina los datos correspondientes de la cola local.                                                                                                                                                                                                                         | EP-004  |
@@ -1103,57 +1105,57 @@ En esta sección se presentan los To-Be Scenario Mapping por cada segmento objet
 ## 3.4. Product Backlog
 
 
-| Prioridad | Story ID | Título                                  | Descripción                                              | Story Points |
-|-----------|----------|-----------------------------------------|----------------------------------------------------------|--------------|
-| 1         | US-005   | Autenticación en la aplicación web      | Autenticarse para interactuar con datos de usuario.      | 3            |
-| 2         | US-004   | Creación de perfil para mecánicos       | Registro de mecánicos con selección de suscripción.      | 5            |
-| 3         | US-003   | Creación de perfil para motociclistas   | Registro de motociclistas vinculado a un mecánico.       | 5            |
-| 4         | TS-008   | Integrar sensores con ModestIoT         | Integración de hardware usando la librería OctaneDevice. | 8            |
-| 5         | TS-009   | Arquitectura basada en eventos          | Lógica de hardware desacoplada mediante eventos.         | 5            |
-| 6         | TS-001   | Uso de polling para detección           | Mecanismo de lectura periódica de sensores.              | 5            |
-| 7         | US-028   | Monitorear la temperatura de la moto    | Medición y detección de sobrecalentamiento.              | 3            |
-| 8         | US-031   | Monitorear la presión de las llantas    | Medición de presión en hPa y alertas de niveles.         | 3            |
-| 9         | US-015   | Alerta de Impacto Detectado             | Notificación de colisión o golpe en la moto.             | 3            |
-| 10        | US-032   | Visualizar el estado general de la moto | Dashboard en tiempo real con todos los sensores.         | 5            |
-| 11        | US-001   | Manejo de asignaciones                  | Mecánico genera y gestiona códigos de vinculación.       | 5            |
-| 12        | US-002   | Vinculación de asignación               | Dueño se vincula al mecánico mediante código.            | 3            |
-| 13        | US-018   | Gestión del progreso del mantenimiento  | Mecánico actualiza estados y asocia gastos.              | 5            |
-| 14        | US-017   | Gestión de mantenimientos del dueño     | Visualización detallada de servicios por vehículo.       | 5            |
-| 15        | TS-005   | Registro de métricas en memoria local   | Persistencia de datos en el dispositivo sin conexión.    | 5            |
-| 16        | TS-006   | Sincronización de datos                 | Transferencia de datos local-app al conectar.            | 8            |
-| 17        | TS-007   | Integración con framework IoT           | Envío de datos a la nube para reportes remotos.          | 8            |
-| 18        | US-006   | Sistema de notificaciones interno       | Consulta de estado y alertas de vehículos.               | 3            |
-| 19        | US-026   | Registro de Vehículo                    | Formulario de registro de motos por el dueño.            | 3            |
-| 20        | US-029   | Monitorear contaminación (CO2, etc)     | Medición de gases en tubo de escape y alertas.           | 3            |
-| 21        | US-030   | Detectar impactos estacionado           | Monitoreo de seguridad con moto apagada.                 | 3            |
-| 22        | US-033   | Sección de métricas por vehículo        | Historial de telemetría individual para el mecánico.     | 5            |
-| 23        | US-016   | Gestión de Gastos                       | Registro, vista y eliminación de costos operativos.      | 5            |
-| 24        | US-007   | Alerta de Temperatura Alta              | Notificación por superar umbral máximo.                  | 1            |
-| 25        | US-008   | Alerta de Temperatura Baja              | Notificación por estar bajo el umbral mínimo.            | 1            |
-| 26        | US-009   | Alerta de Humedad Alta                  | Notificación por humedad excesiva.                       | 1            |
-| 27        | US-010   | Alerta de CO2 Alto                      | Notificación por niveles peligrosos de CO2.              | 1            |
-| 28        | US-011   | Alerta de NH3 Alto                      | Notificación por niveles peligrosos de NH3.              | 1            |
-| 29        | US-012   | Alerta de Benceno Alto                  | Notificación por niveles peligrosos de Benceno.          | 1            |
-| 30        | US-013   | Alerta de Presión Baja                  | Notificación preventiva de presión de aire.              | 1            |
-| 31        | US-014   | Alerta de Presión Alta                  | Notificación preventiva de presión de aire.              | 1            |
-| 32        | US-019   | Comparación de vehículos (Motociclista) | Comparar moto propia vs modelos de BD.                   | 8            |
-| 33        | US-020   | Comparación de modelos (Mecánico)       | Herramienta de análisis para recomendar clientes.        | 5            |
-| 34        | US-021   | Evaluación por escenarios de uso        | Puntuaciones por estrellas (tráfico, viajes, etc).       | 3            |
-| 35        | US-022   | Visualización de especificaciones       | Tabla técnica comparativa detallada.                     | 3            |
-| 36        | US-023   | Resumen comparativo con IA              | Generación de narrativa mediante LLM.                    | 8            |
-| 37        | US-027   | Exportación de reporte técnico          | Descarga de especificaciones en formato CSV.             | 3            |
-| 38        | US-024   | Visualización de vehículos              | Lista de motos registradas del dueño.                    | 2            |
-| 39        | US-025   | Visualización de detalles de vehículo   | Ficha técnica completa de la moto.                       | 2            |
-| 40        | TS-010   | Escalabilidad del sistema               | Capacidad de añadir sensores sin cambiar base.           | 5            |
-| 41        | TS-002   | Lectura sensor presión (Técnica)        | Refinamiento de precisión PSI y timestamps.              | 2            |
-| 42        | TS-003   | Lectura sensor temperatura (Técnica)    | Refinamiento de precisión grados Celsius.                | 2            |
-| 43        | TS-004   | Lectura sensor combustible (Técnica)    | Cálculo de L/100km y promedios.                          | 5            |
-| 44        | US-034   | Sección Hero y Call to Action           | Landing Page: Introducción y botones de acceso.          | 2            |
-| 45        | US-035   | Sección de Características              | Landing Page: Tarjetas de beneficios del servicio.       | 2            |
-| 46        | US-036   | Visualización de Planes                 | Landing Page: Tabla de precios y límites.                | 3            |
-| 47        | US-037   | Información de Misión y Visión          | Landing Page: Propósito y videos de YouTube.             | 2            |
-| 48        | US-038   | Presentación del Equipo                 | Landing Page: Perfiles de los desarrolladores.           | 2            |
-| 49        | US-039   | Navegación Global y Footer              | Landing Page: Menú funcional y términos legales.         | 2            |
+| Prioridad | Story ID | Título                                           | Descripción                                                 | Story Points |
+|-----------|----------|--------------------------------------------------|-------------------------------------------------------------|--------------|
+| 1         | US-005   | Autenticación en la aplicación web               | Autenticarse para interactuar con datos de usuario.         | 3            |
+| 2         | US-004   | Creación de perfil para mecánicos                | Registro de mecánicos con selección de suscripción.         | 5            |
+| 3         | US-003   | Creación de perfil para dueños de motocicletas   | Registro de dueños de motocicletas vinculado a un mecánico. | 5            |
+| 4         | TS-008   | Integrar sensores con ModestIoT                  | Integración de hardware usando la librería OctaneDevice.    | 8            |
+| 5         | TS-009   | Arquitectura basada en eventos                   | Lógica de hardware desacoplada mediante eventos.            | 5            |
+| 6         | TS-001   | Uso de polling para detección                    | Mecanismo de lectura periódica de sensores.                 | 5            |
+| 7         | US-028   | Monitorear la temperatura de la moto             | Medición y detección de sobrecalentamiento.                 | 3            |
+| 8         | US-031   | Monitorear la presión de las llantas             | Medición de presión en hPa y alertas de niveles.            | 3            |
+| 9         | US-015   | Alerta de Impacto Detectado                      | Notificación de colisión o golpe en la moto.                | 3            |
+| 10        | US-032   | Visualizar el estado general de la moto          | Dashboard en tiempo real con todos los sensores.            | 5            |
+| 11        | US-001   | Manejo de asignaciones                           | Mecánico genera y gestiona códigos de vinculación.          | 5            |
+| 12        | US-002   | Vinculación de asignación                        | Dueño se vincula al mecánico mediante código.               | 3            |
+| 13        | US-018   | Gestión del progreso del mantenimiento           | Mecánico actualiza estados y asocia gastos.                 | 5            |
+| 14        | US-017   | Gestión de mantenimientos del dueño              | Visualización detallada de servicios por vehículo.          | 5            |
+| 15        | TS-005   | Registro de métricas en memoria local            | Persistencia de datos en el dispositivo sin conexión.       | 5            |
+| 16        | TS-006   | Sincronización de datos                          | Transferencia de datos local-app al conectar.               | 8            |
+| 17        | TS-007   | Integración con framework IoT                    | Envío de datos a la nube para reportes remotos.             | 8            |
+| 18        | US-006   | Sistema de notificaciones interno                | Consulta de estado y alertas de vehículos.                  | 3            |
+| 19        | US-026   | Registro de Vehículo                             | Formulario de registro de motos por el dueño.               | 3            |
+| 20        | US-029   | Monitorear contaminación (CO2, etc)              | Medición de gases en tubo de escape y alertas.              | 3            |
+| 21        | US-030   | Detectar impactos estacionado                    | Monitoreo de seguridad con moto apagada.                    | 3            |
+| 22        | US-033   | Sección de métricas por vehículo                 | Historial de telemetría individual para el mecánico.        | 5            |
+| 23        | US-016   | Gestión de Gastos                                | Registro, vista y eliminación de costos operativos.         | 5            |
+| 24        | US-007   | Alerta de Temperatura Alta                       | Notificación por superar umbral máximo.                     | 1            |
+| 25        | US-008   | Alerta de Temperatura Baja                       | Notificación por estar bajo el umbral mínimo.               | 1            |
+| 26        | US-009   | Alerta de Humedad Alta                           | Notificación por humedad excesiva.                          | 1            |
+| 27        | US-010   | Alerta de CO2 Alto                               | Notificación por niveles peligrosos de CO2.                 | 1            |
+| 28        | US-011   | Alerta de NH3 Alto                               | Notificación por niveles peligrosos de NH3.                 | 1            |
+| 29        | US-012   | Alerta de Benceno Alto                           | Notificación por niveles peligrosos de Benceno.             | 1            |
+| 30        | US-013   | Alerta de Presión Baja                           | Notificación preventiva de presión de aire.                 | 1            |
+| 31        | US-014   | Alerta de Presión Alta                           | Notificación preventiva de presión de aire.                 | 1            |
+| 32        | US-019   | Comparación de vehículos (Dueño de motocicletas) | Comparar moto propia vs modelos de BD.                      | 8            |
+| 33        | US-020   | Comparación de modelos (Mecánico)                | Herramienta de análisis para recomendar clientes.           | 5            |
+| 34        | US-021   | Evaluación por escenarios de uso                 | Puntuaciones por estrellas (tráfico, viajes, etc).          | 3            |
+| 35        | US-022   | Visualización de especificaciones                | Tabla técnica comparativa detallada.                        | 3            |
+| 36        | US-023   | Resumen comparativo con IA                       | Generación de narrativa mediante LLM.                       | 8            |
+| 37        | US-027   | Exportación de reporte técnico                   | Descarga de especificaciones en formato CSV.                | 3            |
+| 38        | US-024   | Visualización de vehículos                       | Lista de motos registradas del dueño.                       | 2            |
+| 39        | US-025   | Visualización de detalles de vehículo            | Ficha técnica completa de la moto.                          | 2            |
+| 40        | TS-010   | Escalabilidad del sistema                        | Capacidad de añadir sensores sin cambiar base.              | 5            |
+| 41        | TS-002   | Lectura sensor presión (Técnica)                 | Refinamiento de precisión PSI y timestamps.                 | 2            |
+| 42        | TS-003   | Lectura sensor temperatura (Técnica)             | Refinamiento de precisión grados Celsius.                   | 2            |
+| 43        | TS-004   | Lectura sensor combustible (Técnica)             | Cálculo de L/100km y promedios.                             | 5            |
+| 44        | US-034   | Sección Hero y Call to Action                    | Landing Page: Introducción y botones de acceso.             | 2            |
+| 45        | US-035   | Sección de Características                       | Landing Page: Tarjetas de beneficios del servicio.          | 2            |
+| 46        | US-036   | Visualización de Planes                          | Landing Page: Tabla de precios y límites.                   | 3            |
+| 47        | US-037   | Información de Misión y Visión                   | Landing Page: Propósito y videos de YouTube.                | 2            |
+| 48        | US-038   | Presentación del Equipo                          | Landing Page: Perfiles de los desarrolladores.              | 2            |
+| 49        | US-039   | Navegación Global y Footer                       | Landing Page: Menú funcional y términos legales.            | 2            |
 
 # Capítulo IV: Strategic-Level Software Design
 
@@ -1174,7 +1176,7 @@ Se busca cambiar el paradigma de mantenimiento de las motocicletas, pasando de u
 
 - **Contribuir a la Seguridad y Reducción de Riesgos en la Conducción**
 
-El diseño de la solución también tiene un impacto relevante en la seguridad vial, al proporcionar alertas tempranas sobre condiciones críticas del vehículo (como sobrecalentamiento o presión de llantas) y detectar impactos, lo que puede ayudar a prevenir accidentes y mejorar la seguridad de los motociclistas. Así mismo, el monitoreo continuo del estado del vehículo contribuye a mantenerlo en condiciones óptimas, reduciendo el riesgo de fallas mecánicas durante la conducción.
+El diseño de la solución también tiene un impacto relevante en la seguridad vial, al proporcionar alertas tempranas sobre condiciones críticas del vehículo (como sobrecalentamiento o presión de llantas) y detectar impactos, lo que puede ayudar a prevenir accidentes y mejorar la seguridad de los dueños de motocicletas. Así mismo, el monitoreo continuo del estado del vehículo contribuye a mantenerlo en condiciones óptimas, reduciendo el riesgo de fallas mecánicas durante la conducción.
 
 ### 4.1.2. Attribute-Driven Design Inputs
 
@@ -1184,7 +1186,7 @@ requisitos funcionales y que tienen impacto sobre la arquitectura de la solució
 
 | Epic / User Story ID | Título                                  | Descripción                                                                                                                                                     | Criterios de Aceptación                                                                                                                                                                                                                                                                                                                                                                   | Relacionado con (Epic ID) |
 |----------------------|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
-| US-006               | Sistema de notificaciones interno       | Como dueño, quiero recibir notificaciones de mis vehículos para conocer su estado                                                                               | Escenario 1:<br>Dado que veo mis vehículos registrados, cuando consulto el estado de un vehículo, entonces el sistema muestra las notificaciones de estado<br><br>Escenario 2:<br>Dado que veo mis vehículos registrados, cuando consulto el estado de un vehículo sin alertas, entonces el sistema muestra "No hay notificaciones para este vehículo"<br>                                | EP-002                    |
+| US-006               | Sistema de notificaciones interno       | Como dueño de motocicletas, quiero recibir notificaciones de mis vehículos para conocer su estado                                                               | Escenario 1:<br>Dado que veo mis vehículos registrados, cuando consulto el estado de un vehículo, entonces el sistema muestra las notificaciones de estado<br><br>Escenario 2:<br>Dado que veo mis vehículos registrados, cuando consulto el estado de un vehículo sin alertas, entonces el sistema muestra "No hay notificaciones para este vehículo"<br>                                | EP-002                    |
 | US-032               | Visualizar el estado general de la moto | Como usuario del dispositivo, quiero visualizar todos los datos del sistema en conjunto, para conocer el estado general del vehículo en tiempo real.            | Escenario 1:  Dado que todos los sensores están activos, cuando el sistema actualiza las lecturas, entonces se muestran simultáneamente temperatura, gases, presión e impactos.<br>Escenario 2: Dado que uno de los sensores falla, cuando ocurre la lectura, entonces el sistema continúa mostrando los demás valores disponibles.                                                       | EP-01                     |
 | US-033               | Sección de métricas por cada vehículo   | Como mecánico, quiero poder acceder a la sección de métricas registradas para cada vehículo para poder analizar las métricas de cada moto de manera individual. | Escenario 1:<br>Dado que veo los vehículos de un cliente, cuando solicito métricas de un vehículo específico, entonces el sistema muestra sus métricas de telemetría<br><br>Escenario 2:<br>Dado que veo los vehículos de un cliente, cuando solicito métricas de un vehículo sin registros, entonces el sistema muestra "No se encontró ninguna métrica relacionada a este vehículo"<br> | EP-001                    |
 | TS-008               | Integrar sensores con ModestIoT         | Como desarrollador del dispositivo, quiero integrar todos los sensores usando ModestIoT, para evitar programación directa del hardware.                         | Escenario 1:<br>Dado que el desarrollador incluye `<ModestIoT.h>`, cuando instancia `OctaneDevice`, entonces todos los sensores quedan registrados automáticamente.<br><br>Escenario 2:<br>Dado que el sistema está en ejecución, cuando ocurre un evento de sensor, entonces este es procesado por `OctaneDevice::on(Event)`.<br>                                                        | EP-008                    |
@@ -1208,7 +1210,7 @@ Los atributos de calidad seleccionados para el diseño de Octane son Performance
 | **Availability (Disponibilidad)** | Usuario / Mecánico | Solicitud de acceso a métricas o historial | Plataforma (Backend + Web + Mobile) | Operación continua (24/7) | El sistema se mantiene disponible y responde a la solicitud | Disponibilidad ≥ 99% mensual |
 
 
-**Scenario:** Cuando un usuario o mecánico intenta acceder a las métricas o historial de mantenimiento a través de la plataforma, el sistema debe estar disponible y responder a la solicitud sin interrupciones, garantizando que los usuarios puedan acceder a la información crítica en cualquier momento.
+**Scenario:** Cuando un dueño de motocicletas o mecánico intenta acceder a las métricas o historial de mantenimiento a través de la plataforma, el sistema debe estar disponible y responder a la solicitud sin interrupciones, garantizando que los usuarios puedan acceder a la información crítica en cualquier momento.
 
 <hr>
 
@@ -1238,7 +1240,7 @@ Los atributos de calidad seleccionados para el diseño de Octane son Performance
 #### 4.1.2.3. Constraints
 En esta sección se incluye la especificación de restricciones, es decir características que no pueden ser negociadas y son impuestas por el cliente o el propio negocio como guía para la elaboración de la solución.
 
-Dado que Octane busca ser una solución accesible tanto para motociclistas como para mecánicos de talleres pequeños, se han identificado restricciones clave que impactan directamente en la arquitectura de la solución. Estas restricciones incluyen la necesidad de integración con dispositivos IoT para la captura de métricas en tiempo real, soporte multiplataforma para acceso desde móviles y web, tolerancia a conectividad intermitente, despliegue en infraestructura cloud para escalabilidad, seguridad de datos mediante autenticación y autorización, bajo costo de implementación para facilitar adopción, procesamiento en tiempo real para monitoreo continuo y persistencia de historial completo de métricas y mantenimientos. Estas restricciones guían el diseño arquitectónico para asegurar que la solución cumpla con los requisitos funcionales y no funcionales necesarios para satisfacer las necesidades del mercado objetivo.
+Dado que Octane busca ser una solución accesible tanto para dueños de motocicletas como para mecánicos de talleres pequeños, se han identificado restricciones clave que impactan directamente en la arquitectura de la solución. Estas restricciones incluyen la necesidad de integración con dispositivos IoT para la captura de métricas en tiempo real, soporte multiplataforma para acceso desde móviles y web, tolerancia a conectividad intermitente, despliegue en infraestructura cloud para escalabilidad, seguridad de datos mediante autenticación y autorización, bajo costo de implementación para facilitar adopción, procesamiento en tiempo real para monitoreo continuo y persistencia de historial completo de métricas y mantenimientos. Estas restricciones guían el diseño arquitectónico para asegurar que la solución cumpla con los requisitos funcionales y no funcionales necesarios para satisfacer las necesidades del mercado objetivo.
 
 Para el diseño de Octane, se han identificado las siguientes restricciones que impactan directamente en la arquitectura de la solución:
 
@@ -1811,7 +1813,7 @@ En este nivel se describe la visión global de la organización Nodrify. El diag
 
 ### 4.3.2. Software Architecture Context Level Diagrams
 
-Este punto detalla el Sistema Octane como una caja negra, centrándose exclusivamente en sus fronteras inmediatas. Describe las relaciones directas de datos y comunicación entre el sistema, los usuarios (Motociclistas y Mecánicos) y las dependencias externas críticas como el hardware IoT y el motor de IA.
+Este punto detalla el Sistema Octane como una caja negra, centrándose exclusivamente en sus fronteras inmediatas. Describe las relaciones directas de datos y comunicación entre el sistema, los usuarios (Dueños de motocicletas y Mecánicos) y las dependencias externas críticas como el hardware IoT y el motor de IA.
 
 ![context-diagram](assets/images/chapter-4/software-architecture/context-diagram.png)
 ![context-diagram-keys](assets/images/chapter-4/software-architecture/context-diagram-keys.png)
@@ -2111,55 +2113,55 @@ El dominio de Reports está centrado en el agregado principal `Report`, que agru
 `Report`
 **Descripción:** Representa un reporte consolidado asociado a un vehículo. Contiene la información del vehículo, las métricas agrupadas en el reporte y la fecha de generación.
 
-| Atributo | Tipo de dato | Visibilidad | Descripción |
-|----------|--------------|-------------|-------------|
-| reportId | Long | Private | Identificador único del reporte. |
-| vehicleId | Long | Private | Identificador del vehículo asociado al reporte. |
-| metrics | List<Metric> | Private | Lista de métricas asociadas al reporte. |
-| reportDate | Date | Private | Fecha en la que se generó el reporte. |
+| Atributo   | Tipo de dato | Visibilidad | Descripción                                     |
+|------------|--------------|-------------|-------------------------------------------------|
+| reportId   | Long         | Private     | Identificador único del reporte.                |
+| vehicleId  | Long         | Private     | Identificador del vehículo asociado al reporte. |
+| metrics    | List<Metric> | Private     | Lista de métricas asociadas al reporte.         |
+| reportDate | Date         | Private     | Fecha en la que se generó el reporte.           |
 
 **Entities**
 
 `Metric`
 **Descripción:** Representa una métrica incluida dentro de un reporte. Puede ser una medición numérica o descriptiva relacionada con el estado del vehículo.
 
-| Atributo | Tipo de dato | Visibilidad | Descripción |
-|----------|--------------|-------------|-------------|
-| metricId | Long | Private | Identificador único de la métrica. |
-| type | MetricType | Private | Tipo de métrica asociada. |
-| metricValue | String | Private | Valor registrado para esta métrica. |
+| Atributo    | Tipo de dato | Visibilidad | Descripción                         |
+|-------------|--------------|-------------|-------------------------------------|
+| metricId    | Long         | Private     | Identificador único de la métrica.  |
+| type        | MetricType   | Private     | Tipo de métrica asociada.           |
+| metricValue | String       | Private     | Valor registrado para esta métrica. |
 
 `MetricType`
 **Descripción:** Define el tipo de una métrica, por ejemplo kilometraje, estado del aceite o temperatura.
 
-| Atributo | Tipo de dato | Visibilidad | Descripción |
-|----------|--------------|-------------|-------------|
-| metricTypeId | Long | Private | Identificador único del tipo de métrica. |
-| metricName | String | Private | Nombre del tipo de métrica. |
-| metricDescription | String | Private | Descripción del tipo de métrica. |
+| Atributo          | Tipo de dato | Visibilidad | Descripción                              |
+|-------------------|--------------|-------------|------------------------------------------|
+| metricTypeId      | Long         | Private     | Identificador único del tipo de métrica. |
+| metricName        | String       | Private     | Nombre del tipo de métrica.              |
+| metricDescription | String       | Private     | Descripción del tipo de métrica.         |
 
 **Queries**
 
 `GetReportByIdQuery <<record>>`
 **Descripción:** Obtiene un reporte específico mediante su identificador único.
 
-| Atributo | Tipo de dato | Descripción |
-|----------|--------------|-------------|
-| reportId | Long | Identificador del reporte a consultar. |
+| Atributo | Tipo de dato | Descripción                            |
+|----------|--------------|----------------------------------------|
+| reportId | Long         | Identificador del reporte a consultar. |
 
 `GetReportByVehicleIdQuery <<record>>`
 **Descripción:** Obtiene todos los reportes asociados a un vehículo específico.
 
-| Atributo | Tipo de dato | Descripción |
-|----------|--------------|-------------|
-| vehicleId | Long | Identificador del vehículo cuyos reportes se desean obtener. |
+| Atributo  | Tipo de dato | Descripción                                                  |
+|-----------|--------------|--------------------------------------------------------------|
+| vehicleId | Long         | Identificador del vehículo cuyos reportes se desean obtener. |
 
 `GetMetricsByReportIdQuery <<record>>`
 **Descripción:** Obtiene todas las métricas pertenecientes a un reporte.
 
-| Atributo | Tipo de dato | Descripción |
-|----------|--------------|-------------|
-| reportId | Long | Identificador del reporte cuyas métricas serán recuperadas. |
+| Atributo | Tipo de dato | Descripción                                                 |
+|----------|--------------|-------------------------------------------------------------|
+| reportId | Long         | Identificador del reporte cuyas métricas serán recuperadas. |
 
 **Services**
 
@@ -2177,31 +2179,31 @@ Este servicio define la puerta de entrada de consultas del bounded context y per
 `ReportController`
 **Descripción:** Controlador REST encargado de manejar las peticiones asociadas a la obtención de reportes y sus métricas.
 
-| Método | Ruta | Descripción |
-|--------|------|-------------|
-| getReportById | GET /api/v1/reports/{reportId} | Obtiene un reporte por su identificador único. |
+| Método                  | Ruta                                    | Descripción                                         |
+|-------------------------|-----------------------------------------|-----------------------------------------------------|
+| getReportById           | GET /api/v1/reports/{reportId}          | Obtiene un reporte por su identificador único.      |
 | getAllReportsForVehicle | GET /api/v1/reports/vehicle/{vehicleId} | Obtiene todos los reportes asociados a un vehículo. |
-| getAllMetricsFromReport | GET /api/v1/reports/{reportId}/metrics | Obtiene todas las métricas asociadas a un reporte. |
+| getAllMetricsFromReport | GET /api/v1/reports/{reportId}/metrics  | Obtiene todas las métricas asociadas a un reporte.  |
 
 **Resources**
 
 `ReportResource <<class>>`
 **Descripción:** Representa la estructura de datos expuesta por la API para describir un reporte consolidado.
 
-| Atributo | Tipo de dato | Descripción |
-|----------|--------------|-------------|
-| reportId | Long | Identificador único del reporte. |
-| vehicleId | Long | Identificador del vehículo asociado al reporte. |
-| reportDate | Date | Fecha de generación del reporte. |
-| metrics | List<Metric> | Lista de métricas asociadas al reporte. |
+| Atributo   | Tipo de dato | Descripción                                     |
+|------------|--------------|-------------------------------------------------|
+| reportId   | Long         | Identificador único del reporte.                |
+| vehicleId  | Long         | Identificador del vehículo asociado al reporte. |
+| reportDate | Date         | Fecha de generación del reporte.                |
+| metrics    | List<Metric> | Lista de métricas asociadas al reporte.         |
 
 **Assemblers**
 
 `ReportResourceFromEntityAssembler`
 **Descripción:** Ensamblador encargado de transformar una entidad `Report` del dominio en un recurso REST `ReportResource`.
 
-| Método | Descripción |
-|--------|-------------|
+| Método                    | Descripción                                                      |
+|---------------------------|------------------------------------------------------------------|
 | fromEntity(Report report) | Transforma una entidad del agregado `Report` en un recurso REST. |
 
 ### 5.2.3. Application Layer
@@ -2209,10 +2211,10 @@ Este servicio define la puerta de entrada de consultas del bounded context y per
 `ReportQueryServiceImpl`
 **Descripción:** Implementación del servicio de consultas `ReportQueryService`, responsable de recuperar reportes y métricas desde la capa de persistencia mediante consultas especializadas.
 
-| Método | Descripción |
-|--------|-------------|
-| handle(GetReportByIdQuery) | Obtiene un reporte por su identificador único. |
-| handle(GetReportByVehicleIdQuery) | Obtiene todos los reportes asociados a un vehículo por su id. |
+| Método                            | Descripción                                                        |
+|-----------------------------------|--------------------------------------------------------------------|
+| handle(GetReportByIdQuery)        | Obtiene un reporte por su identificador único.                     |
+| handle(GetReportByVehicleIdQuery) | Obtiene todos los reportes asociados a un vehículo por su id.      |
 | handle(GetMetricsByReportIdQuery) | Obtiene todas las métricas relacionadas con un reporte específico. |
 
 **Comportamiento observado en la implementación heredada**
@@ -2225,10 +2227,10 @@ Este servicio define la puerta de entrada de consultas del bounded context y per
 `ApplicationReadyEventHandler`
 **Descripción:** Componente ejecutado automáticamente al iniciar la aplicación. Se encarga de inicializar el sistema con valores por defecto para los tipos de métricas.
 
-| Método | Descripción |
-|--------|-------------|
+| Método                                    | Descripción                                                                           |
+|-------------------------------------------|---------------------------------------------------------------------------------------|
 | onApplicationEvent(ApplicationReadyEvent) | Registra valores iniciales para los tipos de métricas si la base de datos está vacía. |
-| currentTimestamp() | Devuelve el timestamp actual para propósitos de registro en logs. |
+| currentTimestamp()                        | Devuelve el timestamp actual para propósitos de registro en logs.                     |
 
 ### 5.2.4. Infrastructure Layer
 
@@ -2237,16 +2239,16 @@ Este servicio define la puerta de entrada de consultas del bounded context y per
 `ReportRepository`
 **Descripción:** Repositorio JPA encargado de las operaciones de persistencia del agregado `Report`.
 
-| Método | Tipo de retorno | Descripción |
-|--------|-----------------|-------------|
-| findByVehicleId(Long vehicleId) | List<Report> | Recupera todos los reportes asociados a un vehículo por su id. |
+| Método                          | Tipo de retorno | Descripción                                                    |
+|---------------------------------|-----------------|----------------------------------------------------------------|
+| findByVehicleId(Long vehicleId) | List<Report>    | Recupera todos los reportes asociados a un vehículo por su id. |
 
 `MetricTypeRepository`
 **Descripción:** Repositorio JPA utilizado para gestionar la persistencia de los tipos de métricas (`MetricType`).
 
-| Método | Tipo de retorno | Descripción |
-|--------|-----------------|-------------|
-| Hereda métodos de JpaRepository | Varía | Permite realizar operaciones CRUD sobre los tipos de métricas. |
+| Método                          | Tipo de retorno | Descripción                                                    |
+|---------------------------------|-----------------|----------------------------------------------------------------|
+| Hereda métodos de JpaRepository | Varía           | Permite realizar operaciones CRUD sobre los tipos de métricas. |
 
 **Rol arquitectónico**
 
@@ -2277,33 +2279,33 @@ El bounded context **Assignments** administra la relación entre un propietario,
 `Assignment`
 **Descripción:** Agregado raíz que representa la asignación de un propietario a un mecánico. Centraliza el estado, el tipo y el código único de la asignación.
 
-| Atributos | Tipo de dato | Visibilidad | Descripción |
-|----------|--------------|-------------|-------------|
-| id | Long | Private | Identificador único de la asignación. |
-| ownerId | Long | Private | Identificador del propietario vinculado. Puede ser nulo mientras la asignación está pendiente. |
-| mechanic | Mechanic | Private | Mecánico responsable de la asignación. |
-| status | AssignmentStatus | Private | Estado de la asignación. |
-| type | AssignmentType | Private | Tipo funcional de la asignación. |
-| assignmentCode | AssignmentCode | Private | Código único usado para identificar y reclamar la asignación. |
+| Atributos      | Tipo de dato     | Visibilidad | Descripción                                                                                    |
+|----------------|------------------|-------------|------------------------------------------------------------------------------------------------|
+| id             | Long             | Private     | Identificador único de la asignación.                                                          |
+| ownerId        | Long             | Private     | Identificador del propietario vinculado. Puede ser nulo mientras la asignación está pendiente. |
+| mechanic       | Mechanic         | Private     | Mecánico responsable de la asignación.                                                         |
+| status         | AssignmentStatus | Private     | Estado de la asignación.                                                                       |
+| type           | AssignmentType   | Private     | Tipo funcional de la asignación.                                                               |
+| assignmentCode | AssignmentCode   | Private     | Código único usado para identificar y reclamar la asignación.                                  |
 
 `Mechanic`
 **Descripción:** Agregado raíz que representa al mecánico registrado en el sistema. Agrupa su perfil, sus asignaciones y su membresía.
 
-| Atributos | Tipo de dato | Visibilidad | Descripción |
-|----------|--------------|-------------|-------------|
-| id | Long | Private | Identificador único del mecánico. |
-| profile | Profile | Private | Perfil base asociado al mecánico. |
-| assignments | List<Assignment> | Private | Lista de asignaciones relacionadas al mecánico. |
-| membershipType | MembershipType | Private | Nivel de membresía del mecánico. |
+| Atributos      | Tipo de dato     | Visibilidad | Descripción                                     |
+|----------------|------------------|-------------|-------------------------------------------------|
+| id             | Long             | Private     | Identificador único del mecánico.               |
+| profile        | Profile          | Private     | Perfil base asociado al mecánico.               |
+| assignments    | List<Assignment> | Private     | Lista de asignaciones relacionadas al mecánico. |
+| membershipType | MembershipType   | Private     | Nivel de membresía del mecánico.                |
 
 **Value Objects**
 
 `AssignmentCode`
 **Descripción:** Valor embebido que garantiza un código alfanumérico único de 9 caracteres para una asignación.
 
-| Atributo | Tipo de dato | Visibilidad | Descripción |
-|----------|--------------|-------------|-------------|
-| code | String | Private | Código de la asignación. |
+| Atributo | Tipo de dato | Visibilidad | Descripción              |
+|----------|--------------|-------------|--------------------------|
+| code     | String       | Private     | Código de la asignación. |
 
 `AssignmentStatus`
 **Descripción:** Estado de una asignación.
@@ -2371,36 +2373,36 @@ La capa de interfaz expone varias rutas REST porque Assignments resuelve distint
 `AssignmentController`
 **Descripción:** Controlador principal para administrar asignaciones.
 
-| Método | Ruta | Descripción |
-|--------|------|-------------|
-| updateAssignmentStatus() | PATCH /api/v1/assignments/{assignmentId}/status | Actualiza el estado de una asignación. |
-| updateAssignmentType() | PATCH /api/v1/assignments/{assignmentId}/type | Actualiza el tipo de una asignación. |
-| getAssignmentById() | GET /api/v1/assignments/{assignmentId} | Recupera una asignación por su ID. |
+| Método                    | Ruta                                                                   | Descripción                                    |
+|---------------------------|------------------------------------------------------------------------|------------------------------------------------|
+| updateAssignmentStatus()  | PATCH /api/v1/assignments/{assignmentId}/status                        | Actualiza el estado de una asignación.         |
+| updateAssignmentType()    | PATCH /api/v1/assignments/{assignmentId}/type                          | Actualiza el tipo de una asignación.           |
+| getAssignmentById()       | GET /api/v1/assignments/{assignmentId}                                 | Recupera una asignación por su ID.             |
 | assignOwnerToAssignment() | PATCH /api/v1/assignments/code/{assignmentCode}/assign-owner/{ownerId} | Reclama una asignación y la asocia a un owner. |
-| deleteAssignment() | DELETE /api/v1/assignments/{assignmentId} | Elimina una asignación pendiente. |
-| getAssignmentByCode() | GET /api/v1/assignments/code/{assignmentCode} | Recupera una asignación por su código. |
+| deleteAssignment()        | DELETE /api/v1/assignments/{assignmentId}                              | Elimina una asignación pendiente.              |
+| getAssignmentByCode()     | GET /api/v1/assignments/code/{assignmentCode}                          | Recupera una asignación por su código.         |
 
 `MechanicController`
 **Descripción:** Controlador para gestionar información del mecánico.
 
-| Método | Ruta | Descripción |
-|--------|------|-------------|
-| getOwnersForMechanic() | GET /api/v1/mechanic/{mechanicId}/owners | Devuelve los owners activos asociados a las asignaciones del mecánico. |
-| updateMechanicMembershipType() | PUT /api/v1/mechanic/{mechanicId}/membership | Actualiza el nivel de membresía del mecánico. |
+| Método                         | Ruta                                         | Descripción                                                            |
+|--------------------------------|----------------------------------------------|------------------------------------------------------------------------|
+| getOwnersForMechanic()         | GET /api/v1/mechanic/{mechanicId}/owners     | Devuelve los owners activos asociados a las asignaciones del mecánico. |
+| updateMechanicMembershipType() | PUT /api/v1/mechanic/{mechanicId}/membership | Actualiza el nivel de membresía del mecánico.                          |
 
 `MechanicAssigmentController`
 **Descripción:** Controlador de apoyo para listar y crear asignaciones desde la perspectiva del mecánico.
 
-| Método | Ruta | Descripción |
-|--------|------|-------------|
-| getAssignments() | GET /api/v1/mechanic/{mechanicId}/assignments/{status} | Lista las asignaciones del mecánico filtradas por estado. |
-| createAssignment() | POST /api/v1/mechanic/{mechanicId}/assignments | Crea una nueva asignación asociada al mecánico. |
+| Método             | Ruta                                                   | Descripción                                               |
+|--------------------|--------------------------------------------------------|-----------------------------------------------------------|
+| getAssignments()   | GET /api/v1/mechanic/{mechanicId}/assignments/{status} | Lista las asignaciones del mecánico filtradas por estado. |
+| createAssignment() | POST /api/v1/mechanic/{mechanicId}/assignments         | Crea una nueva asignación asociada al mecánico.           |
 
 `OwnerAssigmentController`
 **Descripción:** Controlador de apoyo para consultar la asignación vigente de un owner.
 
-| Método | Ruta | Descripción |
-|--------|------|-------------|
+| Método          | Ruta                                   | Descripción                                     |
+|-----------------|----------------------------------------|-------------------------------------------------|
 | getAssignment() | GET /api/v1/owner/{ownerId}/assignment | Obtiene la asignación activa asociada al owner. |
 
 **Resources**
@@ -2408,41 +2410,41 @@ La capa de interfaz expone varias rutas REST porque Assignments resuelve distint
 `AssignmentResource <<record>>`
 **Descripción:** Recurso de salida que representa una asignación ya enriquecida con owner y mecánico.
 
-| Campo | Tipo de dato | Descripción |
-|-------|--------------|-------------|
-| id | Long | Identificador de la asignación. |
-| owner | OwnerResource | Información del propietario, cuando está disponible. |
-| mechanic | MechanicResource | Información del mecánico asociado. |
-| type | String | Tipo de asignación. |
-| status | String | Estado de la asignación. |
-| assignmentCode | String | Código único de la asignación. |
-| createdAt | Date | Fecha de creación del registro. |
+| Campo          | Tipo de dato     | Descripción                                          |
+|----------------|------------------|------------------------------------------------------|
+| id             | Long             | Identificador de la asignación.                      |
+| owner          | OwnerResource    | Información del propietario, cuando está disponible. |
+| mechanic       | MechanicResource | Información del mecánico asociado.                   |
+| type           | String           | Tipo de asignación.                                  |
+| status         | String           | Estado de la asignación.                             |
+| assignmentCode | String           | Código único de la asignación.                       |
+| createdAt      | Date             | Fecha de creación del registro.                      |
 
 `MechanicResource <<record>>`
 **Descripción:** Recurso de salida para el mecánico.
 
-| Campo | Tipo de dato | Descripción |
-|-------|--------------|-------------|
-| mechanicId | Long | Identificador del mecánico. |
-| completeName | String | Nombre completo del mecánico. |
-| membershipType | MembershipType | Nivel de membresía. |
+| Campo          | Tipo de dato   | Descripción                   |
+|----------------|----------------|-------------------------------|
+| mechanicId     | Long           | Identificador del mecánico.   |
+| completeName   | String         | Nombre completo del mecánico. |
+| membershipType | MembershipType | Nivel de membresía.           |
 
 `UpdateAssignmentStatusResource <<record>>`
 
-| Campo | Tipo de dato | Descripción |
-|-------|--------------|-------------|
-| status | String | Nuevo estado de la asignación. |
+| Campo  | Tipo de dato | Descripción                    |
+|--------|--------------|--------------------------------|
+| status | String       | Nuevo estado de la asignación. |
 
 `UpdateAssignmentTypeResource <<record>>`
 
-| Campo | Tipo de dato | Descripción |
-|-------|--------------|-------------|
-| type | String | Nuevo tipo de asignación. |
+| Campo | Tipo de dato | Descripción               |
+|-------|--------------|---------------------------|
+| type  | String       | Nuevo tipo de asignación. |
 
 `UpdateMechanicMembershipTypeResource <<record>>`
 
-| Campo | Tipo de dato | Descripción |
-|-------|--------------|-------------|
+| Campo          | Tipo de dato   | Descripción                            |
+|----------------|----------------|----------------------------------------|
 | membershipType | MembershipType | Nuevo nivel de membresía del mecánico. |
 
 **Assemblers**
@@ -2459,13 +2461,13 @@ La capa de interfaz expone varias rutas REST porque Assignments resuelve distint
 `AssignmentCommandServiceImpl`
 **Descripción:** Implementación del servicio de comandos de asignaciones. Este servicio centraliza las reglas de escritura del contexto.
 
-| Método | Descripción |
-|--------|-------------|
-| handle(CreateAssignmentCommand) | Crea una asignación nueva con código aleatorio único y la asocia a un mecánico existente. |
-| handle(UpdateAssignmentStatusCommand) | Actualiza el estado de una asignación existente. |
-| handle(UpdateAssignmentTypeCommand) | Actualiza el tipo de una asignación existente. |
-| handle(AssignOwnerToAssignmentCommand) | Asocia un owner a una asignación por código y la marca como `ACTIVE`. |
-| handle(DeleteAssignmentCommand) | Elimina una asignación solo si sigue en estado `PENDING`. |
+| Método                                 | Descripción                                                                               |
+|----------------------------------------|-------------------------------------------------------------------------------------------|
+| handle(CreateAssignmentCommand)        | Crea una asignación nueva con código aleatorio único y la asocia a un mecánico existente. |
+| handle(UpdateAssignmentStatusCommand)  | Actualiza el estado de una asignación existente.                                          |
+| handle(UpdateAssignmentTypeCommand)    | Actualiza el tipo de una asignación existente.                                            |
+| handle(AssignOwnerToAssignmentCommand) | Asocia un owner a una asignación por código y la marca como `ACTIVE`.                     |
+| handle(DeleteAssignmentCommand)        | Elimina una asignación solo si sigue en estado `PENDING`.                                 |
 
 **Comportamiento relevante**
 
@@ -2478,27 +2480,27 @@ La capa de interfaz expone varias rutas REST porque Assignments resuelve distint
 `MechanicCommandServiceImpl`
 **Descripción:** Implementación del servicio de comandos de mecánicos.
 
-| Método | Descripción |
-|--------|-------------|
-| handle(CreateMechanicCommand) | Crea un mecánico a partir de un perfil existente. |
-| handle(UpdateMechanicMembershipTypeCommand) | Actualiza la membresía del mecánico. |
+| Método                                      | Descripción                                       |
+|---------------------------------------------|---------------------------------------------------|
+| handle(CreateMechanicCommand)               | Crea un mecánico a partir de un perfil existente. |
+| handle(UpdateMechanicMembershipTypeCommand) | Actualiza la membresía del mecánico.              |
 
 `AssignmentQueryServiceImpl`
 **Descripción:** Implementación del servicio de consultas para asignaciones.
 
-| Método | Descripción |
-|--------|-------------|
-| handle(GetAssignmentByOwnerIdQuery) | Recupera la asignación activa de un owner. |
+| Método                                           | Descripción                                                                                      |
+|--------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| handle(GetAssignmentByOwnerIdQuery)              | Recupera la asignación activa de un owner.                                                       |
 | handle(GetAssignmentsByMechanicIdAndStatusQuery) | Recupera las asignaciones de un mecánico filtradas por estado y ordenadas por fecha descendente. |
-| handle(GetAssignmentByIdQuery) | Recupera una asignación por su identificador. |
-| handle(GetAssigmentByCodeQuery) | Recupera una asignación por su código. |
-| handle(GetAssignmentByVehicleIdQuery) | Recupera la asignación vinculada a un vehículo. |
+| handle(GetAssignmentByIdQuery)                   | Recupera una asignación por su identificador.                                                    |
+| handle(GetAssigmentByCodeQuery)                  | Recupera una asignación por su código.                                                           |
+| handle(GetAssignmentByVehicleIdQuery)            | Recupera la asignación vinculada a un vehículo.                                                  |
 
 `MechanicQueryServiceImpl`
 **Descripción:** Implementación del servicio de consultas para mecánicos.
 
-| Método | Descripción |
-|--------|-------------|
+| Método                       | Descripción                                |
+|------------------------------|--------------------------------------------|
 | handle(GetMechanicByIdQuery) | Recupera un mecánico por su identificador. |
 
 ### 5.3.4. Infrastructure Layer
@@ -2793,15 +2795,15 @@ Este bounded context combina persistencia propia con integración transversal. S
 
 Descripción: Representa una métrica completa de bienestar registrada por un vehículo.
 
-|Atributo|Tipo|Descripción|
-|-|-|-|
-|vehicleId|Long|Identificador único del vehículo que registra la métrica|
-|coordinates|Coordinates (Enum)|Ubicación geográfica donde se tomó la medición|
-|airQuality|AirQuality (Enum)|Medición de la calidad del aire en el entorno|
-|environmentalConditions|	EnvironmentalConditions (Enum)|Condiciones |ambientales generales registradas|
-|atmosphericPressure|	AtmosphericPressure (Enum)|	Nivel de presión atmosférica medido|
-|statusImpact|	StatusImpact (Enum)|	Indicador del impacto en el estado del sistema|
-|registeredAt|	LocalDateTime|	Fecha y hora en que se registró la métrica|
+| Atributo                | Tipo                            | Descripción                                              |
+|-------------------------|---------------------------------|----------------------------------------------------------|
+| vehicleId               | Long                            | Identificador único del vehículo que registra la métrica |
+| coordinates             | Coordinates (Enum)              | Ubicación geográfica donde se tomó la medición           |
+| airQuality              | AirQuality (Enum)               | Medición de la calidad del aire en el entorno            |
+| environmentalConditions | 	EnvironmentalConditions (Enum) | Condiciones                                              |ambientales generales registradas|
+| atmosphericPressure     | 	AtmosphericPressure (Enum)     | 	Nivel de presión atmosférica medido                     |
+| statusImpact            | 	StatusImpact (Enum)            | 	Indicador del impacto en el estado del sistema          |
+| registeredAt            | 	LocalDateTime                  | 	Fecha y hora en que se registró la métrica              |
 
 **Value Objects**
 
@@ -2896,52 +2898,52 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 **Controllers:**
 *Controlador: WellnessMetricsController*
 
-|Título|	Wellness Metrics Controller|
-|-|-|
-|Descripción|	Controlador REST que gestiona las operaciones de creación, consulta y recuperación de métricas de bienestar de los vehículos.|
+| Título      | 	Wellness Metrics Controller                                                                                                   |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Descripción | 	Controlador REST que gestiona las operaciones de creación, consulta y recuperación de métricas de bienestar de los vehículos. |
 
-|Método|	Ruta|	Descripción|
-|-|-|-|
-|createWellnessMetric|	POST /api/v1/metrics|	Crea una nueva métrica de bienestar para un vehículo|
-|updateWellnessMetric|	PUT /api/v1/metrics/{id}|	Actualiza una métrica de bienestar existente|
-|deleteWellnessMetric|	DELETE /api/v1/metrics/{id}|	Elimina una métrica de bienestar por su ID|
-|getWellnessMetricById|	GET /api/v1/metrics/{id}|	Recupera una métrica de bienestar específica por su ID|
-|getAllWellnessMetrics|	GET /api/v1/metrics|	Recupera todas las métricas de bienestar disponibles|
-|getWellnessMetricsByVehicleId|	GET /api/v1/metrics/vehicle/{vehicleId}|	Recupera todas las métricas de bienestar para un vehículo específico|
+| Método                        | 	Ruta                                    | 	Descripción                                                          |
+|-------------------------------|------------------------------------------|-----------------------------------------------------------------------|
+| createWellnessMetric          | 	POST /api/v1/metrics                    | 	Crea una nueva métrica de bienestar para un vehículo                 |
+| updateWellnessMetric          | 	PUT /api/v1/metrics/{id}                | 	Actualiza una métrica de bienestar existente                         |
+| deleteWellnessMetric          | 	DELETE /api/v1/metrics/{id}             | 	Elimina una métrica de bienestar por su ID                           |
+| getWellnessMetricById         | 	GET /api/v1/metrics/{id}                | 	Recupera una métrica de bienestar específica por su ID               |
+| getAllWellnessMetrics         | 	GET /api/v1/metrics                     | 	Recupera todas las métricas de bienestar disponibles                 |
+| getWellnessMetricsByVehicleId | 	GET /api/v1/metrics/vehicle/{vehicleId} | 	Recupera todas las métricas de bienestar para un vehículo específico |
 
 *Controlador: Notifications Controller*
 
-|Título|	Notifications Controller|
-|-|-|
-|Descripción|	Controlador REST que gestiona las operaciones de creación, consulta y recuperación de las notificaciones de los vehículos.|
+| Título      | 	Notifications Controller                                                                                                   |
+|-------------|-----------------------------------------------------------------------------------------------------------------------------|
+| Descripción | 	Controlador REST que gestiona las operaciones de creación, consulta y recuperación de las notificaciones de los vehículos. |
 
-|Método|	Ruta|	Descripción|
-|-|-|-|
-|createNotification|	POST /api/v1/notifications|	Crea una nueva notificación en el sistema|
-|getNotificationById|	GET /api/v1/notifications/{id}|	Recupera una notificación específica por su ID|
-|getAllNotifications|	GET /api/v1/notifications|	Recupera todas las notificaciones del sistema|
-|getNotificationsByVehicleId|	GET /api/v1/notifications/vehicle/{vehicleId}|	Recupera todas las notificaciones para un vehículo específico|
-|markNotificationAsRead|	GET /api/v1/notifications/{id}/read|	Marca una notificación como leída|
+| Método                      | 	Ruta                                          | 	Descripción                                                   |
+|-----------------------------|------------------------------------------------|----------------------------------------------------------------|
+| createNotification          | 	POST /api/v1/notifications                    | 	Crea una nueva notificación en el sistema                     |
+| getNotificationById         | 	GET /api/v1/notifications/{id}                | 	Recupera una notificación específica por su ID                |
+| getAllNotifications         | 	GET /api/v1/notifications                     | 	Recupera todas las notificaciones del sistema                 |
+| getNotificationsByVehicleId | 	GET /api/v1/notifications/vehicle/{vehicleId} | 	Recupera todas las notificaciones para un vehículo específico |
+| markNotificationAsRead      | 	GET /api/v1/notifications/{id}/read           | 	Marca una notificación como leída                             |
 
 **Transforms:**
 
-|Transform|	Descripción|
-|-|-|
-|CreateNotificationCommandFromResourceAssembler|	Convierte los recursos de entrada en comandos para crear notificaciones|
-|CreateWellnessMetricCommandFromResourceAssembler|	Transforma los recursos de entrada en comandos para crear métricas de bienestar|
-|NotificationResourceFromEntityAssembler|	Convierte entidades de notificación en recursos de respuesta para la API|
-|UpdateWellnessMetricCommandFromResourceAssembler|	Transforma los recursos de actualización en comandos para modificar métricas|
-|WellnessMetricResourceFromEntityAssembler|	Convierte entidades de métricas de bienestar en recursos de respuesta para la API|
+| Transform                                        | 	Descripción                                                                       |
+|--------------------------------------------------|------------------------------------------------------------------------------------|
+| CreateNotificationCommandFromResourceAssembler   | 	Convierte los recursos de entrada en comandos para crear notificaciones           |
+| CreateWellnessMetricCommandFromResourceAssembler | 	Transforma los recursos de entrada en comandos para crear métricas de bienestar   |
+| NotificationResourceFromEntityAssembler          | 	Convierte entidades de notificación en recursos de respuesta para la API          |
+| UpdateWellnessMetricCommandFromResourceAssembler | 	Transforma los recursos de actualización en comandos para modificar métricas      |
+| WellnessMetricResourceFromEntityAssembler        | 	Convierte entidades de métricas de bienestar en recursos de respuesta para la API |
 
 **Resources:**
 
-|Resource|	Descripción|
-|-|-|
-|CreateMetricResource|	Estructura de datos para la creación de nuevas métricas en el sistema|
-|CreateWellnessMetricResource|	Modelo de datos para solicitudes de creación de métricas de bienestar|
-|NotificationResource|	Representación de notificaciones en las respuestas de la API|
-|UpdateWellnessMetricResource|	Estructura de datos para actualizar métricas de bienestar existentes|
-|WellnessMetricResource|	Representación de métricas de bienestar en las respuestas de la API|
+| Resource                     | 	Descripción                                                           |
+|------------------------------|------------------------------------------------------------------------|
+| CreateMetricResource         | 	Estructura de datos para la creación de nuevas métricas en el sistema |
+| CreateWellnessMetricResource | 	Modelo de datos para solicitudes de creación de métricas de bienestar |
+| NotificationResource         | 	Representación de notificaciones en las respuestas de la API          |
+| UpdateWellnessMetricResource | 	Estructura de datos para actualizar métricas de bienestar existentes  |
+| WellnessMetricResource       | 	Representación de métricas de bienestar en las respuestas de la API   |
 
 **ACL:**
 
@@ -2954,32 +2956,32 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 
 *Clase: NotificationCommandServiceImpl*
 
-|Título|	NotificationCommandServiceImpl|
-|-|-|
-|Descripción|	Servicio que gestiona las operaciones de escritura y modificación de notificaciones en el sistema|
+| Título      | 	NotificationCommandServiceImpl                                                                    |
+|-------------|----------------------------------------------------------------------------------------------------|
+| Descripción | 	Servicio que gestiona las operaciones de escritura y modificación de notificaciones en el sistema |
 
-|Método|	Descripción|
-|-|-|
-|handle(CreateNotificationCommand createNotificationCommand)|	Procesa la creación de una nueva notificación en el sistema|
-|handle(MarkNotificationAsReadCommand command)|	Maneja la marcación de una notificación como leída|
+| Método                                                      | 	Descripción                                                 |
+|-------------------------------------------------------------|--------------------------------------------------------------|
+| handle(CreateNotificationCommand createNotificationCommand) | 	Procesa la creación de una nueva notificación en el sistema |
+| handle(MarkNotificationAsReadCommand command)               | 	Maneja la marcación de una notificación como leída          |
 
 **Dependencias:**
 
-|Dependencia|	Descripción|
-|-|-|
-|NotificationRepository|	Repositorio para acceder y gestionar los datos de notificaciones|
-|ExternalVehiclesService|	Servicio externo para obtener información de vehículos|
+| Dependencia             | 	Descripción                                                      |
+|-------------------------|-------------------------------------------------------------------|
+| NotificationRepository  | 	Repositorio para acceder y gestionar los datos de notificaciones |
+| ExternalVehiclesService | 	Servicio externo para obtener información de vehículos           |
 
 *Clase: WellnessMetricCommandServiceImpl*
 |Título	|WellnessMetricCommandServiceImpl|
 |-|-|
 |Descripción|	Servicio que maneja las operaciones de modificación de métricas de bienestar|
 
-|Método|	Descripción|
-|-|-|
-|handle(CreateWellnessMetricCommand createWellnessMetricCommand)|	Procesa la creación de nuevas métricas de bienestar|
-|handle(UpdateWellnessMetricCommand updateWellnessMetricCommand)|	Maneja la actualización de métricas de bienestar existentes|
-|handle(DeleteWellnessMetricCommand deleteWellnessMetricCommand)	|Gestiona la eliminación de métricas de bienestar|
+| Método                                                           | 	Descripción                                                 |
+|------------------------------------------------------------------|--------------------------------------------------------------|
+| handle(CreateWellnessMetricCommand createWellnessMetricCommand)  | 	Procesa la creación de nuevas métricas de bienestar         |
+| handle(UpdateWellnessMetricCommand updateWellnessMetricCommand)  | 	Maneja la actualización de métricas de bienestar existentes |
+| handle(DeleteWellnessMetricCommand deleteWellnessMetricCommand)	 | Gestiona la eliminación de métricas de bienestar             |
 
 **Dependencias:**
 |Dependencia|	Descripción|
@@ -2992,33 +2994,33 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 
 *Clase: NotificationQueryServiceImpl*
 
-|Título|	NotificationQueryServiceImpl|
-|-|-|
-|Descripción|	Servicio especializado en consultas y recuperación de notificaciones|
+| Título      | 	NotificationQueryServiceImpl                                         |
+|-------------|-----------------------------------------------------------------------|
+| Descripción | 	Servicio especializado en consultas y recuperación de notificaciones |
 
-|Método|	Descripción|
-|-|-|
-|handle(GetNotificationByIdQuery getNotificationByIdQuery)|	Recupera una notificación específica por su identificador|
-|handle(GetAllNotificationsQuery getAllNotificationsQuery)|	Obtiene todas las notificaciones del sistema|
-|handle(GetNotificationsByVehicleIdQuery getNotificationsByVehicleIdQuery)|	Consulta las notificaciones asociadas a un vehículo específico|
+| Método                                                                    | 	Descripción                                                    |
+|---------------------------------------------------------------------------|-----------------------------------------------------------------|
+| handle(GetNotificationByIdQuery getNotificationByIdQuery)                 | 	Recupera una notificación específica por su identificador      |
+| handle(GetAllNotificationsQuery getAllNotificationsQuery)                 | 	Obtiene todas las notificaciones del sistema                   |
+| handle(GetNotificationsByVehicleIdQuery getNotificationsByVehicleIdQuery) | 	Consulta las notificaciones asociadas a un vehículo específico |
 
 **Dependencias:**
 
-|Dependencia|	Descripción|
-|-|-|
-NotificationRepository|	Repositorio para acceder a los datos de notificaciones|
+| Dependencia            | 	Descripción                                            |
+|------------------------|---------------------------------------------------------|
+| NotificationRepository | 	Repositorio para acceder a los datos de notificaciones |
 
 *Clase: WellnessMetricQueryServiceImpl*
 
-|Título|	WellnessMetricQueryServiceImpl|
-|-|-|
-|Descripción|	Servicio que maneja las consultas de métricas de bienestar|
+| Título      | 	WellnessMetricQueryServiceImpl                             |
+|-------------|-------------------------------------------------------------|
+| Descripción | 	Servicio que maneja las consultas de métricas de bienestar |
 
-|Método|	Descripción|
-|-|-|
-|handle(GetWellnessMetricByIdQuery getWellnessMetricByIdQuery)|	Obtiene una métrica de bienestar específica por su ID|
-|handle(GetAllWellnessMetricsQuery getAllWellnessMetricsQuery)|	Recupera todas las métricas de bienestar disponibles
-|handle(GetWellnessMetricsByVehicleIdQuery| getWellnessMetricsByVehicleIdQuery)	Consulta las métricas de bienestar de un vehículo específico|
+| Método                                                        | 	Descripción                                                                                     |
+|---------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| handle(GetWellnessMetricByIdQuery getWellnessMetricByIdQuery) | 	Obtiene una métrica de bienestar específica por su ID                                           |
+| handle(GetAllWellnessMetricsQuery getAllWellnessMetricsQuery) | 	Recupera todas las métricas de bienestar disponibles                                            |
+| handle(GetWellnessMetricsByVehicleIdQuery                     | getWellnessMetricsByVehicleIdQuery)	Consulta las métricas de bienestar de un vehículo específico |
 
 **Dependencias:**
 |Dependencia|	Descripción|
@@ -3029,36 +3031,36 @@ NotificationRepository|	Repositorio para acceder a los datos de notificaciones|
 
 *Clase: WellnessAlertEventHandler*
 
-|Título|	WellnessAlertEventHandler|
-|-|-|
-|Descripción|	Manejador de eventos relacionados con alertas del sistema de bienestar|
+| Título      | 	WellnessAlertEventHandler                                              |
+|-------------|-------------------------------------------------------------------------|
+| Descripción | 	Manejador de eventos relacionados con alertas del sistema de bienestar |
 
-|Método|	Descripción|
-|-|-|
-|on(AirQualityAlertEvent event)|	Procesa eventos de alerta relacionados con la calidad del aire|
-|on(AtmosphericPressureAlertEvent event)|	Maneja eventos de alerta por presión atmosférica|
-|on(EnvironmentalConditionAlertEvent event)|	Gestiona eventos de alerta por condiciones ambientales|
-|on(StatusImpactAlertEvent event)|	Procesa eventos de alerta por impacto en el estado del sistema|
+| Método                                     | 	Descripción                                                    |
+|--------------------------------------------|-----------------------------------------------------------------|
+| on(AirQualityAlertEvent event)             | 	Procesa eventos de alerta relacionados con la calidad del aire |
+| on(AtmosphericPressureAlertEvent event)    | 	Maneja eventos de alerta por presión atmosférica               |
+| on(EnvironmentalConditionAlertEvent event) | 	Gestiona eventos de alerta por condiciones ambientales         |
+| on(StatusImpactAlertEvent event)           | 	Procesa eventos de alerta por impacto en el estado del sistema |
 
 **Dependencias:**
 
-|Dependencia|	Descripción|
-|-|-|
-|NotificationCommandService|	Servicio para crear notificaciones de alerta|
-|NotificationQueryService|	Servicio para consultar notificaciones existentes|
-|WellnessWebSocketController|	Controlador para enviar alertas en tiempo real|
+| Dependencia                 | 	Descripción                                       |
+|-----------------------------|----------------------------------------------------|
+| NotificationCommandService  | 	Servicio para crear notificaciones de alerta      |
+| NotificationQueryService    | 	Servicio para consultar notificaciones existentes |
+| WellnessWebSocketController | 	Controlador para enviar alertas en tiempo real    |
 
 **ACL**
 
 *Clase: WellnessMetricContextFacadeImpl*
 
-|Título|	WellnessMetricContextFacadeImpl|
-|-|-|
-|Descripción|	Fachada que actúa como puente entre el contexto de bienestar y otros sistemas|
+| Título      | 	WellnessMetricContextFacadeImpl                                               |
+|-------------|--------------------------------------------------------------------------------|
+| Descripción | 	Fachada que actúa como puente entre el contexto de bienestar y otros sistemas |
 
-|Método|	Descripción|
-|-|-|
-|fetchWellnessMetricById(Long wellnessMetricId)|	Recupera métricas de bienestar para su uso en otros contextos del sistema|
+| Método                                         | 	Descripción                                                               |
+|------------------------------------------------|----------------------------------------------------------------------------|
+| fetchWellnessMetricById(Long wellnessMetricId) | 	Recupera métricas de bienestar para su uso en otros contextos del sistema |
 
 **Dependencias:**
 |Dependencia|	Descripción|
@@ -3071,23 +3073,23 @@ NotificationRepository|	Repositorio para acceder a los datos de notificaciones|
 
 *Clase: NotificationRepository <<Interface>>*
 
-|Título|	NotificationRepository|
-|-|-|
-|Descripción|	Interfaz que define las operaciones de acceso a datos para las notificaciones|
+| Título      | 	NotificationRepository                                                        |
+|-------------|--------------------------------------------------------------------------------|
+| Descripción | 	Interfaz que define las operaciones de acceso a datos para las notificaciones |
 
-|Método|	Descripción|
-|-|-|
-|findByVehicleId(Long vehicleId)|	Busca y recupera las notificaciones asociadas a un vehículo específico|
+| Método                          | 	Descripción                                                            |
+|---------------------------------|-------------------------------------------------------------------------|
+| findByVehicleId(Long vehicleId) | 	Busca y recupera las notificaciones asociadas a un vehículo específico |
 
 *Clase: WellnessMetricRepository <<Interface>>*
 
-|Título|	NotificationRepository|
-|-|-|
-|Descripción|	Interfaz que define las operaciones de acceso a datos para las métricas de bienestar|
+| Título      | 	NotificationRepository                                                               |
+|-------------|---------------------------------------------------------------------------------------|
+| Descripción | 	Interfaz que define las operaciones de acceso a datos para las métricas de bienestar |
 
-|Método|	Descripción|
-|-|-|
-|findByVehicleId(Long vehicleId)|	Busca y recupera las métricas de bienestar asociadas a un vehículo específico|
+| Método                          | 	Descripción                                                                   |
+|---------------------------------|--------------------------------------------------------------------------------|
+| findByVehicleId(Long vehicleId) | 	Busca y recupera las métricas de bienestar asociadas a un vehículo específico |
 
 ### 5.5.5 Bounded Context Software Architecture Component level Diagrams
 
@@ -3582,7 +3584,7 @@ Para optimizar la visibilidad en motores de búsqueda con relación a Octane, se
 
 - Meta Title: Octane - Tu aliado para el monitoreo y mantenimiento de tu moto
 - Meta Description: Octane es la plataforma que conecta a dueños de motos con mecánicos de confianza en un ecosistema digital que promueve el mantenimiento preventivo y el bienestar vehicular. Optimiza el cuidado de tu moto y disfruta del servicio desde nuestra plataforma.
-- Meta Keywords: mantenimiento de motos, monitoreo de vehículos, mecánicos de confianza, plataforma digital para motos, cuidado preventivo de motocicletas, aplicación móvil para motos, servicios de mantenimiento de motos, comunidad de motociclistas, bienestar vehicular
+- Meta Keywords: mantenimiento de motos, monitoreo de vehículos, mecánicos de confianza, plataforma digital para motos, cuidado preventivo de motocicletas, aplicación móvil para motos, servicios de mantenimiento de motos, comunidad de dueños de motocicletas, bienestar vehicular
 - Author: Nodrify Team
 
 **Web Application**
@@ -3608,7 +3610,7 @@ El sistema de navegación de Octane se diseñó con el propósito de garantizar 
 - **Navbar superior**: Contiene las secciones principales del sitio, adaptándose al rol del usuario.
   - Dueños: Vehículos, Comparativas, Gastos, Mantenimientos, Dashboard. 
   - Mecánicos: Suscripciones, Membresía, Comparativas, Mantenimientos, Dashboard.
-- **Sidebar lateral**: Presente para la vista de los motociclistas, proporciona un acceso complementario a los módulos adicionales como el Monitoreo.
+- **Sidebar lateral**: Presente para la vista de los dueños de motocicletas, proporciona un acceso complementario a los módulos adicionales como el Monitoreo.
   - Su función es profundizar la navegación sin abandonar la vista principal.
   - La jerarquía visual está marcada por íconos simples, etiquetas cortas y un sistema de resaltado para la sección activa.
 - **Navegación contextual**: Dentro de cada sección, se implementan cards y botones que permiten a los usuarios profundizar en funcionalidades específicas.
@@ -3633,14 +3635,142 @@ Aquí se presentan los mock-ups finales de la Landing Page en versiones desktop 
 - Mobile
 ![Landing Page Mock-up Mobile](./assets/images/chapter-6/landing-ui/mobile-mockup.png)
 
+Aquí se presentan los mock-ups finales de la Landing Page en versiones desktop y mobile, evidenciando la aplicación del Design System, los principios de diseño visual y la alineación con la experiencia de usuario definida en etapas previas.
+
+![landing page mockup](assets/images/chapter-6/landing-page-ui-design/landing-page-mockup.png)
+
 ## 6.4. Applications UX/UI Design
+
+En esta sección se desarrolla la propuesta de diseño visual e interactivo de las aplicaciones, mostrando cómo se materializan los principios de usabilidad, accesibilidad y consistencia visual para ofrecer una experiencia de usuario fluida y coherente con la identidad de la startup.
+
 ### 6.4.1. Applications Wireframes
+
+**Web Application**
+
+Esta sección presenta los wireframes de las aplicacion web, donde se define la estructura, jerarquía y navegación de la interfaz. Se evidencia la aplicación de los principios de diseño inclusivo, la arquitectura de información y las buenas prácticas de diseño centrado en el usuario.
+
+![wireframe1.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe1.png)
+![wireframe2.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe2.png)
+![wireframe3.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe3.png)
+![wireframe4.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe4.png)
+![wireframe5.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe5.png)
+![wireframe6.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe6.png)
+![wireframe7.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe7.png)
+![wireframe8.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe8.png)
+
+**Mobile Application**
+
+Esta sección presenta los wireframes de las aplicacion movil, donde se define la estructura, jerarquía y navegación de la interfaz. Se evidencia la aplicación de los principios de diseño inclusivo, la arquitectura de información y las buenas prácticas de diseño centrado en el usuario.
+
+![wireframe-mobile1.png](assets/images/chapter-6/applications-ux-ui-design/wireframe-mobile1.png)
+![wireframe-mobile2.png](assets/images/chapter-6/applications-ux-ui-design/wireframe-mobile2.png)
+![wireframe-mobile3.png](assets/images/chapter-6/applications-ux-ui-design/wireframe-mobile3.png)
+![wireframe-mobile4.png](assets/images/chapter-6/applications-ux-ui-design/wireframe-mobile4.png)
+![wireframe-mobile5.png](assets/images/chapter-6/applications-ux-ui-design/wireframe-mobile5.png)
+![wireframe-mobile6.png](assets/images/chapter-6/applications-ux-ui-design/wireframe-mobile6.png)
+![wireframe-mobile7.png](assets/images/chapter-6/applications-ux-ui-design/wireframe-mobile7.png)
+![wireframe-mobile8.png](assets/images/chapter-6/applications-ux-ui-design/wireframe-mobile8.png)
+![wireframe-mobile9.png](assets/images/chapter-6/applications-ux-ui-design/wireframe-mobile9.png)
+![wireframe-mobile10.png](assets/images/chapter-6/applications-ux-ui-design/wireframe-mobile10.png)
+
 ### 6.4.2. Applications Wireflow Diagrams
-### 6.4.3. Applications Mock-ups
-### 6.4.4. Applications User Flow Diagrams
+En esta sección se presentan los wireflows que ilustran los flujos de interacción y navegación dentro de las aplicaciones web y móvil de BykerZ, considerando los User goals propuestos.
 
-## 6.5. Applications Prototyping
+**Web Application**
+La aplicación web está diseñada para ambos User Persona, siendo dueños de motocicletas o mecánicos, con funcionalidades adaptadas a sus necesidades específicas y con una navegación intuitiva.
 
+**User Goal: Como dueño de moto, quiero visualizar los gastos que tengo registrados.**
+![usergoal1.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal1.drawio.png)
+![wireflow1.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow1.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Gastos. Al acceder, la interfaz muestra la lista de registros existentes, permitiendo al usuario visualizar la información general de cada gasto de manera clara y organizada.
+
+**User Goal: Como dueño de moto, quiero visualizar la comparativa que hay entre mis vehículos.**
+![usergoal2.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal2.drawio.png)
+![wireflow2.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow2.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Comparativas. Al acceder, la interfaz muestra las cards de los vehículos registrados, donde el usuario presiona en la card de su preferencia para ver los detalles. Finalmente, el sistema despliega una vista con la comparativa entre los vehículos seleccionados, permitiendo al usuario observar de forma clara las diferencias y similitudes en aspectos clave como rendimiento, costos y mantenimientos.
+
+**User Goal: Como dueño de moto, quiero revisar los matenimientos de mis vehículos.**
+![usergoal3.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal3.drawio.png)
+![wireflow3.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow3.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Finalmente, el sistema despliega una vista con los mantenimientos programados, permitiendo al usuario observar de forma clara las fechas, tipos de servicio y estado de cada mantenimiento.
+
+**User Goal: Como dueño de moto, quiero visualizar mis motocicletas registradas.**
+![usergoal4.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal4.drawio.png)
+![wireflow4.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow4.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. Al acceder a la página, el sistema muestra la lista de vehículos registrados del usuario, permitiéndole visualizar la información general de cada uno de manera clara y organizada.
+
+**User Goal: Como dueño de moto, quiero vincular un nuevo mecánico a mi motocicleta.**
+![usergoal5.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal5.drawio.png)
+![wireflow5.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow5.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Vehículos. Luego, el usuario presiona en la moto de su preferencia para acceder a los detalles del vehículo. Dentro de esta vista, el usuario presiona el botón Vincular, ingresa el código del mecánico y confirma la acción al presionar Solicitar. Finalmente, el sistema actualiza la interfaz y el usuario observa su moto vinculada correctamente al mecánico correspondiente.
+
+**User Goal: Como dueño de moto, quiero editar los detalles de una motocicleta que me pertenece.**
+![usergoal6.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal6.drawio.png)
+![wireflow6.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow6.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Editar, realiza los cambios necesarios en el formulario y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa los detalles modificados reflejados en la pantalla.
+
+**User Goal: Como mecánico de motos, quiero visualizar las suscripciones activas.**
+![usergoal7.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal7.drawio.png)
+![wireflow7.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow7.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Suscripciones. Al acceder, la interfaz muestra la lista de suscripciones activas, permitiendo al mecánico visualizar la información general de cada una de manera clara y organizada.
+
+**User Goal: Como mecánico de motos, quiero visualizar la comparativa que hay entre mis vehículos.**
+![usergoal8.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal8.drawio.png)
+![wireflow8.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow8.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Comparativas. Al acceder, la interfaz muestra las cards de los vehículos registrados, donde el usuario presiona en la card de su preferencia para ver los detalles. Finalmente, el sistema despliega una vista con la comparativa entre los vehículos seleccionados, permitiendo al usuario observar de forma clara las diferencias y similitudes en aspectos clave como rendimiento, costos y mantenimientos.
+
+**User Goal: Como mecánico de motos, quiero progamar un mantenimiento.**
+![usergoal9.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal9.drawio.png)
+![wireflow9.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow9.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Dentro de esta vista, el usuario presiona el botón Programar, completa el formulario con los detalles del mantenimiento y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa el nuevo mantenimiento programado reflejado en la pantalla.
+
+**User Goal: Como mecanico de motos, quiero adquirir las membresias.**
+![usergoal10.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal10.drawio.png)
+![wireflow10.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow10.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Membresía. Al acceder, la interfaz muestra las opciones de planes disponibles, donde el usuario presiona en el plan de su preferencia para ver los detalles. Dentro de esta vista, el usuario presiona el botón Adquirir, completa el formulario con los datos de pago y confirma la acción al presionar Confirmar. Finalmente, el sistema actualiza la interfaz y el usuario observa la confirmación de su membresía reflejada en la pantalla.
+
+**Mobile Application**
+La aplicación web está diseñada con las funcionalidades para los dueños de motocicletas, adaptadas a sus necesidades específicas y con una navegación intuitiva.
+
+**User Goal: Como Motociclista, quiero ver  un resumen de mis vehiculos, gastos y mantenimientos.**
+![wireflow-ver-dashboard.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-dashboard.png)
+El wireflow inicia cuando el usuario despliega la barra lateral desde el panel principal y presiona en la sección Dashboard. Al hacerlo, la interfaz cambia para mostrar la vista del Dashboard, donde el usuario observa el resumen general que incluye sus vehículos, los gastos recientes y los próximos mantenimientos, representados mediante tarjetas o gráficos que resumen la información de forma visual y accesible.
+
+**User Goal: Como Motociclista, quiero ver todos los mantenimientos programados de mi moto.**
+![wireflow-ver-mantenimientos.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-mantenimientos.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Finalmente, el sistema despliega una vista con los mantenimientos programados, permitiendo al usuario observar de forma clara las fechas, tipos de servicio y estado de cada mantenimiento.
+
+**User Goal: Como Motociclista, quiero eliminar un gasto pasado de mi registro de gastos.**
+![wireflow-ver-mantenimiento.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-eliminar-gasto.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Gastos. Una vez en la vista de gastos, el sistema muestra la lista de registros existentes, donde el usuario presiona el ícono de borrar gasto correspondiente al que desea eliminar. Finalmente, la interfaz se actualiza y el usuario observa que el gasto fue eliminado, confirmando la acción mediante la desaparición del registro o un mensaje de confirmación visual.
+
+**User Goal: Como Motociclista, quiero monitorear las metricas de mi moto.**
+![wireflow-monitorear-metricas.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-monitorear-metricas.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona el botón Vehículos. En la lista mostrada, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Monitorear, tras lo cual la interfaz cambia para mostrar las métricas de la moto, permitiéndole observar información en tiempo real sobre su estado y rendimiento.
+
+**User Goal: Como Motociclista, quiero desvincular mi moto de un mecanico.**
+![wireflow-desvincular-moto.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-desvincular-moto.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Desvincular, tras lo cual el sistema ejecuta la acción y actualiza la interfaz. Finalmente, el usuario observa su moto desvinculada del mecánico, reflejado mediante un cambio visual o mensaje de confirmación.
+
+**User Goal: Como Motociclista, quiero vincular mi moto a un mecanico por su codigo.**
+![wireflow-vincular-moto.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-vincular-moto.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Vehículos. Luego, el usuario presiona en la moto de su preferencia para acceder a los detalles del vehículo. Dentro de esta vista, el usuario presiona el botón Vincular, ingresa el código del mecánico y confirma la acción al presionar Solicitar. Finalmente, el sistema actualiza la interfaz y el usuario observa su moto vinculada correctamente al mecánico correspondiente.
+
+**User Goal: Como Motociclista, quiero registrar un vehículo en mi cuenta.**
+![wireflow-registrar-vehiculo.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-registrar-vehiculo.png)
+El wireflow inicia cuando el usuario abre la barra lateral de navegación y selecciona la opción Vehículos. Una vez en la página, el usuario presiona el botón “+” para añadir un nuevo vehículo. Luego, la interfaz muestra un formulario donde el usuario ingresa los datos de su vehículo y presiona el botón Registrar. Finalmente, el sistema confirma la acción mostrando la moto registrada en la pantalla, reflejada en la lista de vehículos disponibles.
+
+**User Goal: Como Motociclista, quiero ver mis vehículos registrados.**
+![wireflow-ver-vehiculos.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-vehiculos.png)
+El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Vehículos. Al acceder a la página, el sistema muestra la lista de vehículos registrados del usuario, permitiéndole visualizar la información general de cada uno de manera clara y organizada.
+
+**User Goal: Como Motociclista, registrar mis gastos.**
+![wireflow-registrar-gastos.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-registrar-gastos.png)
+El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Gastos. Una vez en la página, el usuario presiona el botón “+” para añadir un nuevo gasto. La interfaz muestra un formulario donde el usuario ingresa los datos correspondientes y presiona el botón “Registrar”. Finalmente, el sistema actualiza la vista y el usuario observa el nuevo gasto añadido en la pantalla de gastos.
+
+**User Goal: Como Motociclista, quiero ver mis gastos registrados**
+![wireflow-ver-gastos.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-gastos.png)
+El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Gastos. Al acceder a la página, el sistema muestra en pantalla los gastos registrados del usuario, permitiéndole observar y revisar la información correspondiente de manera clara y ordenada.
 
 # Conclusiones
 
