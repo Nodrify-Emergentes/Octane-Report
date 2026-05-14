@@ -2102,55 +2102,55 @@ El dominio de Reports está centrado en el agregado principal `Report`, que agru
 `Report`
 **Descripción:** Representa un reporte consolidado asociado a un vehículo. Contiene la información del vehículo, las métricas agrupadas en el reporte y la fecha de generación.
 
-| Atributo | Tipo de dato | Visibilidad | Descripción |
-|----------|--------------|-------------|-------------|
-| reportId | Long | Private | Identificador único del reporte. |
-| vehicleId | Long | Private | Identificador del vehículo asociado al reporte. |
-| metrics | List<Metric> | Private | Lista de métricas asociadas al reporte. |
-| reportDate | Date | Private | Fecha en la que se generó el reporte. |
+| Atributo   | Tipo de dato | Visibilidad | Descripción                                     |
+|------------|--------------|-------------|-------------------------------------------------|
+| reportId   | Long         | Private     | Identificador único del reporte.                |
+| vehicleId  | Long         | Private     | Identificador del vehículo asociado al reporte. |
+| metrics    | List<Metric> | Private     | Lista de métricas asociadas al reporte.         |
+| reportDate | Date         | Private     | Fecha en la que se generó el reporte.           |
 
 **Entities**
 
 `Metric`
 **Descripción:** Representa una métrica incluida dentro de un reporte. Puede ser una medición numérica o descriptiva relacionada con el estado del vehículo.
 
-| Atributo | Tipo de dato | Visibilidad | Descripción |
-|----------|--------------|-------------|-------------|
-| metricId | Long | Private | Identificador único de la métrica. |
-| type | MetricType | Private | Tipo de métrica asociada. |
-| metricValue | String | Private | Valor registrado para esta métrica. |
+| Atributo    | Tipo de dato | Visibilidad | Descripción                         |
+|-------------|--------------|-------------|-------------------------------------|
+| metricId    | Long         | Private     | Identificador único de la métrica.  |
+| type        | MetricType   | Private     | Tipo de métrica asociada.           |
+| metricValue | String       | Private     | Valor registrado para esta métrica. |
 
 `MetricType`
 **Descripción:** Define el tipo de una métrica, por ejemplo kilometraje, estado del aceite o temperatura.
 
-| Atributo | Tipo de dato | Visibilidad | Descripción |
-|----------|--------------|-------------|-------------|
-| metricTypeId | Long | Private | Identificador único del tipo de métrica. |
-| metricName | String | Private | Nombre del tipo de métrica. |
-| metricDescription | String | Private | Descripción del tipo de métrica. |
+| Atributo          | Tipo de dato | Visibilidad | Descripción                              |
+|-------------------|--------------|-------------|------------------------------------------|
+| metricTypeId      | Long         | Private     | Identificador único del tipo de métrica. |
+| metricName        | String       | Private     | Nombre del tipo de métrica.              |
+| metricDescription | String       | Private     | Descripción del tipo de métrica.         |
 
 **Queries**
 
 `GetReportByIdQuery <<record>>`
 **Descripción:** Obtiene un reporte específico mediante su identificador único.
 
-| Atributo | Tipo de dato | Descripción |
-|----------|--------------|-------------|
-| reportId | Long | Identificador del reporte a consultar. |
+| Atributo | Tipo de dato | Descripción                            |
+|----------|--------------|----------------------------------------|
+| reportId | Long         | Identificador del reporte a consultar. |
 
 `GetReportByVehicleIdQuery <<record>>`
 **Descripción:** Obtiene todos los reportes asociados a un vehículo específico.
 
-| Atributo | Tipo de dato | Descripción |
-|----------|--------------|-------------|
-| vehicleId | Long | Identificador del vehículo cuyos reportes se desean obtener. |
+| Atributo  | Tipo de dato | Descripción                                                  |
+|-----------|--------------|--------------------------------------------------------------|
+| vehicleId | Long         | Identificador del vehículo cuyos reportes se desean obtener. |
 
 `GetMetricsByReportIdQuery <<record>>`
 **Descripción:** Obtiene todas las métricas pertenecientes a un reporte.
 
-| Atributo | Tipo de dato | Descripción |
-|----------|--------------|-------------|
-| reportId | Long | Identificador del reporte cuyas métricas serán recuperadas. |
+| Atributo | Tipo de dato | Descripción                                                 |
+|----------|--------------|-------------------------------------------------------------|
+| reportId | Long         | Identificador del reporte cuyas métricas serán recuperadas. |
 
 **Services**
 
@@ -2168,31 +2168,31 @@ Este servicio define la puerta de entrada de consultas del bounded context y per
 `ReportController`
 **Descripción:** Controlador REST encargado de manejar las peticiones asociadas a la obtención de reportes y sus métricas.
 
-| Método | Ruta | Descripción |
-|--------|------|-------------|
-| getReportById | GET /api/v1/reports/{reportId} | Obtiene un reporte por su identificador único. |
+| Método                  | Ruta                                    | Descripción                                         |
+|-------------------------|-----------------------------------------|-----------------------------------------------------|
+| getReportById           | GET /api/v1/reports/{reportId}          | Obtiene un reporte por su identificador único.      |
 | getAllReportsForVehicle | GET /api/v1/reports/vehicle/{vehicleId} | Obtiene todos los reportes asociados a un vehículo. |
-| getAllMetricsFromReport | GET /api/v1/reports/{reportId}/metrics | Obtiene todas las métricas asociadas a un reporte. |
+| getAllMetricsFromReport | GET /api/v1/reports/{reportId}/metrics  | Obtiene todas las métricas asociadas a un reporte.  |
 
 **Resources**
 
 `ReportResource <<class>>`
 **Descripción:** Representa la estructura de datos expuesta por la API para describir un reporte consolidado.
 
-| Atributo | Tipo de dato | Descripción |
-|----------|--------------|-------------|
-| reportId | Long | Identificador único del reporte. |
-| vehicleId | Long | Identificador del vehículo asociado al reporte. |
-| reportDate | Date | Fecha de generación del reporte. |
-| metrics | List<Metric> | Lista de métricas asociadas al reporte. |
+| Atributo   | Tipo de dato | Descripción                                     |
+|------------|--------------|-------------------------------------------------|
+| reportId   | Long         | Identificador único del reporte.                |
+| vehicleId  | Long         | Identificador del vehículo asociado al reporte. |
+| reportDate | Date         | Fecha de generación del reporte.                |
+| metrics    | List<Metric> | Lista de métricas asociadas al reporte.         |
 
 **Assemblers**
 
 `ReportResourceFromEntityAssembler`
 **Descripción:** Ensamblador encargado de transformar una entidad `Report` del dominio en un recurso REST `ReportResource`.
 
-| Método | Descripción |
-|--------|-------------|
+| Método                    | Descripción                                                      |
+|---------------------------|------------------------------------------------------------------|
 | fromEntity(Report report) | Transforma una entidad del agregado `Report` en un recurso REST. |
 
 ### 5.2.3. Application Layer
@@ -2200,10 +2200,10 @@ Este servicio define la puerta de entrada de consultas del bounded context y per
 `ReportQueryServiceImpl`
 **Descripción:** Implementación del servicio de consultas `ReportQueryService`, responsable de recuperar reportes y métricas desde la capa de persistencia mediante consultas especializadas.
 
-| Método | Descripción |
-|--------|-------------|
-| handle(GetReportByIdQuery) | Obtiene un reporte por su identificador único. |
-| handle(GetReportByVehicleIdQuery) | Obtiene todos los reportes asociados a un vehículo por su id. |
+| Método                            | Descripción                                                        |
+|-----------------------------------|--------------------------------------------------------------------|
+| handle(GetReportByIdQuery)        | Obtiene un reporte por su identificador único.                     |
+| handle(GetReportByVehicleIdQuery) | Obtiene todos los reportes asociados a un vehículo por su id.      |
 | handle(GetMetricsByReportIdQuery) | Obtiene todas las métricas relacionadas con un reporte específico. |
 
 **Comportamiento observado en la implementación heredada**
@@ -2216,10 +2216,10 @@ Este servicio define la puerta de entrada de consultas del bounded context y per
 `ApplicationReadyEventHandler`
 **Descripción:** Componente ejecutado automáticamente al iniciar la aplicación. Se encarga de inicializar el sistema con valores por defecto para los tipos de métricas.
 
-| Método | Descripción |
-|--------|-------------|
+| Método                                    | Descripción                                                                           |
+|-------------------------------------------|---------------------------------------------------------------------------------------|
 | onApplicationEvent(ApplicationReadyEvent) | Registra valores iniciales para los tipos de métricas si la base de datos está vacía. |
-| currentTimestamp() | Devuelve el timestamp actual para propósitos de registro en logs. |
+| currentTimestamp()                        | Devuelve el timestamp actual para propósitos de registro en logs.                     |
 
 ### 5.2.4. Infrastructure Layer
 
@@ -2228,16 +2228,16 @@ Este servicio define la puerta de entrada de consultas del bounded context y per
 `ReportRepository`
 **Descripción:** Repositorio JPA encargado de las operaciones de persistencia del agregado `Report`.
 
-| Método | Tipo de retorno | Descripción |
-|--------|-----------------|-------------|
-| findByVehicleId(Long vehicleId) | List<Report> | Recupera todos los reportes asociados a un vehículo por su id. |
+| Método                          | Tipo de retorno | Descripción                                                    |
+|---------------------------------|-----------------|----------------------------------------------------------------|
+| findByVehicleId(Long vehicleId) | List<Report>    | Recupera todos los reportes asociados a un vehículo por su id. |
 
 `MetricTypeRepository`
 **Descripción:** Repositorio JPA utilizado para gestionar la persistencia de los tipos de métricas (`MetricType`).
 
-| Método | Tipo de retorno | Descripción |
-|--------|-----------------|-------------|
-| Hereda métodos de JpaRepository | Varía | Permite realizar operaciones CRUD sobre los tipos de métricas. |
+| Método                          | Tipo de retorno | Descripción                                                    |
+|---------------------------------|-----------------|----------------------------------------------------------------|
+| Hereda métodos de JpaRepository | Varía           | Permite realizar operaciones CRUD sobre los tipos de métricas. |
 
 **Rol arquitectónico**
 
@@ -2268,33 +2268,33 @@ El bounded context **Assignments** administra la relación entre un propietario,
 `Assignment`
 **Descripción:** Agregado raíz que representa la asignación de un propietario a un mecánico. Centraliza el estado, el tipo y el código único de la asignación.
 
-| Atributos | Tipo de dato | Visibilidad | Descripción |
-|----------|--------------|-------------|-------------|
-| id | Long | Private | Identificador único de la asignación. |
-| ownerId | Long | Private | Identificador del propietario vinculado. Puede ser nulo mientras la asignación está pendiente. |
-| mechanic | Mechanic | Private | Mecánico responsable de la asignación. |
-| status | AssignmentStatus | Private | Estado de la asignación. |
-| type | AssignmentType | Private | Tipo funcional de la asignación. |
-| assignmentCode | AssignmentCode | Private | Código único usado para identificar y reclamar la asignación. |
+| Atributos      | Tipo de dato     | Visibilidad | Descripción                                                                                    |
+|----------------|------------------|-------------|------------------------------------------------------------------------------------------------|
+| id             | Long             | Private     | Identificador único de la asignación.                                                          |
+| ownerId        | Long             | Private     | Identificador del propietario vinculado. Puede ser nulo mientras la asignación está pendiente. |
+| mechanic       | Mechanic         | Private     | Mecánico responsable de la asignación.                                                         |
+| status         | AssignmentStatus | Private     | Estado de la asignación.                                                                       |
+| type           | AssignmentType   | Private     | Tipo funcional de la asignación.                                                               |
+| assignmentCode | AssignmentCode   | Private     | Código único usado para identificar y reclamar la asignación.                                  |
 
 `Mechanic`
 **Descripción:** Agregado raíz que representa al mecánico registrado en el sistema. Agrupa su perfil, sus asignaciones y su membresía.
 
-| Atributos | Tipo de dato | Visibilidad | Descripción |
-|----------|--------------|-------------|-------------|
-| id | Long | Private | Identificador único del mecánico. |
-| profile | Profile | Private | Perfil base asociado al mecánico. |
-| assignments | List<Assignment> | Private | Lista de asignaciones relacionadas al mecánico. |
-| membershipType | MembershipType | Private | Nivel de membresía del mecánico. |
+| Atributos      | Tipo de dato     | Visibilidad | Descripción                                     |
+|----------------|------------------|-------------|-------------------------------------------------|
+| id             | Long             | Private     | Identificador único del mecánico.               |
+| profile        | Profile          | Private     | Perfil base asociado al mecánico.               |
+| assignments    | List<Assignment> | Private     | Lista de asignaciones relacionadas al mecánico. |
+| membershipType | MembershipType   | Private     | Nivel de membresía del mecánico.                |
 
 **Value Objects**
 
 `AssignmentCode`
 **Descripción:** Valor embebido que garantiza un código alfanumérico único de 9 caracteres para una asignación.
 
-| Atributo | Tipo de dato | Visibilidad | Descripción |
-|----------|--------------|-------------|-------------|
-| code | String | Private | Código de la asignación. |
+| Atributo | Tipo de dato | Visibilidad | Descripción              |
+|----------|--------------|-------------|--------------------------|
+| code     | String       | Private     | Código de la asignación. |
 
 `AssignmentStatus`
 **Descripción:** Estado de una asignación.
@@ -2362,36 +2362,36 @@ La capa de interfaz expone varias rutas REST porque Assignments resuelve distint
 `AssignmentController`
 **Descripción:** Controlador principal para administrar asignaciones.
 
-| Método | Ruta | Descripción |
-|--------|------|-------------|
-| updateAssignmentStatus() | PATCH /api/v1/assignments/{assignmentId}/status | Actualiza el estado de una asignación. |
-| updateAssignmentType() | PATCH /api/v1/assignments/{assignmentId}/type | Actualiza el tipo de una asignación. |
-| getAssignmentById() | GET /api/v1/assignments/{assignmentId} | Recupera una asignación por su ID. |
+| Método                    | Ruta                                                                   | Descripción                                    |
+|---------------------------|------------------------------------------------------------------------|------------------------------------------------|
+| updateAssignmentStatus()  | PATCH /api/v1/assignments/{assignmentId}/status                        | Actualiza el estado de una asignación.         |
+| updateAssignmentType()    | PATCH /api/v1/assignments/{assignmentId}/type                          | Actualiza el tipo de una asignación.           |
+| getAssignmentById()       | GET /api/v1/assignments/{assignmentId}                                 | Recupera una asignación por su ID.             |
 | assignOwnerToAssignment() | PATCH /api/v1/assignments/code/{assignmentCode}/assign-owner/{ownerId} | Reclama una asignación y la asocia a un owner. |
-| deleteAssignment() | DELETE /api/v1/assignments/{assignmentId} | Elimina una asignación pendiente. |
-| getAssignmentByCode() | GET /api/v1/assignments/code/{assignmentCode} | Recupera una asignación por su código. |
+| deleteAssignment()        | DELETE /api/v1/assignments/{assignmentId}                              | Elimina una asignación pendiente.              |
+| getAssignmentByCode()     | GET /api/v1/assignments/code/{assignmentCode}                          | Recupera una asignación por su código.         |
 
 `MechanicController`
 **Descripción:** Controlador para gestionar información del mecánico.
 
-| Método | Ruta | Descripción |
-|--------|------|-------------|
-| getOwnersForMechanic() | GET /api/v1/mechanic/{mechanicId}/owners | Devuelve los owners activos asociados a las asignaciones del mecánico. |
-| updateMechanicMembershipType() | PUT /api/v1/mechanic/{mechanicId}/membership | Actualiza el nivel de membresía del mecánico. |
+| Método                         | Ruta                                         | Descripción                                                            |
+|--------------------------------|----------------------------------------------|------------------------------------------------------------------------|
+| getOwnersForMechanic()         | GET /api/v1/mechanic/{mechanicId}/owners     | Devuelve los owners activos asociados a las asignaciones del mecánico. |
+| updateMechanicMembershipType() | PUT /api/v1/mechanic/{mechanicId}/membership | Actualiza el nivel de membresía del mecánico.                          |
 
 `MechanicAssigmentController`
 **Descripción:** Controlador de apoyo para listar y crear asignaciones desde la perspectiva del mecánico.
 
-| Método | Ruta | Descripción |
-|--------|------|-------------|
-| getAssignments() | GET /api/v1/mechanic/{mechanicId}/assignments/{status} | Lista las asignaciones del mecánico filtradas por estado. |
-| createAssignment() | POST /api/v1/mechanic/{mechanicId}/assignments | Crea una nueva asignación asociada al mecánico. |
+| Método             | Ruta                                                   | Descripción                                               |
+|--------------------|--------------------------------------------------------|-----------------------------------------------------------|
+| getAssignments()   | GET /api/v1/mechanic/{mechanicId}/assignments/{status} | Lista las asignaciones del mecánico filtradas por estado. |
+| createAssignment() | POST /api/v1/mechanic/{mechanicId}/assignments         | Crea una nueva asignación asociada al mecánico.           |
 
 `OwnerAssigmentController`
 **Descripción:** Controlador de apoyo para consultar la asignación vigente de un owner.
 
-| Método | Ruta | Descripción |
-|--------|------|-------------|
+| Método          | Ruta                                   | Descripción                                     |
+|-----------------|----------------------------------------|-------------------------------------------------|
 | getAssignment() | GET /api/v1/owner/{ownerId}/assignment | Obtiene la asignación activa asociada al owner. |
 
 **Resources**
@@ -2399,41 +2399,41 @@ La capa de interfaz expone varias rutas REST porque Assignments resuelve distint
 `AssignmentResource <<record>>`
 **Descripción:** Recurso de salida que representa una asignación ya enriquecida con owner y mecánico.
 
-| Campo | Tipo de dato | Descripción |
-|-------|--------------|-------------|
-| id | Long | Identificador de la asignación. |
-| owner | OwnerResource | Información del propietario, cuando está disponible. |
-| mechanic | MechanicResource | Información del mecánico asociado. |
-| type | String | Tipo de asignación. |
-| status | String | Estado de la asignación. |
-| assignmentCode | String | Código único de la asignación. |
-| createdAt | Date | Fecha de creación del registro. |
+| Campo          | Tipo de dato     | Descripción                                          |
+|----------------|------------------|------------------------------------------------------|
+| id             | Long             | Identificador de la asignación.                      |
+| owner          | OwnerResource    | Información del propietario, cuando está disponible. |
+| mechanic       | MechanicResource | Información del mecánico asociado.                   |
+| type           | String           | Tipo de asignación.                                  |
+| status         | String           | Estado de la asignación.                             |
+| assignmentCode | String           | Código único de la asignación.                       |
+| createdAt      | Date             | Fecha de creación del registro.                      |
 
 `MechanicResource <<record>>`
 **Descripción:** Recurso de salida para el mecánico.
 
-| Campo | Tipo de dato | Descripción |
-|-------|--------------|-------------|
-| mechanicId | Long | Identificador del mecánico. |
-| completeName | String | Nombre completo del mecánico. |
-| membershipType | MembershipType | Nivel de membresía. |
+| Campo          | Tipo de dato   | Descripción                   |
+|----------------|----------------|-------------------------------|
+| mechanicId     | Long           | Identificador del mecánico.   |
+| completeName   | String         | Nombre completo del mecánico. |
+| membershipType | MembershipType | Nivel de membresía.           |
 
 `UpdateAssignmentStatusResource <<record>>`
 
-| Campo | Tipo de dato | Descripción |
-|-------|--------------|-------------|
-| status | String | Nuevo estado de la asignación. |
+| Campo  | Tipo de dato | Descripción                    |
+|--------|--------------|--------------------------------|
+| status | String       | Nuevo estado de la asignación. |
 
 `UpdateAssignmentTypeResource <<record>>`
 
-| Campo | Tipo de dato | Descripción |
-|-------|--------------|-------------|
-| type | String | Nuevo tipo de asignación. |
+| Campo | Tipo de dato | Descripción               |
+|-------|--------------|---------------------------|
+| type  | String       | Nuevo tipo de asignación. |
 
 `UpdateMechanicMembershipTypeResource <<record>>`
 
-| Campo | Tipo de dato | Descripción |
-|-------|--------------|-------------|
+| Campo          | Tipo de dato   | Descripción                            |
+|----------------|----------------|----------------------------------------|
 | membershipType | MembershipType | Nuevo nivel de membresía del mecánico. |
 
 **Assemblers**
@@ -2450,13 +2450,13 @@ La capa de interfaz expone varias rutas REST porque Assignments resuelve distint
 `AssignmentCommandServiceImpl`
 **Descripción:** Implementación del servicio de comandos de asignaciones. Este servicio centraliza las reglas de escritura del contexto.
 
-| Método | Descripción |
-|--------|-------------|
-| handle(CreateAssignmentCommand) | Crea una asignación nueva con código aleatorio único y la asocia a un mecánico existente. |
-| handle(UpdateAssignmentStatusCommand) | Actualiza el estado de una asignación existente. |
-| handle(UpdateAssignmentTypeCommand) | Actualiza el tipo de una asignación existente. |
-| handle(AssignOwnerToAssignmentCommand) | Asocia un owner a una asignación por código y la marca como `ACTIVE`. |
-| handle(DeleteAssignmentCommand) | Elimina una asignación solo si sigue en estado `PENDING`. |
+| Método                                 | Descripción                                                                               |
+|----------------------------------------|-------------------------------------------------------------------------------------------|
+| handle(CreateAssignmentCommand)        | Crea una asignación nueva con código aleatorio único y la asocia a un mecánico existente. |
+| handle(UpdateAssignmentStatusCommand)  | Actualiza el estado de una asignación existente.                                          |
+| handle(UpdateAssignmentTypeCommand)    | Actualiza el tipo de una asignación existente.                                            |
+| handle(AssignOwnerToAssignmentCommand) | Asocia un owner a una asignación por código y la marca como `ACTIVE`.                     |
+| handle(DeleteAssignmentCommand)        | Elimina una asignación solo si sigue en estado `PENDING`.                                 |
 
 **Comportamiento relevante**
 
@@ -2469,27 +2469,27 @@ La capa de interfaz expone varias rutas REST porque Assignments resuelve distint
 `MechanicCommandServiceImpl`
 **Descripción:** Implementación del servicio de comandos de mecánicos.
 
-| Método | Descripción |
-|--------|-------------|
-| handle(CreateMechanicCommand) | Crea un mecánico a partir de un perfil existente. |
-| handle(UpdateMechanicMembershipTypeCommand) | Actualiza la membresía del mecánico. |
+| Método                                      | Descripción                                       |
+|---------------------------------------------|---------------------------------------------------|
+| handle(CreateMechanicCommand)               | Crea un mecánico a partir de un perfil existente. |
+| handle(UpdateMechanicMembershipTypeCommand) | Actualiza la membresía del mecánico.              |
 
 `AssignmentQueryServiceImpl`
 **Descripción:** Implementación del servicio de consultas para asignaciones.
 
-| Método | Descripción |
-|--------|-------------|
-| handle(GetAssignmentByOwnerIdQuery) | Recupera la asignación activa de un owner. |
+| Método                                           | Descripción                                                                                      |
+|--------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| handle(GetAssignmentByOwnerIdQuery)              | Recupera la asignación activa de un owner.                                                       |
 | handle(GetAssignmentsByMechanicIdAndStatusQuery) | Recupera las asignaciones de un mecánico filtradas por estado y ordenadas por fecha descendente. |
-| handle(GetAssignmentByIdQuery) | Recupera una asignación por su identificador. |
-| handle(GetAssigmentByCodeQuery) | Recupera una asignación por su código. |
-| handle(GetAssignmentByVehicleIdQuery) | Recupera la asignación vinculada a un vehículo. |
+| handle(GetAssignmentByIdQuery)                   | Recupera una asignación por su identificador.                                                    |
+| handle(GetAssigmentByCodeQuery)                  | Recupera una asignación por su código.                                                           |
+| handle(GetAssignmentByVehicleIdQuery)            | Recupera la asignación vinculada a un vehículo.                                                  |
 
 `MechanicQueryServiceImpl`
 **Descripción:** Implementación del servicio de consultas para mecánicos.
 
-| Método | Descripción |
-|--------|-------------|
+| Método                       | Descripción                                |
+|------------------------------|--------------------------------------------|
 | handle(GetMechanicByIdQuery) | Recupera un mecánico por su identificador. |
 
 ### 5.3.4. Infrastructure Layer
@@ -2786,15 +2786,15 @@ Este bounded context combina persistencia propia con integración transversal. S
 
 Descripción: Representa una métrica completa de bienestar registrada por un vehículo.
 
-|Atributo|Tipo|Descripción|
-|-|-|-|
-|vehicleId|Long|Identificador único del vehículo que registra la métrica|
-|coordinates|Coordinates (Enum)|Ubicación geográfica donde se tomó la medición|
-|airQuality|AirQuality (Enum)|Medición de la calidad del aire en el entorno|
-|environmentalConditions|	EnvironmentalConditions (Enum)|Condiciones |ambientales generales registradas|
-|atmosphericPressure|	AtmosphericPressure (Enum)|	Nivel de presión atmosférica medido|
-|statusImpact|	StatusImpact (Enum)|	Indicador del impacto en el estado del sistema|
-|registeredAt|	LocalDateTime|	Fecha y hora en que se registró la métrica|
+| Atributo                | Tipo                            | Descripción                                              |
+|-------------------------|---------------------------------|----------------------------------------------------------|
+| vehicleId               | Long                            | Identificador único del vehículo que registra la métrica |
+| coordinates             | Coordinates (Enum)              | Ubicación geográfica donde se tomó la medición           |
+| airQuality              | AirQuality (Enum)               | Medición de la calidad del aire en el entorno            |
+| environmentalConditions | 	EnvironmentalConditions (Enum) | Condiciones                                              |ambientales generales registradas|
+| atmosphericPressure     | 	AtmosphericPressure (Enum)     | 	Nivel de presión atmosférica medido                     |
+| statusImpact            | 	StatusImpact (Enum)            | 	Indicador del impacto en el estado del sistema          |
+| registeredAt            | 	LocalDateTime                  | 	Fecha y hora en que se registró la métrica              |
 
 #### Value Objects
 
@@ -2889,50 +2889,50 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 #### Controllers:
 *Controlador: WellnessMetricsController*
 
-|Título|	Wellness Metrics Controller|
-|-|-|
-|Descripción|	Controlador REST que gestiona las operaciones de creación, consulta y recuperación de métricas de bienestar de los vehículos.|
+| Título      | 	Wellness Metrics Controller                                                                                                   |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Descripción | 	Controlador REST que gestiona las operaciones de creación, consulta y recuperación de métricas de bienestar de los vehículos. |
 
-|Método|	Ruta|	Descripción|
-|-|-|-|
-|createWellnessMetric|	POST /api/v1/metrics|	Crea una nueva métrica de bienestar para un vehículo|
-|updateWellnessMetric|	PUT /api/v1/metrics/{id}|	Actualiza una métrica de bienestar existente|
-|deleteWellnessMetric|	DELETE /api/v1/metrics/{id}|	Elimina una métrica de bienestar por su ID|
-|getWellnessMetricById|	GET /api/v1/metrics/{id}|	Recupera una métrica de bienestar específica por su ID|
-|getAllWellnessMetrics|	GET /api/v1/metrics|	Recupera todas las métricas de bienestar disponibles|
-|getWellnessMetricsByVehicleId|	GET /api/v1/metrics/vehicle/{vehicleId}|	Recupera todas las métricas de bienestar para un vehículo específico|
+| Método                        | 	Ruta                                    | 	Descripción                                                          |
+|-------------------------------|------------------------------------------|-----------------------------------------------------------------------|
+| createWellnessMetric          | 	POST /api/v1/metrics                    | 	Crea una nueva métrica de bienestar para un vehículo                 |
+| updateWellnessMetric          | 	PUT /api/v1/metrics/{id}                | 	Actualiza una métrica de bienestar existente                         |
+| deleteWellnessMetric          | 	DELETE /api/v1/metrics/{id}             | 	Elimina una métrica de bienestar por su ID                           |
+| getWellnessMetricById         | 	GET /api/v1/metrics/{id}                | 	Recupera una métrica de bienestar específica por su ID               |
+| getAllWellnessMetrics         | 	GET /api/v1/metrics                     | 	Recupera todas las métricas de bienestar disponibles                 |
+| getWellnessMetricsByVehicleId | 	GET /api/v1/metrics/vehicle/{vehicleId} | 	Recupera todas las métricas de bienestar para un vehículo específico |
 
 *Controlador: Notifications Controller*
 
-|Título|	Notifications Controller|
-|-|-|
-|Descripción|	Controlador REST que gestiona las operaciones de creación, consulta y recuperación de las notificaciones de los vehículos.|
+| Título      | 	Notifications Controller                                                                                                   |
+|-------------|-----------------------------------------------------------------------------------------------------------------------------|
+| Descripción | 	Controlador REST que gestiona las operaciones de creación, consulta y recuperación de las notificaciones de los vehículos. |
 
-|Método|	Ruta|	Descripción|
-|-|-|-|
-|createNotification|	POST /api/v1/notifications|	Crea una nueva notificación en el sistema|
-|getNotificationById|	GET /api/v1/notifications/{id}|	Recupera una notificación específica por su ID|
-|getAllNotifications|	GET /api/v1/notifications|	Recupera todas las notificaciones del sistema|
-|getNotificationsByVehicleId|	GET /api/v1/notifications/vehicle/{vehicleId}|	Recupera todas las notificaciones para un vehículo específico|
-|markNotificationAsRead|	GET /api/v1/notifications/{id}/read|	Marca una notificación como leída|
+| Método                      | 	Ruta                                          | 	Descripción                                                   |
+|-----------------------------|------------------------------------------------|----------------------------------------------------------------|
+| createNotification          | 	POST /api/v1/notifications                    | 	Crea una nueva notificación en el sistema                     |
+| getNotificationById         | 	GET /api/v1/notifications/{id}                | 	Recupera una notificación específica por su ID                |
+| getAllNotifications         | 	GET /api/v1/notifications                     | 	Recupera todas las notificaciones del sistema                 |
+| getNotificationsByVehicleId | 	GET /api/v1/notifications/vehicle/{vehicleId} | 	Recupera todas las notificaciones para un vehículo específico |
+| markNotificationAsRead      | 	GET /api/v1/notifications/{id}/read           | 	Marca una notificación como leída                             |
 
 #### Transforms:
-|Transform|	Descripción|
-|-|-|
-|CreateNotificationCommandFromResourceAssembler|	Convierte los recursos de entrada en comandos para crear notificaciones|
-|CreateWellnessMetricCommandFromResourceAssembler|	Transforma los recursos de entrada en comandos para crear métricas de bienestar|
-|NotificationResourceFromEntityAssembler|	Convierte entidades de notificación en recursos de respuesta para la API|
-|UpdateWellnessMetricCommandFromResourceAssembler|	Transforma los recursos de actualización en comandos para modificar métricas|
-|WellnessMetricResourceFromEntityAssembler|	Convierte entidades de métricas de bienestar en recursos de respuesta para la API|
+| Transform                                        | 	Descripción                                                                       |
+|--------------------------------------------------|------------------------------------------------------------------------------------|
+| CreateNotificationCommandFromResourceAssembler   | 	Convierte los recursos de entrada en comandos para crear notificaciones           |
+| CreateWellnessMetricCommandFromResourceAssembler | 	Transforma los recursos de entrada en comandos para crear métricas de bienestar   |
+| NotificationResourceFromEntityAssembler          | 	Convierte entidades de notificación en recursos de respuesta para la API          |
+| UpdateWellnessMetricCommandFromResourceAssembler | 	Transforma los recursos de actualización en comandos para modificar métricas      |
+| WellnessMetricResourceFromEntityAssembler        | 	Convierte entidades de métricas de bienestar en recursos de respuesta para la API |
 
 #### Resources:
-|Resource|	Descripción|
-|-|-|
-|CreateMetricResource|	Estructura de datos para la creación de nuevas métricas en el sistema|
-|CreateWellnessMetricResource|	Modelo de datos para solicitudes de creación de métricas de bienestar|
-|NotificationResource|	Representación de notificaciones en las respuestas de la API|
-|UpdateWellnessMetricResource|	Estructura de datos para actualizar métricas de bienestar existentes|
-|WellnessMetricResource|	Representación de métricas de bienestar en las respuestas de la API|
+| Resource                     | 	Descripción                                                           |
+|------------------------------|------------------------------------------------------------------------|
+| CreateMetricResource         | 	Estructura de datos para la creación de nuevas métricas en el sistema |
+| CreateWellnessMetricResource | 	Modelo de datos para solicitudes de creación de métricas de bienestar |
+| NotificationResource         | 	Representación de notificaciones en las respuestas de la API          |
+| UpdateWellnessMetricResource | 	Estructura de datos para actualizar métricas de bienestar existentes  |
+| WellnessMetricResource       | 	Representación de métricas de bienestar en las respuestas de la API   |
 
 #### ACL:
 
@@ -2945,32 +2945,32 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 
 *Clase: NotificationCommandServiceImpl*
 
-|Título|	NotificationCommandServiceImpl|
-|-|-|
-|Descripción|	Servicio que gestiona las operaciones de escritura y modificación de notificaciones en el sistema|
+| Título      | 	NotificationCommandServiceImpl                                                                    |
+|-------------|----------------------------------------------------------------------------------------------------|
+| Descripción | 	Servicio que gestiona las operaciones de escritura y modificación de notificaciones en el sistema |
 
-|Método|	Descripción|
-|-|-|
-|handle(CreateNotificationCommand createNotificationCommand)|	Procesa la creación de una nueva notificación en el sistema|
-|handle(MarkNotificationAsReadCommand command)|	Maneja la marcación de una notificación como leída|
+| Método                                                      | 	Descripción                                                 |
+|-------------------------------------------------------------|--------------------------------------------------------------|
+| handle(CreateNotificationCommand createNotificationCommand) | 	Procesa la creación de una nueva notificación en el sistema |
+| handle(MarkNotificationAsReadCommand command)               | 	Maneja la marcación de una notificación como leída          |
 
 **Dependencias:**
 
-|Dependencia|	Descripción|
-|-|-|
-|NotificationRepository|	Repositorio para acceder y gestionar los datos de notificaciones|
-|ExternalVehiclesService|	Servicio externo para obtener información de vehículos|
+| Dependencia             | 	Descripción                                                      |
+|-------------------------|-------------------------------------------------------------------|
+| NotificationRepository  | 	Repositorio para acceder y gestionar los datos de notificaciones |
+| ExternalVehiclesService | 	Servicio externo para obtener información de vehículos           |
 
 *Clase: WellnessMetricCommandServiceImpl*
 |Título	|WellnessMetricCommandServiceImpl|
 |-|-|
 |Descripción|	Servicio que maneja las operaciones de modificación de métricas de bienestar|
 
-|Método|	Descripción|
-|-|-|
-|handle(CreateWellnessMetricCommand createWellnessMetricCommand)|	Procesa la creación de nuevas métricas de bienestar|
-|handle(UpdateWellnessMetricCommand updateWellnessMetricCommand)|	Maneja la actualización de métricas de bienestar existentes|
-|handle(DeleteWellnessMetricCommand deleteWellnessMetricCommand)	|Gestiona la eliminación de métricas de bienestar|
+| Método                                                           | 	Descripción                                                 |
+|------------------------------------------------------------------|--------------------------------------------------------------|
+| handle(CreateWellnessMetricCommand createWellnessMetricCommand)  | 	Procesa la creación de nuevas métricas de bienestar         |
+| handle(UpdateWellnessMetricCommand updateWellnessMetricCommand)  | 	Maneja la actualización de métricas de bienestar existentes |
+| handle(DeleteWellnessMetricCommand deleteWellnessMetricCommand)	 | Gestiona la eliminación de métricas de bienestar             |
 
 **Dependencias:**
 |Dependencia|	Descripción|
@@ -2983,33 +2983,33 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 
 *Clase: NotificationQueryServiceImpl*
 
-|Título|	NotificationQueryServiceImpl|
-|-|-|
-|Descripción|	Servicio especializado en consultas y recuperación de notificaciones|
+| Título      | 	NotificationQueryServiceImpl                                         |
+|-------------|-----------------------------------------------------------------------|
+| Descripción | 	Servicio especializado en consultas y recuperación de notificaciones |
 
-|Método|	Descripción|
-|-|-|
-|handle(GetNotificationByIdQuery getNotificationByIdQuery)|	Recupera una notificación específica por su identificador|
-|handle(GetAllNotificationsQuery getAllNotificationsQuery)|	Obtiene todas las notificaciones del sistema|
-|handle(GetNotificationsByVehicleIdQuery getNotificationsByVehicleIdQuery)|	Consulta las notificaciones asociadas a un vehículo específico|
+| Método                                                                    | 	Descripción                                                    |
+|---------------------------------------------------------------------------|-----------------------------------------------------------------|
+| handle(GetNotificationByIdQuery getNotificationByIdQuery)                 | 	Recupera una notificación específica por su identificador      |
+| handle(GetAllNotificationsQuery getAllNotificationsQuery)                 | 	Obtiene todas las notificaciones del sistema                   |
+| handle(GetNotificationsByVehicleIdQuery getNotificationsByVehicleIdQuery) | 	Consulta las notificaciones asociadas a un vehículo específico |
 
 **Dependencias:**
 
-|Dependencia|	Descripción|
-|-|-|
-NotificationRepository|	Repositorio para acceder a los datos de notificaciones|
+| Dependencia            | 	Descripción                                            |
+|------------------------|---------------------------------------------------------|
+| NotificationRepository | 	Repositorio para acceder a los datos de notificaciones |
 
 *Clase: WellnessMetricQueryServiceImpl*
 
-|Título|	WellnessMetricQueryServiceImpl|
-|-|-|
-|Descripción|	Servicio que maneja las consultas de métricas de bienestar|
+| Título      | 	WellnessMetricQueryServiceImpl                             |
+|-------------|-------------------------------------------------------------|
+| Descripción | 	Servicio que maneja las consultas de métricas de bienestar |
 
-|Método|	Descripción|
-|-|-|
-|handle(GetWellnessMetricByIdQuery getWellnessMetricByIdQuery)|	Obtiene una métrica de bienestar específica por su ID|
-|handle(GetAllWellnessMetricsQuery getAllWellnessMetricsQuery)|	Recupera todas las métricas de bienestar disponibles
-|handle(GetWellnessMetricsByVehicleIdQuery| getWellnessMetricsByVehicleIdQuery)	Consulta las métricas de bienestar de un vehículo específico|
+| Método                                                        | 	Descripción                                                                                     |
+|---------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| handle(GetWellnessMetricByIdQuery getWellnessMetricByIdQuery) | 	Obtiene una métrica de bienestar específica por su ID                                           |
+| handle(GetAllWellnessMetricsQuery getAllWellnessMetricsQuery) | 	Recupera todas las métricas de bienestar disponibles                                            |
+| handle(GetWellnessMetricsByVehicleIdQuery                     | getWellnessMetricsByVehicleIdQuery)	Consulta las métricas de bienestar de un vehículo específico |
 
 **Dependencias:**
 |Dependencia|	Descripción|
@@ -3020,36 +3020,36 @@ NotificationRepository|	Repositorio para acceder a los datos de notificaciones|
 
 *Clase: WellnessAlertEventHandler*
 
-|Título|	WellnessAlertEventHandler|
-|-|-|
-|Descripción|	Manejador de eventos relacionados con alertas del sistema de bienestar|
+| Título      | 	WellnessAlertEventHandler                                              |
+|-------------|-------------------------------------------------------------------------|
+| Descripción | 	Manejador de eventos relacionados con alertas del sistema de bienestar |
 
-|Método|	Descripción|
-|-|-|
-|on(AirQualityAlertEvent event)|	Procesa eventos de alerta relacionados con la calidad del aire|
-|on(AtmosphericPressureAlertEvent event)|	Maneja eventos de alerta por presión atmosférica|
-|on(EnvironmentalConditionAlertEvent event)|	Gestiona eventos de alerta por condiciones ambientales|
-|on(StatusImpactAlertEvent event)|	Procesa eventos de alerta por impacto en el estado del sistema|
+| Método                                     | 	Descripción                                                    |
+|--------------------------------------------|-----------------------------------------------------------------|
+| on(AirQualityAlertEvent event)             | 	Procesa eventos de alerta relacionados con la calidad del aire |
+| on(AtmosphericPressureAlertEvent event)    | 	Maneja eventos de alerta por presión atmosférica               |
+| on(EnvironmentalConditionAlertEvent event) | 	Gestiona eventos de alerta por condiciones ambientales         |
+| on(StatusImpactAlertEvent event)           | 	Procesa eventos de alerta por impacto en el estado del sistema |
 
 **Dependencias:**
 
-|Dependencia|	Descripción|
-|-|-|
-|NotificationCommandService|	Servicio para crear notificaciones de alerta|
-|NotificationQueryService|	Servicio para consultar notificaciones existentes|
-|WellnessWebSocketController|	Controlador para enviar alertas en tiempo real|
+| Dependencia                 | 	Descripción                                       |
+|-----------------------------|----------------------------------------------------|
+| NotificationCommandService  | 	Servicio para crear notificaciones de alerta      |
+| NotificationQueryService    | 	Servicio para consultar notificaciones existentes |
+| WellnessWebSocketController | 	Controlador para enviar alertas en tiempo real    |
 
 #### ACL
 
 *Clase: WellnessMetricContextFacadeImpl*
 
-|Título|	WellnessMetricContextFacadeImpl|
-|-|-|
-|Descripción|	Fachada que actúa como puente entre el contexto de bienestar y otros sistemas|
+| Título      | 	WellnessMetricContextFacadeImpl                                               |
+|-------------|--------------------------------------------------------------------------------|
+| Descripción | 	Fachada que actúa como puente entre el contexto de bienestar y otros sistemas |
 
-|Método|	Descripción|
-|-|-|
-|fetchWellnessMetricById(Long wellnessMetricId)|	Recupera métricas de bienestar para su uso en otros contextos del sistema|
+| Método                                         | 	Descripción                                                               |
+|------------------------------------------------|----------------------------------------------------------------------------|
+| fetchWellnessMetricById(Long wellnessMetricId) | 	Recupera métricas de bienestar para su uso en otros contextos del sistema |
 
 **Dependencias:**
 |Dependencia|	Descripción|
@@ -3061,23 +3061,23 @@ NotificationRepository|	Repositorio para acceder a los datos de notificaciones|
 #### Repositories
 *Clase: NotificationRepository <<Interface>>*
 
-|Título|	NotificationRepository|
-|-|-|
-|Descripción|	Interfaz que define las operaciones de acceso a datos para las notificaciones|
+| Título      | 	NotificationRepository                                                        |
+|-------------|--------------------------------------------------------------------------------|
+| Descripción | 	Interfaz que define las operaciones de acceso a datos para las notificaciones |
 
-|Método|	Descripción|
-|-|-|
-|findByVehicleId(Long vehicleId)|	Busca y recupera las notificaciones asociadas a un vehículo específico|
+| Método                          | 	Descripción                                                            |
+|---------------------------------|-------------------------------------------------------------------------|
+| findByVehicleId(Long vehicleId) | 	Busca y recupera las notificaciones asociadas a un vehículo específico |
 
 *Clase: WellnessMetricRepository <<Interface>>*
 
-|Título|	NotificationRepository|
-|-|-|
-|Descripción|	Interfaz que define las operaciones de acceso a datos para las métricas de bienestar|
+| Título      | 	NotificationRepository                                                               |
+|-------------|---------------------------------------------------------------------------------------|
+| Descripción | 	Interfaz que define las operaciones de acceso a datos para las métricas de bienestar |
 
-|Método|	Descripción|
-|-|-|
-|findByVehicleId(Long vehicleId)|	Busca y recupera las métricas de bienestar asociadas a un vehículo específico|
+| Método                          | 	Descripción                                                                   |
+|---------------------------------|--------------------------------------------------------------------------------|
+| findByVehicleId(Long vehicleId) | 	Busca y recupera las métricas de bienestar asociadas a un vehículo específico |
 
 ### 5.5.5 Bounded Context Software Architecture Component level Diagrams
 
