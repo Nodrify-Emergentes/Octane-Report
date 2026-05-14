@@ -3625,14 +3625,142 @@ Aquí se presentan los mock-ups finales de la Landing Page en versiones desktop 
 - Mobile
 ![Landing Page Mock-up Mobile](./assets/images/chapter-6/landing-ui/mobile-mockup.png)
 
+Aquí se presentan los mock-ups finales de la Landing Page en versiones desktop y mobile, evidenciando la aplicación del Design System, los principios de diseño visual y la alineación con la experiencia de usuario definida en etapas previas.
+
+![landing page mockup](assets/images/chapter-6/landing-page-ui-design/landing-page-mockup.png)
+
 ## 6.4. Applications UX/UI Design
+
+En esta sección se desarrolla la propuesta de diseño visual e interactivo de las aplicaciones, mostrando cómo se materializan los principios de usabilidad, accesibilidad y consistencia visual para ofrecer una experiencia de usuario fluida y coherente con la identidad de la startup.
+
 ### 6.4.1. Applications Wireframes
+
+**Web Application**
+
+Esta sección presenta los wireframes de las aplicacion web, donde se define la estructura, jerarquía y navegación de la interfaz. Se evidencia la aplicación de los principios de diseño inclusivo, la arquitectura de información y las buenas prácticas de diseño centrado en el usuario.
+
+![wireframe1.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe1.png)
+![wireframe2.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe2.png)
+![wireframe3.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe3.png)
+![wireframe4.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe4.png)
+![wireframe5.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe5.png)
+![wireframe6.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe6.png)
+![wireframe7.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe7.png)
+![wireframe8.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe8.png)
+
+**Mobile Application**
+
+Esta sección presenta los wireframes de las aplicacion movil, donde se define la estructura, jerarquía y navegación de la interfaz. Se evidencia la aplicación de los principios de diseño inclusivo, la arquitectura de información y las buenas prácticas de diseño centrado en el usuario.
+
+![wireframe-mobile1.png](assets/images/chapter-6/applications-ux-ui-design/wireframe-mobile1.png)
+![wireframe-mobile2.png](assets/images/chapter-6/applications-ux-ui-design/wireframe-mobile2.png)
+![wireframe-mobile3.png](assets/images/chapter-6/applications-ux-ui-design/wireframe-mobile3.png)
+![wireframe-mobile4.png](assets/images/chapter-6/applications-ux-ui-design/wireframe-mobile4.png)
+![wireframe-mobile5.png](assets/images/chapter-6/applications-ux-ui-design/wireframe-mobile5.png)
+![wireframe-mobile6.png](assets/images/chapter-6/applications-ux-ui-design/wireframe-mobile6.png)
+![wireframe-mobile7.png](assets/images/chapter-6/applications-ux-ui-design/wireframe-mobile7.png)
+![wireframe-mobile8.png](assets/images/chapter-6/applications-ux-ui-design/wireframe-mobile8.png)
+![wireframe-mobile9.png](assets/images/chapter-6/applications-ux-ui-design/wireframe-mobile9.png)
+![wireframe-mobile10.png](assets/images/chapter-6/applications-ux-ui-design/wireframe-mobile10.png)
+
 ### 6.4.2. Applications Wireflow Diagrams
-### 6.4.3. Applications Mock-ups
-### 6.4.4. Applications User Flow Diagrams
+En esta sección se presentan los wireflows que ilustran los flujos de interacción y navegación dentro de las aplicaciones web y móvil de BykerZ, considerando los User goals propuestos.
 
-## 6.5. Applications Prototyping
+**Web Application**
+La aplicación web está diseñada para ambos User Persona, siendo dueños de motocicletas o mecánicos, con funcionalidades adaptadas a sus necesidades específicas y con una navegación intuitiva.
 
+**User Goal: Como dueño de moto, quiero visualizar los gastos que tengo registrados.**
+![usergoal1.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal1.drawio.png)
+![wireflow1.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow1.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Gastos. Al acceder, la interfaz muestra la lista de registros existentes, permitiendo al usuario visualizar la información general de cada gasto de manera clara y organizada.
+
+**User Goal: Como dueño de moto, quiero visualizar la comparativa que hay entre mis vehículos.**
+![usergoal2.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal2.drawio.png)
+![wireflow2.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow2.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Comparativas. Al acceder, la interfaz muestra las cards de los vehículos registrados, donde el usuario presiona en la card de su preferencia para ver los detalles. Finalmente, el sistema despliega una vista con la comparativa entre los vehículos seleccionados, permitiendo al usuario observar de forma clara las diferencias y similitudes en aspectos clave como rendimiento, costos y mantenimientos.
+
+**User Goal: Como dueño de moto, quiero revisar los matenimientos de mis vehículos.**
+![usergoal3.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal3.drawio.png)
+![wireflow3.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow3.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Finalmente, el sistema despliega una vista con los mantenimientos programados, permitiendo al usuario observar de forma clara las fechas, tipos de servicio y estado de cada mantenimiento.
+
+**User Goal: Como dueño de moto, quiero visualizar mis motocicletas registradas.**
+![usergoal4.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal4.drawio.png)
+![wireflow4.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow4.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. Al acceder a la página, el sistema muestra la lista de vehículos registrados del usuario, permitiéndole visualizar la información general de cada uno de manera clara y organizada.
+
+**User Goal: Como dueño de moto, quiero vincular un nuevo mecánico a mi motocicleta.**
+![usergoal5.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal5.drawio.png)
+![wireflow5.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow5.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Vehículos. Luego, el usuario presiona en la moto de su preferencia para acceder a los detalles del vehículo. Dentro de esta vista, el usuario presiona el botón Vincular, ingresa el código del mecánico y confirma la acción al presionar Solicitar. Finalmente, el sistema actualiza la interfaz y el usuario observa su moto vinculada correctamente al mecánico correspondiente.
+
+**User Goal: Como dueño de moto, quiero editar los detalles de una motocicleta que me pertenece.**
+![usergoal6.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal6.drawio.png)
+![wireflow6.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow6.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Editar, realiza los cambios necesarios en el formulario y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa los detalles modificados reflejados en la pantalla.
+
+**User Goal: Como mecánico de motos, quiero visualizar las suscripciones activas.**
+![usergoal7.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal7.drawio.png)
+![wireflow7.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow7.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Suscripciones. Al acceder, la interfaz muestra la lista de suscripciones activas, permitiendo al mecánico visualizar la información general de cada una de manera clara y organizada.
+
+**User Goal: Como mecánico de motos, quiero visualizar la comparativa que hay entre mis vehículos.**
+![usergoal8.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal8.drawio.png)
+![wireflow8.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow8.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Comparativas. Al acceder, la interfaz muestra las cards de los vehículos registrados, donde el usuario presiona en la card de su preferencia para ver los detalles. Finalmente, el sistema despliega una vista con la comparativa entre los vehículos seleccionados, permitiendo al usuario observar de forma clara las diferencias y similitudes en aspectos clave como rendimiento, costos y mantenimientos.
+
+**User Goal: Como mecánico de motos, quiero progamar un mantenimiento.**
+![usergoal9.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal9.drawio.png)
+![wireflow9.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow9.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Dentro de esta vista, el usuario presiona el botón Programar, completa el formulario con los detalles del mantenimiento y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa el nuevo mantenimiento programado reflejado en la pantalla.
+
+**User Goal: Como mecanico de motos, quiero adquirir las membresias.**
+![usergoal10.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal10.drawio.png)
+![wireflow10.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow10.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Membresía. Al acceder, la interfaz muestra las opciones de planes disponibles, donde el usuario presiona en el plan de su preferencia para ver los detalles. Dentro de esta vista, el usuario presiona el botón Adquirir, completa el formulario con los datos de pago y confirma la acción al presionar Confirmar. Finalmente, el sistema actualiza la interfaz y el usuario observa la confirmación de su membresía reflejada en la pantalla.
+
+**Mobile Application**
+La aplicación web está diseñada con las funcionalidades para los dueños de motocicletas, adaptadas a sus necesidades específicas y con una navegación intuitiva.
+
+**User Goal: Como Motociclista, quiero ver  un resumen de mis vehiculos, gastos y mantenimientos.**
+![wireflow-ver-dashboard.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-dashboard.png)
+El wireflow inicia cuando el usuario despliega la barra lateral desde el panel principal y presiona en la sección Dashboard. Al hacerlo, la interfaz cambia para mostrar la vista del Dashboard, donde el usuario observa el resumen general que incluye sus vehículos, los gastos recientes y los próximos mantenimientos, representados mediante tarjetas o gráficos que resumen la información de forma visual y accesible.
+
+**User Goal: Como Motociclista, quiero ver todos los mantenimientos programados de mi moto.**
+![wireflow-ver-mantenimientos.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-mantenimientos.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Finalmente, el sistema despliega una vista con los mantenimientos programados, permitiendo al usuario observar de forma clara las fechas, tipos de servicio y estado de cada mantenimiento.
+
+**User Goal: Como Motociclista, quiero eliminar un gasto pasado de mi registro de gastos.**
+![wireflow-ver-mantenimiento.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-eliminar-gasto.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Gastos. Una vez en la vista de gastos, el sistema muestra la lista de registros existentes, donde el usuario presiona el ícono de borrar gasto correspondiente al que desea eliminar. Finalmente, la interfaz se actualiza y el usuario observa que el gasto fue eliminado, confirmando la acción mediante la desaparición del registro o un mensaje de confirmación visual.
+
+**User Goal: Como Motociclista, quiero monitorear las metricas de mi moto.**
+![wireflow-monitorear-metricas.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-monitorear-metricas.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona el botón Vehículos. En la lista mostrada, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Monitorear, tras lo cual la interfaz cambia para mostrar las métricas de la moto, permitiéndole observar información en tiempo real sobre su estado y rendimiento.
+
+**User Goal: Como Motociclista, quiero desvincular mi moto de un mecanico.**
+![wireflow-desvincular-moto.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-desvincular-moto.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Desvincular, tras lo cual el sistema ejecuta la acción y actualiza la interfaz. Finalmente, el usuario observa su moto desvinculada del mecánico, reflejado mediante un cambio visual o mensaje de confirmación.
+
+**User Goal: Como Motociclista, quiero vincular mi moto a un mecanico por su codigo.**
+![wireflow-vincular-moto.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-vincular-moto.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Vehículos. Luego, el usuario presiona en la moto de su preferencia para acceder a los detalles del vehículo. Dentro de esta vista, el usuario presiona el botón Vincular, ingresa el código del mecánico y confirma la acción al presionar Solicitar. Finalmente, el sistema actualiza la interfaz y el usuario observa su moto vinculada correctamente al mecánico correspondiente.
+
+**User Goal: Como Motociclista, quiero registrar un vehículo en mi cuenta.**
+![wireflow-registrar-vehiculo.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-registrar-vehiculo.png)
+El wireflow inicia cuando el usuario abre la barra lateral de navegación y selecciona la opción Vehículos. Una vez en la página, el usuario presiona el botón “+” para añadir un nuevo vehículo. Luego, la interfaz muestra un formulario donde el usuario ingresa los datos de su vehículo y presiona el botón Registrar. Finalmente, el sistema confirma la acción mostrando la moto registrada en la pantalla, reflejada en la lista de vehículos disponibles.
+
+**User Goal: Como Motociclista, quiero ver mis vehículos registrados.**
+![wireflow-ver-vehiculos.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-vehiculos.png)
+El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Vehículos. Al acceder a la página, el sistema muestra la lista de vehículos registrados del usuario, permitiéndole visualizar la información general de cada uno de manera clara y organizada.
+
+**User Goal: Como Motociclista, registrar mis gastos.**
+![wireflow-registrar-gastos.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-registrar-gastos.png)
+El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Gastos. Una vez en la página, el usuario presiona el botón “+” para añadir un nuevo gasto. La interfaz muestra un formulario donde el usuario ingresa los datos correspondientes y presiona el botón “Registrar”. Finalmente, el sistema actualiza la vista y el usuario observa el nuevo gasto añadido en la pantalla de gastos.
+
+**User Goal: Como Motociclista, quiero ver mis gastos registrados**
+![wireflow-ver-gastos.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-gastos.png)
+El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Gastos. Al acceder a la página, el sistema muestra en pantalla los gastos registrados del usuario, permitiéndole observar y revisar la información correspondiente de manera clara y ordenada.
 
 ## Conclusiones
 
