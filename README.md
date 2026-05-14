@@ -279,7 +279,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         TB1:<br>
         Como equipo, logramos comunicar nuestras ideas y resultados de manera clara y objetiva durante las reuniones de trabajo, adaptando el nivel de detalle según el público y el rol de cada integrante. Esto permitió que todos comprendieran tanto el enfoque de negocio como las decisiones técnicas, facilitando la colaboración, la validación conjunta y la toma de decisiones informadas a lo largo del desarrollo del proyecto.
         TP:<br>
-        <!-- Conclusión -->
+        Como equipo, logramos comunicar de manera clara y objetiva los avances correspondientes al diseño táctico, los Bounded Context y las decisiones de UX/UI desarrolladas durante el TP. Cada integrante explicó sus aportes desde su área de responsabilidad, permitiendo que el equipo comprendiera la función de cada contexto dentro de la arquitectura, la relación entre los componentes del sistema y la importancia de mantener coherencia visual y funcional en la solución. Esta comunicación facilitó la coordinación del trabajo, la revisión de cambios y la integración ordenada de los avances al repositorio del proyecto.
         <br>
       </td>
     </tr>
@@ -322,7 +322,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         TB1:<br>
         A nivel grupal, se logró una documentación clara, estructurada y accesible, que permitió transmitir los resultados del análisis y diseño del proyecto de manera efectiva. La redacción objetiva y el uso de herramientas visuales y conceptuales facilitaron la comprensión del sistema por parte de todos los integrantes, asegurando consistencia en la implementación y sirviendo como referencia sólida durante todo el desarrollo.
         TP:<br>
-        <!-- Conclusiones -->
+        A nivel grupal, se logró documentar de forma estructurada y comprensible los Bounded Context, lineamientos visuales, arquitectura de información y diseños UX/UI desarrollados durante el TP. La redacción de estas secciones permitió describir con claridad las responsabilidades de cada componente, su aporte dentro de la solución y los criterios utilizados para mantener consistencia técnica y visual en el proyecto. Esta documentación sirvió como base para alinear el trabajo del equipo, facilitar la comprensión del sistema y respaldar las decisiones tomadas durante el desarrollo de Octane.
         <br>
       </td>
     </tr>
