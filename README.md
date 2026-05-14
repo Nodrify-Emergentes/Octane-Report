@@ -41,9 +41,10 @@
 
 **Registro de Versiones del Informe**
 
-| Versión | Fecha      | Autor                         | Descripción de modificación |
-|---------|------------|-------------------------------|-----------------------------|
-| 1.0     | 04/26/2026 | Real Calderón, Sebastián Omar | Primera Versión del Informe |
+| Versión | Fecha      | Autor                         | Descripción de modificación             |
+|---------|------------|-------------------------------|-----------------------------------------|
+| 1.0     | 04/26/2026 | Real Calderón, Sebastián Omar | Primera Versión del Informe             |
+| 2.0     | 05/14/2026 | Real Calderón, Sebastián Omar | Versión del informe para entrega del TP |
 <div style="page-break-after: always;"></div>
 
 **Project Report Collaboration Insights**
