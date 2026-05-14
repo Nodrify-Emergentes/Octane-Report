@@ -33,7 +33,7 @@
 | **Pacheco Astiguetta Sebastian**          | U202110291 |
 | **Russell Stephen Romero Qwistgaard**     | U202211043 |
 
-**Abril 2026**
+**Mayo 2026**
 
 </div>
 
@@ -41,9 +41,10 @@
 
 **Registro de Versiones del Informe**
 
-| Versión | Fecha      | Autor                         | Descripción de modificación |
-|---------|------------|-------------------------------|-----------------------------|
-| 1.0     | 04/26/2026 | Real Calderón, Sebastián Omar | Primera Versión del Informe |
+| Versión | Fecha      | Autor                         | Descripción de modificación             |
+|---------|------------|-------------------------------|-----------------------------------------|
+| 1.0     | 04/26/2026 | Real Calderón, Sebastián Omar | Primera Versión del Informe             |
+| 2.0     | 05/14/2026 | Real Calderón, Sebastián Omar | Versión del informe para entrega del TP |
 <div style="page-break-after: always;"></div>
 
 **Project Report Collaboration Insights**
@@ -91,6 +92,34 @@ Distribución de Commits por Integrante:
 | José Antonio Alejo Cárdenas       | 6                   |
 | Sebastián Pacheco Astiguetta      | 27                  |
 | Russell Stephen Romero Qwistgaard | 28                  |
+
+**TP:**
+
+Para la elaboración de la entrega parcial del proyecto, el equipo continuó utilizando el repositorio compartido en GitHub como principal herramienta de colaboración y control de versiones. Durante esta etapa, se consolidó la estructura del informe y se añadieron nuevas secciones relacionadas con el diseño táctico de la solución, la definición de Bounded Contexts, la arquitectura de información y el diseño visual de las interfaces.
+
+Las actividades del TP fueron distribuidas entre los integrantes del equipo de acuerdo con las responsabilidades asignadas en esta fase del proyecto. Esta organización permitió avanzar de manera ordenada en la documentación técnica y visual de Octane, asegurando que cada sección del informe mantuviera coherencia con la arquitectura general y los objetivos de la solución. Las responsabilidades fueron las siguientes:
+
+Sebastián Omar Real Calderón: encargado del desarrollo de los Bounded Context de Vehicle Management y Maintenance, definiendo sus responsabilidades, elementos principales y relación con el funcionamiento general de la plataforma. Asimismo, desarrolló el diseño de la Landing Page UI, orientado a presentar la propuesta de valor del producto de forma clara y atractiva para los usuarios.
+José Antonio Alejo Cárdenas: responsable del Bounded Context de Vehicle Wellness, enfocado en el monitoreo del estado de las motocicletas y la interpretación de métricas relacionadas con su bienestar. Además, elaboró las Style Guidelines del proyecto, estableciendo lineamientos visuales como colores, tipografías, componentes y criterios de diseño para mantener una identidad visual consistente.
+Sebastián Pacheco Astiguetta: encargado del desarrollo de los Bounded Context de IAM e IoT, abordando la gestión de identidad, autenticación, permisos y la integración de datos provenientes de sensores. También trabajó en la Information Architecture, organizando la estructura de navegación, etiquetado y acceso a la información dentro de la solución.
+Russell Stephen Romero Qwistgaard: responsable del desarrollo de los Bounded Context de Reports y Assignments, orientados a la generación de reportes y gestión de asignaciones dentro del sistema. Asimismo, participó en el diseño de las Applications UX/UI Design, definiendo aspectos de experiencia de usuario e interfaz para las aplicaciones del proyecto.
+
+Para la gestión del trabajo colaborativo, se mantuvo el flujo basado en ramas de trabajo, commits y pull requests. Cada integrante realizó sus aportes en las secciones asignadas, permitiendo registrar el avance individual y facilitar la revisión del contenido antes de su integración a la rama principal. Este proceso ayudó a reducir inconsistencias, mejorar la trazabilidad de los cambios y mantener una documentación ordenada durante la evolución del informe.
+
+Como evidencia del proceso, se incluirán capturas de los analíticos de colaboración del repositorio correspondientes al TP, donde se visualizará la actividad de commits, participación por integrante, historial de ramas y pull requests gestionados durante esta entrega. Estas evidencias respaldan el trabajo realizado y complementan el Registro de Versiones del Informe, mostrando la evolución del proyecto y el aporte individual de cada miembro del equipo.
+
+![Pulse TP](assets/images/misc/insights/tp/tp_pulse.png)
+![Collaborators TP](assets/images/misc/insights/tp/tp_collaborators.png)
+![Network TP](assets/images/misc/insights/tp/tp_network.png)
+
+Distribución de Commits por Integrante:
+
+| Integrante                        | Cantidad de Commits |
+|-----------------------------------|---------------------|
+| Sebastián Omar Real Calderón      | 27                  |
+| José Antonio Alejo Cárdenas       | 10                  |
+| Sebastián Pacheco Astiguetta      | 38                  |
+| Russell Stephen Romero Qwistgaard | 51                  |
 
 <div style="page-break-after: always;"></div>
 
@@ -3798,15 +3827,15 @@ El wireflow inicia cuando el usuario presiona el botón de la barra lateral desd
 
 # Conclusiones
 
-El desarrollo del proyecto permitió integrar de manera efectiva enfoques de análisis de negocio, diseño centrado en el usuario, modelado de dominio y arquitectura de software, logrando una visión integral de la solución propuesta. A través del uso de herramientas como Lean UX, Impact Mapping y técnicas de modelado como Event Storming y Context Mapping, el equipo logró comprender de manera estructurada la problemática y definir una solución alineada con las necesidades de los usuarios y los objetivos del negocio.
+El desarrollo del proyecto permitió integrar enfoques de análisis de negocio, diseño centrado en el usuario, modelado de dominio y arquitectura de software, logrando una visión más completa de la solución propuesta. Mediante herramientas como Lean UX, Impact Mapping, Event Storming y Context Mapping, el equipo pudo comprender mejor la problemática, definir las necesidades de los usuarios y alinear la propuesta con los objetivos del negocio.
 
-Asimismo, la definición de artefactos como User Personas, escenarios As-Is y To-Be, junto con los atributos de calidad y drivers arquitectónicos, permitió establecer una base sólida para la toma de decisiones de diseño. Esto contribuyó a que la arquitectura del sistema sea coherente, escalable y alineada con los requerimientos funcionales y no funcionales del proyecto.
+Asimismo, los artefactos elaborados en TB1, como User Personas, escenarios As-Is y To-Be, atributos de calidad y drivers arquitectónicos, sirvieron como base para la toma de decisiones de diseño. En el TP, esta base se fortaleció con la definición de los Bounded Contexts, Style Guidelines, Information Architecture y diseños UX/UI, permitiendo organizar mejor las responsabilidades del sistema y mantener coherencia entre la arquitectura, la experiencia de usuario y la identidad visual del producto.
 
-El uso de prácticas colaborativas mediante GitHub facilitó la organización del trabajo, el control de versiones y la participación activa de todos los integrantes del equipo. La división de responsabilidades y el uso de pull requests permitieron mantener la calidad del contenido y asegurar la integración progresiva de los aportes individuales en un informe consistente.
+El uso de GitHub facilitó la colaboración del equipo mediante ramas, commits y pull requests, permitiendo organizar los aportes individuales y mantener trazabilidad sobre los cambios realizados. Esta dinámica ayudó a integrar progresivamente el trabajo de cada integrante y a conservar la calidad y consistencia del informe.
 
-Por otro lado, el proyecto evidenció la importancia de la comunicación efectiva, tanto oral como escrita, para alinear a los miembros del equipo y garantizar la comprensión de los diferentes componentes del sistema, especialmente considerando la diversidad de enfoques (negocio, UX y arquitectura) involucrados.
+Por otro lado, el proyecto evidenció la importancia de la comunicación oral y escrita para coordinar avances, explicar decisiones y asegurar que todos los miembros comprendieran los distintos componentes de la solución. Esto fue especialmente importante durante el TP, donde se trabajaron aspectos más específicos del diseño táctico, visual y funcional del sistema.
 
-Finalmente, se concluye que la aplicación de metodologías estructuradas y el trabajo colaborativo fueron factores clave para el desarrollo exitoso del proyecto en esta etapa inicial. Las bases establecidas en esta entrega permiten continuar con las siguientes fases del proyecto con una mayor claridad, reduciendo riesgos y asegurando una evolución coherente de la solución.
+Finalmente, se concluye que el trabajo realizado en TB1 y TP permitió construir una base sólida para continuar con el desarrollo del proyecto. La combinación de metodologías estructuradas, documentación clara y trabajo colaborativo contribuyó a reducir riesgos, ordenar la evolución de la solución y preparar al equipo para las siguientes etapas de Octane.
 
 # Bibliografía
 
