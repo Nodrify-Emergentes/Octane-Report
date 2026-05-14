@@ -250,26 +250,37 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         <br>
         TB1:<br>
         Durante el desarrollo del proyecto, expuse al equipo los antecedentes y la problemática identificada, así como los resultados obtenidos en herramientas de análisis como User Personas, Empathy Mapping y los escenarios As-Is y To-Be. Presenté estos elementos de forma clara y estructurada, permitiendo que integrantes con distintos niveles técnicos comprendieran el contexto del problema y las decisiones de diseño. Asimismo, comuniqué los drivers arquitectónicos, decisiones de diseño y escenarios de atributos de calidad, facilitando la alineación del equipo en torno a la solución propuesta.<br>
+        TP:<br>
+        <!-- Información -->
         <br>
         Alejo Cardenas Jose Antonio
         <br>
         TB1:<br>
         Durante el desarrollo del proyecto, expliqué a mi equipo la visión de nuestra Startup y las User Stories para asegurar que todos entendiéramos qué debíamos construir. En nuestras reuniones, presenté de forma objetiva los diagramas de Arquitectura (Contenedores y Despliegue), traduciendo los conceptos complejos a términos que mis compañeros, independientemente de su rol en el grupo, pudieran validar. Esto permitió que tomáramos decisiones técnicas consensuadas y que cada integrante comprendiera cómo su parte del código encajaba en el sistema general.<br>
+        TP:<br>
+        <!-- Información -->
         <br>
         Pacheco Astiguetta Sebastian
         <br>
         TB1:<br>
         Realicé un análisis significativo de los nuevos features que se pueden considerar en el proyecto, aplicando nuevas tecnologías emergentes como idea principal para la mejora del producto. Considerando esta nueva funcionalidad nos permite formular mejor los requositos necesarios para actualizar el producto.<br>
+        TP:<br>
+        <!-- Información -->
         <br>
         Russell Stephen Romero Qwistgaard
         <br>
         TB1:<br>
         Durante las sesiones de trabajo, comuniqué al equipo los resultados del enfoque Lean UX, incluyendo los Problem Statements, Assumptions e Hypothesis Statements. Expliqué de manera clara el Lean UX Canvas y el Impact Mapping, permitiendo que todos los miembros comprendieran cómo estas herramientas guiaban la definición del producto. Además, presenté los Bounded Context y el Context Mapping, asegurando que el equipo entendiera la organización del sistema y la relación entre sus componentes desde una perspectiva de dominio.<br>
+        TP:<br>
+        <!-- Información -->
         <br>
       </td>
       <td>
         TB1:<br>
-        Como equipo, logramos comunicar nuestras ideas y resultados de manera clara y objetiva durante las reuniones de trabajo, adaptando el nivel de detalle según el público y el rol de cada integrante. Esto permitió que todos comprendieran tanto el enfoque de negocio como las decisiones técnicas, facilitando la colaboración, la validación conjunta y la toma de decisiones informadas a lo largo del desarrollo del proyecto.<br>
+        Como equipo, logramos comunicar nuestras ideas y resultados de manera clara y objetiva durante las reuniones de trabajo, adaptando el nivel de detalle según el público y el rol de cada integrante. Esto permitió que todos comprendieran tanto el enfoque de negocio como las decisiones técnicas, facilitando la colaboración, la validación conjunta y la toma de decisiones informadas a lo largo del desarrollo del proyecto.
+        TP:<br>
+        <!-- Conclusión -->
+        <br>
       </td>
     </tr>
     <tr>
@@ -282,26 +293,37 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         <br>
         TB1:<br>
         Elaboré la documentación relacionada con el análisis del problema y el diseño de la solución, incluyendo secciones como antecedentes, problemática, User Personas, User Task Matrix y escenarios As-Is y To-Be. Redacté de manera clara los drivers arquitectónicos, decisiones de diseño y escenarios de atributos de calidad, asegurando que la información fuera comprensible tanto para perfiles técnicos como no técnicos. Esta documentación permitió mantener coherencia en el desarrollo del proyecto y sirvió como base para la toma de decisiones del equipo.<br>
+        TP:<br>
+        <!-- Información -->
         <br>
         Alejo Cardenas Jose Antonio
         <br>
         TB1:<br>
         Redacté la documentación en nuestro repositorio compartido, detallando el Product Backlog y la Arquitectura de Software de manera clara y sin ambigüedades. Utilicé los diagramas de Contexto y Landscape para que cualquier compañero que se uniera al desarrollo entendiera el flujo rápidamente, y complementé los Diagramas de Despliegue con notas técnicas precisas. Esta redacción objetiva sirvió como guía de referencia para el equipo, evitando errores de interpretación y asegurando que los resultados del diseño fueran consistentes durante toda la implementación.<br>
+        TP:<br>
+        <!-- Información -->
         <br>
         Pacheco Astiguetta Sebastian
         <br>
         TB1:<br>
         Coordiné y lideré las reuniones para desarrollar el Event Storming, considerando eventos para las nuevas tecnologías y modificando posibles cambios necesarios para que esté estructurado correctamente. Sabiendo que el Event Storming y otros modelados que necesitan de ésta son esenciales para sel desarrollo de la solución, este procedimiento ayuda a que el equipo comprenda a qué dirección va el producto y qué funcionalidades debemos tener en cuenta durante la codificación.<br>
+        TP:<br>
+        <!-- Información -->
         <br>
         Russell Stephen Romero Qwistgaard
         <br>
         TB1:<br>
         Desarrollé la documentación correspondiente al enfoque Lean UX, redactando los Problem Statements, Assumptions e Hypothesis Statements de forma estructurada y objetiva. Asimismo, documenté el Lean UX Canvas, Impact Mapping y los modelos de dominio como Bounded Context y Context Mapping, asegurando claridad en la definición del alcance del sistema. Esta documentación facilitó la comprensión del producto y ayudó a mantener alineados los objetivos del equipo durante el desarrollo.<br>
+        TP:<br>
+        <!-- Información -->
         <br>
       </td>
       <td>
         TB1:<br>
-        A nivel grupal, se logró una documentación clara, estructurada y accesible, que permitió transmitir los resultados del análisis y diseño del proyecto de manera efectiva. La redacción objetiva y el uso de herramientas visuales y conceptuales facilitaron la comprensión del sistema por parte de todos los integrantes, asegurando consistencia en la implementación y sirviendo como referencia sólida durante todo el desarrollo.<br>
+        A nivel grupal, se logró una documentación clara, estructurada y accesible, que permitió transmitir los resultados del análisis y diseño del proyecto de manera efectiva. La redacción objetiva y el uso de herramientas visuales y conceptuales facilitaron la comprensión del sistema por parte de todos los integrantes, asegurando consistencia en la implementación y sirviendo como referencia sólida durante todo el desarrollo.
+        TP:<br>
+        <!-- Conclusiones -->
+        <br>
       </td>
     </tr>
   </tbody>
