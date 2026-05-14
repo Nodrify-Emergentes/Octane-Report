@@ -261,26 +261,38 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         <br>
         TB1:<br>
         Durante el desarrollo del proyecto, expuse al equipo los antecedentes y la problemática identificada, así como los resultados obtenidos en herramientas de análisis como User Personas, Empathy Mapping y los escenarios As-Is y To-Be. Presenté estos elementos de forma clara y estructurada, permitiendo que integrantes con distintos niveles técnicos comprendieran el contexto del problema y las decisiones de diseño. Asimismo, comuniqué los drivers arquitectónicos, decisiones de diseño y escenarios de atributos de calidad, facilitando la alineación del equipo en torno a la solución propuesta.<br>
+        TP:<br>
+        Durante el desarrollo del TP, comuniqué al equipo los avances relacionados con los Bounded Context de Vehicle Management y Maintenance, explicando su propósito, responsabilidades principales y relación con el funcionamiento general de la solución. Además, presenté las decisiones tomadas en el diseño de la Landing Page UI, justificando la organización visual, la navegación y la forma en que esta interfaz comunica el valor del producto a usuarios técnicos y no técnicos.
         <br>
         Alejo Cardenas Jose Antonio
         <br>
         TB1:<br>
         Durante el desarrollo del proyecto, expliqué a mi equipo la visión de nuestra Startup y las User Stories para asegurar que todos entendiéramos qué debíamos construir. En nuestras reuniones, presenté de forma objetiva los diagramas de Arquitectura (Contenedores y Despliegue), traduciendo los conceptos complejos a términos que mis compañeros, independientemente de su rol en el grupo, pudieran validar. Esto permitió que tomáramos decisiones técnicas consensuadas y que cada integrante comprendiera cómo su parte del código encajaba en el sistema general.<br>
+        TP:<br>
+        Durante el desarrollo del TP, expliqué al equipo el Bounded Context de Vehicle Wellness, presentando su función dentro del sistema y su relación con el monitoreo del estado de las motocicletas. Asimismo, comuniqué las decisiones definidas en las Style Guidelines, exponiendo criterios visuales como colores, tipografías, componentes y lineamientos de diseño, para asegurar que todos los integrantes comprendieran cómo mantener una identidad visual coherente en la solución.
         <br>
         Pacheco Astiguetta Sebastian
         <br>
         TB1:<br>
         Realicé un análisis significativo de los nuevos features que se pueden considerar en el proyecto, aplicando nuevas tecnologías emergentes como idea principal para la mejora del producto. Considerando esta nueva funcionalidad nos permite formular mejor los requositos necesarios para actualizar el producto.<br>
+        TP:<br>
+        Hice una revisión general del contenido, supervisando que los integrantes realicen sus modificaciones alineadas a cada subtítulo y que el contenido sea coherente con el enfoque de negocio y técnico del proyecto, para que así el equipo pueda entender claramente el desarrollo del proyecto y las decisiones tomadas durante el proceso. Además, analicé la la información de la arquitectura del proyecto, viendo qué posibles etiquetas se le pueden asociar e identificar más a la solución, impulsando su visibilidad.
         <br>
         Russell Stephen Romero Qwistgaard
         <br>
         TB1:<br>
         Durante las sesiones de trabajo, comuniqué al equipo los resultados del enfoque Lean UX, incluyendo los Problem Statements, Assumptions e Hypothesis Statements. Expliqué de manera clara el Lean UX Canvas y el Impact Mapping, permitiendo que todos los miembros comprendieran cómo estas herramientas guiaban la definición del producto. Además, presenté los Bounded Context y el Context Mapping, asegurando que el equipo entendiera la organización del sistema y la relación entre sus componentes desde una perspectiva de dominio.<br>
+        TP:<br>
+    Durante esta entrega estuve comunicandome con el eqipo acerca de cada cambio hecho a los bounded context y el UX/UI design del landing page y la aplicación, explicando el por qué de estos cambios y avisando cuando estaban listos para que el leader del grupo pudiera agregarlos a la rama principal del repositorio.
         <br>
       </td>
       <td>
+        <!--Conclusiones Grupales-->
         TB1:<br>
         Como equipo, logramos comunicar nuestras ideas y resultados de manera clara y objetiva durante las reuniones de trabajo, adaptando el nivel de detalle según el público y el rol de cada integrante. Esto permitió que todos comprendieran tanto el enfoque de negocio como las decisiones técnicas, facilitando la colaboración, la validación conjunta y la toma de decisiones informadas a lo largo del desarrollo del proyecto.<br>
+        TP:<br>
+        Como equipo, logramos comunicar de manera clara y objetiva los avances correspondientes al diseño táctico, los Bounded Context y las decisiones de UX/UI desarrolladas durante el TP. Cada integrante explicó sus aportes desde su área de responsabilidad, permitiendo que el equipo comprendiera la función de cada contexto dentro de la arquitectura, la relación entre los componentes del sistema y la importancia de mantener coherencia visual y funcional en la solución. Esta comunicación facilitó la coordinación del trabajo, la revisión de cambios y la integración ordenada de los avances al repositorio del proyecto.
+        <br>
       </td>
     </tr>
     <tr>
@@ -293,26 +305,38 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         <br>
         TB1:<br>
         Elaboré la documentación relacionada con el análisis del problema y el diseño de la solución, incluyendo secciones como antecedentes, problemática, User Personas, User Task Matrix y escenarios As-Is y To-Be. Redacté de manera clara los drivers arquitectónicos, decisiones de diseño y escenarios de atributos de calidad, asegurando que la información fuera comprensible tanto para perfiles técnicos como no técnicos. Esta documentación permitió mantener coherencia en el desarrollo del proyecto y sirvió como base para la toma de decisiones del equipo.<br>
+        TP:<br>
+        Documenté los Bounded Context de Vehicle Management y Maintenance de forma clara y estructurada, describiendo sus responsabilidades, elementos principales y aporte dentro de la arquitectura del sistema. Asimismo, elaboré y registré el diseño de la Landing Page UI, detallando su composición visual, secciones principales y criterios de presentación, con el fin de facilitar la comprensión del producto y mantener coherencia entre la propuesta visual y los objetivos del proyecto.
         <br>
         Alejo Cardenas Jose Antonio
         <br>
         TB1:<br>
         Redacté la documentación en nuestro repositorio compartido, detallando el Product Backlog y la Arquitectura de Software de manera clara y sin ambigüedades. Utilicé los diagramas de Contexto y Landscape para que cualquier compañero que se uniera al desarrollo entendiera el flujo rápidamente, y complementé los Diagramas de Despliegue con notas técnicas precisas. Esta redacción objetiva sirvió como guía de referencia para el equipo, evitando errores de interpretación y asegurando que los resultados del diseño fueran consistentes durante toda la implementación.<br>
+        TP:<br>
+        Documenté el Bounded Context de Vehicle Wellness, describiendo sus responsabilidades principales y su aporte al monitoreo del estado del vehículo dentro de la arquitectura del sistema. Además, redacté las Style Guidelines del proyecto, estableciendo criterios visuales como paleta de colores, tipografía, componentes y lineamientos de interfaz, permitiendo que el equipo cuente con una referencia clara para mantener consistencia visual y comunicativa en el desarrollo de la solución.
         <br>
         Pacheco Astiguetta Sebastian
         <br>
         TB1:<br>
         Coordiné y lideré las reuniones para desarrollar el Event Storming, considerando eventos para las nuevas tecnologías y modificando posibles cambios necesarios para que esté estructurado correctamente. Sabiendo que el Event Storming y otros modelados que necesitan de ésta son esenciales para sel desarrollo de la solución, este procedimiento ayuda a que el equipo comprenda a qué dirección va el producto y qué funcionalidades debemos tener en cuenta durante la codificación.<br>
+        TP:<br>
+        Redacté la información acorde al SEO y etiquetas relacionadas con la arquitectura del proyecto y la solución IoT, documentando el proceso y las decisiones tomadas como equipo. Adicionalmente, realicé correcciones anteriores con respecto a los Bounded Context, separando la telemetría a su propio área, facilitando la identificación de funciones del event storming asociados a ésta.
         <br>
         Russell Stephen Romero Qwistgaard
         <br>
         TB1:<br>
         Desarrollé la documentación correspondiente al enfoque Lean UX, redactando los Problem Statements, Assumptions e Hypothesis Statements de forma estructurada y objetiva. Asimismo, documenté el Lean UX Canvas, Impact Mapping y los modelos de dominio como Bounded Context y Context Mapping, asegurando claridad en la definición del alcance del sistema. Esta documentación facilitó la comprensión del producto y ayudó a mantener alineados los objetivos del equipo durante el desarrollo.<br>
+        TP:<br>
+        Realizé la documentación de los Bounded Context Reports y Assignments, Detallando el funcionamiento de  la asignaciónes entre motociclistas y mécanicos como también lás métricas que se reciben de otros bc en base a las operaciones del vehículo. Además, Diseñé los wireframes y userframes que tendrá la aplicación y el landing page tanto en formato web como en móbiles, los cuáles fueron utilizados para crear el prototipo de estos.
         <br>
       </td>
       <td>
+        <!--Conclusiones Grupales-->
         TB1:<br>
         A nivel grupal, se logró una documentación clara, estructurada y accesible, que permitió transmitir los resultados del análisis y diseño del proyecto de manera efectiva. La redacción objetiva y el uso de herramientas visuales y conceptuales facilitaron la comprensión del sistema por parte de todos los integrantes, asegurando consistencia en la implementación y sirviendo como referencia sólida durante todo el desarrollo.<br>
+        TP:<br>
+        A nivel grupal, se logró documentar de forma estructurada y comprensible los Bounded Context, lineamientos visuales, arquitectura de información y diseños UX/UI desarrollados durante el TP. La redacción de estas secciones permitió describir con claridad las responsabilidades de cada componente, su aporte dentro de la solución y los criterios utilizados para mantener consistencia técnica y visual en el proyecto. Esta documentación sirvió como base para alinear el trabajo del equipo, facilitar la comprensión del sistema y respaldar las decisiones tomadas durante el desarrollo de Octane.
+        <br>
       </td>
     </tr>
   </tbody>
