@@ -33,7 +33,7 @@
 | **Pacheco Astiguetta Sebastian**          | U202110291 |
 | **Russell Stephen Romero Qwistgaard**     | U202211043 |
 
-**Abril 2026**
+**Mayo 2026**
 
 </div>
 
@@ -91,6 +91,34 @@ Distribución de Commits por Integrante:
 | José Antonio Alejo Cárdenas       | 6                   |
 | Sebastián Pacheco Astiguetta      | 27                  |
 | Russell Stephen Romero Qwistgaard | 28                  |
+
+**TP:**
+
+Para la elaboración de la entrega parcial del proyecto, el equipo continuó utilizando el repositorio compartido en GitHub como principal herramienta de colaboración y control de versiones. Durante esta etapa, se consolidó la estructura del informe y se añadieron nuevas secciones relacionadas con el diseño táctico de la solución, la definición de Bounded Contexts, la arquitectura de información y el diseño visual de las interfaces.
+
+Las actividades del TP fueron distribuidas entre los integrantes del equipo de acuerdo con las responsabilidades asignadas en esta fase del proyecto. Esta organización permitió avanzar de manera ordenada en la documentación técnica y visual de Octane, asegurando que cada sección del informe mantuviera coherencia con la arquitectura general y los objetivos de la solución. Las responsabilidades fueron las siguientes:
+
+Sebastián Omar Real Calderón: encargado del desarrollo de los Bounded Context de Vehicle Management y Maintenance, definiendo sus responsabilidades, elementos principales y relación con el funcionamiento general de la plataforma. Asimismo, desarrolló el diseño de la Landing Page UI, orientado a presentar la propuesta de valor del producto de forma clara y atractiva para los usuarios.
+José Antonio Alejo Cárdenas: responsable del Bounded Context de Vehicle Wellness, enfocado en el monitoreo del estado de las motocicletas y la interpretación de métricas relacionadas con su bienestar. Además, elaboró las Style Guidelines del proyecto, estableciendo lineamientos visuales como colores, tipografías, componentes y criterios de diseño para mantener una identidad visual consistente.
+Sebastián Pacheco Astiguetta: encargado del desarrollo de los Bounded Context de IAM e IoT, abordando la gestión de identidad, autenticación, permisos y la integración de datos provenientes de sensores. También trabajó en la Information Architecture, organizando la estructura de navegación, etiquetado y acceso a la información dentro de la solución.
+Russell Stephen Romero Qwistgaard: responsable del desarrollo de los Bounded Context de Reports y Assignments, orientados a la generación de reportes y gestión de asignaciones dentro del sistema. Asimismo, participó en el diseño de las Applications UX/UI Design, definiendo aspectos de experiencia de usuario e interfaz para las aplicaciones del proyecto.
+
+Para la gestión del trabajo colaborativo, se mantuvo el flujo basado en ramas de trabajo, commits y pull requests. Cada integrante realizó sus aportes en las secciones asignadas, permitiendo registrar el avance individual y facilitar la revisión del contenido antes de su integración a la rama principal. Este proceso ayudó a reducir inconsistencias, mejorar la trazabilidad de los cambios y mantener una documentación ordenada durante la evolución del informe.
+
+Como evidencia del proceso, se incluirán capturas de los analíticos de colaboración del repositorio correspondientes al TP, donde se visualizará la actividad de commits, participación por integrante, historial de ramas y pull requests gestionados durante esta entrega. Estas evidencias respaldan el trabajo realizado y complementan el Registro de Versiones del Informe, mostrando la evolución del proyecto y el aporte individual de cada miembro del equipo.
+
+![Pulse TP](assets/images/misc/insights/tp/tp_pulse.png)
+![Collaborators TP](assets/images/misc/insights/tp/tp_collaborators.png)
+![Network TP](assets/images/misc/insights/tp/tp_network.png)
+
+Distribución de Commits por Integrante:
+
+| Integrante                        | Cantidad de Commits |
+|-----------------------------------|---------------------|
+| Sebastián Omar Real Calderón      | 27                  |
+| José Antonio Alejo Cárdenas       | 10                  |
+| Sebastián Pacheco Astiguetta      | 38                  |
+| Russell Stephen Romero Qwistgaard | 51                  |
 
 <div style="page-break-after: always;"></div>
 
