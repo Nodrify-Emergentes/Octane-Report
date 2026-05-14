@@ -96,132 +96,143 @@ Distribución de Commits por Integrante:
 
 **Contenido**
 
-- [Student Outcome](#student-outcome)
-  - [Capítulo I: Introducción](#capítulo-i-introducción)
-    - [1.1. Startup Profile](#11-startup-profile)
-      - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
-      - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
-    - [1.2. Solution Profile](#12-solution-profile)
-      - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
-      - [1.2.2. Lean UX Process](#122-lean-ux-process)
-        - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
-        - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
-        - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
-        - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
-    - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
-  - [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
-    - [2.1. Competidores](#21-competidores)
-      - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
-      - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
-    - [2.2. Entrevistas](#22-entrevistas)
-      - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
-      - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
-      - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
-    - [2.3. Needfinding](#23-needfinding)
-      - [2.3.1. User Personas](#231-user-personas)
-      - [2.3.2. User Task Matrix](#232-user-task-matrix)
-      - [2.3.3. Empathy Mapping](#233-empathy-mapping)
-      - [2.3.4. As-is Scenario Mapping](#234-as-is-scenario-mapping)
-    - [2.4. Ubiquitous Language](#24-ubiquitous-language)
-  - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-    - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
-    - [3.2. User Stories](#32-user-stories)
-    - [3.3. Impact Mapping](#33-impact-mapping)
-    - [3.4. Product Backlog](#34-product-backlog)
-  - [Capítulo IV: Strategic-Level Software Design](#capítulo-iv-strategic-level-software-design)
-    - [4.1. Strategic-Level Attribute-Driven Design](#41-strategic-level-attribute-driven-design)
-      - [4.1.1. Design Purpose](#411-design-purpose)
-      - [4.1.2. Attribute-Driven Design Inputs](#412-attribute-driven-design-inputs)
-        - [4.1.2.1. Primary Functionality (Primary User Stories)](#4121-primary-functionality-primary-user-stories)
-        - [4.1.2.2. Quality Attribute Scenarios](#4122-quality-attribute-scenarios)
-        - [4.1.2.3. Constraints](#4123-constraints)
-      - [4.1.3. Architectural Drivers Backlog](#413-architectural-drivers-backlog)
-      - [4.1.4. Architectural Design Decisions](#414-architectural-design-decisions)
-      - [4.1.5. Quality Attribute Scenario Refinements](#415-quality-attribute-scenario-refinements)
-    - [4.2. Strategic-Level Domain-Driven Design](#42-strategic-level-domain-driven-design)
-      - [4.2.1. EventStorming](#421-eventstorming)
-      - [4.2.2. Candidate Context Discovery](#422-candidate-context-discovery)
-      - [4.2.3. Domain Message Flows Modeling](#423-domain-message-flows-modeling)
-      - [4.2.4. Bounded Context Canvases](#424-bounded-context-canvases)
-      - [4.2.5. Context Mapping](#425-context-mapping)
-    - [4.3. Software Architecture](#43-software-architecture)
-      - [4.3.1. Software Architecture System Landscape Diagram](#431-software-architecture-system-landscape-diagram)
-      - [4.3.2. Software Architecture Context Level Diagrams](#432-software-architecture-context-level-diagrams)
-      - [4.3.3. Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)
-      - [4.3.4. Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)
-  - [Capítulo V: Tactical-Level Software Design](#capítulo-v-tactical-level-software-design)
-    - [5.1. Bounded Context: Identity Access Management](#51-bounded-context-identity-access-management)
-      - [5.1.1. Domain Layer](#511-domain-layer)
-      - [5.1.2. Interface Layer](#512-interface-layer)
-      - [5.1.3. Application Layer](#513-application-layer)
-      - [5.1.4. Infrastructure Layer](#514-infrastructure-layer)
-      - [5.1.5. Bounded Context Software Architecture Component Level Diagrams](#515-bounded-context-software-architecture-component-level-diagrams)
-      - [5.1.6. Bounded Context Software Architecture Code Level Diagrams](#516-bounded-context-software-architecture-code-level-diagrams)
-        - [5.1.6.1. Bounded Context Domain Layer Class Diagrams](#5161-bounded-context-domain-layer-class-diagrams)
-        - [5.1.6.2. Bounded Context Database Design Diagram](#5162-bounded-context-database-design-diagram)
-    - [5.2. Bounded Context: Reports](#52-bounded-context-reports)
-      - [5.2.1. Domain Layer](#521-domain-layer)
-      - [5.2.2. Interface Layer](#522-interface-layer)
-      - [5.2.3. Application Layer](#523-application-layer)
-      - [5.2.4. Infrastructure Layer](#524-infrastructure-layer)
-      - [5.2.5. Bounded Context Software Architecture Component Level Diagrams](#525-bounded-context-software-architecture-component-level-diagrams)
-      - [5.2.6. Bounded Context Software Architecture Code Level Diagrams](#526-bounded-context-software-architecture-code-level-diagrams)
-        - [5.2.6.1. Bounded Context Domain Layer Class Diagrams](#5261-bounded-context-domain-layer-class-diagrams)
-        - [5.2.6.2. Bounded Context Database Design Diagram](#5262-bounded-context-database-design-diagram)
-    - [5.3. Bounded Context: Assignments](#53-bounded-context-assignments)
-      - [5.3.1. Domain Layer](#531-domain-layer)
-      - [5.3.2. Interface Layer](#532-interface-layer)
-      - [5.3.3. Application Layer](#533-application-layer)
-      - [5.3.4. Infrastructure Layer](#534-infrastructure-layer)
-      - [5.3.5. Bounded Context Software Architecture Component Level Diagrams](#535-bounded-context-software-architecture-component-level-diagrams)
-      - [5.3.6. Bounded Context Software Architecture Code Level Diagrams](#536-bounded-context-software-architecture-code-level-diagrams)
-        - [5.3.6.1. Bounded Context Domain Layer Class Diagrams](#5361-bounded-context-domain-layer-class-diagrams)
-        - [5.3.6.2. Bounded Context Database Design Diagram](#5362-bounded-context-database-design-diagram)
-    - [5.4. Bounded Context: Maintenance and Operations](#54-bounded-context-maintenance-and-operations)
-      - [5.4.1. Domain Layer](#541-domain-layer)
-      - [5.4.2. Interface Layer](#542-interface-layer)
-      - [5.4.3. Application Layer](#543-application-layer)
-      - [5.4.4. Infrastructure Layer](#544-infrastructure-layer)
-      - [5.4.5. Bounded Context Software Architecture Component Level Diagrams](#545-bounded-context-software-architecture-component-level-diagrams)
-      - [5.4.6. Bounded Context Software Architecture Code Level Diagrams](#546-bounded-context-software-architecture-code-level-diagrams)
-        - [5.4.6.1. Bounded Context Domain Layer Class Diagrams](#5461-bounded-context-domain-layer-class-diagrams)
-        - [5.4.6.2. Bounded Context Database Design Diagram](#5462-bounded-context-database-design-diagram)
-    - [5.5. Bounded Context: Vehicle Wellness](#55-bounded-context-vehicle-wellness)
-      - [5.5.1. Domain Layer](#551-domain-layer)
-      - [5.5.2. Interface Layer](#552-interface-layer)
-      - [5.5.3. Application Layer](#553-application-layer)
-      - [5.5.4. Infrastructure Layer](#554-infrastructure-layer)
-      - [5.5.5. Bounded Context Software Architecture Component Level Diagrams](#555-bounded-context-software-architecture-component-level-diagrams)
-      - [5.5.6. Bounded Context Software Architecture Code Level Diagrams](#556-bounded-context-software-architecture-code-level-diagrams)
-        - [5.5.6.1. Bounded Context Domain Layer Class Diagrams](#5561-bounded-context-domain-layer-class-diagrams)
-        - [5.5.6.2. Bounded Context Database Design Diagram](#5562-bounded-context-database-design-diagram)
-    - [5.6. Bounded Context: Vehicle Management](#56-bounded-context-vehicle-management)
-      - [5.6.1. Domain Layer](#561-domain-layer)
-      - [5.6.2. Interface Layer](#562-interface-layer)
-      - [5.6.3. Application Layer](#563-application-layer)
-      - [5.6.4. Infrastructure Layer](#564-infrastructure-layer)
-      - [5.6.5. Bounded Context Software Architecture Component Level Diagrams](#565-bounded-context-software-architecture-component-level-diagrams)
-      - [5.6.6. Bounded Context Software Architecture Code Level Diagrams](#566-bounded-context-software-architecture-code-level-diagrams)
-        - [5.6.6.1. Bounded Context Domain Layer Class Diagrams](#5661-bounded-context-domain-layer-class-diagrams)
-        - [5.6.6.2. Bounded Context Database Design Diagram](#5662-bounded-context-database-design-diagram)
-  - [Capítulo VI: Solution UX Design](#capítulo-vi-solution-ux-design)
-    - [6.1. Style Guidelines](#61-style-guidelines)
-      - [6.1.1. General Style Guidelines](#611-general-style-guidelines)
-      - [6.1.2. Web, Mobile & Devices Style Guidelines](#612-web-mobile--devices-style-guidelines)
-    - [6.2. Information Architecture](#62-information-architecture)
-      - [6.2.1. Labeling Systems](#621-labeling-systems)
-      - [6.2.2. Searching Systems](#622-searching-systems)
-      - [6.2.3. SEO Tags and Meta Tags](#623-seo-tags-and-meta-tags)
-      - [6.2.4. Navigation Systems](#624-navigation-systems)
-    - [6.3. Landing Page UI Design](#63-landing-page-ui-design)
-      - [6.3.1. Landing Page Wireframe](#631-landing-page-wireframe)
-      - [6.3.2. Landing Page Mock-up](#632-landing-page-mock-up)
-    - [6.4. Applications UX/UI Design](#64-applications-uxui-design)
-      - [6.4.1. Applications Wireframes](#641-applications-wireframes)
-      - [6.4.2. Applications Wireflow Diagrams](#642-applications-wireflow-diagrams)
-      - [6.4.3. Applications Mock-ups](#643-applications-mock-ups)
-      - [6.4.4. Applications User Flow Diagrams](#644-applications-user-flow-diagrams)
-    - [6.5. Applications Prototyping](#65-applications-prototyping)
+* [Student Outcome](#student-outcome)
+* [Capítulo I: Introducción](#capítulo-i-introducción)
+  * [1.1. Startup Profile](#11-startup-profile)
+    * [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+    * [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+  * [1.2. Solution Profile](#12-solution-profile)
+    * [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
+    * [1.2.2. Lean UX Process](#122-lean-ux-process)
+      * [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+      * [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
+      * [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+      * [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
+  * [1.3. Segmentos objetivo](#13-segmentos-objetivo)
+* [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
+  * [2.1. Competidores](#21-competidores)
+    * [2.1.1. Análisis competitivo](#211-análisis-competitivo)
+    * [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+  * [2.2. Entrevistas](#22-entrevistas)
+    * [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
+    * [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+    * [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
+  * [2.3. Needfinding](#23-needfinding)
+    * [2.3.1. User Personas](#231-user-personas)
+    * [2.3.2. User Task Matrix](#232-user-task-matrix)
+    * [2.3.3. Empathy Mapping](#233-empathy-mapping)
+    * [2.3.4. As-is Scenario Mapping](#234-as-is-scenario-mapping)
+  * [2.4. Ubiquitous Language](#24-ubiquitous-language)
+* [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
+  * [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
+  * [3.2. User Stories](#32-user-stories)
+  * [3.3. Impact Mapping](#33-impact-mapping)
+  * [3.4. Product Backlog](#34-product-backlog)
+* [Capítulo IV: Strategic-Level Software Design](#capítulo-iv-strategic-level-software-design)
+  * [4.1. Strategic-Level Attribute-Driven Design](#41-strategic-level-attribute-driven-design)
+    * [4.1.1. Design Purpose](#411-design-purpose)
+    * [4.1.2. Attribute-Driven Design Inputs](#412-attribute-driven-design-inputs)
+      * [4.1.2.1. Primary Functionality (Primary User Stories)](#4121-primary-functionality-primary-user-stories)
+      * [4.1.2.2. Quality Attribute Scenarios](#4122-quality-attribute-scenarios)
+      * [4.1.2.3. Constraints](#4123-constraints)
+    * [4.1.3. Architectural Drivers Backlog](#413-architectural-drivers-backlog)
+    * [4.1.4. Architectural Design Decisions](#414-architectural-design-decisions)
+    * [4.1.5. Quality Attribute Scenario Refinements](#415-quality-attribute-scenario-refinements)
+  * [4.2. Strategic-Level Domain-Driven Design](#42-strategic-level-domain-driven-design)
+    * [4.2.1. EventStorming](#421-eventstorming)
+    * [4.2.2. Candidate Context Discovery](#422-candidate-context-discovery)
+    * [4.2.3. Domain Message Flows Modeling](#423-domain-message-flows-modeling)
+    * [4.2.4. Bounded Context Canvases](#424-bounded-context-canvases)
+    * [4.2.5. Context Mapping](#425-context-mapping)
+  * [4.3. Software Architecture](#43-software-architecture)
+    * [4.3.1. Software Architecture System Landscape Diagram](#431-software-architecture-system-landscape-diagram)
+    * [4.3.2. Software Architecture Context Level Diagrams](#432-software-architecture-context-level-diagrams)
+    * [4.3.3. Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)
+    * [4.3.4. Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)
+* [Capítulo V: Tactical-Level Software Design](#capítulo-v-tactical-level-software-design)
+  * [5.1. Bounded Context: Identity Access Management](#51-bounded-context-identity-access-management)
+    * [5.1.1. Domain Layer](#511-domain-layer)
+    * [5.1.2. Interface Layer](#512-interface-layer)
+    * [5.1.3. Application Layer](#513-application-layer)
+    * [5.1.4. Infrastructure Layer](#514-infrastructure-layer)
+    * [5.1.5. Bounded Context Software Architecture Component Level Diagrams](#515-bounded-context-software-architecture-component-level-diagrams)
+    * [5.1.6. Bounded Context Software Architecture Code Level Diagrams](#516-bounded-context-software-architecture-code-level-diagrams)
+      * [5.1.6.1. Bounded Context Domain Layer Class Diagrams](#5161-bounded-context-domain-layer-class-diagrams)
+      * [5.1.6.2. Bounded Context Database Design Diagram](#5162-bounded-context-database-design-diagram)
+  * [5.2. Bounded Context: Reports](#52-bounded-context-reports)
+    * [5.2.1. Domain Layer](#521-domain-layer)
+    * [5.2.2. Interface Layer](#522-interface-layer)
+    * [5.2.3. Application Layer](#523-application-layer)
+    * [5.2.4. Infrastructure Layer](#524-infrastructure-layer)
+    * [5.2.5. Bounded Context Software Architecture Component Level Diagrams](#525-bounded-context-software-architecture-component-level-diagrams)
+    * [5.2.6. Bounded Context Software Architecture Code Level Diagrams](#526-bounded-context-software-architecture-code-level-diagrams)
+      * [5.2.6.1. Bounded Context Domain Layer Class Diagrams](#5261-bounded-context-domain-layer-class-diagrams)
+      * [5.2.6.2. Bounded Context Database Design Diagram](#5262-bounded-context-database-design-diagram)
+  * [5.3. Bounded Context: Assignments](#53-bounded-context-assignments)
+    * [5.3.1. Domain Layer](#531-domain-layer)
+    * [5.3.2. Interface Layer](#532-interface-layer)
+    * [5.3.3. Application Layer](#533-application-layer)
+    * [5.3.4. Infrastructure Layer](#534-infrastructure-layer)
+    * [5.3.5. Bounded Context Software Architecture Component Level Diagrams](#535-bounded-context-software-architecture-component-level-diagrams)
+    * [5.3.6. Bounded Context Software Architecture Code Level Diagrams](#536-bounded-context-software-architecture-code-level-diagrams)
+      * [5.3.6.1. Bounded Context Domain Layer Class Diagrams](#5361-bounded-context-domain-layer-class-diagrams)
+      * [5.3.6.2. Bounded Context Database Design Diagram](#5362-bounded-context-database-design-diagram)
+  * [5.4. Bounded Context: Maintenance](#54-bounded-context-maintenance)
+    * [5.4.1. Domain Layer](#541-domain-layer)
+    * [5.4.2. Interface Layer](#542-interface-layer)
+    * [5.4.3. Application Layer](#543-application-layer)
+    * [5.4.4. Infrastructure Layer](#544-infrastructure-layer)
+    * [5.4.5. Bounded Context Software Architecture Component Level Diagrams](#545-bounded-context-software-architecture-component-level-diagrams)
+    * [5.4.6. Bounded Context Software Architecture Code Level Diagrams](#546-bounded-context-software-architecture-code-level-diagrams)
+      * [5.4.6.1. Bounded Context Domain Layer Class Diagrams](#5461-bounded-context-domain-layer-class-diagrams)
+      * [5.4.6.2. Bounded Context Database Design Diagram](#5462-bounded-context-database-design-diagram)
+  * [5.5. Bounded Context: Vehicle Wellness](#55-bounded-context-vehicle-wellness)
+    * [5.5.1 Domain Layer](#551-domain-layer)
+    * [5.5.2 Interface Layer](#552-interface-layer)
+    * [5.5.3 Application Layer](#553-application-layer)
+    * [5.5.4 Infrastructure Layer](#554-infrastructure-layer)
+    * [5.5.5 Bounded Context Software Architecture Component level Diagrams](#555-bounded-context-software-architecture-component-level-diagrams)
+    * [5.5.6 Bounded Context Software Architecture Code level Diagrams](#556-bounded-context-software-architecture-code-level-diagrams)
+      * [5.5.6.1 Bounded Context Domain Layer Class Diagrams](#5561-bounded-context-domain-layer-class-diagrams)
+      * [5.5.6.2 Bounded Context Database Design Diagram](#5562-bounded-context-database-design-diagram)
+  * [5.6. Bounded Context: Vehicle Management](#56-bounded-context-vehicle-management)
+    * [5.6.1. Domain Layer](#561-domain-layer)
+    * [5.6.2. Interface Layer](#562-interface-layer)
+    * [5.6.3. Application Layer](#563-application-layer)
+    * [5.6.4. Infrastructure Layer](#564-infrastructure-layer)
+    * [5.6.5. Bounded Context Software Architecture Component Level Diagrams](#565-bounded-context-software-architecture-component-level-diagrams)
+    * [5.6.6. Bounded Context Software Architecture Code Level Diagrams](#566-bounded-context-software-architecture-code-level-diagrams)
+      * [5.6.6.1. Bounded Context Domain Layer Class Diagrams](#5661-bounded-context-domain-layer-class-diagrams)
+      * [5.6.6.2. Bounded Context Database Design Diagram](#5662-bounded-context-database-design-diagram)
+  * [5.7. Bounded Context: Device Intelligence](#57-bounded-context-device-intelligence)
+    * [5.7.1. Domain Layer](#571-domain-layer)
+    * [5.7.2. Interface Layer](#572-interface-layer)
+    * [5.7.3. Application Layer](#573-application-layer)
+    * [5.7.4. Infrastructure Layer](#574-infrastructure-layer)
+    * [5.7.5. Bounded Context Software Architecture Component Level Diagrams](#575-bounded-context-software-architecture-component-level-diagrams)
+    * [5.7.6. Bounded Context Software Architecture Code Level Diagrams](#576-bounded-context-software-architecture-code-level-diagrams)
+      * [5.7.6.1. Bounded Context Domain Layer Class Diagrams](#5761-bounded-context-domain-layer-class-diagrams)
+      * [5.7.6.2. Bounded Context Database Design Diagram](#5762-bounded-context-database-design-diagram)
+* [Capitulo VI: Solution UX Design](#capitulo-vi-solution-ux-design-)
+  * [6.1. Style Guidelines](#61-style-guidelines)
+    * [6.1.1 General Style Guidelines](#611-general-style-guidelines)
+    * [6.1.2 Web, Mobile & Devices Style Guidelines](#612-web-mobile--devices-style-guidelines)
+  * [6.2. Information Architecture](#62-information-architecture)
+    * [6.2.1. Labeling Systems](#621-labeling-systems)
+    * [6.2.2. Searching Systems](#622-searching-systems)
+    * [6.2.3. SEO Tags and Meta Tags](#623-seo-tags-and-meta-tags)
+    * [6.2.4. Navigation Systems](#624-navigation-systems)
+  * [6.3. Landing Page UI Design](#63-landing-page-ui-design)
+    * [6.3.1. Landing Page Wireframe](#631-landing-page-wireframe)
+    * [6.3.2. Landing Page Mock-up](#632-landing-page-mock-up)
+  * [6.4. Applications UX/UI Design](#64-applications-uxui-design)
+    * [6.4.1. Applications Wireframes](#641-applications-wireframes)
+    * [6.4.2. Applications Wireflow Diagrams](#642-applications-wireflow-diagrams)
+    * [6.4.3. Applications Mock-ups](#643-applications-mock-ups)
+    * [6.4.4. Applications User Flow Diagrams](#644-applications-user-flow-diagrams)
+  * [6.5. Applications Prototyping](#65-applications-prototyping)
+* [Conclusiones](#conclusiones)
+* [Bibliografía](#bibliografía)
 
 # Student Outcome
 
@@ -307,11 +318,11 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </tbody>
 </table>
 
-## Capítulo I: Introducción
+# Capítulo I: Introducción
 
-### 1.1. Startup Profile
+## 1.1. Startup Profile
 
-#### 1.1.1. Descripción de la Startup
+### 1.1.1. Descripción de la Startup
 
 Nodrify es una startup tecnológica peruana, surgida en la Facultad de Ingeniería de la Universidad Peruana de Ciencias Aplicadas (UPC), enfocada en la innovación para el sector de movilidad inteligente. Nuestra misión es transformar la manera en que dueños de motocicletas, mecánicos y empresas gestionan el estado, uso y bienestar de las motocicletas, combinando arquitecturas de software emergentes, IoT y análisis de datos en una sola plataforma integral.
 
@@ -321,7 +332,7 @@ Misión: Transformar la gestión de motocicletas combinando tecnología IoT y an
 
 Visión: Ser la plataforma líder en movilidad inteligente en el mercado peruano que revolucione el mantenimiento preventivo y la conexión en el ecosistema de vehículos de dos ruedas.
 
-#### 1.1.2. Perfiles de integrantes del equipo
+### 1.1.2. Perfiles de integrantes del equipo
 
 <table>
   <tr>
@@ -354,9 +365,9 @@ Visión: Ser la plataforma líder en movilidad inteligente en el mercado peruano
   </tr>
 </table>
 
-### 1.2. Solution Profile
+## 1.2. Solution Profile
 
-#### 1.2.1. Antecedentes y problemática
+### 1.2.1. Antecedentes y problemática
 
 **What**
 
@@ -414,8 +425,8 @@ El impacto de la problemática es considerable y puede observarse en las estadí
 
 Estos datos reflejan la magnitud del problema y justifican la necesidad de soluciones tecnológicas que promuevan un mantenimiento preventivo y un monitoreo constante del estado del vehículo, permitiendo anticipar fallos críticos que podrían desencadenar accidentes. De este modo, la propuesta de la plataforma Octane contribuye directamente a reducir la incidencia de accidentes asociados a fallas mecánicas y a fortalecer la cultura de prevención entre los dueños de motocicletas urbanos.
 
-#### 1.2.2. Lean UX Process
-##### 1.2.2.1. Lean UX Problem Statements
+### 1.2.2. Lean UX Process
+#### 1.2.2.1. Lean UX Problem Statements
 
 El mantenimiento de motocicletas suele gestionarse bajo un enfoque reactivo, en el que los dueños de motocicletas no cuentan con información suficiente sobre el estado de su vehículo y los talleres dependen de diagnósticos manuales basados en datos incompletos.
 
@@ -427,7 +438,7 @@ Nuestro público inicial está conformado por dueños de motocicletas urbanos y 
 
 Sabremos que la propuesta funciona si se incrementa la programación de mantenimientos preventivos, mejora la retención de usuarios y disminuyen las reparaciones de emergencia durante los primeros meses de uso.
 
-##### 1.2.2.2. Lean UX Assumptions
+#### 1.2.2.2. Lean UX Assumptions
 
 En esta etapa se identificaron las principales suposiciones de Octane respecto al negocio, los usuarios, los resultados esperados y las características del producto.
 
@@ -460,7 +471,7 @@ Features Assumptions
 3. Suponemos que el monitoreo IoT en tiempo real será el principal diferenciador.
 4. Suponemos que la integración entre app móvil, panel web y servicios de notificación será esencial para el éxito del producto.
 
-##### 1.2.2.3. Lean UX Hypothesis Statements
+#### 1.2.2.3. Lean UX Hypothesis Statements
 1. Alertas preventivas y monitoreo en tiempo real <br>
 Creemos que reduciremos fallas inesperadas si Octane permite detectar anomalías y notificar al usuario antes de que ocurran problemas críticos.
 2. Historial de mantenimiento centralizado <br>
@@ -472,13 +483,13 @@ Creemos que la comunicación entre dueños de motocicletas y taller será más f
 5. Experiencia simple y confiable <br>
 Creemos que la adopción crecerá si la interfaz reduce fricción y presenta la información de forma clara.
 
-##### 1.2.2.4. Lean UX Canvas
+#### 1.2.2.4. Lean UX Canvas
 
 ![Lean UX Canvas](assets/images/chapter-1/lean-ux-process/lean-ux-canvas.jpg)
 
 Link: https://miro.com/app/board/uXjVHdKIr_Q=/?share_link_id=592709495812
 
-### 1.3. Segmentos objetivo
+## 1.3. Segmentos objetivo
 
 **Segmento Objetivo #1: Dueños de motocicletas**
 
@@ -512,9 +523,9 @@ Grupo conformado por profesionales independientes con pequeños talleres. Ellos 
   - Consultar el historial de reparaciones previas de la moto.
   - Recordar y planificar mantenimientos preventivos.
 
-## Capítulo II: Requirements Elicitation & Analysis
+# Capítulo II: Requirements Elicitation & Analysis
 
-### 2.1. Competidores
+## 2.1. Competidores
 
 Relacionado a nuestro start-up, hemos identificado a otros competidores en el mercado que ofrecen soluciones similares, aunque con enfoques y características distintas. A continuación, se presenta un análisis competitivo de los principales competidores en el ámbito de la movilidad inteligente y el mantenimiento preventivo de motocicletas:
 
@@ -536,7 +547,7 @@ Fuelio es una aplicación móvil enfocada en la gestión del consumo de combusti
 
 Geotab, fundada en 2000 en Canadá, es uno de los líderes globales en telemática comercial y gestión de flotas, con más de 3,7 millones de vehículos conectados en más de 150 países. Su propuesta combina el dispositivo IoT Geotab GO9 con la plataforma en la nube MyGeotab, lo que permite a empresas de cualquier tamaño acceder a datos avanzados de sus vehículos. Entre sus principales funcionalidades se incluyen análisis de comportamiento de conducción, diagnóstico de motor, consumo de combustible, planificación de rutas, alertas de mantenimiento, cumplimiento normativo (como ELD en EE.UU.) y reportes personalizados. Además, Geotab cuenta con el Geotab Marketplace, un ecosistema de más de 200 aplicaciones complementarias que amplían las capacidades de la plataforma. Su diferenciador está en la precisión de sus análisis, confiabilidad y enfoque en big data e inteligencia artificial, que permiten a empresas grandes y gobiernos tomar decisiones estratégicas basadas en datos de movilidad.
 
-#### 2.1.1. Análisis competitivo
+### 2.1.1. Análisis competitivo
 
 El análisis competitivo es una herramienta fundamental para comprender el entorno en el que se desarrollará nuestro producto, identificar las fortalezas y debilidades de los competidores, y definir estrategias que nos permitan posicionarnos de manera efectiva en el mercado. A continuación, se presenta un análisis competitivo detallado de Octane frente a sus principales competidores descritos previamente.
 
@@ -642,7 +653,7 @@ El análisis competitivo es una herramienta fundamental para comprender el entor
   </tr>
 </table>
 
-#### 2.1.2. Estrategias y tácticas frente a competidores
+### 2.1.2. Estrategias y tácticas frente a competidores
 
 Para poder destacar un producto en un mercado competitivo, es fundamental implementar estrategias que resalten las fortalezas y aborden las debilidades de los competidores. De esta manera, proponemos estrategias y tácticas específicas para posicionar a Octane como la solución preferida para dueños de motocicletas y mecánicos.
 
@@ -714,11 +725,11 @@ Para poder destacar un producto en un mercado competitivo, es fundamental implem
 - Promover talleres mecánicos como socios estratégicos para captar clientes y distribuir el IoT.
 - Desarrollar integraciones futuras con aseguradoras o talleres certificados, ofreciendo beneficios adicionales (ej. descuentos en seguros, paquetes de mantenimiento).
 
-### 2.2. Entrevistas
+## 2.2. Entrevistas
 
 Para identificar las necesidades, comportamientos y puntos de dolor de nuestros usuarios potenciales, se llevaron a cabo entrevistas con dueños de motocicletas urbanos y mecánicos. A continuación, se detalla el proceso seguido para la realización de estas entrevistas.
 
-#### 2.2.1. Diseño de entrevistas
+### 2.2.1. Diseño de entrevistas
 
 Se diseñaron entrevistas semiestructuradas con el objetivo de obtener información cualitativa sobre las experiencias, necesidades y expectativas de los usuarios en relación al mantenimiento de sus motocicletas, y de qué expectativas tienen los mecánicos para ofrecer un mejor servicio a los usuarios.
 
@@ -766,7 +777,7 @@ Preguntas complementarias:
 9. ¿Qué modelo de ingresos preferirías: una comisión por cada suscripción de tus clientes, o un plan que te permita supervisar toda tu cartera de clientes a un costo fijo?
 10. ¿Qué valoras más en una herramienta digital para tu trabajo? (ejemplo: precisión, facilidad de uso, integración con otros sistemas)
 
-#### 2.2.2. Registro de entrevistas
+### 2.2.2. Registro de entrevistas
 
 En esta sección se registran los puntos más relevantes de las entrevistas realizadas a los mecánicos y dueños de motos. Las entrevistas, en formato de video, se encuentran en el siguiente enlace: https://tinyurl.com/26tdu3s4
 
@@ -840,7 +851,7 @@ Mathias, un profesor de 23 años de Pueblo Libre, usa su motocicleta para despla
 
 Jair, un abogado de 32 años que utiliza su motocicleta como principal medio de transporte en Lima, se caracteriza por su enfoque organizado y su interés en mantener la eficiencia y seguridad de su vehículo. El entrevistado tiene preferencia por el sistema iOS en móvil y laptop para web. Actualmente, lleva el control del gasto de combustible y mantenimiento de su moto de manera manual, lo que a veces le genera dificultades para recordar fechas importantes. Ha experimentado fallas inesperadas que le han ocasionado gastos imprevistos, lo que le ha llevado a valorar la importancia del mantenimiento preventivo. Se comunica con su mecánico principalmente a través de llamadas y mensajes de texto, pero no utiliza herramientas digitales específicas para gestionar el estado de su moto. Jair se muestra abierto a la idea de una aplicación que le permita monitorear automáticamente el estado de su moto, recibir alertas sobre posibles fallas y conocer métricas en tiempo real como presión de neumáticos, nivel de combustible y temperatura del motor. Valora la simplicidad y claridad en las aplicaciones móviles, y estaría dispuesto a pagar una suscripción mensual si el servicio le ofrece beneficios tangibles en términos de seguridad y ahorro en mantenimiento.
 
-#### 2.2.3. Análisis de entrevistas
+### 2.2.3. Análisis de entrevistas
 
 Al tener todas las entrevistas necesitadas de ambos segmentos objetivo, se procedió a realizar un análisis cualitativo para identificar patrones, necesidades comunes y oportunidades de mejora en el proceso de mantenimiento de motocicletas tanto para mecánicos como para dueños. A continuación, se presenta un resumen categórico del análisis realizado:
 
@@ -869,9 +880,9 @@ El control de gastos y mantenimiento es manual, con métodos como notas, libreta
 *Necesidades y oportunidades:*
 Los dueños de motocicletas valoran la confiabilidad de su moto y buscan evitar fallas inesperadas. Están interesados en aplicaciones que ofrezcan recordatorios de mantenimiento, historial digital de gastos y servicios, y alertas proactivas basadas en métricas como kilometraje, presión de neumáticos, nivel de combustible y temperatura del motor. Están dispuestos a pagar por una suscripción si la aplicación demuestra ser confiable y les ayuda a mantener su moto en óptimas condiciones. El 100% valora la confiabilidad, el 100% busca recordatorios y alertas, y el 100% estaría dispuesto a pagar por una suscripción si el servicio es confiable y útil.
 
-### 2.3. Needfinding
+## 2.3. Needfinding
 
-#### 2.3.1. User Personas
+### 2.3.1. User Personas
 
 **Segmento Objetivo 1: Mecánicos**
 
@@ -881,7 +892,7 @@ Los dueños de motocicletas valoran la confiabilidad de su moto y buscan evitar 
 
 ![User Persona Propietario](assets/images/chapter-2/needfinding/user-persona-2.png)
 
-#### 2.3.2. User Task Matrix
+### 2.3.2. User Task Matrix
 
 En esta sección se presenta la User Task Matrix, herramienta que permite identificar y analizar las tareas que cada User Persona, representando a los distintos segmentos de usuarios, realiza para alcanzar sus objetivos. Se detallan las tareas en función de su frecuencia e importancia, proporcionando una visión clara de las actividades más relevantes para cada segmento.
 
@@ -909,7 +920,7 @@ En esta sección se presenta la User Task Matrix, herramienta que permite identi
 | Buscar información en internet sobre problemas        | Media      | Media     |
 | Verificar el estado básico de la moto antes de usarla | Alta       | Media     |
 
-#### 2.3.3. Empathy Mapping
+### 2.3.3. Empathy Mapping
 
 En esta sección se presentan los Empathy Mapping por cada segmento objetivo definido.
 
@@ -921,7 +932,7 @@ En esta sección se presentan los Empathy Mapping por cada segmento objetivo def
 
 ![Empathy Map Propietario](assets/images/chapter-2/needfinding/empathy-2.png)
 
-#### 2.3.4. As-is Scenario Mapping
+### 2.3.4. As-is Scenario Mapping
 
 En esta sección se presentan los As-Is Scenario Mapping por cada segmento objetivo definido.
 
@@ -955,7 +966,7 @@ Escenario actual (As-Is): Uso cotidiano sin monitoreo del vehículo
 | Retoma uso            | Vuelve a usar la moto                   | “Espero no vuelva a pasar”   | No hay prevención futura                          |
 
 
-### 2.4. Ubiquitous Language
+## 2.4. Ubiquitous Language
 
 | Término (Inglés)     | Término (Español)    | Definición                                                                                   |
 |----------------------|----------------------|----------------------------------------------------------------------------------------------|
@@ -980,9 +991,9 @@ Escenario actual (As-Is): Uso cotidiano sin monitoreo del vehículo
 | Authorized Mechanic  | Mecánico autorizado  | Usuario con acceso limitado al vehículo para servicios o diagnósticos.                       |
 | Vehicle registration | Registro de vehículo | Proceso de alta inicial en el sistema.                                                       |
 
-## Capítulo III: Requirements Specification
+# Capítulo III: Requirements Specification
 
-### 3.1. To-Be Scenario Mapping
+## 3.1. To-Be Scenario Mapping
 
 En esta sección se presentan los To-Be Scenario Mapping por cada segmento objetivo definido, mostrando cómo se transforman los escenarios actuales (As-Is) en escenarios futuros (To-Be) gracias a la implementación de la plataforma Octane.
 
@@ -1019,7 +1030,7 @@ En esta sección se presentan los To-Be Scenario Mapping por cada segmento objet
 | Uso continuo             | Continúa utilizando la moto con monitoreo activo     | “Tengo control constante”                | Seguridad y confianza                 |
 
 
-### 3.2. User Stories
+## 3.2. User Stories
 
 **Epicas:**
 
@@ -1089,9 +1100,9 @@ En esta sección se presentan los To-Be Scenario Mapping por cada segmento objet
 | TS-009        | Arquitectura basada en eventos                            | Como desarrollador del dispositivo, quiero que el sistema funcione solo con eventos, para desacoplar la lógica del hardware.                                                                                                                                                                                                                       | Escenario 1: Emisión de eventos<br>Dado que un sensor detecta un cambio, cuando se supera el umbral definido, entonces se emite un único evento.<br><br>Escenario 2: Eventos controlados<br>Dado que no ocurre ningún cambio, cuando el sistema actualiza las lecturas, entonces no se emiten eventos.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | EP-004  |
 | TS-010        | Escalabilidad del sistema                                 | Como desarrollador del dispositivo, quiero poder añadir nuevos sensores sin modificar la arquitectura base, para escalar el sistema en futuras versiones.                                                                                                                                                                                          | Escenario 1: Creación de sensor<br>Dado que se crea una nueva clase de sensor, cuando se integra al dispositivo, entonces no se debe modificar la clase base Device.<br><br>Escenario 2: Agregar nuevo sensor<br>Dado que el sistema está en producción, cuando se agrega un nuevo sensor, entonces los sensores existentes continúan funcionando correctamente.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-004  |
 
-### 3.3. Impact Mapping
+## 3.3. Impact Mapping
 
-### 3.4. Product Backlog
+## 3.4. Product Backlog
 
 
 | Prioridad | Story ID | Título                                           | Descripción                                                 | Story Points |
@@ -1146,11 +1157,11 @@ En esta sección se presentan los To-Be Scenario Mapping por cada segmento objet
 | 48        | US-038   | Presentación del Equipo                          | Landing Page: Perfiles de los desarrolladores.              | 2            |
 | 49        | US-039   | Navegación Global y Footer                       | Landing Page: Menú funcional y términos legales.            | 2            |
 
-## Capítulo IV: Strategic-Level Software Design
+# Capítulo IV: Strategic-Level Software Design
 
-### 4.1. Strategic-Level Attribute-Driven Design
+## 4.1. Strategic-Level Attribute-Driven Design
 
-#### 4.1.1. Design Purpose
+### 4.1.1. Design Purpose
 En esta sección se redacta la explicación del propósito del proceso de diseño de la solución, evidenciando la relación con la problemática identificada y su orientación a satisfacer las necesidades de los segmentos objetivo y el negocio.
 
 El propósito del diseño de Octane es el de abordar la problemática de la falta de visibilidad y enfoque reactivo en el diagnóstico mecánico de las motocicletas. Tenemos un enfoque centrado en el usuario y orientado al negocio que busca generar valor tanto para los dueños de motocicletas como para los mecánicos. Bajo ese contexto, el diseño se enfoca en los siguientes puntos:
@@ -1167,9 +1178,9 @@ Se busca cambiar el paradigma de mantenimiento de las motocicletas, pasando de u
 
 El diseño de la solución también tiene un impacto relevante en la seguridad vial, al proporcionar alertas tempranas sobre condiciones críticas del vehículo (como sobrecalentamiento o presión de llantas) y detectar impactos, lo que puede ayudar a prevenir accidentes y mejorar la seguridad de los dueños de motocicletas. Así mismo, el monitoreo continuo del estado del vehículo contribuye a mantenerlo en condiciones óptimas, reduciendo el riesgo de fallas mecánicas durante la conducción.
 
-#### 4.1.2. Attribute-Driven Design Inputs
+### 4.1.2. Attribute-Driven Design Inputs
 
-##### 4.1.2.1. Primary Functionality (Primary User Stories)
+#### 4.1.2.1. Primary Functionality (Primary User Stories)
 En esta sección se especifica las User stories que tienen mayor relevancia en términos de
 requisitos funcionales y que tienen impacto sobre la arquitectura de la solución.
 
@@ -1180,7 +1191,7 @@ requisitos funcionales y que tienen impacto sobre la arquitectura de la solució
 | US-033               | Sección de métricas por cada vehículo   | Como mecánico, quiero poder acceder a la sección de métricas registradas para cada vehículo para poder analizar las métricas de cada moto de manera individual. | Escenario 1:<br>Dado que veo los vehículos de un cliente, cuando solicito métricas de un vehículo específico, entonces el sistema muestra sus métricas de telemetría<br><br>Escenario 2:<br>Dado que veo los vehículos de un cliente, cuando solicito métricas de un vehículo sin registros, entonces el sistema muestra "No se encontró ninguna métrica relacionada a este vehículo"<br> | EP-001                    |
 | TS-008               | Integrar sensores con ModestIoT         | Como desarrollador del dispositivo, quiero integrar todos los sensores usando ModestIoT, para evitar programación directa del hardware.                         | Escenario 1:<br>Dado que el desarrollador incluye `<ModestIoT.h>`, cuando instancia `OctaneDevice`, entonces todos los sensores quedan registrados automáticamente.<br><br>Escenario 2:<br>Dado que el sistema está en ejecución, cuando ocurre un evento de sensor, entonces este es procesado por `OctaneDevice::on(Event)`.<br>                                                        | EP-008                    |
 
-##### 4.1.2.2. Quality Attribute Scenarios
+#### 4.1.2.2. Quality Attribute Scenarios
 En esta sección se incluye la especificación de la primera versión de los escenarios de atributos de calidad que tienen mayor impacto en la arquitectura de la solución, los cuales sirven de input para el proceso de diseño.
 
 Los atributos de calidad seleccionados para el diseño de Octane son Performance (Rendimiento), Availability (Disponibilidad), Scalability (Escalabilidad), Security (Seguridad) y Usability (Usabilidad). A continuación se detallan los escenarios para cada uno de estos atributos:
@@ -1226,7 +1237,7 @@ Los atributos de calidad seleccionados para el diseño de Octane son Performance
 **Scenario:** Cuando un usuario interactúa con la aplicación móvil o web para consultar métricas, alertas o historial de mantenimiento, el sistema debe presentar la información de manera clara y permitir que el usuario complete sus tareas clave (como revisar el estado del vehículo o programar un mantenimiento) de forma intuitiva y eficiente, sin requerir una curva de aprendizaje prolongada.
 
 
-##### 4.1.2.3. Constraints
+#### 4.1.2.3. Constraints
 En esta sección se incluye la especificación de restricciones, es decir características que no pueden ser negociadas y son impuestas por el cliente o el propio negocio como guía para la elaboración de la solución.
 
 Dado que Octane busca ser una solución accesible tanto para dueños de motocicletas como para mecánicos de talleres pequeños, se han identificado restricciones clave que impactan directamente en la arquitectura de la solución. Estas restricciones incluyen la necesidad de integración con dispositivos IoT para la captura de métricas en tiempo real, soporte multiplataforma para acceso desde móviles y web, tolerancia a conectividad intermitente, despliegue en infraestructura cloud para escalabilidad, seguridad de datos mediante autenticación y autorización, bajo costo de implementación para facilitar adopción, procesamiento en tiempo real para monitoreo continuo y persistencia de historial completo de métricas y mantenimientos. Estas restricciones guían el diseño arquitectónico para asegurar que la solución cumpla con los requisitos funcionales y no funcionales necesarios para satisfacer las necesidades del mercado objetivo.
@@ -1244,7 +1255,7 @@ Para el diseño de Octane, se han identificado las siguientes restricciones que 
 | CON-07        | Procesamiento en tiempo real     | El sistema debe procesar y visualizar datos en tiempo casi real para el monitoreo continuo.                                         | **Escenario 1:** Dado que el sistema recibe datos del dispositivo IoT, cuando los procesa, entonces la latencia no debe superar los 2 segundos.<br><br>**Escenario 2:** Dado que el usuario está visualizando el dashboard, cuando llegan nuevos datos, entonces la información debe actualizarse automáticamente.                                                          | EP-002                    |
 | CON-08        | Persistencia de historial        | El sistema debe almacenar el historial completo de métricas y mantenimientos de cada vehículo.                                      | **Escenario 1:** Dado que se generan nuevas métricas o registros, cuando son procesados, entonces deben almacenarse correctamente en el historial del vehículo.<br><br>**Escenario 2:** Dado que el usuario consulta el historial, cuando accede a la información, entonces debe visualizar datos completos, consistentes y ordenados.                                      | EP-003                    |
 
-#### 4.1.3. Architectural Drivers Backlog
+### 4.1.3. Architectural Drivers Backlog
 En esta sección se establece el conjunto de Architectural Drivers que acordados por el equipo, resultado del proceso iterativo en su proceso de Quality Attribute Workshop. El Architectural Drivers Backlog incluye los Functional Drivers seleccionados, los Quality Attribute Drivers seleccionados y todos los Constraints. A continuación se presenta el Architecture Drivers Backlog.
 
 | Driver ID | Título del Driver          | Descripción                                                                                  | Importancia para Stakeholders | Impacto en Architecture Technical Complexity |
@@ -1264,7 +1275,7 @@ En esta sección se establece el conjunto de Architectural Drivers que acordados
 | AD-13     | Gestión de acceso          | Control de usuarios y roles dentro del sistema.                                              | Media                         | Media                                        |
 | AD-14     | Visualización de datos     | Presentación clara y comprensible de métricas en dashboards.                                 | Alta                          | Baja                                         |
 
-#### 4.1.4. Architectural Design Decisions
+### 4.1.4. Architectural Design Decisions
 En esta sección el equipo redacta la explicación del proceso siguiendo los Stages del Quality Attribute Workshop, resumiendo para cada iteración, cuáles fueron los Drivers considerados, las tácticas y patrones que se evaluaron y los criterios para llegar sus decisiones de diseño.
 
 El equipo llevó a cabo un proceso iterativo basado en los stages del Quality Attribute Workshop (QAW), con el objetivo de identificar y evaluar decisiones arquitectónicas alineadas a los drivers priorizados.
@@ -1397,7 +1408,7 @@ Finalmente, en una tercera iteración, se consideraron drivers asociados a la ex
   </tbody>
 </table>
 
-#### 4.1.5. Quality Attribute Scenario Refinements
+### 4.1.5. Quality Attribute Scenario Refinements
 En esta sección, el equipo especifica la relación de escenarios priorizados para atributos de calidad.
 
 Al finalizar el proceso de Quality Attribute Workshop, el equipo refinó los escenarios de calidad priorizados, detallando sus componentes clave (estímulo, fuente del estímulo, entorno, artefacto, respuesta y medida), así como las preguntas e issues identificados durante el análisis. A continuación se presentan los escenarios refinados para cada uno de los atributos de calidad seleccionados:
@@ -1587,9 +1598,9 @@ Al finalizar el proceso de Quality Attribute Workshop, el equipo refinó los esc
   </tr>
 </table>
 
-### 4.2. Strategic-Level Domain-Driven Design
+## 4.2. Strategic-Level Domain-Driven Design
 
-#### 4.2.1. EventStorming
+### 4.2.1. EventStorming
 
 En esta sección se expone y fundamenta el proceso de EventStorming llevado a cabo por el equipo, con el propósito de construir una primera aproximación al modelado general del dominio del problema. Esta técnica, centrada en la identificación de eventos relevantes dentro del sistema, permite capturar el conocimiento colectivo de los participantes y detonar conversaciones clave sobre el comportamiento esperado del sistema en distintos escenarios.
 
@@ -1657,7 +1668,7 @@ Finalmente, se identifican los bounded contexts o contextos delimitados. Estos s
 
 ![Step-10](assets/images/chapter-4/eventstorming/step-10.jpg)
 
-#### 4.2.2. Candidate Context Discovery
+### 4.2.2. Candidate Context Discovery
 
 En base al resultado del Event Storming, se identifican los contextos delimitados (Bounded Contexts) que representan áreas funcionales específicas dentro del dominio. Estos contextos ayudan a organizar la lógica de negocio y a definir los límites del sistema, facilitando la gestión de la complejidad.
 
@@ -1710,7 +1721,7 @@ Como equipo, nosotros identificamos los eventos pivote y sus contextos desde ori
 - Vinculación de motocicleta con un mecánico: Desde Assignments, pasa a Maintenance and Operations.
 - Completado del mantenimiento: Desde Maintenance and Operations, pasa a Vehicle Wellness.
 
-#### 4.2.3. Domain Message Flows Modeling
+### 4.2.3. Domain Message Flows Modeling
 
 En esta sección se modelan los flujos de mensajes entre los diferentes contextos delimitados identificados en la sección anterior. Esto permite visualizar cómo se comunican los distintos componentes del sistema, siendo los bounded contexts y los sistemas, y cómo se intercambian datos e información entre ellos.
 
@@ -1734,7 +1745,7 @@ Se utiliza un enfoque basado en diagramas de secuencia para representar los fluj
 
 ![Flow 3: Detección de Anomalía](assets/images/chapter-4/dmfm/flow-3.jpg)
 
-#### 4.2.4. Bounded Context Canvases
+### 4.2.4. Bounded Context Canvases
 
 **Bounded Context Canvas — Vehicle Wellness**
 
@@ -1760,7 +1771,7 @@ Se utiliza un enfoque basado en diagramas de secuencia para representar los fluj
 
 ![IAM (Identity & Access Management)](assets/images/chapter-4/bounded-context-canvases/IAM.png)
 
-#### 4.2.5. Context Mapping
+### 4.2.5. Context Mapping
 En la presente sección se describen las relaciones estructurales identificadas entre los bounded contexts que conforman la solución **Octane**. Para la elaboración del context mapping se han considerado únicamente los contextos vinculados al dominio principal del negocio: **Vehicle Management**, **Assignments**, **Vehicle Wellness**, **Maintenance and Operations** y **Reports**.  
 
 El bounded context **IAM (Identity & Access Management)** no ha sido incluido en este análisis debido a que corresponde a un **generic context**, cuya finalidad es proveer capacidades transversales de autenticación y autorización, sin intervenir directamente en la lógica central del dominio.
@@ -1787,34 +1798,34 @@ El objetivo del context mapping es establecer dependencias claras entre contexto
 - **Maintenance and Operations** depende de Vehicle Management y Assignments para gestionar el ciclo de mantenimiento.
 - **Reports** permanece como un contexto analítico aguas abajo que consolida información de los demás contextos de negocio.
 
-### 4.3. Software Architecture
+## 4.3. Software Architecture
 
 Se define la arquitectura del sistema Octane bajo un enfoque de Monolito Modular, el cual permite una gestión centralizada del despliegue sin sacrificar la organización interna. La estructura lógica se rige por una Layered Architecture (Arquitectura de Capas) que separa las responsabilidades en Interfaces, Aplicación, Dominio e Infraestructura.
 
 Para gestionar la complejidad del negocio de telemetría y mantenimiento, se aplica la metodología DDD (Domain-Driven Design) mediante la identificación de Bounded Contexts. Asimismo, se implementa el patrón CQRS para segregar las operaciones de lectura y escritura, optimizando el rendimiento de los datos de sensores, y una ACL (Anti-Corruption Layer) que protege el núcleo del sistema de las variaciones técnicas del hardware IoT y servicios externos. Todo esto se documenta visualmente mediante el Modelo C4, garantizando una trazabilidad técnica desde el contexto global hasta el despliegue físico.
 
-#### 4.3.1. Software Architecture System Landscape Diagram
+### 4.3.1. Software Architecture System Landscape Diagram
 
 En este nivel se describe la visión global de la organización Nodrify. El diagrama representa cómo el sistema Octane coexiste con otros sistemas internos y externos, definiendo el ecosistema completo y las interacciones de alto nivel entre los actores principales y los límites de la empresa.
 
 ![system-landscape](assets/images/chapter-4/software-architecture/system-landscape-keys.png)
 ![system-landscape-keys](assets/images/chapter-4/software-architecture/system-landscape.png)
 
-#### 4.3.2. Software Architecture Context Level Diagrams
+### 4.3.2. Software Architecture Context Level Diagrams
 
 Este punto detalla el Sistema Octane como una caja negra, centrándose exclusivamente en sus fronteras inmediatas. Describe las relaciones directas de datos y comunicación entre el sistema, los usuarios (Dueños de motocicletas y Mecánicos) y las dependencias externas críticas como el hardware IoT y el motor de IA.
 
 ![context-diagram](assets/images/chapter-4/software-architecture/context-diagram.png)
 ![context-diagram-keys](assets/images/chapter-4/software-architecture/context-diagram-keys.png)
 
-#### 4.3.3. Software Architecture Container Level Diagrams
+### 4.3.3. Software Architecture Container Level Diagrams
 
 Aquí se desglosa la aplicación en sus unidades de ejecución o contenedores. Se identifican las aplicaciones móviles, la plataforma web, el API Monolítica Modular y la base de datos, especificando las tecnologías utilizadas (Spring Boot, React, Flutter, PostgreSQL) y los protocolos de comunicación entre ellos.
 
 ![container-diagram](assets/images/chapter-4/software-architecture/container-diagram.png)
 ![container-diagram-keys](assets/images/chapter-4/software-architecture/container-diagram-keys.png)
 
-#### 4.3.4. Software Architecture Deployment Diagrams
+### 4.3.4. Software Architecture Deployment Diagrams
 
 Este diagrama describe la distribución física y la infraestructura de nube de la solución. Detalla dónde se alojan los contenedores en entornos reales de producción, incluyendo el despliegue del frontend en Vercel, el backend y base de datos en Render, la distribución móvil en Firebase y el hardware embebido en el microcontrolador de la motocicleta.
 
@@ -1822,7 +1833,7 @@ Este diagrama describe la distribución física y la infraestructura de nube de 
 ![deployment-diagram-keys](assets/images/chapter-4/software-architecture/deployment-diagram-keys.png)
 
 
-# Chapter V: Tactical-Level Software Design
+# Capítulo V: Tactical-Level Software Design
 
 ## 5.1. Bounded Context: Identity Access Management
 
@@ -2774,13 +2785,11 @@ Este bounded context combina persistencia propia con integración transversal. S
 
 ![maintenance-db-diagram](/assets/images/chapter-5/bc-maintenance/db-diagram.png)
 
----
-
-### 5.5. Bounded Context: Vehicle Wellness
+## 5.5. Bounded Context: Vehicle Wellness
 
 ### 5.5.1 Domain Layer
 
-#### Aggregates
+**Aggregates**
 
 *WellnessMetric*
 
@@ -2796,7 +2805,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | statusImpact            | 	StatusImpact (Enum)            | 	Indicador del impacto en el estado del sistema          |
 | registeredAt            | 	LocalDateTime                  | 	Fecha y hora en que se registró la métrica              |
 
-#### Value Objects
+**Value Objects**
 
 *AirQuality*
 |Atributo|	Tipo|	Descripción|
@@ -2827,7 +2836,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 |-|-|-|
 |impactDetected|	Boolean|	Indicador de si se detectó algún impacto en el sistema|
 
-#### Entities
+**Entities**
 
 *Notification*
 |Atributo|	Tipo|	Descripción|
@@ -2840,7 +2849,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 |read|	boolean|	Estado que indica si la notificación ha sido leída
 |occurredAt|	LocalDateTime|	Fecha y hora en que ocurrió el evento notificado|
 
-#### Commands
+**Commands**
 
 - `CreateNotificationCommand(Long vehicleId,String title,String message,String type,String severity,LocalDateTime occurredAt)` (Record)
 - `CreateWellnessMetricCommand(Long vehicleId,Float latitude,Float longitude,Double CO2Ppm,Double NH3Ppm,Double BenzenePpm,Float temperatureCelsius,Float humidityPercentage,Float pressureHpa,Boolean impactDetected)` (Record)
@@ -2848,7 +2857,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 - `MarkNotificationAsReadCommand(Long notificationId)` (Record)
 - `UpdateWellnessMetricCommand(Long wellnessMetricId,Float latitude,Float longitude,Double CO2Ppm,Double NH3Ppm,Double BenzenePpm,Float temperatureCelsius,Float humidityPercentage,Float pressureHpa,Boolean impactDetected)` (Record)
 
-#### Queries
+**Queries**
 
 - `GetAllNotificationsQuery()` (Record)
 - `GetAllWellnessMetricsQuery()` (Record)
@@ -2857,14 +2866,14 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 - `GetWellnessMetricByIdQuery(Long wellnessMetricId)` (Record)
 - `GetWellnessMetricsByVehicleIdQuery(Long vehicleId)` (Record)
 
-#### Events
+**Events**
 
 - `AirQualityAlertEvent`
 - `AtmosphericPressureAlertEvent`
 - `EnvironmentalConditionAlertEvent`
 - `StatusImpactAlertEvent`
 
-#### Services
+**Services**
 
 `NotificationCommandService` (Interface)
 - handle(CreateNotificationCommand)
@@ -2886,7 +2895,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 
 ### 5.5.2 Interface Layer
 
-#### Controllers:
+**Controllers:**
 *Controlador: WellnessMetricsController*
 
 | Título      | 	Wellness Metrics Controller                                                                                                   |
@@ -2916,7 +2925,8 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | getNotificationsByVehicleId | 	GET /api/v1/notifications/vehicle/{vehicleId} | 	Recupera todas las notificaciones para un vehículo específico |
 | markNotificationAsRead      | 	GET /api/v1/notifications/{id}/read           | 	Marca una notificación como leída                             |
 
-#### Transforms:
+**Transforms:**
+
 | Transform                                        | 	Descripción                                                                       |
 |--------------------------------------------------|------------------------------------------------------------------------------------|
 | CreateNotificationCommandFromResourceAssembler   | 	Convierte los recursos de entrada en comandos para crear notificaciones           |
@@ -2925,7 +2935,8 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | UpdateWellnessMetricCommandFromResourceAssembler | 	Transforma los recursos de actualización en comandos para modificar métricas      |
 | WellnessMetricResourceFromEntityAssembler        | 	Convierte entidades de métricas de bienestar en recursos de respuesta para la API |
 
-#### Resources:
+**Resources:**
+
 | Resource                     | 	Descripción                                                           |
 |------------------------------|------------------------------------------------------------------------|
 | CreateMetricResource         | 	Estructura de datos para la creación de nuevas métricas en el sistema |
@@ -2934,14 +2945,14 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | UpdateWellnessMetricResource | 	Estructura de datos para actualizar métricas de bienestar existentes  |
 | WellnessMetricResource       | 	Representación de métricas de bienestar en las respuestas de la API   |
 
-#### ACL:
+**ACL:**
 
 `WellnessMetricContextFacade` (Interface)
 - fetchWellnessMetricById(Long wellnessMetricId)
 
 ### 5.5.3 Application Layer
 
-#### Command Services
+**Command Services**
 
 *Clase: NotificationCommandServiceImpl*
 
@@ -2979,7 +2990,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 |WellnessMonitoringService|	Servicio para monitorear y analizar las métricas de bienestar|
 |ExternalVehiclesService|	Servicio externo para validar y obtener datos de vehículos|
 
-#### Query Services
+**Query Services**
 
 *Clase: NotificationQueryServiceImpl*
 
@@ -3016,7 +3027,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 |-|-|
 |WellnessMetricRepository|	Repositorio para acceder a los datos de métricas de bienestar|
 
-#### Event Handlers
+**Event Handlers**
 
 *Clase: WellnessAlertEventHandler*
 
@@ -3039,7 +3050,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | NotificationQueryService    | 	Servicio para consultar notificaciones existentes |
 | WellnessWebSocketController | 	Controlador para enviar alertas en tiempo real    |
 
-#### ACL
+**ACL**
 
 *Clase: WellnessMetricContextFacadeImpl*
 
@@ -3058,7 +3069,8 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 
 ### 5.5.4 Infrastructure Layer
 
-#### Repositories
+**Repositories**
+
 *Clase: NotificationRepository <<Interface>>*
 
 | Título      | 	NotificationRepository                                                        |
@@ -3085,15 +3097,13 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 
 ### 5.5.6 Bounded Context Software Architecture Code level Diagrams
 
-### 5.5.6.1 Bounded Context Domain Layer Class Diagrams
+#### 5.5.6.1 Bounded Context Domain Layer Class Diagrams
 
 ![vehicle_wellness_code_level](./assets/images/chapter-5/bc-vehicle-wellness/vehicle_wellness_code_level.drawio.png)
 
-### 5.5.6.2 Bounded Context Database Design Diagram
+#### 5.5.6.2 Bounded Context Database Design Diagram
 
 ![vehicle_wellness_db](./assets/images/chapter-5/bc-vehicle-wellness/vehicle_wellness_db.png)
-
----
 
 ## 5.6. Bounded Context: Vehicle Management
 ### 5.6.1. Domain Layer
@@ -3422,10 +3432,8 @@ Para el diseño de la base de datos, se presenta un diagrama que ilustra la tabl
 
 ![Device Database Diagram](assets/images/chapter-5/bc-device-intelligence/device-database-diagram.png)
 
-# Chapter VI: Solution UX Design
-
-## Capitulo VI: Solution UX Design 
-### 6.1. Style Guidelines
+# Capitulo VI: Solution UX Design 
+## 6.1. Style Guidelines
 
 La sección de Style Guidelines establece los lineamientos visuales y de diseño que garantizan una experiencia de usuario coherente, clara y alineada con la identidad de marca de Octane. Este repositorio central reúne todos los elementos gráficos y normativos necesarios para que el equipo de diseño y desarrollo trabaje de manera consistente en los distintos canales digitales (web y móvil).
 
@@ -3437,7 +3445,7 @@ General Style Guidelines: Se definiran los principios básicos de diseño incluy
 Web Mobile and IoT Style Guidelines: Aquí se definen los estándares visuales especificos para cada plataforna.
 Estos lineamientos permiten mantener organizados y accesibles todos los artefactos de diseño, reduciendo inconsistencias y mejorando la eficiencia del equipo.
 
-#### 6.1.1 General Style Guidelines
+### 6.1.1 General Style Guidelines
 
 Los lineamientos generales de estilo definen los principios transversales de diseño que guiarán la identidad visual de Octane en todas sus plataformas digitales. Incluyen decisiones clave en torno al branding, paleta de colores, tipografía, tono comunicacional y principios de diseño.
 
@@ -3493,7 +3501,7 @@ El diseño se regirá por los siguientes principios:
 - Iconografía clara: símbolos simples y reconocibles que complementen el texto.
 - Uso de contrastes: para resaltar información y facilitar la navegación.
 
-#### 6.1.2 Web, Mobile & Devices Style Guidelines
+### 6.1.2 Web, Mobile & Devices Style Guidelines
 
 Esta sección establece los estándares visuales e interactivos para los distintos canales digitales de Octane: interfaces web, aplicaciones móviles y aplicaciones de IoT. Cada uno presenta particularidades de interacción y diseño, pero todos comparten la misma identidad visual definida en los lineamientos generales.
 
@@ -3764,7 +3772,7 @@ El wireflow inicia cuando el usuario presiona el botón de la barra lateral desd
 ![wireflow-ver-gastos.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-gastos.png)
 El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Gastos. Al acceder a la página, el sistema muestra en pantalla los gastos registrados del usuario, permitiéndole observar y revisar la información correspondiente de manera clara y ordenada.
 
-## Conclusiones
+# Conclusiones
 
 El desarrollo del proyecto permitió integrar de manera efectiva enfoques de análisis de negocio, diseño centrado en el usuario, modelado de dominio y arquitectura de software, logrando una visión integral de la solución propuesta. A través del uso de herramientas como Lean UX, Impact Mapping y técnicas de modelado como Event Storming y Context Mapping, el equipo logró comprender de manera estructurada la problemática y definir una solución alineada con las necesidades de los usuarios y los objetivos del negocio.
 
@@ -3776,7 +3784,7 @@ Por otro lado, el proyecto evidenció la importancia de la comunicación efectiv
 
 Finalmente, se concluye que la aplicación de metodologías estructuradas y el trabajo colaborativo fueron factores clave para el desarrollo exitoso del proyecto en esta etapa inicial. Las bases establecidas en esta entrega permiten continuar con las siguientes fases del proyecto con una mayor claridad, reduciendo riesgos y asegurando una evolución coherente de la solución.
 
-## Bibliografía
+# Bibliografía
 
 Freitas, M. C. (2025, 19 de julio). Lima registra 1.668 muertes por accidentes de tránsito en lo que va del 2025: motociclistas lideran víctimas, según el MTC. Infobae. https://www.infobae.com/peru/2025/07/19/lima-registra-1668-muertes-por-accidentes-de-transito-en-lo-que-va-del-2025-motociclistas-lideran-victimas-segun-el-mtc/
 
