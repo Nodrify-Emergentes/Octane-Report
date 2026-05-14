@@ -251,14 +251,14 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         TB1:<br>
         Durante el desarrollo del proyecto, expuse al equipo los antecedentes y la problemática identificada, así como los resultados obtenidos en herramientas de análisis como User Personas, Empathy Mapping y los escenarios As-Is y To-Be. Presenté estos elementos de forma clara y estructurada, permitiendo que integrantes con distintos niveles técnicos comprendieran el contexto del problema y las decisiones de diseño. Asimismo, comuniqué los drivers arquitectónicos, decisiones de diseño y escenarios de atributos de calidad, facilitando la alineación del equipo en torno a la solución propuesta.<br>
         TP:<br>
-        <!-- Información -->
+        Durante el desarrollo del TP, comuniqué al equipo los avances relacionados con los Bounded Context de Vehicle Management y Maintenance, explicando su propósito, responsabilidades principales y relación con el funcionamiento general de la solución. Además, presenté las decisiones tomadas en el diseño de la Landing Page UI, justificando la organización visual, la navegación y la forma en que esta interfaz comunica el valor del producto a usuarios técnicos y no técnicos.
         <br>
         Alejo Cardenas Jose Antonio
         <br>
         TB1:<br>
         Durante el desarrollo del proyecto, expliqué a mi equipo la visión de nuestra Startup y las User Stories para asegurar que todos entendiéramos qué debíamos construir. En nuestras reuniones, presenté de forma objetiva los diagramas de Arquitectura (Contenedores y Despliegue), traduciendo los conceptos complejos a términos que mis compañeros, independientemente de su rol en el grupo, pudieran validar. Esto permitió que tomáramos decisiones técnicas consensuadas y que cada integrante comprendiera cómo su parte del código encajaba en el sistema general.<br>
         TP:<br>
-        <!-- Información -->
+        Durante el desarrollo del TP, expliqué al equipo el Bounded Context de Vehicle Wellness, presentando su función dentro del sistema y su relación con el monitoreo del estado de las motocicletas. Asimismo, comuniqué las decisiones definidas en las Style Guidelines, exponiendo criterios visuales como colores, tipografías, componentes y lineamientos de diseño, para asegurar que todos los integrantes comprendieran cómo mantener una identidad visual coherente en la solución.
         <br>
         Pacheco Astiguetta Sebastian
         <br>
@@ -294,14 +294,14 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         TB1:<br>
         Elaboré la documentación relacionada con el análisis del problema y el diseño de la solución, incluyendo secciones como antecedentes, problemática, User Personas, User Task Matrix y escenarios As-Is y To-Be. Redacté de manera clara los drivers arquitectónicos, decisiones de diseño y escenarios de atributos de calidad, asegurando que la información fuera comprensible tanto para perfiles técnicos como no técnicos. Esta documentación permitió mantener coherencia en el desarrollo del proyecto y sirvió como base para la toma de decisiones del equipo.<br>
         TP:<br>
-        <!-- Información -->
+        Documenté los Bounded Context de Vehicle Management y Maintenance de forma clara y estructurada, describiendo sus responsabilidades, elementos principales y aporte dentro de la arquitectura del sistema. Asimismo, elaboré y registré el diseño de la Landing Page UI, detallando su composición visual, secciones principales y criterios de presentación, con el fin de facilitar la comprensión del producto y mantener coherencia entre la propuesta visual y los objetivos del proyecto.
         <br>
         Alejo Cardenas Jose Antonio
         <br>
         TB1:<br>
         Redacté la documentación en nuestro repositorio compartido, detallando el Product Backlog y la Arquitectura de Software de manera clara y sin ambigüedades. Utilicé los diagramas de Contexto y Landscape para que cualquier compañero que se uniera al desarrollo entendiera el flujo rápidamente, y complementé los Diagramas de Despliegue con notas técnicas precisas. Esta redacción objetiva sirvió como guía de referencia para el equipo, evitando errores de interpretación y asegurando que los resultados del diseño fueran consistentes durante toda la implementación.<br>
         TP:<br>
-        <!-- Información -->
+        Documenté el Bounded Context de Vehicle Wellness, describiendo sus responsabilidades principales y su aporte al monitoreo del estado del vehículo dentro de la arquitectura del sistema. Además, redacté las Style Guidelines del proyecto, estableciendo criterios visuales como paleta de colores, tipografía, componentes y lineamientos de interfaz, permitiendo que el equipo cuente con una referencia clara para mantener consistencia visual y comunicativa en el desarrollo de la solución.
         <br>
         Pacheco Astiguetta Sebastian
         <br>
