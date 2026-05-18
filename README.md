@@ -45,6 +45,7 @@
 |---------|------------|-------------------------------|-----------------------------------------|
 | 1.0     | 04/26/2026 | Real Calderón, Sebastián Omar | Primera Versión del Informe             |
 | 2.0     | 05/14/2026 | Real Calderón, Sebastián Omar | Versión del informe para entrega del TP |
+
 <div style="page-break-after: always;"></div>
 
 **Project Report Collaboration Insights**
@@ -59,15 +60,11 @@ Las actividades de desarrollo del informe se organizaron mediante la asignación
 
 - Sebastián Omar Real Calderón: encargado del desarrollo de las secciones relacionadas con el análisis del problema y los drivers arquitectónicos, incluyendo antecedentes y problemática, User Personas, User Task Matrix, Empathy Mapping, escenarios As-Is y To-Be, Design Purpose, Primary Functionality, Quality Attribute Scenarios, Constraints, Architectural Drivers Backlog, Architectural Design Decisions y Quality Attribute Scenario Refinements.
 
-
 - José Antonio Alejo Cárdenas: responsable de la definición del producto y la arquitectura de software, desarrollando la descripción de la Startup, User Stories, Product Backlog y los distintos diagramas arquitectónicos, incluyendo System Landscape, Context Level, Container Level y Deployment Diagrams.
-
 
 - Sebastián Pacheco Astiguetta: encargado del análisis de negocio y modelado de dominio, desarrollando los segmentos objetivo, análisis competitivo, estrategias frente a competidores, así como el Ubiquitous Language, Event Storming, Candidate Context Discovery y Domain Message Flows Modeling.
 
-
 - Russell Stephen Romero Qwistgaard: responsable del enfoque Lean UX y la definición estratégica del producto, desarrollando los Lean UX Problem Statements, Assumptions, Hypothesis Statements, Lean UX Canvas, Impact Mapping, así como los modelos de dominio como Bounded Context Canvases y Context Mapping.
-
 
 Para la gestión del trabajo colaborativo, se estableció el uso de ramas por cada sección o capítulo del informe, permitiendo que cada integrante trabajara de manera independiente sobre su contenido asignado. Posteriormente, los avances fueron integrados a la rama principal mediante pull requests, los cuales fueron revisados para garantizar la calidad, coherencia y consistencia del informe.
 
@@ -80,8 +77,11 @@ Como evidencia del proceso, se incluirán capturas de los analíticos de colabor
 ![Collaborators TB1](assets/images/misc/insights/tb1/tb1_collaborators.png)
 
 ![Network 1 TB1](assets/images/misc/insights/tb1/tb1_network_1.png)
+
 ![Network 1 TB1](assets/images/misc/insights/tb1/tb1_network_2.png)
+
 ![Network 1 TB1](assets/images/misc/insights/tb1/tb1_network_3.png)
+
 ![Network 1 TB1](assets/images/misc/insights/tb1/tb1_network_4.png)
 
 Distribución de Commits por Integrante:
@@ -112,7 +112,9 @@ Para la gestión del trabajo colaborativo, se mantuvo el flujo basado en ramas d
 Como evidencia del proceso, se incluirán capturas de los analíticos de colaboración del repositorio correspondientes al TP, donde se visualizará la actividad de commits, participación por integrante, historial de ramas y pull requests gestionados durante esta entrega. Estas evidencias respaldan el trabajo realizado y complementan el Registro de Versiones del Informe, mostrando la evolución del proyecto y el aporte individual de cada miembro del equipo.
 
 ![Pulse TP](assets/images/misc/insights/tp/tp_pulse.png)
+
 ![Collaborators TP](assets/images/misc/insights/tp/tp_collaborators.png)
+
 ![Network TP](assets/images/misc/insights/tp/tp_network.png)
 
 Distribución de Commits por Integrante:
@@ -260,9 +262,6 @@ Distribución de Commits por Integrante:
   * [6.4. Applications UX/UI Design](#64-applications-uxui-design)
     * [6.4.1. Applications Wireframes](#641-applications-wireframes)
     * [6.4.2. Applications Wireflow Diagrams](#642-applications-wireflow-diagrams)
-    * [6.4.3. Applications Mock-ups](#643-applications-mock-ups)
-    * [6.4.4. Applications User Flow Diagrams](#644-applications-user-flow-diagrams)
-  * [6.5. Applications Prototyping](#65-applications-prototyping)
 * [Conclusiones](#conclusiones)
 * [Bibliografía](#bibliografía)
 
@@ -2312,17 +2311,17 @@ Reports funciona como un bounded context de consulta con persistencia propia. No
 
 ### 5.2.5. Bounded Context Software Architecture Component Level Diagrams
 
-![system-component-diagram](./assets/images/chapter-5/bc-maintenance/bounded-context-software-architecture-component-level-diagram.png)
+![system-component-diagram](assets/images/chapter-5/bc-maintenance/bounded-context-software-architecture-component-level-diagram.png)
 
 ### 5.2.6. Bounded Context Software Architecture Code Level Diagrams
 
 #### 5.2.6.1. Bounded Context Domain Layer Class Diagrams
 
-![system-component-diagram](./assets/images/chapter-5/bc-report/report-class-diagram.png)
+![system-component-diagram](assets/images/chapter-5/bc-report/report-class-diagram.png)
 
 #### 5.2.6.2. Bounded Context Database Design Diagram
 
-![system-component-diagram](./assets/images/chapter-5/bc-report/report-db-diagram.png)
+![system-component-diagram](assets/images/chapter-5/bc-report/report-db-diagram.png)
 
 ## 5.3. Bounded Context: Assignments
 
@@ -2579,17 +2578,17 @@ Este bounded context combina persistencia propia con integración transversal. S
 
 ### 5.3.5. Bounded Context Software Architecture Component Level Diagrams
 
-![system-component-diagram](./assets/images/chapter-5/bc-maintenance/bounded-context-software-architecture-component-level-diagram.png)
+![system-component-diagram](assets/images/chapter-5/bc-maintenance/bounded-context-software-architecture-component-level-diagram.png)
 
 ### 5.3.6. Bounded Context Software Architecture Code Level Diagrams
 
 #### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
 
-![system-component-diagram](./assets/images/chapter-5/bc-assignment/assignments-class-diagram.png)
+![system-component-diagram](assets/images/chapter-5/bc-assignment/assignments-class-diagram.png)
 
 #### 5.3.6.2. Bounded Context Database Design Diagram
 
-![system-component-diagram](./assets/images/chapter-5/bc-assignment/assignments-db-diagram.png)
+![system-component-diagram](assets/images/chapter-5/bc-assignment/assignments-db-diagram.png)
 
 ## 5.4. Bounded Context: Maintenance
 ### 5.4.1. Domain Layer
@@ -2830,16 +2829,16 @@ Este bounded context combina persistencia propia con integración transversal. S
 
 ### 5.4.5. Bounded Context Software Architecture Component Level Diagrams
 
-![system-component-diagram](./assets/images/chapter-5/bc-maintenance/bounded-context-software-architecture-component-level-diagram.png)
+![system-component-diagram](assets/images/chapter-5/bc-maintenance/bounded-context-software-architecture-component-level-diagram.png)
 
 ### 5.4.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.4.6.1. Bounded Context Domain Layer Class Diagrams
 
-![maintenance-class-diagram](/assets/images/chapter-5/bc-maintenance/class-diagram.png)
+![maintenance-class-diagram](assets/images/chapter-5/bc-maintenance/class-diagram.png)
 
 #### 5.4.6.2. Bounded Context Database Design Diagram
 
-![maintenance-db-diagram](/assets/images/chapter-5/bc-maintenance/db-diagram.png)
+![maintenance-db-diagram](assets/images/chapter-5/bc-maintenance/db-diagram.png)
 
 ## 5.5. Bounded Context: Vehicle Wellness
 
@@ -2864,6 +2863,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 **Value Objects**
 
 *AirQuality*
+
 |Atributo|	Tipo|	Descripción|
 |-|-|-|
 |CO2Ppm|	Double|	Concentración de dióxido de carbono en partes por millón|
@@ -2871,39 +2871,44 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 |BenzenePpm|	Double|	Concentración de benceno en partes por millón|
 
 *AtmosphericPressure*
+
 |Atributo|	Tipo|	Descripción|
 |-|-|-|
 |pressureHpa|	Float|	Valor de presión atmosférica en hectopascales|
 
 *Coordinates*
-|Atributo|	Tipo|	Descripción|
-|-|-|-|
-|latitude|	Float|	Coordenada de latitud de la ubicación
-|longitude|	Float|	Coordenada de longitud de la ubicación
+
+| Atributo  | 	Tipo  | 	Descripción                            |
+|-----------|--------|-----------------------------------------|
+| latitude  | 	Float | 	Coordenada de latitud de la ubicación  |
+| longitude | 	Float | 	Coordenada de longitud de la ubicación |
 
 *EnvironmentalConditions*
-|Atributo|	Tipo|	Descripción|
-|-|-|-|
-|temperatureCelsius|	Float|	Temperatura ambiental en grados Celsius
-|humidityPercentage|	Float|	Porcentaje de humedad relativa en el ambiente
+
+| Atributo           | 	Tipo  | 	Descripción                                   |
+|--------------------|--------|------------------------------------------------|
+| temperatureCelsius | 	Float | 	Temperatura ambiental en grados Celsius       |
+| humidityPercentage | 	Float | 	Porcentaje de humedad relativa en el ambiente |
 
 *StatusImpact*
-|Atributo|	Tipo|	Descripción|
-|-|-|-|
-|impactDetected|	Boolean|	Indicador de si se detectó algún impacto en el sistema|
+
+| Atributo       | 	Tipo    | 	Descripción                                            |
+|----------------|----------|---------------------------------------------------------|
+| impactDetected | 	Boolean | 	Indicador de si se detectó algún impacto en el sistema |
 
 **Entities**
 
 *Notification*
-|Atributo|	Tipo|	Descripción|
-|-|-|-|
-|vehicleId|	Long|	Identificador del vehículo relacionado con la notificación|
-|title|	String|	Título descriptivo de la notificación|
-|message|	String|	Contenido detallado del mensaje de notificación|
-|type|	String|	Categoría o clasificación de la notificación|
-|severity|	String|	Nivel de gravedad o importancia de la notificación|
-|read|	boolean|	Estado que indica si la notificación ha sido leída
-|occurredAt|	LocalDateTime|	Fecha y hora en que ocurrió el evento notificado|
+
+| Atributo   | 	Tipo          | 	Descripción                                                |
+|------------|----------------|-------------------------------------------------------------|
+| vehicleId  | 	Long          | 	Identificador del vehículo relacionado con la notificación |
+| title      | 	String        | 	Título descriptivo de la notificación                      |
+| message    | 	String        | 	Contenido detallado del mensaje de notificación            |
+| type       | 	String        | 	Categoría o clasificación de la notificación               |
+| severity   | 	String        | 	Nivel de gravedad o importancia de la notificación         |
+| read       | 	boolean       | 	Estado que indica si la notificación ha sido leída         |
+| occurredAt | 	LocalDateTime | 	Fecha y hora en que ocurrió el evento notificado           |
 
 **Commands**
 
@@ -3029,9 +3034,10 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | ExternalVehiclesService | 	Servicio externo para obtener información de vehículos           |
 
 *Clase: WellnessMetricCommandServiceImpl*
-|Título	|WellnessMetricCommandServiceImpl|
-|-|-|
-|Descripción|	Servicio que maneja las operaciones de modificación de métricas de bienestar|
+
+| Título	     | WellnessMetricCommandServiceImpl                                              |
+|-------------|-------------------------------------------------------------------------------|
+| Descripción | 	Servicio que maneja las operaciones de modificación de métricas de bienestar |
 
 | Método                                                           | 	Descripción                                                 |
 |------------------------------------------------------------------|--------------------------------------------------------------|
@@ -3040,6 +3046,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | handle(DeleteWellnessMetricCommand deleteWellnessMetricCommand)	 | Gestiona la eliminación de métricas de bienestar             |
 
 **Dependencias:**
+
 |Dependencia|	Descripción|
 |-|-|
 |WellnessMetricRepository|	Repositorio para almacenar y recuperar métricas de bienestar|
@@ -3079,6 +3086,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | handle(GetWellnessMetricsByVehicleIdQuery                     | getWellnessMetricsByVehicleIdQuery)	Consulta las métricas de bienestar de un vehículo específico |
 
 **Dependencias:**
+
 |Dependencia|	Descripción|
 |-|-|
 |WellnessMetricRepository|	Repositorio para acceder a los datos de métricas de bienestar|
@@ -3149,17 +3157,17 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 
 ### 5.5.5 Bounded Context Software Architecture Component level Diagrams
 
-![system-component-diagram](./assets/images/chapter-5/bc-vehicle-wellness/bounded-context-software-architecture-component-level-diagram.png)
+![system-component-diagram](assets/images/chapter-5/bc-vehicle-wellness/bounded-context-software-architecture-component-level-diagram.png)
 
 ### 5.5.6 Bounded Context Software Architecture Code level Diagrams
 
 #### 5.5.6.1 Bounded Context Domain Layer Class Diagrams
 
-![vehicle_wellness_code_level](./assets/images/chapter-5/bc-vehicle-wellness/vehicle_wellness_code_level.drawio.png)
+![vehicle_wellness_code_level](assets/images/chapter-5/bc-vehicle-wellness/vehicle_wellness_code_level.drawio.png)
 
 #### 5.5.6.2 Bounded Context Database Design Diagram
 
-![vehicle_wellness_db](./assets/images/chapter-5/bc-vehicle-wellness/vehicle_wellness_db.png)
+![vehicle_wellness_db](assets/images/chapter-5/bc-vehicle-wellness/vehicle_wellness_db.png)
 
 ## 5.6. Bounded Context: Vehicle Management
 ### 5.6.1. Domain Layer
@@ -3395,16 +3403,16 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 
 ### 5.6.5. Bounded Context Software Architecture Component Level Diagrams
 
-![system-component-diagram](./assets/images/chapter-5/bc-vehicle-management/bounded-context-software-architecture-component-level-diagram.png)
+![system-component-diagram](assets/images/chapter-5/bc-vehicle-management/bounded-context-software-architecture-component-level-diagram.png)
 
 ### 5.6.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.6.6.1. Bounded Context Domain Layer Class Diagrams
 
-![vehicle_management_code_level](/assets/images/chapter-5/bc-vehicle-management/class-diagram.jpg)
+![vehicle_management_code_level](assets/images/chapter-5/bc-vehicle-management/class-diagram.jpg)
 
 #### 5.6.6.2. Bounded Context Database Design Diagram
 
-![vehicle_management_db](/assets/images/chapter-5/bc-vehicle-management/db-diagram.png)
+![vehicle_management_db](assets/images/chapter-5/bc-vehicle-management/db-diagram.png)
 
 ---
 
@@ -3513,12 +3521,12 @@ El logotipo se empleará principalmente en su versión negra sobre fondos claros
 - El isotipo se aplicará únicamente en espacios reducidos, como íconos de aplicaciones móviles o pestañas del navegador.
 *Logos:*
 
-![Logo 1](./assets/images/chapter-6/style-guidelines/logo-1.png)
-![Logo 2](./assets/images/chapter-6/style-guidelines/logo-2.png)
+![Logo 1](assets/images/chapter-6/style-guidelines/logo-1.png)
+![Logo 2](assets/images/chapter-6/style-guidelines/logo-2.png)
 
 *Isotipo:*
 
-![Isotipo](./assets/images/chapter-6/style-guidelines/octane-isotipo.png)
+![Isotipo](assets/images/chapter-6/style-guidelines/octane-isotipo.png)
 
 **Paleta de colores:**
 
@@ -3528,7 +3536,7 @@ La identidad visual se basa en tonos naranjas y marrones, diseñados para transm
 - Fondos y textos: blanco (#FFFFFF) para fondos y #130100 para tipografía principal, asegurando alta legibilidad.
 - Colores secundarios: tonos como #C84E00 y #380800 se reservan para acentos, componentes interactivos y llamadas a la acción.
 
-![Paleta de Colores](./assets/images/chapter-6/style-guidelines/color-palette.png)
+![Paleta de Colores](assets/images/chapter-6/style-guidelines/color-palette.png)
 
 **Tipografía:**
 
@@ -3537,7 +3545,7 @@ La tipografía principal será Roboto, elegida por su legibilidad, modernidad y 
 - Se aplicarán jerarquías tipográficas claras, diferenciando títulos, subtítulos y cuerpo de texto.
 - Se hará uso de negritas para destacar información clave.
 
-![Tipografía](./assets/images/chapter-6/style-guidelines/typography.png)
+![Tipografía](assets/images/chapter-6/style-guidelines/typography.png)
 
 **Tono y lenguaje:**
 
@@ -3679,17 +3687,17 @@ En esta sección se presenta la propuesta visual de la Landing Page, donde se tr
 Esta sección muestra la estructura base de la Landing Page mediante wireframes para desktop y mobile, destacando la jerarquía visual, la usabilidad y la coherencia con los principios de diseño inclusivo y la arquitectura de información.
 
 - Desktop
-![Landing Page Wireframe Desktop](./assets/images/chapter-6/landing-ui/desktop-wireframe.png)
+![Landing Page Wireframe Desktop](assets/images/chapter-6/landing-ui/desktop-wireframe.png)
 - Mobile
-![Landing Page Wireframe Mobile](./assets/images/chapter-6/landing-ui/mobile-wireframe.png)
+![Landing Page Wireframe Mobile](assets/images/chapter-6/landing-ui/mobile-wireframe.png)
 
 ### 6.3.2. Landing Page Mock-up
 Aquí se presentan los mock-ups finales de la Landing Page en versiones desktop y mobile, evidenciando la aplicación del Design System, los principios de diseño visual y la alineación con la experiencia de usuario definida en etapas previas.
 
 - Desktop
-![Landing Page Mock-up Desktop](./assets/images/chapter-6/landing-ui/desktop-mockup.png)
+![Landing Page Mock-up Desktop](assets/images/chapter-6/landing-ui/desktop-mockup.png)
 - Mobile
-![Landing Page Mock-up Mobile](./assets/images/chapter-6/landing-ui/mobile-mockup.png)
+![Landing Page Mock-up Mobile](assets/images/chapter-6/landing-ui/mobile-mockup.png)
 
 Aquí se presentan los mock-ups finales de la Landing Page en versiones desktop y mobile, evidenciando la aplicación del Design System, los principios de diseño visual y la alineación con la experiencia de usuario definida en etapas previas.
 
@@ -3705,14 +3713,14 @@ En esta sección se desarrolla la propuesta de diseño visual e interactivo de l
 
 Esta sección presenta los wireframes de las aplicacion web, donde se define la estructura, jerarquía y navegación de la interfaz. Se evidencia la aplicación de los principios de diseño inclusivo, la arquitectura de información y las buenas prácticas de diseño centrado en el usuario.
 
-![wireframe1.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe1.png)
-![wireframe2.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe2.png)
-![wireframe3.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe3.png)
-![wireframe4.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe4.png)
-![wireframe5.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe5.png)
-![wireframe6.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe6.png)
-![wireframe7.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe7.png)
-![wireframe8.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe8.png)
+![wireframe1.png](assets/images/chapter-6/applications-ux-ui-design/wireframe1.png)
+![wireframe2.png](assets/images/chapter-6/applications-ux-ui-design/wireframe2.png)
+![wireframe3.png](assets/images/chapter-6/applications-ux-ui-design/wireframe3.png)
+![wireframe4.png](assets/images/chapter-6/applications-ux-ui-design/wireframe4.png)
+![wireframe5.png](assets/images/chapter-6/applications-ux-ui-design/wireframe5.png)
+![wireframe6.png](assets/images/chapter-6/applications-ux-ui-design/wireframe6.png)
+![wireframe7.png](assets/images/chapter-6/applications-ux-ui-design/wireframe7.png)
+![wireframe8.png](assets/images/chapter-6/applications-ux-ui-design/wireframe8.png)
 
 **Mobile Application**
 
@@ -3736,96 +3744,96 @@ En esta sección se presentan los wireflows que ilustran los flujos de interacci
 La aplicación web está diseñada para ambos User Persona, siendo dueños de motocicletas o mecánicos, con funcionalidades adaptadas a sus necesidades específicas y con una navegación intuitiva.
 
 **User Goal: Como dueño de moto, quiero visualizar los gastos que tengo registrados.**
-![usergoal1.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal1.drawio.png)
-![wireflow1.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow1.drawio.png)
+![usergoal1.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal1.drawio.png)
+![wireflow1.drawio.png](assets/images/chapter-6/applications-ux-ui-design/wireflow1.drawio.png)
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Gastos. Al acceder, la interfaz muestra la lista de registros existentes, permitiendo al usuario visualizar la información general de cada gasto de manera clara y organizada.
 
 **User Goal: Como dueño de moto, quiero visualizar la comparativa que hay entre mis vehículos.**
-![usergoal2.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal2.drawio.png)
-![wireflow2.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow2.drawio.png)
+![usergoal2.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal2.drawio.png)
+![wireflow2.drawio.png](assets/images/chapter-6/applications-ux-ui-design/wireflow2.drawio.png)
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Comparativas. Al acceder, la interfaz muestra las cards de los vehículos registrados, donde el usuario presiona en la card de su preferencia para ver los detalles. Finalmente, el sistema despliega una vista con la comparativa entre los vehículos seleccionados, permitiendo al usuario observar de forma clara las diferencias y similitudes en aspectos clave como rendimiento, costos y mantenimientos.
 
 **User Goal: Como dueño de moto, quiero revisar los matenimientos de mis vehículos.**
-![usergoal3.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal3.drawio.png)
-![wireflow3.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow3.drawio.png)
+![usergoal3.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal3.drawio.png)
+![wireflow3.drawio.png](assets/images/chapter-6/applications-ux-ui-design/wireflow3.drawio.png)
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Finalmente, el sistema despliega una vista con los mantenimientos programados, permitiendo al usuario observar de forma clara las fechas, tipos de servicio y estado de cada mantenimiento.
 
 **User Goal: Como dueño de moto, quiero visualizar mis motocicletas registradas.**
-![usergoal4.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal4.drawio.png)
-![wireflow4.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow4.drawio.png)
+![usergoal4.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal4.drawio.png)
+![wireflow4.drawio.png](assets/images/chapter-6/applications-ux-ui-design/wireflow4.drawio.png)
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. Al acceder a la página, el sistema muestra la lista de vehículos registrados del usuario, permitiéndole visualizar la información general de cada uno de manera clara y organizada.
 
 **User Goal: Como dueño de moto, quiero vincular un nuevo mecánico a mi motocicleta.**
-![usergoal5.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal5.drawio.png)
-![wireflow5.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow5.drawio.png)
+![usergoal5.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal5.drawio.png)
+![wireflow5.drawio.png](assets/images/chapter-6/applications-ux-ui-design/wireflow5.drawio.png)
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Vehículos. Luego, el usuario presiona en la moto de su preferencia para acceder a los detalles del vehículo. Dentro de esta vista, el usuario presiona el botón Vincular, ingresa el código del mecánico y confirma la acción al presionar Solicitar. Finalmente, el sistema actualiza la interfaz y el usuario observa su moto vinculada correctamente al mecánico correspondiente.
 
 **User Goal: Como dueño de moto, quiero editar los detalles de una motocicleta que me pertenece.**
-![usergoal6.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal6.drawio.png)
-![wireflow6.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow6.drawio.png)
+![usergoal6.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal6.drawio.png)
+![wireflow6.drawio.png](assets/images/chapter-6/applications-ux-ui-design/wireflow6.drawio.png)
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Editar, realiza los cambios necesarios en el formulario y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa los detalles modificados reflejados en la pantalla.
 
 **User Goal: Como mecánico de motos, quiero visualizar las suscripciones activas.**
-![usergoal7.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal7.drawio.png)
-![wireflow7.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow7.drawio.png)
+![usergoal7.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal7.drawio.png)
+![wireflow7.drawio.png](assets/images/chapter-6/applications-ux-ui-design/wireflow7.drawio.png)
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Suscripciones. Al acceder, la interfaz muestra la lista de suscripciones activas, permitiendo al mecánico visualizar la información general de cada una de manera clara y organizada.
 
 **User Goal: Como mecánico de motos, quiero visualizar la comparativa que hay entre mis vehículos.**
-![usergoal8.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal8.drawio.png)
-![wireflow8.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow8.drawio.png)
+![usergoal8.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal8.drawio.png)
+![wireflow8.drawio.png](assets/images/chapter-6/applications-ux-ui-design/wireflow8.drawio.png)
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Comparativas. Al acceder, la interfaz muestra las cards de los vehículos registrados, donde el usuario presiona en la card de su preferencia para ver los detalles. Finalmente, el sistema despliega una vista con la comparativa entre los vehículos seleccionados, permitiendo al usuario observar de forma clara las diferencias y similitudes en aspectos clave como rendimiento, costos y mantenimientos.
 
 **User Goal: Como mecánico de motos, quiero progamar un mantenimiento.**
-![usergoal9.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal9.drawio.png)
-![wireflow9.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow9.drawio.png)
+![usergoal9.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal9.drawio.png)
+![wireflow9.drawio.png](assets/images/chapter-6/applications-ux-ui-design/wireflow9.drawio.png)
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Dentro de esta vista, el usuario presiona el botón Programar, completa el formulario con los detalles del mantenimiento y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa el nuevo mantenimiento programado reflejado en la pantalla.
 
 **User Goal: Como mecanico de motos, quiero adquirir las membresias.**
-![usergoal10.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal10.drawio.png)
-![wireflow10.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow10.drawio.png)
+![usergoal10.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal10.drawio.png)
+![wireflow10.drawio.png](assets/images/chapter-6/applications-ux-ui-design/wireflow10.drawio.png)
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Membresía. Al acceder, la interfaz muestra las opciones de planes disponibles, donde el usuario presiona en el plan de su preferencia para ver los detalles. Dentro de esta vista, el usuario presiona el botón Adquirir, completa el formulario con los datos de pago y confirma la acción al presionar Confirmar. Finalmente, el sistema actualiza la interfaz y el usuario observa la confirmación de su membresía reflejada en la pantalla.
 
 **Mobile Application**
 La aplicación web está diseñada con las funcionalidades para los dueños de motocicletas, adaptadas a sus necesidades específicas y con una navegación intuitiva.
 
 **User Goal: Como Motociclista, quiero ver  un resumen de mis vehiculos, gastos y mantenimientos.**
-![wireflow-ver-dashboard.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-dashboard.png)
+![wireflow-ver-dashboard.png](assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-dashboard.png)
 El wireflow inicia cuando el usuario despliega la barra lateral desde el panel principal y presiona en la sección Dashboard. Al hacerlo, la interfaz cambia para mostrar la vista del Dashboard, donde el usuario observa el resumen general que incluye sus vehículos, los gastos recientes y los próximos mantenimientos, representados mediante tarjetas o gráficos que resumen la información de forma visual y accesible.
 
 **User Goal: Como Motociclista, quiero ver todos los mantenimientos programados de mi moto.**
-![wireflow-ver-mantenimientos.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-mantenimientos.png)
+![wireflow-ver-mantenimientos.png](assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-mantenimientos.png)
 El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Finalmente, el sistema despliega una vista con los mantenimientos programados, permitiendo al usuario observar de forma clara las fechas, tipos de servicio y estado de cada mantenimiento.
 
 **User Goal: Como Motociclista, quiero eliminar un gasto pasado de mi registro de gastos.**
-![wireflow-ver-mantenimiento.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-eliminar-gasto.png)
+![wireflow-ver-mantenimiento.png](assets/images/chapter-6/applications-ux-ui-design/wireflow-eliminar-gasto.png)
 El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Gastos. Una vez en la vista de gastos, el sistema muestra la lista de registros existentes, donde el usuario presiona el ícono de borrar gasto correspondiente al que desea eliminar. Finalmente, la interfaz se actualiza y el usuario observa que el gasto fue eliminado, confirmando la acción mediante la desaparición del registro o un mensaje de confirmación visual.
 
 **User Goal: Como Motociclista, quiero monitorear las metricas de mi moto.**
-![wireflow-monitorear-metricas.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-monitorear-metricas.png)
+![wireflow-monitorear-metricas.png](assets/images/chapter-6/applications-ux-ui-design/wireflow-monitorear-metricas.png)
 El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona el botón Vehículos. En la lista mostrada, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Monitorear, tras lo cual la interfaz cambia para mostrar las métricas de la moto, permitiéndole observar información en tiempo real sobre su estado y rendimiento.
 
 **User Goal: Como Motociclista, quiero desvincular mi moto de un mecanico.**
-![wireflow-desvincular-moto.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-desvincular-moto.png)
+![wireflow-desvincular-moto.png](assets/images/chapter-6/applications-ux-ui-design/wireflow-desvincular-moto.png)
 El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Desvincular, tras lo cual el sistema ejecuta la acción y actualiza la interfaz. Finalmente, el usuario observa su moto desvinculada del mecánico, reflejado mediante un cambio visual o mensaje de confirmación.
 
 **User Goal: Como Motociclista, quiero vincular mi moto a un mecanico por su codigo.**
-![wireflow-vincular-moto.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-vincular-moto.png)
+![wireflow-vincular-moto.png](assets/images/chapter-6/applications-ux-ui-design/wireflow-vincular-moto.png)
 El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Vehículos. Luego, el usuario presiona en la moto de su preferencia para acceder a los detalles del vehículo. Dentro de esta vista, el usuario presiona el botón Vincular, ingresa el código del mecánico y confirma la acción al presionar Solicitar. Finalmente, el sistema actualiza la interfaz y el usuario observa su moto vinculada correctamente al mecánico correspondiente.
 
 **User Goal: Como Motociclista, quiero registrar un vehículo en mi cuenta.**
-![wireflow-registrar-vehiculo.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-registrar-vehiculo.png)
+![wireflow-registrar-vehiculo.png](assets/images/chapter-6/applications-ux-ui-design/wireflow-registrar-vehiculo.png)
 El wireflow inicia cuando el usuario abre la barra lateral de navegación y selecciona la opción Vehículos. Una vez en la página, el usuario presiona el botón “+” para añadir un nuevo vehículo. Luego, la interfaz muestra un formulario donde el usuario ingresa los datos de su vehículo y presiona el botón Registrar. Finalmente, el sistema confirma la acción mostrando la moto registrada en la pantalla, reflejada en la lista de vehículos disponibles.
 
 **User Goal: Como Motociclista, quiero ver mis vehículos registrados.**
-![wireflow-ver-vehiculos.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-vehiculos.png)
+![wireflow-ver-vehiculos.png](assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-vehiculos.png)
 El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Vehículos. Al acceder a la página, el sistema muestra la lista de vehículos registrados del usuario, permitiéndole visualizar la información general de cada uno de manera clara y organizada.
 
 **User Goal: Como Motociclista, registrar mis gastos.**
-![wireflow-registrar-gastos.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-registrar-gastos.png)
+![wireflow-registrar-gastos.png](assets/images/chapter-6/applications-ux-ui-design/wireflow-registrar-gastos.png)
 El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Gastos. Una vez en la página, el usuario presiona el botón “+” para añadir un nuevo gasto. La interfaz muestra un formulario donde el usuario ingresa los datos correspondientes y presiona el botón “Registrar”. Finalmente, el sistema actualiza la vista y el usuario observa el nuevo gasto añadido en la pantalla de gastos.
 
 **User Goal: Como Motociclista, quiero ver mis gastos registrados**
-![wireflow-ver-gastos.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-gastos.png)
+![wireflow-ver-gastos.png](assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-gastos.png)
 El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Gastos. Al acceder a la página, el sistema muestra en pantalla los gastos registrados del usuario, permitiéndole observar y revisar la información correspondiente de manera clara y ordenada.
 
 # Conclusiones
