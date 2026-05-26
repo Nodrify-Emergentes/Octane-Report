@@ -1864,29 +1864,25 @@ Para gestionar la complejidad del negocio de telemetría y mantenimiento, se apl
 
 En este nivel se describe la visión global de la organización Nodrify. El diagrama representa cómo el sistema Octane coexiste con otros sistemas internos y externos, definiendo el ecosistema completo y las interacciones de alto nivel entre los actores principales y los límites de la empresa.
 
-![system-landscape](assets/images/chapter-4/software-architecture/system-landscape-keys.png)
-![system-landscape-keys](assets/images/chapter-4/software-architecture/system-landscape.png)
+![system-landscape](assets/images/chapter-4/software-architecture/system-landscape.png)
 
 ### 4.3.2. Software Architecture Context Level Diagrams
 
 Este punto detalla el Sistema Octane como una caja negra, centrándose exclusivamente en sus fronteras inmediatas. Describe las relaciones directas de datos y comunicación entre el sistema, los usuarios (Dueños de motocicletas y Mecánicos) y las dependencias externas críticas como el hardware IoT y el motor de IA.
 
 ![context-diagram](assets/images/chapter-4/software-architecture/context-diagram.png)
-![context-diagram-keys](assets/images/chapter-4/software-architecture/context-diagram-keys.png)
 
 ### 4.3.3. Software Architecture Container Level Diagrams
 
 Aquí se desglosa la aplicación en sus unidades de ejecución o contenedores. Se identifican las aplicaciones móviles, la plataforma web, el API Monolítica Modular y la base de datos, especificando las tecnologías utilizadas (Spring Boot, React, Flutter, PostgreSQL) y los protocolos de comunicación entre ellos.
 
 ![container-diagram](assets/images/chapter-4/software-architecture/container-diagram.png)
-![container-diagram-keys](assets/images/chapter-4/software-architecture/container-diagram-keys.png)
 
 ### 4.3.4. Software Architecture Deployment Diagrams
 
 Este diagrama describe la distribución física y la infraestructura de nube de la solución. Detalla dónde se alojan los contenedores en entornos reales de producción, incluyendo el despliegue del frontend en Vercel, el backend y base de datos en Render, la distribución móvil en Firebase y el hardware embebido en el microcontrolador de la motocicleta.
 
 ![deployment-diagram](assets/images/chapter-4/software-architecture/deployment-diagram.png)
-![deployment-diagram-keys](assets/images/chapter-4/software-architecture/deployment-diagram-keys.png)
 
 
 # Capítulo V: Tactical-Level Software Design
@@ -3577,6 +3573,7 @@ Este bounded context se encarga de centralizar, gestionar y dar seguimiento a lo
 ### 5.8.1. Domain Layer
 
 **Aggregates**
+
 ``SupportTicket``:Representa una solicitud de soporte técnico o reclamo formal en el sistema, asociado a un usuario, un dispositivo IoT específico y un estado operativo.
 
 | Atributos | Tipo de dato | Visibilidad | Descripción|
@@ -3594,6 +3591,7 @@ Este bounded context se encarga de centralizar, gestionar y dar seguimiento a lo
 
 
 **Entities**
+
 ``TicketResponse``:Representa las interacciones, respuestas oficiales o comentarios añadidos al ticket por parte del equipo de soporte, mecánicos o el propio usuario.
 
 | Atributos | Tipo de dato | Visibilidad | Descripción|
@@ -3691,6 +3689,7 @@ Este bounded context se encarga de centralizar, gestionar y dar seguimiento a lo
 ### 5.8.4. Interface Layer
 
 **Resources**
+
 - ``FileTicketResource``: Payload de entrada con los datos iniciales del reclamo (deviceId, title, description, priority).
 
 - ``AssignMechanicResource``: Payload de entrada que envía el administrador para vincular a un técnico (mechanicId).
@@ -4084,6 +4083,238 @@ El wireflow inicia cuando el usuario presiona el botón de la barra lateral desd
 **User Goal: Como Motociclista, quiero ver mis gastos registrados**
 ![wireflow-ver-gastos.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-gastos.png)
 El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Gastos. Al acceder a la página, el sistema muestra en pantalla los gastos registrados del usuario, permitiéndole observar y revisar la información correspondiente de manera clara y ordenada.
+
+## 6.5 Applications Prototyping
+
+# Capítulo VII: Production Implementation Validation & Deploymeny
+
+## 7.1 Software Configuration Management
+En este ítem se definirán todas las reglas y procesos que hemos seguido en el proyecto al momento de crear y desplegar Octane. El objetivo de estas reglas y procesos es garantizar la integridad y consistencia del software, desde el inicio hasta el despliegue y mantenimiento.
+
+### 7.1.1 Software Development Environment Configuration
+
+**Project Management**
+
+Para la organización del proyecto requerimos de un sistema de asignación de tareas, plataformas y puntos de reunión y un repositorio dónde trabajaremos en conjunto cada avance del proyecto.
+
+**Herramientas**
+
+- Centro de organización de trabajo: Github
+- Planificación de tareas: Trello
+- Reuniones con el equipo: Discord
+- Coordinación grupal: WhatsApp
+
+**Requirements Management**
+
+Utilizamos Trello para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios.
+
+|Herramienta|	Descripción|	Enlace|
+|-|-|-|
+|Trello|	Para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios.|	https://trello.com/|
+
+**Product UX/UI Design**
+
+Para el diseño de los wireframes y mockups, además de la realización del prototipo de la mobile application y web application, utilizamos Figma.
+
+|Herramienta|	Descripción|	Enlace|
+|-|-|-|
+|Figma|	Para el diseño de los wireframes y mockups, además de la realización del prototipo de Web App.|	https://www.figma.com/|
+
+**Software Development**
+
+Empleamos Android y Jetpack Compose para la creación de la mobile application, Spring Boot para la creación de la API REST y Angular para la web application. Para el desarrollo de la landing page utilizamos html, js y css.
+
+|Herramienta|	Descripción|	Enlace|
+|-|-|-|
+|Android|	Lenguaje de programación utilizado para la creación de la mobile application|	https://developer.android.com/|
+|Jetpack Compose|	Framework utilizado para la creación de la mobile application|	https://developer.android.com/compose|
+|Spring Boot|	Framework utilizado para la creación de la API REST|	https://spring.io/projects/spring-boot|
+|Tailwind CSS|	Framework utilizado para la creación de la landing page|	https://tailwindcss.com/|
+|Angular|	Framework de desarrollo web open source	|https://angular.dev/|
+|Python|	Lenguaje de programación utilizado para el desarrollo de scripts|	https://www.python.org/|
+
+**Software Testing**
+
+Para las pruebas unitarias y de integración utilizamos JUnit y Mockito para la API REST.
+
+|Herramienta|	Descripción|	Enlace|
+|-|-|-|
+|JUnit	|Framework de pruebas unitarias para Java	|https://junit.org/|
+|Mockito|	Framework de simulación para pruebas unitarias en Java|	https://site.mockito.org/|
+
+**Software Deployment**
+
+Para el despliegue de la API REST y la web application utilizamos Render. Para la distribución de la versión mobile application utilizamos Firebase App Distribution.
+
+|Herramienta|	Descripción|	Enlace|
+|-|-|-|
+|Render|	Plataforma de despliegue en la nube	|https://render.com/|
+|Firebase App Distribution|	Plataforma para distribuir versiones de prueba de aplicaciones móviles|	https://firebase.google.com/products/app-distribution|
+
+**Software Documentation**
+
+Para la documentación del software utilizamos Markdown, y para el trabajo colaborativo Github.
+
+|Herramienta|	Descripción|	Enlace|
+|-|-|-|
+|Markdown|	Lenguaje de marcado utilizado para la documentación del proyecto|	https://www.markdownguide.org/|
+|Github|	Para gestionar la documentación del proyecto|	https://github.com/NRG-4/report|
+
+### 7.1.2 Source Code Management
+
+Para la gestión del código fuente, utilizamos los siguientes repositorios:
+
+|Herramienta|	Descripción|	Enlace|
+|-|-|-|
+|Mobile Application|	BykerZ-Mobile-Application|	https://github.com/NRG-6-IOT/BykerZ-Mobile-Application.git|
+|Backend|	BykerZ-Backend|	https://github.com/NRG-6-IOT/BykerZ-Backend.git|
+|Landing Page|	BykerZ-Landing-Page|	https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git|
+|Web Application|	BykerZ-Web-Application	|https://github.com/NRG-6-IOT/BykerZ-Web-Application.git|
+|Edge Service|	BykerZ-Edge-Service	|https://github.com/NRG-6-IOT/BykerZ-Edge-Service|
+|Embedded Application|	BykerZ-Embedded-Application	|https://github.com/NRG-6-IOT/BykerZ-Embedded-Application|
+
+**Flujo de trabajo GitFlow**
+
+Usaremos el flujo de trabajo planteado por Vincent Driessen en "A successful Git branching model" con los siguientes parámetros:
+
+- Una rama de producción.
+- Una rama de pruebas.
+- Una rama en la que se solucionen los bugs rápidamente y vuelvan a producción.
+- Ramas de features a implementar.
+- Cada cambio en producción debe establecerse como una nueva versión.
+
+**Ramas definidas:**
+
+- Main branch: Rama de producción, cada cambio requiere autorización de un compañero de equipo.
+- Hotfix branch: Para errores identificados que deben solucionarse y desplegarse nuevamente en producción.
+- Develop branch: Implementaciones constantes de features.
+- Features branch: Cada feature tendrá su propia rama, luego se fusiona en develop.
+
+**Nomenclatura de versiones:**
+
+- Major changes: Cambios significativos incompatibles (ej. 1.0.0 -> 2.0.0).
+- Minor changes: Cambios que añaden o modifican características (ej. 1.1.0 -> 1.2.0).
+- Patch: Correcciones menores (ej. 1.1.3 -> 1.1.4).
+
+**Sufijos asignados:**
+
+- alpha: Versión no estable.
+- beta: Versión funcional pero no lista para publicación.
+- rc: Versión candidata para publicación.
+
+
+
+### 7.1.3 Source Code Style Guide & Conventions
+
+El equipo adopta convenciones estandarizadas de codificación para asegurar la coherencia, legibilidad y mantenibilidad del código en todos los componentes del sistema. Todas las nomenclaturas, identificadores y comentarios se escribirán en inglés, siguiendo las guías oficiales de estilo recomendadas para cada tecnología empleada en la solución.
+
+**Mobile Application – Android (Kotlin/Java)**
+
+- Classes: PascalCase (e.g., UserProfileActivity).
+- Functions & Variables: camelCase (e.g., getUserData(), userName).
+- Constants: UPPER_SNAKE_CASE (e.g., MAX_ATTEMPTS).
+- Architecture: Separación por capas (MVVM – Model, ViewModel, View).
+- Good Practices:
+  - Mantener lógica fuera de la UI (ViewModel o UseCase).
+  - Evitar operaciones costosas en @Composable.
+  - Documentar funciones con KDoc.
+
+
+**Web Application – Angular (TypeScript, HTML, CSS)**
+
+- Components & Services: PascalCase (e.g., UserDashboardComponent, AuthService).
+- Variables & Methods: camelCase (e.g., userProfile, loadData()).
+- Interfaces: Prefijo I (e.g., IUser, IServiceResponse).
+- File Naming: kebab-case (e.g., user-profile.component.ts).
+- HTML Structure:
+  - Uso semántico de etiquetas.
+  - Identificadores claros (id, class) en kebab-case.
+- CSS / Tailwind CSS:
+  - Ordenar clases en el siguiente orden: Layout → Flex/Grid → Spacing → Typography → Colors → Effects.
+  - Uso de prefijos sm:, md:, lg: para diseño responsive.
+  - Evitar uso excesivo de @apply en archivos CSS.
+
+**Backend – Spring Boot (Java)**
+
+- Package Structure: controller, service, repository, model, config.
+- Naming Conventions:
+  - Classes: PascalCase (e.g., UserController).
+  - Methods & Variables: camelCase (e.g., findUserById()).
+  - Constants: UPPER_SNAKE_CASE.
+- Good Practices:
+  - Inyección de dependencias con @Autowired o constructor.
+  - Validaciones mediante @Valid.
+  - Manejo de excepciones centralizado con @ControllerAdvice.
+  - Documentación con JavaDoc.
+
+
+**Database – PostgreSQL**
+
+- Table Names: snake_case plural (e.g., user_profiles). 
+- Column Names: snake_case (e.g., created_at).
+- Primary Keys: id o table_name_id (e.g., user_id).
+- Foreign Keys: referenced_table_id.
+- Views & Indexes: prefijo v_ y idx_ respectivamente.
+- Scripts: comentarios en inglés y consistencia en sangría.
+
+**Landing Page – HTML & CSS**
+
+- HTML:
+  - Estructura semántica (< header >, < main >, < footer >).
+  - Atributos y etiquetas en minúsculas.
+  - Sangría de 2 espacios.
+- CSS:
+  - Nombres de clases en kebab-case (e.g., main-banner).
+  - Uso de variables CSS para colores y tipografía.
+  - Evitar el uso de IDs para estilos.
+
+**General Guidelines**
+
+- Comments: Siempre en inglés, explicando el por qué y no solo el qué.
+- Commits: Convención semántica (feat:, fix:, docs:, refactor:, test:).
+- Version Control: Ramas en formato kebab-case (feature/add-login-page).
+- Performance: Uso de lazy loading para imágenes, módulos y componentes.
+- Accessibility: Cumplimiento de WCAG 2.1 en interfaces web y móviles.
+
+### 7.1.4 Software Deployment Configuration
+
+**Landing Page**
+
+1. Ejecutar npm run build localmente.
+2. Subir repositorio a GitHub (público).
+3. Crear servicio en Render → Web Service.
+4. Seleccionar repositorio y configurar.
+5. Deploy y verificación en la URL pública.
+
+
+**Mobile Application**
+
+1. Activar modo desarrollador y depuración USB en dispositivo.
+2. Conectar a la PC.
+3. Abrir proyecto en Android Studio.
+4. Seleccionar dispositivo y ejecutar.
+5. Verificar funcionamiento.
+
+
+**Web Application**
+
+1. Subir repositorio a GitHub (público).
+2. Crear Web Service en Render.
+3. Seleccionar repositorio y configurar.
+4. Deploy y verificación en la URL pública.
+
+
+**Backend**
+
+1. Configurar base de datos en Neontech.
+2. Crear Dockerfile para despliegue.
+3. Crear Web Service en Render.
+4. Importar repositorio backend.
+5. Deploy de la API.
+
+**Deployment diagram C4 model:**
+
+![deployment-diagram](assets/images/chapter-4/software-architecture/deployment-diagram.png)
 
 # Conclusiones
 
