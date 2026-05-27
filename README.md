@@ -4460,6 +4460,26 @@ El equipo adopta convenciones estandarizadas de codificación para asegurar la c
 
 ![deployment-diagram](assets/images/chapter-4/software-architecture/deployment-diagram.png)
 
+## 7.2 Solution Implementation
+
+### 7.2.1 Sprint 1
+
+#### 7.2.1.1 Sprint Planning 1
+
+#### 7.2.1.2 Sprint Backlog 1
+
+#### 7.2.1.3 Development Evidence for Sprint Review
+
+#### 7.2.1.4 Testing Suite Evidence for Sprint Review
+
+#### 7.2.1.5 Execution Evidence for Sprint Review
+
+#### 7.2.1.6 Services Documentation Evidence for Sprint Review
+
+#### 7.2.1.7 Software Deployment Evidence for Sprint Review
+
+#### 7.2.1.8 Team Collaboration Insights During Sprint
+
 # Conclusiones
 
 El desarrollo del proyecto permitió integrar enfoques de análisis de negocio, diseño centrado en el usuario, modelado de dominio y arquitectura de software, logrando una visión más completa de la solución propuesta. Mediante herramientas como Lean UX, Impact Mapping, Event Storming y Context Mapping, el equipo pudo comprender mejor la problemática, definir las necesidades de los usuarios y alinear la propuesta con los objetivos del negocio.
