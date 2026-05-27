@@ -45,6 +45,7 @@
 |---------|------------|-------------------------------|-----------------------------------------|
 | 1.0     | 04/26/2026 | Real Calderón, Sebastián Omar | Primera Versión del Informe             |
 | 2.0     | 05/14/2026 | Real Calderón, Sebastián Omar | Versión del informe para entrega del TP |
+
 <div style="page-break-after: always;"></div>
 
 **Project Report Collaboration Insights**
@@ -59,15 +60,11 @@ Las actividades de desarrollo del informe se organizaron mediante la asignación
 
 - Sebastián Omar Real Calderón: encargado del desarrollo de las secciones relacionadas con el análisis del problema y los drivers arquitectónicos, incluyendo antecedentes y problemática, User Personas, User Task Matrix, Empathy Mapping, escenarios As-Is y To-Be, Design Purpose, Primary Functionality, Quality Attribute Scenarios, Constraints, Architectural Drivers Backlog, Architectural Design Decisions y Quality Attribute Scenario Refinements.
 
-
 - José Antonio Alejo Cárdenas: responsable de la definición del producto y la arquitectura de software, desarrollando la descripción de la Startup, User Stories, Product Backlog y los distintos diagramas arquitectónicos, incluyendo System Landscape, Context Level, Container Level y Deployment Diagrams.
-
 
 - Sebastián Pacheco Astiguetta: encargado del análisis de negocio y modelado de dominio, desarrollando los segmentos objetivo, análisis competitivo, estrategias frente a competidores, así como el Ubiquitous Language, Event Storming, Candidate Context Discovery y Domain Message Flows Modeling.
 
-
 - Russell Stephen Romero Qwistgaard: responsable del enfoque Lean UX y la definición estratégica del producto, desarrollando los Lean UX Problem Statements, Assumptions, Hypothesis Statements, Lean UX Canvas, Impact Mapping, así como los modelos de dominio como Bounded Context Canvases y Context Mapping.
-
 
 Para la gestión del trabajo colaborativo, se estableció el uso de ramas por cada sección o capítulo del informe, permitiendo que cada integrante trabajara de manera independiente sobre su contenido asignado. Posteriormente, los avances fueron integrados a la rama principal mediante pull requests, los cuales fueron revisados para garantizar la calidad, coherencia y consistencia del informe.
 
@@ -80,8 +77,11 @@ Como evidencia del proceso, se incluirán capturas de los analíticos de colabor
 ![Collaborators TB1](assets/images/misc/insights/tb1/tb1_collaborators.png)
 
 ![Network 1 TB1](assets/images/misc/insights/tb1/tb1_network_1.png)
+
 ![Network 1 TB1](assets/images/misc/insights/tb1/tb1_network_2.png)
+
 ![Network 1 TB1](assets/images/misc/insights/tb1/tb1_network_3.png)
+
 ![Network 1 TB1](assets/images/misc/insights/tb1/tb1_network_4.png)
 
 Distribución de Commits por Integrante:
@@ -112,7 +112,9 @@ Para la gestión del trabajo colaborativo, se mantuvo el flujo basado en ramas d
 Como evidencia del proceso, se incluirán capturas de los analíticos de colaboración del repositorio correspondientes al TP, donde se visualizará la actividad de commits, participación por integrante, historial de ramas y pull requests gestionados durante esta entrega. Estas evidencias respaldan el trabajo realizado y complementan el Registro de Versiones del Informe, mostrando la evolución del proyecto y el aporte individual de cada miembro del equipo.
 
 ![Pulse TP](assets/images/misc/insights/tp/tp_pulse.png)
+
 ![Collaborators TP](assets/images/misc/insights/tp/tp_collaborators.png)
+
 ![Network TP](assets/images/misc/insights/tp/tp_network.png)
 
 Distribución de Commits por Integrante:
@@ -260,18 +262,17 @@ Distribución de Commits por Integrante:
   * [6.4. Applications UX/UI Design](#64-applications-uxui-design)
     * [6.4.1. Applications Wireframes](#641-applications-wireframes)
     * [6.4.2. Applications Wireflow Diagrams](#642-applications-wireflow-diagrams)
-    * [6.4.3. Applications Mock-ups](#643-applications-mock-ups)
-    * [6.4.4. Applications User Flow Diagrams](#644-applications-user-flow-diagrams)
-  * [6.5. Applications Prototyping](#65-applications-prototyping)
 * [Conclusiones](#conclusiones)
 * [Bibliografía](#bibliografía)
 
 # Student Outcome
 
 El curso contribuye al cumplimiento del Student Outcome ABET:
+
 **ABET – EAC - Student Outcome 3**
 
 Criterio: *Capacidad de comunicarse efectivamente con un rango de audiencias.*
+
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 3.
 
 <table>
@@ -528,6 +529,7 @@ Features Assumptions
 4. Suponemos que la integración entre app móvil, panel web y servicios de notificación será esencial para el éxito del producto.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
+
 1. Alertas preventivas y monitoreo en tiempo real <br>
 Creemos que reduciremos fallas inesperadas si Octane permite detectar anomalías y notificar al usuario antes de que ocurran problemas críticos.
 2. Historial de mantenimiento centralizado <br>
@@ -718,6 +720,7 @@ Para poder destacar un producto en un mercado competitivo, es fundamental implem
 *Objetivo:* Posicionar a Octane como la primera solución que integra hardware IoT y software para ofrecer métricas automáticas en tiempo real y diagnósticos predictivos, superando la limitación de registros manuales en Drivvo, aCar y Fuelio.
 
 *Tácticas:*
+
 - Desarrollar un dispositivo IoT plug & play que se instale fácilmente en motos urbanas.
 - Integrar algoritmos de mantenimiento predictivo basados en telemetría.
 - Generar reportes personalizados descargables para usuarios y mecánicos.
@@ -728,6 +731,7 @@ Para poder destacar un producto en un mercado competitivo, es fundamental implem
 *Objetivo:* Atacar un mercado poco atendido: dueños de motocicletas urbanos y talleres mecánicos, en contraste con las apps competidoras que se enfocan en autos y flotas.
 
 *Tácticas:*
+
 - Ofrecer funcionalidades específicas para motos (ej. control de gasolina por cilindrada, alertas de aceite, historial de mantenimientos por kilometraje).
 - Crear una app web exclusiva para mecánicos, con comparativos por modelo y gestión de clientes.
 - Establecer alianzas con talleres locales y concesionarios de motos para distribución del IoT.
@@ -738,6 +742,7 @@ Para poder destacar un producto en un mercado competitivo, es fundamental implem
 *Objetivo:* Construir confianza mostrando a Octane como una solución hecha por y para dueños de motocicletas y mecánicos, en lugar de una app genérica de gastos.
 
 *Tácticas:*
+
 - Crear una comunidad digital de dueños de motocicletas, con foros y tips de mecánica preventiva.
 - Usar un lenguaje simple y cercano, evitando tecnicismos innecesarios.
 - Brindar soporte personalizado (ej. chat directo, FAQs en video, tutoriales cortos en redes).
@@ -748,6 +753,7 @@ Para poder destacar un producto en un mercado competitivo, es fundamental implem
 *Objetivo:* Superar la percepción negativa de Drivvo (suscripción costosa) y Fuelio Pro (costo adicional), ofreciendo planes claros y económicos.
 
 *Tácticas:*
+
 - Modelo freemium real: funcionalidades básicas siempre gratuitas (seguimiento de consumo y alertas).
 - Plan Premium accesible (<$2/mes) con reportes predictivos, diagnósticos avanzados y sincronización completa.
 - Precio del dispositivo IoT asequible (ej. $30–40) con facilidades de pago en talleres.
@@ -758,6 +764,7 @@ Para poder destacar un producto en un mercado competitivo, es fundamental implem
 *Objetivo:* Posicionar la solución como un producto diseñado específicamente para motocicletas y talleres mecánicos, en contraste con los competidores que se orientan a flotas grandes y heterogéneas (Wialon, Geotab).
 
 *Tácticas:*
+
 - Desarrollar una interfaz amigable y personalizada para mecánicos y dueños de motocicletas.
 - Ofrecer funcionalidades exclusivas para motos (ej. alertas de mantenimiento de cadena, aceite, frenos).
 - Construir una narrativa de marca clara: “la telemática de las motos”.
@@ -768,6 +775,7 @@ Para poder destacar un producto en un mercado competitivo, es fundamental implem
 *Objetivo:* Competir contra grandes competidores (Wialon, Samsara, Geotab) ofreciendo un producto más accesible, económico y fácil de implementar, enfocado en usuarios individuales y talleres pequeños.
 
 *Tácticas:*
+
 - Diseñar planes de suscripción escalonados (desde básicos hasta avanzados) que permitan crecer al ritmo del usuario.
 - Incluir un modelo freemium o demo para captar usuarios rápidamente sin barreras de entrada.
 - Resaltar la facilidad de instalación de sensores IoT en motos, evitando hardware costoso o complejo.
@@ -777,6 +785,7 @@ Para poder destacar un producto en un mercado competitivo, es fundamental implem
 *Objetivo:* Diferenciarse por la relación directa y de confianza entre dueños de motocicletas y mecánicos, creando una comunidad alrededor del producto que los competidores globales no priorizan.
 
 *Tácticas:*
+
 - Lanzar campañas de marketing en comunidades locales (Facebook, Instagram, clubes de dueños de motocicletas, foros especializados).
 - Promover talleres mecánicos como socios estratégicos para captar clientes y distribuir el IoT.
 - Desarrollar integraciones futuras con aseguradoras o talleres certificados, ofreciendo beneficios adicionales (ej. descuentos en seguros, paquetes de mantenimiento).
@@ -913,27 +922,34 @@ Al tener todas las entrevistas necesitadas de ambos segmentos objetivo, se proce
 
 **Segmento Objetivo: Mecánicos y talleres de servicio**
 
-*Demografía:*  
+*Demografía:*
+
 La edad de los mecánicos entrevistados varía entre 21 y 25 años, con una experiencia laboral de 1 a 3 años. Todos trabajan en talleres urbanos de Lima y atienden principalmente motos de uso diario y delivery, lo que refleja un perfil joven, técnico y cercano a un público que depende de sus vehículos para generar ingresos. El 100 % tiene menos de 3 años de experiencia y el 67 % atiende mayoritariamente a repartidores y transporte urbano.
 
-*Servicios frecuentes:*  
+*Servicios frecuentes:*
+
 Los servicios más comunes son cambios de aceite, ajustes de frenos, mantenimiento eléctrico básico, reparación de cadenas y revisión de neumáticos. Esto evidencia un enfoque en mantenimientos preventivos y correctivos rápidos, adaptados a clientes que necesitan volver a la pista en poco tiempo. El 100 % realiza cambios de aceite y revisión de frenos; el 67 % ofrece trabajos eléctricos y de neumáticos.
 
-*Gestión y diagnóstico:*  
+*Gestión y diagnóstico:*
+
 El historial de clientes se maneja con libretas, memoria personal o Excel poco usado. El diagnóstico es manual y basado en experiencia, usando herramientas básicas como multímetro y revisión visual. Esto revela una falta de digitalización en procesos clave del taller. El 67 % gestiona historial en cuadernos/memoria y solo el 33 % usa Excel de manera básica.
 
-*Necesidades y oportunidades:*  
+*Necesidades y oportunidades:*
+
 Los mecánicos ven valor en contar con telemetría remota (kilometraje, batería, combustible, temperatura, neumáticos) y reportes simples como historial, alertas de servicio y resúmenes mensuales. Prefieren un plan fijo para el taller en lugar de comisiones individuales, y valoran herramientas precisas, fáciles de usar y compatibles con WhatsApp, lo que abre una oportunidad para soluciones digitales simples, accesibles y prácticas. El 100% considera útil la telemetría, el 100% prefiere un plan fijo y el 100% valora la facilidad de uso por encima de funciones complejas.
 
 **Segmento Objetivo: Dueños de motocicletas**
 
 *Demografía:*
+
 Los dueños de motocicletas entrevistados tienen entre 22 y 32 años, con ocupaciones variadas (estudiante, profesor, abogado) y residen en distritos urbanos de Lima. Todos utilizan su moto para desplazamientos diarios, lo que indica un perfil diverso pero con una necesidad común de movilidad confiable. El 100% tiene entre 22 y 32 años, con ocupaciones variadas.
 
 *Gestión y comunicación:*
+
 El control de gastos y mantenimiento es manual, con métodos como notas, libretas o memoria, lo que genera dificultades para recordar fechas y detalles importantes. La comunicación con mecánicos se realiza principalmente a través de WhatsApp o llamadas, sin herramientas digitales específicas, lo que refleja una falta de organización y seguimiento efectivo. El 100% gestiona gastos de forma manual y el 100% se comunica con mecánicos por WhatsApp o llamadas.
 
 *Necesidades y oportunidades:*
+
 Los dueños de motocicletas valoran la confiabilidad de su moto y buscan evitar fallas inesperadas. Están interesados en aplicaciones que ofrezcan recordatorios de mantenimiento, historial digital de gastos y servicios, y alertas proactivas basadas en métricas como kilometraje, presión de neumáticos, nivel de combustible y temperatura del motor. Están dispuestos a pagar por una suscripción si la aplicación demuestra ser confiable y les ayuda a mantener su moto en óptimas condiciones. El 100% valora la confiabilidad, el 100% busca recordatorios y alertas, y el 100% estaría dispuesto a pagar por una suscripción si el servicio es confiable y útil.
 
 ## 2.3. Needfinding
@@ -1662,7 +1678,7 @@ En esta sección se expone y fundamenta el proceso de EventStorming llevado a ca
 
 La sesión fue organizada estratégicamente con una duración de dos horas. Durante esta actividad, se emplearon post-its digitales para representar eventos y comandos lo que facilitó una exploración visual e iterativa del flujo de trabajo.
 
-Enlace al Miro: https://miro.com/app/board/uXjVHfnGurU=/?share_link_id=913265196477
+Enlace al Miro: [https://miro.com/app/board/uXjVHfnGurU=/?share_link_id=913265196477](https://miro.com/app/board/uXjVHfnGurU=/?share_link_id=913265196477)
 
 **Step 1: Unstructured Exploration**
 
@@ -2163,6 +2179,7 @@ El dominio de Reports está centrado en el agregado principal `Report`, que agru
 **Aggregates**
 
 `Report`
+
 **Descripción:** Representa un reporte consolidado asociado a un vehículo. Contiene la información del vehículo, las métricas agrupadas en el reporte y la fecha de generación.
 
 | Atributo   | Tipo de dato | Visibilidad | Descripción                                     |
@@ -2175,6 +2192,7 @@ El dominio de Reports está centrado en el agregado principal `Report`, que agru
 **Entities**
 
 `Metric`
+
 **Descripción:** Representa una métrica incluida dentro de un reporte. Puede ser una medición numérica o descriptiva relacionada con el estado del vehículo.
 
 | Atributo    | Tipo de dato | Visibilidad | Descripción                         |
@@ -2184,6 +2202,7 @@ El dominio de Reports está centrado en el agregado principal `Report`, que agru
 | metricValue | String       | Private     | Valor registrado para esta métrica. |
 
 `MetricType`
+
 **Descripción:** Define el tipo de una métrica, por ejemplo kilometraje, estado del aceite o temperatura.
 
 | Atributo          | Tipo de dato | Visibilidad | Descripción                              |
@@ -2195,6 +2214,7 @@ El dominio de Reports está centrado en el agregado principal `Report`, que agru
 **Queries**
 
 `GetReportByIdQuery <<record>>`
+
 **Descripción:** Obtiene un reporte específico mediante su identificador único.
 
 | Atributo | Tipo de dato | Descripción                            |
@@ -2202,6 +2222,7 @@ El dominio de Reports está centrado en el agregado principal `Report`, que agru
 | reportId | Long         | Identificador del reporte a consultar. |
 
 `GetReportByVehicleIdQuery <<record>>`
+
 **Descripción:** Obtiene todos los reportes asociados a un vehículo específico.
 
 | Atributo  | Tipo de dato | Descripción                                                  |
@@ -2209,6 +2230,7 @@ El dominio de Reports está centrado en el agregado principal `Report`, que agru
 | vehicleId | Long         | Identificador del vehículo cuyos reportes se desean obtener. |
 
 `GetMetricsByReportIdQuery <<record>>`
+
 **Descripción:** Obtiene todas las métricas pertenecientes a un reporte.
 
 | Atributo | Tipo de dato | Descripción                                                 |
@@ -2218,6 +2240,7 @@ El dominio de Reports está centrado en el agregado principal `Report`, que agru
 **Services**
 
 `ReportQueryService` (Interface)
+
 * `handle(GetReportByIdQuery)`
 * `handle(GetReportByVehicleIdQuery)`
 * `handle(GetMetricsByReportIdQuery)`
@@ -2229,6 +2252,7 @@ Este servicio define la puerta de entrada de consultas del bounded context y per
 **Rest Controllers**
 
 `ReportController`
+
 **Descripción:** Controlador REST encargado de manejar las peticiones asociadas a la obtención de reportes y sus métricas.
 
 | Método                  | Ruta                                    | Descripción                                         |
@@ -2240,6 +2264,7 @@ Este servicio define la puerta de entrada de consultas del bounded context y per
 **Resources**
 
 `ReportResource <<class>>`
+
 **Descripción:** Representa la estructura de datos expuesta por la API para describir un reporte consolidado.
 
 | Atributo   | Tipo de dato | Descripción                                     |
@@ -2252,6 +2277,7 @@ Este servicio define la puerta de entrada de consultas del bounded context y per
 **Assemblers**
 
 `ReportResourceFromEntityAssembler`
+
 **Descripción:** Ensamblador encargado de transformar una entidad `Report` del dominio en un recurso REST `ReportResource`.
 
 | Método                    | Descripción                                                      |
@@ -2261,6 +2287,7 @@ Este servicio define la puerta de entrada de consultas del bounded context y per
 ### 5.2.3. Application Layer
 
 `ReportQueryServiceImpl`
+
 **Descripción:** Implementación del servicio de consultas `ReportQueryService`, responsable de recuperar reportes y métricas desde la capa de persistencia mediante consultas especializadas.
 
 | Método                            | Descripción                                                        |
@@ -2277,6 +2304,7 @@ Este servicio define la puerta de entrada de consultas del bounded context y per
 - Al iniciar la aplicación, se ejecuta un `ApplicationReadyEventHandler` para sembrar los tipos de métricas si la base de datos está vacía.
 
 `ApplicationReadyEventHandler`
+
 **Descripción:** Componente ejecutado automáticamente al iniciar la aplicación. Se encarga de inicializar el sistema con valores por defecto para los tipos de métricas.
 
 | Método                                    | Descripción                                                                           |
@@ -2289,6 +2317,7 @@ Este servicio define la puerta de entrada de consultas del bounded context y per
 **Repositories**
 
 `ReportRepository`
+
 **Descripción:** Repositorio JPA encargado de las operaciones de persistencia del agregado `Report`.
 
 | Método                          | Tipo de retorno | Descripción                                                    |
@@ -2296,6 +2325,7 @@ Este servicio define la puerta de entrada de consultas del bounded context y per
 | findByVehicleId(Long vehicleId) | List<Report>    | Recupera todos los reportes asociados a un vehículo por su id. |
 
 `MetricTypeRepository`
+
 **Descripción:** Repositorio JPA utilizado para gestionar la persistencia de los tipos de métricas (`MetricType`).
 
 | Método                          | Tipo de retorno | Descripción                                                    |
@@ -2314,11 +2344,11 @@ Reports funciona como un bounded context de consulta con persistencia propia. No
 
 #### 5.2.6.1. Bounded Context Domain Layer Class Diagrams
 
-![system-component-diagram](./assets/images/chapter-5/bc-report/report-class-diagram.png)
+![system-component-diagram](assets/images/chapter-5/bc-report/report-class-diagram.png)
 
 #### 5.2.6.2. Bounded Context Database Design Diagram
 
-![system-component-diagram](./assets/images/chapter-5/bc-report/report-db-diagram.png)
+![system-component-diagram](assets/images/chapter-5/bc-report/report-db-diagram.png)
 
 ## 5.3. Bounded Context: Assignments
 
@@ -2329,6 +2359,7 @@ El bounded context **Assignments** administra la relación entre un propietario,
 **Aggregates**
 
 `Assignment`
+
 **Descripción:** Agregado raíz que representa la asignación de un propietario a un mecánico. Centraliza el estado, el tipo y el código único de la asignación.
 
 | Atributos      | Tipo de dato     | Visibilidad | Descripción                                                                                    |
@@ -2341,6 +2372,7 @@ El bounded context **Assignments** administra la relación entre un propietario,
 | assignmentCode | AssignmentCode   | Private     | Código único usado para identificar y reclamar la asignación.                                  |
 
 `Mechanic`
+
 **Descripción:** Agregado raíz que representa al mecánico registrado en el sistema. Agrupa su perfil, sus asignaciones y su membresía.
 
 | Atributos      | Tipo de dato     | Visibilidad | Descripción                                     |
@@ -2353,6 +2385,7 @@ El bounded context **Assignments** administra la relación entre un propietario,
 **Value Objects**
 
 `AssignmentCode`
+
 **Descripción:** Valor embebido que garantiza un código alfanumérico único de 9 caracteres para una asignación.
 
 | Atributo | Tipo de dato | Visibilidad | Descripción              |
@@ -2360,16 +2393,19 @@ El bounded context **Assignments** administra la relación entre un propietario,
 | code     | String       | Private     | Código de la asignación. |
 
 `AssignmentStatus`
+
 **Descripción:** Estado de una asignación.
 
 Valores: `ACTIVE`, `PENDING`, `CANCELLED`
 
 `AssignmentType`
+
 **Descripción:** Tipo de asignación funcional.
 
 Valores: `UNCATEGORIZED`, `REGULAR`, `FREQUENT`, `BUSINESS`
 
 `MembershipType`
+
 **Descripción:** Nivel de membresía del mecánico.
 
 Valores: `BRONZE`, `SILVER`, `BLACK`
@@ -2396,6 +2432,7 @@ Valores: `BRONZE`, `SILVER`, `BLACK`
 **Services**
 
 `AssignmentCommandService`
+
 * `handle(CreateAssignmentCommand)`
 * `handle(UpdateAssignmentStatusCommand)`
 * `handle(UpdateAssignmentTypeCommand)`
@@ -2403,6 +2440,7 @@ Valores: `BRONZE`, `SILVER`, `BLACK`
 * `handle(DeleteAssignmentCommand)`
 
 `AssignmentQueryService`
+
 * `handle(GetAssignmentByOwnerIdQuery)`
 * `handle(GetAssignmentsByMechanicIdAndStatusQuery)`
 * `handle(GetAssignmentByIdQuery)`
@@ -2410,10 +2448,12 @@ Valores: `BRONZE`, `SILVER`, `BLACK`
 * `handle(GetAssignmentByVehicleIdQuery)`
 
 `MechanicCommandService`
+
 * `handle(CreateMechanicCommand)`
 * `handle(UpdateMechanicMembershipTypeCommand)`
 
 `MechanicQueryService`
+
 * `handle(GetMechanicByIdQuery)`
 
 ### 5.3.2. Interface Layer
@@ -2423,6 +2463,7 @@ La capa de interfaz expone varias rutas REST porque Assignments resuelve distint
 **Rest Controllers**
 
 `AssignmentController`
+
 **Descripción:** Controlador principal para administrar asignaciones.
 
 | Método                    | Ruta                                                                   | Descripción                                    |
@@ -2435,6 +2476,7 @@ La capa de interfaz expone varias rutas REST porque Assignments resuelve distint
 | getAssignmentByCode()     | GET /api/v1/assignments/code/{assignmentCode}                          | Recupera una asignación por su código.         |
 
 `MechanicController`
+
 **Descripción:** Controlador para gestionar información del mecánico.
 
 | Método                         | Ruta                                         | Descripción                                                            |
@@ -2443,6 +2485,7 @@ La capa de interfaz expone varias rutas REST porque Assignments resuelve distint
 | updateMechanicMembershipType() | PUT /api/v1/mechanic/{mechanicId}/membership | Actualiza el nivel de membresía del mecánico.                          |
 
 `MechanicAssigmentController`
+
 **Descripción:** Controlador de apoyo para listar y crear asignaciones desde la perspectiva del mecánico.
 
 | Método             | Ruta                                                   | Descripción                                               |
@@ -2451,6 +2494,7 @@ La capa de interfaz expone varias rutas REST porque Assignments resuelve distint
 | createAssignment() | POST /api/v1/mechanic/{mechanicId}/assignments         | Crea una nueva asignación asociada al mecánico.           |
 
 `OwnerAssigmentController`
+
 **Descripción:** Controlador de apoyo para consultar la asignación vigente de un owner.
 
 | Método          | Ruta                                   | Descripción                                     |
@@ -2460,6 +2504,7 @@ La capa de interfaz expone varias rutas REST porque Assignments resuelve distint
 **Resources**
 
 `AssignmentResource <<record>>`
+
 **Descripción:** Recurso de salida que representa una asignación ya enriquecida con owner y mecánico.
 
 | Campo          | Tipo de dato     | Descripción                                          |
@@ -2473,6 +2518,7 @@ La capa de interfaz expone varias rutas REST porque Assignments resuelve distint
 | createdAt      | Date             | Fecha de creación del registro.                      |
 
 `MechanicResource <<record>>`
+
 **Descripción:** Recurso de salida para el mecánico.
 
 | Campo          | Tipo de dato   | Descripción                   |
@@ -2511,6 +2557,7 @@ La capa de interfaz expone varias rutas REST porque Assignments resuelve distint
 ### 5.3.3. Application Layer
 
 `AssignmentCommandServiceImpl`
+
 **Descripción:** Implementación del servicio de comandos de asignaciones. Este servicio centraliza las reglas de escritura del contexto.
 
 | Método                                 | Descripción                                                                               |
@@ -2530,6 +2577,7 @@ La capa de interfaz expone varias rutas REST porque Assignments resuelve distint
 - Impide borrar asignaciones que ya no estén en estado `PENDING`.
 
 `MechanicCommandServiceImpl`
+
 **Descripción:** Implementación del servicio de comandos de mecánicos.
 
 | Método                                      | Descripción                                       |
@@ -2538,6 +2586,7 @@ La capa de interfaz expone varias rutas REST porque Assignments resuelve distint
 | handle(UpdateMechanicMembershipTypeCommand) | Actualiza la membresía del mecánico.              |
 
 `AssignmentQueryServiceImpl`
+
 **Descripción:** Implementación del servicio de consultas para asignaciones.
 
 | Método                                           | Descripción                                                                                      |
@@ -2549,6 +2598,7 @@ La capa de interfaz expone varias rutas REST porque Assignments resuelve distint
 | handle(GetAssignmentByVehicleIdQuery)            | Recupera la asignación vinculada a un vehículo.                                                  |
 
 `MechanicQueryServiceImpl`
+
 **Descripción:** Implementación del servicio de consultas para mecánicos.
 
 | Método                       | Descripción                                |
@@ -2581,11 +2631,11 @@ Este bounded context combina persistencia propia con integración transversal. S
 
 #### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
 
-![system-component-diagram](./assets/images/chapter-5/bc-assignment/assignments-class-diagram.png)
+![system-component-diagram](assets/images/chapter-5/bc-assignment/assignments-class-diagram.png)
 
 #### 5.3.6.2. Bounded Context Database Design Diagram
 
-![system-component-diagram](./assets/images/chapter-5/bc-assignment/assignments-db-diagram.png)
+![system-component-diagram](assets/images/chapter-5/bc-assignment/assignments-db-diagram.png)
 
 ## 5.4. Bounded Context: Maintenance
 ### 5.4.1. Domain Layer
@@ -2593,6 +2643,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 **Aggregates**
 
 `Expense`
+
 **Descripción:** Representa un gasto registrado en el sistema, el cual puede ser de tipo personal o de mantenimiento. Agrupa los ítems del gasto y su clasificación.
 
 | Atributos    | Tipo de dato      | Visibilidad | Descripción                                  |
@@ -2605,6 +2656,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 | expenseType  | ExpenseType       | Private     | Clasificación del tipo de gasto.             |
 
 `Maintenance`
+
 **Descripción:** Representa una actividad de mantenimiento (preventivo o correctivo) realizada sobre un vehículo. Gestiona el estado, la asignación de gastos y el mecánico responsable.
 
 | Atributos          | Tipo de dato     | Visibilidad | Descripción                                        |
@@ -2622,6 +2674,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 **Entities**
 
 `ExpenseItem`
+
 **Descripción:** Representa un ítem individual dentro de un registro de gasto, detallando costos unitarios y totales.
 
 | Atributos  | Tipo de dato | Visibilidad | Descripción                                     |
@@ -2639,10 +2692,13 @@ Este bounded context combina persistencia propia con integración transversal. S
 **Value Objects**
 
 `ExpenseTypes` (Enum: PERSONAL, MAINTENANCE)
+
 `ItemTypes` (Enum: FINE, PARKING, PAYMENT, SUPPLIES, TAX, TOOLS)
+
 `MaintenanceStates` (Enum: PENDING, IN_PROGRESS, COMPLETED, CANCELLED)
 
 **Commands**
+
 * AddExpenseItemCommand <<record>>
 * AssignExpenseToMaintenanceCommand <<record>>
 * CreateExpenseByOwnerIdCommand <<record>>
@@ -2657,6 +2713,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 * UpdateStateOfMaintenanceByIdCommand <<record>>
 
 **Queries**
+
 * GetAllExpenseItemsByExpenseIdQuery <<record>>
 * GetAllExpensesByUserIdQuery <<record>>
 * GetAllMaintenancesByMechanicIdQuery <<record>>
@@ -2668,31 +2725,37 @@ Este bounded context combina persistencia propia con integración transversal. S
 **Services**
 
 `ExpenseCommandService`
+
 * handle(CreateExpenseCommand)
 * handle(CreateExpenseByOwnerIdCommand)
 * handle(DeleteExpenseCommand)
 
 `ExpenseItemCommandService`
+
 * handle(AddExpenseItemCommand)
 * handle(DeleteExpenseItemsByExpenseIdCommand)
 
 `ExpenseQueryService`
+
 * handle(GetAllExpensesByUserIdQuery)
 * handle(GetExpenseByIdQuery)
 
 `MaintenanceCommandService`
+
 * handle(CreateMaintenanceCommand)
 * handle(DeleteMaintenanceCommand)
 * handle(AssignExpenseToMaintenanceCommand)
 * handle(UpdateStateOfMaintenanceByIdCommand)
 
 `MaintenanceQueryService`
+
 * handle(GetAllMaintenancesByVehicleIdQuery)
 * handle(GetMaintenanceByIdQuery)
 * handle(GetAllMaintenancesByMechanicIdQuery)
 * handle(GetMaintenancesByOwnerIdQuery)
 
 `SeedServices` (Agrupación lógica)
+
 * ExpenseTypeCommandService.handle(SeedExpenseTypesCommand)
 * ItemTypeCommandService.handle(SeedItemTypesCommand)
 * MaintenanceStateCommandService.handle(SeedMaintenanceStatesCommand)
@@ -2702,6 +2765,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 **Rest Controllers**
 
 `ExpenseController`
+
 **Descripción:** Controlador REST que maneja las operaciones relacionadas con la gestión de gastos y sus ítems.
 
 | Método                   | Ruta                                 | Descripción                                       |
@@ -2713,6 +2777,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 | deleteExpense()          | DELETE /api/v1/expense/{expenseId}   | Elimina un gasto existente.                       |
 
 `MaintenanceController`
+
 **Descripción:** Controlador REST que maneja las operaciones del ciclo de vida de los mantenimientos.
 
 | Método                        | Ruta                                                        | Descripción                                                    |
@@ -2727,6 +2792,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 | getMaintenancesByMechanicId() | GET /api/v1/maintenance/mechanic/{mechanicId}               | Obtiene los mantenimientos asignados a un mecánico.            |
 
 **Resources**
+
 * CreateExpenseResource <<record>>
 * ExpenseResource <<record>>
 * CreateMaintenanceResource <<record>>
@@ -2734,6 +2800,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 * UpdateStatusOfMaintenanceResource <<record>>
 
 **Assemblers**
+
 * ExpenseResourceFromEntityAssembler
 * MaintenanceResourceFromEntityAssembler
 * CreateMaintenanceCommandFromResourceAssembler
@@ -2741,6 +2808,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 ### 5.4.3. Application Layer
 
 `ExpenseCommandServiceImpl`
+
 **Descripción:** Implementación del servicio de comandos para la gestión de gastos.
 
 | Método                                | Descripción                                                        |
@@ -2750,6 +2818,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 | handle(DeleteExpenseCommand)          | Elimina un gasto por su ID.                                        |
 
 `ExpenseQueryServiceImpl`
+
 **Descripción:** Implementación del servicio de consultas para gastos.
 
 | Método                              | Descripción                                      |
@@ -2758,6 +2827,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 | handle(GetExpenseByIdQuery)         | Recupera un gasto específico por su ID.          |
 
 `ExpenseItemCommandServiceImpl`
+
 **Descripción:** Implementación para la gestión de ítems dentro de los gastos.
 
 | Método                                       | Descripción                                   |
@@ -2766,6 +2836,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 | handle(DeleteExpenseItemsByExpenseIdCommand) | Elimina todos los ítems asociados a un gasto. |
 
 `MaintenanceCommandServiceImpl`
+
 **Descripción:** Implementación del servicio de comandos para el ciclo de vida del mantenimiento.
 
 | Método                                      | Descripción                                                           |
@@ -2776,6 +2847,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 | handle(UpdateStateOfMaintenanceByIdCommand) | Actualiza el estado (e.j. IN_PROGRESS, COMPLETED) del mantenimiento.  |
 
 `MaintenanceQueryServiceImpl`
+
 **Descripción:** Implementación del servicio de consultas para mantenimientos.
 
 | Método                                      | Descripción                                                      |
@@ -2786,6 +2858,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 | handle(GetMaintenancesByOwnerIdQuery)       | Lista los mantenimientos de todos los vehículos de un dueño.     |
 
 `MaintenanceApplicationReadyEventHandler`
+
 **Descripción:** Manejador de eventos de inicio de aplicación para la carga de datos semilla (Seeders).
 
 | Método             | Descripción                                                                 |
@@ -2795,6 +2868,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 ### 5.4.4. Infrastructure Layer
 
 `ExpenseRepository`
+
 **Descripción:** Interfaz de persistencia para la entidad Expense.
 
 | Método       | Tipo de Retorno | Descripción                                    |
@@ -2802,6 +2876,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 | findByUserId | List<Expense>   | Encuentra todos los gastos de un usuario.      |
 
 `ExpenseItemRepository`
+
 **Descripción:** Interfaz de persistencia para los ítems de gasto.
 
 | Método                         | Tipo de Retorno | Descripción                                      |
@@ -2809,6 +2884,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 | deleteExpenseItemsByExpense_Id | void            | Elimina todos los ítems de un ID de gasto dado.  |
 
 `MaintenanceRepository`
+
 **Descripción:** Interfaz de persistencia para la entidad Maintenance.
 
 | Método            | Tipo de Retorno   | Descripción                                                 |
@@ -2831,11 +2907,11 @@ Este bounded context combina persistencia propia con integración transversal. S
 ### 5.4.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.4.6.1. Bounded Context Domain Layer Class Diagrams
 
-![maintenance-class-diagram](/assets/images/chapter-5/bc-maintenance/class-diagram.png)
+![maintenance-class-diagram](assets/images/chapter-5/bc-maintenance/class-diagram.png)
 
 #### 5.4.6.2. Bounded Context Database Design Diagram
 
-![maintenance-db-diagram](/assets/images/chapter-5/bc-maintenance/db-diagram.png)
+![maintenance-db-diagram](assets/images/chapter-5/bc-maintenance/db-diagram.png)
 
 ## 5.5. Bounded Context: Vehicle Wellness
 
@@ -2860,46 +2936,52 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 **Value Objects**
 
 *AirQuality*
-|Atributo|	Tipo|	Descripción|
-|-|-|-|
-|CO2Ppm|	Double|	Concentración de dióxido de carbono en partes por millón|
-|NH3Ppm|	Double|	Concentración de amoníaco en partes por millón|
-|BenzenePpm|	Double|	Concentración de benceno en partes por millón|
+
+| Atributo   | 	Tipo   | 	Descripción                                              |
+|------------|---------|-----------------------------------------------------------|
+| CO2Ppm     | 	Double | 	Concentración de dióxido de carbono en partes por millón |
+| NH3Ppm     | 	Double | 	Concentración de amoníaco en partes por millón           |
+| BenzenePpm | 	Double | 	Concentración de benceno en partes por millón            |
 
 *AtmosphericPressure*
-|Atributo|	Tipo|	Descripción|
-|-|-|-|
-|pressureHpa|	Float|	Valor de presión atmosférica en hectopascales|
+
+| Atributo    | 	Tipo  | 	Descripción                                   |
+|-------------|--------|------------------------------------------------|
+| pressureHpa | 	Float | 	Valor de presión atmosférica en hectopascales |
 
 *Coordinates*
-|Atributo|	Tipo|	Descripción|
-|-|-|-|
-|latitude|	Float|	Coordenada de latitud de la ubicación
-|longitude|	Float|	Coordenada de longitud de la ubicación
+
+| Atributo  | 	Tipo  | 	Descripción                            |
+|-----------|--------|-----------------------------------------|
+| latitude  | 	Float | 	Coordenada de latitud de la ubicación  |
+| longitude | 	Float | 	Coordenada de longitud de la ubicación |
 
 *EnvironmentalConditions*
-|Atributo|	Tipo|	Descripción|
-|-|-|-|
-|temperatureCelsius|	Float|	Temperatura ambiental en grados Celsius
-|humidityPercentage|	Float|	Porcentaje de humedad relativa en el ambiente
+
+| Atributo           | 	Tipo  | 	Descripción                                   |
+|--------------------|--------|------------------------------------------------|
+| temperatureCelsius | 	Float | 	Temperatura ambiental en grados Celsius       |
+| humidityPercentage | 	Float | 	Porcentaje de humedad relativa en el ambiente |
 
 *StatusImpact*
-|Atributo|	Tipo|	Descripción|
-|-|-|-|
-|impactDetected|	Boolean|	Indicador de si se detectó algún impacto en el sistema|
+
+| Atributo       | 	Tipo    | 	Descripción                                            |
+|----------------|----------|---------------------------------------------------------|
+| impactDetected | 	Boolean | 	Indicador de si se detectó algún impacto en el sistema |
 
 **Entities**
 
 *Notification*
-|Atributo|	Tipo|	Descripción|
-|-|-|-|
-|vehicleId|	Long|	Identificador del vehículo relacionado con la notificación|
-|title|	String|	Título descriptivo de la notificación|
-|message|	String|	Contenido detallado del mensaje de notificación|
-|type|	String|	Categoría o clasificación de la notificación|
-|severity|	String|	Nivel de gravedad o importancia de la notificación|
-|read|	boolean|	Estado que indica si la notificación ha sido leída
-|occurredAt|	LocalDateTime|	Fecha y hora en que ocurrió el evento notificado|
+
+| Atributo   | 	Tipo          | 	Descripción                                                |
+|------------|----------------|-------------------------------------------------------------|
+| vehicleId  | 	Long          | 	Identificador del vehículo relacionado con la notificación |
+| title      | 	String        | 	Título descriptivo de la notificación                      |
+| message    | 	String        | 	Contenido detallado del mensaje de notificación            |
+| type       | 	String        | 	Categoría o clasificación de la notificación               |
+| severity   | 	String        | 	Nivel de gravedad o importancia de la notificación         |
+| read       | 	boolean       | 	Estado que indica si la notificación ha sido leída         |
+| occurredAt | 	LocalDateTime | 	Fecha y hora en que ocurrió el evento notificado           |
 
 **Commands**
 
@@ -2928,6 +3010,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 **Services**
 
 `NotificationCommandService` (Interface)
+
 - handle(CreateNotificationCommand)
 - handle(MarkNotificationAsReadCommand)
 - NotificationQueryService (Interface)
@@ -2936,11 +3019,13 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 - handle(GetNotificationsByVehicleIdQuery)
 
 `WellnessMetricCommandService` (Interface)
+
 - handle(CreateWellnessMetricCommand)
 - handle(UpdateWellnessMetricCommand)
 - handle(DeleteWellnessMetricCommand)
 
 `WellnessMetricQueryService` (Interface)
+
 - handle(GetWellnessMetricByIdQuery)
 - handle(GetAllWellnessMetricsQuery)
 - handle(GetWellnessMetricsByVehicleIdQuery)
@@ -2948,6 +3033,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 ### 5.5.2 Interface Layer
 
 **Controllers:**
+
 *Controlador: WellnessMetricsController*
 
 | Título      | 	Wellness Metrics Controller                                                                                                   |
@@ -3000,6 +3086,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 **ACL:**
 
 `WellnessMetricContextFacade` (Interface)
+
 - fetchWellnessMetricById(Long wellnessMetricId)
 
 ### 5.5.3 Application Layer
@@ -3025,9 +3112,10 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | ExternalVehiclesService | 	Servicio externo para obtener información de vehículos           |
 
 *Clase: WellnessMetricCommandServiceImpl*
-|Título	|WellnessMetricCommandServiceImpl|
-|-|-|
-|Descripción|	Servicio que maneja las operaciones de modificación de métricas de bienestar|
+
+| Título	     | WellnessMetricCommandServiceImpl                                              |
+|-------------|-------------------------------------------------------------------------------|
+| Descripción | 	Servicio que maneja las operaciones de modificación de métricas de bienestar |
 
 | Método                                                           | 	Descripción                                                 |
 |------------------------------------------------------------------|--------------------------------------------------------------|
@@ -3036,11 +3124,12 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | handle(DeleteWellnessMetricCommand deleteWellnessMetricCommand)	 | Gestiona la eliminación de métricas de bienestar             |
 
 **Dependencias:**
-|Dependencia|	Descripción|
-|-|-|
-|WellnessMetricRepository|	Repositorio para almacenar y recuperar métricas de bienestar|
-|WellnessMonitoringService|	Servicio para monitorear y analizar las métricas de bienestar|
-|ExternalVehiclesService|	Servicio externo para validar y obtener datos de vehículos|
+
+| Dependencia               | 	Descripción                                                   |
+|---------------------------|----------------------------------------------------------------|
+| WellnessMetricRepository  | 	Repositorio para almacenar y recuperar métricas de bienestar  |
+| WellnessMonitoringService | 	Servicio para monitorear y analizar las métricas de bienestar |
+| ExternalVehiclesService   | 	Servicio externo para validar y obtener datos de vehículos    |
 
 **Query Services**
 
@@ -3075,9 +3164,10 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | handle(GetWellnessMetricsByVehicleIdQuery                     | getWellnessMetricsByVehicleIdQuery)	Consulta las métricas de bienestar de un vehículo específico |
 
 **Dependencias:**
-|Dependencia|	Descripción|
-|-|-|
-|WellnessMetricRepository|	Repositorio para acceder a los datos de métricas de bienestar|
+
+| Dependencia              | 	Descripción                                                   |
+|--------------------------|----------------------------------------------------------------|
+| WellnessMetricRepository | 	Repositorio para acceder a los datos de métricas de bienestar |
 
 **Event Handlers**
 
@@ -3115,9 +3205,10 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | fetchWellnessMetricById(Long wellnessMetricId) | 	Recupera métricas de bienestar para su uso en otros contextos del sistema |
 
 **Dependencias:**
-|Dependencia|	Descripción|
-|-|-|
-|WellnessMetricQueryService|	Servicio para consultar métricas de bienestar|
+
+| Dependencia                | 	Descripción                                   |
+|----------------------------|------------------------------------------------|
+| WellnessMetricQueryService | 	Servicio para consultar métricas de bienestar |
 
 ### 5.5.4 Infrastructure Layer
 
@@ -3151,11 +3242,11 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 
 #### 5.5.6.1 Bounded Context Domain Layer Class Diagrams
 
-![vehicle_wellness_code_level](./assets/images/chapter-5/bc-vehicle-wellness/vehicle_wellness_code_level.drawio.png)
+![vehicle_wellness_code_level](assets/images/chapter-5/bc-vehicle-wellness/vehicle_wellness_code_level.drawio.png)
 
 #### 5.5.6.2 Bounded Context Database Design Diagram
 
-![vehicle_wellness_db](./assets/images/chapter-5/bc-vehicle-wellness/vehicle_wellness_db.png)
+![vehicle_wellness_db](assets/images/chapter-5/bc-vehicle-wellness/vehicle_wellness_db.png)
 
 ## 5.6. Bounded Context: Vehicle Management
 ### 5.6.1. Domain Layer
@@ -3163,6 +3254,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 **Aggregates**
 
 `Owner`
+
 **Descripción:** Representa a un dueño de moto registrado en el sistema. Contiene tanto una referencia a un profile como a los vehículos registrados a su nombre.
 
 | Atributos           | Tipo de dato   | Visibilidad | Descripción                                |
@@ -3172,6 +3264,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | vehicles            | List<Vehicles> | Private     | Lista de Vehículos asociados al dueño.     |
 
 `Model`
+
 **Descripción:** Representa un modelo de moto registrado
 
 | Atributos     | Tipo de dato | Visibilidad | Descripción                                                   |
@@ -3199,10 +3292,10 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | durability    | String       | Private     | Nivel de durabilidad o resistencia del modelo.                |
 | octane        | String       | Private     | Nivel de octanaje recomendado para el combustible del modelo. |
 
-
 **Entities**
 
 `Vehicle`
+
 **Descripción:** Representa la moto registrada por el dueño en el sistema. Contiene los detalles para identificar el vehículo así como su estado actual.
 
 | Atributos           | Tipo de dato | Visibilidad | Descripción                       |
@@ -3213,7 +3306,6 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | year                | Year         | Private     | Año de fabricación de la moto.    |
 | plate               | Plate        | Private     | Placa de la moto.                 |
 
-
 **Value Objects**
 
 `Plate` (Record)
@@ -3221,6 +3313,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 `Year` (Record)
 
 **Commands**
+
 * AddVehicleToOwnerCommand <<record>>
 * CreateModelCommand <<record>>
 * CreateOwnerCommand <<record>>
@@ -3229,6 +3322,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 * UpdateVehicleFromOwnerCommand <<record>>
 
 **Queries**
+
 * GetAllBrandsQuery <<record>>
 * GetAllModelsQuery <<record>>
 * GetAllOwnersQuery <<record>>
@@ -3241,28 +3335,34 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 * GetVehicleByPlateQuery <<record>>
 
 **Services**
+
 `ModelCommandService`
+
 * handle(CreateModelCommand)
 * handle(SeedModelsCommand)
 
 `ModelQueryService`
+
 * handle(GetAllModelsQuery)
 * handle(GetModelByIdQuery)
 * handle(GetModelsByBrandQuery)
 * handle(GetAllBrandsQuery)
 
 `OwnerCommandService`
+
 * handle(CreateOwnerCommand)
 * handle(AddVehicleToOwnerCommand)
 * handle(UpdateVehicleFromOwnerCommand)
 * handle(DeleteVehicleFromOwnerCommand)
 
 `OwnerQueryService`
+
 * handle(GetOwnerByIdQuery)
 * handle(GetOwnerByVehicleIdQuery)
 * handle(GetAllOwnersQuery)
 
 `VehicleQueryService`
+
 * handle(GetVehicleByIdQuery)
 * handle(GetVehicleByPlateQuery)
 
@@ -3271,6 +3371,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 **Rest Controllers**
 
 `ModelsController`
+
 **Descripción:** Controlador REST que maneja las operaciones relacionadas con los modelos.
 
 | Método             | Ruta                             | Descripción                                                    |
@@ -3281,6 +3382,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | getAllBrands()     | GET /api/v1/models/brands        | Obtiene todas las marcas presentes en los modelos registrados. |
 
 `OwnersController`
+
 **Descripción:** Controlador REST que maneja las operaciones relacionadas con los dueños.
 
 | Método                | Ruta                                   | Descripción                                          |
@@ -3290,6 +3392,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | createOwner()         | POST /api/v1/owners                    | Crea un dueño de vehículo.                           |
 
 `VehiclesController`
+
 **Descripción:** Controlador REST que maneja las operaciones relacionadas con los vehículos.
 
 | Método                 | Ruta                                | Descripción                                            |
@@ -3300,6 +3403,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | deleteVehicleById()    | DELETE /api/v1/vehicles/{vehicleId} | Elimina un vehículo de un dueño.                       |
 
 **Resources**
+
 * AddVehicleResource <<record>>
 * CreateModelResource <<record>>
 * CreateOwnerResource <<record>>
@@ -3308,6 +3412,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 * VehicleResource <<record>>
 
 **Assemblers**
+
 * AddVehicleCommandFromResourceAssembler
 * CreateModelCommandFromResourceAssembler
 * CreateOwnerCommandFromResourceAssembler
@@ -3318,6 +3423,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 ### 5.6.3. Application Layer
 
 `ModelCommandService`
+
 **Descripción:** Implementación del servicio de comandos para la gestión de modelos.
 
 | Método                     | Descripción                                |
@@ -3326,6 +3432,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | handle(SeedModelsCommand)  | Crea los modelos al iniciar la aplicación. |
 
 `ModelQueryService`
+
 **Descripción:** Implementación del servicio de consultas para la gestión de modelos.
 
 | Método                        | Descripción                                                        |
@@ -3336,6 +3443,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | handle(GetAllBrandsQuery)     | Obtiene todas las marcas existentes entre los modelos del sistema. |
 
 `OwnerCommandService`
+
 **Descripción:** Implementación del servicio de comandos para la gestión de dueños.
 
 | Método                                | Descripción                          |
@@ -3346,6 +3454,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | handle(DeleteVehicleFromOwnerCommand) | Elimina un vehículo de un dueño.     |
 
 `OwnerQueryService`
+
 **Descripción:** Implementación del servicio de consultas para la gestión de dueños.
 
 | Método                           | Descripción                                                         |
@@ -3355,6 +3464,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | handle(GetAllOwnersQuery)        | Obtiene todos los dueños registrados.                               |
 
 `VehicleQueryServiceImpl`
+
 **Descripción:** Implementación del servicio de consultas para la gestión de vehículos.
 
 | Método                         | Descripción                       |
@@ -3365,6 +3475,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 ### 5.6.4. Infrastructure Layer
 
 `OwnerRepository`
+
 **Descripción:** Interfaz de persistencia para operaciones CRUD y consultas de datos de dueños.
 
 | Método                 | Tipo de Retorno | Descripción                                  |
@@ -3373,6 +3484,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | findOwnerByVehicles_Id | Optional<Owner> | Encuentra un Owner por uno de sus vehículos. |
 
 `ModelRepository`
+
 **Descripción:** Interfaz de persistencia para operaciones CRUD y consultas de datos de modelos.
 
 | Método        | Tipo de Retorno | Descripción                                          |
@@ -3382,6 +3494,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | findAllBrands | List<String>    | Encuentra todas las marcas presentes en los modelos. |
 
 `VehicleReadRepositories`
+
 **Descripción:** Interfaz de persistencia para operaciones de lectura de vehículos.
 
 | Método                 | Tipo de Retorno | Descripción                                  |
@@ -3396,13 +3509,11 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 ### 5.6.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.6.6.1. Bounded Context Domain Layer Class Diagrams
 
-![vehicle_management_code_level](/assets/images/chapter-5/bc-vehicle-management/class-diagram.jpg)
+![vehicle_management_code_level](assets/images/chapter-5/bc-vehicle-management/class-diagram.jpg)
 
 #### 5.6.6.2. Bounded Context Database Design Diagram
 
-![vehicle_management_db](/assets/images/chapter-5/bc-vehicle-management/db-diagram.png)
-
----
+![vehicle_management_db](assets/images/chapter-5/bc-vehicle-management/db-diagram.png)
 
 ## 5.7. Bounded Context: Device Intelligence
 
@@ -3753,7 +3864,7 @@ Su objetivo principal es mantener una presentación uniforme y profesional, fort
 
 Para lograr este objetivo esta sección se dividirá en dos sub-secciones:
 
-General Style Guidelines: Se definiran los principios básicos de diseño incluyendo branding, tipografía, paleta de colores, espaciado y tono comunicacional.
+General Style Guidelines: Se definirán los principios básicos de diseño incluyendo branding, tipografía, paleta de colores, espaciado y tono comunicacional.
 Web Mobile and IoT Style Guidelines: Aquí se definen los estándares visuales especificos para cada plataforna.
 Estos lineamientos permiten mantener organizados y accesibles todos los artefactos de diseño, reduciendo inconsistencias y mejorando la eficiencia del equipo.
 
@@ -3767,14 +3878,15 @@ El logotipo se empleará principalmente en su versión negra sobre fondos claros
 
 - El logo completo se utilizará en la barra de navegación superior y en aplicaciones móviles.
 - El isotipo se aplicará únicamente en espacios reducidos, como íconos de aplicaciones móviles o pestañas del navegador.
-*Logos:*
 
-![Logo 1](./assets/images/chapter-6/style-guidelines/logo-1.png)
-![Logo 2](./assets/images/chapter-6/style-guidelines/logo-2.png)
+**Logos:**
 
-*Isotipo:*
+![Logo 1](assets/images/chapter-6/style-guidelines/logo-1.png)
+![Logo 2](assets/images/chapter-6/style-guidelines/logo-2.png)
 
-![Isotipo](./assets/images/chapter-6/style-guidelines/octane-isotipo.png)
+**Isotipo:**
+
+![Isotipo](assets/images/chapter-6/style-guidelines/octane-isotipo.png)
 
 **Paleta de colores:**
 
@@ -3784,7 +3896,7 @@ La identidad visual se basa en tonos naranjas y marrones, diseñados para transm
 - Fondos y textos: blanco (#FFFFFF) para fondos y #130100 para tipografía principal, asegurando alta legibilidad.
 - Colores secundarios: tonos como #C84E00 y #380800 se reservan para acentos, componentes interactivos y llamadas a la acción.
 
-![Paleta de Colores](./assets/images/chapter-6/style-guidelines/color-palette.png)
+![Paleta de Colores](assets/images/chapter-6/style-guidelines/color-palette.png)
 
 **Tipografía:**
 
@@ -3793,7 +3905,7 @@ La tipografía principal será Roboto, elegida por su legibilidad, modernidad y 
 - Se aplicarán jerarquías tipográficas claras, diferenciando títulos, subtítulos y cuerpo de texto.
 - Se hará uso de negritas para destacar información clave.
 
-![Tipografía](./assets/images/chapter-6/style-guidelines/typography.png)
+![Tipografía](assets/images/chapter-6/style-guidelines/typography.png)
 
 **Tono y lenguaje:**
 
@@ -3935,21 +4047,12 @@ En esta sección se presenta la propuesta visual de la Landing Page, donde se tr
 Esta sección muestra la estructura base de la Landing Page mediante wireframes para desktop y mobile, destacando la jerarquía visual, la usabilidad y la coherencia con los principios de diseño inclusivo y la arquitectura de información.
 
 - Desktop
-![Landing Page Wireframe Desktop](./assets/images/chapter-6/landing-ui/desktop-wireframe.png)
-- Mobile
-![Landing Page Wireframe Mobile](./assets/images/chapter-6/landing-ui/mobile-wireframe.png)
+![Landing Page Wireframe Desktop](assets/images/chapter-6/landing-ui/desktop-wireframe.png)
 
 ### 6.3.2. Landing Page Mock-up
-Aquí se presentan los mock-ups finales de la Landing Page en versiones desktop y mobile, evidenciando la aplicación del Design System, los principios de diseño visual y la alineación con la experiencia de usuario definida en etapas previas.
+Aquí se presentan los mock-ups finales de la Landing Page, evidenciando la aplicación del Design System, los principios de diseño visual y la alineación con la experiencia de usuario definida en etapas previas.
 
-- Desktop
-![Landing Page Mock-up Desktop](./assets/images/chapter-6/landing-ui/desktop-mockup.png)
-- Mobile
-![Landing Page Mock-up Mobile](./assets/images/chapter-6/landing-ui/mobile-mockup.png)
-
-Aquí se presentan los mock-ups finales de la Landing Page en versiones desktop y mobile, evidenciando la aplicación del Design System, los principios de diseño visual y la alineación con la experiencia de usuario definida en etapas previas.
-
-![landing page mockup](assets/images/chapter-6/landing-page-ui-design/landing-page-mockup.png)
+![Landing Page Mock-up Desktop](assets/images/chapter-6/landing-ui/desktop-mockup.png)
 
 ## 6.4. Applications UX/UI Design
 
@@ -3961,14 +4064,14 @@ En esta sección se desarrolla la propuesta de diseño visual e interactivo de l
 
 Esta sección presenta los wireframes de las aplicacion web, donde se define la estructura, jerarquía y navegación de la interfaz. Se evidencia la aplicación de los principios de diseño inclusivo, la arquitectura de información y las buenas prácticas de diseño centrado en el usuario.
 
-![wireframe1.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe1.png)
-![wireframe2.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe2.png)
-![wireframe3.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe3.png)
-![wireframe4.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe4.png)
-![wireframe5.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe5.png)
-![wireframe6.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe6.png)
-![wireframe7.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe7.png)
-![wireframe8.png](./assets/images/chapter-6/applications-ux-ui-design/wireframe8.png)
+![wireframe1.png](assets/images/chapter-6/applications-ux-ui-design/wireframe1.png)
+![wireframe2.png](assets/images/chapter-6/applications-ux-ui-design/wireframe2.png)
+![wireframe3.png](assets/images/chapter-6/applications-ux-ui-design/wireframe3.png)
+![wireframe4.png](assets/images/chapter-6/applications-ux-ui-design/wireframe4.png)
+![wireframe5.png](assets/images/chapter-6/applications-ux-ui-design/wireframe5.png)
+![wireframe6.png](assets/images/chapter-6/applications-ux-ui-design/wireframe6.png)
+![wireframe7.png](assets/images/chapter-6/applications-ux-ui-design/wireframe7.png)
+![wireframe8.png](assets/images/chapter-6/applications-ux-ui-design/wireframe8.png)
 
 **Mobile Application**
 
@@ -3989,99 +4092,140 @@ Esta sección presenta los wireframes de las aplicacion movil, donde se define l
 En esta sección se presentan los wireflows que ilustran los flujos de interacción y navegación dentro de las aplicaciones web y móvil de BykerZ, considerando los User goals propuestos.
 
 **Web Application**
+
 La aplicación web está diseñada para ambos User Persona, siendo dueños de motocicletas o mecánicos, con funcionalidades adaptadas a sus necesidades específicas y con una navegación intuitiva.
 
 **User Goal: Como dueño de moto, quiero visualizar los gastos que tengo registrados.**
-![usergoal1.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal1.drawio.png)
-![wireflow1.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow1.drawio.png)
+
+![usergoal1.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal1.drawio.png)
+![wireflow1.drawio.png](assets/images/chapter-6/applications-ux-ui-design/wireflow1.drawio.png)
+
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Gastos. Al acceder, la interfaz muestra la lista de registros existentes, permitiendo al usuario visualizar la información general de cada gasto de manera clara y organizada.
 
 **User Goal: Como dueño de moto, quiero visualizar la comparativa que hay entre mis vehículos.**
-![usergoal2.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal2.drawio.png)
-![wireflow2.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow2.drawio.png)
+
+![usergoal2.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal2.drawio.png)
+![wireflow2.drawio.png](assets/images/chapter-6/applications-ux-ui-design/wireflow2.drawio.png)
+
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Comparativas. Al acceder, la interfaz muestra las cards de los vehículos registrados, donde el usuario presiona en la card de su preferencia para ver los detalles. Finalmente, el sistema despliega una vista con la comparativa entre los vehículos seleccionados, permitiendo al usuario observar de forma clara las diferencias y similitudes en aspectos clave como rendimiento, costos y mantenimientos.
 
 **User Goal: Como dueño de moto, quiero revisar los matenimientos de mis vehículos.**
-![usergoal3.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal3.drawio.png)
-![wireflow3.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow3.drawio.png)
+
+![usergoal3.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal3.drawio.png)
+![wireflow3.drawio.png](assets/images/chapter-6/applications-ux-ui-design/wireflow3.drawio.png)
+
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Finalmente, el sistema despliega una vista con los mantenimientos programados, permitiendo al usuario observar de forma clara las fechas, tipos de servicio y estado de cada mantenimiento.
 
 **User Goal: Como dueño de moto, quiero visualizar mis motocicletas registradas.**
-![usergoal4.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal4.drawio.png)
-![wireflow4.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow4.drawio.png)
+
+![usergoal4.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal4.drawio.png)
+![wireflow4.drawio.png](assets/images/chapter-6/applications-ux-ui-design/wireflow4.drawio.png)
+
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. Al acceder a la página, el sistema muestra la lista de vehículos registrados del usuario, permitiéndole visualizar la información general de cada uno de manera clara y organizada.
 
 **User Goal: Como dueño de moto, quiero vincular un nuevo mecánico a mi motocicleta.**
-![usergoal5.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal5.drawio.png)
-![wireflow5.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow5.drawio.png)
+
+![usergoal5.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal5.drawio.png)
+![wireflow5.drawio.png](assets/images/chapter-6/applications-ux-ui-design/wireflow5.drawio.png)
+
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Vehículos. Luego, el usuario presiona en la moto de su preferencia para acceder a los detalles del vehículo. Dentro de esta vista, el usuario presiona el botón Vincular, ingresa el código del mecánico y confirma la acción al presionar Solicitar. Finalmente, el sistema actualiza la interfaz y el usuario observa su moto vinculada correctamente al mecánico correspondiente.
 
 **User Goal: Como dueño de moto, quiero editar los detalles de una motocicleta que me pertenece.**
-![usergoal6.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal6.drawio.png)
-![wireflow6.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow6.drawio.png)
+
+![usergoal6.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal6.drawio.png)
+![wireflow6.drawio.png](assets/images/chapter-6/applications-ux-ui-design/wireflow6.drawio.png)
+
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Editar, realiza los cambios necesarios en el formulario y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa los detalles modificados reflejados en la pantalla.
 
 **User Goal: Como mecánico de motos, quiero visualizar las suscripciones activas.**
-![usergoal7.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal7.drawio.png)
-![wireflow7.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow7.drawio.png)
+
+![usergoal7.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal7.drawio.png)
+![wireflow7.drawio.png](assets/images/chapter-6/applications-ux-ui-design/wireflow7.drawio.png)
+
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Suscripciones. Al acceder, la interfaz muestra la lista de suscripciones activas, permitiendo al mecánico visualizar la información general de cada una de manera clara y organizada.
 
 **User Goal: Como mecánico de motos, quiero visualizar la comparativa que hay entre mis vehículos.**
-![usergoal8.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal8.drawio.png)
-![wireflow8.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow8.drawio.png)
+
+![usergoal8.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal8.drawio.png)
+![wireflow8.drawio.png](assets/images/chapter-6/applications-ux-ui-design/wireflow8.drawio.png)
+
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Comparativas. Al acceder, la interfaz muestra las cards de los vehículos registrados, donde el usuario presiona en la card de su preferencia para ver los detalles. Finalmente, el sistema despliega una vista con la comparativa entre los vehículos seleccionados, permitiendo al usuario observar de forma clara las diferencias y similitudes en aspectos clave como rendimiento, costos y mantenimientos.
 
 **User Goal: Como mecánico de motos, quiero progamar un mantenimiento.**
-![usergoal9.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal9.drawio.png)
-![wireflow9.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow9.drawio.png)
+
+![usergoal9.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal9.drawio.png)
+![wireflow9.drawio.png](assets/images/chapter-6/applications-ux-ui-design/wireflow9.drawio.png)
+
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Dentro de esta vista, el usuario presiona el botón Programar, completa el formulario con los detalles del mantenimiento y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa el nuevo mantenimiento programado reflejado en la pantalla.
 
 **User Goal: Como mecanico de motos, quiero adquirir las membresias.**
-![usergoal10.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/usergoal10.drawio.png)
-![wireflow10.drawio.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow10.drawio.png)
+
+![usergoal10.drawio.png](assets/images/chapter-6/applications-ux-ui-design/usergoal10.drawio.png)
+![wireflow10.drawio.png](assets/images/chapter-6/applications-ux-ui-design/wireflow10.drawio.png)
+
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Membresía. Al acceder, la interfaz muestra las opciones de planes disponibles, donde el usuario presiona en el plan de su preferencia para ver los detalles. Dentro de esta vista, el usuario presiona el botón Adquirir, completa el formulario con los datos de pago y confirma la acción al presionar Confirmar. Finalmente, el sistema actualiza la interfaz y el usuario observa la confirmación de su membresía reflejada en la pantalla.
 
 **Mobile Application**
 La aplicación web está diseñada con las funcionalidades para los dueños de motocicletas, adaptadas a sus necesidades específicas y con una navegación intuitiva.
 
 **User Goal: Como Motociclista, quiero ver  un resumen de mis vehiculos, gastos y mantenimientos.**
-![wireflow-ver-dashboard.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-dashboard.png)
+
+![wireflow-ver-dashboard.png](assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-dashboard.png)
+
 El wireflow inicia cuando el usuario despliega la barra lateral desde el panel principal y presiona en la sección Dashboard. Al hacerlo, la interfaz cambia para mostrar la vista del Dashboard, donde el usuario observa el resumen general que incluye sus vehículos, los gastos recientes y los próximos mantenimientos, representados mediante tarjetas o gráficos que resumen la información de forma visual y accesible.
 
 **User Goal: Como Motociclista, quiero ver todos los mantenimientos programados de mi moto.**
-![wireflow-ver-mantenimientos.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-mantenimientos.png)
+
+![wireflow-ver-mantenimientos.png](assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-mantenimientos.png)
+
 El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Finalmente, el sistema despliega una vista con los mantenimientos programados, permitiendo al usuario observar de forma clara las fechas, tipos de servicio y estado de cada mantenimiento.
 
 **User Goal: Como Motociclista, quiero eliminar un gasto pasado de mi registro de gastos.**
-![wireflow-ver-mantenimiento.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-eliminar-gasto.png)
+
+![wireflow-ver-mantenimiento.png](assets/images/chapter-6/applications-ux-ui-design/wireflow-eliminar-gasto.png)
+
 El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Gastos. Una vez en la vista de gastos, el sistema muestra la lista de registros existentes, donde el usuario presiona el ícono de borrar gasto correspondiente al que desea eliminar. Finalmente, la interfaz se actualiza y el usuario observa que el gasto fue eliminado, confirmando la acción mediante la desaparición del registro o un mensaje de confirmación visual.
 
 **User Goal: Como Motociclista, quiero monitorear las metricas de mi moto.**
-![wireflow-monitorear-metricas.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-monitorear-metricas.png)
+
+![wireflow-monitorear-metricas.png](assets/images/chapter-6/applications-ux-ui-design/wireflow-monitorear-metricas.png)
+
 El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona el botón Vehículos. En la lista mostrada, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Monitorear, tras lo cual la interfaz cambia para mostrar las métricas de la moto, permitiéndole observar información en tiempo real sobre su estado y rendimiento.
 
 **User Goal: Como Motociclista, quiero desvincular mi moto de un mecanico.**
-![wireflow-desvincular-moto.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-desvincular-moto.png)
+
+![wireflow-desvincular-moto.png](assets/images/chapter-6/applications-ux-ui-design/wireflow-desvincular-moto.png)
+
 El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Desvincular, tras lo cual el sistema ejecuta la acción y actualiza la interfaz. Finalmente, el usuario observa su moto desvinculada del mecánico, reflejado mediante un cambio visual o mensaje de confirmación.
 
 **User Goal: Como Motociclista, quiero vincular mi moto a un mecanico por su codigo.**
-![wireflow-vincular-moto.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-vincular-moto.png)
+
+![wireflow-vincular-moto.png](assets/images/chapter-6/applications-ux-ui-design/wireflow-vincular-moto.png)
+
 El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Vehículos. Luego, el usuario presiona en la moto de su preferencia para acceder a los detalles del vehículo. Dentro de esta vista, el usuario presiona el botón Vincular, ingresa el código del mecánico y confirma la acción al presionar Solicitar. Finalmente, el sistema actualiza la interfaz y el usuario observa su moto vinculada correctamente al mecánico correspondiente.
 
 **User Goal: Como Motociclista, quiero registrar un vehículo en mi cuenta.**
-![wireflow-registrar-vehiculo.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-registrar-vehiculo.png)
+
+![wireflow-registrar-vehiculo.png](assets/images/chapter-6/applications-ux-ui-design/wireflow-registrar-vehiculo.png)
+
 El wireflow inicia cuando el usuario abre la barra lateral de navegación y selecciona la opción Vehículos. Una vez en la página, el usuario presiona el botón “+” para añadir un nuevo vehículo. Luego, la interfaz muestra un formulario donde el usuario ingresa los datos de su vehículo y presiona el botón Registrar. Finalmente, el sistema confirma la acción mostrando la moto registrada en la pantalla, reflejada en la lista de vehículos disponibles.
 
 **User Goal: Como Motociclista, quiero ver mis vehículos registrados.**
-![wireflow-ver-vehiculos.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-vehiculos.png)
+
+![wireflow-ver-vehiculos.png](assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-vehiculos.png)
+
 El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Vehículos. Al acceder a la página, el sistema muestra la lista de vehículos registrados del usuario, permitiéndole visualizar la información general de cada uno de manera clara y organizada.
 
 **User Goal: Como Motociclista, registrar mis gastos.**
-![wireflow-registrar-gastos.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-registrar-gastos.png)
+
+![wireflow-registrar-gastos.png](assets/images/chapter-6/applications-ux-ui-design/wireflow-registrar-gastos.png)
+
 El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Gastos. Una vez en la página, el usuario presiona el botón “+” para añadir un nuevo gasto. La interfaz muestra un formulario donde el usuario ingresa los datos correspondientes y presiona el botón “Registrar”. Finalmente, el sistema actualiza la vista y el usuario observa el nuevo gasto añadido en la pantalla de gastos.
 
 **User Goal: Como Motociclista, quiero ver mis gastos registrados**
-![wireflow-ver-gastos.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-gastos.png)
+
+![wireflow-ver-gastos.png](assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-gastos.png)
+
 El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Gastos. Al acceder a la página, el sistema muestra en pantalla los gastos registrados del usuario, permitiéndole observar y revisar la información correspondiente de manera clara y ordenada.
 
 ## 6.5 Applications Prototyping
@@ -4334,4 +4478,4 @@ Freitas, M. C. (2025, 19 de julio). Lima registra 1.668 muertes por accidentes d
 
 Bool.dev. (2023, 10 de octubre). Top 10 software architecture styles. Bool.dev. https://bool.dev/blog/detail/top10-software-architecture-styles
 
-Ddd-Crew. (s. f.). Domain-Driven Design Starter Modelling Process. GitHub. https://github.com/ddd-crew/ddd-starter-modelling-process
+Ddd-Crew. (s.f.). Domain-Driven Design Starter Modelling Process. GitHub. https://github.com/ddd-crew/ddd-starter-modelling-process
