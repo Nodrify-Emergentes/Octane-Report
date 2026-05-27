@@ -1864,29 +1864,25 @@ Para gestionar la complejidad del negocio de telemetría y mantenimiento, se apl
 
 En este nivel se describe la visión global de la organización Nodrify. El diagrama representa cómo el sistema Octane coexiste con otros sistemas internos y externos, definiendo el ecosistema completo y las interacciones de alto nivel entre los actores principales y los límites de la empresa.
 
-![system-landscape](assets/images/chapter-4/software-architecture/system-landscape-keys.png)
-![system-landscape-keys](assets/images/chapter-4/software-architecture/system-landscape.png)
+![system-landscape](assets/images/chapter-4/software-architecture/system-landscape.png)
 
 ### 4.3.2. Software Architecture Context Level Diagrams
 
 Este punto detalla el Sistema Octane como una caja negra, centrándose exclusivamente en sus fronteras inmediatas. Describe las relaciones directas de datos y comunicación entre el sistema, los usuarios (Dueños de motocicletas y Mecánicos) y las dependencias externas críticas como el hardware IoT y el motor de IA.
 
 ![context-diagram](assets/images/chapter-4/software-architecture/context-diagram.png)
-![context-diagram-keys](assets/images/chapter-4/software-architecture/context-diagram-keys.png)
 
 ### 4.3.3. Software Architecture Container Level Diagrams
 
 Aquí se desglosa la aplicación en sus unidades de ejecución o contenedores. Se identifican las aplicaciones móviles, la plataforma web, el API Monolítica Modular y la base de datos, especificando las tecnologías utilizadas (Spring Boot, React, Flutter, PostgreSQL) y los protocolos de comunicación entre ellos.
 
 ![container-diagram](assets/images/chapter-4/software-architecture/container-diagram.png)
-![container-diagram-keys](assets/images/chapter-4/software-architecture/container-diagram-keys.png)
 
 ### 4.3.4. Software Architecture Deployment Diagrams
 
 Este diagrama describe la distribución física y la infraestructura de nube de la solución. Detalla dónde se alojan los contenedores en entornos reales de producción, incluyendo el despliegue del frontend en Vercel, el backend y base de datos en Render, la distribución móvil en Firebase y el hardware embebido en el microcontrolador de la motocicleta.
 
 ![deployment-diagram](assets/images/chapter-4/software-architecture/deployment-diagram.png)
-![deployment-diagram-keys](assets/images/chapter-4/software-architecture/deployment-diagram-keys.png)
 
 
 # Capítulo V: Tactical-Level Software Design
@@ -2135,7 +2131,7 @@ El bounded context de Identity Access Management (IAM) se encarga de gestionar l
 
 ### 5.1.5. Bounded Context Software Architecture Component Level Diagrams
 
-![Component Level Diagram](assets/images/chapter-5/bc-iam/bounded-context-software-architecture-component-level-diagram.png)
+![Component Level Diagram](assets/images/chapter-5/bc-support-ticket-management/bounded-context-software-architecture-component-level-diagram.png)
 
 ### 5.1.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -2312,7 +2308,7 @@ Reports funciona como un bounded context de consulta con persistencia propia. No
 
 ### 5.2.5. Bounded Context Software Architecture Component Level Diagrams
 
-![system-component-diagram](./assets/images/chapter-5/bc-maintenance/bounded-context-software-architecture-component-level-diagram.png)
+![system-component-diagram](./assets/images/chapter-5/bc-support-ticket-management/bounded-context-software-architecture-component-level-diagram.png)
 
 ### 5.2.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -2579,7 +2575,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 
 ### 5.3.5. Bounded Context Software Architecture Component Level Diagrams
 
-![system-component-diagram](./assets/images/chapter-5/bc-maintenance/bounded-context-software-architecture-component-level-diagram.png)
+![system-component-diagram](./assets/images/chapter-5/bc-support-ticket-management/bounded-context-software-architecture-component-level-diagram.png)
 
 ### 5.3.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -2830,7 +2826,7 @@ Este bounded context combina persistencia propia con integración transversal. S
 
 ### 5.4.5. Bounded Context Software Architecture Component Level Diagrams
 
-![system-component-diagram](./assets/images/chapter-5/bc-maintenance/bounded-context-software-architecture-component-level-diagram.png)
+![system-component-diagram](./assets/images/chapter-5/bc-support-ticket-management/bounded-context-software-architecture-component-level-diagram.png)
 
 ### 5.4.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.4.6.1. Bounded Context Domain Layer Class Diagrams
@@ -3149,7 +3145,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 
 ### 5.5.5 Bounded Context Software Architecture Component level Diagrams
 
-![system-component-diagram](./assets/images/chapter-5/bc-vehicle-wellness/bounded-context-software-architecture-component-level-diagram.png)
+![system-component-diagram](./assets/images/chapter-5/bc-support-ticket-management/bounded-context-software-architecture-component-level-diagram.png)
 
 ### 5.5.6 Bounded Context Software Architecture Code level Diagrams
 
@@ -3395,7 +3391,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 
 ### 5.6.5. Bounded Context Software Architecture Component Level Diagrams
 
-![system-component-diagram](./assets/images/chapter-5/bc-vehicle-management/bounded-context-software-architecture-component-level-diagram.png)
+![system-component-diagram](./assets/images/chapter-5/bc-support-ticket-management/bounded-context-software-architecture-component-level-diagram.png)
 
 ### 5.6.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.6.6.1. Bounded Context Domain Layer Class Diagrams
@@ -3418,33 +3414,88 @@ Este bounded context se encarga de gestionar la autenticación, recepción y an�
 
 `Device`: Representa un dispositivo IoT registrado en el sistema, asociado a un vehículo y responsable de enviar datos de telemetría.
 
-| Atributos | Tipo de dato | Visibilidad | Descripción                              |
-|-----------|--------------|-------------|------------------------------------------|
-| id        | Long         | Private     | Identificador único del dispositivo.     |
-| deviceId  | String       | Private     | Identificador único del dispositivo IoT. |
-| vehicleId | Long         | Private     | Identificador del vehículo asociado.     |
+| Atributos | Tipo de dato | Visibilidad | Descripción|
+|-|-|-|-|
+| id        | Long         | Private     | Identificador único en la base de datos central.|
+| deviceId  | String       | Private     | Identificador único de hardware del dispositivo IoT. |
+| vehicleId | Long         | Private     |Identificador de la motocicleta asociada.|
+| status | DeviceStatus         | Private     |Estado operativo del dispositivo.|
+
+**Entities**
+
+`TelemetryData`:Representa el registro histórico e instantáneo de las lecturas capturadas por los sensores físicos del hardware acoplado.
+
+| Atributos | Tipo de dato | Visibilidad | Descripción |
+|-|-|-|-|
+|id|Long|Private|Identificador único del registro de telemetría.|
+|deviceId|String|Private|ID del dispositivo que originó la lectura.|
+|timestamp|LocalDateTime|Private|Fecha y hora exacta de la captura de los sensores.|
+|metrics|Map<String, Object>|Private|Datos crudos estructurados (ej. velocidad, RPM, temperatura, vibración).|
+
+**Value Objects**
+
+- ``DeviceStatus``: Enum para los estados del dispositivo: ACTIVE, INACTIVE, FAULTY.
+
 
 **Commands**
 
-- `RegisterDeviceCommand`: Comando para registrar un nuevo dispositivo IoT en el sistema, asociándolo a un vehículo específico.
-- `ValidateDeviceCommand`: Comando para validar la autenticidad de un dispositivo IoT mediante su deviceId.
+- `RegisterDeviceCommand`: Registra un nuevo hardware en el sistema vinculándolo a una motocicleta.
+- `ValidateDeviceCommand`: Transporta el deviceId enviado por el microcontrolador para verificar su acceso.
+- `ProcessTelemetryCommand`: Recibe el paquete JSON del Edge's API, valida el dispositivo y procesar las métricas de los sensores.
+
+**Querys**
+
+- `GetLatestDeviceStatusQuery`: Query para recuperar el último estado e informe de diagnóstico de una moto.
 
 **Services**
 
-- `DeviceCommandService`
+- `DeviceCommandService`: Interfaz para el manejo de los comandos de dispositivos.
   - handle(RegisterDeviceCommand)
   - handle(ValidateDeviceCommand)
+- `TelemetryCommandService`: Interfaz para la ingesta de telemetría.
+  - handle(ProcessTelemetryCommand)
+- `DeviceQueryService`: Interfaz encargada de resolver las solicitudes de solo lectura.
+  - handle(GetLatestDeviceStatusQuery)
+
+**Ports** 
+
+- `AiInferencePort`: Interfaz que define el contrato de comunicación con el motor de Inteligencia Artificial
+  - predictVehicleAnomalies(TelemetryData )
 
 ### 5.7.2. Interface Layer
+**Resources**
+
+- ``RegisterDeviceResource``: Entrada que transfiere el deviceId físico y el vehicleId.
+
+- ``ValidateDeviceResource``: Entrada que envía el microcontrolador al encender la moto para validar sus credenciales
+
+- ``TelemetryIngestionResource``: Entrada estructurada con deviceId, timestemp y el objeto anidado de metricas de sensores.
+
+- ``DeviceDiagnosisResource``: salida que retorna el estado de salud de la moto y las alertas predictivas calculadas por Groq Cloud.
+
+**Transforms**
+
+- ``RegisterDeviceCommandFromResourceAssembler``: Transforma un RegisterDeviceResource entrante en un RegisterDeviceCommand.
+
+- ``TelemetryCommandFromResourceAssembler``: Convierte el JSON crudo del TelemetryIngestionResource en un objeto estructurado ProcessTelemetryCommand para la capa de aplicación.
+
+- ``DeviceDiagnosisResourceFromEntityAssembler``: Transforma la respuesta analítica del dominio en un DeviceDiagnosisResource listo para ser serializado a JSON de salida.
 
 **Controladores**
 
-`DeviceAuthenticationController`: Controlador REST encargado de exponer los endpoints para autenticación y registro de dispositivos IoT.
+`DeviceAuthenticationController`: Controlador encargado de exponer los servicios REST dedicados al aprovisionamiento seguro de hardware y validación de sesiones del IoT.
 
-| Método                                 | Ruta                                         | Descripción                                                                 |
-|----------------------------------------|----------------------------------------------|-----------------------------------------------------------------------------|
-| registerDevice(RegisterDeviceResource) | POST /api/v1/devices/authentication/register | Registra un nuevo dispositivo IoT en el sistema, asociándolo a un vehículo. |
-| validateDevice(ValidateDeviceResource) | POST /api/v1/devices/authentication/validate | Valida la autenticidad de un dispositivo IoT utilizando su deviceId.        |
+| Método| Ruta| Descripción|
+|-|-|-|
+| registerDevice(RegisterDeviceResource resource) | POST /api/v1/devices/authentication/register | Recibe la solicitud, la transforma mediante el Assembler y despacha el comando para registrar el dispositivo. Retorna un HTTP 21 Created. |
+| validateDevice(ValidateDeviceResource resource) | POST /api/v1/devices/authentication/validate | Endpoint de comunicación rápida para autorizar al microcontrolador a transmitir datos.|
+
+`TelemetryIngestionController`: Controlador de alta disponibilidad optimizado para procesar los flujos masivos de métricas emitidos en tiempo real por el Edge's API del vehículo.
+
+| Método| Ruta| Descripción|
+|-|-|-|
+| receiveTelemetry(TelemetryIngestionResource resource) | POST /api/v1/devices/telemetry | Recibe el paquete JSON del microcontrolador, invoca el transformador y ejecuta el TelemetryCommandService. |
+
 
 ### 5.7.3. Application Layer
 
@@ -3457,20 +3508,47 @@ Este bounded context se encarga de gestionar la autenticación, recepción y an�
 | handle(RegisterDeviceCommand) | Registra un nuevo dispositivo IoT en el sistema. |
 | handle(ValidateDeviceCommand) | Valida la autenticidad de un dispositivo IoT.    |
 
+`TelemetryCommandServiceImpl`
+| Método| Descripción|
+|-|-|
+|handle(ProcessTelemetryCommand)|Envia el lote de datos a Groq Cloud|
+
+`DeviceQueryServiceImpl`
+| Método| Descripción|
+|-|-|
+|handle(GetLatestDeviceStatusQuery)|Construye y retorna el objeto de respuesta estructurado|
+
 ### 5.7.4. Infrastructure Layer
 
-**Repositorios**
+**Repositories**
 
-`DeviceRepository`: Interfaz que define las operaciones de persistencia para la entidad Device.
+`DeviceRepository`: Interfaz de Spring Data JPA / Hibernate encargada del mapeo relacional.
 
 | Método                   | Descripción                                                        |
 |--------------------------|--------------------------------------------------------------------|
-| findByDeviceId(String)   | Busca un dispositivo por su ID único.                              |
-| existsByDeviceId(String) | Verifica si un dispositivo con el ID dado ya existe en el sistema. |
+| findByDeviceId(String deviceId)   | Recupera el registro del dispositivo utilizando su identificador único de hardware.|
+| existsByDeviceId(String deviceId) |Verifica si el hardware ya se encuentra registrado en el sistema para evitar duplicidad.|
+
+`TelemetryRepository`: Interfaz encargada de la persistencia histórica de las métricas recolectadas por los sensores de la motocicleta.
+
+| Método| Descripción|
+| -| -|
+| save(TelemetryData telemetry)| Almacena el lote de telemetría con su respectiva marca de tiempo.|
+| findFirstByDeviceIdOrderByTimestampDesc(String deviceId)| Recupera de forma optimizada la última lectura conocida de los sensores de una motocicleta específica.|
+
+
+**Adapters**
+
+`GroqCloudAiAdapter`: Componente encargado de materializar el contrato del AiInferencePort
+
+| Método| Descripción|
+| -| -|
+| predictVehicleAnomalies(TelemetryData telemetry)| Implementación del puerto de dominio. Toma las variables de los sensores, estructura el prompt técnico, realiza una petición segura via HTTP REST utilizando un cliente Feign/WebClient a la API de Groq Cloud.|
+
 
 ### 5.7.5. Bounded Context Software Architecture Component Level Diagrams
 
-![Component Layer Diagram](assets/images/chapter-5/bc-device-intelligence/bounded-context-software-architecture-component-level-diagram.png)
+![Component Layer Diagram](assets/images/chapter-5/bc-support-ticket-management/bounded-context-software-architecture-component-level-diagram.png)
 
 ### 5.7.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -3480,13 +3558,191 @@ En esta sección se presentan los diagramas de clase detallados del dominio y el
 
 El diagrama de clases del dominio para el contexto de Device Intelligence muestra la entidad principal con sus atributos y métodos relacionados a la autenticación y registro de dispositivos IoT.
 
-![Device Class Diagram](assets/images/chapter-5/bc-device-intelligence/device-class-diagram.png)
+![Device Class Diagram](assets/images/chapter-5/bc-support-ticket-management/bounded-context-software-architecture-component-level-diagram.png)
 
 #### 5.7.6.2. Bounded Context Database Design Diagram
 
 Para el diseño de la base de datos, se presenta un diagrama que ilustra la tabla principal con sus campos correspondientes.
 
 ![Device Database Diagram](assets/images/chapter-5/bc-device-intelligence/device-database-diagram.png)
+
+## 5.8. Bounded Context: Support & Ticket Management
+Este bounded context se encarga de centralizar, gestionar y dar seguimiento a los reclamos, incidencias técnicas y solicitudes de soporte técnico reportadas por los usuarios o detectadas automáticamente en relación con los dispositivos IoT instalados. Su objetivo es garantizar la resolución eficiente de problemas de hardware o conectividad mediante un sistema de tickets con flujos de aprobación y asignación de mecánicos.
+
+
+### 5.8.1. Domain Layer
+
+**Aggregates**
+
+``SupportTicket``:Representa una solicitud de soporte técnico o reclamo formal en el sistema, asociado a un usuario, un dispositivo IoT específico y un estado operativo.
+
+| Atributos | Tipo de dato | Visibilidad | Descripción|
+|-|-|-|-|
+| id | Long | Private | Identificador único en la base de datos central.|
+| ticketCode | String | Private | Código alfanumérico único de seguimiento público.|
+| deviceId | String | Private | ID del dispositivo IoT que presenta la falla.|
+| userId | Long | Private | Identificador del dueño de la motocicleta que genera el reclamo.|
+| assignedSpecialistId | Long | Private | Identificador del especialista técnico asignado (opcional).|
+| title | String | Private | Título descriptivo de la incidencia.|
+| description | String | Private | Detalle del problema experimentado o reportado.|
+| status | TicketStatus | Private | Value Object con el estado actual del ticket.|
+| priority | TicketPriority | Private | Criticidad del reclamo basada en el impacto del hardware.|
+| createdAt | LocalDateTime | Private | Fecha y hora de apertura del caso.|
+
+
+**Entities**
+
+``TicketResponse``:Representa las interacciones, respuestas oficiales o comentarios añadidos al ticket por parte del equipo de soporte, mecánicos o el propio usuario.
+
+| Atributos | Tipo de dato | Visibilidad | Descripción|
+|-|-|-|-|
+| id | Long | Private | Identificador único de la respuesta.|
+| ticketId | Long | Private | ID del ticket al que pertenece la respuesta.|
+| senderId | Long | Private | ID del usuario o empleado que emite el mensaje.|
+| senderRole | String | Private | Rol del emisor (ej. "CUSTOMER", "MECHANIC", "SUPPORT").|
+| message | String | Private | Contenido textual de la respuesta o solución parcial.|
+| timestamp | LocalDateTime | Private | Fecha y hora del mensaje.|
+
+
+**Value Objects**
+
+``TicketStatus``:Enum para los estados del flujo de aprobación y atención: OPEN, IN_PROCESS, RESOLVED, REJECTED.
+
+``TicketPriority``:Enum que define el nivel de urgencia del reclamo: LOW, MEDIUM, HIGH, CRITICAL.
+
+**Commands**
+
+- ``FileSupportTicketCommand``: Registra un nuevo reclamo o ticket de soporte técnico en el sistema para un dispositivo IoT.
+- ``AssignTicketMechanicCommand``:Asigna un mecánico especialista a un ticket abierto para iniciar el diagnóstico físico.
+- ``ResolveTicketCommand``: Registra la solución definitiva de la incidencia y cambia el estado a aprobado/resuelto.
+- ``AddTicketResponseCommand``: Añade un nuevo mensaje o respuesta al historial de conversación del ticket.
+
+**Queries**
+
+- ``GetTicketByCodeQuery``: Consulta para recuperar un ticket específico y su historial de respuestas mediante su código de seguimiento.
+- ``GetPendingTicketsByMechanicIdQuery``: Consulta para listar los reclamos asignados a un mecánico que aún requieren atención.
+
+**Services**
+
+- ``TicketCommandService``
+  - handle(FileSupportTicketCommand)
+  - handle(AssignTicketMechanicCommand)
+  - handle(ResolveTicketCommand)
+  - handle(AddTicketResponseCommand)
+
+- ``TicketQueryService``
+  - handle(GetTicketByCodeQuery)
+  - handle(GetPendingTicketsByMechanicIdQuery)
+  
+
+**Ports**
+
+- ``NotificationPort``: Interfaz (SPI) para enviar notificaciones automáticas (Push o Correo)
+  - sendTicketStatusUpdateNotification(String ticketCode, String userEmail, String newStatus)
+  
+
+### 5.8.2. Application Layer
+
+``TicketCommandServiceImpl``: Implementación de los casos de uso encargados de modificar el estado de los tickets y procesar las interacciones de soporte.
+
+| Método| Descripción|
+|-|-|
+| handle(FileSupportTicketCommand command)| Genera el código de seguimiento, instancia el Agregado SupportTicket en estado OPEN, lo persiste en la base de datos y retorna su ID.|
+| handle(AssignTicketMechanicCommand command)| Recupera el ticket, actualiza el assignedMechanicId, cambia el estado a IN_PROCESS y gatilla una alerta al mecánico a través del NotificationPort.|
+| handle(ResolveTicketCommand command)| Modifica el estado del ticket a RESOLVED, guarda la solución técnica e invoca al NotificationPort para avisar al dueño de la motocicleta.|
+| handle(AddTicketResponseCommand command)| Instancia una nueva entidad TicketResponse, la asocia al ticket correspondiente, actualiza la marca de tiempo y retorna el ID de la interacción.|
+
+``TicketQueryServiceImpl``: Orquestador encargado de resolver las consultas analíticas y vistas de soporte técnico.
+
+| Método| Descripción|
+|-|-|
+| handle(GetTicketByCodeQuery query)| Realiza la búsqueda en el repositorio por el código público de seguimiento y devuelve el Agregado junto con su colección de respuestas.|
+| handle(GetPendingTicketsByMechanicIdQuery query)| Consulta al repositorio todos los tickets activos asignados al ID del mecánico provisto.|
+
+
+### 5.8.3. Infrastructure Layer
+
+
+**Repositories**
+
+``SupportTicketRepository``: Interfaz basada en Spring Data JPA / Hibernate encargada del mapeo relacional y persistencia de los tickets de soporte.
+
+| Método| Descripción|
+|-|-|
+| findByTicketCode(String ticketCode)| Recupera un ticket completo de la base de datos PostgreSQL utilizando su código alfanumérico único.|
+| findAllByAssignedMechanicIdAndStatus(Long mechanicId, TicketStatus status)| Retorna la lista de reclamos asignados a un técnico específico que se encuentren en un estado determinado.|
+
+``TicketResponseRepository``: Interfaz encargada de persistir el hilo de conversación y respuestas de cada caso.
+
+| Método| Descripción|
+|-|-|
+| findAllByTicketIdOrderByTimestampAsc(Long ticketId)| Recupera de forma cronológica todas las respuestas e interacciones asociadas a un ticket específico.|
+
+**Adapters**
+
+``ExternalNotificationAdapter``: Componente de infraestructura encargado de materializar el contrato del NotificationPort conectándose con servicios de mensajería (como AWS SES o Firebase Cloud Messaging).
+
+| Método| Descripción|
+|-|-|
+| sendTicketStatusUpdateNotification() | Implementación del puerto de dominio. Construye la plantilla de correo o notificación push, se conecta de forma segura con el proveedor de mensajería externo y despacha la alerta al destinatario.|
+
+### 5.8.4. Interface Layer
+
+**Resources**
+
+- ``FileTicketResource``: Payload de entrada con los datos iniciales del reclamo (deviceId, title, description, priority).
+
+- ``AssignMechanicResource``: Payload de entrada que envía el administrador para vincular a un técnico (mechanicId).
+
+- ``TicketResponseResource``: Payload de entrada para añadir comentarios o soluciones de texto al canal de comunicación.
+
+- ``TicketDetailResource``: Payload de salida estructurado que expone los datos del ticket, su estado de aprobación y el arreglo histórico de respuestas para las apps cliente.
+
+**Transforms**
+
+- ``FileTicketCommandFromResourceAssembler``: Transforma el JSON de FileTicketResource en el comando FileSupportTicketCommand.
+
+- ``AddResponseCommandFromResourceAssembler``: Convierte un TicketResponseResource entrante en un AddTicketResponseCommand.
+
+- ``TicketDetailResourceFromEntityAssembler``: Adapta el Agregado de dominio SupportTicket y sus entidades internas a un objeto estructurado TicketDetailResource.
+
+**Controladores**
+
+`SupportTicketController`: Controlador encargado de exponer los servicios REST dedicados al ciclo de vida de los tickets de soporte y reclamos.
+
+| Método| Ruta| Descripción|
+|-|-|-|
+| fileTicket(FileTicketResource resource) | POST /api/v1/tickets | Endpoint para que los usuarios abran un reclamo por fallas en su dispositivo IoT. Retorna HTTP 201 Created. |
+| assignMechanic(Long id, AssignMechanicResource resource) | PATCH /api/v1/tickets/{id}/assign | Permite la asignación o reasignación de un mecánico al caso de soporte. |
+| resolveTicket(Long id) | PATCH /api/v1/tickets/{id}/resolve | Cierra el caso y aprueba formalmente la resolución de la falla del hardware. |
+
+
+``TicketInteractionController``: Controlador dedicado a gestionar el flujo de conversación, respuestas y adjuntos entre el cliente y el soporte técnico.
+
+| Método| Ruta| Descripción|
+|-|-|-|
+|addResponse(Long id, TicketResponseResource resource)|POST /api/v1/tickets/{id}/responses|Añade un mensaje al hilo del ticket.|
+|getTicketDetails(String code)|GET /api/v1/tickets/search/{code}|Recupera toda la información pública e interacciones de un reclamo mediante su código único.|
+
+### 5.8.5. Bounded Context Software Architecture Component Level Diagrams
+
+![Component Layer Diagram](assets/images/chapter-5/bc-support-ticket-management/bounded-context-software-architecture-component-level-diagram.png)
+
+### 5.8.6. Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección se presentan los diagramas de clase detallados del dominio y el diseño de la base de datos para el bounded context de Device Intelligence, mostrando las entidades, sus relaciones y la estructura de almacenamiento de datos.
+
+#### 5.8.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases del dominio para el contexto de Support & Ticket Management muestra la entidad principal con sus atributos y métodos relacionados..
+
+![Device Class Diagram](assets/images/chapter-5/bc-support-ticket-management/support-class-diagram.png)
+
+#### 5.8.6.2. Bounded Context Database Design Diagram
+
+Para el diseño de la base de datos, se presenta un diagrama que ilustra la tabla principal con sus campos correspondientes.
+
+![Device Database XXX](assets/images/chapter-5/bc-support-ticket-management/support-database-diagram.png)
 
 # Capitulo VI: Solution UX Design 
 ## 6.1. Style Guidelines
@@ -3827,6 +4083,238 @@ El wireflow inicia cuando el usuario presiona el botón de la barra lateral desd
 **User Goal: Como Motociclista, quiero ver mis gastos registrados**
 ![wireflow-ver-gastos.png](./assets/images/chapter-6/applications-ux-ui-design/wireflow-ver-gastos.png)
 El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Gastos. Al acceder a la página, el sistema muestra en pantalla los gastos registrados del usuario, permitiéndole observar y revisar la información correspondiente de manera clara y ordenada.
+
+## 6.5 Applications Prototyping
+
+# Capítulo VII: Production Implementation Validation & Deploymeny
+
+## 7.1 Software Configuration Management
+En este ítem se definirán todas las reglas y procesos que hemos seguido en el proyecto al momento de crear y desplegar Octane. El objetivo de estas reglas y procesos es garantizar la integridad y consistencia del software, desde el inicio hasta el despliegue y mantenimiento.
+
+### 7.1.1 Software Development Environment Configuration
+
+**Project Management**
+
+Para la organización del proyecto requerimos de un sistema de asignación de tareas, plataformas y puntos de reunión y un repositorio dónde trabajaremos en conjunto cada avance del proyecto.
+
+**Herramientas**
+
+- Centro de organización de trabajo: Github
+- Planificación de tareas: Trello
+- Reuniones con el equipo: Discord
+- Coordinación grupal: WhatsApp
+
+**Requirements Management**
+
+Utilizamos Trello para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios.
+
+|Herramienta|	Descripción|	Enlace|
+|-|-|-|
+|Trello|	Para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios.|	https://trello.com/|
+
+**Product UX/UI Design**
+
+Para el diseño de los wireframes y mockups, además de la realización del prototipo de la mobile application y web application, utilizamos Figma.
+
+|Herramienta|	Descripción|	Enlace|
+|-|-|-|
+|Figma|	Para el diseño de los wireframes y mockups, además de la realización del prototipo de Web App.|	https://www.figma.com/|
+
+**Software Development**
+
+Empleamos Android y Jetpack Compose para la creación de la mobile application, Spring Boot para la creación de la API REST y Angular para la web application. Para el desarrollo de la landing page utilizamos html, js y css.
+
+|Herramienta|	Descripción|	Enlace|
+|-|-|-|
+|Android|	Lenguaje de programación utilizado para la creación de la mobile application|	https://developer.android.com/|
+|Jetpack Compose|	Framework utilizado para la creación de la mobile application|	https://developer.android.com/compose|
+|Spring Boot|	Framework utilizado para la creación de la API REST|	https://spring.io/projects/spring-boot|
+|Tailwind CSS|	Framework utilizado para la creación de la landing page|	https://tailwindcss.com/|
+|Angular|	Framework de desarrollo web open source	|https://angular.dev/|
+|Python|	Lenguaje de programación utilizado para el desarrollo de scripts|	https://www.python.org/|
+
+**Software Testing**
+
+Para las pruebas unitarias y de integración utilizamos JUnit y Mockito para la API REST.
+
+|Herramienta|	Descripción|	Enlace|
+|-|-|-|
+|JUnit	|Framework de pruebas unitarias para Java	|https://junit.org/|
+|Mockito|	Framework de simulación para pruebas unitarias en Java|	https://site.mockito.org/|
+
+**Software Deployment**
+
+Para el despliegue de la API REST y la web application utilizamos Render. Para la distribución de la versión mobile application utilizamos Firebase App Distribution.
+
+|Herramienta|	Descripción|	Enlace|
+|-|-|-|
+|Render|	Plataforma de despliegue en la nube	|https://render.com/|
+|Firebase App Distribution|	Plataforma para distribuir versiones de prueba de aplicaciones móviles|	https://firebase.google.com/products/app-distribution|
+
+**Software Documentation**
+
+Para la documentación del software utilizamos Markdown, y para el trabajo colaborativo Github.
+
+|Herramienta|	Descripción|	Enlace|
+|-|-|-|
+|Markdown|	Lenguaje de marcado utilizado para la documentación del proyecto|	https://www.markdownguide.org/|
+|Github|	Para gestionar la documentación del proyecto|	https://github.com/NRG-4/report|
+
+### 7.1.2 Source Code Management
+
+Para la gestión del código fuente, utilizamos los siguientes repositorios:
+
+|Herramienta|	Descripción|	Enlace|
+|-|-|-|
+|Mobile Application|	BykerZ-Mobile-Application|	https://github.com/NRG-6-IOT/BykerZ-Mobile-Application.git|
+|Backend|	BykerZ-Backend|	https://github.com/NRG-6-IOT/BykerZ-Backend.git|
+|Landing Page|	BykerZ-Landing-Page|	https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git|
+|Web Application|	BykerZ-Web-Application	|https://github.com/NRG-6-IOT/BykerZ-Web-Application.git|
+|Edge Service|	BykerZ-Edge-Service	|https://github.com/NRG-6-IOT/BykerZ-Edge-Service|
+|Embedded Application|	BykerZ-Embedded-Application	|https://github.com/NRG-6-IOT/BykerZ-Embedded-Application|
+
+**Flujo de trabajo GitFlow**
+
+Usaremos el flujo de trabajo planteado por Vincent Driessen en "A successful Git branching model" con los siguientes parámetros:
+
+- Una rama de producción.
+- Una rama de pruebas.
+- Una rama en la que se solucionen los bugs rápidamente y vuelvan a producción.
+- Ramas de features a implementar.
+- Cada cambio en producción debe establecerse como una nueva versión.
+
+**Ramas definidas:**
+
+- Main branch: Rama de producción, cada cambio requiere autorización de un compañero de equipo.
+- Hotfix branch: Para errores identificados que deben solucionarse y desplegarse nuevamente en producción.
+- Develop branch: Implementaciones constantes de features.
+- Features branch: Cada feature tendrá su propia rama, luego se fusiona en develop.
+
+**Nomenclatura de versiones:**
+
+- Major changes: Cambios significativos incompatibles (ej. 1.0.0 -> 2.0.0).
+- Minor changes: Cambios que añaden o modifican características (ej. 1.1.0 -> 1.2.0).
+- Patch: Correcciones menores (ej. 1.1.3 -> 1.1.4).
+
+**Sufijos asignados:**
+
+- alpha: Versión no estable.
+- beta: Versión funcional pero no lista para publicación.
+- rc: Versión candidata para publicación.
+
+
+
+### 7.1.3 Source Code Style Guide & Conventions
+
+El equipo adopta convenciones estandarizadas de codificación para asegurar la coherencia, legibilidad y mantenibilidad del código en todos los componentes del sistema. Todas las nomenclaturas, identificadores y comentarios se escribirán en inglés, siguiendo las guías oficiales de estilo recomendadas para cada tecnología empleada en la solución.
+
+**Mobile Application – Android (Kotlin/Java)**
+
+- Classes: PascalCase (e.g., UserProfileActivity).
+- Functions & Variables: camelCase (e.g., getUserData(), userName).
+- Constants: UPPER_SNAKE_CASE (e.g., MAX_ATTEMPTS).
+- Architecture: Separación por capas (MVVM – Model, ViewModel, View).
+- Good Practices:
+  - Mantener lógica fuera de la UI (ViewModel o UseCase).
+  - Evitar operaciones costosas en @Composable.
+  - Documentar funciones con KDoc.
+
+
+**Web Application – Angular (TypeScript, HTML, CSS)**
+
+- Components & Services: PascalCase (e.g., UserDashboardComponent, AuthService).
+- Variables & Methods: camelCase (e.g., userProfile, loadData()).
+- Interfaces: Prefijo I (e.g., IUser, IServiceResponse).
+- File Naming: kebab-case (e.g., user-profile.component.ts).
+- HTML Structure:
+  - Uso semántico de etiquetas.
+  - Identificadores claros (id, class) en kebab-case.
+- CSS / Tailwind CSS:
+  - Ordenar clases en el siguiente orden: Layout → Flex/Grid → Spacing → Typography → Colors → Effects.
+  - Uso de prefijos sm:, md:, lg: para diseño responsive.
+  - Evitar uso excesivo de @apply en archivos CSS.
+
+**Backend – Spring Boot (Java)**
+
+- Package Structure: controller, service, repository, model, config.
+- Naming Conventions:
+  - Classes: PascalCase (e.g., UserController).
+  - Methods & Variables: camelCase (e.g., findUserById()).
+  - Constants: UPPER_SNAKE_CASE.
+- Good Practices:
+  - Inyección de dependencias con @Autowired o constructor.
+  - Validaciones mediante @Valid.
+  - Manejo de excepciones centralizado con @ControllerAdvice.
+  - Documentación con JavaDoc.
+
+
+**Database – PostgreSQL**
+
+- Table Names: snake_case plural (e.g., user_profiles). 
+- Column Names: snake_case (e.g., created_at).
+- Primary Keys: id o table_name_id (e.g., user_id).
+- Foreign Keys: referenced_table_id.
+- Views & Indexes: prefijo v_ y idx_ respectivamente.
+- Scripts: comentarios en inglés y consistencia en sangría.
+
+**Landing Page – HTML & CSS**
+
+- HTML:
+  - Estructura semántica (< header >, < main >, < footer >).
+  - Atributos y etiquetas en minúsculas.
+  - Sangría de 2 espacios.
+- CSS:
+  - Nombres de clases en kebab-case (e.g., main-banner).
+  - Uso de variables CSS para colores y tipografía.
+  - Evitar el uso de IDs para estilos.
+
+**General Guidelines**
+
+- Comments: Siempre en inglés, explicando el por qué y no solo el qué.
+- Commits: Convención semántica (feat:, fix:, docs:, refactor:, test:).
+- Version Control: Ramas en formato kebab-case (feature/add-login-page).
+- Performance: Uso de lazy loading para imágenes, módulos y componentes.
+- Accessibility: Cumplimiento de WCAG 2.1 en interfaces web y móviles.
+
+### 7.1.4 Software Deployment Configuration
+
+**Landing Page**
+
+1. Ejecutar npm run build localmente.
+2. Subir repositorio a GitHub (público).
+3. Crear servicio en Render → Web Service.
+4. Seleccionar repositorio y configurar.
+5. Deploy y verificación en la URL pública.
+
+
+**Mobile Application**
+
+1. Activar modo desarrollador y depuración USB en dispositivo.
+2. Conectar a la PC.
+3. Abrir proyecto en Android Studio.
+4. Seleccionar dispositivo y ejecutar.
+5. Verificar funcionamiento.
+
+
+**Web Application**
+
+1. Subir repositorio a GitHub (público).
+2. Crear Web Service en Render.
+3. Seleccionar repositorio y configurar.
+4. Deploy y verificación en la URL pública.
+
+
+**Backend**
+
+1. Configurar base de datos en Neontech.
+2. Crear Dockerfile para despliegue.
+3. Crear Web Service en Render.
+4. Importar repositorio backend.
+5. Deploy de la API.
+
+**Deployment diagram C4 model:**
+
+![deployment-diagram](assets/images/chapter-4/software-architecture/deployment-diagram.png)
 
 # Conclusiones
 
