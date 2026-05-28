@@ -4466,7 +4466,31 @@ El equipo adopta convenciones estandarizadas de codificación para asegurar la c
 
 #### 7.2.1.1 Sprint Planning 1
 
+| Sprint #                        | Sprint 1                                                                                        |
+|---------------------------------|-------------------------------------------------------------------------------------------------|
+| Sprint Planning Background      | --------                                                                                        |
+| Date                            | 2026-03-14                                                                                      |
+| Time                            | 22:00                                                                                           |
+| Location                        | Virtual Meeting, Discord                                                                        |
+| Prepared By                     | Real Calderón, Sebastián Omar                                                                   |
+| Attendees (to planning meeting) | Alejo Cárdenas, José Antonio. Pacheco Astiguetta, Sebastián. Romero Qwistgaard, Russell Stephen |
+| Sprint Goal & User Stories      | --------                                                                                        |
+| Sprint 1 Goal                   |                                                                                                 |
+| Sprint 1 Velocity               |                                                                                                 |
+| Sum of Story Points             |                                                                                                 |
+
 #### 7.2.1.2 Sprint Backlog 1
+
+| Sprint #   | Sprint 1 |                  |       |             |                   |             |                                            |
+|------------|----------|------------------|-------|-------------|-------------------|-------------|--------------------------------------------|
+| User Story |          | Work-Item / Task |       |             |                   |             |                                            |
+| Id         | Title    | Id               | Title | Description | Estimation(Hours) | Assigned To | Status(To-Do, In-Process, To-Review, Done) |
+|            |          |                  |       |             |                   |             |                                            |
+|            |          |                  |       |             |                   |             |                                            |
+|            |          |                  |       |             |                   |             |                                            |
+|            |          |                  |       |             |                   |             |                                            |
+|            |          |                  |       |             |                   |             |                                            |
+
 
 #### 7.2.1.3 Development Evidence for Sprint Review
 
