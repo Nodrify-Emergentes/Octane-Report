@@ -4318,7 +4318,12 @@ En esta sección se presentan los mock-ups finales de la aplicacion movil, donde
 
 ## 6.5 Applications Prototyping
 
+En esta sección se presentan los prototipos interactivos de las aplicaciones web y móvil de BykerZ, donde se evidencia la funcionalidad, navegación y experiencia de usuario esperada. Los prototipos permiten simular la interacción real con la interfaz, facilitando la validación de diseño y la identificación de posibles mejoras antes del desarrollo final.
 
+**Prototypes**: https://tinyurl.com/yhwkddph
+
+- Desktop Application Timestamp: 0:00 - 3:36
+- Mobile Application Timestamp: 3:37 - 6:02
 
 # Capítulo VII: Production Implementation Validation & Deploymeny
 
