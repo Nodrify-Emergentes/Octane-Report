@@ -4581,60 +4581,43 @@ El equipo adopta convenciones estandarizadas de codificación para asegurar la c
 
 **Segmento Objetivo #1: Dueños de Motocicletas Urbanas**
 
-- Principales:
 
 1. ¿Podrías presentarte brevemente? Cuéntame a qué te dedicas en tu día a día, cuántos años tienes y en qué distrito de Lima resides habitualmente.
         
-2. Respecto a tu motocicleta actual. ¿Para qué actividades específicas la utilizas y cuántas horas al día pasas sobre ella?
-        
+2. Al completar el formulario de registro para dueños de motocicletas, ¿encontraste alguna dificultad con los datos solicitados?
     
-3. ¿Cómo describirías tu conocimiento actual sobre el estado mecánico interno de tu moto? ¿Cómo te enteras o decides que ya es momento de realizarle un mantenimiento?
+3. Al ingresar los datos de tu motocicleta en el formulario de registro de vehículo, ¿te pareció un proceso rápido?
         
-4. ¿Qué métodos, herramientas o registros utilizas actualmente para llevar el control de tus gastos de combustible, repuestos y visitas al taller?
+4. Al navegar entre el listado de tus vehículos y la vista de detalle, ¿la organización de la información te resultó clara?
         
-5. Respecto a la última vez que tu motocicleta sufrió una falla inesperada o avería en medio de la ruta. ¿Cómo afectó esa situación a tus actividades diarias y a tu economía de esa semana?
+5. Al ingresar el código de vinculación para asociar tu moto con un mecánico, ¿el sistema validó la asignación de forma sencilla?
         
-6.  ¿Cómo manejas la incertidumbre o la desconfianza cuando dejas tu vehículo en un taller mecánico nuevo?
+6. En el dashboard de estado general, ¿puedes identificar con facilidad las lecturas actuales de temperatura y presión de tus llantas?
         
-7. ¿Cómo es el proceso actual de comunicación con tu taller o mecánico cuando necesitas una reparación? (¿Llamadas, mensajes, visitas directas?) ¿Qué es lo que más te frustra de ese canal de comunicación?
+7. Si la motocicleta sufriera un golpe estando estacionada, ¿consideras que el indicador visual de impacto en la pantalla es lo suficientemente visible?
 
-- Complementarias:
+8. Al recibir una notificación interna en la interfaz por superar los umbrales de temperatura alta o presión baja, ¿el mensaje te resultó comprensible?
 
-1. ¿Cuáles son las 3 aplicaciones móviles que abres con mayor frecuencia en tu día a día y qué es lo que más valoras de su diseño o interfaz?
-    
-2. ¿A través de qué canales digitales (redes sociales, foros, comunidades) interactúas con otros motociclistas o buscas recomendaciones sobre el cuidado de tu vehículo?
-
-3. ¿Qué marcas de motocicletas, repuestos o tecnología consumes o consideras referentes de calidad en el mercado peruano? ¿Quiénes o qué influye en tus decisiones de compra?
-
-4. ¿Cómo te sentirías si tu motocicleta tuviera la capacidad de recolectar automáticamente sus datos de salud y enviártelos directamente al celular antes de que ocurra una falla?
-    
-5. En un modelo de suscripción mensual que te garantice tranquilidad, trazabilidad y ahorro preventivo en reparaciones costosas, ¿cuánto considerarías un precio justo a pagar?
 
 **Segmento Objetivo #2: Mecánicos**
 
-- Principales:
 
 1. Cuéntame un poco sobre ti y tu trayectoria profesional. ¿Cuántos años de experiencia tienes en el rubro, cuál es tu rol específico en el taller y en qué distrito se encuentra ubicado tu negocio? 
     
-2. ¿Qué tipo de motocicletas atiendes con mayor frecuencia (e.g., urbanas, de delivery, mototaxis) y cuáles son los servicios o reparaciones más comunes que realizas en una semana típica?
+2. Al interactuar con el formulario de registro de perfil para mecánicos, ¿la estructura de los campos te pareció cómoda?
         
-3. Al recibir una motocicleta en el taller, ¿cómo llevas el registro histórico de las reparaciones pasadas de ese cliente? ¿De qué manera afecta tu trabajo diario la falta de un historial clínico digital del vehículo?
+3. Al realizar el inicio de sesión en la aplicación web, ¿consideras que el flujo de login es rápido y seguro?
     
-4. ¿Qué tan común es que tus clientes regresen al taller solo cuando la moto ya no enciende o está inoperativa? ¿Cómo afecta este comportamiento reactivo a la planificación del trabajo en tu taller?
+4. Al presionar el botón para generar códigos de vinculación de 9 caracteres para tus clientes, ¿el sistema te entregó el código de manera inmediata?
         
-5. ¿Cómo manejas actualmente el recordatorio de citas de mantenimiento preventivo con tus clientes actuales para lograr que regresen de manera recurrente?
+5. Desde el panel de gestión de asignaciones, ¿te resulta sencillo visualizar y controlar la lista de motocicletas que tienes a tu cargo?
 
-- Complementarias:
+6. Al observar cómo los manejadores de eventos actualizan la telemetría mediante polling constante, ¿sientes que el flujo de datos refleja el estado real de la moto?
 
-1. En la gestión de tu taller, ¿te consideras una persona tradicional aferrada a los métodos manuales de diagnóstico o estás constantemente buscando innovaciones técnicas para optimizar tu tiempo?
+7. Respecto a los umbrales críticos predefinidos (temperatura y presión), ¿consideras útil que el sistema automatice estas alertas antes de revisar físicamente el vehículo?
 
-2. ¿De qué manera utilizas actualmente canales digitales como WhatsApp Business, Excel o redes sociales para interactuar con tus clientes o promocionar los servicios de tu taller?
+8. Al ver el dashboard integrado con los datos del backend de sensores, ¿esta vista centralizada te ayuda a tomar decisiones más rápidas en tu taller?
 
-3. Durante tu jornada de trabajo, ¿prefieres interactuar con pantallas a través de una computadora/laptop para gestionar el negocio o dependes exclusivamente de tu smartphone mientras realizas las reparaciones? ¿Qué sistema operativo manejas?
-
-4. Si pudieras monitorear de forma remota los datos de telemetría (temperatura, gases, kilometraje) de las motos de tus clientes para ofrecerles diagnósticos predictivos por adelantado, ¿cómo transformaría eso el valor de tu servicio?
-
-5. Respecto al modelo de negocio de una plataforma de este tipo, ¿qué preferirías: una tarifa plana mensual fija para tu taller que te permita supervisar a toda tu cartera de clientes, o un esquema basado en comisiones por cada usuario vinculado?
 
 ### 7.3.2 Registro de Entrevistas
 
