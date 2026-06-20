@@ -4581,43 +4581,25 @@ El equipo adopta convenciones estandarizadas de codificación para asegurar la c
 
 **Segmento Objetivo #1: Dueños de Motocicletas Urbanas**
 
-
 1. ¿Podrías presentarte brevemente? Cuéntame a qué te dedicas en tu día a día, cuántos años tienes y en qué distrito de Lima resides habitualmente.
-        
 2. Al completar el formulario de registro para dueños de motocicletas, ¿encontraste alguna dificultad con los datos solicitados?
-    
-3. Al ingresar los datos de tu motocicleta en el formulario de registro de vehículo, ¿te pareció un proceso rápido?
-        
-4. Al navegar entre el listado de tus vehículos y la vista de detalle, ¿la organización de la información te resultó clara?
-        
-5. Al ingresar el código de vinculación para asociar tu moto con un mecánico, ¿el sistema validó la asignación de forma sencilla?
-        
-6. En el dashboard de estado general, ¿puedes identificar con facilidad las lecturas actuales de temperatura y presión de tus llantas?
-        
-7. Si la motocicleta sufriera un golpe estando estacionada, ¿consideras que el indicador visual de impacto en la pantalla es lo suficientemente visible?
-
-8. Al recibir una notificación interna en la interfaz por superar los umbrales de temperatura alta o presión baja, ¿el mensaje te resultó comprensible?
-
+3. Al ingresar los datos de tu motocicleta en el formulario de registro de vehículo, ¿te pareció un proceso rápido y sencillo?
+4. Al navegar entre el listado de tus vehículos y la vista de detalle, ¿la organización de la información te resultó clara y fácil de entender?
+5. Al ingresar el código de vinculación para asociar tu motocicleta con un mecánico, ¿el proceso fue intuitivo y la confirmación de la vinculación fue clara?
+6. Al consultar la ficha detallada de tu motocicleta, ¿consideras que la información presentada es suficiente para conocer las características técnicas de tu vehículo?
+7. Al utilizar la herramienta de comparación de especificaciones, ¿te resultó sencillo identificar las diferencias entre dos motocicletas?
+8. ¿Consideras que la comparación detallada de especificaciones te ayudaría a tomar decisiones relacionadas con mantenimiento, compra o cambio de motocicleta?
 
 **Segmento Objetivo #2: Mecánicos**
 
-
-1. Cuéntame un poco sobre ti y tu trayectoria profesional. ¿Cuántos años de experiencia tienes en el rubro, cuál es tu rol específico en el taller y en qué distrito se encuentra ubicado tu negocio? 
-    
-2. Al interactuar con el formulario de registro de perfil para mecánicos, ¿la estructura de los campos te pareció cómoda?
-        
-3. Al realizar el inicio de sesión en la aplicación web, ¿consideras que el flujo de login es rápido y seguro?
-    
-4. Al presionar el botón para generar códigos de vinculación de 9 caracteres para tus clientes, ¿el sistema te entregó el código de manera inmediata?
-        
-5. Desde el panel de gestión de asignaciones, ¿te resulta sencillo visualizar y controlar la lista de motocicletas que tienes a tu cargo?
-
-6. Al observar cómo los manejadores de eventos actualizan la telemetría mediante polling constante, ¿sientes que el flujo de datos refleja el estado real de la moto?
-
-7. Respecto a los umbrales críticos predefinidos (temperatura y presión), ¿consideras útil que el sistema automatice estas alertas antes de revisar físicamente el vehículo?
-
-8. Al ver el dashboard integrado con los datos del backend de sensores, ¿esta vista centralizada te ayuda a tomar decisiones más rápidas en tu taller?
-
+1. Cuéntame un poco sobre ti y tu trayectoria profesional. ¿Cuántos años de experiencia tienes en el rubro, cuál es tu rol específico en el taller y en qué distrito se encuentra ubicado tu negocio?
+2. Al interactuar con el formulario de registro de perfil para mecánicos, ¿la estructura de los campos te pareció cómoda y adecuada para tu trabajo?
+3. Al realizar el inicio de sesión en la aplicación web, ¿consideras que el flujo de autenticación es rápido y seguro?
+4. Al generar códigos de vinculación para tus clientes, ¿el proceso fue claro y el código generado fue fácil de compartir?
+5. Desde el panel de gestión de asignaciones, ¿te resulta sencillo visualizar y administrar las motocicletas asociadas a tus clientes?
+6. Al revisar la información detallada de una motocicleta, ¿consideras que las especificaciones mostradas son relevantes para apoyar tu diagnóstico o recomendaciones?
+7. Al utilizar la vista comparativa entre dos motocicletas, ¿la presentación lado a lado facilita la identificación de ventajas y diferencias técnicas?
+8. ¿Crees que esta funcionalidad de comparación de especificaciones puede ayudarte a brindar mejores recomendaciones a tus clientes durante el mantenimiento o evaluación de vehículos?
 
 ### 7.3.2 Registro de Entrevistas
 
