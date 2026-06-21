@@ -4573,6 +4573,22 @@ Se documentan los resultados obtenidos durante el Sprint calculado mediante Spri
 
 Video de ejecución Web App + Mobile App: [https://tinyurl.com/yhwkddph](https://tinyurl.com/yhwkddph)
 
+**Landing Page**
+
+![Landing Screen 1](assets/images/chapter-7/sprint-1/execution-evidence/landing-screen-1.png)
+
+![Landing Screen 2](assets/images/chapter-7/sprint-1/execution-evidence/landing-screen-2.png)
+
+![Landing Screen 3](assets/images/chapter-7/sprint-1/execution-evidence/landing-screen-3.png)
+
+![Landing Screen 4](assets/images/chapter-7/sprint-1/execution-evidence/landing-screen-4.png)
+
+![Landing Screen 5](assets/images/chapter-7/sprint-1/execution-evidence/landing-screen-5.png)
+
+![Landing Screen 6](assets/images/chapter-7/sprint-1/execution-evidence/landing-screen-6.png)
+
+![Landing Screen 7](assets/images/chapter-7/sprint-1/execution-evidence/landing-screen-7.png)
+
 #### 7.2.1.6 Services Documentation Evidence for Sprint Review
 
 #### 7.2.1.7 Software Deployment Evidence for Sprint Review
