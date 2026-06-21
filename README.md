@@ -4733,7 +4733,7 @@ Para la implementación, en este sprint se han realizado avances relacionados co
 #### 7.2.1.4 Testing Suite Evidence for Sprint Review
 En esta sección se muestran los archivos en gherkin realizados en el repositorio de pruebas Octane-Testing, así como los commits relevantes del mismo.
 
-##### US-001.feature
+**US-001.feature**
 ```gherkin
 Feature: Manejo de asignaciones
 
@@ -4753,7 +4753,7 @@ Feature: Manejo de asignaciones
     Then el sistema muestra la lista de asignaciones activas
 ```
 
-##### US-002.feature
+**US-002.feature**
 ```gherkin
 Feature: Vinculación de asignación
 
@@ -4774,7 +4774,7 @@ Feature: Vinculación de asignación
     And no realiza la asociación
 ```
 
-##### US-003.feature
+**US-003.feature**
 ```gherkin
 Feature: Creación de perfil para dueños de motocicletas
 
@@ -4795,7 +4795,7 @@ Feature: Creación de perfil para dueños de motocicletas
     And solicita una contraseña válida
 ```
 
-##### US-004.feature
+**US-004.feature**
 ```gherkin
 Feature: Creación de perfil para mecánicos
 
@@ -4823,7 +4823,7 @@ Feature: Creación de perfil para mecánicos
     And muestra los campos faltantes
 ```
 
-##### US-005.feature
+**US-005.feature**
 ```gherkin
 Feature: Autenticación en la aplicación web
 
@@ -4852,7 +4852,7 @@ Feature: Autenticación en la aplicación web
     Then el sistema solicita completar la información faltante
 ```
 
-##### US-022.feature
+**US-022.feature**
 ```gherkin
 Feature: Visualización de especificaciones detalladas
 
@@ -4884,7 +4884,7 @@ When selecciona dos vehículos para comparar
 Then el sistema genera la vista comparativa de especificaciones
 ```
 
-##### US-024.feature
+**US-024.feature**
 ```gherkin
 Feature: Visualización de vehículos
 
@@ -4903,7 +4903,7 @@ Feature: Visualización de vehículos
     Then el sistema muestra un mensaje indicando que no existen vehículos registrados
 ```
 
-##### US-025.feature
+**US-025.feature**
 ```gherkin
 Feature: Visualización de detalles de vehículo
 
@@ -4922,7 +4922,7 @@ Feature: Visualización de detalles de vehículo
     Then el sistema muestra un mensaje de error
 ```
 
-##### US-026.feature
+**US-026.feature**
 ```gherkin
 Feature: Registro de vehículo
 
