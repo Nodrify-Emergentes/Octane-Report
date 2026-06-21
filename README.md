@@ -314,6 +314,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Realicé un análisis significativo de los nuevos features que se pueden considerar en el proyecto, aplicando nuevas tecnologías emergentes como idea principal para la mejora del producto. Considerando esta nueva funcionalidad nos permite formular mejor los requositos necesarios para actualizar el producto.<br>
         TP:<br>
         Hice una revisión general del contenido, supervisando que los integrantes realicen sus modificaciones alineadas a cada subtítulo y que el contenido sea coherente con el enfoque de negocio y técnico del proyecto, para que así el equipo pueda entender claramente el desarrollo del proyecto y las decisiones tomadas durante el proceso. Además, analicé la la información de la arquitectura del proyecto, viendo qué posibles etiquetas se le pueden asociar e identificar más a la solución, impulsando su visibilidad.
+        TB2:<br>
+        Realicé los cambios necesarios para permitir un ajuste de bounded contexts, a criterio del equipo, para construir una solución que respete la arquitectura planteada mientras se refactoriza a un desarrollo más ágil. Además, me encargué de comunicar al equipo los cambios realizados, explicando el por qué de cada cambio y asegurando que todos comprendieran cómo estas modificaciones impactaban en la organización del sistema y en la implementación de las funcionalidades durante el Sprint 1.
         <br>
         Russell Stephen Romero Qwistgaard
         <br>
@@ -364,6 +366,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Coordiné y lideré las reuniones para desarrollar el Event Storming, considerando eventos para las nuevas tecnologías y modificando posibles cambios necesarios para que esté estructurado correctamente. Sabiendo que el Event Storming y otros modelados que necesitan de ésta son esenciales para sel desarrollo de la solución, este procedimiento ayuda a que el equipo comprenda a qué dirección va el producto y qué funcionalidades debemos tener en cuenta durante la codificación.<br>
         TP:<br>
         Redacté la información acorde al SEO y etiquetas relacionadas con la arquitectura del proyecto y la solución IoT, documentando el proceso y las decisiones tomadas como equipo. Adicionalmente, realicé correcciones anteriores con respecto a los Bounded Context, separando la telemetría a su propio área, facilitando la identificación de funciones del event storming asociados a ésta.
+        TB2:<br>
+        Realicé una documentación de los cambios realizados durante el sprint, además de hacer un rebranding del producto por el lado de la Landing Page, para que así el equipo pueda entender claramente el desarrollo del proyecto y las decisiones tomadas durante el proceso. Además, me encargué de documentar los resultados obtenidos durante la validación con usuarios, describiendo las respuestas obtenidas y su relación con los criterios de aceptación definidos en los escenarios.
         <br>
         Russell Stephen Romero Qwistgaard
         <br>
