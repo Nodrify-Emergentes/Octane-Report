@@ -5030,6 +5030,24 @@ Se muestra mediante una tabla los endpoints desarrollados durante el Sprint, con
 
 #### 7.2.1.7 Software Deployment Evidence for Sprint Review
 
+Se presentan los pasos a realizar con respecto a los despliegues de cada producto desarrollado durante el sprint, especificando la preparación, configuración e implementación de cada uno de ellos, evidenciando el proceso seguido para lograr la publicación de los mismos.
+
+**Landing Page**
+
+1. Crear el repositorio en GitHub
+2. Crea el archivo de workflow: En la ruta `.github/workflows/static.yml` agrega el workflow que ya tienes configurado.
+3. Configura el branch de despliegue: El workflow está configurado para ejecutarse en el branch master. Asegúrate de que tu rama principal se llame así.
+4. Permisos del token: El workflow otorga permisos necesarios al GITHUB_TOKEN para leer el contenido y desplegar en GitHub Pages.
+5. Checkout del código: Usa la acción `actions/checkout@v4` para obtener el código fuente del repositorio.
+6. Configura GitHub Pages: Usa la acción `actions/configure-pages@v5` para preparar el entorno de Pages.
+7. Sube los archivos como artefacto: Usa `actions/upload-pages-artifact@v3` para subir el contenido del repositorio como artefacto.
+8. Despliega a GitHub Pages: Usa `actions/deploy-pages@v4` para desplegar el artefacto a GitHub Pages.
+9. Verifica el despliegue: Una vez completado el workflow, la landing page estará disponible en la URL de GitHub Pages configurada en el repositorio.
+
+Enlace a la Landing Page desplegada: [https://nodrify-emergentes.github.io/Octane-Landing-Page/](https://nodrify-emergentes.github.io/Octane-Landing-Page/)
+
+Los prototipos Web Application, Mobile Application, Backend y otros prototipos relacionados se encuentran aún en desarrollo local, por lo que no se dispone de un despliegue como tal para el sprint actual. Sin embargo, los `README.md` de cada repositorio perteneciente debe indicar las dependencias necesarias si se dispone de la alternativa de construir la solución.
+
 #### 7.2.1.8 Team Collaboration Insights During Sprint
 
 ## 7.3 Validation Interviews
