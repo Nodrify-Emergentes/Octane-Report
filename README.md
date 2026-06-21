@@ -4961,9 +4961,36 @@ Tabla de Commits:
 
 #### 7.2.1.5 Execution Evidence for Sprint Review
 
+Se documentan los resultados obtenidos durante el Sprint calculado mediante Sprint Velocity, mostrando evidencias por capturas de pantalla relevantes, evidenciando el progreso alcanzado. Adicionalmente, se incluye un video demostrativo que ilustra la funcionalidad lograda, destacando los avances relacionados al user goal del sprint presente.
+
+Video de ejecución Web App + Mobile App: [https://tinyurl.com/yhwkddph](https://tinyurl.com/yhwkddph)
+
+**Landing Page**
+
+![Landing Screen 1](assets/images/chapter-7/sprint-1/execution-evidence/landing-screen-1.png)
+
+![Landing Screen 2](assets/images/chapter-7/sprint-1/execution-evidence/landing-screen-2.png)
+
+![Landing Screen 3](assets/images/chapter-7/sprint-1/execution-evidence/landing-screen-3.png)
+
+![Landing Screen 4](assets/images/chapter-7/sprint-1/execution-evidence/landing-screen-4.png)
+
+![Landing Screen 5](assets/images/chapter-7/sprint-1/execution-evidence/landing-screen-5.png)
+
+![Landing Screen 6](assets/images/chapter-7/sprint-1/execution-evidence/landing-screen-6.png)
+
+![Landing Screen 7](assets/images/chapter-7/sprint-1/execution-evidence/landing-screen-7.png)
+
+Link al Landing Page: [https://nodrify-emergentes.github.io/Octane-Landing-Page/](https://nodrify-emergentes.github.io/Octane-Landing-Page/)
+  
+**Web Application**
+  
 ![Execution Evidence 1](assets/images/chapter-7/execution-evidence/execution-1.png)
+  
 ![Execution Evidence 2](assets/images/chapter-7/execution-evidence/execution-2.png)
+  
 ![Execution Evidence 3](assets/images/chapter-7/execution-evidence/execution-3.png)
+  
 ![Execution Evidence 4](assets/images/chapter-7/execution-evidence/execution-4.png)
 
 Video de Flujo: https://youtu.be/uzMdfT1QGno
