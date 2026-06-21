@@ -4561,11 +4561,403 @@ El equipo adopta convenciones estandarizadas de codificación para asegurar la c
 
 #### 7.2.1.1 Sprint Planning 1
 
+| Sprint #                        | Sprint 1                                                                                                                                                                                                                                |
+|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Sprint Planning Background      | --------                                                                                                                                                                                                                                |
+| Date                            | 2026-05-27                                                                                                                                                                                                                              |
+| Time                            | 22:00                                                                                                                                                                                                                                   |
+| Location                        | Virtual Meeting, Discord                                                                                                                                                                                                                |
+| Prepared By                     | Real Calderón, Sebastián Omar                                                                                                                                                                                                           |
+| Attendees (to planning meeting) | Alejo Cárdenas, José Antonio. Pacheco Astiguetta, Sebastián. Romero Qwistgaard, Russell Stephen                                                                                                                                         |
+| Sprint Goal & User Stories      | --------                                                                                                                                                                                                                                |
+| Sprint 1 Goal                   | Implementar una primera versión funcional de Octane que permita a mecánicos y dueños autenticarse, registrar/vincular vehículos, ver las características de los modelos de cada motocicleta registrada y compararlos con otros modelos. |
+| Sprint 1 Velocity               | 35                                                                                                                                                                                                                                      |
+| Sum of Story Points             | 31                                                                                                                                                                                                                                      |
+
 #### 7.2.1.2 Sprint Backlog 1
 
+| Sprint #   | Sprint 1                                       |                  |                                                 |                                                                                                                                   |                   |                                    |        |
+|------------|------------------------------------------------|------------------|-------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|------------------:|------------------------------------|--------|
+| User Story |                                                | Work-Item / Task |                                                 |                                                                                                                                   |                   |                                    |        |
+| Id         | Title                                          | Id               | Title                                           | Description                                                                                                                       | Estimation(Hours) | Assigned To                        | Status |
+| US-005     | Autenticación en la aplicación web             | WI-001           | Implementar login web                           | Crear formulario de inicio de sesión, validaciones y conexión con el servicio de autenticación.                                   |                 5 | Pacheco Astiguetta, Sebastián      | To-Do  |
+| US-005     | Autenticación en la aplicación web             | WI-002           | Configurar JWT y protección de rutas            | Implementar generación, validación de token y middleware para rutas protegidas.                                                   |                 6 | Pacheco Astiguetta, Sebastián      | To-Do  |
+| US-004     | Creación de perfil para mecánicos              | WI-003           | Crear modelo y endpoints de mecánico            | Definir entidad, DTOs y endpoints para registrar perfil de mecánico y plan de suscripción.                                        |                 6 | Pacheco Astiguetta, Sebastián      | To-Do  |
+| US-004     | Creación de perfil para mecánicos              | WI-004           | Crear formulario de registro de mecánico        | Implementar interfaz de registro y selección de suscripción en la aplicación web.                                                 |                 5 | Romero Qwistgaard, Russell Stephen | To-Do  |
+| US-003     | Creación de perfil para dueños de motocicletas | WI-005           | Crear modelo y endpoints de dueño               | Definir entidad, reglas de registro y relación inicial con mecánico.                                                              |                 6 | Pacheco Astiguetta, Sebastián      | To-Do  |
+| US-003     | Creación de perfil para dueños de motocicletas | WI-006           | Crear formulario de registro de dueño           | Implementar pantalla de registro para dueños de motocicletas.                                                                     |                 5 | Real Calderón, Sebastián Omar      | To-Do  |
+| US-026     | Registro de Vehículo                           | WI-007           | Implementar registro de motocicleta             | Crear endpoints y formulario para registrar datos básicos de una motocicleta.                                                     |                 6 | Real Calderón, Sebastián Omar      | To-Do  |
+| US-024     | Visualización de vehículos                     | WI-008           | Crear listado de vehículos del dueño            | Mostrar las motocicletas registradas asociadas al usuario autenticado.                                                            |                 4 | Real Calderón, Sebastián Omar      | To-Do  |
+| US-025     | Visualización de detalles de vehículo          | WI-009           | Crear vista de detalle de vehículo              | Mostrar ficha técnica básica y estado inicial de una motocicleta seleccionada.                                                    |                 4 | Real Calderón, Sebastián Omar      | To-Do  |
+| US-001     | Manejo de asignaciones                         | WI-010           | Generar códigos de vinculación                  | Permitir que el mecánico genere códigos para asociar dueños y motocicletas.                                                       |                 5 | Pacheco Astiguetta, Sebastián      | To-Do  |
+| US-001     | Manejo de asignaciones                         | WI-011           | Gestionar asignaciones desde panel del mecánico | Crear vista para listar, activar o invalidar códigos de vinculación.                                                              |                 5 | Real Calderón, Sebastián Omar      | To-Do  |
+| US-002     | Vinculación de asignación                      | WI-012           | Validar código de vinculación                   | Permitir que el dueño introduzca un código y quede asociado a un mecánico.                                                        |                 5 | Pacheco Astiguetta, Sebastián      | To-Do  |
+| US-022     | Visualización de especificaciones detalladas   | WI-035           | Diseñar vista comparativa de especificaciones   | Crear interfaz para mostrar las especificaciones técnicas de dos motocicletas organizadas por categorías y columnas comparativas. |                 5 | Real Calderón, Sebastián Omar      | To-Do  |
+| US-022     | Visualización de especificaciones detalladas   | WI-036           | Implementar lógica de comparación               | Obtener especificaciones de ambos vehículos y mostrarlas lado a lado, manejando datos faltantes con valores por defecto.          |                 4 | Pacheco Astiguetta, Sebastián      | To-Do  |
+| US-022     | Visualización de especificaciones detalladas   | WI-037           | Resaltar valores superiores                     | Implementar reglas visuales para destacar automáticamente los valores superiores en especificaciones numéricas.                   |                 3 | Real Calderón, Sebastián Omar      | To-Do  |
+| General    | Validación del Sprint                          | WI-032           | Pruebas funcionales del flujo principal         | Validar autenticación, registro, vinculación, telemetría básica, alertas y dashboard.                                             |                 6 | Pacheco Astiguetta, Sebastián      | To-Do  |
+| General    | Validación del Sprint                          | WI-033           | Revisión de consistencia UX                     | Revisar navegación, textos, estados vacíos y coherencia visual de pantallas principales.                                          |                 4 | Romero Qwistgaard, Russell Stephen | To-Do  |
+| General    | Gestión del Sprint                             | WI-034           | Integración y revisión de avance                | Coordinar ramas, pull requests, resolución de conflictos y seguimiento del cumplimiento del sprint.                               |                 6 | Real Calderón, Sebastián Omar      | To-Do  |
+
+![Sprint Backlog 1 Trello](assets/images/chapter-7/sprint-1-backlog.png)
+
 #### 7.2.1.3 Development Evidence for Sprint Review
+Para la implementación, en este sprint se han realizado avances relacionados con la creación de cuentas, la asignación entre dueños de motocicletas y mecánicos, y la visualización de datos técnicos de los modelos de motocicletas.
+
+| Repository             | Branch | Commit Id                                | Commit Message                                                                                                   | Commit Message Body                                                    | Commited on (Date) |
+|------------------------|--------|------------------------------------------|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|--------------------|
+| Octane-Backend         |        | 2301b6b639340de24c4ff6589cff6b8999ac53b2 | fix(iam): update Profile entity to use @Column for first and last name fields, and remove @Embedded annotations. |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 12130729629f7013a3e56231991828e1f2d9a4c7 | fix: vehicle controller model validation                                                                         |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 7eb5647818761b6a2e7ff3681622a09562f57ef0 | feat(iam): add create and retrieve profile endpoints for ProfilesController.                                     |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 344ef299b617ff1d74c40d3503b48d75b5e1dad5 | feat: update vehicles functionality                                                                              |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 9602a539507cf1759f013d9292a72ea426e48016 | feat(iam): add ProfilesController for handling profile-related requests.                                         |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 9f12d552828533fd0ca78d2aad936d949dabaec5 | refactor(iam): move ProfileQueryServiceImpl to align with query services package structure.                      |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | aab0a0bcf5d09c93f8708c66af655c8e039d05c7 | feat(iam): implement ProfileQueryServiceImpl with methods to retrieve profiles by ID and email.                  |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | efecc9b51bf1b34dde0dd681c50478f0022c651d | feat(iam): implement ProfileCommandService with email uniqueness check.                                          |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 586ede91e99d6a54dd4959a747ec03fb3a31b053 | feat(iam): add ProfileCommandServiceImpl and ProfileQueryServiceImpl classes.                                    |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 2ad9d95f253756e1a973e5e08f458abd9740183d | feat(iam): add method to convert Profile entity to ProfileResource.                                              |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | d090f1384832285fd0c9391bf141342318824ba9 | feat(iam): add id field to ProfileResource record.                                                               |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 761585d2ed5970b7f782bede179d3786393653df | feat(iam): add Lombok @Getter annotations for firstName and lastName in Profile.                                 |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 24b22af1a8603d4447716560282ade3d694c8947 | feat(iam): add assembler method to convert CreateProfileResource to CreateProfileCommand.                        |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 6689898672eda64e8ab425f21ceaf34b76dcfd04 | feat(iam): extend ProfileRepository to include email address lookup methods.                                     |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 8974d5ba41ecb6ccedd975f68a272a7679f95843 | feat(iam): add ProfileRepository interface for profile data access.                                              |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | f414c1873c2132810c1f634467c9acc9a26941ba | feat(iam): add handle methods for retrieving profiles by email and ID in ProfileQueryService.                    |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 85f53542358b56cfc7d18d3be290af2610a3b965 | feat(iam): add ProfileQueryService interface for profile query operations.                                       |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 5fee23ba1e43732a3924e6b124e44feac778e406 | feat(iam): add handle method to ProfileCommandService for creating profiles.                                     |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | a731f50e8ff23470b5c4b3c0ee3e797705691c0e | feat(iam): add ProfileCommandService interface for profile command operations.                                   |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 3059c6c40af6e2d7e36a9d41dea4cfa9dd75ffbf | feat(iam): update GetProfile queries to include parameters for email and profile ID.                             |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | e0ff817fde8462fc29bd2093663268419d19dc25 | feat(iam): add queries for retrieving profiles by email and ID.                                                  |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 5cc6f4e0464ccea34a16dad91b630b08dfc2b480 | feat(iam): import CreateProfileCommand in Profile entity.                                                        |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 33019c0e1a159bf62689c499bc60a620622bcf19 | feat(iam): add Profile entity with firstName, lastName, and emailAddress fields.                                 |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 6add78a05fb7d339985687c753e08551af65219f | feat(iam): extend CreateProfileCommand to include firstName, lastName, and email fields.                         |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 0290750df2ada9be104fd81f41aa002b9684762d | feat(iam): add CreateProfileCommand record for profile creation.                                                 |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 5f7e1f9bd8b8463faf26463983a27305666d6e8a | feat(iam): update EmailAddress record to include email field with validation.                                    |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 94737d8739d822ae5e2e454223ccad6f52f28f9f | feat(iam): add EmailAddress record for profile management.                                                       |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 4d4cae68691340e290a2888e2125808c4b5b755c | feat(iam): add assemblers for creating profile commands and transforming profile resources.                      |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | d617f0d3539844f8bfefa4141b6919e2860aadc0 | feat(iam): add CreateProfileResource and ProfileResource records for profile management.                         |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | d0565b405949fb0926c1060977d85465af0e537d | feat: model seeding implementation (yet to test)                                                                 |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | dae3143785e4ef8b6e97386e16e54b93accfbd63 | feat: model seeding start                                                                                        |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | 90f51d8fc81d0e2b1fcb2b4a6b0cc009422bdfc5 | refactor(iam): rename ROLE_MOTORCYCLIST to ROLE_OWNER in Roles enum.                                             |                                                                        | 2025-10-31         |
+| Octane-Backend         |        | a22c8994fede4bf0042f4f55e549d713e0d33782 | feat: start development model seeding                                                                            |                                                                        | 2025-10-30         |
+| Octane-Backend         |        | 0f9310ad8f9f241e43eebb26dca1956b2639479e | feat(assignments): add controllers for assignment management                                                     |                                                                        | 2025-10-26         |
+| Octane-Backend         |        | db7aefc7e467e24e817765ff0ac308b34f8462df | feat(assigment): add command and resource assemblers for assignment.                                             |                                                                        | 2025-10-26         |
+| Octane-Backend         |        | e3dfdb71bbeed53cc9bb0d65df80da5a7970b9fd | feat(assigment): add resources.                                                                                  |                                                                        | 2025-10-26         |
+| Octane-Backend         |        | 3ae6be8fc06920503719b514e95ba0bf85fd0de0 | feat(assigment): add query and command service implementation.                                                   |                                                                        | 2025-10-26         |
+| Octane-Backend         |        | 12e75b4a693c79ec304adf12800eb15aef0e1520 | feat(assigment): add query and command service.                                                                  |                                                                        | 2025-10-26         |
+| Octane-Backend         |        | 0e70d211aa9c215c8f35d86eaa07956184a0d26c | feat(assigment): add assignment repository.                                                                      |                                                                        | 2025-10-26         |
+| Octane-Backend         |        | 0c7ca386992e54cd870ab3e78367174b96ef2690 | feat(assigment): add commands.                                                                                   |                                                                        | 2025-10-26         |
+| Octane-Backend         |        | e9ac75181254f934894adb7d24990645d7fb5c51 | feat(assigment): add queries.                                                                                    |                                                                        | 2025-10-26         |
+| Octane-Backend         |        | c006ef98bdc9e3c95f55f4baa8689c9b9a198a64 | feat(assigment): add assigment aggregate and value objects.                                                      |                                                                        | 2025-10-26         |
+| Octane-Backend         |        | f177b77823bf472d06e96f4dcaa7efa8305b3687 | feat: vehicle updating in service                                                                                |                                                                        | 2025-10-24         |
+| Octane-Backend         |        | 666618fea85ad74c04ffe89d32d3b3b8ac532f10 | fix: removed Brand concept                                                                                       |                                                                        | 2025-10-24         |
+| Octane-Web-Application |        | 2a20ca6e6609d21b0762f1742feac7543861b5b9 | feat: assignment name                                                                                            |                                                                        | 2025-11-11         |
+| Octane-Web-Application |        | d969d0d35ac72a9ac57ac9f7b72b72b80b23e7de | feat: vehicle registration                                                                                       |                                                                        | 2025-11-11         |
+| Octane-Web-Application |        | 5b8368d5bd3480842ee4b163ae068af15a01bbc3 | feat: vehicle details                                                                                            |                                                                        | 2025-11-11         |
+| Octane-Web-Application |        | b3f56f99b88cbe32198280342995e869f30b3877 | feat: vehicle page integration                                                                                   |                                                                        | 2025-11-11         |
+| Octane-Web-Application |        | 146fd86efd4ac38ade8f51f3723da221e2e1ad76 | feat(sign-in): update sign-up button link to selection page.                                                     |                                                                        | 2025-11-11         |
+| Octane-Web-Application |        | d181200d9dc920525dd079c9e91c59642f637b82 | feat(sign-up): add invitation code handling for role assignment.                                                 |                                                                        | 2025-11-11         |
+| Octane-Web-Application |        | 5b78b000c36084d463eb4a45efc1c185ecd18499 | feat(role-selection): implement registration functionality for Owner and Mechanic roles.                         |                                                                        | 2025-11-11         |
+| Octane-Web-Application |        | 2edbf996528406edd1acc9fa725c3c6d3e84fb5c | feat: vehicle services                                                                                           |                                                                        | 2025-11-11         |
+| Octane-Web-Application |        | 2b78d0949b8329395c09a06ff58deea18e934c84 | Merge pull request #15 from NRG-6-IOT/feat/owner-registration                                                    | Feat/owner registration                                                | 2025-11-11         |
+| Octane-Web-Application |        | d05ad41645d39870b11c3691be1a5bad7586fc3b | feat(navbar): update dashboard route for mechanic navigation.                                                    |                                                                        | 2025-11-11         |
+| Octane-Web-Application |        | cc640395dc21cc9444ee5f4995aba14466147bf5 | feat(authentication): implement role-based user ID retrieval and auto sign-in.                                   |                                                                        | 2025-11-11         |
+| Octane-Web-Application |        | 4199f0677e831a49409cf13d538523341a5acdfd | feat(role-selection): enhance layout with dual section display.                                                  |                                                                        | 2025-11-11         |
+| Octane-Web-Application |        | 1415ce888c6fd5e3703f2879960fbc1f22565a91 | feat(role-selection): add role selection page.                                                                   |                                                                        | 2025-11-10         |
+| Octane-Web-Application |        | 8be5061cefc876eab3235095cedf457253154328 | feat(routes): update sign-up button to link to selection page.                                                   |                                                                        | 2025-11-10         |
+| Octane-Web-Application |        | fed57ffc15124978ff94e2e3438a5d72623bf84e | feat(routes): add role selection route for user role selection.                                                  |                                                                        | 2025-11-10         |
+| Octane-Web-Application |        | 0f2e668490e26c0108aa38dd73f53fa11a997e46 | fix(iam): update profile API endpoint URL to use the correct base path.                                          |                                                                        | 2025-11-10         |
+| Octane-Web-Application |        | a0339d6c9fc8e316861a6b0a0d147ec8af4bbc47 | feat(iam): add ProfileStore service to manage user profile state and loading.                                    |                                                                        | 2025-11-10         |
+| Octane-Web-Application |        | 9b19bafeca5e1f539ed6858e39060c05272e009e | feat(iam): implement ProfilesApi service to fetch user profile by ID.                                            |                                                                        | 2025-11-10         |
+| Octane-Web-Application |        | 32be46d07aee460650939265bbd1142f41a4d126 | feat(iam): add getByUserId method to fetch user profile by ID with error handling.                               |                                                                        | 2025-11-10         |
+| Octane-Web-Application |        | f4f36d11cf79033cdf38e4c680e3409117ea1541 | fix(iam): add setters for profile entity properties to enable data modification.                                 |                                                                        | 2025-11-10         |
+| Octane-Web-Application |        | 58bc3ab571bc00e96ef143dabc8e6b89958286c2 | feat(iam): add profiles response interfaces for user profile data.                                               |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | 61df2b6892ceb26bdc1126a30c5bbee2766f9a4b | feat(iam): add profile assembler for converting between profile entities and resources.                          |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | ddf9d19cbed41171243e4717500372c1df8c04c0 | feat(iam): implement profiles API endpoint for user profile management.                                          |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | 39fa8d20169dbae4242b3bb937a1ac8c0b4fd60f | feat(iam): add profile entity to manage user profile data.                                                       |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | efd3091ab430bc92b053b3ee35453d4c1bbe70f6 | feat(iam): add profile endpoint path to environment configuration.                                               |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | ea9201f064457478e9204d7bc57f9ec2c4f450a4 | Merge pull request #13 from NRG-6-IOT/feat/assignments                                                           | feat(assignments): add functionality to fetch assignment by owner and… | 2025-11-09         |
+| Octane-Web-Application |        | e33f820b27080abcb4e6368ca0e486dec56e0b77 | feat(assignments): add functionality to fetch assignment by owner and update dashboard for owner view            |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | 0b583981355db8c6ffe28cf82db5674f4927acbe | Merge pull request #12 from NRG-6-IOT/feat/assignments                                                           | feat(assignments): implement role-based navigation and add dashboard … | 2025-11-09         |
+| Octane-Web-Application |        | e72eb36a9528c2722fa0fa47dcb748b46da4f108 | feat(assignments): implement role-based navigation and add dashboard pages for owner and mechanic.               |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | 23ad1968d504ccf19b60ae50c197a939b2229be1 | Merge pull request #10 from NRG-6-IOT/feat/assignments                                                           | feat(assignments): add assignment type update functionality and impro… | 2025-11-09         |
+| Octane-Web-Application |        | eda847bf7741da67ac9dbf1829be10f6483d7818 | feat(assignments): add assignment type update functionality and improve detail page layout                       |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | 3593e0562cb9333f1573c8294038453468108fbf | Merge pull request #9 from NRG-6-IOT/feat/assignments                                                            | Feat/assignments                                                       | 2025-11-09         |
+| Octane-Web-Application |        | 7d8f8e372e45565bb0ec3e52f5ae319a943a692d | feat(assignments): improve pending assignments dropdown with no assignments state                                |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | fdcd12bf6cb69de5557fd3695c3868e4c0c84f5a | feat(assignments): enhance create assignment dialog with improved UI and loading state                           |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | e2b11dca4c31fdc8558537f57e7b6aa2c3a18bd4 | feat(assignments): add create assignment dialog and integrate with store                                         |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | f7718ddbbfeede2ede4088529931c68f37d4b74c | feat(assignments): add create assignment functionality with UI component                                         |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | 075924e9d1e61a6ab9a1b19f4e6a7bcc9b6c2b3f | feat(assignments): add delete functionality for assignments in store and UI                                      |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | 0d1ad73d5ab9c1319826e9cb9e1507ff19ac6c49 | feat(assignments): rename notification components to pending assignments components                              |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | d9f44c2a4f4f9040ad6f3083ca7a0453b0387135 | feat(assignments): refactor assignments store and card components to handle active and pending assignments       |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | 337216ac8a3d8061e1c49a0a5e0667f2b3db2125 | feat(assignments): update navigation path in assignment card to use plural route                                 |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | bdb88a318f319436360796e9645efde292df9bd4 | feat(assignments): update assignment card to display assignment ID, complete owner name, and assignment code     |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | e8800b2d2bdf74f13b30667e5ef22058b4562e3a | feat(assignments): integrate AssignmentsApi to load assignments by mechanic and status                           |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | 8baa902bca10d6c486f549b4c8a24c32fb85d237 | feat(assignments): implement AssignmentsApi service with method to fetch assignments by mechanic and status      |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | 178eb3a6e7160e48f90165c7bcedcfdd421e81aa | feat(assignments): add Owner API endpoint, assembler, and response models                                        |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | 9182c940612a8022e2d8c217a04d42762745bb25 | feat(assignments): add mechanic API endpoint, assembler, and response models                                     |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | 71965fc6f2359b6769e8bf0833f16447258d387c | feat(assignments): add API endpoint and assembler for assignments                                                |                                                                        | 2025-11-09         |
+| Octane-Web-Application |        | d48d6a8fd352568ea5fb91c4f133a96ec452a00d | feat(assignments): updated bounded context entities.                                                             |                                                                        | 2025-11-08         |
+| Octane-Web-Application |        | 82d7e43c1ede7263093511c8b36469e70dc9f893 | feat(assignments): refactor shared structure to match ddd.                                                       |                                                                        | 2025-11-08         |
+| Octane-Web-Application |        | 04935aeb2c2b150652474f87dc4ae6421e2a98b4 | Merge pull request #8 from NRG-6-IOT/feat/assignments                                                            | Feat/assignments                                                       | 2025-11-07         |
+| Octane-Web-Application |        | 45cb4d20049390892351c3d5f0b4884e76cf4581 | feat(assignments): implement loading and error handling in assignments page and bounded context storage.         |                                                                        | 2025-11-07         |
+| Octane-Web-Application |        | 72f501489c45b5c63cdfb9153cb046d0e5810758 | feat(assignments): add lazy routing.                                                                             |                                                                        | 2025-11-07         |
+| Octane-Web-Application |        | 7f3793f46a4bdefd58f52359e8c20bf2440bd579 | feat(assignments): refactor assignment components and update file structure to match domain driven design.       |                                                                        | 2025-11-07         |
+| Octane-Web-Application |        | 2dc5fc186d1c556a36b6d5955e8d8c96f59726ff | feat(assignments): add dialog to undo assignment                                                                 |                                                                        | 2025-11-05         |
+| Octane-Web-Application |        | 83997a57e552ea70497713e3bd83c39628bbd1e0 | fix(iam): update sign-up request to support multiple roles and match the backend request.                        |                                                                        | 2025-11-04         |
+| Octane-Web-Application |        | b73c5974b3d06c6134b96b104e032a482964d764 | fix(iam): fix role not being recognised in the control form, and match the backend endpoint request.             |                                                                        | 2025-11-04         |
+| Octane-Web-Application |        | 2f570672f1d08ed14df2881cd15dc0e9436697a1 | feat(assignments): add notification dropdown item.                                                               |                                                                        | 2025-10-31         |
+| Octane-Web-Application |        | b96e218fbabbfd968f05aea25c6cc7fb87329efb | feat(assignments): add assignment detail page.                                                                   |                                                                        | 2025-10-31         |
+| Octane-Web-Application |        | e612f5faed0843cab981aad29eca611f7cf91ab9 | chore: rename subscription bounded context to assignment bounded context.                                        |                                                                        | 2025-10-31         |
+| Octane-Web-Application |        | f4409fd174646b593bd257318b209df093704f93 | feat(assignments): add notifications drop down list.                                                             |                                                                        | 2025-10-31         |
+| Octane-Web-Application |        | 0c2510f70fbdec4f13e43fe6fd39fc6c10a16863 | feat(iam): implement sign-up form with validation and role selection.                                            |                                                                        | 2025-10-28         |
+| Octane-Web-Application |        | f1c0f853c159046a40763c6420325dcc01f5d015 | feat(iam): extend SignUpRequest class to include additional fields.                                              |                                                                        | 2025-10-28         |
+| Octane-Web-Application |        | e44a98e51e1d3b64c5d607a9f9b7a529a622f286 | feat: vehicle details screen                                                                                     |                                                                        | 2025-10-09         |
+| Octane-Web-Application |        | 41d38a47ebd07db5269ffd6b2581dc16f3b672e1 | feat: add vehicle form                                                                                           |                                                                        | 2025-10-09         |
+| Octane-Web-Application |        | 129ab4173e78d6b0cd5d793267626f43325eff1e | fix: vehicle cards added                                                                                         |                                                                        | 2025-10-09         |
+| Octane-Web-Application |        | 47b783ac7491d4f2e9c95d2a58da7a8d5015bea5 | fix: Model class name added                                                                                      |                                                                        | 2025-10-09         |
+| Octane-Web-Application |        | 169098de57be81e8dee27ed766f2f49d2f02c63c | fix: vehicle class fixed (again) and added Model class                                                           |                                                                        | 2025-10-09         |
+| Octane-Web-Application |        | 2de77844e6386a932969cf4c7e7aad4e6beb3440 | fix: vehicle class fixed                                                                                         |                                                                        | 2025-10-09         |
+| Octane-Web-Application |        | fff50850c69e1da99ef367b2ea6d3c4a63ff4282 | feat: added vehicles page component to routes                                                                    |                                                                        | 2025-10-09         |
+| Octane-Web-Application |        | 7c1d8ea1af4a95f4fd32d9be35a4c5ca94d3775c | feat: vehicle entity                                                                                             |                                                                        | 2025-10-09         |
+| Octane-Landing-Page    |        | a933839596c9299d49d2e9f58f35f6457e4cc17a | fix: oops the year                                                                                               |                                                                        | 2026-06-21         |
+| Octane-Landing-Page    |        | a757ebec6b41470a7423396719e7f3a33902e532 | Merge pull request #1 from Nodrify-Emergentes/develop                                                            | Rebrand                                                                | 2026-06-21         |
+| Octane-Landing-Page    |        | 71ff5b4458aa8d524ca574b4680576e1c6d21827 | refactor: spacing.                                                                                               |                                                                        | 2026-06-21         |
+| Octane-Landing-Page    |        | 02c97ff85f55ab795c5380d9fa6e12a551694211 | fix: introduce new project team and add profiles.                                                                |                                                                        | 2026-06-21         |
+| Octane-Landing-Page    |        | eb50e1cc638865f65dab155ce36b45c8780a6896 | fix: temporarily remove videos.                                                                                  |                                                                        | 2026-06-21         |
+| Octane-Landing-Page    |        | 36c36073cf607254e675c7993da47d9edc4ba813 | fix: redefine service history.                                                                                   |                                                                        | 2026-06-21         |
+| Octane-Landing-Page    |        | 65e628f2f73591feebf384d3183e3988c8cb88d9 | feat: switch title accent.                                                                                       |                                                                        | 2026-06-21         |
+| Octane-Landing-Page    |        | 4d1b80f049194d103bcb568b320d468e8c17f055 | fix: fix routing to invalid ocurrence.                                                                           |                                                                        | 2026-06-21         |
+| Octane-Landing-Page    |        | 640d9c9d37673fe1d4636b4db8eebdd8318c534c | fix: change reference to brand.                                                                                  |                                                                        | 2026-06-21         |
+| Octane-Landing-Page    |        | 8a3c32d76ce699751be810fc33e715575d3ed280 | feat: switch rebranding to Octane.                                                                               |                                                                        | 2026-06-21         |
 
 #### 7.2.1.4 Testing Suite Evidence for Sprint Review
+En esta sección se muestran los archivos en gherkin realizados en el repositorio de pruebas Octane-Testing, así como los commits relevantes del mismo.
+
+##### US-001.feature
+```gherkin
+Feature: Manejo de asignaciones
+
+  Como mecánico
+  Quiero generar códigos de vinculación
+  Para asociar clientes y motocicletas a mi taller
+
+  Scenario: Generar código de vinculación
+    Given que el mecánico ha iniciado sesión
+    When solicita generar un código de vinculación
+    Then el sistema genera un código único
+    And muestra el código al mecánico
+
+  Scenario: Visualizar asignaciones existentes
+    Given que el mecánico posee motocicletas vinculadas
+    When accede al panel de asignaciones
+    Then el sistema muestra la lista de asignaciones activas
+```
+
+##### US-002.feature
+```gherkin
+Feature: Vinculación de asignación
+
+  Como dueño de motocicleta
+  Quiero ingresar un código de vinculación
+  Para asociarme con un mecánico
+
+  Scenario: Vinculación exitosa
+    Given que el usuario posee un código válido
+    When ingresa el código de vinculación
+    And confirma la operación
+    Then el sistema vincula la motocicleta al mecánico correspondiente
+
+  Scenario: Código inválido
+    Given que el usuario posee un código inválido
+    When intenta realizar la vinculación
+    Then el sistema muestra un mensaje de error
+    And no realiza la asociación
+```
+
+##### US-003.feature
+```gherkin
+Feature: Creación de perfil para dueños de motocicletas
+
+  Como dueño de motocicleta
+  Quiero crear una cuenta en la plataforma
+  Para gestionar la información de mis vehículos
+
+  Scenario: Registro exitoso de dueño
+    Given que el usuario accede al formulario de registro
+    When completa correctamente todos los datos requeridos
+    And confirma el registro
+    Then el sistema crea la cuenta del propietario
+
+  Scenario: Contraseña inválida
+    Given que el usuario se encuentra en el formulario de registro
+    When ingresa una contraseña que no cumple las reglas definidas
+    Then el sistema muestra una advertencia
+    And solicita una contraseña válida
+```
+
+##### US-004.feature
+```gherkin
+Feature: Creación de perfil para mecánicos
+
+  Como mecánico
+  Quiero crear una cuenta en la plataforma
+  Para gestionar los vehículos de mis clientes
+
+  Scenario: Registro exitoso de mecánico
+    Given que el usuario se encuentra en el formulario de registro
+    When completa todos los datos requeridos
+    And selecciona un plan de suscripción
+    And confirma el registro
+    Then el sistema crea el perfil de mecánico
+    And muestra un mensaje de confirmación
+
+  Scenario: Correo ya registrado
+    Given que existe una cuenta asociada al correo ingresado
+    When el usuario intenta registrarse
+    Then el sistema informa que el correo ya se encuentra registrado
+
+  Scenario: Datos obligatorios incompletos
+    Given que el usuario se encuentra en el formulario de registro
+    When omite uno o más campos obligatorios
+    Then el sistema impide el registro
+    And muestra los campos faltantes
+```
+
+##### US-005.feature
+```gherkin
+Feature: Autenticación en la aplicación web
+
+  Como usuario registrado
+  Quiero iniciar sesión en la plataforma
+  Para acceder a las funcionalidades correspondientes a mi perfil
+
+  Scenario: Inicio de sesión exitoso
+    Given que el usuario posee una cuenta registrada
+    And se encuentra en la pantalla de inicio de sesión
+    When ingresa un correo y contraseña válidos
+    And presiona el botón "Iniciar sesión"
+    Then el sistema autentica al usuario
+    And redirige al panel principal
+
+  Scenario: Credenciales incorrectas
+    Given que el usuario se encuentra en la pantalla de inicio de sesión
+    When ingresa un correo o contraseña incorrectos
+    And presiona el botón "Iniciar sesión"
+    Then el sistema muestra un mensaje de error
+    And no permite el acceso
+
+  Scenario: Campos vacíos
+    Given que el usuario se encuentra en la pantalla de inicio de sesión
+    When intenta iniciar sesión sin completar los campos requeridos
+    Then el sistema solicita completar la información faltante
+```
+
+##### US-022.feature
+```gherkin
+Feature: Visualización de especificaciones detalladas
+
+Como dueño de motocicletas
+Quiero ver una comparación detallada de todas las especificaciones técnicas
+Para tomar decisiones informadas basadas en datos técnicos precisos
+
+Scenario: Listado completo de especificaciones
+Given que se están comparando dos vehículos
+When el usuario visualiza la tarjeta de especificaciones
+Then el sistema muestra las categorías técnicas organizadas en filas
+And presenta los valores de ambos vehículos lado a lado
+
+Scenario: Destacado de valores superiores
+Given que dos vehículos tienen valores numéricos diferentes en una especificación
+When el sistema realiza la comparación
+Then resalta visualmente el valor superior
+And muestra un indicador de ganador
+
+Scenario: Manejo de datos faltantes
+Given que un vehículo no tiene información para una especificación
+When el sistema muestra la comparación
+Then presenta un guion "-"
+And evita mostrar valores vacíos o incorrectos
+
+Scenario: Comparación entre motocicletas registradas
+Given que el usuario posee al menos dos motocicletas registradas
+When selecciona dos vehículos para comparar
+Then el sistema genera la vista comparativa de especificaciones
+```
+
+##### US-024.feature
+```gherkin
+Feature: Visualización de vehículos
+
+  Como dueño de motocicleta
+  Quiero visualizar mis vehículos registrados
+  Para acceder rápidamente a su información
+
+  Scenario: Mostrar listado de vehículos
+    Given que el usuario posee vehículos registrados
+    When accede a la sección de vehículos
+    Then el sistema muestra la lista de motocicletas asociadas
+
+  Scenario: Usuario sin vehículos registrados
+    Given que el usuario no posee vehículos registrados
+    When accede a la sección de vehículos
+    Then el sistema muestra un mensaje indicando que no existen vehículos registrados
+```
+
+##### US-025.feature
+```gherkin
+Feature: Visualización de detalles de vehículo
+
+  Como dueño de motocicleta
+  Quiero consultar los detalles de una motocicleta
+  Para conocer sus características registradas
+
+  Scenario: Visualizar detalle de motocicleta
+    Given que el usuario posee una motocicleta registrada
+    When selecciona una motocicleta del listado
+    Then el sistema muestra la ficha detallada del vehículo
+
+  Scenario: Vehículo inexistente
+    Given que el usuario intenta acceder a un vehículo inexistente
+    When solicita la visualización de detalles
+    Then el sistema muestra un mensaje de error
+```
+
+##### US-026.feature
+```gherkin
+Feature: Registro de vehículo
+
+  Como dueño de motocicleta
+  Quiero registrar mis motocicletas
+  Para administrarlas dentro de la plataforma
+
+  Scenario: Registro exitoso de motocicleta
+    Given que el usuario ha iniciado sesión
+    When completa la información requerida del vehículo
+    And confirma el registro
+    Then el sistema almacena la motocicleta
+    And la asocia a la cuenta del usuario
+
+  Scenario: Datos obligatorios incompletos
+    Given que el usuario se encuentra en el formulario de registro de vehículo
+    When intenta registrar la motocicleta sin completar todos los campos obligatorios
+    Then el sistema impide el registro
+    And muestra un mensaje de validación
+```
+
+Tabla de Commits:
+
+| Repository     | Branch | Commit Id                                | Commit Message                     | Commit Message Body | Commited on (Date) |
+|----------------|--------|------------------------------------------|------------------------------------|---------------------|--------------------|
+| Octane-Testing | main   | aa5206cc3c4f441b5fb651cffd368b95b0cd001e | feat: added feature file for us022 |                     | 2026-06-21         |
+| Octane-Testing | main   | 45e75ae2ef656f4b7fa6345adbd9e7b01dfa1f4a | feat: added feature file for us002 |                     | 2026-06-21         |
+| Octane-Testing | main   | 11aa8c4a8157e2e00a12387f9196447cfdb5ba58 | feat: added feature file for us001 |                     | 2026-06-21         |
+| Octane-Testing | main   | c4a6b4c9a07b012bc2a9ff8e6333fbb0e4337c6d | feat: added feature file for us025 |                     | 2026-06-21         |
+| Octane-Testing | main   | 43a1c80ba1c5194c567033349b7993087b94f766 | feat: added feature file for us024 |                     | 2026-06-21         |
+| Octane-Testing | main   | bdb31b9caeccc34bf7c8348d2e24c5efe6ad9b29 | feat: added feature file for us026 |                     | 2026-06-21         |
+| Octane-Testing | main   | 0ea1425038a3c9d500b534b4dc4632b93ba1bcdc | Rename US-004 to US-004.feature    |                     | 2026-06-21         |
+| Octane-Testing | main   | 50944f09d5970f6b30c0bdf3969858f2e597e161 | feat: added feature file for us003 |                     | 2026-06-21         |
+| Octane-Testing | main   | 1a42fe120606f08ff7b2f784fa32b27946751dbc | feat: added feature file for us004 |                     | 2026-06-21         |
+| Octane-Testing | main   | 684c439b1605cc1988ba01587f3bf7ed4e9aa01f | feat: added feature file for us005 |                     | 2026-06-21         |
 
 #### 7.2.1.5 Execution Evidence for Sprint Review
 
@@ -4590,6 +4982,18 @@ Video de ejecución Web App + Mobile App: [https://tinyurl.com/yhwkddph](https:/
 ![Landing Screen 7](assets/images/chapter-7/sprint-1/execution-evidence/landing-screen-7.png)
 
 Link al Landing Page: [https://nodrify-emergentes.github.io/Octane-Landing-Page/](https://nodrify-emergentes.github.io/Octane-Landing-Page/)
+  
+**Web Application**
+  
+![Execution Evidence 1](assets/images/chapter-7/execution-evidence/execution-1.png)
+  
+![Execution Evidence 2](assets/images/chapter-7/execution-evidence/execution-2.png)
+  
+![Execution Evidence 3](assets/images/chapter-7/execution-evidence/execution-3.png)
+  
+![Execution Evidence 4](assets/images/chapter-7/execution-evidence/execution-4.png)
+
+Video de Flujo: https://youtu.be/uzMdfT1QGno
 
 #### 7.2.1.6 Services Documentation Evidence for Sprint Review
 
