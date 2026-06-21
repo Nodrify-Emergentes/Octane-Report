@@ -126,6 +126,42 @@ Distribución de Commits por Integrante:
 | Sebastián Pacheco Astiguetta      | 38                  |
 | Russell Stephen Romero Qwistgaard | 51                  |
 
+**TB2:**
+
+Para el desarrollo de la segunda entrega del proyecto (TB2), el equipo continuó utilizando el repositorio compartido en GitHub como principal herramienta de colaboración, control de versiones y seguimiento del avance de la implementación. Durante esta etapa, el enfoque principal estuvo orientado a la construcción de la primera versión funcional de la solución, abarcando actividades relacionadas con la planificación ágil, implementación de funcionalidades, configuración del entorno de desarrollo, despliegue de aplicaciones, documentación de servicios, pruebas y validación con usuarios.
+
+Las actividades de la entrega fueron distribuidas entre los integrantes del equipo de acuerdo con sus responsabilidades dentro del proceso de desarrollo. Esta organización permitió abordar de manera paralela los distintos componentes técnicos y documentales del proyecto, manteniendo la trazabilidad de los avances y garantizando la integración continua del trabajo realizado. Las responsabilidades fueron las siguientes:
+
+- Sebastián Omar Real Calderón: encargado de la implementación de la solución, incluyendo el desarrollo de la sección *Solution Implementation*, la planificación del Sprint 1 mediante la elaboración del *Sprint Planning 1* y *Sprint Backlog 1*, así como la recopilación de evidencias de desarrollo, pruebas y ejecución para el *Sprint Review*. Asimismo, fue responsable de documentar los indicadores de colaboración del equipo durante el sprint mediante la sección *Team Collaboration Insights during Sprint*.
+
+- José Antonio Alejo Cárdenas: responsable de la configuración del entorno de desarrollo del proyecto y la gestión del código fuente, desarrollando las secciones *Software Development Environment Configuration* y *Source Code Management*. Además, estuvo a cargo del diseño de las entrevistas de validación utilizadas para evaluar la aceptación y utilidad de las funcionalidades implementadas durante el sprint.
+
+- Sebastián Pacheco Astiguetta: encargado de la elaboración de los prototipos de las aplicaciones y de la documentación de los servicios desarrollados. Asimismo, desarrolló las secciones *Services Documentation Evidence for Sprint Review* y *Software Deployment Evidence for Sprint Review*, documentando el despliegue de los componentes implementados. También fue responsable de la producción y edición del video demostrativo del producto presentado como parte de la entrega.
+
+- Russell Stephen Romero Qwistgaard: responsable de la definición de estándares de desarrollo mediante la elaboración de la sección *Source Code Style Guide and Conventions*. Adicionalmente, estuvo a cargo de la configuración de despliegue de las aplicaciones y de la ejecución de las evaluaciones heurísticas, documentando los hallazgos relacionados con la experiencia de usuario y la usabilidad de la solución.
+
+Para la gestión del trabajo colaborativo, el equipo mantuvo el flujo de trabajo basado en Git y GitHub, utilizando ramas de desarrollo para la implementación de funcionalidades, corrección de incidencias y elaboración de la documentación. Cada integrante realizó commits de manera continua sobre sus respectivas tareas, integrando posteriormente los cambios mediante pull requests revisados por los miembros del equipo antes de su incorporación a la rama principal.
+
+Este enfoque permitió mantener un historial detallado de la evolución del proyecto, facilitando la coordinación entre los integrantes, la resolución de conflictos y la validación progresiva de las funcionalidades implementadas. Asimismo, favoreció la integración continua de los componentes desarrollados y la generación de evidencias asociadas al Sprint 1.
+
+Como evidencia del proceso colaborativo desarrollado durante esta entrega, se incluirán capturas de los analíticos del repositorio correspondientes al TB2, donde se visualizará la actividad de commits, contribuciones por integrante, historial de ramas y pull requests gestionados durante el sprint. Estas evidencias complementan el Registro de Versiones del Informe y permiten verificar la participación activa de cada miembro del equipo en la construcción de la solución propuesta.
+
+![Pulse TB2](assets/images/misc/insights/tb2/tb2_pulse.png)
+
+![Collaborators TB2](assets/images/misc/insights/tb2/tb2_collaborators.png)
+
+![Network TB2](assets/images/misc/insights/tb2/tb2_network.png)
+
+Distribución de Commits por Integrante:
+
+| Integrante                        | Cantidad de Commits |
+| --------------------------------- | ------------------- |
+| Sebastián Omar Real Calderón      | XX                  |
+| José Antonio Alejo Cárdenas       | XX                  |
+| Sebastián Pacheco Astiguetta      | XX                  |
+| Russell Stephen Romero Qwistgaard | XX                  |
+
+
 <div style="page-break-after: always;"></div>
 
 **Contenido**
