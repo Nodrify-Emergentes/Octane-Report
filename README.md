@@ -4963,8 +4963,6 @@ Tabla de Commits:
 
 Se documentan los resultados obtenidos durante el Sprint calculado mediante Sprint Velocity, mostrando evidencias por capturas de pantalla relevantes, evidenciando el progreso alcanzado. Adicionalmente, se incluye un video demostrativo que ilustra la funcionalidad lograda, destacando los avances relacionados al user goal del sprint presente.
 
-Video de ejecución Web App + Mobile App: [https://tinyurl.com/yhwkddph](https://tinyurl.com/yhwkddph)
-
 **Landing Page**
 
 ![Landing Screen 1](assets/images/chapter-7/sprint-1/execution-evidence/landing-screen-1.png)
@@ -4980,6 +4978,8 @@ Video de ejecución Web App + Mobile App: [https://tinyurl.com/yhwkddph](https:/
 ![Landing Screen 6](assets/images/chapter-7/sprint-1/execution-evidence/landing-screen-6.png)
 
 ![Landing Screen 7](assets/images/chapter-7/sprint-1/execution-evidence/landing-screen-7.png)
+
+Video de demostración del Landing Page: [https://tinyurl.com/7avrvj59](https://tinyurl.com/7avrvj59)
 
 Link al Landing Page: [https://nodrify-emergentes.github.io/Octane-Landing-Page/](https://nodrify-emergentes.github.io/Octane-Landing-Page/)
   
