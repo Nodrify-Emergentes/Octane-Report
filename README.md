@@ -4569,6 +4569,10 @@ El equipo adopta convenciones estandarizadas de codificación para asegurar la c
 
 #### 7.2.1.5 Execution Evidence for Sprint Review
 
+Se documentan los resultados obtenidos durante el Sprint calculado mediante Sprint Velocity, mostrando evidencias por capturas de pantalla relevantes, evidenciando el progreso alcanzado. Adicionalmente, se incluye un video demostrativo que ilustra la funcionalidad lograda, destacando los avances relacionados al user goal del sprint presente.
+
+Video de ejecución Web App + Mobile App: [https://tinyurl.com/yhwkddph](https://tinyurl.com/yhwkddph)
+
 #### 7.2.1.6 Services Documentation Evidence for Sprint Review
 
 #### 7.2.1.7 Software Deployment Evidence for Sprint Review
