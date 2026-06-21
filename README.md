@@ -5082,6 +5082,10 @@ Los prototipos Web Application, Mobile Application, Backend y otros prototipos r
 
 ## 7.4 Video About-the-Product
 
+Realizamos un video que presenta nuestro producto a los usuarios interesados, destacando las características principales y los beneficios que ofrece. El video también está contenido en la Landing Page para su visualización.
+
+Link al video: [https://youtu.be/lJoTszF14tM](https://youtu.be/lJoTszF14tM)
+
 # Conclusiones
 
 El desarrollo del proyecto permitió integrar enfoques de análisis de negocio, diseño centrado en el usuario, modelado de dominio y arquitectura de software, logrando una visión más completa de la solución propuesta. Mediante herramientas como Lean UX, Impact Mapping, Event Storming y Context Mapping, el equipo pudo comprender mejor la problemática, definir las necesidades de los usuarios y alinear la propuesta con los objetivos del negocio.
