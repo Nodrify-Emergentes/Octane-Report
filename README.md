@@ -4507,8 +4507,240 @@ El equipo adopta convenciones estandarizadas de codificación para asegurar la c
 ![Sprint Backlog 1 Trello](assets/images/chapter-7/sprint-1-backlog.png)
 
 #### 7.2.1.3 Development Evidence for Sprint Review
+Para la implementación, en este sprint se han realizado avances relacionados con la creación de cuentas, la asignación entre dueños de motocicletas y mecánicos, y la visualización de datos técnicos de los modelos de motocicletas.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|------------|--------|-----------|----------------|---------------------|--------------------|
+|            |        |           |                |                     |                    |
 
 #### 7.2.1.4 Testing Suite Evidence for Sprint Review
+En esta sección se muestran los archivos en gherkin realizados en el repositorio de pruebas Octane-Testing, así como los commits relevantes del mismo.
+
+##### US-001.feature
+```gherkin
+Feature: Manejo de asignaciones
+
+  Como mecánico
+  Quiero generar códigos de vinculación
+  Para asociar clientes y motocicletas a mi taller
+
+  Scenario: Generar código de vinculación
+    Given que el mecánico ha iniciado sesión
+    When solicita generar un código de vinculación
+    Then el sistema genera un código único
+    And muestra el código al mecánico
+
+  Scenario: Visualizar asignaciones existentes
+    Given que el mecánico posee motocicletas vinculadas
+    When accede al panel de asignaciones
+    Then el sistema muestra la lista de asignaciones activas
+```
+
+##### US-002.feature
+```gherkin
+Feature: Vinculación de asignación
+
+  Como dueño de motocicleta
+  Quiero ingresar un código de vinculación
+  Para asociarme con un mecánico
+
+  Scenario: Vinculación exitosa
+    Given que el usuario posee un código válido
+    When ingresa el código de vinculación
+    And confirma la operación
+    Then el sistema vincula la motocicleta al mecánico correspondiente
+
+  Scenario: Código inválido
+    Given que el usuario posee un código inválido
+    When intenta realizar la vinculación
+    Then el sistema muestra un mensaje de error
+    And no realiza la asociación
+```
+
+##### US-003.feature
+```gherkin
+Feature: Creación de perfil para dueños de motocicletas
+
+  Como dueño de motocicleta
+  Quiero crear una cuenta en la plataforma
+  Para gestionar la información de mis vehículos
+
+  Scenario: Registro exitoso de dueño
+    Given que el usuario accede al formulario de registro
+    When completa correctamente todos los datos requeridos
+    And confirma el registro
+    Then el sistema crea la cuenta del propietario
+
+  Scenario: Contraseña inválida
+    Given que el usuario se encuentra en el formulario de registro
+    When ingresa una contraseña que no cumple las reglas definidas
+    Then el sistema muestra una advertencia
+    And solicita una contraseña válida
+```
+
+##### US-004.feature
+```gherkin
+Feature: Creación de perfil para mecánicos
+
+  Como mecánico
+  Quiero crear una cuenta en la plataforma
+  Para gestionar los vehículos de mis clientes
+
+  Scenario: Registro exitoso de mecánico
+    Given que el usuario se encuentra en el formulario de registro
+    When completa todos los datos requeridos
+    And selecciona un plan de suscripción
+    And confirma el registro
+    Then el sistema crea el perfil de mecánico
+    And muestra un mensaje de confirmación
+
+  Scenario: Correo ya registrado
+    Given que existe una cuenta asociada al correo ingresado
+    When el usuario intenta registrarse
+    Then el sistema informa que el correo ya se encuentra registrado
+
+  Scenario: Datos obligatorios incompletos
+    Given que el usuario se encuentra en el formulario de registro
+    When omite uno o más campos obligatorios
+    Then el sistema impide el registro
+    And muestra los campos faltantes
+```
+
+##### US-005.feature
+```gherkin
+Feature: Autenticación en la aplicación web
+
+  Como usuario registrado
+  Quiero iniciar sesión en la plataforma
+  Para acceder a las funcionalidades correspondientes a mi perfil
+
+  Scenario: Inicio de sesión exitoso
+    Given que el usuario posee una cuenta registrada
+    And se encuentra en la pantalla de inicio de sesión
+    When ingresa un correo y contraseña válidos
+    And presiona el botón "Iniciar sesión"
+    Then el sistema autentica al usuario
+    And redirige al panel principal
+
+  Scenario: Credenciales incorrectas
+    Given que el usuario se encuentra en la pantalla de inicio de sesión
+    When ingresa un correo o contraseña incorrectos
+    And presiona el botón "Iniciar sesión"
+    Then el sistema muestra un mensaje de error
+    And no permite el acceso
+
+  Scenario: Campos vacíos
+    Given que el usuario se encuentra en la pantalla de inicio de sesión
+    When intenta iniciar sesión sin completar los campos requeridos
+    Then el sistema solicita completar la información faltante
+```
+
+##### US-022.feature
+```gherkin
+Feature: Visualización de especificaciones detalladas
+
+Como dueño de motocicletas
+Quiero ver una comparación detallada de todas las especificaciones técnicas
+Para tomar decisiones informadas basadas en datos técnicos precisos
+
+Scenario: Listado completo de especificaciones
+Given que se están comparando dos vehículos
+When el usuario visualiza la tarjeta de especificaciones
+Then el sistema muestra las categorías técnicas organizadas en filas
+And presenta los valores de ambos vehículos lado a lado
+
+Scenario: Destacado de valores superiores
+Given que dos vehículos tienen valores numéricos diferentes en una especificación
+When el sistema realiza la comparación
+Then resalta visualmente el valor superior
+And muestra un indicador de ganador
+
+Scenario: Manejo de datos faltantes
+Given que un vehículo no tiene información para una especificación
+When el sistema muestra la comparación
+Then presenta un guion "-"
+And evita mostrar valores vacíos o incorrectos
+
+Scenario: Comparación entre motocicletas registradas
+Given que el usuario posee al menos dos motocicletas registradas
+When selecciona dos vehículos para comparar
+Then el sistema genera la vista comparativa de especificaciones
+```
+
+##### US-024.feature
+```gherkin
+Feature: Visualización de vehículos
+
+  Como dueño de motocicleta
+  Quiero visualizar mis vehículos registrados
+  Para acceder rápidamente a su información
+
+  Scenario: Mostrar listado de vehículos
+    Given que el usuario posee vehículos registrados
+    When accede a la sección de vehículos
+    Then el sistema muestra la lista de motocicletas asociadas
+
+  Scenario: Usuario sin vehículos registrados
+    Given que el usuario no posee vehículos registrados
+    When accede a la sección de vehículos
+    Then el sistema muestra un mensaje indicando que no existen vehículos registrados
+```
+
+##### US-025.feature
+```gherkin
+Feature: Visualización de detalles de vehículo
+
+  Como dueño de motocicleta
+  Quiero consultar los detalles de una motocicleta
+  Para conocer sus características registradas
+
+  Scenario: Visualizar detalle de motocicleta
+    Given que el usuario posee una motocicleta registrada
+    When selecciona una motocicleta del listado
+    Then el sistema muestra la ficha detallada del vehículo
+
+  Scenario: Vehículo inexistente
+    Given que el usuario intenta acceder a un vehículo inexistente
+    When solicita la visualización de detalles
+    Then el sistema muestra un mensaje de error
+```
+
+##### US-026.feature
+```gherkin
+Feature: Registro de vehículo
+
+  Como dueño de motocicleta
+  Quiero registrar mis motocicletas
+  Para administrarlas dentro de la plataforma
+
+  Scenario: Registro exitoso de motocicleta
+    Given que el usuario ha iniciado sesión
+    When completa la información requerida del vehículo
+    And confirma el registro
+    Then el sistema almacena la motocicleta
+    And la asocia a la cuenta del usuario
+
+  Scenario: Datos obligatorios incompletos
+    Given que el usuario se encuentra en el formulario de registro de vehículo
+    When intenta registrar la motocicleta sin completar todos los campos obligatorios
+    Then el sistema impide el registro
+    And muestra un mensaje de validación
+```
+
+Tabla de Commits:
+
+| Repository     | Branch | Commit Id                                | Commit Message                     | Commit Message Body | Commited on (Date) |
+|----------------|--------|------------------------------------------|------------------------------------|---------------------|--------------------|
+| Octane-Testing | main   | aa5206cc3c4f441b5fb651cffd368b95b0cd001e | feat: added feature file for us022 |                     | 2026-06-21         |
+| Octane-Testing | main   | 45e75ae2ef656f4b7fa6345adbd9e7b01dfa1f4a | feat: added feature file for us002 |                     | 2026-06-21         |
+| Octane-Testing | main   | 11aa8c4a8157e2e00a12387f9196447cfdb5ba58 | feat: added feature file for us001 |                     | 2026-06-21         |
+| Octane-Testing | main   | c4a6b4c9a07b012bc2a9ff8e6333fbb0e4337c6d | feat: added feature file for us025 |                     | 2026-06-21         |
+| Octane-Testing | main   | 43a1c80ba1c5194c567033349b7993087b94f766 | feat: added feature file for us024 |                     | 2026-06-21         |
+| Octane-Testing | main   | bdb31b9caeccc34bf7c8348d2e24c5efe6ad9b29 | feat: added feature file for us026 |                     | 2026-06-21         |
+| Octane-Testing | main   | 0ea1425038a3c9d500b534b4dc4632b93ba1bcdc | Rename US-004 to US-004.feature    |                     | 2026-06-21         |
+| Octane-Testing | main   | 50944f09d5970f6b30c0bdf3969858f2e597e161 | feat: added feature file for us003 |                     | 2026-06-21         |
+| Octane-Testing | main   | 1a42fe120606f08ff7b2f784fa32b27946751dbc | feat: added feature file for us004 |                     | 2026-06-21         |
+| Octane-Testing | main   | 684c439b1605cc1988ba01587f3bf7ed4e9aa01f | feat: added feature file for us005 |                     | 2026-06-21         |
 
 #### 7.2.1.5 Execution Evidence for Sprint Review
 
