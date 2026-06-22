@@ -5156,16 +5156,15 @@ A continuación, se presentan detalles de las entrevistas realizadas a los mecá
 
 
 ### 7.3.3 Evaluaciones segun heurísticas
-#### UX Heuristics & Principles Evaluation
 
-#### Usability – Inclusive Design – Information Architecture
+**UX Heuristics & Principles Evaluation**
+ 
+*Usability – Inclusive Design – Information Architecture*
 
-**SITE O APP A EVALUAR:** Octane  
-**ALCANCE DE LA EVALUACIÓN:** Web Application
+SITE O APP A EVALUAR: Octane  
+ALCANCE DE LA EVALUACIÓN: Web Application
 
-**TAREAS A EVALUAR:**
-
-El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+TAREAS A EVALUAR:
 
 - Registro de nuevos usuarios
 - Selección de rol de usuario
@@ -5185,40 +5184,34 @@ No están incluidas en esta versión de la evaluación las siguientes tareas:
 - Consumo avanzado de telemetría en tiempo real
 - Operaciones de administración interna o backend
 
-**ESCALA DE SEVERIDAD:**
+**Niveles de Severidad de Problemas de Usabilidad**
 
 Los errores serán puntuados tomando en cuenta la siguiente escala de severidad.
 
-## Niveles de Severidad de Problemas de Usabilidad
+| **Nivel** | **Descripción**                                                                                                                                                              |
+|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1         | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2         | Problema menor: puede ocurrir con cierta frecuencia o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja de resolución.             |
+| 3         | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlo por sí solos. Es importante que sea corregido y se le debe asignar una prioridad alta.     |
+| 4         | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento.            |
 
-| **Nivel** | **Descripción** |
-|-------|-------------|
-| 1 | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
-| 2 | Problema menor: puede ocurrir con cierta frecuencia o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja de resolución. |
-| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlo por sí solos. Es importante que sea corregido y se le debe asignar una prioridad alta. |
-| 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
-
-**TABLA RESUMEN:**
+*Tabla Resumen de Evaluación Heurística - Octane*
 
 La siguiente tabla presenta un resumen de los resultados obtenidos en la evaluación:
 
-### Tabla Resumen de Evaluación Heurística - Octane
+| Nº | Problema Detectado                                                            | Escala de Severidad | Heurística / Principio Violado                                       |
+|----|-------------------------------------------------------------------------------|---------------------|----------------------------------------------------------------------|
+| 1  | Jerarquía visual poco clara en la sección inicial de la Landing Page          | 2                   | Usability: Consistencia y estándares                                 |
+| 2  | Registro de nuevos usuarios con retroalimentación insuficiente                | 3                   | Usability: Visibilidad del estado del sistema                        |
+| 3  | Selección de rol y autenticación con flujo poco evidente                      | 2                   | Usability: Reconocimiento antes que recuerdo                         |
+| 4  | Registro de motocicleta con campos densos y poca guía contextual              | 3                   | Inclusive Design: Prevención de errores                              |
+| 5  | Gestión de asignaciones y vinculación con mecánico con confirmación mejorable | 3                   | Usability: Flexibilidad y eficiencia de uso                          |
+| 6  | Comparación de motocicletas con falta de criterios visuales de apoyo          | 2                   | Information Architecture: Correspondencia entre sistema y mundo real |
+| 7  | Notificaciones y alertas sin acciones directas o acceso rápido al detalle     | 3                   | Usability: Control y libertad del usuario                            |
 
-| Nº | Problema Detectado | Escala de Severidad | Heurística / Principio Violado |
-|----|---------------------|---------------------|---------------------------------|
-| 1 | Jerarquía visual poco clara en la sección inicial de la Landing Page | 2 | Usability: Consistencia y estándares |
-| 2 | Registro de nuevos usuarios con retroalimentación insuficiente | 3 | Usability: Visibilidad del estado del sistema |
-| 3 | Selección de rol y autenticación con flujo poco evidente | 2 | Usability: Reconocimiento antes que recuerdo |
-| 4 | Registro de motocicleta con campos densos y poca guía contextual | 3 | Inclusive Design: Prevención de errores |
-| 5 | Gestión de asignaciones y vinculación con mecánico con confirmación mejorable | 3 | Usability: Flexibilidad y eficiencia de uso |
-| 6 | Comparación de motocicletas con falta de criterios visuales de apoyo | 2 | Information Architecture: Correspondencia entre sistema y mundo real |
-| 7 | Notificaciones y alertas sin acciones directas o acceso rápido al detalle | 3 | Usability: Control y libertad del usuario |
+**DESCRIPCIÓN DE PROBLEMAS**
 
----
-
-## DESCRIPCIÓN DE PROBLEMAS
-
-### PROBLEMA #1: Registro de nuevos usuarios con retroalimentación insuficiente
+*PROBLEMA #1: Registro de nuevos usuarios con retroalimentación insuficiente*
 
 - **Severidad:** 3  
 - **Heurística violada:** Visibilidad del estado del sistema
@@ -5229,7 +5222,7 @@ La siguiente tabla presenta un resumen de los resultados obtenidos en la evaluac
 - **Recomendación:**  
   Implementar validación en tiempo real en los campos críticos, con mensajes claros y visibles debajo de cada input. También se recomienda mostrar confirmación inmediata cuando el registro sea exitoso.
 
-### PROBLEMA #2: Selección de rol y autenticación con flujo poco evidente
+*PROBLEMA #2: Selección de rol y autenticación con flujo poco evidente*
 
 - **Severidad:** 2  
 - **Heurística violada:** Reconocimiento antes que recuerdo
@@ -5242,7 +5235,7 @@ La siguiente tabla presenta un resumen de los resultados obtenidos en la evaluac
 - **Recomendación:**  
   Incorporar textos de ayuda breves, iconografía de apoyo y señales visuales más explícitas para guiar al usuario durante el proceso de autenticación y selección de rol.
 
-### PROBLEMA #3: Registro de motocicleta con campos densos y poca guía contextual
+*PROBLEMA #3: Registro de motocicleta con campos densos y poca guía contextual*
 
 - **Severidad:** 3  
 - **Heurística violada:** Inclusive Design: Prevención de errores
@@ -5255,7 +5248,7 @@ La siguiente tabla presenta un resumen de los resultados obtenidos en la evaluac
 - **Recomendación:**  
   Dividir el formulario en secciones más pequeñas, agregar ejemplos en campos complejos y utilizar ayudas contextuales para orientar al usuario sin sobrecargar la interfaz.
 
-### PROBLEMA #4: Gestión de asignaciones y vinculación con mecánico con confirmación mejorable
+*PROBLEMA #4: Gestión de asignaciones y vinculación con mecánico con confirmación mejorable*
 
 - **Severidad:** 3  
 - **Heurística violada:** Control y libertad del usuario
@@ -5268,7 +5261,7 @@ La siguiente tabla presenta un resumen de los resultados obtenidos en la evaluac
 - **Recomendación:**  
   Mostrar confirmaciones explícitas con el nombre del mecánico, el vehículo asociado y el estado final de la operación. También sería útil permitir una reversión sencilla en caso de selección incorrecta.
 
-### PROBLEMA #5: Comparación de motocicletas con falta de criterios visuales de apoyo
+*PROBLEMA #5: Comparación de motocicletas con falta de criterios visuales de apoyo*
 
 - **Severidad:** 2  
 - **Heurística violada:** Information Architecture: Correspondencia entre sistema y mundo real
@@ -5281,7 +5274,7 @@ La siguiente tabla presenta un resumen de los resultados obtenidos en la evaluac
 - **Recomendación:**  
   Reordenar la comparación por bloques temáticos, usar resaltado visual para diferencias clave y mantener etiquetas más cercanas al lenguaje cotidiano de los usuarios.
 
-### PROBLEMA #6: Notificaciones y alertas sin acciones directas o acceso rápido al detalle
+*PROBLEMA #6: Notificaciones y alertas sin acciones directas o acceso rápido al detalle*
 
 - **Severidad:** 3  
 - **Heurística violada:** Flexibilidad y eficiencia de uso
@@ -5313,6 +5306,7 @@ Finalmente, se concluye que el trabajo realizado en TB1 y TP permitió construir
 # Video About The Team
 
 ![About The Team](assets/images/misc/att.png)
+
 Link del Video: https://drive.google.com/file/d/1njoE5HboSn6svxh7VouiEjtAzPO5nXrk/view
 
 # Bibliografía
