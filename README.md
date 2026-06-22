@@ -5079,8 +5079,199 @@ Durante este sprint, el equipo se enfocó en realizar las tareas para la funcion
 8. ¿Crees que esta funcionalidad de comparación de especificaciones puede ayudarte a brindar mejores recomendaciones a tus clientes durante el mantenimiento o evaluación de vehículos?
 
 ### 7.3.2 Registro de Entrevistas
+En esta sección se registran los puntos más relevantes de las entrevistas realizadas a los mecánicos y dueños de motos luego de interactuar con nuestro producto. Las entrevistas, en formato de video, se encuentran en el siguiente enlace: https://tinyurl.com/yxxpvrh2
+
+A continuación, se presentan detalles de las entrevistas realizadas a los dueños de motos:
+
+| Entrevista 1              | ![Josue](assets/images/chapter-7/Interviews/interview1.png) |
+|---------------------------|---------------------------------------------------------------------|
+| Nombre del entrevistado   | Josue Paiva                                                    |
+| Edad                      | 23                                                                  |
+| Distrito                  | San Miguel                                                          |
+| Ocupación                 | Dueño de moto eléctrica                                                |
+| Duración de la Entrevista | 10:00                                                                |
+| Minuto de Inicio          | 0:00                                                                |
+
+
+| Entrevista 2              | ![Piero](assets/images/chapter-7/Interviews/interview2.png) |
+|---------------------------|---------------------------------------------------------------------|
+| Nombre del entrevistado   | Piero Velarde                                                    |
+| Edad                      | 23                                                                  |
+| Distrito                  | Pueblo libre                                                           |
+| Ocupación                 | Dueño de moto convencional                                                |
+| Duración de la Entrevista | 11:01                                                                |
+| Minuto de Inicio          | 10:01                                                                |
+
+
+| Entrevista 3              | ![Ítalo](assets/images/chapter-7/Interviews/interview3.png) |
+|---------------------------|---------------------------------------------------------------------|
+| Nombre del entrevistado   | Ítalo Verona                                                    |
+| Edad                      | 22                                                                  |
+| Distrito                  | San Miguel                                                          |
+| Ocupación                 | Universitario dueño de moto convencional                             |
+| Duración de la Entrevista | 5:53                                                                |
+| Minuto de Inicio          | 21:02                                                                |
+
+
+A continuación, se presentan detalles de las entrevistas realizadas a los mecánicos:
+
+| Entrevista 4              | ![Eloy](assets/images/chapter-7/Interviews/interview4.png) |
+|---------------------------|---------------------------------------------------------------------|
+| Nombre del entrevistado   | Eloy Padilla                                                    |
+| Edad                      | 53                                                                  |
+| Distrito                  | San Miguel                                                          |
+| Ocupación                 | Mecánico                                                |
+| Duración de la Entrevista | 8:10                                                                |
+| Minuto de Inicio          | 26:56                                                                |
+
+
+| Entrevista 5              | ![Orlando](assets/images/chapter-7/Interviews/interview5.png) |
+|---------------------------|---------------------------------------------------------------------|
+| Nombre del entrevistado   | Orlando Romero                                                   |
+| Edad                      | 60                                                                  |
+| Distrito                  | San Miguel                                                          |
+| Ocupación                 | Mecánico                                                           |
+| Duración de la Entrevista | 4:35                                                                |
+| Minuto de Inicio          | 35:07                                                                |
+
+
 
 ### 7.3.3 Evaluaciones segun heurísticas
+#### UX Heuristics & Principles Evaluation
+
+#### Usability – Inclusive Design – Information Architecture
+
+**SITE O APP A EVALUAR:** Octane  
+**ALCANCE DE LA EVALUACIÓN:** Web Application
+
+**TAREAS A EVALUAR:**
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+- Registro de nuevos usuarios
+- Selección de rol de usuario
+- Inicio de sesión
+- Registro de motocicleta
+- Visualización del listado y detalle de vehículos
+- Vinculación de motocicleta con mecánico
+- Comparación de especificaciones entre motocicletas
+- Gestión de asignaciones
+- Recepción de notificaciones y alertas
+- Actualización de perfil del usuario
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+
+- Uso completo de la aplicación móvil
+- Flujos de pago o suscripción
+- Consumo avanzado de telemetría en tiempo real
+- Operaciones de administración interna o backend
+
+**ESCALA DE SEVERIDAD:**
+
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad.
+
+## Niveles de Severidad de Problemas de Usabilidad
+
+| **Nivel** | **Descripción** |
+|-------|-------------|
+| 1 | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2 | Problema menor: puede ocurrir con cierta frecuencia o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja de resolución. |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlo por sí solos. Es importante que sea corregido y se le debe asignar una prioridad alta. |
+| 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+**TABLA RESUMEN:**
+
+La siguiente tabla presenta un resumen de los resultados obtenidos en la evaluación:
+
+### Tabla Resumen de Evaluación Heurística - Octane
+
+| Nº | Problema Detectado | Escala de Severidad | Heurística / Principio Violado |
+|----|---------------------|---------------------|---------------------------------|
+| 1 | Jerarquía visual poco clara en la sección inicial de la Landing Page | 2 | Usability: Consistencia y estándares |
+| 2 | Registro de nuevos usuarios con retroalimentación insuficiente | 3 | Usability: Visibilidad del estado del sistema |
+| 3 | Selección de rol y autenticación con flujo poco evidente | 2 | Usability: Reconocimiento antes que recuerdo |
+| 4 | Registro de motocicleta con campos densos y poca guía contextual | 3 | Inclusive Design: Prevención de errores |
+| 5 | Gestión de asignaciones y vinculación con mecánico con confirmación mejorable | 3 | Usability: Flexibilidad y eficiencia de uso |
+| 6 | Comparación de motocicletas con falta de criterios visuales de apoyo | 2 | Information Architecture: Correspondencia entre sistema y mundo real |
+| 7 | Notificaciones y alertas sin acciones directas o acceso rápido al detalle | 3 | Usability: Control y libertad del usuario |
+
+---
+
+## DESCRIPCIÓN DE PROBLEMAS
+
+### PROBLEMA #1: Registro de nuevos usuarios con retroalimentación insuficiente
+
+- **Severidad:** 3  
+- **Heurística violada:** Visibilidad del estado del sistema
+
+- **Problema:**  
+  Durante el registro, el sistema no siempre comunica de forma inmediata si un campo está incompleto, si el correo ya existe o si la información ingresada cumple con el formato esperado. Esto puede generar confusión y obligar al usuario a repetir el proceso.
+
+- **Recomendación:**  
+  Implementar validación en tiempo real en los campos críticos, con mensajes claros y visibles debajo de cada input. También se recomienda mostrar confirmación inmediata cuando el registro sea exitoso.
+
+### PROBLEMA #2: Selección de rol y autenticación con flujo poco evidente
+
+- **Severidad:** 2  
+- **Heurística violada:** Reconocimiento antes que recuerdo
+
+- **Problema:**  
+  En el flujo de acceso, la relación entre registro, selección de rol e inicio de sesión puede no ser suficientemente evidente para un usuario nuevo. Esto incrementa la probabilidad de error al momento de elegir entre cuenta de dueño o mecánico.
+
+![Problema 2](assets/images/chapter-7/heuristics/problema-2.png)
+
+- **Recomendación:**  
+  Incorporar textos de ayuda breves, iconografía de apoyo y señales visuales más explícitas para guiar al usuario durante el proceso de autenticación y selección de rol.
+
+### PROBLEMA #3: Registro de motocicleta con campos densos y poca guía contextual
+
+- **Severidad:** 3  
+- **Heurística violada:** Inclusive Design: Prevención de errores
+
+- **Problema:**  
+  El formulario de registro de motocicleta concentra varios campos relevantes en una sola vista, lo que puede volver la experiencia pesada para usuarios primerizos. Además, algunos campos podrían requerir ejemplos o ayudas adicionales para evitar errores de interpretación.
+
+![Problema 3](assets/images/chapter-7/heuristics/problema-3.png)
+
+- **Recomendación:**  
+  Dividir el formulario en secciones más pequeñas, agregar ejemplos en campos complejos y utilizar ayudas contextuales para orientar al usuario sin sobrecargar la interfaz.
+
+### PROBLEMA #4: Gestión de asignaciones y vinculación con mecánico con confirmación mejorable
+
+- **Severidad:** 3  
+- **Heurística violada:** Control y libertad del usuario
+
+- **Problema:**  
+  Al vincular una motocicleta con un mecánico o administrar asignaciones existentes, la interfaz no siempre deja claro si la operación fue completada correctamente, si quedó pendiente o si puede revertirse. Esto puede generar incertidumbre en el usuario.
+
+![Problema 4](assets/images/chapter-7/heuristics/problema-4.png)
+
+- **Recomendación:**  
+  Mostrar confirmaciones explícitas con el nombre del mecánico, el vehículo asociado y el estado final de la operación. También sería útil permitir una reversión sencilla en caso de selección incorrecta.
+
+### PROBLEMA #5: Comparación de motocicletas con falta de criterios visuales de apoyo
+
+- **Severidad:** 2  
+- **Heurística violada:** Information Architecture: Correspondencia entre sistema y mundo real
+
+- **Problema:**  
+  La vista comparativa presenta información valiosa, pero no siempre organiza los atributos de forma suficientemente intuitiva para facilitar la lectura rápida. Esto dificulta que el usuario identifique con facilidad diferencias relevantes entre una moto y otra.
+
+![Problema 5](assets/images/chapter-7/heuristics/problema-5.png)
+
+- **Recomendación:**  
+  Reordenar la comparación por bloques temáticos, usar resaltado visual para diferencias clave y mantener etiquetas más cercanas al lenguaje cotidiano de los usuarios.
+
+### PROBLEMA #6: Notificaciones y alertas sin acciones directas o acceso rápido al detalle
+
+- **Severidad:** 3  
+- **Heurística violada:** Flexibilidad y eficiencia de uso
+
+- **Problema:**  
+  Las notificaciones informan sobre eventos importantes, pero no siempre incluyen una acción directa que permita acceder al detalle, marcar como leído o ir a la sección relacionada de manera inmediata.
+
+- **Recomendación:**  
+  Añadir botones de acción rápida dentro de cada notificación, como “Ver detalle”, “Marcar como leído” o “Ir al vehículo”, para reducir pasos y mejorar la eficiencia de uso.
 
 ## 7.4 Video About-the-Product
 
