@@ -5001,6 +5001,8 @@ Video de Flujo: https://youtu.be/uzMdfT1QGno
 
 #### 7.2.1.8 Team Collaboration Insights During Sprint
 
+Durante este sprint, el equipo se enfocó en realizar las tareas para la funcionalidad básica de la aplicación. Tanto en el apartado de frontend como en el de backend para la web application y la mobile application.
+
 ## 7.3 Validation Interviews
 
 ### 7.3.1 Diseño de Entrevistas
