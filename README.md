@@ -5098,6 +5098,11 @@ Por otro lado, el proyecto evidenció la importancia de la comunicación oral y 
 
 Finalmente, se concluye que el trabajo realizado en TB1 y TP permitió construir una base sólida para continuar con el desarrollo del proyecto. La combinación de metodologías estructuradas, documentación clara y trabajo colaborativo contribuyó a reducir riesgos, ordenar la evolución de la solución y preparar al equipo para las siguientes etapas de Octane.
 
+# Video About The Team
+
+![About The Team](assets/images/misc/att.png)
+Link del Video: https://drive.google.com/file/d/1njoE5HboSn6svxh7VouiEjtAzPO5nXrk/view
+
 # Bibliografía
 
 Freitas, M. C. (2025, 19 de julio). Lima registra 1.668 muertes por accidentes de tránsito en lo que va del 2025: motociclistas lideran víctimas, según el MTC. Infobae. https://www.infobae.com/peru/2025/07/19/lima-registra-1668-muertes-por-accidentes-de-transito-en-lo-que-va-del-2025-motociclistas-lideran-victimas-segun-el-mtc/
