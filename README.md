@@ -155,11 +155,11 @@ Como evidencia del proceso colaborativo desarrollado durante esta entrega, se in
 Distribución de Commits por Integrante:
 
 | Integrante                        | Cantidad de Commits |
-| --------------------------------- | ------------------- |
-| Sebastián Omar Real Calderón      | XX                  |
-| José Antonio Alejo Cárdenas       | XX                  |
-| Sebastián Pacheco Astiguetta      | XX                  |
-| Russell Stephen Romero Qwistgaard | XX                  |
+|-----------------------------------|---------------------|
+| Sebastián Omar Real Calderón      | 52                  |
+| José Antonio Alejo Cárdenas       | 14                  |
+| Sebastián Pacheco Astiguetta      | 54                  |
+| Russell Stephen Romero Qwistgaard | 58                  |
 
 
 <div style="page-break-after: always;"></div>
