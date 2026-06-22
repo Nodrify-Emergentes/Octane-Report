@@ -126,6 +126,42 @@ Distribución de Commits por Integrante:
 | Sebastián Pacheco Astiguetta      | 38                  |
 | Russell Stephen Romero Qwistgaard | 51                  |
 
+**TB2:**
+
+Para el desarrollo de la segunda entrega del proyecto (TB2), el equipo continuó utilizando el repositorio compartido en GitHub como principal herramienta de colaboración, control de versiones y seguimiento del avance de la implementación. Durante esta etapa, el enfoque principal estuvo orientado a la construcción de la primera versión funcional de la solución, abarcando actividades relacionadas con la planificación ágil, implementación de funcionalidades, configuración del entorno de desarrollo, despliegue de aplicaciones, documentación de servicios, pruebas y validación con usuarios.
+
+Las actividades de la entrega fueron distribuidas entre los integrantes del equipo de acuerdo con sus responsabilidades dentro del proceso de desarrollo. Esta organización permitió abordar de manera paralela los distintos componentes técnicos y documentales del proyecto, manteniendo la trazabilidad de los avances y garantizando la integración continua del trabajo realizado. Las responsabilidades fueron las siguientes:
+
+- Sebastián Omar Real Calderón: encargado de la implementación de la solución, incluyendo el desarrollo de la sección *Solution Implementation*, la planificación del Sprint 1 mediante la elaboración del *Sprint Planning 1* y *Sprint Backlog 1*, así como la recopilación de evidencias de desarrollo, pruebas y ejecución para el *Sprint Review*. Asimismo, fue responsable de documentar los indicadores de colaboración del equipo durante el sprint mediante la sección *Team Collaboration Insights during Sprint*.
+
+- José Antonio Alejo Cárdenas: responsable de la configuración del entorno de desarrollo del proyecto y la gestión del código fuente, desarrollando las secciones *Software Development Environment Configuration* y *Source Code Management*. Además, estuvo a cargo del diseño de las entrevistas de validación utilizadas para evaluar la aceptación y utilidad de las funcionalidades implementadas durante el sprint.
+
+- Sebastián Pacheco Astiguetta: encargado de la elaboración de los prototipos de las aplicaciones y de la documentación de los servicios desarrollados. Asimismo, desarrolló las secciones *Services Documentation Evidence for Sprint Review* y *Software Deployment Evidence for Sprint Review*, documentando el despliegue de los componentes implementados. También fue responsable de la producción y edición del video demostrativo del producto presentado como parte de la entrega.
+
+- Russell Stephen Romero Qwistgaard: responsable de la definición de estándares de desarrollo mediante la elaboración de la sección *Source Code Style Guide and Conventions*. Adicionalmente, estuvo a cargo de la configuración de despliegue de las aplicaciones y de la ejecución de las evaluaciones heurísticas, documentando los hallazgos relacionados con la experiencia de usuario y la usabilidad de la solución.
+
+Para la gestión del trabajo colaborativo, el equipo mantuvo el flujo de trabajo basado en Git y GitHub, utilizando ramas de desarrollo para la implementación de funcionalidades, corrección de incidencias y elaboración de la documentación. Cada integrante realizó commits de manera continua sobre sus respectivas tareas, integrando posteriormente los cambios mediante pull requests revisados por los miembros del equipo antes de su incorporación a la rama principal.
+
+Este enfoque permitió mantener un historial detallado de la evolución del proyecto, facilitando la coordinación entre los integrantes, la resolución de conflictos y la validación progresiva de las funcionalidades implementadas. Asimismo, favoreció la integración continua de los componentes desarrollados y la generación de evidencias asociadas al Sprint 1.
+
+Como evidencia del proceso colaborativo desarrollado durante esta entrega, se incluirán capturas de los analíticos del repositorio correspondientes al TB2, donde se visualizará la actividad de commits, contribuciones por integrante, historial de ramas y pull requests gestionados durante el sprint. Estas evidencias complementan el Registro de Versiones del Informe y permiten verificar la participación activa de cada miembro del equipo en la construcción de la solución propuesta.
+
+![Pulse TB2](assets/images/misc/insights/tb2/tb2_pulse.png)
+
+![Collaborators TB2](assets/images/misc/insights/tb2/tb2_collaborators.png)
+
+![Network TB2](assets/images/misc/insights/tb2/tb2_network.png)
+
+Distribución de Commits por Integrante:
+
+| Integrante                        | Cantidad de Commits |
+|-----------------------------------|---------------------|
+| Sebastián Omar Real Calderón      | 52                  |
+| José Antonio Alejo Cárdenas       | 14                  |
+| Sebastián Pacheco Astiguetta      | 54                  |
+| Russell Stephen Romero Qwistgaard | 58                  |
+
+
 <div style="page-break-after: always;"></div>
 
 **Contenido**
@@ -5304,11 +5340,19 @@ El desarrollo del proyecto permitió integrar enfoques de análisis de negocio, 
 
 Asimismo, los artefactos elaborados en TB1, como User Personas, escenarios As-Is y To-Be, atributos de calidad y drivers arquitectónicos, sirvieron como base para la toma de decisiones de diseño. En el TP, esta base se fortaleció con la definición de los Bounded Contexts, Style Guidelines, Information Architecture y diseños UX/UI, permitiendo organizar mejor las responsabilidades del sistema y mantener coherencia entre la arquitectura, la experiencia de usuario y la identidad visual del producto.
 
-El uso de GitHub facilitó la colaboración del equipo mediante ramas, commits y pull requests, permitiendo organizar los aportes individuales y mantener trazabilidad sobre los cambios realizados. Esta dinámica ayudó a integrar progresivamente el trabajo de cada integrante y a conservar la calidad y consistencia del informe.
+Durante TB2, el proyecto evolucionó desde una propuesta conceptual hacia una solución funcional. La implementación de las funcionalidades priorizadas en el Sprint 1 permitió materializar los requerimientos definidos en etapas anteriores, validando la utilidad de los artefactos de análisis y diseño desarrollados previamente. La construcción de los módulos de autenticación, gestión de usuarios, registro de vehículos, asignaciones y visualización de información demostró cómo una adecuada planificación facilita la transición desde la arquitectura hasta la implementación efectiva del sistema.
 
-Por otro lado, el proyecto evidenció la importancia de la comunicación oral y escrita para coordinar avances, explicar decisiones y asegurar que todos los miembros comprendieran los distintos componentes de la solución. Esto fue especialmente importante durante el TP, donde se trabajaron aspectos más específicos del diseño táctico, visual y funcional del sistema.
+El uso de prácticas ágiles mediante Scrum permitió organizar el trabajo en iteraciones incrementales, facilitando la planificación, seguimiento y validación continua de los avances. La definición del Sprint Goal, la elaboración del Sprint Backlog y la ejecución de actividades de revisión contribuyeron a mantener el enfoque del equipo sobre los objetivos prioritarios de la entrega, permitiendo gestionar de manera eficiente el tiempo y los recursos disponibles.
 
-Finalmente, se concluye que el trabajo realizado en TB1 y TP permitió construir una base sólida para continuar con el desarrollo del proyecto. La combinación de metodologías estructuradas, documentación clara y trabajo colaborativo contribuyó a reducir riesgos, ordenar la evolución de la solución y preparar al equipo para las siguientes etapas de Octane.
+Por otro lado, la definición del Testing Suite mediante escenarios BDD escritos en Gherkin permitió formalizar los criterios de aceptación de las funcionalidades implementadas durante el Sprint 1. Estos escenarios facilitaron la validación de los flujos principales del sistema, alineando el comportamiento esperado de la aplicación con los requerimientos funcionales definidos en las User Stories. Complementariamente, las entrevistas de validación permitieron recoger retroalimentación de los usuarios objetivo respecto a la utilidad y claridad de las funcionalidades desarrolladas. Estas actividades evidenciaron la importancia de incorporar mecanismos de validación temprana para reducir riesgos y detectar oportunidades de mejora antes de avanzar hacia etapas posteriores del proyecto.
+
+El uso de GitHub facilitó la colaboración del equipo mediante ramas, commits y pull requests, permitiendo organizar los aportes individuales y mantener trazabilidad sobre los cambios realizados. Esta dinámica ayudó a integrar progresivamente el trabajo de cada integrante, mantener la calidad del código y la documentación, así como asegurar la consistencia de los entregables generados durante todas las etapas del proyecto.
+
+Asimismo, la experiencia adquirida durante la configuración del entorno de desarrollo, la gestión del código fuente, la documentación de servicios, el despliegue de aplicaciones y la elaboración de escenarios de aceptación permitió al equipo fortalecer competencias relacionadas con la ingeniería de software moderna. Estas actividades contribuyeron a comprender mejor la relación entre requisitos, diseño, implementación y validación dentro de un proceso de desarrollo iterativo.
+
+El proyecto también evidenció la importancia de la comunicación oral y escrita para coordinar avances, explicar decisiones y asegurar que todos los miembros comprendieran los distintos componentes de la solución. La interacción constante entre los integrantes permitió resolver problemas de integración, validar decisiones técnicas y mantener una visión compartida sobre los objetivos del producto.
+
+Finalmente, se concluye que el trabajo realizado a lo largo de TB1, TP y TB2 permitió construir una base sólida tanto a nivel conceptual como técnico para la evolución de Octane. La combinación de metodologías de análisis, prácticas de diseño centradas en el usuario, principios de arquitectura de software, desarrollo incremental y trabajo colaborativo contribuyó a reducir riesgos, mejorar la calidad de la solución y preparar al equipo para las siguientes fases de implementación. Los resultados obtenidos demuestran que una adecuada articulación entre negocio, diseño, arquitectura y desarrollo constituye un factor clave para el éxito de proyectos de software orientados a resolver problemas reales de los usuarios.
 
 # Video About The Team
 
