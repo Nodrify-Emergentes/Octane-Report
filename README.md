@@ -322,8 +322,9 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         TB1:<br>
         Durante las sesiones de trabajo, comuniqué al equipo los resultados del enfoque Lean UX, incluyendo los Problem Statements, Assumptions e Hypothesis Statements. Expliqué de manera clara el Lean UX Canvas y el Impact Mapping, permitiendo que todos los miembros comprendieran cómo estas herramientas guiaban la definición del producto. Además, presenté los Bounded Context y el Context Mapping, asegurando que el equipo entendiera la organización del sistema y la relación entre sus componentes desde una perspectiva de dominio.<br>
         TP:<br>
-    Durante esta entrega estuve comunicandome con el eqipo acerca de cada cambio hecho a los bounded context y el UX/UI design del landing page y la aplicación, explicando el por qué de estos cambios y avisando cuando estaban listos para que el leader del grupo pudiera agregarlos a la rama principal del repositorio.
-        <br>
+    Durante esta entrega estuve comunicandome con el eqipo acerca de cada cambio hecho a los bounded context y el UX/UI design del landing page y la aplicación, explicando el por qué de estos cambios y avisando cuando estaban listos para que el leader del grupo pudiera agregarlos a la rama principal del repositorio.<br>
+       TB2:<br>
+       Realizé reuniones periódicas con mi equipo de trabajo para revisar los avances hechos hasta el momento y ayudarnos mutuamente cuando nos estancabamos con un problemas.<br>
       </td>
       <td>
         <!--Conclusiones Grupales-->
@@ -374,7 +375,9 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         TB1:<br>
         Desarrollé la documentación correspondiente al enfoque Lean UX, redactando los Problem Statements, Assumptions e Hypothesis Statements de forma estructurada y objetiva. Asimismo, documenté el Lean UX Canvas, Impact Mapping y los modelos de dominio como Bounded Context y Context Mapping, asegurando claridad en la definición del alcance del sistema. Esta documentación facilitó la comprensión del producto y ayudó a mantener alineados los objetivos del equipo durante el desarrollo.<br>
         TP:<br>
-        Realizé la documentación de los Bounded Context Reports y Assignments, Detallando el funcionamiento de  la asignaciónes entre motociclistas y mécanicos como también lás métricas que se reciben de otros bc en base a las operaciones del vehículo. Además, Diseñé los wireframes y userframes que tendrá la aplicación y el landing page tanto en formato web como en móbiles, los cuáles fueron utilizados para crear el prototipo de estos.
+        Realizé la documentación de los Bounded Context Reports y Assignments, Detallando el funcionamiento de  la asignaciónes entre motociclistas y mécanicos como también lás métricas que se reciben de otros bc en base a las operaciones del vehículo. Además, Diseñé los wireframes y userframes que tendrá la aplicación y el landing page tanto en formato web como en móbiles, los cuáles fueron utilizados para crear el prototipo de estos.<br>
+       TB2:<br>
+       Modifique los 2 Front End para que esten alineados al sprint 1 y realizé las evaluaciones según heurísticas y registro de entrevistas
         <br>
       </td>
       <td>
