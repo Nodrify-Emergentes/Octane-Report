@@ -41,10 +41,11 @@
 
 **Registro de Versiones del Informe**
 
-| Versión | Fecha      | Autor                         | Descripción de modificación             |
-|---------|------------|-------------------------------|-----------------------------------------|
-| 1.0     | 04/26/2026 | Real Calderón, Sebastián Omar | Primera Versión del Informe             |
-| 2.0     | 05/14/2026 | Real Calderón, Sebastián Omar | Versión del informe para entrega del TP |
+| Versión | Fecha      | Autor                         | Descripción de modificación              |
+|---------|------------|-------------------------------|------------------------------------------|
+| 1.0     | 04/26/2026 | Real Calderón, Sebastián Omar | Primera Versión del Informe              |
+| 2.0     | 05/14/2026 | Real Calderón, Sebastián Omar | Versión del informe para entrega del TP  |
+| 3.0     | 06/22/2026 | Real Calderón, Sebastián Omar | Versión del informe para entrega del TB2 | 
 
 <div style="page-break-after: always;"></div>
 
