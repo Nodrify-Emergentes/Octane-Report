@@ -13,7 +13,7 @@ Porque la herramienta interna de JetBrains no ayuda para nada y necesita demasia
 En la terminal, teniendo Pandoc instalado y en el mismo directorio que el archivo MD a renderizar, ejecutar:
 
 ```
-pandoc <nombre>.md -o <nombre>.docx --from markdown+raw_html --lua-filter ./tables.lua
+pandoc README.md -o <nombre>.docx --from markdown+raw_html --lua-filter ./tables.lua
 ```
 
 En donde `<nombre>` es el nombre del archivo MD a renderizar, igualmente con el DOCX renderizado.
