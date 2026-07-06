@@ -13,7 +13,7 @@ Porque la herramienta interna de JetBrains no ayuda para nada y necesita demasia
 En la terminal, teniendo Pandoc instalado y en el mismo directorio que el archivo MD a renderizar, ejecutar:
 
 ```
-pandoc README.md -o <nombre>.docx --from markdown+raw_html --lua-filter ./tables.lua
+pandoc README.md -o <nombre>.docx --from markdown+raw_html --data-dir ./data
 ```
 
 En donde `<nombre>` es el nombre del archivo MD a renderizar, igualmente con el DOCX renderizado.
@@ -29,7 +29,7 @@ Esta opción es para renderizar más rápido sin necesidad de una terminal.
 3. Especificar la configuración de herramienta como se muestran:
 
     - **Program:** (Windows)`%APPDATA%\pandoc`, (Linux)`/usr/bin/pandoc`, (MacOS)`/usr/local/bin/pandoc`, o el directorio donde se instaló el programa.
-    - **Arguments:** `$FileName$ -o $FileNameWithoutExtension$.docx --from markdown+raw_html --lua-filter ./tables.lua`
+    - **Arguments:** `$FileName$ -o $FileNameWithoutExtension$.docx --from markdown+raw_html --data-dir ./data`
     - **Working directory:** `$ProjectFileDir$`
 4. Hacer click en `OK` para guardar la configuración.
 
