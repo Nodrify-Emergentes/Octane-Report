@@ -3034,10 +3034,19 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | vehicleId               | Long                            | Identificador único del vehículo que registra la métrica |
 | coordinates             | Coordinates (Enum)              | Ubicación geográfica donde se tomó la medición           |
 | airQuality              | AirQuality (Enum)               | Medición de la calidad del aire en el entorno            |
-| environmentalConditions | 	EnvironmentalConditions (Enum) | Condiciones                                              |ambientales generales registradas|
+| environmentalConditions | 	EnvironmentalConditions (Enum) | Condiciones ambientales generales registradas            |
 | atmosphericPressure     | 	AtmosphericPressure (Enum)     | 	Nivel de presión atmosférica medido                     |
-| statusImpact            | 	StatusImpact (Enum)            | 	Indicador del impacto en el estado del sistema          |
 | registeredAt            | 	LocalDateTime                  | 	Fecha y hora en que se registró la métrica              |
+
+*WellnessSummary*
+
+Descripción: Representa un resumen de bienestar que puede ser generado a partir de múltiples métricas de bienestar.
+
+| Atributo  | Tipo                 | Descripción                                                          |
+|-----------|----------------------|----------------------------------------------------------------------|
+| vehicleId | VehicleId (Record)   | Identificador único del vehículo que genera el resumen de bienestar. |
+| status    | SummaryStatus (Enum) | Establece el estado de la generación según el nivel de éxito.        |
+| summary   | String               | El texto generado a partir de las métricas analizadas.               |
 
 **Value Objects**
 
@@ -3069,11 +3078,12 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | temperatureCelsius | 	Float | 	Temperatura ambiental en grados Celsius       |
 | humidityPercentage | 	Float | 	Porcentaje de humedad relativa en el ambiente |
 
-*StatusImpact*
+*SummaryStatus*
 
-| Atributo       | 	Tipo    | 	Descripción                                            |
-|----------------|----------|---------------------------------------------------------|
-| impactDetected | 	Boolean | 	Indicador de si se detectó algún impacto en el sistema |
+- FRESH: Indica que el resumen de bienestar se generó correctamente y está actualizado.
+- FAILED: Indica que la generación del resumen de bienestar ha fallado.
+
+*VehicleId*: Identificador único del vehículo con validación lógica.
 
 **Entities**
 
@@ -3092,10 +3102,11 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 **Commands**
 
 - `CreateNotificationCommand(Long vehicleId,String title,String message,String type,String severity,LocalDateTime occurredAt)` (Record)
-- `CreateWellnessMetricCommand(Long vehicleId,Float latitude,Float longitude,Double CO2Ppm,Double NH3Ppm,Double BenzenePpm,Float temperatureCelsius,Float humidityPercentage,Float pressureHpa,Boolean impactDetected)` (Record)
+- `CreateWellnessMetricCommand(Long vehicleId,Float latitude,Float longitude,Double CO2Ppm,Double NH3Ppm,Double BenzenePpm,Float temperatureCelsius,Float humidityPercentage,Float pressureHpa)` (Record)
 - `DeleteWellnessMetricCommand(Long wellnessMetricId)` (Record)
 - `MarkNotificationAsReadCommand(Long notificationId)` (Record)
-- `UpdateWellnessMetricCommand(Long wellnessMetricId,Float latitude,Float longitude,Double CO2Ppm,Double NH3Ppm,Double BenzenePpm,Float temperatureCelsius,Float humidityPercentage,Float pressureHpa,Boolean impactDetected)` (Record)
+- `UpdateWellnessMetricCommand(Long wellnessMetricId,Float latitude,Float longitude,Double CO2Ppm,Double NH3Ppm,Double BenzenePpm,Float temperatureCelsius,Float humidityPercentage,Float pressureHpa)` (Record)
+- `GenerateWellnessSummaryCommand(Long vehicleId)` (Record)
 
 **Queries**
 
@@ -3105,13 +3116,13 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 - `GetNotificationsByVehicleIdQuery(Long vehicleId)` (Record)
 - `GetWellnessMetricByIdQuery(Long wellnessMetricId)` (Record)
 - `GetWellnessMetricsByVehicleIdQuery(Long vehicleId)` (Record)
+- `GetWellnessSummaryByVehicleIdQuery(VehicleId vehicleId)` (Record)
 
 **Events**
 
 - `AirQualityAlertEvent`
 - `AtmosphericPressureAlertEvent`
 - `EnvironmentalConditionAlertEvent`
-- `StatusImpactAlertEvent`
 
 **Services**
 
@@ -3135,6 +3146,18 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 - handle(GetWellnessMetricByIdQuery)
 - handle(GetAllWellnessMetricsQuery)
 - handle(GetWellnessMetricsByVehicleIdQuery)
+
+`WellnessSummaryCommandService` (Interface)
+
+- handle(GenerateWellnessSummaryCommand)
+
+`WellnessSummaryQueryService` (Interface)
+
+- handle(GetWellnessSummaryByVehicleIdQuery)
+
+`GenerativeAIService` (Class): Servicio que inicializa y gestiona la comunicación con la API de inteligencia artificial generativa.
+
+- generateSummary(String prompt)
 
 ### 5.5.2 Interface Layer
 
@@ -3169,6 +3192,17 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | getNotificationsByVehicleId | 	GET /api/v1/notifications/vehicle/{vehicleId} | 	Recupera todas las notificaciones para un vehículo específico |
 | markNotificationAsRead      | 	GET /api/v1/notifications/{id}/read           | 	Marca una notificación como leída                             |
 
+*Controlador: WellnessSummaryController*
+
+| Título      | 	Wellness Summary Controller                                                                        |
+|-------------|-----------------------------------------------------------------------------------------------------|
+| Descripción | 	Controlador REST que gestiona la generación y consulta de resúmenes de bienestar de los vehículos. |
+
+| Método                     | Ruta                                      | Descripción                                                                  |
+|----------------------------|-------------------------------------------|------------------------------------------------------------------------------|
+| generateSummaryByVehicleId | POST /api/v1/vehicles/{vehicleId}/summary | Crea o actualiza mediante la generación un resumen de estado de un vehículo. |
+| getSummaryByVehicleId      | GET /api/v1/vehicles/{vehicleId}/summary  | Obtiene el resumen de estado de un vehículo.                                 |
+
 **Transforms:**
 
 | Transform                                        | 	Descripción                                                                       |
@@ -3178,6 +3212,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | NotificationResourceFromEntityAssembler          | 	Convierte entidades de notificación en recursos de respuesta para la API          |
 | UpdateWellnessMetricCommandFromResourceAssembler | 	Transforma los recursos de actualización en comandos para modificar métricas      |
 | WellnessMetricResourceFromEntityAssembler        | 	Convierte entidades de métricas de bienestar en recursos de respuesta para la API |
+| WellnessSummaryResourceFromEntityAssembler       | 	Convierte entidades de resumen de bienestar en recursos de respuesta para la API  |
 
 **Resources:**
 
@@ -3188,6 +3223,7 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | NotificationResource         | 	Representación de notificaciones en las respuestas de la API          |
 | UpdateWellnessMetricResource | 	Estructura de datos para actualizar métricas de bienestar existentes  |
 | WellnessMetricResource       | 	Representación de métricas de bienestar en las respuestas de la API   |
+| WellnessSummaryResource      | 	Representación de resúmenes de bienestar en las respuestas de la API  |
 
 **ACL:**
 
@@ -3237,6 +3273,21 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | WellnessMonitoringService | 	Servicio para monitorear y analizar las métricas de bienestar |
 | ExternalVehiclesService   | 	Servicio externo para validar y obtener datos de vehículos    |
 
+*Clase: WellnessSummaryCommandServiceImpl*
+
+| Título      | WellnessSummaryCommandServiceImpl                                       |
+|-------------|-------------------------------------------------------------------------|
+| Descripción | Servicio que maneja las operaciones de resumen de métricas de bienestar |
+
+*Dependencias:*
+
+| Dependencia                | Descripción                                                                  |
+|----------------------------|------------------------------------------------------------------------------|
+| WellnessSummaryRepository  | Repositorio para almacenar y acceder al resumen de bienestar de un vehículo. |
+| ExternalVehiclesService    | Servicio externo para obtener información de vehículos                       |
+| WellnessMetricQueryService | Servicio para consultar métricas de bienestar                                |
+| GenAIClient                | Cliente para interactuar con la API de inteligencia artificial               |
+
 **Query Services**
 
 *Clase: NotificationQueryServiceImpl*
@@ -3275,6 +3326,18 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 |--------------------------|----------------------------------------------------------------|
 | WellnessMetricRepository | 	Repositorio para acceder a los datos de métricas de bienestar |
 
+*Clase: WellnessSummaryQueryServiceImpl*
+
+| Título      | WellnessSummaryQueryServiceImpl                             |
+|-------------|-------------------------------------------------------------|
+| Descripción | 	Servicio para consultar resúmenes de métricas de bienestar |
+
+**Dependencias:**
+
+| Dependencia               | Descripción                                                      |
+|---------------------------|------------------------------------------------------------------|
+| WellnessSummaryRepository | Repositorio para acceder al resumen de bienestar de un vehículo. |
+
 **Event Handlers**
 
 *Clase: WellnessAlertEventHandler*
@@ -3288,7 +3351,6 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | on(AirQualityAlertEvent event)             | 	Procesa eventos de alerta relacionados con la calidad del aire |
 | on(AtmosphericPressureAlertEvent event)    | 	Maneja eventos de alerta por presión atmosférica               |
 | on(EnvironmentalConditionAlertEvent event) | 	Gestiona eventos de alerta por condiciones ambientales         |
-| on(StatusImpactAlertEvent event)           | 	Procesa eventos de alerta por impacto en el estado del sistema |
 
 **Dependencias:**
 
@@ -3316,6 +3378,15 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 |----------------------------|------------------------------------------------|
 | WellnessMetricQueryService | 	Servicio para consultar métricas de bienestar |
 
+**OutboundServices**
+
+*Clase: GenerativeAIClient*
+
+| Título      | GenerativeAIClient                                                        |
+|-------------|---------------------------------------------------------------------------|
+| Descripción | Cliente para interactuar con la API de inteligencia artificial generativa |
+
+
 ### 5.5.4 Infrastructure Layer
 
 **Repositories**
@@ -3339,6 +3410,17 @@ Descripción: Representa una métrica completa de bienestar registrada por un ve
 | Método                          | 	Descripción                                                                   |
 |---------------------------------|--------------------------------------------------------------------------------|
 | findByVehicleId(Long vehicleId) | 	Busca y recupera las métricas de bienestar asociadas a un vehículo específico |
+
+*Clase: WellnessSummaryRepository (Interface)*
+
+| Título      | 	WellnessSummaryRepository                                                          |
+|-------------|-------------------------------------------------------------------------------------|
+| Descripción | 	Interfaz que define las operaciones de acceso a datos para el resumen de bienestar |
+
+| Método                               | 	Descripción                                                                |
+|--------------------------------------|-----------------------------------------------------------------------------|
+| findByVehicleId(VehicleId vehicleId) | 	Busca y recupera el resumen de bienestar asociada a un vehículo específico |
+
 
 ### 5.5.5 Bounded Context Software Architecture Component level Diagrams
 
