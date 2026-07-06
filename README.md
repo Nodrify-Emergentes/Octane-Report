@@ -162,8 +162,7 @@ Distribución de Commits por Integrante:
 | Sebastián Pacheco Astiguetta      | 54                  |
 | Russell Stephen Romero Qwistgaard | 58                  |
 
-
-`\newpage`
+`<div style="page-break-after: always;"></div>`{=html}
 
 **Contenido**
 
