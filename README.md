@@ -37,7 +37,7 @@
 
 </div>
 
-<div style="page-break-after: always;"></div>
+`<div style="page-break-after: always;"></div>`{=html}
 
 **Registro de Versiones del Informe**
 
@@ -47,7 +47,7 @@
 | 2.0     | 05/14/2026 | Real Calderón, Sebastián Omar | Versión del informe para entrega del TP  |
 | 3.0     | 06/22/2026 | Real Calderón, Sebastián Omar | Versión del informe para entrega del TB2 | 
 
-<div style="page-break-after: always;"></div>
+`<div style="page-break-after: always;"></div>`{=html}
 
 **Project Report Collaboration Insights**
 
@@ -162,8 +162,7 @@ Distribución de Commits por Integrante:
 | Sebastián Pacheco Astiguetta      | 54                  |
 | Russell Stephen Romero Qwistgaard | 58                  |
 
-
-<div style="page-break-after: always;"></div>
+`<div style="page-break-after: always;"></div>`{=html}
 
 **Contenido**
 
@@ -345,6 +344,7 @@ Criterio: *Capacidad de comunicarse efectivamente con un rango de audiencias.*
 
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 3.
 
+```{=html}
 <table>
   <thead>
     <tr>
@@ -463,6 +463,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
     </tr>
   </tbody>
 </table>
+```
 
 # Capítulo I: Introducción
 
@@ -480,6 +481,7 @@ Visión: Ser la plataforma líder en movilidad inteligente en el mercado peruano
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
+```{=html}
 <table>
   <tr>
     <th colspan="2">Russell Stephen Romero Qwistgaard</th>
@@ -510,6 +512,7 @@ Visión: Ser la plataforma líder en movilidad inteligente en el mercado peruano
     <td> Soy Sebastián Real Calderón, estudiante de Ingeniería de Software, código u20221D964. Tengo conocimiento de diferentes lenguajes de programación, como C#, C++ y Java. Mi mayor objetivo al desarrollar software es crear una experiencia de usuario con la que los consumidores puedan sentirse satisfechos al trabajar con nuestras aplicaciones. Asimismo, aspiro a ser un buen participante al mantener una comunicación constante con mis compañeros, resolviendo problemas y apoyando a quién lo necesite para crear un ambiente cómodo para todos.  </td>
   </tr>
 </table>
+```
 
 ## 1.2. Solution Profile
 
@@ -698,6 +701,7 @@ Geotab, fundada en 2000 en Canadá, es uno de los líderes globales en telemáti
 
 El análisis competitivo es una herramienta fundamental para comprender el entorno en el que se desarrollará nuestro producto, identificar las fortalezas y debilidades de los competidores, y definir estrategias que nos permitan posicionarnos de manera efectiva en el mercado. A continuación, se presenta un análisis competitivo detallado de Octane frente a sus principales competidores descritos previamente.
 
+```{=html}
 <table> 
   <tr>
     <th colspan="6"> Competitive Analysis Landscape </th>
@@ -799,6 +803,7 @@ El análisis competitivo es una herramienta fundamental para comprender el entor
     <td>Alta competencia y presión por diferenciación.</td>
   </tr>
 </table>
+```
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
@@ -1447,6 +1452,7 @@ En la segunda iteración, se abordaron drivers relacionados con la resiliencia d
 
 Finalmente, en una tercera iteración, se consideraron drivers asociados a la experiencia de usuario y el negocio, como Usabilidad, Multiplataforma y Optimización de costos, evaluando patrones que permitan accesibilidad, mantenibilidad y eficiencia en el desarrollo.
 
+```{=html}
 <table>
   <thead>
     <tr>
@@ -1568,12 +1574,14 @@ Finalmente, en una tercera iteración, se consideraron drivers asociados a la ex
     </tr>
   </tbody>
 </table>
+```
 
 ### 4.1.5. Quality Attribute Scenario Refinements
 En esta sección, el equipo especifica la relación de escenarios priorizados para atributos de calidad.
 
 Al finalizar el proceso de Quality Attribute Workshop, el equipo refinó los escenarios de calidad priorizados, detallando sus componentes clave (estímulo, fuente del estímulo, entorno, artefacto, respuesta y medida), así como las preguntas e issues identificados durante el análisis. A continuación se presentan los escenarios refinados para cada uno de los atributos de calidad seleccionados:
 
+```{=html}
 <table>
   <tr>
     <th colspan="2">Scenario Refinement for Scenario 1</th>
@@ -1610,7 +1618,9 @@ Al finalizar el proceso de Quality Attribute Workshop, el equipo refinó los esc
     <td>Complejidad en procesamiento en tiempo real y sincronización de datos</td>
   </tr>
 </table>
+```
 
+```{=html}
 <table>
   <tr>
     <th colspan="2">Scenario Refinement for Scenario 2</th>
@@ -1647,7 +1657,9 @@ Al finalizar el proceso de Quality Attribute Workshop, el equipo refinó los esc
     <td>Dependencia de infraestructura cloud y manejo de fallos</td>
   </tr>
 </table>
+```
 
+```{=html}
 <table>
   <tr>
     <th colspan="2">Scenario Refinement for Scenario 3</th>
@@ -1684,7 +1696,9 @@ Al finalizar el proceso de Quality Attribute Workshop, el equipo refinó los esc
     <td>Complejidad en escalado y costos asociados</td>
   </tr>
 </table>
+```
 
+```{=html}
 <table>
   <tr>
     <th colspan="2">Scenario Refinement for Scenario 4</th>
@@ -1721,7 +1735,9 @@ Al finalizar el proceso de Quality Attribute Workshop, el equipo refinó los esc
     <td>Balance entre seguridad y usabilidad</td>
   </tr>
 </table>
+```
 
+```{=html}
 <table>
   <tr>
     <th colspan="2">Scenario Refinement for Scenario 5</th>
@@ -1758,6 +1774,7 @@ Al finalizar el proceso de Quality Attribute Workshop, el equipo refinó los esc
     <td>Equilibrio entre simplicidad y detalle técnico</td>
   </tr>
 </table>
+```
 
 ## 4.2. Strategic-Level Domain-Driven Design
 
