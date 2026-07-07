@@ -5453,6 +5453,17 @@ Esta documentación incluye los verbos HTTP utilizados, sintaxis de llamadas, pa
 
 #### 7.2.2.8 Team Collaboration Insights during Sprint
 
+En este sprint se realizó la implementación de funcionalidades relacionadas con la lectura de métricas y la interpretación con inteligencia artificial. Se realizaron cambios tanto en la aplicación Web como en el servicio del Backend para implementar estos cambios.
+
+- Frontend
+![frontend_pulse](assets/images/chapter-7/sprint-2/collaboration-insights/frontend/pulse.png)
+![frontend_collaborators](assets/images/chapter-7/sprint-2/collaboration-insights/frontend/collaborators.png)
+![frontend_network](assets/images/chapter-7/sprint-2/collaboration-insights/frontend/network.png)
+
+- Backend
+![backend_pulse](assets/images/chapter-7/sprint-2/collaboration-insights/backend/pulse.png)
+![backend_collaborators](assets/images/chapter-7/sprint-2/collaboration-insights/backend/collaborators.png)
+![backend_network](assets/images/chapter-7/sprint-2/collaboration-insights/backend/network.png)
 
 ## 7.3 Validation Interviews
 
