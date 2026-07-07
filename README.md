@@ -5300,6 +5300,45 @@ Durante este sprint, el equipo se enfocó en realizar las tareas para la funcion
 
 ![Sprint Backlog 2 Trello](assets/images/chapter-7/sprint-2-backlog.png)
 
+#### 7.2.2.3 Development Evidence for Sprint Review
+
+Para la implementación, en este sprint se han realizado avances relacionados con la generación automática de resúmenes de bienestar (wellness summaries) mediante inteligencia artificial generativa, su integración tanto en el backend como en el frontend, el rebranding y reorganización del proyecto backend, y ajustes de configuración para el entorno de producción.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| Octane-Backend |  | 9720027fcc5737f6b993b65b8e70ace4d4c90bd0 | Merge pull request #7 from Nodrify-Emergentes/develop | Develop | 2026-07-07 |
+| Octane-Backend |  | 3a945394e4b671f55fd00f100af72176dfc6c664 | Merge pull request #6 from Nodrify-Emergentes/feat/llm-summary | Feat/llm summary | 2026-07-07 |
+| Octane-Backend |  | 1ebdd4fed3ae87e2ebc3adf98fd816fc4608e198 | feat: add endpoint to retrieve wellness summaries for all vehicles of an owner by their ID. |  | 2026-07-07 |
+| Octane-Backend |  | 51a1d77211b432f757a58b222e0e3d7d5b091a26 | feat: add method to fetch vehicles by owner ID in external vehicle service. |  | 2026-07-07 |
+| Octane-Backend |  | 22eeb1fc73484536c78647dea124d669afd01aee | Merge pull request #5 from Nodrify-Emergentes/develop | Finalized backend | 2026-07-06 |
+| Octane-Backend |  | 06351160098e67454f7d8107c8f7fedff20d3b49 | Merge pull request #4 from Nodrify-Emergentes/feat/llm-summary | Feat/llm summary | 2026-07-06 |
+| Octane-Backend |  | ce51b545c83c96b4fb4df8e33c19be32bd292f01 | feat: integrate wellness summary automatic generation trigger into alert event handling. |  | 2026-07-06 |
+| Octane-Backend |  | bc989362d458f25f4febb94cdd0061c7cb3f2db8 | feat: Created Wellness Summary Interfaces |  | 2026-07-06 |
+| Octane-Backend |  | f19c2d15bd521f3f03a76d53490311848fc370b4 | feat(application and infrastructure): added wellness summary command & query service implementation and repository |  | 2026-07-06 |
+| Octane-Backend |  | 14b40bb35b77cb379aa27a6a77584ebb9ee1cb20 | feat: add generative AI service for generating summaries using AI model. |  | 2026-07-06 |
+| Octane-Backend |  | 4de8557bb5b65d6f04e4007aef76e826b2d3f990 | feat: add GenerativeAIClient for configuring AI service with API key. |  | 2026-07-06 |
+| Octane-Backend |  | 6262e934abedca9f8d3932c0b61bba63857aafd5 | feat: add configuration for AI service and include Google Gemini AI dependency. |  | 2026-07-06 |
+| Octane-Backend |  | 78479925beb5f592869e5afc219558583671dc24 | feat: add summary query service interface for fetching summaries. |  | 2026-07-06 |
+| Octane-Backend |  | f38ef8c502673268fac1f9fa4a63ecf3f9bedd61 | feat: add summary command service interface for summary handling. |  | 2026-07-06 |
+| Octane-Backend |  | ebd59d74ef7fbbc197380174642add48f779ef41 | feat: added wellness domain model for summary implementation |  | 2026-07-06 |
+| Octane-Backend |  | 19b6e741dfe95327558e6db6ad765328ac87114d | Merge pull request #1 from Nodrify-Emergentes/refactor/branding | refactor: refactor project directory to align to current brand. | 2026-07-04 |
+| Octane-Backend |  | fffb11960b90dddc45ed55ee5d05fe9f4a07db6e | refactor: refactor project directory to align to current brand. |  | 2026-07-04 |
+| Octane-Web-Application |  | 850f162fea6cf0918c5c6ac4079344fadff7efed | Merge pull request #5 from Nodrify-Emergentes/develop | Finalized Frontend | 2026-07-07 |
+| Octane-Web-Application |  | 6129238c8ee2d01b33309ba0fb229634cea97f6d | Merge pull request #4 from Nodrify-Emergentes/feat/generation-button | Feat/generation button | 2026-07-07 |
+| Octane-Web-Application |  | 517ef00c2b9ba697c406aaa52dff7b7044bf8300 | feat: integrate wellness summary store into dashboard owner page. |  | 2026-07-07 |
+| Octane-Web-Application |  | 689842128c708e6d33ebc3eddf62a887660fc078 | refactor: out. |  | 2026-07-07 |
+| Octane-Web-Application |  | b68931552f81600752cf8c5ec3d2c0725fa6b9b1 | feat: add button for summary generation. |  | 2026-07-07 |
+| Octane-Web-Application |  | 6d583699058d93fce4a4f5f16402616011860cd2 | feat(vehicle-wellness-presentation): wellness summary iteam and list |  | 2026-07-07 |
+| Octane-Web-Application |  | 14e3af13c405678c5e13774b5e69757b69c91b0d | feat: add summaries.store.ts and wellness-summary-api.service.ts generate function |  | 2026-07-07 |
+| Octane-Web-Application |  | 96ce3f7e50911543264718e5124c3df71bcf50b7 | feat: update api base url to production. |  | 2026-07-07 |
+| Octane-Web-Application |  | b4c8d783f8d0995b812e2da8128552ff8fcd2af5 | Merge pull request #3 from Nodrify-Emergentes/develop | Develop | 2026-07-07 |
+| Octane-Web-Application |  | 6ebe49783f4bba5bb28e31914025eec005256838 | Merge branch 'master' into develop |  | 2026-07-07 |
+| Octane-Web-Application |  | 8e04be35539305884100dd7b61c05cb475ddd46d | Merge pull request #2 from Nodrify-Emergentes/feature/summary-implementation | feat: Added Wellness Summary | 2026-07-07 |
+| Octane-Web-Application |  | 7a456d96c60397e813b1445941ef27974f54fee2 | feat: Added Wellness Summary |  | 2026-07-07 |
+| Octane-Web-Application |  | b6545866fa8d5734ac2174df2d6f35f945b9d4cd | Merge pull request #1 from Nodrify-Emergentes/feautre/mockdata | Feautre/mockdata | 2026-07-05 |
+| Octane-Web-Application |  | 1c57404db7380547fb637a6a9b6475d7e2afd7ed | feat: Deleted Expenses from BC Wellness |  | 2026-07-05 |
+
+
 #### 7.2.2.4 Testing Suite Evidence for Sprint Review
 
 En esta sección se muestran los archivos en gherkin realizados en el repositorio de pruebas Octane-Testing, así como los commits relevantes del mismo.
