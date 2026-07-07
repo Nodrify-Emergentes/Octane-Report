@@ -5288,7 +5288,7 @@ Durante este sprint, el equipo se enfocó en realizar las tareas para la funcion
 | General    | Validación del Sprint                                     | WI-058           | Revisión de consistencia UX del dashboard      | Revisar estados vacíos, mensajes de error y coherencia visual entre dashboard, detalle y resumen IA.        |                 3 | Romero Qwistgaard, Russell Stephen | To-Do  |
 | General    | Gestión del Sprint                                        | WI-059           | Integración y revisión de avance               | Coordinar ramas, pull requests, resolución de conflictos y seguimiento del cumplimiento del sprint.         |                 5 | Real Calderón, Sebastián Omar      | To-Do  |
 
-// Espacio para la imagen del trello.
+![Sprint Backlog 2 Trello](assets/images/chapter-7/sprint-2-backlog.png)
 
 #### 7.2.2.4 Testing Suite Evidence for Sprint Review
 
