@@ -292,7 +292,7 @@ Distribución de Commits por Integrante:
     - [5.8.6. Bounded Context Software Architecture Code Level Diagrams](#586-bounded-context-software-architecture-code-level-diagrams)
       - [5.8.6.1. Bounded Context Domain Layer Class Diagrams](#5861-bounded-context-domain-layer-class-diagrams)
       - [5.8.6.2. Bounded Context Database Design Diagram](#5862-bounded-context-database-design-diagram)
-- [Capitulo VI: Solution UX Design](#capitulo-vi-solution-ux-design)
+- [Capítulo VI: Solution UX Design](#capítulo-vi-solution-ux-design)
   - [6.1. Style Guidelines](#61-style-guidelines)
     - [6.1.1 General Style Guidelines](#611-general-style-guidelines)
     - [6.1.2 Web, Mobile \& Devices Style Guidelines](#612-web-mobile--devices-style-guidelines)
@@ -309,7 +309,7 @@ Distribución de Commits por Integrante:
     - [6.4.2. Applications Wireflow Diagrams](#642-applications-wireflow-diagrams)
     - [6.4.3. Applications Mock-ups](#643-applications-mock-ups)
   - [6.5 Applications Prototyping](#65-applications-prototyping)
-- [Capítulo VII: Production Implementation Validation \& Deploymeny](#capítulo-vii-production-implementation-validation--deploymeny)
+- [Capítulo VII: Production Implementation Validation \& Deployment](#capítulo-vii-production-implementation-validation--deployment)
   - [7.1 Software Configuration Management](#71-software-configuration-management)
     - [7.1.1 Software Development Environment Configuration](#711-software-development-environment-configuration)
     - [7.1.2 Source Code Management](#712-source-code-management)
@@ -4053,7 +4053,8 @@ Para el diseño de la base de datos, se presenta un diagrama que ilustra la tabl
 
 ![Device Database XXX](assets/images/chapter-5/bc-support-ticket-management/support-database-diagram.png)
 
-# Capitulo VI: Solution UX Design 
+# Capítulo VI: Solution UX Design
+
 ## 6.1. Style Guidelines
 
 La sección de Style Guidelines establece los lineamientos visuales y de diseño que garantizan una experiencia de usuario coherente, clara y alineada con la identidad de marca de Octane. Este repositorio central reúne todos los elementos gráficos y normativos necesarios para que el equipo de diseño y desarrollo trabaje de manera consistente en los distintos canales digitales (web y móvil).
@@ -4523,7 +4524,7 @@ En esta sección se presentan los prototipos interactivos de las aplicaciones we
 - Desktop Application Timestamp: 0:00 - 3:36
 - Mobile Application Timestamp: 3:37 - 6:02
 
-# Capítulo VII: Production Implementation Validation & Deploymeny
+# Capítulo VII: Production Implementation Validation & Deployment
 
 ## 7.1 Software Configuration Management
 En este ítem se definirán todas las reglas y procesos que hemos seguido en el proyecto al momento de crear y desplegar Octane. El objetivo de estas reglas y procesos es garantizar la integridad y consistencia del software, desde el inicio hasta el despliegue y mantenimiento.
@@ -4545,70 +4546,71 @@ Para la organización del proyecto requerimos de un sistema de asignación de ta
 
 Utilizamos Trello para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios.
 
-|Herramienta|	Descripción|	Enlace|
-|-|-|-|
-|Trello|	Para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios.|	https://trello.com/|
+| Herramienta | 	Descripción                                                                                        | 	Enlace              |
+|-------------|-----------------------------------------------------------------------------------------------------|----------------------|
+| Trello      | 	Para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios. | 	https://trello.com/ |
 
 **Product UX/UI Design**
 
 Para el diseño de los wireframes y mockups, además de la realización del prototipo de la mobile application y web application, utilizamos Figma.
 
-|Herramienta|	Descripción|	Enlace|
-|-|-|-|
-|Figma|	Para el diseño de los wireframes y mockups, además de la realización del prototipo de Web App.|	https://www.figma.com/|
+| Herramienta | 	Descripción                                                                                    | 	Enlace                 |
+|-------------|-------------------------------------------------------------------------------------------------|-------------------------|
+| Figma       | 	Para el diseño de los wireframes y mockups, además de la realización del prototipo de Web App. | 	https://www.figma.com/ |
 
 **Software Development**
 
 Empleamos Android y Jetpack Compose para la creación de la mobile application, Spring Boot para la creación de la API REST y Angular para la web application. Para el desarrollo de la landing page utilizamos html, js y css.
 
-|Herramienta|	Descripción|	Enlace|
-|-|-|-|
-|Android|	Lenguaje de programación utilizado para la creación de la mobile application|	https://developer.android.com/|
-|Jetpack Compose|	Framework utilizado para la creación de la mobile application|	https://developer.android.com/compose|
-|Spring Boot|	Framework utilizado para la creación de la API REST|	https://spring.io/projects/spring-boot|
-|Tailwind CSS|	Framework utilizado para la creación de la landing page|	https://tailwindcss.com/|
-|Angular|	Framework de desarrollo web open source	|https://angular.dev/|
-|Python|	Lenguaje de programación utilizado para el desarrollo de scripts|	https://www.python.org/|
+| Herramienta     | 	Descripción                                                                  | 	Enlace                                 |
+|-----------------|-------------------------------------------------------------------------------|-----------------------------------------|
+| Android         | 	Lenguaje de programación utilizado para la creación de la mobile application | 	https://developer.android.com/         |
+| Jetpack Compose | 	Framework utilizado para la creación de la mobile application                | 	https://developer.android.com/compose  |
+| Spring Boot     | 	Framework utilizado para la creación de la API REST                          | 	https://spring.io/projects/spring-boot |
+| Tailwind CSS    | 	Framework utilizado para la creación de la landing page                      | 	https://tailwindcss.com/               |
+| Angular         | 	Framework de desarrollo web open source	                                     | https://angular.dev/                    |
+| Python          | 	Lenguaje de programación utilizado para el desarrollo de scripts             | 	https://www.python.org/                |
 
 **Software Testing**
 
 Para las pruebas unitarias y de integración utilizamos JUnit y Mockito para la API REST.
 
-|Herramienta|	Descripción|	Enlace|
-|-|-|-|
-|JUnit	|Framework de pruebas unitarias para Java	|https://junit.org/|
-|Mockito|	Framework de simulación para pruebas unitarias en Java|	https://site.mockito.org/|
+| Herramienta | 	Descripción                                            | 	Enlace                    |
+|-------------|---------------------------------------------------------|----------------------------|
+| JUnit	      | Framework de pruebas unitarias para Java	               | https://junit.org/         |
+| Mockito     | 	Framework de simulación para pruebas unitarias en Java | 	https://site.mockito.org/ |
 
 **Software Deployment**
 
 Para el despliegue de la API REST y la web application utilizamos Render. Para la distribución de la versión mobile application utilizamos Firebase App Distribution.
 
-|Herramienta|	Descripción|	Enlace|
-|-|-|-|
-|Render|	Plataforma de despliegue en la nube	|https://render.com/|
-|Firebase App Distribution|	Plataforma para distribuir versiones de prueba de aplicaciones móviles|	https://firebase.google.com/products/app-distribution|
+| Herramienta               | 	Descripción                                                            | 	Enlace                                                |
+|---------------------------|-------------------------------------------------------------------------|--------------------------------------------------------|
+| Railway                   | 	Plataforma de despliegue en la nube	                                   | https://render.com/                                    |
+| Vercel                    | Plataforma de despliegue en la nube                                     | https://vercel.com/                                    |
+| Firebase App Distribution | 	Plataforma para distribuir versiones de prueba de aplicaciones móviles | 	https://firebase.google.com/products/app-distribution |
 
 **Software Documentation**
 
 Para la documentación del software utilizamos Markdown, y para el trabajo colaborativo Github.
 
-|Herramienta|	Descripción|	Enlace|
-|-|-|-|
-|Markdown|	Lenguaje de marcado utilizado para la documentación del proyecto|	https://www.markdownguide.org/|
-|Github|	Para gestionar la documentación del proyecto|	https://github.com/NRG-4/report|
+| Herramienta | 	Descripción                                                      | 	Enlace                                              |
+|-------------|-------------------------------------------------------------------|------------------------------------------------------|
+| Markdown    | 	Lenguaje de marcado utilizado para la documentación del proyecto | 	https://www.markdownguide.org/                      |
+| Github      | 	Para gestionar la documentación del proyecto                     | 	https://github.com/Nodrify-Emergentes/Octane-Report |
 
 ### 7.1.2 Source Code Management
 
 Para la gestión del código fuente, utilizamos los siguientes repositorios:
 
-|Herramienta|	Descripción|	Enlace|
-|-|-|-|
-|Mobile Application|	BykerZ-Mobile-Application|	https://github.com/NRG-6-IOT/BykerZ-Mobile-Application.git|
-|Backend|	BykerZ-Backend|	https://github.com/NRG-6-IOT/BykerZ-Backend.git|
-|Landing Page|	BykerZ-Landing-Page|	https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git|
-|Web Application|	BykerZ-Web-Application	|https://github.com/NRG-6-IOT/BykerZ-Web-Application.git|
-|Edge Service|	BykerZ-Edge-Service	|https://github.com/NRG-6-IOT/BykerZ-Edge-Service|
-|Embedded Application|	BykerZ-Embedded-Application	|https://github.com/NRG-6-IOT/BykerZ-Embedded-Application|
+| Herramienta          | 	Descripción                  | 	Enlace                                                               |
+|----------------------|-------------------------------|-----------------------------------------------------------------------|
+| Mobile Application   | 	Octane-Mobile-Application    | 	https://github.com/Nodrify-Emergentes/Octane-Mobile-Application.git  |
+| Backend              | 	Octane-Backend               | 	https://github.com/Nodrify-Emergentes/Octane-Backend.git             |
+| Landing Page         | 	Octane-Landing-Page          | 	https://github.com/Nodrify-Emergentes/Octane-Landing-Page.git        |
+| Web Application      | 	Octane-Web-Application	      | https://github.com/Nodrify-Emergentes/Octane-Web-Application.git      |
+| Edge Service         | 	Octane-Edge-Service	         | https://github.com/Nodrify-Emergentes/Octane-Edge-Service.git         |
+| Embedded Application | 	Octane-Embedded-Application	 | https://github.com/Nodrify-Emergentes/Octane-Embedded-Application.git |
 
 **Flujo de trabajo GitFlow**
 
@@ -5252,7 +5254,7 @@ Durante este sprint, el equipo se enfocó en realizar las tareas para la funcion
 
 ### 7.2.2 Sprint 2
 
-### 7.2.2.1 Sprint Planning 2
+#### 7.2.2.1 Sprint Planning 2
 
 | Sprint #                        | Sprint 2                                                                                                                                                                                                                       |
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -5267,7 +5269,7 @@ Durante este sprint, el equipo se enfocó en realizar las tareas para la funcion
 | Sprint 2 Velocity               | 35                                                                                                                                                                                                                             |
 | Sum of Story Points             | 42                                                                                                                                                                                                                             |
 
-### 7.2.2.2 Sprint Backlog 2
+#### 7.2.2.2 Sprint Backlog 2
 
 | Sprint #   | Sprint 2                                                  |                  |                                                |                                                                                                             |                   |                                    |        |
 |------------|-----------------------------------------------------------|------------------|------------------------------------------------|-------------------------------------------------------------------------------------------------------------|------------------:|------------------------------------|--------|
@@ -5419,9 +5421,10 @@ Feature: Manejo de errores del agente IA
 
 ---
 #### 7.2.2.5 Execution Evidence for Sprint Review
-En este apartado se muestran las evidencias visuales que documentan el progreso alcanzado durante el trabajo final. Mediante capturas de pantalla y un video demostrativo, se ilustran de forma clara los logros obtenidos y la manera en que se han implementado las funcionalidades del producto.
+En esta sección se muestran las evidencias visuales que documentan el progreso alcanzado durante el trabajo final. Mediante capturas de pantalla y un video demostrativo, se ilustran de forma clara los logros obtenidos y la manera en que se han implementado las funcionalidades del producto.
 
-Frontend:
+**Frontend:**
+
 ![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-1.png)
 
 ![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-2.png)
@@ -5432,24 +5435,92 @@ Frontend:
 
 ![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-5.png)
 
-Backend:
+**Backend:**
+
 ![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-6.png)
 
 ![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-7.png)
 
 Video:
+
 [![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-video.png)](https://youtu.be/iqtRWntPbzI)
+
+Link del video: https://youtu.be/iqtRWntPbzI
 
 #### 7.2.2.6 Services Documentation Evidence for Sprint Review
 Durante este Sprint, se logró la documentación y despliegue de varios Endpoints correspondientes al bounded context Wellness implementado por el equipo. Se utilizó OpenAPI (Swagger) para describir de forma estructurada los servicios Web desarrollados. A continuación, se presenta la relación de los Endpoints, las acciones soportadas y la respectiva documentación disponible.  
 Esta documentación incluye los verbos HTTP utilizados, sintaxis de llamadas, parámetros, ejemplos de respuesta, así como capturas de la interacción con los Web Services utilizando datos de muestra. También se proporciona el URL del repositorio de los Web Services y los commit IDs correspondientes al trabajo realizado en la documentación durante este Sprint.
-|Bounded Context|Endpoint|Acción|Verbo HTTP|Parámetros|Ejemplo de Respuesta|Documentación / URL|
-|-|-|-|-|-|-|-|
-|Wellness|/api/v1/vehicles/{vehicleId}/wellness-summary|Genera un resumen de salud (wellness summary) para un vehículo específico.|POST|vehicleId (Path)|{"id": 101, "vehicleId": 5, "status": "Good", "aiRecommendations": "Cambio de aceite sugerido en 500km.", "generatedAt": "2026-07-07T12:00:00Z"}|`http://localhost:8080/api/v1/vehicles/{vehicleId}/wellness-summary`|
-|Wellness|/api/v1/vehicles/{vehicleId}/wellness-summary|Obtiene el último resumen de salud generado para un vehículo específico.|GET|vehicleId (Path)|{"id": 101, "vehicleId": 5, "status": "Good", "aiRecommendations": "Cambio de aceite sugerido en 500km.", "generatedAt": "2026-07-07T12:00:00Z"}|`http://localhost:8080/api/v1/vehicles/{vehicleId}/wellness-summary`|
-|Wellness|/api/v1/vehicles/owner/{ownerId}/wellness-summaries|Obtiene los resúmenes de salud de todos los vehículos que pertenecen a un dueño específico.|GET|ownerId (Path)|[{"id": 101, "vehicleId": 5, "status": "Good", "aiRecommendations": "..."}, {"id": 102, "vehicleId": 12, "status": "Attention Required", "aiRecommendations": "..."}]|`http://localhost:8080/api/v1/vehicles/owner/{ownerId}/wellness-summaries`|
+
+| Bounded Context | Endpoint                                            | Acción                                                                                      | Verbo HTTP | Parámetros       | Ejemplo de Respuesta                                                                                                                                                  | Documentación / URL                                                        |
+|-----------------|-----------------------------------------------------|---------------------------------------------------------------------------------------------|------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| Wellness        | /api/v1/vehicles/{vehicleId}/wellness-summary       | Genera un resumen de salud (wellness summary) para un vehículo específico.                  | POST       | vehicleId (Path) | {"id": 101, "vehicleId": 5, "status": "Good", "aiRecommendations": "Cambio de aceite sugerido en 500km.", "generatedAt": "2026-07-07T12:00:00Z"}                      | `http://localhost:8080/api/v1/vehicles/{vehicleId}/wellness-summary`       |
+| Wellness        | /api/v1/vehicles/{vehicleId}/wellness-summary       | Obtiene el último resumen de salud generado para un vehículo específico.                    | GET        | vehicleId (Path) | {"id": 101, "vehicleId": 5, "status": "Good", "aiRecommendations": "Cambio de aceite sugerido en 500km.", "generatedAt": "2026-07-07T12:00:00Z"}                      | `http://localhost:8080/api/v1/vehicles/{vehicleId}/wellness-summary`       |
+| Wellness        | /api/v1/vehicles/owner/{ownerId}/wellness-summaries | Obtiene los resúmenes de salud de todos los vehículos que pertenecen a un dueño específico. | GET        | ownerId (Path)   | [{"id": 101, "vehicleId": 5, "status": "Good", "aiRecommendations": "..."}, {"id": 102, "vehicleId": 12, "status": "Attention Required", "aiRecommendations": "..."}] | `http://localhost:8080/api/v1/vehicles/owner/{ownerId}/wellness-summaries` |
 
 #### 7.2.2.7 Software Deployment Evidence for Sprint Review
+
+En este sprint, se han desplegado el Backend y Web Application a modo de producción.
+
+**Backend**
+
+1. Ingresar a https://railway.com/ y crear una cuenta. Si ya se dispone de una, iniciar sesión con la cuenta que tenga acceso al repositorio.
+
+![backend-1](assets/images/chapter-7/sprint-2/deployment-evidence/back/backend-1.png)
+
+2. Crear un nuevo proyecto y seleccionar "GitHub Repository", luego seleccionar el repositorio a desplegar. Si no se encuentra disponible, configurar con "Configure GitHub App".
+
+![backend-2](assets/images/chapter-7/sprint-2/deployment-evidence/back/backend-2.png)
+
+![backend-3](assets/images/chapter-7/sprint-2/deployment-evidence/back/backend-3.png)
+
+3. Dentro del proyecto, crear la base de datos Postgres. Automáticamente Railway creará una instancia de base de datos y generará la URL de conexión.
+
+![backend-4](assets/images/chapter-7/sprint-2/deployment-evidence/back/backend-4.png)
+
+4. Seguidamente, configurar las variables de entorno necesarias para la ejecución apropiada del backend. Seleccionar el proyecto, e ir a la sección "Variables".
+
+Dentro del Raw Editor, se configuraría de esta manera:
+
+```
+AI_API_KEY=API KEY de la IA Gemini
+AI_MODEL=Modelo de IA a utilizar
+API_URL="https://${{RAILWAY_PUBLIC_DOMAIN}}"
+DATABASE_PASSWORD="${{Postgres.PGPASSWORD}}"
+DATABASE_URL="jdbc:postgresql://${{Postgres.PGHOST}}:${{Postgres.PGPORT}}/${{Postgres.PGDATABASE}}"
+DATABASE_USERNAME="${{Postgres.PGUSER}}"
+KEEPALIVE_ENABLED="true"
+KEEPALIVE_URL="http://localhost:/actuator/health"
+```
+
+5. En la sección "Settings" del proyecto, buscar la sección "Networking", y crear un dominio personalizado. Con el link obtenido, podemos acceder al despliegue.
+
+![backend-5](assets/images/chapter-7/sprint-2/deployment-evidence/back/backend-5.png)
+
+Link del Swagger del Backend desplegado: [https://strong-surprise-production-ef50.up.railway.app/swagger-ui/index.html#/](https://strong-surprise-production-ef50.up.railway.app/swagger-ui/index.html#/)
+
+**Frontend**
+
+1. Ingresar a https://vercel.com/ y crear una cuenta. Si ya se dispone de una, iniciar sesión con la cuenta que tenga acceso al repositorio.
+
+![frontend-1](assets/images/chapter-7/sprint-2/deployment-evidence/front/frontend-1.png)
+
+2. Crear un nuevo proyecto y seleccionar "Import Project".
+
+![frontend-2](assets/images/chapter-7/sprint-2/deployment-evidence/front/frontend-2.png)
+
+3. Seleccionar el repositorio a desplegar. Si no se encuentra disponible, configurar con "Configure GitHub App".
+
+![frontend-3](assets/images/chapter-7/sprint-2/deployment-evidence/front/frontend-3.png)
+
+4. Dentro del proyecto, verificar que haya detectado el proyecto, y seleccionar "Deploy".
+
+![frontend-4](assets/images/chapter-7/sprint-2/deployment-evidence/front/frontend-4.png)
+
+5. Verificar que el proyecto se ha desplegado correctamente, debería cargar la primera pantalla de la aplicación web.
+
+![frontend-5](assets/images/chapter-7/sprint-2/deployment-evidence/front/frontend-5.png)
+
+Link de Vercel del Frontend desplegado: [https://octane-web-application.vercel.app/](https://octane-web-application.vercel.app/)
 
 #### 7.2.2.8 Team Collaboration Insights during Sprint
 
