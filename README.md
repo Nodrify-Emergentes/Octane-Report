@@ -191,12 +191,12 @@ Como evidencia del proceso colaborativo desarrollado durante el Trabajo Final, s
 
 ### Distribución de Commits por Integrante
 
-| Integrante | Cantidad de Commits |
-|-----------------------------------|---------------------:|
-| Sebastián Omar Real Calderón | XX |
-| José Antonio Alejo Cárdenas | XX |
-| Sebastián Pacheco Astiguetta | XX |
-| Russell Stephen Romero Qwistgaard | XX |
+| Integrante                        | Cantidad de Commits |
+|-----------------------------------|--------------------:|
+| Sebastián Omar Real Calderón      |                  XX |
+| José Antonio Alejo Cárdenas       |                  XX |
+| Sebastián Pacheco Astiguetta      |                  XX |
+| Russell Stephen Romero Qwistgaard |                  XX |
 
 `<div style="page-break-after: always;"></div>`{=html}
 
