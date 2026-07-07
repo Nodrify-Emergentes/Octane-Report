@@ -1276,6 +1276,13 @@ En esta sección se presentan los To-Be Scenario Mapping por cada segmento objet
 | TS-010        | Escalabilidad del sistema                                              | Como desarrollador del dispositivo, quiero poder añadir nuevos sensores sin modificar la arquitectura base, para escalar el sistema en futuras versiones.                                                                                                                                                                                          | Escenario 1: Creación de sensor<br>Dado que se crea una nueva clase de sensor, cuando se integra al dispositivo, entonces no se debe modificar la clase base Device.<br><br>Escenario 2: Agregar nuevo sensor<br>Dado que el sistema está en producción, cuando se agrega un nuevo sensor, entonces los sensores existentes continúan funcionando correctamente.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-004  |
 
 ## 3.3. Impact Mapping
+<img src="./assets/images/chapter-3/impact_mapping_1.png" alt="impact_mapping_1" width="800"/>
+
+<img src="./assets/images/chapter-3/impact_mapping_2.png" alt="impact_mapping_2" width="800"/>
+
+<img src="./assets/images/chapter-3/impact_mapping_3.png" alt="impact_mapping_3" width="800"/>
+
+<img src="./assets/images/chapter-3/impact_mapping_4.png" alt="impact_mapping_4" width="800"/>
 
 ## 3.4. Product Backlog
 
