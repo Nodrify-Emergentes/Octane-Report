@@ -5290,6 +5290,127 @@ Durante este sprint, el equipo se enfocó en realizar las tareas para la funcion
 
 // Espacio para la imagen del trello.
 
+#### 7.2.2.4 Testing Suite Evidence for Sprint Review
+
+En esta sección se muestran los archivos en gherkin realizados en el repositorio de pruebas Octane-Testing, así como los commits relevantes del mismo.
+
+**US-006.feature**
+
+```gherkin
+Feature: Visualización de métricas de bienestar
+
+  Como dueño de motocicleta
+  Quiero visualizar las métricas de bienestar de mi motocicleta
+  Para conocer el estado actual de sus componentes monitoreados
+
+  Scenario: Visualización exitosa de métricas
+    Given que el usuario tiene una motocicleta con sensores registrados
+    When accede a la sección Wellness
+    Then el sistema muestra las métricas más recientes de temperatura, gases, presión e impactos
+
+  Scenario: No existen métricas registradas
+    Given que la motocicleta aún no posee lecturas de sensores
+    When el usuario abre la sección Wellness
+    Then el sistema informa que no existen datos disponibles
+```
+
+---
+
+**US-007.feature**
+
+```gherkin
+Feature: Actualización automática de métricas IoT
+
+  Como dueño de motocicleta
+  Quiero que las métricas se actualicen automáticamente
+  Para visualizar información reciente del vehículo
+
+  Scenario: Recepción de nuevas lecturas
+    Given que el dispositivo IoT envía nuevas mediciones
+    When la aplicación sincroniza la información
+    Then las métricas del vehículo se actualizan correctamente
+
+  Scenario: Error durante la sincronización
+    Given que ocurre un problema durante la comunicación con el backend
+    When el sistema intenta actualizar las métricas
+    Then se conserva la última información disponible
+    And se muestra un mensaje indicando que la sincronización falló
+```
+
+---
+
+**US-008.feature**
+
+```gherkin
+Feature: Generación de resumen mediante Inteligencia Artificial
+
+  Como dueño de motocicleta
+  Quiero generar un resumen inteligente del estado de mi motocicleta
+  Para comprender fácilmente la condición general del vehículo
+
+  Scenario: Generación exitosa del resumen
+    Given que existen métricas de bienestar disponibles
+    And el usuario aún dispone de tokens diarios
+    When solicita generar el resumen
+    Then el sistema genera un resumen utilizando el agente de IA
+    And muestra el resultado al usuario
+
+  Scenario: Límite diario de tokens alcanzado
+    Given que el usuario consumió el límite diario de tokens
+    When intenta generar un nuevo resumen
+    Then el sistema impide la generación
+    And informa que el límite diario fue alcanzado
+```
+
+---
+
+**US-009.feature**
+
+```gherkin
+Feature: Reintento de generación del resumen IA
+
+  Como dueño de motocicleta
+  Quiero volver a intentar generar un resumen únicamente cuando la generación falle
+  Para obtener el análisis cuando ocurra un error temporal
+
+  Scenario: Reintento después de un fallo
+    Given que la generación anterior terminó con estado FAILED
+    When el usuario selecciona Retry
+    Then el sistema vuelve a solicitar la generación del resumen
+
+  Scenario: Resumen generado correctamente
+    Given que ya existe un resumen generado correctamente
+    When el usuario intenta generar un nuevo resumen
+    Then el sistema bloquea la operación
+    And mantiene el resumen previamente generado
+```
+
+---
+
+**US-010.feature**
+
+```gherkin
+Feature: Manejo de errores del agente IA
+
+  Como dueño de motocicleta
+  Quiero recibir una notificación cuando el agente IA no pueda generar el resumen
+  Para conocer que ocurrió un problema durante el análisis
+
+  Scenario: Error interno del servicio IA
+    Given que el servicio de IA devuelve un error durante la generación
+    When el sistema procesa la respuesta
+    Then registra el estado FAILED
+    And muestra un mensaje indicando que no fue posible generar el resumen
+
+  Scenario: Respuesta vacía del agente IA
+    Given que el agente IA responde sin contenido
+    When el sistema procesa la respuesta
+    Then registra el estado FAILED
+    And solicita al usuario volver a intentarlo posteriormente
+```
+
+---
+
 ## 7.3 Validation Interviews
 
 ### 7.3.1 Diseño de Entrevistas
