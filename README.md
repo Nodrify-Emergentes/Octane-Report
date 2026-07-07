@@ -5253,7 +5253,7 @@ Durante este sprint, el equipo se enfocó en realizar las tareas para la funcion
 
 ### 7.2.2 Sprint 2
 
-### 7.2.2.1 Sprint Planning 2
+#### 7.2.2.1 Sprint Planning 2
 
 | Sprint #                        | Sprint 2                                                                                                                                                                                                                       |
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -5268,7 +5268,7 @@ Durante este sprint, el equipo se enfocó en realizar las tareas para la funcion
 | Sprint 2 Velocity               | 35                                                                                                                                                                                                                             |
 | Sum of Story Points             | 42                                                                                                                                                                                                                             |
 
-### 7.2.2.2 Sprint Backlog 2
+#### 7.2.2.2 Sprint Backlog 2
 
 | Sprint #   | Sprint 2                                                  |                  |                                                |                                                                                                             |                   |                                    |        |
 |------------|-----------------------------------------------------------|------------------|------------------------------------------------|-------------------------------------------------------------------------------------------------------------|------------------:|------------------------------------|--------|
@@ -5420,9 +5420,10 @@ Feature: Manejo de errores del agente IA
 
 ---
 #### 7.2.2.5 Execution Evidence for Sprint Review
-En este apartado se muestran las evidencias visuales que documentan el progreso alcanzado durante el trabajo final. Mediante capturas de pantalla y un video demostrativo, se ilustran de forma clara los logros obtenidos y la manera en que se han implementado las funcionalidades del producto.
+En esta sección se muestran las evidencias visuales que documentan el progreso alcanzado durante el trabajo final. Mediante capturas de pantalla y un video demostrativo, se ilustran de forma clara los logros obtenidos y la manera en que se han implementado las funcionalidades del producto.
 
-Frontend:
+**Frontend:**
+
 ![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-1.png)
 
 ![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-2.png)
@@ -5433,22 +5434,27 @@ Frontend:
 
 ![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-5.png)
 
-Backend:
+**Backend:**
+
 ![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-6.png)
 
 ![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-7.png)
 
 Video:
+
 [![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-video.png)](https://youtu.be/iqtRWntPbzI)
+
+Link del video: https://youtu.be/iqtRWntPbzI
 
 #### 7.2.2.6 Services Documentation Evidence for Sprint Review
 Durante este Sprint, se logró la documentación y despliegue de varios Endpoints correspondientes al bounded context Wellness implementado por el equipo. Se utilizó OpenAPI (Swagger) para describir de forma estructurada los servicios Web desarrollados. A continuación, se presenta la relación de los Endpoints, las acciones soportadas y la respectiva documentación disponible.  
 Esta documentación incluye los verbos HTTP utilizados, sintaxis de llamadas, parámetros, ejemplos de respuesta, así como capturas de la interacción con los Web Services utilizando datos de muestra. También se proporciona el URL del repositorio de los Web Services y los commit IDs correspondientes al trabajo realizado en la documentación durante este Sprint.
-|Bounded Context|Endpoint|Acción|Verbo HTTP|Parámetros|Ejemplo de Respuesta|Documentación / URL|
-|-|-|-|-|-|-|-|
-|Wellness|/api/v1/vehicles/{vehicleId}/wellness-summary|Genera un resumen de salud (wellness summary) para un vehículo específico.|POST|vehicleId (Path)|{"id": 101, "vehicleId": 5, "status": "Good", "aiRecommendations": "Cambio de aceite sugerido en 500km.", "generatedAt": "2026-07-07T12:00:00Z"}|`http://localhost:8080/api/v1/vehicles/{vehicleId}/wellness-summary`|
-|Wellness|/api/v1/vehicles/{vehicleId}/wellness-summary|Obtiene el último resumen de salud generado para un vehículo específico.|GET|vehicleId (Path)|{"id": 101, "vehicleId": 5, "status": "Good", "aiRecommendations": "Cambio de aceite sugerido en 500km.", "generatedAt": "2026-07-07T12:00:00Z"}|`http://localhost:8080/api/v1/vehicles/{vehicleId}/wellness-summary`|
-|Wellness|/api/v1/vehicles/owner/{ownerId}/wellness-summaries|Obtiene los resúmenes de salud de todos los vehículos que pertenecen a un dueño específico.|GET|ownerId (Path)|[{"id": 101, "vehicleId": 5, "status": "Good", "aiRecommendations": "..."}, {"id": 102, "vehicleId": 12, "status": "Attention Required", "aiRecommendations": "..."}]|`http://localhost:8080/api/v1/vehicles/owner/{ownerId}/wellness-summaries`|
+
+| Bounded Context | Endpoint                                            | Acción                                                                                      | Verbo HTTP | Parámetros       | Ejemplo de Respuesta                                                                                                                                                  | Documentación / URL                                                        |
+|-----------------|-----------------------------------------------------|---------------------------------------------------------------------------------------------|------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| Wellness        | /api/v1/vehicles/{vehicleId}/wellness-summary       | Genera un resumen de salud (wellness summary) para un vehículo específico.                  | POST       | vehicleId (Path) | {"id": 101, "vehicleId": 5, "status": "Good", "aiRecommendations": "Cambio de aceite sugerido en 500km.", "generatedAt": "2026-07-07T12:00:00Z"}                      | `http://localhost:8080/api/v1/vehicles/{vehicleId}/wellness-summary`       |
+| Wellness        | /api/v1/vehicles/{vehicleId}/wellness-summary       | Obtiene el último resumen de salud generado para un vehículo específico.                    | GET        | vehicleId (Path) | {"id": 101, "vehicleId": 5, "status": "Good", "aiRecommendations": "Cambio de aceite sugerido en 500km.", "generatedAt": "2026-07-07T12:00:00Z"}                      | `http://localhost:8080/api/v1/vehicles/{vehicleId}/wellness-summary`       |
+| Wellness        | /api/v1/vehicles/owner/{ownerId}/wellness-summaries | Obtiene los resúmenes de salud de todos los vehículos que pertenecen a un dueño específico. | GET        | ownerId (Path)   | [{"id": 101, "vehicleId": 5, "status": "Good", "aiRecommendations": "..."}, {"id": 102, "vehicleId": 12, "status": "Attention Required", "aiRecommendations": "..."}] | `http://localhost:8080/api/v1/vehicles/owner/{ownerId}/wellness-summaries` |
 
 #### 7.2.2.7 Software Deployment Evidence for Sprint Review
 
