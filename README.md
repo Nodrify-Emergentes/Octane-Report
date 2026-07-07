@@ -373,6 +373,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         TB2:<br>
         Durante el desarrollo de TB2, comuniqué al equipo los avances relacionados con la implementación de las funcionalidades priorizadas para el Sprint 1, explicando el alcance de cada User Story, los criterios de aceptación definidos en los escenarios BDD y las decisiones tomadas durante la planificación del sprint. Asimismo, presenté periódicamente el estado de avance de la implementación, las evidencias obtenidas durante las pruebas de ejecución y los resultados observados durante las revisiones internas, permitiendo que todos los integrantes comprendieran el progreso del proyecto y las actividades pendientes para cumplir los objetivos establecidos.<br>
         TF:<br>
+        Durante el desarrollo del Trabajo Final, comuniqué al equipo la planificación del Sprint 2, explicando la priorización de las User Stories, la distribución de responsabilidades y los objetivos definidos para el sprint. Asimismo, presenté el Sprint Backlog actualizado y facilité reuniones de seguimiento para revisar el avance de las actividades, resolver impedimentos y coordinar la integración de los entregables. Finalmente, expuse las conclusiones generales del proyecto, sintetizando los resultados obtenidos durante ambos sprints y asegurando que tanto integrantes del equipo como evaluadores comprendieran el impacto de las decisiones tomadas durante el desarrollo de la solución.
         <br>
         Alejo Cardenas Jose Antonio
         <br>
@@ -415,6 +416,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         TB2:<br>
         Como equipo, logramos comunicar de manera clara y objetiva los avances obtenidos durante la implementación del Sprint 1, incluyendo aspectos relacionados con el desarrollo de funcionalidades, configuración del entorno, despliegue de aplicaciones, pruebas de aceptación y validación con usuarios. Cada integrante presentó los resultados de su área de responsabilidad, permitiendo que el resto del equipo comprendiera tanto los aspectos técnicos como los funcionales de la solución. Esta comunicación constante facilitó la coordinación de actividades, la resolución de problemas y el cumplimiento de los objetivos definidos para la entrega.<br>
         TF:<br>
+        Como equipo, logramos comunicar de manera clara y objetiva los avances obtenidos durante el Sprint 2 y la culminación del proyecto, presentando la planificación del sprint, el progreso de la implementación, las evidencias de pruebas, la documentación de servicios y el despliegue de la solución. Cada integrante explicó los resultados de su área de responsabilidad, facilitando que públicos con diferentes niveles técnicos comprendieran tanto el funcionamiento del sistema como las decisiones adoptadas durante el desarrollo. La comunicación constante fortaleció la coordinación del equipo y permitió integrar exitosamente todos los entregables de la versión final del proyecto.
         <br>
       </td>
     </tr>
@@ -433,6 +435,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         TB2:<br>
         Documenté las actividades relacionadas con la implementación de la solución, incluyendo la planificación del Sprint 1, la elaboración del Sprint Backlog, las evidencias de desarrollo, los escenarios de prueba definidos mediante archivos Gherkin y los resultados obtenidos durante la ejecución de las funcionalidades implementadas. La documentación fue redactada de manera estructurada y objetiva, permitiendo que tanto integrantes técnicos como evaluadores externos pudieran comprender el alcance de los avances realizados y la relación entre los requerimientos definidos y las funcionalidades desarrolladas.<br>
         TF:<br>
+        Documenté la planificación correspondiente al Sprint 2 mediante la elaboración del Sprint Planning y el Sprint Backlog, registrando de manera estructurada los objetivos, User Stories priorizadas, tareas asignadas y criterios de seguimiento del sprint. Asimismo, redacté la sección de Team Collaboration Insights, describiendo las estrategias de coordinación, comunicación y resolución de impedimentos aplicadas durante el trabajo colaborativo. Finalmente, consolidé y redacté la versión final de las conclusiones del proyecto, sintetizando de forma objetiva los principales resultados alcanzados, las lecciones aprendidas y el cumplimiento de los objetivos establecidos, facilitando la comprensión de la información tanto para perfiles técnicos como no técnicos.
         <br>
         Alejo Cardenas Jose Antonio
         <br>
@@ -475,6 +478,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         TB2:<br>
         A nivel grupal, se logró documentar de forma estructurada y comprensible las actividades realizadas durante la implementación y validación del Sprint 1. La documentación incluyó la planificación ágil, configuración del entorno de desarrollo, gestión del código fuente, implementación de funcionalidades, definición de escenarios BDD, evidencias de despliegue y validación con usuarios. Esta información permitió mantener la trazabilidad de las decisiones tomadas, facilitar la comprensión de la solución por parte de diferentes audiencias y respaldar de manera objetiva los resultados obtenidos durante la entrega.<br>
         TF:<br>
+        A nivel grupal, se logró elaborar una documentación final clara, organizada y consistente que integró la planificación del Sprint 2, las evidencias de desarrollo, pruebas, ejecución, documentación de servicios, despliegue y trabajo colaborativo. La consolidación de esta información permitió mantener la trazabilidad de las decisiones tomadas durante el proyecto, facilitar la comprensión de la solución por parte de diferentes públicos y respaldar de manera objetiva los resultados obtenidos durante la entrega final. Asimismo, las conclusiones finales sintetizaron los principales logros, aprendizajes y aportes alcanzados por el equipo durante el desarrollo del proyecto.
       </td>
     </tr>
   </tbody>
