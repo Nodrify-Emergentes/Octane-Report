@@ -37,7 +37,7 @@
 
 </div>
 
-`<div style="page-break-after: always;"></div>`{=html}
+<div style="page-break-after: always;"></div>
 
 **Registro de Versiones del Informe**
 
@@ -48,7 +48,7 @@
 | 3.0     | 06/22/2026 | Real Calderón, Sebastián Omar | Versión del informe para entrega del TB2 | 
 | 4.0     | 07/07/2026 | Real Calderón, Sebastián Omar | Versión del informe para entrega del TF  |
 
-`<div style="page-break-after: always;"></div>`{=html}
+<div style="page-break-after: always;"></div>
 
 **Project Report Collaboration Insights**
 
@@ -198,7 +198,7 @@ Como evidencia del proceso colaborativo desarrollado durante el Trabajo Final, s
 | Sebastián Pacheco Astiguetta      |                  23 |
 | Russell Stephen Romero Qwistgaard |                  13 |
 
-`<div style="page-break-after: always;"></div>`{=html}
+<div style="page-break-after: always;"></div>
 
 **Contenido**
 
