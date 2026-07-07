@@ -406,6 +406,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         TB2:<br>
         Realizé reuniones periódicas con mi equipo de trabajo para revisar los avances hechos hasta el momento y ayudarnos mutuamente cuando nos estancabamos con un problemas.<br>
         TF:<br>
+        Organizando reuniones diarias con el equipo, pude asegurar de que se cumpliera todo lo faltante para la entrega final. Aparte de ello, investigue y analize el código completo para empezar a modificarlo para que utilize nuestro agente IA correctamente.
+      <br>
       </td>
       <td>
         <!--Conclusiones Grupales-->
@@ -468,6 +470,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         TB2:<br>
         Modifique los 2 Front End para que esten alineados al sprint 1 y realizé las evaluaciones según heurísticas y registro de entrevistas<br>
         TF:<br>
+        Realizé la oocumentación completa de los commits realizados en esta entreg, además de también crear los feature para el testing de los productos realizados. Finalmente, implementé la funcionalidad del agente IA en el Front End para que pueda generar resúmenes de bienestar a las motos de los motociclistas segúin los reportes del dispositivo en estos vehículos.
+        <br>
       </td>
       <td>
         <!--Conclusiones Grupales-->
