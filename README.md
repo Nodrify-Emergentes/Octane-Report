@@ -5293,7 +5293,8 @@ Durante este sprint, el equipo se enfocó en realizar las tareas para la funcion
 #### 7.2.2.4 Testing Suite Evidence for Sprint Review
 
 En esta sección se muestran los archivos en gherkin realizados en el repositorio de pruebas Octane-Testing, así como los commits relevantes del mismo.
-**US-027.feature**
+
+**US-006.feature**
 
 ```gherkin
 Feature: Visualización de métricas de bienestar
@@ -5315,7 +5316,7 @@ Feature: Visualización de métricas de bienestar
 
 ---
 
-**US-028.feature**
+**US-007.feature**
 
 ```gherkin
 Feature: Actualización automática de métricas IoT
@@ -5338,7 +5339,7 @@ Feature: Actualización automática de métricas IoT
 
 ---
 
-**US-039.feature**
+**US-008.feature**
 
 ```gherkin
 Feature: Generación de resumen mediante Inteligencia Artificial
@@ -5363,7 +5364,7 @@ Feature: Generación de resumen mediante Inteligencia Artificial
 
 ---
 
-**US-030.feature**
+**US-009.feature**
 
 ```gherkin
 Feature: Reintento de generación del resumen IA
