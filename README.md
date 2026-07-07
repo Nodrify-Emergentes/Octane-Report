@@ -5458,6 +5458,45 @@ Esta documentación incluye los verbos HTTP utilizados, sintaxis de llamadas, pa
 
 #### 7.2.2.7 Software Deployment Evidence for Sprint Review
 
+En este sprint, se han desplegado el Backend y Web Application a modo de producción.
+
+**Backend**
+
+1. Ingresar a https://railway.com/ y crear una cuenta. Si ya se dispone de una, iniciar sesión con la cuenta que tenga acceso al repositorio.
+
+![backend-1](assets/images/chapter-7/sprint-2/deployment-evidence/back/backend-1.png)
+
+2. Crear un nuevo proyecto y seleccionar "GitHub Repository", luego seleccionar el repositorio a desplegar. Si no se encuentra disponible, configurar con "Configure GitHub App".
+
+![backend-2](assets/images/chapter-7/sprint-2/deployment-evidence/back/backend-2.png)
+
+![backend-3](assets/images/chapter-7/sprint-2/deployment-evidence/back/backend-3.png)
+
+3. Dentro del proyecto, crear la base de datos Postgres. Automáticamente Railway creará una instancia de base de datos y generará la URL de conexión.
+
+![backend-4](assets/images/chapter-7/sprint-2/deployment-evidence/back/backend-4.png)
+
+4. Seguidamente, configurar las variables de entorno necesarias para la ejecución apropiada del backend. Seleccionar el proyecto, e ir a la sección "Variables".
+
+Dentro del Raw Editor, se configuraría de esta manera:
+
+```
+AI_API_KEY=API KEY de la IA Gemini
+AI_MODEL=Modelo de IA a utilizar
+API_URL="https://${{RAILWAY_PUBLIC_DOMAIN}}"
+DATABASE_PASSWORD="${{Postgres.PGPASSWORD}}"
+DATABASE_URL="jdbc:postgresql://${{Postgres.PGHOST}}:${{Postgres.PGPORT}}/${{Postgres.PGDATABASE}}"
+DATABASE_USERNAME="${{Postgres.PGUSER}}"
+KEEPALIVE_ENABLED="true"
+KEEPALIVE_URL="http://localhost:/actuator/health"
+```
+
+5. En la sección "Settings" del proyecto, buscar la sección "Networking", y crear un dominio personalizado. Con el link obtenido, podemos acceder al despliegue.
+
+![backend-5](assets/images/chapter-7/sprint-2/deployment-evidence/back/backend-5.png)
+
+Link del Swagger del Backend desplegado: [https://strong-surprise-production-ef50.up.railway.app/swagger-ui/index.html#/](https://strong-surprise-production-ef50.up.railway.app/swagger-ui/index.html#/)
+
 #### 7.2.2.8 Team Collaboration Insights during Sprint
 
 
