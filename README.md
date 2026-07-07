@@ -292,7 +292,7 @@ Distribución de Commits por Integrante:
     - [5.8.6. Bounded Context Software Architecture Code Level Diagrams](#586-bounded-context-software-architecture-code-level-diagrams)
       - [5.8.6.1. Bounded Context Domain Layer Class Diagrams](#5861-bounded-context-domain-layer-class-diagrams)
       - [5.8.6.2. Bounded Context Database Design Diagram](#5862-bounded-context-database-design-diagram)
-- [Capitulo VI: Solution UX Design](#capitulo-vi-solution-ux-design)
+- [Capítulo VI: Solution UX Design](#capítulo-vi-solution-ux-design)
   - [6.1. Style Guidelines](#61-style-guidelines)
     - [6.1.1 General Style Guidelines](#611-general-style-guidelines)
     - [6.1.2 Web, Mobile \& Devices Style Guidelines](#612-web-mobile--devices-style-guidelines)
@@ -309,7 +309,7 @@ Distribución de Commits por Integrante:
     - [6.4.2. Applications Wireflow Diagrams](#642-applications-wireflow-diagrams)
     - [6.4.3. Applications Mock-ups](#643-applications-mock-ups)
   - [6.5 Applications Prototyping](#65-applications-prototyping)
-- [Capítulo VII: Production Implementation Validation \& Deploymeny](#capítulo-vii-production-implementation-validation--deploymeny)
+- [Capítulo VII: Production Implementation Validation \& Deployment](#capítulo-vii-production-implementation-validation--deployment)
   - [7.1 Software Configuration Management](#71-software-configuration-management)
     - [7.1.1 Software Development Environment Configuration](#711-software-development-environment-configuration)
     - [7.1.2 Source Code Management](#712-source-code-management)
@@ -4053,7 +4053,8 @@ Para el diseño de la base de datos, se presenta un diagrama que ilustra la tabl
 
 ![Device Database XXX](assets/images/chapter-5/bc-support-ticket-management/support-database-diagram.png)
 
-# Capitulo VI: Solution UX Design 
+# Capítulo VI: Solution UX Design
+
 ## 6.1. Style Guidelines
 
 La sección de Style Guidelines establece los lineamientos visuales y de diseño que garantizan una experiencia de usuario coherente, clara y alineada con la identidad de marca de Octane. Este repositorio central reúne todos los elementos gráficos y normativos necesarios para que el equipo de diseño y desarrollo trabaje de manera consistente en los distintos canales digitales (web y móvil).
@@ -4523,7 +4524,7 @@ En esta sección se presentan los prototipos interactivos de las aplicaciones we
 - Desktop Application Timestamp: 0:00 - 3:36
 - Mobile Application Timestamp: 3:37 - 6:02
 
-# Capítulo VII: Production Implementation Validation & Deploymeny
+# Capítulo VII: Production Implementation Validation & Deployment
 
 ## 7.1 Software Configuration Management
 En este ítem se definirán todas las reglas y procesos que hemos seguido en el proyecto al momento de crear y desplegar Octane. El objetivo de estas reglas y procesos es garantizar la integridad y consistencia del software, desde el inicio hasta el despliegue y mantenimiento.
@@ -5496,6 +5497,30 @@ KEEPALIVE_URL="http://localhost:/actuator/health"
 ![backend-5](assets/images/chapter-7/sprint-2/deployment-evidence/back/backend-5.png)
 
 Link del Swagger del Backend desplegado: [https://strong-surprise-production-ef50.up.railway.app/swagger-ui/index.html#/](https://strong-surprise-production-ef50.up.railway.app/swagger-ui/index.html#/)
+
+**Frontend**
+
+1. Ingresar a https://vercel.com/ y crear una cuenta. Si ya se dispone de una, iniciar sesión con la cuenta que tenga acceso al repositorio.
+
+![frontend-1](assets/images/chapter-7/sprint-2/deployment-evidence/front/frontend-1.png)
+
+2. Crear un nuevo proyecto y seleccionar "Import Project".
+
+![frontend-2](assets/images/chapter-7/sprint-2/deployment-evidence/front/frontend-2.png)
+
+3. Seleccionar el repositorio a desplegar. Si no se encuentra disponible, configurar con "Configure GitHub App".
+
+![frontend-3](assets/images/chapter-7/sprint-2/deployment-evidence/front/frontend-3.png)
+
+4. Dentro del proyecto, verificar que haya detectado el proyecto, y seleccionar "Deploy".
+
+![frontend-4](assets/images/chapter-7/sprint-2/deployment-evidence/front/frontend-4.png)
+
+5. Verificar que el proyecto se ha desplegado correctamente, debería cargar la primera pantalla de la aplicación web.
+
+![frontend-5](assets/images/chapter-7/sprint-2/deployment-evidence/front/frontend-5.png)
+
+Link de Vercel del Frontend desplegado: [https://octane-web-application.vercel.app/](https://octane-web-application.vercel.app/)
 
 #### 7.2.2.8 Team Collaboration Insights during Sprint
 
