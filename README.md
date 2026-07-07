@@ -46,6 +46,7 @@
 | 1.0     | 04/26/2026 | Real Calderón, Sebastián Omar | Primera Versión del Informe              |
 | 2.0     | 05/14/2026 | Real Calderón, Sebastián Omar | Versión del informe para entrega del TP  |
 | 3.0     | 06/22/2026 | Real Calderón, Sebastián Omar | Versión del informe para entrega del TB2 | 
+| 4.0     | 07/07/2026 | Real Calderón, Sebastián Omar | Versión del informe para entrega del TF  |
 
 `<div style="page-break-after: always;"></div>`{=html}
 
@@ -161,6 +162,41 @@ Distribución de Commits por Integrante:
 | José Antonio Alejo Cárdenas       | 14                  |
 | Sebastián Pacheco Astiguetta      | 54                  |
 | Russell Stephen Romero Qwistgaard | 58                  |
+
+**TF:**
+
+Para el desarrollo del Trabajo Final (TF), el equipo continuó utilizando el repositorio compartido en GitHub como principal herramienta de colaboración, control de versiones e integración continua. Durante esta última etapa, el objetivo principal fue completar el desarrollo de la solución mediante la ejecución del Sprint 2, consolidando las funcionalidades implementadas, documentando las evidencias del Sprint Review y preparando la versión final del proyecto para su presentación y evaluación.
+
+Las actividades del Sprint 2 fueron distribuidas entre los integrantes del equipo de acuerdo con las responsabilidades asumidas durante esta etapa. Esta organización permitió desarrollar de forma paralela la implementación, documentación, validación y despliegue de la solución, asegurando la correcta integración de todos los componentes del sistema y la elaboración de la documentación final del proyecto. Las responsabilidades fueron las siguientes:
+
+- **Sebastián Omar Real Calderón:** encargado de la planificación del Sprint 2 mediante la elaboración de las secciones *Sprint Planning 2* y *Sprint Backlog 2*. Asimismo, fue responsable de documentar los indicadores de colaboración del equipo durante el sprint mediante la sección *Team Collaboration Insights during Sprint* y de consolidar la versión final de las *Conclusiones*, asegurando la integración de los resultados obtenidos durante todas las etapas del proyecto.
+
+- **José Antonio Alejo Cárdenas:** responsable de la documentación técnica de los servicios implementados durante el Sprint 2, desarrollando la sección *Services Documentation Evidence for Sprint Review*. Además, documentó las evidencias de ejecución de los servicios mediante pruebas de los endpoints implementados, asegurando la trazabilidad entre la documentación técnica, la implementación y las evidencias presentadas durante la revisión del sprint.
+
+- **Sebastián Pacheco Astiguetta:** encargado de documentar las evidencias correspondientes al *Software Deployment Evidence for Sprint Review*, verificando el despliegue de los componentes frontend y backend de la solución. Asimismo, realizó la revisión y actualización de la documentación general del proyecto para mantener la coherencia entre los cambios realizados durante el Sprint 2, incluyendo la incorporación de las mejoras relacionadas con telemetría e inteligencia artificial.
+
+- **Russell Stephen Romero Qwistgaard:** responsable de la recopilación y documentación de las *Development Evidence for Sprint Review*, registrando las funcionalidades implementadas durante el Sprint 2, las evidencias de integración de los distintos módulos del sistema y el avance del desarrollo respecto a los objetivos establecidos para el sprint. Además, colaboró en la validación de las funcionalidades implementadas y en la consolidación de las evidencias necesarias para la presentación final del proyecto.
+
+Para la gestión del trabajo colaborativo, el equipo mantuvo el flujo de trabajo basado en Git y GitHub, utilizando ramas de desarrollo para la implementación de nuevas funcionalidades, corrección de incidencias, actualización de la documentación y preparación de la versión final del producto. Cada integrante realizó commits de manera continua sobre sus tareas asignadas, integrando posteriormente los cambios mediante *pull requests* revisados antes de su incorporación a la rama principal del repositorio.
+
+Este flujo de trabajo permitió mantener un historial completo de la evolución del proyecto durante el Sprint 2, facilitando la coordinación entre los integrantes, la resolución de conflictos de integración y la validación continua de las funcionalidades desarrolladas. Asimismo, favoreció la consolidación de una versión estable de la solución, respaldada por evidencias de implementación, pruebas, documentación técnica y despliegue.
+
+Como evidencia del proceso colaborativo desarrollado durante el Trabajo Final, se incluirán capturas de los analíticos del repositorio correspondientes al TF, donde se visualizará la actividad de commits, contribuciones por integrante, historial de ramas y *pull requests* gestionados durante el Sprint 2. Estas evidencias complementan el Registro de Versiones del Informe y permiten verificar la participación activa de cada integrante en la culminación del proyecto.
+
+![Pulse TF](assets/images/misc/insights/tf/tf_pulse.png)
+
+![Collaborators TF](assets/images/misc/insights/tf/tf_collaborators.png)
+
+![Network TF](assets/images/misc/insights/tf/tf_network.png)
+
+### Distribución de Commits por Integrante
+
+| Integrante                        | Cantidad de Commits |
+|-----------------------------------|--------------------:|
+| Sebastián Omar Real Calderón      |                  19 |
+| José Antonio Alejo Cárdenas       |                   4 |
+| Sebastián Pacheco Astiguetta      |                  23 |
+| Russell Stephen Romero Qwistgaard |                  13 |
 
 `<div style="page-break-after: always;"></div>`{=html}
 
@@ -292,7 +328,7 @@ Distribución de Commits por Integrante:
     - [5.8.6. Bounded Context Software Architecture Code Level Diagrams](#586-bounded-context-software-architecture-code-level-diagrams)
       - [5.8.6.1. Bounded Context Domain Layer Class Diagrams](#5861-bounded-context-domain-layer-class-diagrams)
       - [5.8.6.2. Bounded Context Database Design Diagram](#5862-bounded-context-database-design-diagram)
-- [Capitulo VI: Solution UX Design](#capitulo-vi-solution-ux-design)
+- [Capítulo VI: Solution UX Design](#capítulo-vi-solution-ux-design)
   - [6.1. Style Guidelines](#61-style-guidelines)
     - [6.1.1 General Style Guidelines](#611-general-style-guidelines)
     - [6.1.2 Web, Mobile \& Devices Style Guidelines](#612-web-mobile--devices-style-guidelines)
@@ -309,7 +345,7 @@ Distribución de Commits por Integrante:
     - [6.4.2. Applications Wireflow Diagrams](#642-applications-wireflow-diagrams)
     - [6.4.3. Applications Mock-ups](#643-applications-mock-ups)
   - [6.5 Applications Prototyping](#65-applications-prototyping)
-- [Capítulo VII: Production Implementation Validation \& Deploymeny](#capítulo-vii-production-implementation-validation--deploymeny)
+- [Capítulo VII: Production Implementation Validation \& Deployment](#capítulo-vii-production-implementation-validation--deployment)
   - [7.1 Software Configuration Management](#71-software-configuration-management)
     - [7.1.1 Software Development Environment Configuration](#711-software-development-environment-configuration)
     - [7.1.2 Source Code Management](#712-source-code-management)
@@ -1292,6 +1328,13 @@ En esta sección se presentan los To-Be Scenario Mapping por cada segmento objet
 | TS-010        | Escalabilidad del sistema                                              | Como desarrollador del dispositivo, quiero poder añadir nuevos sensores sin modificar la arquitectura base, para escalar el sistema en futuras versiones.                                                                                                                                                                                          | Escenario 1: Creación de sensor<br>Dado que se crea una nueva clase de sensor, cuando se integra al dispositivo, entonces no se debe modificar la clase base Device.<br><br>Escenario 2: Agregar nuevo sensor<br>Dado que el sistema está en producción, cuando se agrega un nuevo sensor, entonces los sensores existentes continúan funcionando correctamente.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-004  |
 
 ## 3.3. Impact Mapping
+<img src="./assets/images/chapter-3/impact_mapping_1.png" alt="impact_mapping_1" width="800"/>
+
+<img src="./assets/images/chapter-3/impact_mapping_2.png" alt="impact_mapping_2" width="800"/>
+
+<img src="./assets/images/chapter-3/impact_mapping_3.png" alt="impact_mapping_3" width="800"/>
+
+<img src="./assets/images/chapter-3/impact_mapping_4.png" alt="impact_mapping_4" width="800"/>
 
 ## 3.4. Product Backlog
 
@@ -4069,7 +4112,8 @@ Para el diseño de la base de datos, se presenta un diagrama que ilustra la tabl
 
 ![Device Database XXX](assets/images/chapter-5/bc-support-ticket-management/support-database-diagram.png)
 
-# Capitulo VI: Solution UX Design 
+# Capítulo VI: Solution UX Design
+
 ## 6.1. Style Guidelines
 
 La sección de Style Guidelines establece los lineamientos visuales y de diseño que garantizan una experiencia de usuario coherente, clara y alineada con la identidad de marca de Octane. Este repositorio central reúne todos los elementos gráficos y normativos necesarios para que el equipo de diseño y desarrollo trabaje de manera consistente en los distintos canales digitales (web y móvil).
@@ -4539,7 +4583,7 @@ En esta sección se presentan los prototipos interactivos de las aplicaciones we
 - Desktop Application Timestamp: 0:00 - 3:36
 - Mobile Application Timestamp: 3:37 - 6:02
 
-# Capítulo VII: Production Implementation Validation & Deploymeny
+# Capítulo VII: Production Implementation Validation & Deployment
 
 ## 7.1 Software Configuration Management
 En este ítem se definirán todas las reglas y procesos que hemos seguido en el proyecto al momento de crear y desplegar Octane. El objetivo de estas reglas y procesos es garantizar la integridad y consistencia del software, desde el inicio hasta el despliegue y mantenimiento.
@@ -4561,70 +4605,71 @@ Para la organización del proyecto requerimos de un sistema de asignación de ta
 
 Utilizamos Trello para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios.
 
-|Herramienta|	Descripción|	Enlace|
-|-|-|-|
-|Trello|	Para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios.|	https://trello.com/|
+| Herramienta | 	Descripción                                                                                        | 	Enlace              |
+|-------------|-----------------------------------------------------------------------------------------------------|----------------------|
+| Trello      | 	Para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios. | 	https://trello.com/ |
 
 **Product UX/UI Design**
 
 Para el diseño de los wireframes y mockups, además de la realización del prototipo de la mobile application y web application, utilizamos Figma.
 
-|Herramienta|	Descripción|	Enlace|
-|-|-|-|
-|Figma|	Para el diseño de los wireframes y mockups, además de la realización del prototipo de Web App.|	https://www.figma.com/|
+| Herramienta | 	Descripción                                                                                    | 	Enlace                 |
+|-------------|-------------------------------------------------------------------------------------------------|-------------------------|
+| Figma       | 	Para el diseño de los wireframes y mockups, además de la realización del prototipo de Web App. | 	https://www.figma.com/ |
 
 **Software Development**
 
 Empleamos Android y Jetpack Compose para la creación de la mobile application, Spring Boot para la creación de la API REST y Angular para la web application. Para el desarrollo de la landing page utilizamos html, js y css.
 
-|Herramienta|	Descripción|	Enlace|
-|-|-|-|
-|Android|	Lenguaje de programación utilizado para la creación de la mobile application|	https://developer.android.com/|
-|Jetpack Compose|	Framework utilizado para la creación de la mobile application|	https://developer.android.com/compose|
-|Spring Boot|	Framework utilizado para la creación de la API REST|	https://spring.io/projects/spring-boot|
-|Tailwind CSS|	Framework utilizado para la creación de la landing page|	https://tailwindcss.com/|
-|Angular|	Framework de desarrollo web open source	|https://angular.dev/|
-|Python|	Lenguaje de programación utilizado para el desarrollo de scripts|	https://www.python.org/|
+| Herramienta     | 	Descripción                                                                  | 	Enlace                                 |
+|-----------------|-------------------------------------------------------------------------------|-----------------------------------------|
+| Android         | 	Lenguaje de programación utilizado para la creación de la mobile application | 	https://developer.android.com/         |
+| Jetpack Compose | 	Framework utilizado para la creación de la mobile application                | 	https://developer.android.com/compose  |
+| Spring Boot     | 	Framework utilizado para la creación de la API REST                          | 	https://spring.io/projects/spring-boot |
+| Tailwind CSS    | 	Framework utilizado para la creación de la landing page                      | 	https://tailwindcss.com/               |
+| Angular         | 	Framework de desarrollo web open source	                                     | https://angular.dev/                    |
+| Python          | 	Lenguaje de programación utilizado para el desarrollo de scripts             | 	https://www.python.org/                |
 
 **Software Testing**
 
 Para las pruebas unitarias y de integración utilizamos JUnit y Mockito para la API REST.
 
-|Herramienta|	Descripción|	Enlace|
-|-|-|-|
-|JUnit	|Framework de pruebas unitarias para Java	|https://junit.org/|
-|Mockito|	Framework de simulación para pruebas unitarias en Java|	https://site.mockito.org/|
+| Herramienta | 	Descripción                                            | 	Enlace                    |
+|-------------|---------------------------------------------------------|----------------------------|
+| JUnit	      | Framework de pruebas unitarias para Java	               | https://junit.org/         |
+| Mockito     | 	Framework de simulación para pruebas unitarias en Java | 	https://site.mockito.org/ |
 
 **Software Deployment**
 
 Para el despliegue de la API REST y la web application utilizamos Render. Para la distribución de la versión mobile application utilizamos Firebase App Distribution.
 
-|Herramienta|	Descripción|	Enlace|
-|-|-|-|
-|Render|	Plataforma de despliegue en la nube	|https://render.com/|
-|Firebase App Distribution|	Plataforma para distribuir versiones de prueba de aplicaciones móviles|	https://firebase.google.com/products/app-distribution|
+| Herramienta               | 	Descripción                                                            | 	Enlace                                                |
+|---------------------------|-------------------------------------------------------------------------|--------------------------------------------------------|
+| Railway                   | 	Plataforma de despliegue en la nube	                                   | https://render.com/                                    |
+| Vercel                    | Plataforma de despliegue en la nube                                     | https://vercel.com/                                    |
+| Firebase App Distribution | 	Plataforma para distribuir versiones de prueba de aplicaciones móviles | 	https://firebase.google.com/products/app-distribution |
 
 **Software Documentation**
 
 Para la documentación del software utilizamos Markdown, y para el trabajo colaborativo Github.
 
-|Herramienta|	Descripción|	Enlace|
-|-|-|-|
-|Markdown|	Lenguaje de marcado utilizado para la documentación del proyecto|	https://www.markdownguide.org/|
-|Github|	Para gestionar la documentación del proyecto|	https://github.com/NRG-4/report|
+| Herramienta | 	Descripción                                                      | 	Enlace                                              |
+|-------------|-------------------------------------------------------------------|------------------------------------------------------|
+| Markdown    | 	Lenguaje de marcado utilizado para la documentación del proyecto | 	https://www.markdownguide.org/                      |
+| Github      | 	Para gestionar la documentación del proyecto                     | 	https://github.com/Nodrify-Emergentes/Octane-Report |
 
 ### 7.1.2 Source Code Management
 
 Para la gestión del código fuente, utilizamos los siguientes repositorios:
 
-|Herramienta|	Descripción|	Enlace|
-|-|-|-|
-|Mobile Application|	BykerZ-Mobile-Application|	https://github.com/NRG-6-IOT/BykerZ-Mobile-Application.git|
-|Backend|	BykerZ-Backend|	https://github.com/NRG-6-IOT/BykerZ-Backend.git|
-|Landing Page|	BykerZ-Landing-Page|	https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git|
-|Web Application|	BykerZ-Web-Application	|https://github.com/NRG-6-IOT/BykerZ-Web-Application.git|
-|Edge Service|	BykerZ-Edge-Service	|https://github.com/NRG-6-IOT/BykerZ-Edge-Service|
-|Embedded Application|	BykerZ-Embedded-Application	|https://github.com/NRG-6-IOT/BykerZ-Embedded-Application|
+| Herramienta          | 	Descripción                  | 	Enlace                                                               |
+|----------------------|-------------------------------|-----------------------------------------------------------------------|
+| Mobile Application   | 	Octane-Mobile-Application    | 	https://github.com/Nodrify-Emergentes/Octane-Mobile-Application.git  |
+| Backend              | 	Octane-Backend               | 	https://github.com/Nodrify-Emergentes/Octane-Backend.git             |
+| Landing Page         | 	Octane-Landing-Page          | 	https://github.com/Nodrify-Emergentes/Octane-Landing-Page.git        |
+| Web Application      | 	Octane-Web-Application	      | https://github.com/Nodrify-Emergentes/Octane-Web-Application.git      |
+| Edge Service         | 	Octane-Edge-Service	         | https://github.com/Nodrify-Emergentes/Octane-Edge-Service.git         |
+| Embedded Application | 	Octane-Embedded-Application	 | https://github.com/Nodrify-Emergentes/Octane-Embedded-Application.git |
 
 **Flujo de trabajo GitFlow**
 
@@ -5268,7 +5313,7 @@ Durante este sprint, el equipo se enfocó en realizar las tareas para la funcion
 
 ### 7.2.2 Sprint 2
 
-### 7.2.2.1 Sprint Planning 2
+#### 7.2.2.1 Sprint Planning 2
 
 | Sprint #                        | Sprint 2                                                                                                                                                                                                                       |
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -5283,7 +5328,7 @@ Durante este sprint, el equipo se enfocó en realizar las tareas para la funcion
 | Sprint 2 Velocity               | 35                                                                                                                                                                                                                             |
 | Sum of Story Points             | 42                                                                                                                                                                                                                             |
 
-### 7.2.2.2 Sprint Backlog 2
+#### 7.2.2.2 Sprint Backlog 2
 
 | Sprint #   | Sprint 2                                                  |                  |                                                |                                                                                                             |                   |                                    |        |
 |------------|-----------------------------------------------------------|------------------|------------------------------------------------|-------------------------------------------------------------------------------------------------------------|------------------:|------------------------------------|--------|
@@ -5313,6 +5358,45 @@ Durante este sprint, el equipo se enfocó en realizar las tareas para la funcion
 | General    | Gestión del Sprint                                        | WI-059           | Integración y revisión de avance               | Coordinar ramas, pull requests, resolución de conflictos y seguimiento del cumplimiento del sprint.         |                 5 | Real Calderón, Sebastián Omar      | To-Do  |
 
 ![Sprint Backlog 2 Trello](assets/images/chapter-7/sprint-2-backlog.png)
+
+#### 7.2.2.3 Development Evidence for Sprint Review
+
+Para la implementación, en este sprint se han realizado avances relacionados con la generación automática de resúmenes de bienestar (wellness summaries) mediante inteligencia artificial generativa, su integración tanto en el backend como en el frontend, el rebranding y reorganización del proyecto backend, y ajustes de configuración para el entorno de producción.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| Octane-Backend |  | 9720027fcc5737f6b993b65b8e70ace4d4c90bd0 | Merge pull request #7 from Nodrify-Emergentes/develop | Develop | 2026-07-07 |
+| Octane-Backend |  | 3a945394e4b671f55fd00f100af72176dfc6c664 | Merge pull request #6 from Nodrify-Emergentes/feat/llm-summary | Feat/llm summary | 2026-07-07 |
+| Octane-Backend |  | 1ebdd4fed3ae87e2ebc3adf98fd816fc4608e198 | feat: add endpoint to retrieve wellness summaries for all vehicles of an owner by their ID. |  | 2026-07-07 |
+| Octane-Backend |  | 51a1d77211b432f757a58b222e0e3d7d5b091a26 | feat: add method to fetch vehicles by owner ID in external vehicle service. |  | 2026-07-07 |
+| Octane-Backend |  | 22eeb1fc73484536c78647dea124d669afd01aee | Merge pull request #5 from Nodrify-Emergentes/develop | Finalized backend | 2026-07-06 |
+| Octane-Backend |  | 06351160098e67454f7d8107c8f7fedff20d3b49 | Merge pull request #4 from Nodrify-Emergentes/feat/llm-summary | Feat/llm summary | 2026-07-06 |
+| Octane-Backend |  | ce51b545c83c96b4fb4df8e33c19be32bd292f01 | feat: integrate wellness summary automatic generation trigger into alert event handling. |  | 2026-07-06 |
+| Octane-Backend |  | bc989362d458f25f4febb94cdd0061c7cb3f2db8 | feat: Created Wellness Summary Interfaces |  | 2026-07-06 |
+| Octane-Backend |  | f19c2d15bd521f3f03a76d53490311848fc370b4 | feat(application and infrastructure): added wellness summary command & query service implementation and repository |  | 2026-07-06 |
+| Octane-Backend |  | 14b40bb35b77cb379aa27a6a77584ebb9ee1cb20 | feat: add generative AI service for generating summaries using AI model. |  | 2026-07-06 |
+| Octane-Backend |  | 4de8557bb5b65d6f04e4007aef76e826b2d3f990 | feat: add GenerativeAIClient for configuring AI service with API key. |  | 2026-07-06 |
+| Octane-Backend |  | 6262e934abedca9f8d3932c0b61bba63857aafd5 | feat: add configuration for AI service and include Google Gemini AI dependency. |  | 2026-07-06 |
+| Octane-Backend |  | 78479925beb5f592869e5afc219558583671dc24 | feat: add summary query service interface for fetching summaries. |  | 2026-07-06 |
+| Octane-Backend |  | f38ef8c502673268fac1f9fa4a63ecf3f9bedd61 | feat: add summary command service interface for summary handling. |  | 2026-07-06 |
+| Octane-Backend |  | ebd59d74ef7fbbc197380174642add48f779ef41 | feat: added wellness domain model for summary implementation |  | 2026-07-06 |
+| Octane-Backend |  | 19b6e741dfe95327558e6db6ad765328ac87114d | Merge pull request #1 from Nodrify-Emergentes/refactor/branding | refactor: refactor project directory to align to current brand. | 2026-07-04 |
+| Octane-Backend |  | fffb11960b90dddc45ed55ee5d05fe9f4a07db6e | refactor: refactor project directory to align to current brand. |  | 2026-07-04 |
+| Octane-Web-Application |  | 850f162fea6cf0918c5c6ac4079344fadff7efed | Merge pull request #5 from Nodrify-Emergentes/develop | Finalized Frontend | 2026-07-07 |
+| Octane-Web-Application |  | 6129238c8ee2d01b33309ba0fb229634cea97f6d | Merge pull request #4 from Nodrify-Emergentes/feat/generation-button | Feat/generation button | 2026-07-07 |
+| Octane-Web-Application |  | 517ef00c2b9ba697c406aaa52dff7b7044bf8300 | feat: integrate wellness summary store into dashboard owner page. |  | 2026-07-07 |
+| Octane-Web-Application |  | 689842128c708e6d33ebc3eddf62a887660fc078 | refactor: out. |  | 2026-07-07 |
+| Octane-Web-Application |  | b68931552f81600752cf8c5ec3d2c0725fa6b9b1 | feat: add button for summary generation. |  | 2026-07-07 |
+| Octane-Web-Application |  | 6d583699058d93fce4a4f5f16402616011860cd2 | feat(vehicle-wellness-presentation): wellness summary iteam and list |  | 2026-07-07 |
+| Octane-Web-Application |  | 14e3af13c405678c5e13774b5e69757b69c91b0d | feat: add summaries.store.ts and wellness-summary-api.service.ts generate function |  | 2026-07-07 |
+| Octane-Web-Application |  | 96ce3f7e50911543264718e5124c3df71bcf50b7 | feat: update api base url to production. |  | 2026-07-07 |
+| Octane-Web-Application |  | b4c8d783f8d0995b812e2da8128552ff8fcd2af5 | Merge pull request #3 from Nodrify-Emergentes/develop | Develop | 2026-07-07 |
+| Octane-Web-Application |  | 6ebe49783f4bba5bb28e31914025eec005256838 | Merge branch 'master' into develop |  | 2026-07-07 |
+| Octane-Web-Application |  | 8e04be35539305884100dd7b61c05cb475ddd46d | Merge pull request #2 from Nodrify-Emergentes/feature/summary-implementation | feat: Added Wellness Summary | 2026-07-07 |
+| Octane-Web-Application |  | 7a456d96c60397e813b1445941ef27974f54fee2 | feat: Added Wellness Summary |  | 2026-07-07 |
+| Octane-Web-Application |  | b6545866fa8d5734ac2174df2d6f35f945b9d4cd | Merge pull request #1 from Nodrify-Emergentes/feautre/mockdata | Feautre/mockdata | 2026-07-05 |
+| Octane-Web-Application |  | 1c57404db7380547fb637a6a9b6475d7e2afd7ed | feat: Deleted Expenses from BC Wellness |  | 2026-07-05 |
+
 
 #### 7.2.2.4 Testing Suite Evidence for Sprint Review
 
@@ -5434,6 +5518,121 @@ Feature: Manejo de errores del agente IA
 ```
 
 ---
+#### 7.2.2.5 Execution Evidence for Sprint Review
+En esta sección se muestran las evidencias visuales que documentan el progreso alcanzado durante el trabajo final. Mediante capturas de pantalla y un video demostrativo, se ilustran de forma clara los logros obtenidos y la manera en que se han implementado las funcionalidades del producto.
+
+**Frontend:**
+
+![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-1.png)
+
+![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-2.png)
+
+![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-3.png)
+
+![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-4.png)
+
+![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-5.png)
+
+**Backend:**
+
+![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-6.png)
+
+![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-7.png)
+
+Video:
+
+[![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-video.png)](https://youtu.be/iqtRWntPbzI)
+
+Link del video: https://youtu.be/iqtRWntPbzI
+
+#### 7.2.2.6 Services Documentation Evidence for Sprint Review
+Durante este Sprint, se logró la documentación y despliegue de varios Endpoints correspondientes al bounded context Wellness implementado por el equipo. Se utilizó OpenAPI (Swagger) para describir de forma estructurada los servicios Web desarrollados. A continuación, se presenta la relación de los Endpoints, las acciones soportadas y la respectiva documentación disponible.  
+Esta documentación incluye los verbos HTTP utilizados, sintaxis de llamadas, parámetros, ejemplos de respuesta, así como capturas de la interacción con los Web Services utilizando datos de muestra. También se proporciona el URL del repositorio de los Web Services y los commit IDs correspondientes al trabajo realizado en la documentación durante este Sprint.
+
+| Bounded Context | Endpoint                                            | Acción                                                                                      | Verbo HTTP | Parámetros       | Ejemplo de Respuesta                                                                                                                                                  | Documentación / URL                                                        |
+|-----------------|-----------------------------------------------------|---------------------------------------------------------------------------------------------|------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| Wellness        | /api/v1/vehicles/{vehicleId}/wellness-summary       | Genera un resumen de salud (wellness summary) para un vehículo específico.                  | POST       | vehicleId (Path) | {"id": 101, "vehicleId": 5, "status": "Good", "aiRecommendations": "Cambio de aceite sugerido en 500km.", "generatedAt": "2026-07-07T12:00:00Z"}                      | `http://localhost:8080/api/v1/vehicles/{vehicleId}/wellness-summary`       |
+| Wellness        | /api/v1/vehicles/{vehicleId}/wellness-summary       | Obtiene el último resumen de salud generado para un vehículo específico.                    | GET        | vehicleId (Path) | {"id": 101, "vehicleId": 5, "status": "Good", "aiRecommendations": "Cambio de aceite sugerido en 500km.", "generatedAt": "2026-07-07T12:00:00Z"}                      | `http://localhost:8080/api/v1/vehicles/{vehicleId}/wellness-summary`       |
+| Wellness        | /api/v1/vehicles/owner/{ownerId}/wellness-summaries | Obtiene los resúmenes de salud de todos los vehículos que pertenecen a un dueño específico. | GET        | ownerId (Path)   | [{"id": 101, "vehicleId": 5, "status": "Good", "aiRecommendations": "..."}, {"id": 102, "vehicleId": 12, "status": "Attention Required", "aiRecommendations": "..."}] | `http://localhost:8080/api/v1/vehicles/owner/{ownerId}/wellness-summaries` |
+
+#### 7.2.2.7 Software Deployment Evidence for Sprint Review
+
+En este sprint, se han desplegado el Backend y Web Application a modo de producción.
+
+**Backend**
+
+1. Ingresar a https://railway.com/ y crear una cuenta. Si ya se dispone de una, iniciar sesión con la cuenta que tenga acceso al repositorio.
+
+![backend-1](assets/images/chapter-7/sprint-2/deployment-evidence/back/backend-1.png)
+
+2. Crear un nuevo proyecto y seleccionar "GitHub Repository", luego seleccionar el repositorio a desplegar. Si no se encuentra disponible, configurar con "Configure GitHub App".
+
+![backend-2](assets/images/chapter-7/sprint-2/deployment-evidence/back/backend-2.png)
+
+![backend-3](assets/images/chapter-7/sprint-2/deployment-evidence/back/backend-3.png)
+
+3. Dentro del proyecto, crear la base de datos Postgres. Automáticamente Railway creará una instancia de base de datos y generará la URL de conexión.
+
+![backend-4](assets/images/chapter-7/sprint-2/deployment-evidence/back/backend-4.png)
+
+4. Seguidamente, configurar las variables de entorno necesarias para la ejecución apropiada del backend. Seleccionar el proyecto, e ir a la sección "Variables".
+
+Dentro del Raw Editor, se configuraría de esta manera:
+
+```
+AI_API_KEY=API KEY de la IA Gemini
+AI_MODEL=Modelo de IA a utilizar
+API_URL="https://${{RAILWAY_PUBLIC_DOMAIN}}"
+DATABASE_PASSWORD="${{Postgres.PGPASSWORD}}"
+DATABASE_URL="jdbc:postgresql://${{Postgres.PGHOST}}:${{Postgres.PGPORT}}/${{Postgres.PGDATABASE}}"
+DATABASE_USERNAME="${{Postgres.PGUSER}}"
+KEEPALIVE_ENABLED="true"
+KEEPALIVE_URL="http://localhost:/actuator/health"
+```
+
+5. En la sección "Settings" del proyecto, buscar la sección "Networking", y crear un dominio personalizado. Con el link obtenido, podemos acceder al despliegue.
+
+![backend-5](assets/images/chapter-7/sprint-2/deployment-evidence/back/backend-5.png)
+
+Link del Swagger del Backend desplegado: [https://strong-surprise-production-ef50.up.railway.app/swagger-ui/index.html#/](https://strong-surprise-production-ef50.up.railway.app/swagger-ui/index.html#/)
+
+**Frontend**
+
+1. Ingresar a https://vercel.com/ y crear una cuenta. Si ya se dispone de una, iniciar sesión con la cuenta que tenga acceso al repositorio.
+
+![frontend-1](assets/images/chapter-7/sprint-2/deployment-evidence/front/frontend-1.png)
+
+2. Crear un nuevo proyecto y seleccionar "Import Project".
+
+![frontend-2](assets/images/chapter-7/sprint-2/deployment-evidence/front/frontend-2.png)
+
+3. Seleccionar el repositorio a desplegar. Si no se encuentra disponible, configurar con "Configure GitHub App".
+
+![frontend-3](assets/images/chapter-7/sprint-2/deployment-evidence/front/frontend-3.png)
+
+4. Dentro del proyecto, verificar que haya detectado el proyecto, y seleccionar "Deploy".
+
+![frontend-4](assets/images/chapter-7/sprint-2/deployment-evidence/front/frontend-4.png)
+
+5. Verificar que el proyecto se ha desplegado correctamente, debería cargar la primera pantalla de la aplicación web.
+
+![frontend-5](assets/images/chapter-7/sprint-2/deployment-evidence/front/frontend-5.png)
+
+Link de Vercel del Frontend desplegado: [https://octane-web-application.vercel.app/](https://octane-web-application.vercel.app/)
+
+#### 7.2.2.8 Team Collaboration Insights during Sprint
+
+En este sprint se realizó la implementación de funcionalidades relacionadas con la lectura de métricas y la interpretación con inteligencia artificial. Se realizaron cambios tanto en la aplicación Web como en el servicio del Backend para implementar estos cambios.
+
+- Frontend
+![frontend_pulse](assets/images/chapter-7/sprint-2/collaboration-insights/frontend/pulse.png)
+![frontend_collaborators](assets/images/chapter-7/sprint-2/collaboration-insights/frontend/collaborators.png)
+![frontend_network](assets/images/chapter-7/sprint-2/collaboration-insights/frontend/network.png)
+
+- Backend
+![backend_pulse](assets/images/chapter-7/sprint-2/collaboration-insights/backend/pulse.png)
+![backend_collaborators](assets/images/chapter-7/sprint-2/collaboration-insights/backend/collaborators.png)
+![backend_network](assets/images/chapter-7/sprint-2/collaboration-insights/backend/network.png)
 
 ## 7.3 Validation Interviews
 
@@ -5663,17 +5862,21 @@ Asimismo, los artefactos elaborados en TB1, como User Personas, escenarios As-Is
 
 Durante TB2, el proyecto evolucionó desde una propuesta conceptual hacia una solución funcional. La implementación de las funcionalidades priorizadas en el Sprint 1 permitió materializar los requerimientos definidos en etapas anteriores, validando la utilidad de los artefactos de análisis y diseño desarrollados previamente. La construcción de los módulos de autenticación, gestión de usuarios, registro de vehículos, asignaciones y visualización de información demostró cómo una adecuada planificación facilita la transición desde la arquitectura hasta la implementación efectiva del sistema.
 
-El uso de prácticas ágiles mediante Scrum permitió organizar el trabajo en iteraciones incrementales, facilitando la planificación, seguimiento y validación continua de los avances. La definición del Sprint Goal, la elaboración del Sprint Backlog y la ejecución de actividades de revisión contribuyeron a mantener el enfoque del equipo sobre los objetivos prioritarios de la entrega, permitiendo gestionar de manera eficiente el tiempo y los recursos disponibles.
+En el Trabajo Final, correspondiente al Sprint 2, el proyecto alcanzó un mayor nivel de madurez al completar las funcionalidades priorizadas, integrar los distintos Bounded Contexts y consolidar la arquitectura propuesta. La implementación de nuevos servicios, la mejora de la comunicación entre componentes y la incorporación de funcionalidades relacionadas con el monitoreo del estado de los vehículos mediante inteligencia artificial permitieron ofrecer una solución más completa y alineada con los objetivos planteados al inicio del proyecto. Asimismo, el Sprint 2 permitió refinar funcionalidades desarrolladas anteriormente, optimizar la experiencia de usuario y corregir observaciones identificadas durante las validaciones realizadas en el Sprint 1.
+
+El uso de prácticas ágiles mediante Scrum permitió organizar el trabajo en iteraciones incrementales, facilitando la planificación, seguimiento y validación continua de los avances. La definición del Sprint Goal, la elaboración del Sprint Backlog y la ejecución de actividades de revisión contribuyeron a mantener el enfoque del equipo sobre los objetivos prioritarios de la entrega, permitiendo gestionar de manera eficiente el tiempo y los recursos disponibles. Durante el Sprint 2, estas prácticas facilitaron además la priorización de mejoras, la resolución de incidencias detectadas durante el sprint anterior y la coordinación efectiva para culminar la implementación de la solución dentro del tiempo establecido.
 
 Por otro lado, la definición del Testing Suite mediante escenarios BDD escritos en Gherkin permitió formalizar los criterios de aceptación de las funcionalidades implementadas durante el Sprint 1. Estos escenarios facilitaron la validación de los flujos principales del sistema, alineando el comportamiento esperado de la aplicación con los requerimientos funcionales definidos en las User Stories. Complementariamente, las entrevistas de validación permitieron recoger retroalimentación de los usuarios objetivo respecto a la utilidad y claridad de las funcionalidades desarrolladas. Estas actividades evidenciaron la importancia de incorporar mecanismos de validación temprana para reducir riesgos y detectar oportunidades de mejora antes de avanzar hacia etapas posteriores del proyecto.
 
-El uso de GitHub facilitó la colaboración del equipo mediante ramas, commits y pull requests, permitiendo organizar los aportes individuales y mantener trazabilidad sobre los cambios realizados. Esta dinámica ayudó a integrar progresivamente el trabajo de cada integrante, mantener la calidad del código y la documentación, así como asegurar la consistencia de los entregables generados durante todas las etapas del proyecto.
+Durante el Trabajo Final, las actividades de validación se complementaron con la ejecución de pruebas funcionales sobre las nuevas características implementadas en el Sprint 2, verificando la correcta integración entre los servicios desarrollados y el cumplimiento de los criterios de aceptación establecidos. Asimismo, la documentación de los Web Services mediante OpenAPI, junto con las evidencias de ejecución y despliegue, permitió garantizar la trazabilidad de las funcionalidades implementadas y facilitar futuras actividades de mantenimiento y evolución del sistema.
 
-Asimismo, la experiencia adquirida durante la configuración del entorno de desarrollo, la gestión del código fuente, la documentación de servicios, el despliegue de aplicaciones y la elaboración de escenarios de aceptación permitió al equipo fortalecer competencias relacionadas con la ingeniería de software moderna. Estas actividades contribuyeron a comprender mejor la relación entre requisitos, diseño, implementación y validación dentro de un proceso de desarrollo iterativo.
+El uso de GitHub facilitó la colaboración del equipo mediante ramas, commits y pull requests, permitiendo organizar los aportes individuales y mantener trazabilidad sobre los cambios realizados. Esta dinámica ayudó a integrar progresivamente el trabajo de cada integrante, mantener la calidad del código y la documentación, así como asegurar la consistencia de los entregables generados durante todas las etapas del proyecto. Durante el Sprint 2, la coordinación mediante revisiones de código e integración continua permitió reducir conflictos entre desarrollos paralelos y asegurar una versión estable del producto para la entrega final.
 
-El proyecto también evidenció la importancia de la comunicación oral y escrita para coordinar avances, explicar decisiones y asegurar que todos los miembros comprendieran los distintos componentes de la solución. La interacción constante entre los integrantes permitió resolver problemas de integración, validar decisiones técnicas y mantener una visión compartida sobre los objetivos del producto.
+Asimismo, la experiencia adquirida durante la configuración del entorno de desarrollo, la gestión del código fuente, la documentación de servicios, el despliegue de aplicaciones y la elaboración de escenarios de aceptación permitió al equipo fortalecer competencias relacionadas con la ingeniería de software moderna. Estas actividades contribuyeron a comprender mejor la relación entre requisitos, diseño, implementación y validación dentro de un proceso de desarrollo iterativo. La consolidación del despliegue de los servicios backend y frontend, así como la documentación técnica de la solución, permitieron además contar con una aplicación completamente operativa y preparada para futuras iteraciones de desarrollo.
 
-Finalmente, se concluye que el trabajo realizado a lo largo de TB1, TP y TB2 permitió construir una base sólida tanto a nivel conceptual como técnico para la evolución de Octane. La combinación de metodologías de análisis, prácticas de diseño centradas en el usuario, principios de arquitectura de software, desarrollo incremental y trabajo colaborativo contribuyó a reducir riesgos, mejorar la calidad de la solución y preparar al equipo para las siguientes fases de implementación. Los resultados obtenidos demuestran que una adecuada articulación entre negocio, diseño, arquitectura y desarrollo constituye un factor clave para el éxito de proyectos de software orientados a resolver problemas reales de los usuarios.
+El proyecto también evidenció la importancia de la comunicación oral y escrita para coordinar avances, explicar decisiones y asegurar que todos los miembros comprendieran los distintos componentes de la solución. La interacción constante entre los integrantes permitió resolver problemas de integración, validar decisiones técnicas y mantener una visión compartida sobre los objetivos del producto. La planificación del Sprint 2, las reuniones de seguimiento, las revisiones internas y la elaboración de los Team Collaboration Insights demostraron que una comunicación efectiva constituye un elemento fundamental para coordinar equipos de desarrollo que trabajan bajo metodologías ágiles.
+
+Finalmente, se concluye que el trabajo realizado a lo largo de TB1, TP, TB2 y el Trabajo Final permitió construir una solución funcional respaldada por una base sólida tanto a nivel conceptual como técnico. La combinación de metodologías de análisis, prácticas de diseño centradas en el usuario, principios de arquitectura de software, desarrollo incremental, validación continua y trabajo colaborativo contribuyó a reducir riesgos, mejorar la calidad del producto y fortalecer las competencias del equipo en el desarrollo de software moderno. Los resultados obtenidos demuestran que una adecuada articulación entre negocio, experiencia de usuario, arquitectura, implementación, pruebas y despliegue constituye un factor clave para el éxito de proyectos de ingeniería de software orientados a resolver problemas reales y generar valor para sus usuarios.
 
 # Video About The Team
 
