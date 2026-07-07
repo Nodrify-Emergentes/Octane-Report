@@ -394,6 +394,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         TB2:<br>
         Realicé los cambios necesarios para permitir un ajuste de bounded contexts, a criterio del equipo, para construir una solución que respete la arquitectura planteada mientras se refactoriza a un desarrollo más ágil. Además, me encargué de comunicar al equipo los cambios realizados, explicando el por qué de cada cambio y asegurando que todos comprendieran cómo estas modificaciones impactaban en la organización del sistema y en la implementación de las funcionalidades durante el Sprint 1.<br>
         TF:<br>
+        Investigué y analicé la información de la arquitectura del proyecto, viendo qué posibles etiquetas se le pueden asociar e identificar más a la solución, impulsando su visibilidad. Además, realicé una revisión general del contenido, supervisando que los integrantes realicen sus modificaciones alineadas a cada subtítulo y que el contenido sea coherente con el enfoque de negocio y técnico del proyecto, para que así el equipo pueda entender claramente el desarrollo del proyecto y las decisiones tomadas durante el proceso.
         <br>
         Russell Stephen Romero Qwistgaard
         <br>
@@ -453,6 +454,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         TB2:<br>
         Realicé una documentación de los cambios realizados durante el sprint, además de hacer un rebranding del producto por el lado de la Landing Page, para que así el equipo pueda entender claramente el desarrollo del proyecto y las decisiones tomadas durante el proceso. Además, me encargué de documentar los resultados obtenidos durante la validación con usuarios, describiendo las respuestas obtenidas y su relación con los criterios de aceptación definidos en los escenarios.<br>
         TF:<br>
+        Verifiqué y corregí la documentación en base a la nueva funcionalidad de la telemetría y la inteligencia artificial, asegurando que los Bounded Context y los diagramas de Event Storming reflejaran correctamente la estructura y el flujo de información del sistema. Además, redacté un resumen de las decisiones tomadas durante el desarrollo del proyecto, destacando cómo estas contribuyen a la mejora continua del producto y a la alineación con los objetivos de negocio.
         <br>
         Russell Stephen Romero Qwistgaard
         <br>
