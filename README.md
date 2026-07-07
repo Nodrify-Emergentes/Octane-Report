@@ -46,6 +46,7 @@
 | 1.0     | 04/26/2026 | Real Calderón, Sebastián Omar | Primera Versión del Informe              |
 | 2.0     | 05/14/2026 | Real Calderón, Sebastián Omar | Versión del informe para entrega del TP  |
 | 3.0     | 06/22/2026 | Real Calderón, Sebastián Omar | Versión del informe para entrega del TB2 | 
+| 4.0     | 07/07/2026 | Real Calderón, Sebastián Omar | Versión del informe para entrega del TF  |
 
 `<div style="page-break-after: always;"></div>`{=html}
 
