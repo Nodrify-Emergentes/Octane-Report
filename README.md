@@ -163,6 +163,41 @@ Distribución de Commits por Integrante:
 | Sebastián Pacheco Astiguetta      | 54                  |
 | Russell Stephen Romero Qwistgaard | 58                  |
 
+**TF:**
+
+Para el desarrollo del Trabajo Final (TF), el equipo continuó utilizando el repositorio compartido en GitHub como principal herramienta de colaboración, control de versiones e integración continua. Durante esta última etapa, el objetivo principal fue completar el desarrollo de la solución mediante la ejecución del Sprint 2, consolidando las funcionalidades implementadas, documentando las evidencias del Sprint Review y preparando la versión final del proyecto para su presentación y evaluación.
+
+Las actividades del Sprint 2 fueron distribuidas entre los integrantes del equipo de acuerdo con las responsabilidades asumidas durante esta etapa. Esta organización permitió desarrollar de forma paralela la implementación, documentación, validación y despliegue de la solución, asegurando la correcta integración de todos los componentes del sistema y la elaboración de la documentación final del proyecto. Las responsabilidades fueron las siguientes:
+
+- **Sebastián Omar Real Calderón:** encargado de la planificación del Sprint 2 mediante la elaboración de las secciones *Sprint Planning 2* y *Sprint Backlog 2*. Asimismo, fue responsable de documentar los indicadores de colaboración del equipo durante el sprint mediante la sección *Team Collaboration Insights during Sprint* y de consolidar la versión final de las *Conclusiones*, asegurando la integración de los resultados obtenidos durante todas las etapas del proyecto.
+
+- **José Antonio Alejo Cárdenas:** responsable de la documentación técnica de los servicios implementados durante el Sprint 2, desarrollando la sección *Services Documentation Evidence for Sprint Review*. Además, documentó las evidencias de ejecución de los servicios mediante pruebas de los endpoints implementados, asegurando la trazabilidad entre la documentación técnica, la implementación y las evidencias presentadas durante la revisión del sprint.
+
+- **Sebastián Pacheco Astiguetta:** encargado de documentar las evidencias correspondientes al *Software Deployment Evidence for Sprint Review*, verificando el despliegue de los componentes frontend y backend de la solución. Asimismo, realizó la revisión y actualización de la documentación general del proyecto para mantener la coherencia entre los cambios realizados durante el Sprint 2, incluyendo la incorporación de las mejoras relacionadas con telemetría e inteligencia artificial.
+
+- **Russell Stephen Romero Qwistgaard:** responsable de la recopilación y documentación de las *Development Evidence for Sprint Review*, registrando las funcionalidades implementadas durante el Sprint 2, las evidencias de integración de los distintos módulos del sistema y el avance del desarrollo respecto a los objetivos establecidos para el sprint. Además, colaboró en la validación de las funcionalidades implementadas y en la consolidación de las evidencias necesarias para la presentación final del proyecto.
+
+Para la gestión del trabajo colaborativo, el equipo mantuvo el flujo de trabajo basado en Git y GitHub, utilizando ramas de desarrollo para la implementación de nuevas funcionalidades, corrección de incidencias, actualización de la documentación y preparación de la versión final del producto. Cada integrante realizó commits de manera continua sobre sus tareas asignadas, integrando posteriormente los cambios mediante *pull requests* revisados antes de su incorporación a la rama principal del repositorio.
+
+Este flujo de trabajo permitió mantener un historial completo de la evolución del proyecto durante el Sprint 2, facilitando la coordinación entre los integrantes, la resolución de conflictos de integración y la validación continua de las funcionalidades desarrolladas. Asimismo, favoreció la consolidación de una versión estable de la solución, respaldada por evidencias de implementación, pruebas, documentación técnica y despliegue.
+
+Como evidencia del proceso colaborativo desarrollado durante el Trabajo Final, se incluirán capturas de los analíticos del repositorio correspondientes al TF, donde se visualizará la actividad de commits, contribuciones por integrante, historial de ramas y *pull requests* gestionados durante el Sprint 2. Estas evidencias complementan el Registro de Versiones del Informe y permiten verificar la participación activa de cada integrante en la culminación del proyecto.
+
+![Pulse TF](assets/images/misc/insights/tf/tf_pulse.png)
+
+![Collaborators TF](assets/images/misc/insights/tf/tf_collaborators.png)
+
+![Network TF](assets/images/misc/insights/tf/tf_network.png)
+
+### Distribución de Commits por Integrante
+
+| Integrante | Cantidad de Commits |
+|-----------------------------------|---------------------:|
+| Sebastián Omar Real Calderón | XX |
+| José Antonio Alejo Cárdenas | XX |
+| Sebastián Pacheco Astiguetta | XX |
+| Russell Stephen Romero Qwistgaard | XX |
+
 `<div style="page-break-after: always;"></div>`{=html}
 
 **Contenido**
