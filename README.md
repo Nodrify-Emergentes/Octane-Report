@@ -193,10 +193,10 @@ Como evidencia del proceso colaborativo desarrollado durante el Trabajo Final, s
 
 | Integrante                        | Cantidad de Commits |
 |-----------------------------------|--------------------:|
-| Sebastián Omar Real Calderón      |                  XX |
-| José Antonio Alejo Cárdenas       |                  XX |
-| Sebastián Pacheco Astiguetta      |                  XX |
-| Russell Stephen Romero Qwistgaard |                  XX |
+| Sebastián Omar Real Calderón      |                  19 |
+| José Antonio Alejo Cárdenas       |                   4 |
+| Sebastián Pacheco Astiguetta      |                  23 |
+| Russell Stephen Romero Qwistgaard |                  13 |
 
 `<div style="page-break-after: always;"></div>`{=html}
 
