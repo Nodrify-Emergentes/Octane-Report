@@ -5419,6 +5419,26 @@ Feature: Manejo de errores del agente IA
 
 ---
 #### 7.2.2.5 Execution Evidence for Sprint Review
+En este apartado se muestran las evidencias visuales que documentan el progreso alcanzado durante el trabajo final. Mediante capturas de pantalla y un video demostrativo, se ilustran de forma clara los logros obtenidos y la manera en que se han implementado las funcionalidades del producto.
+
+Frontend:
+![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-1.png)
+
+![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-2.png)
+
+![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-3.png)
+
+![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-4.png)
+
+![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-5.png)
+
+Backend:
+![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-6.png)
+
+![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-7.png)
+
+Video:
+[![Execution Evidence](assets/images/chapter-7/execution-evidence/execution-evidence-video.png)](https://youtu.be/iqtRWntPbzI)
 
 #### 7.2.2.6 Services Documentation Evidence for Sprint Review
 Durante este Sprint, se logró la documentación y despliegue de varios Endpoints correspondientes al bounded context Wellness implementado por el equipo. Se utilizó OpenAPI (Swagger) para describir de forma estructurada los servicios Web desarrollados. A continuación, se presenta la relación de los Endpoints, las acciones soportadas y la respectiva documentación disponible.  
